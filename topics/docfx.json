@@ -1,0 +1,65 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.py",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "contributors_to_exclude": [
+        "buck1ey",
+        "bishalgoswami",
+        "kathleenmcgrath",
+        "marycc",
+        "tinaburden",
+        "almostdunh",
+        "AshleyWoodruff"
+      ],
+      "breadcrumb_path": "/dynamics365/product-insights/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "feedback_system": "None",
+      "author": "vroha",
+      "ms.author": "hakrou",
+      "ms.date": "04/12/2019",
+      "ms.service": "crm-online",
+      "ms.topic": "article",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "titleSuffix": "Dynamics 365 Product Insights"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "product-insights",
+    "markdownEngineName": "markdig"
+  }
+}
