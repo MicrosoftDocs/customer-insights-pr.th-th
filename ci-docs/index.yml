@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: ศูนย์รวมรายการวิธีใช้สำหรับ Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: ค้นหาบทความที่เกี่ยวข้องเพื่อเริ่มต้นด้วยเนื้อหาความช่วยเหลือ
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: th-TH
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4407171"
+title: คู่มือ Dynamics 365 Customer Insights
+summary: ค้นหาแหล่งข้อมูลที่เป็นประโยชน์เพื่อเริ่มต้นใช้งานและเรียนรู้เกี่ยวกับคุณลักษณะและความสามารถของ Customer Insights
+landingContent:
+- title: รู้จัก Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ภาพรวมของ Customer Insights
+      url: overview.md
+    - text: แผนการนำเสนอ
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: เข้าถึงสภาพแวดล้อมของคุณ
+      url: https://home.ci.ai.dynamics.com/
+- title: เริ่มต้นใช้งานข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: ลงทะเบียนเพื่อทดลองใช้
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: มีอะไรใหม่บ้าง
+      url: audience-insights/whats-new-audience-insights.md
+    - text: คู่มือข้อมูลเชิงลึกกลุ่มเป้าหมาย
+      url: audience-insights/index.yml
+- title: ติดต่อ
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: เข้าร่วมชุมชน Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: แสดงความเห็นของคุณ
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: รายงานปัญหา
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: บทช่วยสอนข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: สร้างสภาพแวดล้อมใหม่
+      url: audience-insights/home.md
+    - text: สร้างโปรไฟล์ลูกค้าแบบรวม
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: ทำงานกับแอป
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: ส่งออกข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ตั้งค่าปลายทางการส่งออก
+      url: audience-insights/export-destinations.md
+    - text: บัตรลูกค้าในแอป Dynamics 365
+      url: audience-insights/customer-card-add-in.md
+    - text: ตัวเชื่อมต่อ Power BI
+      url: audience-insights/export-power-bi.md
+- title: จัดการข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ตั้งค่าคอนฟิกระบบ
+      url: audience-insights/system.md
+    - text: กำหนดสิทธิ์ของผู้ใช้
+      url: audience-insights/permissions.md
+    - text: จัดการหลายสภาพแวดล้อม?
+      url: audience-insights/manage-environments.md
+- title: เกี่ยวกับข้อมูลเชิงลึกการมีส่วนร่วม (พรีวิว)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ภาพรวมของความสามารถ
+      url: engagement-insights/overview.md
+    - text: ข้อกำหนดและแนวคิด
+      url: engagement-insights/glossary.md
+    - text: การเริ่มต้นใช้งาน
+      url: engagement-insights/get-started.md
+- title: รายงานสำหรับข้อมูลเชิงลึกการมีส่วนร่วม (พรีวิว)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ดูรายงาน
+      url: engagement-insights/view-reports.md
+    - text: สร้างรายงานแบบกำหนดเอง
+      url: engagement-insights/custom-reports.md
+    - text: ดูรายงานโปรไฟล์แบบรวม
+      url: engagement-insights/profile-reports.md
+- title: เหตุการณ์สำหรับข้อมูลเชิงลึกการมีส่วนร่วม (พรีวิว)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: สร้างเหตุการณ์ที่ปรับปรุง
+      url: engagement-insights/refined-events.md
+    - text: ส่งออกกิจกรรม
+      url: engagement-insights/export-events.md
+    - text: ลบและส่งออกข้อมูลส่วนบุคคล
+      url: engagement-insights/delete-export-personal-data.md
