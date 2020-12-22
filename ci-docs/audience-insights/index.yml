@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: ความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมายใน Dynamics 365 Customer Insights
+summary: นำเข้า รวมเข้าด้วยกัน และจัดระเบียบข้อมูลลูกค้าจากหลายแหล่ง สร้างและจัดการโปรไฟล์ลูกค้าและการแบ่งส่วนตามเวลาจริง รวมข้อมูลลูกค้าเข้ากับระบบอื่นๆ เพื่อให้สามารถดำเนินการได้มากขึ้น
+metadata:
+  title: คู่มือข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  description: ศูนย์ความช่วยเหลือพร้อมลิงก์หลักสำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: th-TH
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4407154"
+landingContent:
+- title: เกี่ยวกับข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ภาพรวมของผลิตภัณฑ์
+      url: overview.md
+    - text: คุณลักษณะใหม่และที่ปรับปรุง
+      url: whats-new-audience-insights.md
+    - text: ไซต์ของชุมชน
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: นำเข้าแหล่งข้อมูล
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: เพิ่มแหล่งข้อมูล
+      url: data-sources.md
+    - text: การรีเฟรชแบบเพิ่มหน่วย
+      url: incremental-refresh-data-sources.md
+    - text: การทำความเข้าใจเอนทิตี
+      url: entities.md
+- title: รวมข้อมูล
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: แมป
+      url: map-entities.md
+    - text: การจับคู่
+      url: match-entities.md
+    - text: ผสาน
+      url: merge-entities.md
+- title: ปรับปรุงโปรไฟล์ลูกค้า
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: กำหนดค่าความสัมพันธ์
+      url: relationships.md
+    - text: แสดงรายการกิจกรรมลูกค้า
+      url: activities.md
+    - text: นำโมเดลการเรียนรู้เกี่ยวกับเครื่องของคุณมาเอง
+      url: custom-models.md
+- title: ส่งออกข้อมูลลูกค้า
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ตั้งค่าปลายทางการส่งออก
+      url: export-destinations.md
+    - text: บัตรลูกค้าในแอป Dynamics 365
+      url: customer-card-add-in.md
+    - text: ตัวเชื่อมต่อ Power BI
+      url: export-power-bi.md
+- title: จัดการแอป
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ตั้งค่าคอนฟิกระบบ
+      url: system.md
+    - text: กำหนดสิทธิ์ของผู้ใช้
+      url: permissions.md
+    - text: จัดการหลายสภาพแวดล้อม?
+      url: manage-environments.md
