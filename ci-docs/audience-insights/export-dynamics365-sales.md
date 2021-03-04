@@ -1,51 +1,57 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Dynamics 365 Sales
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับ Dynamics 365 Sales
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 0013c4e6a96401d6cdbea55ed38f85f5e10dcc56
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643841"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269031"
 ---
-# <a name="connector-for-dynamics-365-sales-preview"></a><span data-ttu-id="8cee0-103">ตัวเชื่อมต่อสำหรับ Dynamics 365 Sales (แสดงตัวอย่าง)</span><span class="sxs-lookup"><span data-stu-id="8cee0-103">Connector for Dynamics 365 Sales (preview)</span></span>
+# <a name="connector-for-dynamics-365-sales-preview"></a><span data-ttu-id="48883-103">ตัวเชื่อมต่อสำหรับ Dynamics 365 Sales (แสดงตัวอย่าง)</span><span class="sxs-lookup"><span data-stu-id="48883-103">Connector for Dynamics 365 Sales (preview)</span></span>
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="8cee0-104">ใช้ข้อมูลลูกค้าของคุณเพื่อสร้างรายชื่อเพื่อทำการตลาด ติดตามลำดับงาน และนำเสนอโปรโมชันด้วย Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="8cee0-104">Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.</span></span>
+<span data-ttu-id="48883-104">ใช้ข้อมูลลูกค้าของคุณเพื่อสร้างรายชื่อเพื่อทำการตลาด ติดตามลำดับงาน และนำเสนอโปรโมชันด้วย Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="48883-104">Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.</span></span>
 
-## <a name="prerequisite"></a><span data-ttu-id="8cee0-105">ข้อกำหนดเบื้องต้น</span><span class="sxs-lookup"><span data-stu-id="8cee0-105">Prerequisite</span></span>
+## <a name="prerequisite"></a><span data-ttu-id="48883-105">ข้อกำหนดเบื้องต้น</span><span class="sxs-lookup"><span data-stu-id="48883-105">Prerequisite</span></span>
 
-<span data-ttu-id="8cee0-106">เรกคอร์ดผู้ติดต่อ [จาก Dynamics 365 Sales ที่นำเข้าโดยใช้ Common Data Service](connect-power-query.md)</span><span class="sxs-lookup"><span data-stu-id="8cee0-106">Contact records [from Dynamics 365 Sales ingested using Common Data Service](connect-power-query.md).</span></span>
+1. <span data-ttu-id="48883-106">ต้องมีเรกคอร์ดผู้ติดต่อใน Dynamics 365 Sales ก่อนที่คุณจะสามารถส่งออกเซ็กเมนต์จาก Customer Insights ไปยัง Sales ได้</span><span class="sxs-lookup"><span data-stu-id="48883-106">Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights to Sales.</span></span> <span data-ttu-id="48883-107">อ่านเพิ่มเติมเกี่ยวกับวิธีการนำเข้าผู้ติดต่อใน [Dynamics 365 Sales โดยใช้ Common Data Services](connect-power-query.md)</span><span class="sxs-lookup"><span data-stu-id="48883-107">Read more on how to ingest contacts in [Dynamics 365 Sales using Common Data Services](connect-power-query.md).</span></span>
 
-## <a name="configure-the-connector-for-sales"></a><span data-ttu-id="8cee0-107">กำหนดค่าตัวเชื่อมต่อสำหรับ Sales</span><span class="sxs-lookup"><span data-stu-id="8cee0-107">Configure the connector for Sales</span></span>
+   > [!NOTE]
+   > <span data-ttu-id="48883-108">การส่งออกเซ็กเมนต์จากข้อมูลเชิงลึกกลุ่มเป้าหมายไปยัง Sales จะไม่สร้างเรกคอร์ดผู้ติดต่อใหม่ในอินสแตนซ์ Sales</span><span class="sxs-lookup"><span data-stu-id="48883-108">Exporting segments from audience insights to Sales will not create new contact records in the Sales instances.</span></span> <span data-ttu-id="48883-109">ต้องนำเข้าเรกคอร์ดผู้ติดต่อจาก Sales ในข้อมูลเชิงลึกกลุ่มเป้าหมาย และต้องใช้เป็นแหล่งข้อมูล</span><span class="sxs-lookup"><span data-stu-id="48883-109">The contact records from Sales must be ingested in audience insights and used as a data source.</span></span> <span data-ttu-id="48883-110">นอกจากนี้ ยังต้องรวมอยู่ในเอนทิตีลูกค้าแบบรวมเพื่อแม็ปรหัสลูกค้ากับรหัสผู้ติดต่อ ก่อนที่จะสามารถส่งออกเซ็กเมนต์ได้</span><span class="sxs-lookup"><span data-stu-id="48883-110">They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.</span></span>
 
-1. <span data-ttu-id="8cee0-108">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**</span><span class="sxs-lookup"><span data-stu-id="8cee0-108">In audience insights, go to **Admin** > **Export destinations**.</span></span>
+## <a name="configure-the-connector-for-sales"></a><span data-ttu-id="48883-111">กำหนดค่าตัวเชื่อมต่อสำหรับ Sales</span><span class="sxs-lookup"><span data-stu-id="48883-111">Configure the connector for Sales</span></span>
 
-1. <span data-ttu-id="8cee0-109">ภายใต้ **Dynamics 365 Sales** เลือก **ติดตั้ง**</span><span class="sxs-lookup"><span data-stu-id="8cee0-109">Under **Dynamics 365 Sales**, select **Set up**.</span></span>
+1. <span data-ttu-id="48883-112">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**</span><span class="sxs-lookup"><span data-stu-id="48883-112">In audience insights, go to **Admin** > **Export destinations**.</span></span>
 
-1. <span data-ttu-id="8cee0-110">ตั้งชื่อที่เป็นที่รู้จักให้ปลายทางการส่งออกของคุณในฟิลด์ **ชื่อที่แสดง**</span><span class="sxs-lookup"><span data-stu-id="8cee0-110">Give your export destination a recognizable name in the **Display name** field.</span></span>
+1. <span data-ttu-id="48883-113">ภายใต้ **Dynamics 365 Sales** เลือก **ติดตั้ง**</span><span class="sxs-lookup"><span data-stu-id="48883-113">Under **Dynamics 365 Sales**, select **Set up**.</span></span>
 
-1. <span data-ttu-id="8cee0-111">ป้อน URL Sales ขององค์กรของคุณในฟิลด์ **ที่อยู่เซิร์ฟเวอร์**</span><span class="sxs-lookup"><span data-stu-id="8cee0-111">Enter your organization's Sales URL in the **Server address** field.</span></span>
+1. <span data-ttu-id="48883-114">ตั้งชื่อที่เป็นที่รู้จักให้ปลายทางการส่งออกของคุณในฟิลด์ **ชื่อที่แสดง**</span><span class="sxs-lookup"><span data-stu-id="48883-114">Give your export destination a recognizable name in the **Display name** field.</span></span>
 
-1. <span data-ttu-id="8cee0-112">ในส่วน **บัญชีผู้ดูแลระบบเซิร์ฟเวอร์** ให้เลือก **เข้าสู่ระบบ** และเลือกบัญชี Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="8cee0-112">In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Sales account.</span></span>
+1. <span data-ttu-id="48883-115">ป้อน URL Sales ขององค์กรของคุณในฟิลด์ **ที่อยู่เซิร์ฟเวอร์**</span><span class="sxs-lookup"><span data-stu-id="48883-115">Enter your organization's Sales URL in the **Server address** field.</span></span>
 
-1. <span data-ttu-id="8cee0-113">แมปฟิลด์รหัสลูกค้ากับรหัสผู้ติดต่อ Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="8cee0-113">Map a customer ID field to the Dynamics 365 Contact ID.</span></span>
+1. <span data-ttu-id="48883-116">ในส่วน **บัญชีผู้ดูแลระบบเซิร์ฟเวอร์** ให้เลือก **เข้าสู่ระบบ** และเลือกบัญชี Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="48883-116">In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Sales account.</span></span>
 
-1. <span data-ttu-id="8cee0-114">เลือก **ถัดไป**</span><span class="sxs-lookup"><span data-stu-id="8cee0-114">Select **Next**.</span></span>
+1. <span data-ttu-id="48883-117">แมปฟิลด์รหัสลูกค้ากับรหัสผู้ติดต่อ Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="48883-117">Map a customer ID field to the Dynamics 365 Contact ID.</span></span>
 
-1. <span data-ttu-id="8cee0-115">เลือกเซ็กเมนต์อย่างน้อยหนึ่งเซ็กเมนต์</span><span class="sxs-lookup"><span data-stu-id="8cee0-115">Choose one or more segments.</span></span>
+1. <span data-ttu-id="48883-118">เลือก **ถัดไป**</span><span class="sxs-lookup"><span data-stu-id="48883-118">Select **Next**.</span></span>
 
-1. <span data-ttu-id="8cee0-116">เลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="8cee0-116">Select **Save**.</span></span>
+1. <span data-ttu-id="48883-119">เลือกเซ็กเมนต์อย่างน้อยหนึ่งเซ็กเมนต์</span><span class="sxs-lookup"><span data-stu-id="48883-119">Choose one or more segments.</span></span>
 
-## <a name="export-the-data"></a><span data-ttu-id="8cee0-117">ส่งออกข้อมูล</span><span class="sxs-lookup"><span data-stu-id="8cee0-117">Export the data</span></span>
+1. <span data-ttu-id="48883-120">เลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="48883-120">Select **Save**.</span></span>
 
-<span data-ttu-id="8cee0-118">คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md)</span><span class="sxs-lookup"><span data-stu-id="8cee0-118">You can [export data on demand](export-destinations.md).</span></span> <span data-ttu-id="8cee0-119">นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง</span><span class="sxs-lookup"><span data-stu-id="8cee0-119">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+## <a name="export-the-data"></a><span data-ttu-id="48883-121">ส่งออกข้อมูล</span><span class="sxs-lookup"><span data-stu-id="48883-121">Export the data</span></span>
+
+<span data-ttu-id="48883-122">คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md)</span><span class="sxs-lookup"><span data-stu-id="48883-122">You can [export data on demand](export-destinations.md).</span></span> <span data-ttu-id="48883-123">นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง</span><span class="sxs-lookup"><span data-stu-id="48883-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
