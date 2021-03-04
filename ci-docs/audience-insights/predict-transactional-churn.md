@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644426"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268341"
 ---
 # <a name="transactional-churn-prediction-preview"></a>การคาดคะเนการเลิกทำธุรกรรม (พรีวิว)
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644426"
 1. หรือเลือก **เพิ่มข้อมูล** สำหรับ **กิจกรรมของลูกค้า** เลือกเอนทิตีที่ให้ข้อมูลกิจกรรมของลูกค้าตามที่อธิบายไว้ในข้อกำหนดเบื้องต้น
 
 1. แมปฟิลด์ความหมายกับแอตทริบิวต์ภายในเอนทิตีกิจกรรมของลูกค้าของคุณและเลือก **ถัดไป** สำหรับคำอธิบายของฟิลด์ ให้ดูที่ [ข้อกำหนดเบื้องต้น](#prerequisites)
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="แมปฟิลด์ลูกค้าสำหรับข้อมูลธุรกรรม":::
 
 1. เลือกประเภทกิจกรรมที่ตรงกับประเภทกิจกรรมลูกค้าที่คุณกำหนดค่า เลือก **สร้างใหม่** และเลือกชนิดกิจกรรมที่มีอยู่หรือสร้างชนิดใหม่
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644426"
 1. เลือกวงรีแนวตั้งถัดจากการคาดคะเนที่คุณต้องการลบ
 
 1. เลือก **ลบ**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

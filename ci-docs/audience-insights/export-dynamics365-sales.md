@@ -1,20 +1,20 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Dynamics 365 Sales
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับ Dynamics 365 Sales
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 0013c4e6a96401d6cdbea55ed38f85f5e10dcc56
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643841"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269031"
 ---
 # <a name="connector-for-dynamics-365-sales-preview"></a>ตัวเชื่อมต่อสำหรับ Dynamics 365 Sales (แสดงตัวอย่าง)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643841"
 
 ## <a name="prerequisite"></a>ข้อกำหนดเบื้องต้น
 
-เรกคอร์ดผู้ติดต่อ [จาก Dynamics 365 Sales ที่นำเข้าโดยใช้ Common Data Service](connect-power-query.md)
+1. ต้องมีเรกคอร์ดผู้ติดต่อใน Dynamics 365 Sales ก่อนที่คุณจะสามารถส่งออกเซ็กเมนต์จาก Customer Insights ไปยัง Sales ได้ อ่านเพิ่มเติมเกี่ยวกับวิธีการนำเข้าผู้ติดต่อใน [Dynamics 365 Sales โดยใช้ Common Data Services](connect-power-query.md)
+
+   > [!NOTE]
+   > การส่งออกเซ็กเมนต์จากข้อมูลเชิงลึกกลุ่มเป้าหมายไปยัง Sales จะไม่สร้างเรกคอร์ดผู้ติดต่อใหม่ในอินสแตนซ์ Sales ต้องนำเข้าเรกคอร์ดผู้ติดต่อจาก Sales ในข้อมูลเชิงลึกกลุ่มเป้าหมาย และต้องใช้เป็นแหล่งข้อมูล นอกจากนี้ ยังต้องรวมอยู่ในเอนทิตีลูกค้าแบบรวมเพื่อแม็ปรหัสลูกค้ากับรหัสผู้ติดต่อ ก่อนที่จะสามารถส่งออกเซ็กเมนต์ได้
 
 ## <a name="configure-the-connector-for-sales"></a>กำหนดค่าตัวเชื่อมต่อสำหรับ Sales
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643841"
 ## <a name="export-the-data"></a>ส่งออกข้อมูล
 
 คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md) นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

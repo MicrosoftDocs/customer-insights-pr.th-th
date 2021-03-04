@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643616"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269813"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>คู่มือตัวอย่างการคาดคะเนการเลิกทำธุรกรรม (พรีวิว)
 
@@ -49,7 +49,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    [!div class="mx-imgBorder"]
    ![เปลี่ยน DoB เป็น วันที่](media/ecommerce-dob-date.PNG "เปลี่ยนวันเดือนปีเกิดเป็นวันที่")
 
-1. ในฟิลด์ "ชื่อ" ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **eCommerceContacts**
+1. ในฟิลด์ **ชื่อ** ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **eCommerceContacts**
 
 1. บันทึกแหล่งข้อมูล
 
@@ -66,7 +66,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    - **PurchasedOn**: วันที่/เวลา
    - **TotalPrice**: สกุลเงิน
    
-1. ในฟิลด์ "ชื่อ" ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **eCommercePurchases**
+1. ในฟิลด์ **ชื่อ** ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **eCommercePurchases**
 
 1. บันทึกแหล่งข้อมูล
 
@@ -84,7 +84,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    - **RewardsPoints**: จำนวนเต็ม
    - **CreatedOn**: วันที่/เวลา
 
-1. ในฟิลด์ "ชื่อ" ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **loyCustomers**
+1. ในฟิลด์ **ชื่อ** ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **loyCustomers**
 
 1. บันทึกแหล่งข้อมูล
 
@@ -166,7 +166,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
      :::image type="content" source="media/model-levers.PNG" alt-text="เลือกวิธีการของโมเดลกรอบเวลาการคาดคะเนและการกำหนดการเลิกใช้":::
 
-1. เลือก **ประวัติการซื้อ (ที่จำเป็น)** และเลือก **เพิ่มข้อมูล** สำหรับประวัติการสมัครสมาชิก
+1. เลือก **ประวัติการซื้อ (ที่จำเป็น)** และเลือก **เพิ่มข้อมูล** สำหรับประวัติการซื้อ
 
 1. เพิ่มเอนทิตี **eCommercePurchases : eCommerce** และแมปฟิลด์จากอีคอมเมิร์ซไปยังฟิลด์ที่สอดคล้องกันที่โมเดลต้องการ
 
@@ -204,3 +204,6 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 ตอนนี้คุณมีเซ็กเมนต์ที่ปรับปรุงแบบไดนามิกซึ่งระบุลูกค้าที่มีความเสี่ยงสูงที่จะเลิกใช้บริการสำหรับธุรกิจที่มีการสมัครสมาชิกนี้
 
 สำหรับข้อมูลเพิ่มเติม ดู [สร้างและจัดการเซ็กเมนต์](segments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

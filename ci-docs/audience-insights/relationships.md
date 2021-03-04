@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407164"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269904"
 ---
 # <a name="relationships-between-entities"></a>ความสัมพันธ์ระหว่างเอนทิตี
 
@@ -28,8 +28,8 @@ ms.locfileid: "4407164"
 > ![การสร้างความสัมพันธ์](media/relationships-entities-merge.png "การสร้างความสัมพันธ์")
 
 - **ความสัมพันธ์ *CustomerToContact*** ถูกสร้างขึ้นระหว่างเอนทิตีลูกค้าและเอนทิตีผู้ติดต่อ เอนทิตีลูกค้าได้รับฟิลด์คีย์หลัก **Contact_contactId** เพื่อเชื่อมโยงกับฟิลด์คีย์หลักของเอนทิตีผู้ติดต่อ **ContactId**.
-- **_CustomerToAccount_ ความสัมพันธ์** ถูกสร้างขึ้นระหว่างเอนทิตีลูกค้าและเอนทิตีลูกค้าองค์กร เอนทิตีลูกค้าได้รับฟิลด์คีย์หลัก **Account_contactId** เพื่อเชื่อมโยงกับฟิลด์คีย์หลักของเอนทิตีลูกค้าองค์กร **accountId**.
-- **_CustomerToWebAccount_ ความสัมพันธ์** ถูกสร้างขึ้นระหว่างเอนทิตีลูกค้าและเอนทิตี WebAccount เอนทิตีลูกค้าได้รับฟิลด์คีย์หลัก **WebAccount_contactId** เพื่อเชื่อมโยงกับฟิลด์คีย์หลักของเอนทิตี WebAccount **webaccountId**.
+- ***CustomerToAccount* ความสัมพันธ์** ถูกสร้างขึ้นระหว่างเอนทิตีลูกค้าและเอนทิตีลูกค้าองค์กร เอนทิตีลูกค้าได้รับฟิลด์คีย์หลัก **Account_contactId** เพื่อเชื่อมโยงกับฟิลด์คีย์หลักของเอนทิตีลูกค้าองค์กร **accountId**.
+- ***CustomerToWebAccount* ความสัมพันธ์** ถูกสร้างขึ้นระหว่างเอนทิตีลูกค้าและเอนทิตี WebAccount เอนทิตีลูกค้าได้รับฟิลด์คีย์หลัก **WebAccount_contactId** เพื่อเชื่อมโยงกับฟิลด์คีย์หลักของเอนทิตี WebAccount **webaccountId**.
 
 ## <a name="create-a-relationship"></a>สร้างความสัมพันธ์
 
@@ -69,3 +69,6 @@ ms.locfileid: "4407164"
 ## <a name="next-step"></a>ขั้นตอนถัดไป
 
 ระบบและความสัมพันธ์ที่กำหนดเองถูกใช้เพื่อสร้างเซ็กเมนต์ตามแหล่งข้อมูลหลายแหล่งที่ไม่ได้เป็นแบบไซโลอีกต่อไป สำหรับข้อมูลเพิ่มเติม ดู [เซ็กเมนต์](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

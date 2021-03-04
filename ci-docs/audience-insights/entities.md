@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: e3f41c0424b2cd756d72ae6af9d5225ebba92628
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: e71c69a6207147d8cd65363d51a5fa6bbf896151
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407129"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269399"
 ---
 # <a name="entities-in-audience-insights"></a>เอนทิตีในข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
@@ -57,3 +57,6 @@ ms.locfileid: "4407129"
 ### <a name="next-step"></a>ขั้นตอนถัดไป
 
 ดูหัวข้อ [รวม](data-unification.md) เพื่อเรียนรู้วิธีการ *แม็ป* *จับคู่* และ *ผสาน* ข้อมูลที่ถูกนำไปใช้
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2537cfb5dde0d1ce1af16f585f0bf91d15ea1870
-ms.sourcegitcommit: a6e7df90d61450e00886753eb5db116f2f35bb6c
+ms.openlocfilehash: 3f1019ace424f89320c5a0d5058e928f4cbc7e62
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654003"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269874"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>คู่มือตัวอย่างการคาดคะเนการบอกเลิกการสมัครสมาชิก (พรีวิว)
 
@@ -46,10 +46,9 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    - **DateOfBirth**: วันที่
    - **CreatedOn**: วันที่/เวลา/โซน
 
-   [!div class="mx-imgBorder"]
-   ![เปลี่ยน DoB เป็น วันที่](media/ecommerce-dob-date.PNG "เปลี่ยนวันเดือนปีเกิดเป็นวันที่")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="เปลี่ยนวันเดือนปีเกิดเป็นวันที่":::
 
-1. ในฟิลด์ "ชื่อ" ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **eCommerceContacts**
+1. ในฟิลด์ **ชื่อ** ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **eCommerceContacts**
 
 1. บันทึกแหล่งข้อมูล
 
@@ -67,7 +66,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    - **RewardsPoints**: จำนวนเต็ม
    - **CreatedOn**: วันที่/เวลา
 
-1. ในฟิลด์ "ชื่อ" ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **loyCustomers**
+1. ในฟิลด์ **ชื่อ** ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **loyCustomers**
 
 1. บันทึกแหล่งข้อมูล
 
@@ -90,7 +89,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    - **Is_auto_renew**: True/False
    - **RecurringFrequencyInMonths**: จำนวนเต็ม
 
-1. ในฟิลด์ "ชื่อ" ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **SubscriptionHistory**
+1. ในฟิลด์ **ชื่อ** ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **SubscriptionHistory**
 
 1. บันทึกแหล่งข้อมูล
 
@@ -230,3 +229,6 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 ตอนนี้คุณมีเซ็กเมนต์ที่ปรับปรุงแบบไดนามิกซึ่งระบุลูกค้าที่มีความเสี่ยงสูงที่จะเลิกใช้บริการสำหรับธุรกิจที่มีการสมัครสมาชิกนี้
 
 สำหรับข้อมูลเพิ่มเติม ดู [สร้างและจัดการเซ็กเมนต์](segments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

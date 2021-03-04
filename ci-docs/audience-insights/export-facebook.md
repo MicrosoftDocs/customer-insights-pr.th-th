@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643706"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269997"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>ตัวเชื่อมต่อสำหรับ Facebook Ads Manager (แสดงตัวอย่าง)
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643706"
 
 คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md) นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง
 
+## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
+
+- โปรไฟล์ลูกค้ามากถึง 10 ล้านโปรไฟล์ต่อการส่งออกไปยังตัวจัดการโฆษณาบน Facebook 
+- การส่งออกไปยังตัวจัดการโฆษณาบน Facebook ถูกจำกัดเฉพาะเซ็กเมนต์
+- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ทั้งหมด 10 ล้านโปรไฟล์ อาจใช้เวลาถึง 90 นาทีในการทำให้เสร็จสมบูรณ์
+
 ## <a name="data-privacy-and-compliance"></a>ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ
 
 เมื่อคุณเปิดใช้งาน Dynamics 365 Customer Insights เพื่อส่งข้อมูลไปยัง Facebook Ads Manager คุณอนุญาตให้ถ่ายโอนข้อมูลนอกขอบเขตการปฏิบัติตามข้อกำหนดสำหรับ Dynamics 365 Customer Insights รวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น ข้อมูลส่วนบุคคล Microsoft จะถ่ายโอนข้อมูลดังกล่าวตามคำสั่งของคุณ แต่คุณมีหน้าที่รับผิดชอบในการตรวจสอบว่า Facebook Ads ปฏิบัติตามข้อผูกพันด้านความเป็นส่วนตัวหรือความปลอดภัยที่คุณอาจมี สำหรับข้อมูลเพิ่มเติม ดู [คำชี้แจงสิทธิส่วนบุคคลของ Microsoft](https://go.microsoft.com/fwlink/?linkid=396732)
 ผู้ดูแลระบบ Dynamics 365 Customer Insights ของคุณเอาปลายทางการส่งออกเมื่อใดก็ได้เพื่อยกเลิกการใช้ฟังก์ชันนี้
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

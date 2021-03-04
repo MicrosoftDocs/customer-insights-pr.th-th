@@ -1,20 +1,20 @@
 ---
 title: เชื่อมต่อกับบัญชี Azure Data Lake Storage รุ่น2 ที่มีบริการหลัก
-description: ใช้บริการหลักของ Azure สำหรับข้อมูลเชิงลึกกลุ่มเป้าหมายเพื่อเชื่อมต่อกับที่จัดเก็บข้อมูลดิบของคุณเองเมื่อเชื่อมต่อกับข้อมูลเชิงลึกกลุ่มเป้าหมาย
-ms.date: 11/24/2020
+description: ใช้บริการหลักของ Azure สำหรับข้อมูลเชิงลึกเกี่ยวกับกลุ่มเป้าหมายเพื่อเชื่อมต่อกับที่จัดเก็บข้อมูลดิบของคุณเอง เมื่อแนบกับข้อมูลเชิงลึกเกี่ยวกับกลุ่มเป้าหมาย
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644111"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267745"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>เชื่อมต่อกับบัญชี Azure Data Lake Storage รุ่น2 ที่มีบริการหลัก Azure สำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644111"
 
 คุณสามารถใช้บริการหลักเพื่อ [เพิ่มหรือแก้ไขโฟลเดอร์ Common Data Model เป็นแหล่งข้อมูล](connect-common-data-model.md) ได้อย่างปลอดภัยหรือ [สร้างใหม่หรือปรับปรุงสภาพแวดล้อมที่มีอยู่](manage-environments.md#create-an-environment-in-an-existing-organization)
 
-คุณต้องมีสิทธิ์ระดับผู้ดูแลระบบสำหรับการสมัครใช้งาน Azure ของคุณเพื่อสร้างบริการหลัก
+> [!IMPORTANT]
+> - บัญชีที่เก็บข้อมูล Azure Data Lake Gen2 ที่ตั้งใจจะใช้บริการหลักต้อง [เปิดใช้งาน Hierarchical Name Space (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace)
+> - คุณต้องมีสิทธิ์ระดับผู้ดูแลระบบสำหรับการสมัครใช้งาน Azure ของคุณเพื่อสร้างบริการหลัก
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>สร้างบริการหลักของ Azure สำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644111"
 
 ทำตามขั้นตอนด้านล่างเพื่อให้ข้อมูลที่จำเป็นเกี่ยวกับแนวทางที่เลือก
 
-### <a name="resounce-based-storage-account-connection"></a>การเชื่อมต่อบัญชีที่เก็บข้อมูลตามทรัพยากร
+### <a name="resource-based-storage-account-connection"></a>การเชื่อมต่อบัญชีที่เก็บข้อมูลตามทรัพยากร
 
 1. ไปที่ [พอร์ทัลผู้ดูแลระบบ Azure](https://portal.azure.com) ลงชื่อเข้าใช้การสมัครใช้งานของคุณและเปิดบัญชีที่เก็บข้อมูล
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644111"
 1. ตรวจสอบ **การสมัครใช้งาน**, **กลุ่มทรัพยากร** และ **ชื่อ** ของบัญชีที่เก็บข้อมูล เพื่อให้แน่ใจว่าคุณเลือกค่าที่ถูกต้องในข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
 1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้เลือกค่าหรือสำหรับฟิลด์ที่เกี่ยวข้องเมื่อแนบบัญชีที่เก็บข้อมูล
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="ป้อนข้อมูลรหัสทรัพยากรบัญชีที่เก็บข้อมูล":::
    
 1. ทำตามขั้นตอนที่เหลือในข้อมูลเชิงลึกกลุ่มเป้าหมายเพื่อแนบบัญชีที่เก็บข้อมูล
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

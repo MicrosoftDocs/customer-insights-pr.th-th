@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f276a73feca52023391ad92fbc84359921b85328
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: ed9aa09fba938606611c6ce86c2b250c5e19c606
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407149"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268709"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>คำขอสิทธิ์เรื่องข้อมูล (DSR) ภายใต้ GDPR
 
@@ -75,3 +75,6 @@ ms.locfileid: "4407149"
 1. ส่งอีเมลไปที่ D365CI@microsoft.com ซึ่งระบุที่อยู่อีเมลของผู้ใช้ในคำขอ ทีม Customer Insights จะส่งอีเมลไปยังที่อยู่อีเมลผู้ดูแลระบบของผู้เช่าที่ลงทะเบียน โดยขอให้ยืนยันการส่งออกข้อมูล
 2. รับทราบการยืนยันในการส่งออกข้อมูลสำหรับผู้ใช้ที่ร้องขอ
 3. รับข้อมูลที่ส่งออกผ่านที่อยู่อีเมลผู้ดูแลระบบของผู้เช่า
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

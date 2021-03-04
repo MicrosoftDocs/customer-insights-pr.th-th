@@ -1,20 +1,20 @@
 ---
 title: ตัวเชื่อมต่อ Power Automate | Microsoft Docs
 description: สร้างโฟลว์ใน Microsoft Power Automate จาก Dynamics 365 Customer Insights.
-ms.date: 08/03/2020
+ms.date: 01/20/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: philk
 manager: shellyha
-ms.openlocfilehash: ffe92414365b0b777691a4a2d585100e4fbea591
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407118"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268847"
 ---
 # <a name="power-automate-connector-preview"></a>ตัวเชื่อมต่อ Power Automate (ตัวอย่าง)
 
@@ -22,7 +22,7 @@ ms.locfileid: "4407118"
 
 ## <a name="power-automate-triggers"></a>ทริกเกอร์ Power Automate
 
-คุณสามารถใช้ทริกเกอร์ที่หลากหลายที่อนุญาตให้คุณสร้างโฟลว์เพื่อทำงานซ้ำอัตโนมัติ เช่น การแจ้งเตือน หรือการดำเนินการขั้นสูงอื่นๆ 
+ใช้ทริกเกอร์เพื่อสร้างโฟลว์ระบบคลาวด์ และทำให้งานซ้ำๆ เป็นแบบอัตโนมัติ เช่น การแจ้งเตือน หรือการดำเนินการขั้นสูงเพิ่มเติม 
 
 - ทริกเกอร์เมื่อการรีเฟรชแหล่งข้อมูลล้มเหลว 
 - ทริกเกอร์เมื่อการรีเฟรชแหล่งข้อมูลสำเร็จ
@@ -36,14 +36,20 @@ ms.locfileid: "4407118"
 ## <a name="power-automate-actions"></a>การดำเนินการ Power Automate
 ตัวเชื่อมต่อ Power Automate ให้การดำเนินการอื่นๆ นอกเหนือจากทริกเกอร์ที่มีอยู่ สำหรับข้อมูลเพิ่มเติม โปรดดู [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/)
 
-## <a name="create-a-power-automate-flow-in-audience-insights"></a>สร้างโฟลว์ Power Automate ในข้อมูลเชิงลึกกลุ่มเป้าหมาย
+## <a name="create-a-power-automate-flow"></a>สร้างโฟลว์ Power Automate
 
-1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ระบบ**
+1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**
 
-1. บนหน้า **ระบบ** เลือกแท็บ **สถานะ**.
+1. บนไทล์ **Power Automate** เลือก **ตั้งค่า**
 
-1. ในส่วน **แหล่งข้อมูล** ให้เลือก **โฟลว์** และเลือก **สร้างโฟลว์** จากรายการแบบเลื่อนลง
-   > [!div class="mx-imgBorder"]
-   > ![ตัวเชื่อมต่อ Power Automate ที่แสดงการสร้างการดำเนินการของโฟลว์](media/power-automate-connector-create-flow.png "ตัวเชื่อมต่อ Power Automate แสดงการสร้างการดำเนินการของโฟลว์")
+1. Customer Insights Connector (พรีวิว) ใน Power Automate เปิดขึ้น **ลงชื่อเข้าใช้** ไปยัง Power Automate
 
-1. ใน Power Automate เลือกหนึ่งในทริกเกอร์ที่มีอยู่เพื่อสร้างโฟลว์ที่คุณต้องการ หากคุณกำลังสร้างโฟลว์แรก คุณต้องรับรองความถูกต้องด้วยตัวเชื่อมต่อ Power Automate ก่อน
+1. เลือกหนึ่งในทริกเกอร์ที่พร้อมใช้งาน และเพิ่มขั้นตอนเพิ่มเติมในโฟลว์ใหม่ของคุณ สำหรับข้อมูลเพิ่มเติม โปรดดู [สร้างโฟลว์ระบบคลาวด์ใน Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow)
+
+ตัวอย่างวิธีใช้โฟลว์: 
+- โพสต์ข้อความไปยังช่องทาง Microsoft Teams หากการรีเฟรชแหล่งข้อมูลล้มเหลว 
+- ส่งอีเมลไปยังเจ้าของข้อมูล เมื่อมีการข้ามขีดจำกัดในเซ็กเมนต์
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

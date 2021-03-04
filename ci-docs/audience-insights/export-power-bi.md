@@ -5,16 +5,16 @@ ms.date: 09/21/2020
 ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407123"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477111"
 ---
 # <a name="connector-for-power-bi-preview"></a>ตัวเชื่อมต่อสำหรับ Power BI (การแสดงตัวอย่าง)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4407123"
 
 1. เลือก **ดูเพิ่มเติม** และค้นหาสำหรับ **Dynamics 365 Customer Insights**
 
-1. เลือกผลลัพธ์และเลือก **เชื่อมต่อ**
+1. เลือก **เชื่อมต่อ**
 
 1. **เข้าสู่ระบบ** ด้วยบัญชีองค์กรเดียวกันกับที่คุณใช้สำหรับ Customer Insights และเลือก **เชื่อมต่อ**
    > [!NOTE]
@@ -52,3 +52,22 @@ ms.locfileid: "4407123"
 ### <a name="work-with-a-subset-of-data"></a>ทำงานกับชุดข้อมูลย่อย
 
 ลองทำงานกับชุดย่อยของข้อมูลของคุณ ตัวอย่างเช่น คุณสามารถสร้าง [เซ็กเมนต์](segments.md) แทนการส่งออกเรกคอร์ดลูกค้าทั้งหมดไปยัง Power BI
+
+## <a name="troubleshooting"></a>การแก้ไขปัญหา
+
+### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>สภาพแวดล้อม Customer Insights ไม่ปรากฏใน Power BI
+
+สภาพแวดล้อมที่มี [ความสัมพันธ์](relationships.md) มากกว่าหนึ่งรายการที่กำหนดระหว่างเอนทิตีที่เหมือนกันสองรายการในข้อมูลเชิงลึกกลุ่มเป้าหมาย จะไม่พร้อมใช้งานในตัวเชื่อมต่อ Power BI
+
+คุณสามารถระบุและลบความสัมพันธ์ที่ซ้ำกันได้
+
+1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ข้อมูล** > **ความสัมพันธ์** เกี่ยวกับสภาพแวดล้อมที่คุณไม่มีใน Power BI
+2. ระบุความสัมพันธ์ที่ซ้ำกัน:
+   - ตรวจสอบว่ามีความสัมพันธ์มากกว่าหนึ่งรายการที่กำหนดระหว่างเอนทิตีสองรายการที่เหมือนกันหรือไม่
+   - ตรวจสอบว่ามีความสัมพันธ์ที่สร้างขึ้นระหว่างเอนทิตีสองรายการที่ถูกรวมอยู่ในกระบวนการรวมหรือไม่ มีความสัมพันธ์โดยนัยที่กำหนดไว้ระหว่างเอนทิตีทั้งหมดที่รวมอยู่ในกระบวนการรวม
+3. ลบความสัมพันธ์ที่ซ้ำกันที่ระบุ
+
+หลังจากการลบความสัมพันธ์ที่ซ้ำกันออก ให้ลองตั้งค่าคอนฟิกตัวเชื่อมต่อ Power BI อีกครั้ง สภาพแวดล้อมควรพร้อมใช้งานในขณะนี้
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

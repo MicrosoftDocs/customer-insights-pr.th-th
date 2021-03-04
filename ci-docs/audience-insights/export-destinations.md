@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 9032d99357db86e66588eda544211a5f8eb2f23b
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 63caa2ebdd7d637d14ac9c9cc7972095803aee2f
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643886"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477156"
 ---
-# <a name="export-destinations-preview"></a>ปลายทางการส่งออก (ตัวอย่าง)
+# <a name="export-destinations-preview-overview"></a>ภาพรวมปลายทางการส่งออก (พรีวิว)
 
 หน้า **ปลายทางการส่งออก** แสดงตำแหน่งทั้งหมดที่คุณตั้งค่าเพื่อส่งออกข้อมูลไป นอกจากนี้ คุณยังสามารถเพิ่มปลายทางใหม่สำหรับการส่งออก นอกจากนี้ยังแสดงตัวเลือกการส่งออกที่มีอยู่ในปัจจุบันด้วย รับภาพรวม Description และค้นหาสิ่งที่คุณสามารถทำได้ด้วยตัวเลือกความสามารถในการเพิ่มแต่ละรายการ ส่งออกโปรไฟล์แบบรวม การวัด และเซ็กเมนต์ ไปยังแอปที่รองรับซึ่งเกี่ยวข้องกับธุรกิจของคุณ
 
@@ -27,10 +27,13 @@ ms.locfileid: "4643886"
 - [ตัวเชื่อมต่อ Power Automate](export-power-automate.md)
 - [ตัวเชื่อมต่อ Power Apps](export-power-apps.md)
 - [ตัวเชื่อมต่อ Power BI](export-power-bi.md)
+- [Autopilot](export-autopilot.md)
 - [DotDigital](export-dotdigital.md)
 - [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [ที่เก็บข้อมูล Azure Blob](export-azure-blob-storage.md)
+- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
+- [SendGrid](export-sendgrid.md)
 - [ตัวเชื่อมต่อ LiveRamp&reg;](export-liveramp.md)
 - [บอทสำหรับ Microsoft Teams](export-teams-bot.md)
 - [Mailchimp](export-mailchimp.md)
@@ -95,3 +98,6 @@ ms.locfileid: "4643886"
 2. เลือก **ลบ** จากเมนูแบบหล่นลง
 
 3. ยืนยันการลบโดยเลือก **ลบ** บนหน้าจอการยืนยัน
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,17 +4,17 @@ description: ใช้การคาดคะเนเพื่อกรอก�
 ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: zacook
 manager: shellyha
-ms.openlocfilehash: 66f0b16b5d05741ab98ca5ce2157da8c46b6d9e0
-ms.sourcegitcommit: 5379c2b77d613d071a177f509e6417ebf3c47516
+ms.openlocfilehash: 577232c7e901dfd54a195c3e9cfac5d1f0f866e6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "4648734"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268295"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>กรอกข้อมูลบางส่วนของคุณให้สมบูรณ์ด้วยการคาดคะเน
 
@@ -160,3 +160,6 @@ ms.locfileid: "4648734"
     1. เลือกผู้ใช้ที่คุณเพิ่งสร้าง
     1. เลือก **จัดการบทบาท** ในแถบเมนูด้านบน
     1. เลือก **ผู้ดูแลระบบ** จากนั้นเลือก **ตกลง**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

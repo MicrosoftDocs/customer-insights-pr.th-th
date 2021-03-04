@@ -5,16 +5,16 @@ ms.date: 11/18/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: jdahl
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 59f7f05ca0825ba147e9e93f10fa3508ec3a16dd
-ms.sourcegitcommit: ff824bbbd31fd666ab0da682bf48ea31580d242c
+ms.openlocfilehash: f25dcc08d96d36507e47af0d7b184003ae095819
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "4568513"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269629"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลแบบกำหนดเอง (พรีวิว)
 
@@ -107,3 +107,6 @@ ms.locfileid: "4568513"
 สร้างบนข้อมูลลูกค้าที่เพิ่มด้านบนของคุณ สร้าง [เซ็กเมนต์](segments.md), [การวัด](measures.md) และ [ส่งออกข้อมูล](export-destinations.md) เพื่อมอบประสบการณ์แบบส่วนบุคคลให้กับลูกค้าของคุณ
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
