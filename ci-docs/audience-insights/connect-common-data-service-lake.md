@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.reviewer: adkuppa
-ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.reviewer: mhart
+ms.openlocfilehash: b1cfab40c1edb32f4a7f359e1195cfb1e879a0d5
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267837"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596982"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>เชื่อมต่อกับข้อมูลใน Data Lake ที่มีการจัดการ Common Data Service
 

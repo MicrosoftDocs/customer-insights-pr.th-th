@@ -2,19 +2,19 @@
 title: ความสัมพันธ์ระหว่างเอนทิตีและพาธของเอนทิตี
 description: สร้างและจัดการความสัมพันธ์ระหว่างเอนทิตีจากแหล่งข้อมูลหลายแหล่ง
 ms.date: 04/14/2020
-ms.reviewer: mukeshpo
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c25bfcb8e2a8223498dd1a5e8cfb3712a40ab85e
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269904"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595235"
 ---
 # <a name="relationships-between-entities"></a>ความสัมพันธ์ระหว่างเอนทิตี
 

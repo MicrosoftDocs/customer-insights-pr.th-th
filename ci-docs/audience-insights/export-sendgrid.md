@@ -2,19 +2,19 @@
 title: ส่งออกข้อมูล Customer Insights ไปยัง SendGrid
 description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อกับ SendGrid
 ms.date: 12/08/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+ms.topic: how-to
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f16d69deb2a0b48270ed04f9b72f03056f20b619
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 1a1f679fa42d47d524ebfdd6e931ae2822565f77
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268755"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597304"
 ---
 # <a name="connector-for-sendgrid-preview"></a>ตัวเชื่อมต่อสำหรับ SendGrid (พรีวิว)
 

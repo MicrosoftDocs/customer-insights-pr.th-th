@@ -2,19 +2,19 @@
 title: โฮมเพจในข้อมูลเชิงลึกกลุ่มเป้าหมาย
 description: เริ่มต้นการค้นหาแอปในโฮมเพจ
 ms.date: 01/07/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 7cc767f5d80b213a4c1bb5b2e8062bd44c15279b
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: bf9080c564850bca0c239b7317eed2fc0f77d9f3
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477064"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597258"
 ---
 # <a name="create-a-new-environment"></a>สร้างสภาพแวดล้อมใหม่
 

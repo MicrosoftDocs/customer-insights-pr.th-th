@@ -5,16 +5,16 @@ ms.date: 05/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 247e4d9c47ff2373065ebf3c6d554323e45a120b
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 385406b706890d741fec2694c190c0fada7809d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267883"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596568"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>เชื่อมต่อกับโฟลเดอร์ Common Data Model โดยใช้บัญชี Azure Data Lake
 

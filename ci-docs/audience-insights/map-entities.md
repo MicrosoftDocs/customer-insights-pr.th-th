@@ -5,16 +5,16 @@ ms.date: 09/25/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0088daae0be0cb3e71f87387648430d2353081c9
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 36b7f7b2fac9497245cf6759506c53753972f173
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267058"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596016"
 ---
 # <a name="map-entities-and-attributes"></a>แม็ปเอนทิตีและแอตทริบิวต์
 

@@ -5,16 +5,16 @@ ms.date: 02/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: nimagen
+author: NimrodMagen
+ms.author: nimagen
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a9c9e258da49b8f452550794539962d48b856829
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 87bf8d7b9c23633ebdc929e15ac645c55cc21e4a
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267363"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595403"
 ---
 # <a name="system-configuration"></a>การกำหนดค่าระบบ
 

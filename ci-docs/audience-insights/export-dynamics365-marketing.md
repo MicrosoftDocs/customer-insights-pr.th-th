@@ -2,25 +2,25 @@
 title: ส่งออกข้อมูล Customer Insights ไปยัง Dynamics 365 Marketing
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับ Dynamics 365 Marketing
 ms.date: 02/01/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 892aff643872f11307a2c43e5670edab657d7848
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269077"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597626"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>ตัวเชื่อมต่อสำหรับ Dynamics 365 Marketing (แสดงตัวอย่าง)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-ใช้ [เซ็กเมนต์](segments.md) เพื่อสร้างการส่งเสริมการขายและติดต่อกลุ่มเฉพาะของลูกค้าด้วย Dynamics 365 Marketing สำหรับข้อมูลเพิ่มเติม โปรดดู [ใช้เซ็กเมนต์จาก Dynamics 365 Customer Insights ด้วย Dynamics 365 Marketing](https://docs.microsoft.com/dynamics365/marketing/customer-insights-segments)
+ใช้ [เซ็กเมนต์](segments.md) เพื่อสร้างการส่งเสริมการขายและติดต่อกลุ่มเฉพาะของลูกค้าด้วย Dynamics 365 Marketing สำหรับข้อมูลเพิ่มเติม โปรดดู [ใช้เซ็กเมนต์จาก Dynamics 365 Customer Insights ด้วย Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
 ## <a name="prerequisite"></a>ข้อกำหนดเบื้องต้น
 

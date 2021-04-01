@@ -2,19 +2,19 @@
 title: การคาดคะเนคำแนะนำผลิตภัณฑ์
 description: คาดการณ์ผลิตภัณฑ์ที่ลูกค้ามีแนวโน้มที่จะซื้อหรือโต้ตอบด้วย
 ms.date: 02/15/2021
-ms.reviewer: zacook
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 5a2eb2b4697e51a0abb933b654a9b0b150dfa6a3
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 5ae78b6bbc51fd8a25bc408050a23479698a1414
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270541"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598086"
 ---
 # <a name="product-recommendation-prediction-preview"></a>การคาดคะเนคำแนะนำผลิตภัณฑ์ (ตัวอย่าง)
 

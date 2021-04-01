@@ -2,19 +2,19 @@
 title: การเพิ่มความสมบูรณ์ด้วยการเพิ่มข้อมูลจากบุคคลที่สาม Experian
 description: ข้อมูลทั่วไปเกี่ยวกับการเพิ่มข้อมูลจากบุคคลที่สาม Experian
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-ms
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: baf3cc58a233b70c48fb94ac4a543d162f91bdd1
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 4d4723e8f793ee857c4f5204a42be8338c71d4c3
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269583"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597810"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>เพิ่มโปรไฟล์ลูกค้าด้วยข้อมูลประชากรจาก Experian (ดูตัวอย่าง)
 

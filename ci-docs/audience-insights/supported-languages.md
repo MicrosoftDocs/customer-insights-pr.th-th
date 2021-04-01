@@ -1,24 +1,24 @@
 ---
 title: ภาษาที่รองรับสำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
 description: ทำความเข้าใจและกำหนดค่าการรองรับภาษา
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 84c4011e61058729a0ed0b7123df8a9227b0f083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268203"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595495"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>ภาษาที่รองรับสำหรับความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
-ความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย Dynamics 365 Customer Insights รองรับหลายภาษา หัวข้อนี้แสดงรายการภาษาที่มีอยู่และให้การรองรับการเปลี่ยนแปลงระหว่างภาษาเหล่านั้นรวมถึงภาพรวมของเนื้อหาที่แปลแล้ว
+ข้อมูลเชิงลึกกลุ่มเป้าหมายสำหรับ Dynamics 365 Customer Insights ได้รับการแปลเป็นหลายภาษา รายการต่อไปนี้มีข้อมูลภาษาที่พร้อมใช้งานและข้อมูลเกี่ยวกับสิ่งที่แปล คุณยังสามารถเรียนรู้เพิ่มเติมเกี่ยวกับวิธีเปลี่ยนการตั้งค่าภาษาได้ด้วย 
 
 ## <a name="languages"></a>ภาษา
 
@@ -28,7 +28,7 @@ ms.locfileid: "5268203"
 | บัลแกเรีย | български |
 | คาตาลัน | català |
 | จีน (ประยุกต์) | 中文 (简体) |
-| ภาษาจีน (ดั้งเดิม) | 中文 (繁體) |
+| จีน (ตัวเต็ม) | 中文 (繁體) |
 | โครเอเชีย | hrvatski |
 | เช็ก | čeština |
 | เดนมาร์ก | dansk |
@@ -42,20 +42,20 @@ ms.locfileid: "5268203"
 | กรีก | Ελληνικά |
 | ฮินดี | हिंदी |
 | ฮังการี | magyar |
-| อินโดนีเซีย | Bahasa Indonesia |
+| อินโดนีเซีย | อินโดนีเซีย |
 | อิตาลี | italiano |
 | ญี่ปุ่น | 日本語 |
-| คาซัคสถาน | Қазақ |
+| คาซัค | қазақ тілі |
 | เกาหลี | 한국어 |
 | ลัตเวีย | latviešu |
 | ลิทัวเนีย | lietuvių |
-| มาเลเซีย | Bahasa Melayu |
-| นอร์เวย์ (บ็อกมัล) | norsk (bokmål) |
-| โปแลนด์ | Polski |
+| มลายู | Melayu |
+| นอร์เวย์ (บ็อกมัล) | norsk bokmål |
+| โปแลนด์ | polski |
 | โปรตุเกส (บราซิล) | Português |
 | โปรตุเกส (โปรตุเกส) | Português |
 | โรมาเนีย | română |
-| รัสเซีย | Pусский |
+| รัสเซีย | pусский |
 | เซอร์เบีย (ซิริลลิก) | српски |
 | เซอร์เบีย (ละติน) | srpski |
 | สโลวัก | slovenčina |

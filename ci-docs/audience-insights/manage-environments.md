@@ -5,16 +5,16 @@ ms.date: 02/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-ms.reviewer: nimagen
-author: m-hartmann
-ms.author: mhart
+ms.reviewer: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 744f0bcbf5d2700363180f44e38d6dee9bf5df63
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 1c2dfdd2889b5cb6c5285b4d7cc7f52a3d6de4d1
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270135"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598316"
 ---
 # <a name="manage-environments"></a>จัดการสภาพแวดล้อม
 

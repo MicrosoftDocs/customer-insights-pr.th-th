@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: ameetj
+ms.author: ameetj
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270227"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598362"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>ใช้โมเดลที่อิงตาม Azure Machine Learning Studio (คลาสสิก)
 
@@ -37,7 +37,7 @@ ms.locfileid: "5270227"
 
 1. ค้นหา **สร้างพื้นที่ทำงาน Machine Learning Studio** และเลือก **สร้าง**
 
-1. ป้อนรายละเอียดที่จำเป็นเพื่อ [สร้างพื้นที่ทำงาน](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace) เลือก **ระดับราคาของแผนบริการเว็บ** ตามปริมาณข้อมูลที่คุณวางแผนจะนำเข้า เพื่อประสิทธิภาพที่ดีที่สุด ให้เลือก **ตำแหน่งที่ตั้ง** ที่อยู่ใกล้คุณที่สุดในทางภูมิศาสตร์
+1. ป้อนรายละเอียดที่จำเป็นเพื่อ [สร้างพื้นที่ทำงาน](/azure/machine-learning/studio/create-workspace) เลือก **ระดับราคาของแผนบริการเว็บ** ตามปริมาณข้อมูลที่คุณวางแผนจะนำเข้า เพื่อประสิทธิภาพที่ดีที่สุด ให้เลือก **ตำแหน่งที่ตั้ง** ที่อยู่ใกล้คุณที่สุดในทางภูมิศาสตร์
 
 1. หลังจากสร้างทรัพยากรแล้วแดชบอร์ดพื้นที่ทำงาน Machine Learning Studio จะปรากฏขึ้น เลือก **เปิด Machine Learning Studio**
 
@@ -65,7 +65,7 @@ ms.locfileid: "5270227"
 
    ![ตั้งค่าบริการเว็บทำนายผล](media/predictive-webservice-control.png)
 
-1. เมื่อการทดสอบ บริการเว็บทำนายผล สำเร็จคุณสามารถปรับใช้สำหรับการตั้งเวลาอัตโนมัติได้ หากต้องการให้บริการเว็บทำงานกับ Customer Insights ให้เลือก **ปรับใช้ Web Service** > **ปรับใช้ Web Service [ใหม่] ดูตัวอย่าง** [เรียนรู้เพิ่มเติมเกี่ยวกับการปรับใช้ Web Service](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service)
+1. เมื่อการทดสอบ บริการเว็บทำนายผล สำเร็จคุณสามารถปรับใช้สำหรับการตั้งเวลาอัตโนมัติได้ หากต้องการให้บริการเว็บทำงานกับ Customer Insights ให้เลือก **ปรับใช้ Web Service** > **ปรับใช้ Web Service [ใหม่] ดูตัวอย่าง** [เรียนรู้เพิ่มเติมเกี่ยวกับการปรับใช้ Web Service](/azure/machine-learning/studio/deploy-a-machine-learning-web-service)
 
    ![ปรับใช้บริการเว็บทำนายผล](media/predictive-webservice-deploy.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "5270227"
 
 ![โมเดลการเลิกใช้บริการใน Azure Machine Learning Studio](media/azure-machine-learning-model.png)
 
-เรายังใช้เทคนิคที่เรียกว่า **ความสำคัญของคุณสมบัติการเรียงลำดับ** ซึ่งเป็นสิ่งสำคัญของการเพิ่มประสิทธิภาพโมเดล โมเดลในตัวแทบไม่มีข้อมูลเชิงลึกเกี่ยวกับผลกระทบของคุณลักษณะเฉพาะใด ๆ ในการคาดคะเนขั้นสุดท้าย เครื่องคำนวณความสำคัญของคุณลักษณะใช้อัลกอริทึมที่กำหนดเองเพื่อคำนวณอิทธิพลของคุณลักษณะแต่ละอย่างที่มีต่อผลลัพธ์ของรูปแบบเฉพาะ ความสำคัญของคุณลักษณะถูกทำให้เป็นมาตรฐานระหว่าง +1 ถึง -1 อิทธิพลเชิงลบหมายถึงคุณลักษณะที่เกี่ยวข้องมีอิทธิพลในเชิงลบต่อผลลัพธ์และควรลบออกจากโมเดล อิทธิพลเชิงบวกบ่งชี้ว่าคุณลักษณะนี้มีส่วนอย่างมากต่อการคาดคะเน ค่าเหล่านี้ไม่ใช่ค่าสัมประสิทธิ์สหสัมพันธ์เนื่องจากเป็นเมตริกที่แตกต่างกัน สำหรับข้อมูลเพิ่มเติม โปรดดู [ความสำคัญของคุณสมบัติการเรียงลำดับ](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/permutation-feature-importance)
+เรายังใช้เทคนิคที่เรียกว่า **ความสำคัญของคุณสมบัติการเรียงลำดับ** ซึ่งเป็นสิ่งสำคัญของการเพิ่มประสิทธิภาพโมเดล โมเดลในตัวแทบไม่มีข้อมูลเชิงลึกเกี่ยวกับผลกระทบของคุณลักษณะเฉพาะใด ๆ ในการคาดคะเนขั้นสุดท้าย เครื่องคำนวณความสำคัญของคุณลักษณะใช้อัลกอริทึมที่กำหนดเองเพื่อคำนวณอิทธิพลของคุณลักษณะแต่ละอย่างที่มีต่อผลลัพธ์ของรูปแบบเฉพาะ ความสำคัญของคุณลักษณะถูกทำให้เป็นมาตรฐานระหว่าง +1 ถึง -1 อิทธิพลเชิงลบหมายถึงคุณลักษณะที่เกี่ยวข้องมีอิทธิพลในเชิงลบต่อผลลัพธ์และควรลบออกจากโมเดล อิทธิพลเชิงบวกบ่งชี้ว่าคุณลักษณะนี้มีส่วนอย่างมากต่อการคาดคะเน ค่าเหล่านี้ไม่ใช่ค่าสัมประสิทธิ์สหสัมพันธ์เนื่องจากเป็นเมตริกที่แตกต่างกัน สำหรับข้อมูลเพิ่มเติม โปรดดู [ความสำคัญของคุณสมบัติการเรียงลำดับ](/azure/machine-learning/studio-module-reference/permutation-feature-importance)
 
 [การทดลองการเลิกใช้บริการมีอยู่ใน Azure AI Gallery](https://gallery.azure.ai/Experiment/Hotel-Churn-Predictive-Exp) ทั้งหมด
 
@@ -168,7 +168,7 @@ ms.locfileid: "5270227"
 
 ## <a name="integrate-custom-models"></a>รวมโมเดลที่กำหนดเอง
 
-หากต้องการใช้การคาดคะเนเหล่านี้ใน Customer Insights คุณต้อง **ส่งออก** การคาดคะเนพร้อมกับรหัสลูกค้า [ส่งออกไปยังที่เก็บข้อมูล Azure Blob เดียวกัน](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs) ที่คุณส่งออกข้อมูลต้นทาง สามารถกำหนดเวลาให้บริการเว็บทำนายผลเป็นประจำและอัปเดตคะแนนได้
+หากต้องการใช้การคาดคะเนเหล่านี้ใน Customer Insights คุณต้อง **ส่งออก** การคาดคะเนพร้อมกับรหัสลูกค้า [ส่งออกไปยังที่เก็บข้อมูล Azure Blob เดียวกัน](/azure/storage/common/storage-import-export-data-from-blobs) ที่คุณส่งออกข้อมูลต้นทาง สามารถกำหนดเวลาให้บริการเว็บทำนายผลเป็นประจำและอัปเดตคะแนนได้
 
 ข้อมูลที่สร้างโดยโมเดลที่กำหนดเองสามารถใช้เพื่อเพิ่มข้อมูลลูกค้าของคุณ สำหรับข้อมูลเพิ่มเติม โปรดดู [โมเดล Machine Learning ที่กำหนดเอง](custom-models.md)
 

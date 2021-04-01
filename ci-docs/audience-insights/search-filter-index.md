@@ -2,19 +2,19 @@
 title: ค้นหาและกรองโปรไฟล์ลูกค้า
 description: ค้นหาข้อมูลเกี่ยวกับโปรไฟล์ลูกค้าแบบรวมและตัวกรองสำหรับแอตทริบิวต์ที่ระบุได้อย่างรวดเร็ว
 ms.date: 01/19/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: d675738c43cbdb5f9b478d53d6124db38ba3004d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270089"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597166"
 ---
 # <a name="customer-profiles-search--filter-index"></a>โปรไฟล์ลูกค้า: ดัชนีการค้นหาและตัวกรอง
 

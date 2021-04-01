@@ -2,19 +2,19 @@
 title: ส่งออกข้อมูล Customer Insights ไปยังที่เก็บข้อมูล Azure Blob
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับที่เก็บข้อมูล Azure Blob
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269215"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596200"
 ---
 # <a name="connector-for-azure-blob-storage-preview"></a>ตัวเชื่อมต่อสำหรับที่เก็บข้อมูล Azure Blob (แสดงตัวอย่าง)
 
@@ -27,8 +27,8 @@ ms.locfileid: "5269215"
 1. ภายใต้ **ที่เก็บข้อมูล Azure Blob** เลือก **ติดตั้ง**
 
 1. ป้อน **ชื่อลูกค้าองค์กร** **รหัสลูกค้าองค์กร** และ **คอนเทนเนอร์** สำหรับลูกค้าองค์กรที่เก็บข้อมูล Azure Blob ของคุณ
-    - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชีที่เก็บข้อมูล Azure Blob และคีย์บัญชี ให้ดูที่ [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage)
-    - หากต้องการเรียนรู้วิธีสร้างคอนเทนเนอร์ โปรดดู [สร้างคอนเทนเนอร์](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
+    - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชีที่เก็บข้อมูล Azure Blob และคีย์บัญชี ให้ดูที่ [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)
+    - หากต้องการเรียนรู้วิธีสร้างคอนเทนเนอร์ โปรดดู [สร้างคอนเทนเนอร์](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้ปลายทางของคุณในฟิลด์ **ชื่อที่แสดง**
 

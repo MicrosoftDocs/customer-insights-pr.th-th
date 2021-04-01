@@ -5,16 +5,16 @@ ms.date: 12/17/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: mukeshpo
+author: mukeshpo
+ms.author: mukeshpo
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ba1cf6c7e85b8fe90baf34018f1309095573adf1
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 14ebff30d3ec7fc52dca6f86136309a3f454fa27
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267699"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597488"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>รวมข้อมูลเว็บจากข้อมูลเชิงลึกเกี่ยวกับการมีส่วนร่วมกับข้อมูลเชิงลึกเกี่ยวกับผู้ชม
 

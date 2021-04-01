@@ -5,16 +5,16 @@ ms.date: 06/25/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b9b2e7fa862b595c6a364a7208e42295b4f9df83
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268893"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596798"
 ---
 # <a name="similar-customers-preview"></a>ลูกค้าที่คล้ายกัน (แสดงตัวอย่าง)
 

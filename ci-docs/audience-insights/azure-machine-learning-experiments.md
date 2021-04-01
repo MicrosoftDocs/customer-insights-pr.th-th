@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267929"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597442"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>ใช้โมเดลของ Azure Machine Learning
 
@@ -29,9 +29,9 @@ ms.locfileid: "5267929"
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>ตั้งค่าพื้นที่ทำงานของ Azure Machine Learning
 
-1. ดู [สร้างพื้นที่ทำงานของ Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace) สำหรับตัวเลือกต่างๆ ในการสร้างพื้นที่ทำงาน เพื่อประสิทธิภาพที่ดีที่สุด ให้สร้างพื้นที่ทำงานในภูมิภาค Azure ที่ตั้งอยู่ใกล้เคียงกับสภาพแวดล้อม Customer Insights ของคุณมากที่สุด
+1. ดู [สร้างพื้นที่ทำงานของ Azure Machine Learning](/azure/machine-learning/concept-workspace#-create-a-workspace) สำหรับตัวเลือกต่างๆ ในการสร้างพื้นที่ทำงาน เพื่อประสิทธิภาพที่ดีที่สุด ให้สร้างพื้นที่ทำงานในภูมิภาค Azure ที่ตั้งอยู่ใกล้เคียงกับสภาพแวดล้อม Customer Insights ของคุณมากที่สุด
 
-1. เข้าถึงพื้นที่ทำงานของคุณผ่าน [Azure Machine Learning Studio](https://ml.azure.com/) [วิธีการทำงาน](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) กับพื้นที่ทำงานของคุณมีหลายวิธี
+1. เข้าถึงพื้นที่ทำงานของคุณผ่าน [Azure Machine Learning Studio](https://ml.azure.com/) [วิธีการทำงาน](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) กับพื้นที่ทำงานของคุณมีหลายวิธี
 
 ## <a name="work-with-azure-machine-learning-designer"></a>ทำงานกับตัวออกแบบ Azure Machine Learning
 
@@ -39,13 +39,13 @@ ms.locfileid: "5267929"
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>การทำงานกับ Azure Machine Learning SDK
 
-นักวิทยาศาสตร์ข้อมูลและนักพัฒนา AI ใช้ [Azure Machine Learning SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) เพื่อสร้างเวิร์กโฟลว์การเรียนรู้เกี่ยวกับเครื่อง ขณะนี้ โมเดลที่ฝึกโดยใช้ SDK ไม่สามารถรวมเข้ากับ Customer Insights ได้โดยตรง ไปป์ไลน์การอนุมานแบบชุดงานที่ใช้โมเดลนั้นจำเป็นสำหรับการผสานรวมกับ Customer Insights
+นักวิทยาศาสตร์ข้อมูลและนักพัฒนา AI ใช้ [Azure Machine Learning SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) เพื่อสร้างเวิร์กโฟลว์การเรียนรู้เกี่ยวกับเครื่อง ขณะนี้ โมเดลที่ฝึกโดยใช้ SDK ไม่สามารถรวมเข้ากับ Customer Insights ได้โดยตรง ไปป์ไลน์การอนุมานแบบชุดงานที่ใช้โมเดลนั้นจำเป็นสำหรับการผสานรวมกับ Customer Insights
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>ข้อกำหนดไปป์ไลน์แบบชุดงานที่จะรวมเข้ากับ Customer Insights
 
 ### <a name="dataset-configuration"></a>การกำหนดค่าชุดข้อมูล
 
-คุณต้องสร้างชุดข้อมูลเพื่อใช้ข้อมูลเอนทิตีจาก Customer Insights กับไปป์ไลน์การอนุมานแบบชุดงานของคุณ ต้องลงทะเบียนชุดข้อมูลเหล่านี้ในพื้นที่ทำงาน ขณะนี้เรารองรับ [ชุดข้อมูลแบบตาราง](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) ในรูปแบบ .csv เท่านั้น ชุดข้อมูลที่สอดคล้องกับข้อมูลเอนทิตีจำเป็นต้องกำหนดพารามิเตอร์เป็นพารามิเตอร์ไปป์ไลน์
+คุณต้องสร้างชุดข้อมูลเพื่อใช้ข้อมูลเอนทิตีจาก Customer Insights กับไปป์ไลน์การอนุมานแบบชุดงานของคุณ ต้องลงทะเบียนชุดข้อมูลเหล่านี้ในพื้นที่ทำงาน ขณะนี้เรารองรับ [ชุดข้อมูลแบบตาราง](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) ในรูปแบบ .csv เท่านั้น ชุดข้อมูลที่สอดคล้องกับข้อมูลเอนทิตีจำเป็นต้องกำหนดพารามิเตอร์เป็นพารามิเตอร์ไปป์ไลน์
    
 * ชุดข้อมูลพารามิเตอร์ในตัวออกแบบ
    
@@ -76,7 +76,7 @@ ms.locfileid: "5267929"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>นำเข้าข้อมูลไปป์ไลน์ไปยัง Customer Insights
 
-* ผู้ออกแบบมี [โมดูลส่งออกข้อมูล](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data) ที่อนุญาตให้ส่งออกผลลัพธ์ของไปป์ไลน์ไปยังที่เก็บข้อมูล Azure ปัจจุบัน โมดูลดังกล่าวต้องใช้ที่เก็บข้อมูลชนิด **ที่เก็บข้อมูล Azure Blob** และกำหนดพารามิเตอร์ **ที่เก็บข้อมูล** และ **พาธ** แบบสัมพันธ์ Customer Insights จะแทนที่พารามิเตอร์ทั้งคู่นี้ในระหว่างการดำเนินการไปป์ไลน์กับที่เก็บข้อมูลและพาธที่สามารถเข้าถึงไปยังผลิตภัณฑ์
+* ผู้ออกแบบมี [โมดูลส่งออกข้อมูล](/azure/machine-learning/algorithm-module-reference/export-data) ที่อนุญาตให้ส่งออกผลลัพธ์ของไปป์ไลน์ไปยังที่เก็บข้อมูล Azure ปัจจุบัน โมดูลดังกล่าวต้องใช้ที่เก็บข้อมูลชนิด **ที่เก็บข้อมูล Azure Blob** และกำหนดพารามิเตอร์ **ที่เก็บข้อมูล** และ **พาธ** แบบสัมพันธ์ Customer Insights จะแทนที่พารามิเตอร์ทั้งคู่นี้ในระหว่างการดำเนินการไปป์ไลน์กับที่เก็บข้อมูลและพาธที่สามารถเข้าถึงไปยังผลิตภัณฑ์
    > [!div class="mx-imgBorder"]
    > ![การกำหนดค่าโมดูลส่งออกข้อมูล](media/intelligence-designer-importdata.png "การกำหนดค่าโมดูลส่งออกข้อมูล")
    

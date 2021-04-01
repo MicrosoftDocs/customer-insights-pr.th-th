@@ -2,19 +2,19 @@
 title: ดูโปรไฟล์ลูกค้า
 description: รับมุมมองรวมของข้อมูลลูกค้าแบบรวมของคุณ
 ms.date: 12/01/2020
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: a5d928ae518f3cb1afbf8e2b197e51b27665f6e0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: d6a9e7872a488b6d68afce35b547f93cc4a7c652
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269767"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596890"
 ---
 # <a name="customer-profiles"></a>โปรไฟล์ลูกค้า
 

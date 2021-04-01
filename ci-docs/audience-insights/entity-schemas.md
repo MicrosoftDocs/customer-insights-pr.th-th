@@ -2,25 +2,25 @@
 title: Schema เอนทิตี Customer Insights ใน Common Data Model
 description: ทำงานกับเอนทิตีใน Common Data Model
 ms.date: 04/17/2020
-ms.reviewer: mukeshpo
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269307"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596384"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Schema เอนทิตีใน Common Data Model
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-[Common Data Model](https://docs.microsoft.com/common-data-model/) เป็นข้อมูลจำเพาะสำหรับประกาศ และคำนิยามของเอนทิตีมาตรฐาน ที่แสดงถึงแนวคิดและกิจกรรมที่ใช้กันทั่วไปในธุรกิจและโปรแกรมประยุกต์ประสิทธิภาพ โมเดลนี้ถูกขยายไปยังข้อมูลเชิงสังเกตการณ์และเชิงวิเคราะห์ด้วย Common Data Model ให้เอนทิตีธุรกิจที่ กำหนดไว้อย่างดี มีส่วนจำเพาะ และสามารถขยายได้ เช่น บัญชี หน่ายทางธุรกิจ กรณี ที่ติดต่อ ลูกค้าเป้าหมาย โอกาส และผลิตภัณฑ์ รวมถึงการปฏิสัมพันธ์ผู้ขาย พนักงาน และลูกค้า เช่น กิจกรรมและข้อตกลงระดับบริการ ทุกคนสามารถสร้างและขยายคำจำกัดความ Common Data Model เพื่อบันทึกแนวคิดเฉพาะทางธุรกิจเพิ่มเติม
+[Common Data Model](/common-data-model/) เป็นข้อมูลจำเพาะสำหรับประกาศ และคำนิยามของเอนทิตีมาตรฐาน ที่แสดงถึงแนวคิดและกิจกรรมที่ใช้กันทั่วไปในธุรกิจและโปรแกรมประยุกต์ประสิทธิภาพ โมเดลนี้ถูกขยายไปยังข้อมูลเชิงสังเกตการณ์และเชิงวิเคราะห์ด้วย Common Data Model ให้เอนทิตีธุรกิจที่ กำหนดไว้อย่างดี มีส่วนจำเพาะ และสามารถขยายได้ เช่น บัญชี หน่ายทางธุรกิจ กรณี ที่ติดต่อ ลูกค้าเป้าหมาย โอกาส และผลิตภัณฑ์ รวมถึงการปฏิสัมพันธ์ผู้ขาย พนักงาน และลูกค้า เช่น กิจกรรมและข้อตกลงระดับบริการ ทุกคนสามารถสร้างและขยายคำจำกัดความ Common Data Model เพื่อบันทึกแนวคิดเฉพาะทางธุรกิจเพิ่มเติม
 
 โมเดลข้อมูลที่ใช้ร่วมกันนี้อนุญาตให้แอปพลิเคชันและผู้รวบรวมข้อมูลสามารถทำงานร่วมกันได้ง่ายขึ้น โดยการให้คำจำกัดความของข้อมูลแบบรวม Common Data Model มีระบบข้อมูลเมตาที่อุดมไปด้วยเอนทิตีมาตรฐาน ความสัมพันธ์ ลำดับชั้น ลักษณะ และอื่น ๆ มีที่มาจากแอป Dynamics 365 และเป็นแหล่งที่มาแบบเปิดบน GitHub ที่มีเอนทิตีมาตรฐานมากกว่า 260 รายการ ระบบขนาดใหญ่ของคู่ค้าภายในและภายนอกสนับสนุนแนวคิดเฉพาะอุตสาหกรรมให้กับ Common Data Model
 
@@ -32,13 +32,13 @@ ms.locfileid: "5269307"
 
 | เอนทิตี | คำอธิบาย |
 |---------|---------|
-|[กิจกรรมของลูกค้า](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customeractivity) | กิจกรรมที่ดำเนินการโดยผู้ใช้ที่มีมูลค่าเชิงธุรกิจที่สังเกตได้ |
-|[โปรไฟล์ลูกค้า](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) | บุคคลหรือองค์กรที่ดำเนินการ หรือมีศักยภาพที่จะมีส่วนร่วมในกิจกรรมทางธุรกิจ |
-|[ข้อกำหนดการวัด](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/measuredefinition) | คำจำกัดความของ KPI ที่แบ่งพาร์ติชันด้วยมิติที่เป็นศูนย์หรือมากกว่า (เช่น ผู้ใช้งานรายเดือน ยอดการใช้จ่ายโดยลูกค้า ค่าใช้จ่ายในการจัดหาลูกค้าเฉลี่ย) |
-|[เซ็กเมนต์](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | กำหนดกลุ่มสมาชิกที่มีลักษณะทั่วไป |
-|[สมาชิกเซ็กเมนต์](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | สมาชิกที่เข้าร่วมในเซ็กเมนต์ที่กำหนด |
+|[กิจกรรมของลูกค้า](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customeractivity) | กิจกรรมที่ดำเนินการโดยผู้ใช้ที่มีมูลค่าเชิงธุรกิจที่สังเกตได้ |
+|[โปรไฟล์ลูกค้า](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) | บุคคลหรือองค์กรที่ดำเนินการ หรือมีศักยภาพที่จะมีส่วนร่วมในกิจกรรมทางธุรกิจ |
+|[ข้อกำหนดการวัด](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/measuredefinition) | คำจำกัดความของ KPI ที่แบ่งพาร์ติชันด้วยมิติที่เป็นศูนย์หรือมากกว่า (เช่น ผู้ใช้งานรายเดือน ยอดการใช้จ่ายโดยลูกค้า ค่าใช้จ่ายในการจัดหาลูกค้าเฉลี่ย) |
+|[เซ็กเมนต์](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | กำหนดกลุ่มสมาชิกที่มีลักษณะทั่วไป |
+|[สมาชิกเซ็กเมนต์](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | สมาชิกที่เข้าร่วมในเซ็กเมนต์ที่กำหนด |
 
-สำหรับข้อมูลเพิ่มเติม โปรดดูเอกสารประกอบเกี่ยวกับ [Schema เอนทิตีของ Customer Insights ใน Common Data Model](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview)
+สำหรับข้อมูลเพิ่มเติม โปรดดูเอกสารประกอบเกี่ยวกับ [Schema เอนทิตีของ Customer Insights ใน Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview)
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>ดูเอนทิตีโดยใช้ Common Data Model Entity Navigator
 

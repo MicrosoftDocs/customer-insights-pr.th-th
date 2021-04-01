@@ -5,16 +5,16 @@ ms.date: 06/10/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d731d21462b5a31aba0653f87e299d98373bbf49
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 90ebcaab896c628b04e751ad9857e924749895e7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270043"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595357"
 ---
 # <a name="segment-insights-preview"></a>ข้อมูลเชิงลึกของเซ็กเมนต์ (ตัวอย่าง)
 

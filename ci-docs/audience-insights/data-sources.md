@@ -5,16 +5,16 @@ ms.date: 11/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 68aa1b56fb634da80a0c64db72f778d57507104d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269721"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595970"
 ---
 # <a name="data-sources-overview"></a>ภาพรวมของแหล่งข้อมูล
 

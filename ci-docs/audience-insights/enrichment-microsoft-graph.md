@@ -2,19 +2,19 @@
 title: เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วย Microsoft Graph
 description: ใช้ข้อมูลที่เป็นกรรมสิทธิ์จาก Microsoft Graph เพื่อเพิ่มข้อมูลลูกค้าของคุณด้วยแบรนด์และความเกี่ยวข้องของความสนใจ
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2c95369c778f592bc1460799aca0fa8cff813d68
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: aa46dac4f9c0d27881371877b14a92a6725710da
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269353"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596476"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>เพิ่มข้อมูลโปรไฟล์ลูกค้าที่มีแบรนด์และความเกี่ยวข้องของความสนใจ (ดูตัวอย่าง)
 
@@ -33,7 +33,7 @@ ms.locfileid: "5269353"
 
 เราใช้ข้อมูลการค้นหาออนไลน์จาก Microsoft Graph เพื่อค้นหาความนิยมของแบรนด์และความสนใจในกลุ่มประชากรต่างๆ (กำหนดตามอายุ เพศ หรือสถานที่) ปริมาณการค้นหาออนไลน์สำหรับแบรนด์หรือความสนใจจะกำหนดว่าเซ็กเมนต์ข้อมูลประชากรสัมพันธ์กันมากน้อยเพียงใดเมื่อเปรียบเทียบกับเซ็กเมนต์อื่นๆ ที่มีต่อแบรนด์หรือความสนใจนั้น
 
-[เรียนรู้เพิ่มเติมเกี่ยวกับ Microsoft Graph](https://docs.microsoft.com/graph/overview)
+[เรียนรู้เพิ่มเติมเกี่ยวกับ Microsoft Graph](/graph/overview)
 
 ## <a name="affinity-level-and-score"></a>ระดับและคะแนนความเกี่ยวข้อง
 

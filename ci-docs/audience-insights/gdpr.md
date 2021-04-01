@@ -2,19 +2,19 @@
 title: คำขอสิทธิ์เรื่องข้อมูล (DSR) ภายใต้ GDPR | Microsoft Docs
 description: ตอบสนองต่อคำขอของเจ้าของข้อมูลสำหรับความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย Dynamics 365 Customer Insights
 ms.date: 05/14/2020
-ms.reviewer: wimohabb
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: ed9aa09fba938606611c6ce86c2b250c5e19c606
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268709"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597534"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>คำขอสิทธิ์เรื่องข้อมูล (DSR) ภายใต้ GDPR
 

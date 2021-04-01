@@ -2,19 +2,19 @@
 title: การรวมข้อมูล
 description: เรียนรู้วิธีการรวมข้อมูลที่นำเข้า
 ms.date: 04/16/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 44f97696ec91dc488dd6a7528e186abb99c8288b
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 73d8006c670268420f8cd6a2b37cb214ba1bbd6c
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269675"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597902"
 ---
 # <a name="data-unification-overview"></a>ภาพรวมการรวมข้อมูล
 

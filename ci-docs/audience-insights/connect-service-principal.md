@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267745"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596522"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>เชื่อมต่อกับบัญชี Azure Data Lake Storage รุ่น2 ที่มีบริการหลัก Azure สำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
@@ -23,7 +23,7 @@ ms.locfileid: "5267745"
 คุณสามารถใช้บริการหลักเพื่อ [เพิ่มหรือแก้ไขโฟลเดอร์ Common Data Model เป็นแหล่งข้อมูล](connect-common-data-model.md) ได้อย่างปลอดภัยหรือ [สร้างใหม่หรือปรับปรุงสภาพแวดล้อมที่มีอยู่](manage-environments.md#create-an-environment-in-an-existing-organization)
 
 > [!IMPORTANT]
-> - บัญชีที่เก็บข้อมูล Azure Data Lake Gen2 ที่ตั้งใจจะใช้บริการหลักต้อง [เปิดใช้งาน Hierarchical Name Space (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace)
+> - บัญชีที่เก็บข้อมูล Azure Data Lake Gen2 ที่ตั้งใจจะใช้บริการหลักต้อง [เปิดใช้งาน Hierarchical Name Space (HNS)](/azure/storage/blobs/data-lake-storage-namespace)
 > - คุณต้องมีสิทธิ์ระดับผู้ดูแลระบบสำหรับการสมัครใช้งาน Azure ของคุณเพื่อสร้างบริการหลัก
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>สร้างบริการหลักของ Azure สำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
@@ -48,7 +48,7 @@ ms.locfileid: "5267745"
 
 ### <a name="create-a-new-service-principal"></a>สร้างบริการหลักใหม่
 
-1. ติดตั้งเวอร์ชันล่าสุดของ **Azure Active Directory PowerShell สำหรับกราฟ** สำหรับข้อมูลเพิ่มเติม โปรดดู [ติดตั้ง Azure Active Directory PowerShell สำหรับกราฟ](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)
+1. ติดตั้งเวอร์ชันล่าสุดของ **Azure Active Directory PowerShell สำหรับกราฟ** สำหรับข้อมูลเพิ่มเติม โปรดดู [ติดตั้ง Azure Active Directory PowerShell สำหรับกราฟ](/powershell/azure/active-directory/install-adv2)
    - บนพีซีของคุณ ให้เลือกแป้น Windows บนแป้นพิมพ์ของคุณและค้นหา **Windows PowerShell** และ **เรียกใช้ในฐานะผู้ดูแลระบบ**
    
    - ในหน้าต่าง PowerShell ที่เปิดขึ้น ให้ป้อน `Install-Module AzureAD`

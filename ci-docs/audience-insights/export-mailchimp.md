@@ -2,19 +2,19 @@
 title: ส่งออกข้อมูล Customer Insights ไปยัง Mailchimp
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับ Mailchimp
 ms.date: 10/26/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2b465b32fa956e3f45a23f471dc3a3183def16ef
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 9f86616731c3cc3d26370727103ea9c5d4288c8d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267196"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598224"
 ---
 # <a name="connector-for-mailchimp-preview"></a>ตัวเชื่อมต่อสำหรับ Mailchimp (พรีวิว)
 
