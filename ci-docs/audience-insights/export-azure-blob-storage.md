@@ -2,52 +2,52 @@
 title: ส่งออกข้อมูล Customer Insights ไปยังที่เก็บข้อมูล Azure Blob
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับที่เก็บข้อมูล Azure Blob
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269215"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596200"
 ---
-# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="f9835-103">ตัวเชื่อมต่อสำหรับที่เก็บข้อมูล Azure Blob (แสดงตัวอย่าง)</span><span class="sxs-lookup"><span data-stu-id="f9835-103">Connector for Azure Blob storage (preview)</span></span>
+# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="c6620-103">ตัวเชื่อมต่อสำหรับที่เก็บข้อมูล Azure Blob (แสดงตัวอย่าง)</span><span class="sxs-lookup"><span data-stu-id="c6620-103">Connector for Azure Blob storage (preview)</span></span>
 
-<span data-ttu-id="f9835-104">จัดเก็บข้อมูล Customer Insights ในที่เก็บข้อมูล Azure Blob หรือใช้ในการย้ายข้อมูลไปยังแอปพลิเคชันอื่น</span><span class="sxs-lookup"><span data-stu-id="f9835-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
+<span data-ttu-id="c6620-104">จัดเก็บข้อมูล Customer Insights ในที่เก็บข้อมูล Azure Blob หรือใช้ในการย้ายข้อมูลไปยังแอปพลิเคชันอื่น</span><span class="sxs-lookup"><span data-stu-id="c6620-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
 
-## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="f9835-105">กำหนดค่าตัวเชื่อมต่อสำหรับที่เก็บข้อมูล Azure Blob</span><span class="sxs-lookup"><span data-stu-id="f9835-105">Configure the connector for Azure Blob storage</span></span>
+## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="c6620-105">กำหนดค่าตัวเชื่อมต่อสำหรับที่เก็บข้อมูล Azure Blob</span><span class="sxs-lookup"><span data-stu-id="c6620-105">Configure the connector for Azure Blob storage</span></span>
 
-1. <span data-ttu-id="f9835-106">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**</span><span class="sxs-lookup"><span data-stu-id="f9835-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="c6620-106">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**</span><span class="sxs-lookup"><span data-stu-id="c6620-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
 
-1. <span data-ttu-id="f9835-107">ภายใต้ **ที่เก็บข้อมูล Azure Blob** เลือก **ติดตั้ง**</span><span class="sxs-lookup"><span data-stu-id="f9835-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
+1. <span data-ttu-id="c6620-107">ภายใต้ **ที่เก็บข้อมูล Azure Blob** เลือก **ติดตั้ง**</span><span class="sxs-lookup"><span data-stu-id="c6620-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
 
-1. <span data-ttu-id="f9835-108">ป้อน **ชื่อลูกค้าองค์กร** **รหัสลูกค้าองค์กร** และ **คอนเทนเนอร์** สำหรับลูกค้าองค์กรที่เก็บข้อมูล Azure Blob ของคุณ</span><span class="sxs-lookup"><span data-stu-id="f9835-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
-    - <span data-ttu-id="f9835-109">หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชีที่เก็บข้อมูล Azure Blob และคีย์บัญชี ให้ดูที่ [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage)</span><span class="sxs-lookup"><span data-stu-id="f9835-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).</span></span>
-    - <span data-ttu-id="f9835-110">หากต้องการเรียนรู้วิธีสร้างคอนเทนเนอร์ โปรดดู [สร้างคอนเทนเนอร์](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)</span><span class="sxs-lookup"><span data-stu-id="f9835-110">To learn how to create a container, see [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
+1. <span data-ttu-id="c6620-108">ป้อน **ชื่อลูกค้าองค์กร** **รหัสลูกค้าองค์กร** และ **คอนเทนเนอร์** สำหรับลูกค้าองค์กรที่เก็บข้อมูล Azure Blob ของคุณ</span><span class="sxs-lookup"><span data-stu-id="c6620-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
+    - <span data-ttu-id="c6620-109">หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชีที่เก็บข้อมูล Azure Blob และคีย์บัญชี ให้ดูที่ [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)</span><span class="sxs-lookup"><span data-stu-id="c6620-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).</span></span>
+    - <span data-ttu-id="c6620-110">หากต้องการเรียนรู้วิธีสร้างคอนเทนเนอร์ โปรดดู [สร้างคอนเทนเนอร์](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)</span><span class="sxs-lookup"><span data-stu-id="c6620-110">To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
 
-1. <span data-ttu-id="f9835-111">ตั้งชื่อที่เป็นที่รู้จักให้ปลายทางของคุณในฟิลด์ **ชื่อที่แสดง**</span><span class="sxs-lookup"><span data-stu-id="f9835-111">Give your destination a recognizable name in the **Display name** field.</span></span>
+1. <span data-ttu-id="c6620-111">ตั้งชื่อที่เป็นที่รู้จักให้ปลายทางของคุณในฟิลด์ **ชื่อที่แสดง**</span><span class="sxs-lookup"><span data-stu-id="c6620-111">Give your destination a recognizable name in the **Display name** field.</span></span>
 
-1. <span data-ttu-id="f9835-112">เลือก **ถัดไป**</span><span class="sxs-lookup"><span data-stu-id="f9835-112">Select **Next**.</span></span>
+1. <span data-ttu-id="c6620-112">เลือก **ถัดไป**</span><span class="sxs-lookup"><span data-stu-id="c6620-112">Select **Next**.</span></span>
 
-1. <span data-ttu-id="f9835-113">เลือกกล่องถัดจากแต่ละเอนทิตีที่คุณต้องการส่งออกไปยังปลายทางนี้</span><span class="sxs-lookup"><span data-stu-id="f9835-113">Select the box next to each of the entities you want to export to this destination.</span></span>
+1. <span data-ttu-id="c6620-113">เลือกกล่องถัดจากแต่ละเอนทิตีที่คุณต้องการส่งออกไปยังปลายทางนี้</span><span class="sxs-lookup"><span data-stu-id="c6620-113">Select the box next to each of the entities you want to export to this destination.</span></span>
 
-1. <span data-ttu-id="f9835-114">เลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="f9835-114">Select **Save**.</span></span>
+1. <span data-ttu-id="c6620-114">เลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="c6620-114">Select **Save**.</span></span>
 
-<span data-ttu-id="f9835-115">ข้อมูลที่ส่งออกจะถูกเก็บไว้ในที่เก็บข้อมูล Azure Blob ที่คุณกำหนดค่า</span><span class="sxs-lookup"><span data-stu-id="f9835-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="f9835-116">เส้นทางโฟลเดอร์ต่อไปนี้จะถูกสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ</span><span class="sxs-lookup"><span data-stu-id="f9835-116">The following folder paths are automatically created in your container:</span></span>
+<span data-ttu-id="c6620-115">ข้อมูลที่ส่งออกจะถูกเก็บไว้ในที่เก็บข้อมูล Azure Blob ที่คุณกำหนดค่า</span><span class="sxs-lookup"><span data-stu-id="c6620-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="c6620-116">เส้นทางโฟลเดอร์ต่อไปนี้จะถูกสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ</span><span class="sxs-lookup"><span data-stu-id="c6620-116">The following folder paths are automatically created in your container:</span></span>
 
-- <span data-ttu-id="f9835-117">สำหรับเอนทิตีต้นทางและเอนทิตีที่สร้างโดยระบบ: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="f9835-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
-  - <span data-ttu-id="f9835-118">ตัวอย่าง: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="f9835-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
-- <span data-ttu-id="f9835-119">model.json สำหรับเอนทิตีที่ส่งออกจะอยู่ที่ระดับ %ExportDestinationName%</span><span class="sxs-lookup"><span data-stu-id="f9835-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
-  - <span data-ttu-id="f9835-120">ตัวอย่าง: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="f9835-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
+- <span data-ttu-id="c6620-117">สำหรับเอนทิตีต้นทางและเอนทิตีที่สร้างโดยระบบ: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="c6620-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
+  - <span data-ttu-id="c6620-118">ตัวอย่าง: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="c6620-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
+- <span data-ttu-id="c6620-119">model.json สำหรับเอนทิตีที่ส่งออกจะอยู่ที่ระดับ %ExportDestinationName%</span><span class="sxs-lookup"><span data-stu-id="c6620-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
+  - <span data-ttu-id="c6620-120">ตัวอย่าง: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="c6620-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
 
-## <a name="export-the-data"></a><span data-ttu-id="f9835-121">ส่งออกข้อมูล</span><span class="sxs-lookup"><span data-stu-id="f9835-121">Export the data</span></span>
+## <a name="export-the-data"></a><span data-ttu-id="c6620-121">ส่งออกข้อมูล</span><span class="sxs-lookup"><span data-stu-id="c6620-121">Export the data</span></span>
 
-<span data-ttu-id="f9835-122">คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#export-data-on-demand)</span><span class="sxs-lookup"><span data-stu-id="f9835-122">You can [export data on demand](export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="f9835-123">นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง</span><span class="sxs-lookup"><span data-stu-id="f9835-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+<span data-ttu-id="c6620-122">คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#export-data-on-demand)</span><span class="sxs-lookup"><span data-stu-id="c6620-122">You can [export data on demand](export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="c6620-123">นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง</span><span class="sxs-lookup"><span data-stu-id="c6620-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

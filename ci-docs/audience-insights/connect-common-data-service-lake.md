@@ -5,69 +5,69 @@ ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.reviewer: adkuppa
-ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.reviewer: mhart
+ms.openlocfilehash: b1cfab40c1edb32f4a7f359e1195cfb1e879a0d5
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267837"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596982"
 ---
-# <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a><span data-ttu-id="a76d4-103">เชื่อมต่อกับข้อมูลใน Data Lake ที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="a76d4-103">Connect to data in a Common Data Service managed data lake</span></span>
+# <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a><span data-ttu-id="883f2-103">เชื่อมต่อกับข้อมูลใน Data Lake ที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="883f2-103">Connect to data in a Common Data Service managed data lake</span></span>
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="a76d4-104">บทความนี้ให้ข้อมูลเกี่ยวกับวิธีที่ลูกค้า Dynamics 365 ที่มีอยู่ สามารถเชื่อมต่อกับเอนทิตีเชิงวิเคราะห์ของตนได้อย่างรวดเร็วในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="a76d4-104">This article provides information on how existing Dynamics 365 customers can quickly connect to their analytical entities in the Common Data Service managed lake.</span></span> <span data-ttu-id="a76d4-105">คุณต้องเป็นผู้ดูแลระบบในองค์กร Common Data Service เพื่อดำเนินการต่อ และดูรายการของเอนทิตีที่มีอยู่ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ</span><span class="sxs-lookup"><span data-stu-id="a76d4-105">You must be an admin on the Common Data Service organization to proceed and see the list of entities available in the managed lake.</span></span>
+<span data-ttu-id="883f2-104">บทความนี้ให้ข้อมูลเกี่ยวกับวิธีที่ลูกค้า Dynamics 365 ที่มีอยู่ สามารถเชื่อมต่อกับเอนทิตีเชิงวิเคราะห์ของตนได้อย่างรวดเร็วในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="883f2-104">This article provides information on how existing Dynamics 365 customers can quickly connect to their analytical entities in the Common Data Service managed lake.</span></span> <span data-ttu-id="883f2-105">คุณต้องเป็นผู้ดูแลระบบในองค์กร Common Data Service เพื่อดำเนินการต่อ และดูรายการของเอนทิตีที่มีอยู่ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ</span><span class="sxs-lookup"><span data-stu-id="883f2-105">You must be an admin on the Common Data Service organization to proceed and see the list of entities available in the managed lake.</span></span>
 
-## <a name="important-considerations"></a><span data-ttu-id="a76d4-106">ข้อควรพิจารณาที่สำคัญ</span><span class="sxs-lookup"><span data-stu-id="a76d4-106">Important considerations</span></span>
+## <a name="important-considerations"></a><span data-ttu-id="883f2-106">ข้อควรพิจารณาที่สำคัญ</span><span class="sxs-lookup"><span data-stu-id="883f2-106">Important considerations</span></span>
 
-<span data-ttu-id="a76d4-107">ข้อมูลที่เก็บไว้ในบริการออนไลน์ เช่น Azure Data Lake Storage อาจถูกเก็บไว้ในตำแหน่งที่แตกต่างจากที่ที่มีการประมวลผลหรือจัดเก็บข้อมูลใน Dynamics 365 Customer Insights</span><span class="sxs-lookup"><span data-stu-id="a76d4-107">Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights.</span></span><span data-ttu-id="a76d4-108">โดยการนำเข้าหรือการเชื่อมต่อไปยังข้อมูลที่จัดเก็บในบริการออนไลน์ คุณยอมรับว่าสามารถถ่ายโอนข้อมูลและจัดเก็บด้วย Dynamics 365 Customer Insights  [เรียนรู้เพิ่มเติมที่ Microsoft Trust Center](https://www.microsoft.com/trust-center)</span><span class="sxs-lookup"><span data-stu-id="a76d4-108"> By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)</span></span>
+<span data-ttu-id="883f2-107">ข้อมูลที่เก็บไว้ในบริการออนไลน์ เช่น Azure Data Lake Storage อาจถูกเก็บไว้ในตำแหน่งที่แตกต่างจากที่ที่มีการประมวลผลหรือจัดเก็บข้อมูลใน Dynamics 365 Customer Insights</span><span class="sxs-lookup"><span data-stu-id="883f2-107">Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights.</span></span><span data-ttu-id="883f2-108">โดยการนำเข้าหรือการเชื่อมต่อไปยังข้อมูลที่จัดเก็บในบริการออนไลน์ คุณยอมรับว่าสามารถถ่ายโอนข้อมูลและจัดเก็บด้วย Dynamics 365 Customer Insights  [เรียนรู้เพิ่มเติมที่ Microsoft Trust Center](https://www.microsoft.com/trust-center)</span><span class="sxs-lookup"><span data-stu-id="883f2-108"> By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)</span></span>
 
-## <a name="connect-to-a-common-data-service-managed-lake"></a><span data-ttu-id="a76d4-109">เชื่อมต่อกับที่จัดเก็บที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="a76d4-109">Connect to a Common Data Service managed lake</span></span>
+## <a name="connect-to-a-common-data-service-managed-lake"></a><span data-ttu-id="883f2-109">เชื่อมต่อกับที่จัดเก็บที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="883f2-109">Connect to a Common Data Service managed lake</span></span>
 
-1. <span data-ttu-id="a76d4-110">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ข้อมูล** > **แหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="a76d4-110">In audience insights, go to **Data** > **Data sources**.</span></span>
+1. <span data-ttu-id="883f2-110">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ข้อมูล** > **แหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="883f2-110">In audience insights, go to **Data** > **Data sources**.</span></span>
 
-2. <span data-ttu-id="a76d4-111">เลือก **เพิ่มแหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="a76d4-111">Select **Add data source**.</span></span>
+2. <span data-ttu-id="883f2-111">เลือก **เพิ่มแหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="883f2-111">Select **Add data source**.</span></span>
 
-3. <span data-ttu-id="a76d4-112">เลือก **เชื่อมต่อกับ Common Data Service** และเลือก **ต่อไป**</span><span class="sxs-lookup"><span data-stu-id="a76d4-112">Select **Connect to Common Data Service** and select **Next**.</span></span>
+3. <span data-ttu-id="883f2-112">เลือก **เชื่อมต่อกับ Common Data Service** และเลือก **ต่อไป**</span><span class="sxs-lookup"><span data-stu-id="883f2-112">Select **Connect to Common Data Service** and select **Next**.</span></span>
 
-4. <span data-ttu-id="a76d4-113">ป้อน **ชื่อ** สำหรับแหล่งข้อมูล แล้วเลือก **ถัดไป**</span><span class="sxs-lookup"><span data-stu-id="a76d4-113">Enter a **Name** for the data source and select **Next**.</span></span> <span data-ttu-id="a76d4-114">ตั้งชื่อแนวทาง:</span><span class="sxs-lookup"><span data-stu-id="a76d4-114">Name guidelines:</span></span> 
-   - <span data-ttu-id="a76d4-115">ขึ้นต้นด้วยตัวอักษร</span><span class="sxs-lookup"><span data-stu-id="a76d4-115">Start with a letter.</span></span>
-   - <span data-ttu-id="a76d4-116">ใช้ตัวอักษรและตัวเลขเท่านั้น</span><span class="sxs-lookup"><span data-stu-id="a76d4-116">Use letters and numbers only.</span></span> <span data-ttu-id="a76d4-117">ไม่อนุญาตให้ใช้อักขระพิเศษและช่องว่าง</span><span class="sxs-lookup"><span data-stu-id="a76d4-117">Special characters and spaces are not allowed.</span></span>
-   - <span data-ttu-id="a76d4-118">ใช้ระหว่าง 3 ถึง 64 อักขระ</span><span class="sxs-lookup"><span data-stu-id="a76d4-118">Use between 3 and 64 characters.</span></span>
+4. <span data-ttu-id="883f2-113">ป้อน **ชื่อ** สำหรับแหล่งข้อมูล แล้วเลือก **ถัดไป**</span><span class="sxs-lookup"><span data-stu-id="883f2-113">Enter a **Name** for the data source and select **Next**.</span></span> <span data-ttu-id="883f2-114">ตั้งชื่อแนวทาง:</span><span class="sxs-lookup"><span data-stu-id="883f2-114">Name guidelines:</span></span> 
+   - <span data-ttu-id="883f2-115">ขึ้นต้นด้วยตัวอักษร</span><span class="sxs-lookup"><span data-stu-id="883f2-115">Start with a letter.</span></span>
+   - <span data-ttu-id="883f2-116">ใช้ตัวอักษรและตัวเลขเท่านั้น</span><span class="sxs-lookup"><span data-stu-id="883f2-116">Use letters and numbers only.</span></span> <span data-ttu-id="883f2-117">ไม่อนุญาตให้ใช้อักขระพิเศษและช่องว่าง</span><span class="sxs-lookup"><span data-stu-id="883f2-117">Special characters and spaces are not allowed.</span></span>
+   - <span data-ttu-id="883f2-118">ใช้ระหว่าง 3 ถึง 64 อักขระ</span><span class="sxs-lookup"><span data-stu-id="883f2-118">Use between 3 and 64 characters.</span></span>
 
-5. <span data-ttu-id="a76d4-119">ใส่ **ที่อยู่เซิร์ฟเวอร์** สำหรับองค์กร Common Data Service ของคุณ และเลือก **เข้าสู่ระบบ**</span><span class="sxs-lookup"><span data-stu-id="a76d4-119">Provide the **Server address** for your Common Data Service organization, and select **Sign in**.</span></span>
+5. <span data-ttu-id="883f2-119">ใส่ **ที่อยู่เซิร์ฟเวอร์** สำหรับองค์กร Common Data Service ของคุณ และเลือก **เข้าสู่ระบบ**</span><span class="sxs-lookup"><span data-stu-id="883f2-119">Provide the **Server address** for your Common Data Service organization, and select **Sign in**.</span></span>
 
    > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="a76d4-120">![กล่องโต้ตอบเพื่อป้อนที่อยู่เซิร์ฟเวอร์ Common Data Service](media/enter-CDS-org-details.png)</span><span class="sxs-lookup"><span data-stu-id="a76d4-120">![Dialog box to enter Common Data Service server address](media/enter-CDS-org-details.png)</span></span>
+   > <span data-ttu-id="883f2-120">![กล่องโต้ตอบเพื่อป้อนที่อยู่เซิร์ฟเวอร์ Common Data Service](media/enter-CDS-org-details.png)</span><span class="sxs-lookup"><span data-stu-id="883f2-120">![Dialog box to enter Common Data Service server address](media/enter-CDS-org-details.png)</span></span>
 
-6. <span data-ttu-id="a76d4-121">เลือกเอนทิตีที่คุณต้องการนำเข้าระบบจากรายการที่มี</span><span class="sxs-lookup"><span data-stu-id="a76d4-121">Select the entities you want to ingest from the available list.</span></span>    
+6. <span data-ttu-id="883f2-121">เลือกเอนทิตีที่คุณต้องการนำเข้าระบบจากรายการที่มี</span><span class="sxs-lookup"><span data-stu-id="883f2-121">Select the entities you want to ingest from the available list.</span></span>    
 
    > [!NOTE]
-   > <span data-ttu-id="a76d4-122">หากมีการเลือกเอนทิตีบางตัวไปแล้ว อาจใช้กับโปรแกรมประยุกต์อื่นของ Dynamics 365 (เช่น Dynamics 365 Sales Insights หรือ Customer Service Insights)</span><span class="sxs-lookup"><span data-stu-id="a76d4-122">If some entities are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights).</span></span> <span data-ttu-id="a76d4-123">คุณไม่สามารถเปลี่ยนการเลือก</span><span class="sxs-lookup"><span data-stu-id="a76d4-123">You can't change the selection.</span></span> <span data-ttu-id="a76d4-124">เอนทิตีเหล่านี้จะพร้อมใช้งาน เมื่อมีการสร้างแหล่งข้อมูล</span><span class="sxs-lookup"><span data-stu-id="a76d4-124">These entities will be available once the data source is created.</span></span>
+   > <span data-ttu-id="883f2-122">หากมีการเลือกเอนทิตีบางตัวไปแล้ว อาจใช้กับโปรแกรมประยุกต์อื่นของ Dynamics 365 (เช่น Dynamics 365 Sales Insights หรือ Customer Service Insights)</span><span class="sxs-lookup"><span data-stu-id="883f2-122">If some entities are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights).</span></span> <span data-ttu-id="883f2-123">คุณไม่สามารถเปลี่ยนการเลือก</span><span class="sxs-lookup"><span data-stu-id="883f2-123">You can't change the selection.</span></span> <span data-ttu-id="883f2-124">เอนทิตีเหล่านี้จะพร้อมใช้งาน เมื่อมีการสร้างแหล่งข้อมูล</span><span class="sxs-lookup"><span data-stu-id="883f2-124">These entities will be available once the data source is created.</span></span>
 
    > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="a76d4-125">![กล่องโต้ตอบแสดงรายการของเอนทิตีในองค์กร Common Data Service](media/select-analytical-entities.png)</span><span class="sxs-lookup"><span data-stu-id="a76d4-125">![Dialog box showing a list of entities in the Common Data Service org](media/select-analytical-entities.png)</span></span>
+   > <span data-ttu-id="883f2-125">![กล่องโต้ตอบแสดงรายการของเอนทิตีในองค์กร Common Data Service](media/select-analytical-entities.png)</span><span class="sxs-lookup"><span data-stu-id="883f2-125">![Dialog box showing a list of entities in the Common Data Service org](media/select-analytical-entities.png)</span></span>
 
-7. <span data-ttu-id="a76d4-126">บันทึกการเลือกของคุณเพื่อเริ่มซิงค์เอนทิตีที่เลือกกับที่จัดเก็บที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="a76d4-126">Save your selection to start syncing the selected entities to the Common Data Service managed lake.</span></span> <span data-ttu-id="a76d4-127">คุณจะพบการเชื่อมต่อที่เพิ่งเพิ่มเข้าไปในหน้า **แหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="a76d4-127">You'll find the newly added connection on the **Data sources** page.</span></span> <span data-ttu-id="a76d4-128">จะเข้าคิวเพื่อรีเฟรชและแสดงเอนทิตีที่นับเป็น 0 จนกว่าจะซิงค์เอนทิตีทั้งหมด</span><span class="sxs-lookup"><span data-stu-id="a76d4-128">It will be queued for refresh and show the entities count as 0 until all the entities are synced.</span></span>
+7. <span data-ttu-id="883f2-126">บันทึกการเลือกของคุณเพื่อเริ่มซิงค์เอนทิตีที่เลือกกับที่จัดเก็บที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="883f2-126">Save your selection to start syncing the selected entities to the Common Data Service managed lake.</span></span> <span data-ttu-id="883f2-127">คุณจะพบการเชื่อมต่อที่เพิ่งเพิ่มเข้าไปในหน้า **แหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="883f2-127">You'll find the newly added connection on the **Data sources** page.</span></span> <span data-ttu-id="883f2-128">จะเข้าคิวเพื่อรีเฟรชและแสดงเอนทิตีที่นับเป็น 0 จนกว่าจะซิงค์เอนทิตีทั้งหมด</span><span class="sxs-lookup"><span data-stu-id="883f2-128">It will be queued for refresh and show the entities count as 0 until all the entities are synced.</span></span>
 
-<span data-ttu-id="a76d4-129">แหล่งข้อมูลของสภาพแวดล้อมเดียวเท่านั้นที่สามารถใช้ที่จัดเก็บที่มีการจัดการ Common Data Service เดียวกันพร้อมกันได้</span><span class="sxs-lookup"><span data-stu-id="a76d4-129">Only one data source of an environment can simultaneously use the same Common Data Service managed lake.</span></span>
+<span data-ttu-id="883f2-129">แหล่งข้อมูลของสภาพแวดล้อมเดียวเท่านั้นที่สามารถใช้ที่จัดเก็บที่มีการจัดการ Common Data Service เดียวกันพร้อมกันได้</span><span class="sxs-lookup"><span data-stu-id="883f2-129">Only one data source of an environment can simultaneously use the same Common Data Service managed lake.</span></span>
 
-## <a name="edit-a-common-data-service-managed-lake-data-source"></a><span data-ttu-id="a76d4-130">แก้ไขแหล่งข้อมูลที่จัดเก็บที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="a76d4-130">Edit a Common Data Service managed lake data source</span></span>
+## <a name="edit-a-common-data-service-managed-lake-data-source"></a><span data-ttu-id="883f2-130">แก้ไขแหล่งข้อมูลที่จัดเก็บที่มีการจัดการ Common Data Service</span><span class="sxs-lookup"><span data-stu-id="883f2-130">Edit a Common Data Service managed lake data source</span></span>
 
-<span data-ttu-id="a76d4-131">คุณแก้ไขการเลือกเอนทิตีหลังจากสร้างแหล่งข้อมูลเท่านั้น</span><span class="sxs-lookup"><span data-stu-id="a76d4-131">You only edit the entity selection after creating the data source.</span></span> <span data-ttu-id="a76d4-132">ตัวอย่างเช่น หากมีการเพิ่มเอนทิตีเพิ่มเติมใน Common Data Service และคุณต้องการนำเข้าด้วยเช่นกัน</span><span class="sxs-lookup"><span data-stu-id="a76d4-132">For example, if additional entities were added to Common Data Service and you want to import them too.</span></span>    
-<span data-ttu-id="a76d4-133">เมื่อต้องการเชื่อมต่อกับ Common Data Service อื่น [สร้างแหล่งข้อมูลใหม่](#connect-to-a-common-data-service-managed-lake)</span><span class="sxs-lookup"><span data-stu-id="a76d4-133">To connect to a different Common Data Service, [create a new data source](#connect-to-a-common-data-service-managed-lake).</span></span>
+<span data-ttu-id="883f2-131">คุณแก้ไขการเลือกเอนทิตีหลังจากสร้างแหล่งข้อมูลเท่านั้น</span><span class="sxs-lookup"><span data-stu-id="883f2-131">You only edit the entity selection after creating the data source.</span></span> <span data-ttu-id="883f2-132">ตัวอย่างเช่น หากมีการเพิ่มเอนทิตีเพิ่มเติมใน Common Data Service และคุณต้องการนำเข้าด้วยเช่นกัน</span><span class="sxs-lookup"><span data-stu-id="883f2-132">For example, if additional entities were added to Common Data Service and you want to import them too.</span></span>    
+<span data-ttu-id="883f2-133">เมื่อต้องการเชื่อมต่อกับ Common Data Service อื่น [สร้างแหล่งข้อมูลใหม่](#connect-to-a-common-data-service-managed-lake)</span><span class="sxs-lookup"><span data-stu-id="883f2-133">To connect to a different Common Data Service, [create a new data source](#connect-to-a-common-data-service-managed-lake).</span></span>
 
-1. <span data-ttu-id="a76d4-134">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ข้อมูล** > **แหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="a76d4-134">In audience insights, go to **Data** > **Data sources**.</span></span>
+1. <span data-ttu-id="883f2-134">ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ข้อมูล** > **แหล่งข้อมูล**</span><span class="sxs-lookup"><span data-stu-id="883f2-134">In audience insights, go to **Data** > **Data sources**.</span></span>
 
-2. <span data-ttu-id="a76d4-135">ถัดจากแหล่งข้อมูลที่คุณต้องการอปรับปรุง เลือกจุดไข่ปลา</span><span class="sxs-lookup"><span data-stu-id="a76d4-135">Next to the data source you'd like to update, select the ellipsis.</span></span>
+2. <span data-ttu-id="883f2-135">ถัดจากแหล่งข้อมูลที่คุณต้องการอปรับปรุง เลือกจุดไข่ปลา</span><span class="sxs-lookup"><span data-stu-id="883f2-135">Next to the data source you'd like to update, select the ellipsis.</span></span>
 
-3. <span data-ttu-id="a76d4-136">เลือกตัวเลือก **แก้ไข** จากรายการ</span><span class="sxs-lookup"><span data-stu-id="a76d4-136">Select the **Edit** option from the list.</span></span>
+3. <span data-ttu-id="883f2-136">เลือกตัวเลือก **แก้ไข** จากรายการ</span><span class="sxs-lookup"><span data-stu-id="883f2-136">Select the **Edit** option from the list.</span></span>
 
-4. <span data-ttu-id="a76d4-137">เลือกเอนทิตีเพิ่มเติมจากรายการเอนทิตีที่มีอยู่ และเลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="a76d4-137">Select additional entities from the available list of entities and select **Save**.</span></span>
+4. <span data-ttu-id="883f2-137">เลือกเอนทิตีเพิ่มเติมจากรายการเอนทิตีที่มีอยู่ และเลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="883f2-137">Select additional entities from the available list of entities and select **Save**.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
