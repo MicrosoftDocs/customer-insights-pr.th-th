@@ -1,19 +1,20 @@
 ---
 title: โมเดล Machine Learning แบบกำหนดเอง | Microsoft Docs
 description: ทำงานกับโมเดลที่กำหนดเองจาก Azure Machine Learning ใน Dynamics 365 Customer Insights
-ms.date: 11/19/2020
-ms.reviewer: zacook
-ms.service: dynamics-365-ai
+ms.date: 03/22/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 87fb517e9f0b380f9721f77470dceb3bcb7e5616
+ms.sourcegitcommit: 55c00ea61c78db7b3b54894c01afb3246dff31c8
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267257"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "5700691"
 ---
 # <a name="custom-machine-learning-models"></a>โมเดล Machine Learning แบบกำหนดเอง
 
@@ -21,13 +22,18 @@ ms.locfileid: "5267257"
 
 ## <a name="responsible-ai"></a>AI ที่มีความรับผิดชอบ
 
-การคาดคะเนนำเสนอความสามารถในการสร้างประสบการณ์ของลูกค้าที่ดียิ่งขึ้น ปรับปรุงความสามารถทางธุรกิจและกระแสรายได้ เราขอแนะนำงให้คุณสร้างสมดุลระหว่างมูลค่าการคาดคะเนของคุณกับผลกระทบที่มีและอคติที่อาจนำมาใช้ในลักษณะที่ถูกต้องตามหลักจริยธรรม เรียนรู้เพิ่มเติมว่า Microsoft [จัดการ AI ที่มีความรับผิดชอบ](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) อย่างไร คุณยังสามารถเรียนรู้เกี่ยวกับ [เทคนิคและกระบวนการสำหรับการเรียนรู้เกี่ยวกับเครื่องที่รับผิดชอบ](https://docs.microsoft.com/azure/machine-learning/concept-responsible-ml) เฉพาะสำหรับ Azure Machine Learning
+การคาดคะเนนำเสนอความสามารถในการสร้างประสบการณ์ของลูกค้าที่ดียิ่งขึ้น ปรับปรุงความสามารถทางธุรกิจและกระแสรายได้ เราขอแนะนำงให้คุณสร้างสมดุลระหว่างมูลค่าการคาดคะเนของคุณกับผลกระทบที่มีและอคติที่อาจนำมาใช้ในลักษณะที่ถูกต้องตามหลักจริยธรรม เรียนรู้เพิ่มเติมว่า Microsoft [จัดการ AI ที่มีความรับผิดชอบ](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) อย่างไร คุณยังสามารถเรียนรู้เกี่ยวกับ [เทคนิคและกระบวนการสำหรับการเรียนรู้เกี่ยวกับเครื่องที่รับผิดชอบ](/azure/machine-learning/concept-responsible-ml) เฉพาะสำหรับ Azure Machine Learning
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
-- ปัจจุบัน คุณลักษณะนี้รองรับบริการเว็บที่เผยแพร่ผ่าน [Machine Learning Studio (คลาสสิก)](https://studio.azureml.net) และ [ไปป์ไลน์แบบชุดงานของ Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines)
+- ปัจจุบัน คุณลักษณะนี้รองรับบริการเว็บที่เผยแพร่ผ่าน [Machine Learning Studio (คลาสสิก)](https://studio.azureml.net) และ [ไปป์ไลน์แบบชุดงานของ Azure Machine Learning](/azure/machine-learning/concept-ml-pipelines)
 
-- คุณต้องมีบัญชีที่เก็บข้อมูล Azure Data Lake รุ่น2 ที่เชื่อมโยงกับอินสแตนซ์ Azure Studio ของคุณเพื่อใช้คุณลักษณะนี้ สำหรับข้อมูลเพิ่มเติม ดูที่ [สร้างบัญชีที่เก็บข้อมูล Gen2 Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- คุณต้องมีบัญชีที่เก็บข้อมูล Azure Data Lake รุ่น2 ที่เชื่อมโยงกับอินสแตนซ์ Azure Studio ของคุณเพื่อใช้คุณลักษณะนี้ สำหรับข้อมูลเพิ่มเติม ดูที่ [สร้างบัญชีที่เก็บข้อมูล Gen2 Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+
+- สำหรับพื้นที่ทำงาน Azure Machine Learning ที่มีไปป์ไลน์ คุณต้องมีสิทธิ์ของผู้ดูแลระบบแบบผู้ใช้หรือการเข้าถึงของผู้ใช้สำหรับพื้นที่ทำงาน Azure Machine Learning
+
+   > [!NOTE]
+   > ข้อมูลจะถูกถ่ายโอนระหว่างอินสแตนซ์ Customer Insights ของคุณและบริการเว็บ Azure ที่เลือกหรือไปป์ไลน์ในเวิร์กโฟลว์ เมื่อคุณถ่ายโอนข้อมูลไปยังบริการ Azure โปรดตรวจสอบให้แน่ใจว่าบริการได้รับการกําหนดค่าให้ประมวลผลข้อมูลในลักษณะและตําแหน่งที่ตั้งที่จําเป็นเพื่อให้สอดคล้องกับข้อกําหนดทางกฎหมายหรือข้อบังคับสําหรับข้อมูลนั้นสําหรับองค์กรของคุณ
 
 ## <a name="add-a-new-workflow"></a>เพิ่มเวิร์กโฟลว์ใหม่
 
@@ -45,8 +51,8 @@ ms.locfileid: "5267257"
 1. เลือก **พื้นที่ทำงาน** ที่เชื่อมโยงกับบริการเว็บของคุณ มีสองส่วนในรายการ ส่วนหนึ่งสำหรับ Azure Machine Learning v1 (Machine Learning Studio (คลาสสิก)) และ Azure Machine Learning v2 (Azure Machine Learning) หากคุณไม่แน่ใจว่าพื้นที่ทำงานใดเหมาะกับบริการเว็บ Machine Learning Studio (คลาสสิก) ของคุณให้เลือก **ใดๆ**
 
 1. เลือกบริการเว็บ Machine Learning Studio (คลาสสิก) หรือไปป์ไลน์ Azure Machine Learning ในรายการแบบหล่นลง **บริการเว็บที่มีโมเดลของคุณ** จากนั้นเลือก **ถัดไป**
-   - เรียนรู้เพิ่มเติมเกี่ยวกับ [การเผยแพร่บริการเว็บใน Machine Learning Studio (คลาสสิก)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - เรียนรู้เพิ่มเติมเกี่ยวกับ [การเผยแพร่ไปป์ไลน์ใน Azure Machine Learning โดยใช้ตัวออกแบบ](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) หรือ [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) ไปป์ไลน์ของคุณต้องเผยแพร่ภายใต้ [จุดสิ้นสุดไปป์ไลน์](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)
+   - เรียนรู้เพิ่มเติมเกี่ยวกับ [การเผยแพร่บริการเว็บใน Machine Learning Studio (คลาสสิก)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
+   - เรียนรู้เพิ่มเติมเกี่ยวกับ [การเผยแพร่ไปป์ไลน์ใน Azure Machine Learning โดยใช้ตัวออกแบบ](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) หรือ [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) ไปป์ไลน์ของคุณต้องเผยแพร่ภายใต้ [จุดสิ้นสุดไปป์ไลน์](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)
 
 1. สำหรับ **การป้อนข้อมูลบริการเว็บ** แต่ละรายการ ให้เลือก **เอนทิตี** ที่ตรงกันจากข้อมูลเชิงลึกกลุ่มเป้าหมาย และเลือก **ถัดไป**
    > [!NOTE]
@@ -54,7 +60,7 @@ ms.locfileid: "5267257"
 
    > [!div class="mx-imgBorder"]
    > ![กำหนดค่าเวิร์กโฟลว์](media/intelligence-screen2-updated.png "กำหนดค่าเวิร์กโฟลว์")
-   
+
 1. ในขั้นตอน **พารามิเตอร์ผลลัพธ์ของโมเดล** ให้ตั้งค่าคุณสมบัติต่อไปนี้:
    - Machine Learning Studio (คลาสสิก)
       1. ป้อน **ชื่อเอนทิตี** ผลลัพธ์ที่คุณต้องการให้ผลลัพธ์ของบริการเว็บเข้ามา
@@ -62,12 +68,12 @@ ms.locfileid: "5267257"
       1. ป้อน **ชื่อเอนทิตี** ผลลัพธ์ที่คุณต้องการให้ผลลัพธ์ของไปป์ไลน์เข้ามา
       1. เลือก **ชื่อพารามิเตอร์ที่เก็บข้อมูลผลลัพธ์** ของไปป์ไลน์แบบชุดงานของคุณจากรายการแบบหล่นลง
       1. เลือก **ชื่อพารามิเตอร์พาธผลลัพธ์** ของไปป์ไลน์แบบชุดงานของคุณจากรายการแบบหล่นลง
-      
+
       > [!div class="mx-imgBorder"]
       > ![บานหน้าต่างพารามิเตอร์ผลลัพธ์ของโมเดล](media/intelligence-screen3-outputparameters.png "บานหน้าต่างพารามิเตอร์ผลลัพธ์ของโมเดล")
 
 1. เลือกแอตทริบิวต์ที่ตรงกันจากรายการแบบหล่นลง **รหัสลูกค้าในผลลัพธ์** ที่ระบุลูกค้าและเลือก **บันทึก**
-   
+
    > [!div class="mx-imgBorder"]
    > ![บานหน้าต่างเชื่อมโยงผลลัพธ์กับข้อมูลลูกค้า](media/intelligence-screen4-relatetocustomer.png "บานหน้าต่างเชื่อมโยงผลลัพธ์กับข้อมูลลูกค้า")
 
@@ -95,7 +101,7 @@ ms.locfileid: "5267257"
       1. เลือก **ชื่อพารามิเตอร์พาธผลลัพธ์** สำหรับไปป์ไลน์ทดสอบของคุณ
 
 1. เลือกแอตทริบิวต์ที่ตรงกันจากรายการแบบหล่นลง **รหัสลูกค้าในผลลัพธ์** ที่ระบุลูกค้าและเลือก **บันทึก**
-   คุณต้องเลือกแอตทริบิวต์จากผลลัพธ์การอนุมานที่มีค่าเหมือนกับคอลัมน์รหัสลูกค้าของเอนทิตีลูกค้า หากไม่มีคอลัมน์ดังกล่าวในชุดข้อมูลของคุณ ให้เลือกแอตทริบิวต์ที่ระบุแถวโดยไม่ซ้ำกัน
+   เลือกแอตทริบิวต์จากผลลัพธ์การอนุมานที่มีค่าเหมือนกับคอลัมน์รหัสลูกค้าของเอนทิตีลูกค้า หากไม่มีคอลัมน์ดังกล่าวในชุดข้อมูลของคุณ ให้เลือกแอตทริบิวต์ที่ระบุแถวโดยไม่ซ้ำกัน
 
 ## <a name="run-a-workflow"></a>เรียกใช้เวิร์กโฟลว์
 
@@ -113,5 +119,28 @@ ms.locfileid: "5267257"
 
 เวิร์กโฟลว์ของคุณจะถูกลบ [เอนทิตี](entities.md) ที่ถูกสร้างขึ้นเมื่อคุณสร้างเวิร์กโฟลว์ ยังคงอยู่ และสามารถดูได้จากหน้า **เอนทิตี**
 
+## <a name="results"></a>ผลลัพธ์
+
+ผลลัพธ์ที่ได้จากเวิร์กโฟลว์จะเก็บไว้ในเอนทิตีที่กำหนดค่าไว้ในระยะพารามิเตอร์ผลลัพธ์ของโมเดล คุณสามารถเข้าถึงข้อมูลนี้ได้จาก [เพจเอนทิตี](entities.md) หรือด้วย [การเข้าถึง API](apis.md)
+
+### <a name="api-access"></a>การเข้าถึง API
+
+สำหรับการสอบถาม OData เฉพาะเพื่อรับข้อมูลจากเอนทิตีโมเดลที่กำหนดเอง ให้ใช้รูปแบบต่อไปนี้:
+
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+
+1. แทนที่ `<your instance id>` ด้วยรหัสของสภาพแวดล้อม Customer Insights ซึ่งคุณพบในแถบที่อยู่ของเบราว์เซอร์ของคุณเมื่อเข้าถึง Customer Insights
+
+1. แทนที่ `<custom model output entity>` ด้วยชื่อเอนทิตีที่คุณระบุในขั้นตอนพารามิเตอร์ผลลัพธ์ของโมเดลของการกำหนดค่าโมเดลที่กำหนดเอง
+
+1. แทนที่ `<guid value>` ด้วยรหัสลูกค้าของลูกค้าที่คุณต้องการเข้าถึงเรกคอร์ด โดยปกติ คุณจะพบรหัสนี้ใน [เพจโปรไฟล์ลูกค้า](customer-profiles.md) ในฟิลด์ CustomerID
+
+## <a name="frequently-asked-questions"></a>คำถามที่ถามบ่อย
+
+- เหตุใดฉันจึงไม่เห็นไปป์ไลน์ของฉันเมื่อตั้งค่าเวิร์กโฟลว์โมเดลที่กำหนดเอง    
+  ปัญหานี้มักเกิดจากปัญหาการกำหนดค่าในไปป์ไลน์ ตรวจสอบให้แน่ใจว่า [มีการกำหนดค่าพารามิเตอร์ค่าที่ป้อน](azure-machine-learning-experiments.md#dataset-configuration) และ [พารามิเตอร์ที่เก็บข้อมูลและพาธของผลลัพธ์](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) ได้รับการกำหนดค่าแล้วด้วย
+
+- ข้อผิดพลาด "ไม่สามารถบันทึกเวิร์กโฟลว์ระบบอัจฉริยะ" หมายความว่าอย่างไร    
+  ผู้ใช้มักจะเห็นข้อความแสดงข้อผิดพลาดนี้หากไม่มีสิทธิ์การใช้งานของผู้ดูแลระบบแบบเจ้าของหรือการเข้าถึงของผู้ใช้ในพื้นที่ทำงาน ผู้ใช้ต้องการสิทธิ์ในระดับที่สูงขึ้นเพื่อเปิดใช้งาน Customer Insights ที่จะประมวลผลเวิร์กโฟลว์เป็นบริการ แทนที่จะใช้ข้อมูลประจำตัวของผู้ใช้สำหรับการเรียกใช้เวิร์กโฟลว์ในภายหลัง
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
