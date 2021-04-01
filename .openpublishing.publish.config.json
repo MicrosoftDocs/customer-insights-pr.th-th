@@ -67,7 +67,8 @@
   "branch_target_mapping": {
     "live": [
       "Publish",
-      "Pdf"
+      "Pdf",
+      "Intellisense"
     ],
     "master": [
       "Publish",
