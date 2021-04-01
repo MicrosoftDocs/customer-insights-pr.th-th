@@ -7,12 +7,12 @@ metadata:
   ms.date: 10/29/2020
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
+  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4407171"
+  ms.lasthandoff: 03/15/2021
+  ms.locfileid: "5598500"
 title: คู่มือ Dynamics 365 Customer Insights
 summary: ค้นหาแหล่งข้อมูลที่เป็นประโยชน์เพื่อเริ่มต้นใช้งานและเรียนรู้เกี่ยวกับคุณลักษณะและความสามารถของ Customer Insights
 landingContent:
@@ -23,7 +23,7 @@ landingContent:
     - text: ภาพรวมของ Customer Insights
       url: overview.md
     - text: แผนการนำเสนอ
-      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
     - text: เข้าถึงสภาพแวดล้อมของคุณ
       url: https://home.ci.ai.dynamics.com/
 - title: เริ่มต้นใช้งานข้อมูลเชิงลึกกลุ่มเป้าหมาย
@@ -53,9 +53,9 @@ landingContent:
     - text: สร้างสภาพแวดล้อมใหม่
       url: audience-insights/home.md
     - text: สร้างโปรไฟล์ลูกค้าแบบรวม
-      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+      url: /learn/modules/unified-customer-profile/
     - text: ทำงานกับแอป
-      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+      url: /learn/modules/working-with-customer-insights/
 - title: ส่งออกข้อมูลเชิงลึกกลุ่มเป้าหมาย
   linkLists:
   - linkListType: how-to-guide
