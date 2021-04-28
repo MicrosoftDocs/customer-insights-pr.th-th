@@ -1,7 +1,7 @@
 ---
-title: ปลายทางการส่งออก
-description: ส่งออกข้อมูลและจัดการปลายทางการส่งออก
-ms.date: 07/21/2020
+title: ส่งออกข้อมูลจาก Customer Insights
+description: จัดการการส่งออกเพื่อแบ่งปันข้อมูล
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,102 +9,73 @@ ms.topic: conceptual
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5557442983f8c48cd46387009e0060beb6e764bb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596111"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896166"
 ---
-# <a name="export-destinations-preview-overview"></a><span data-ttu-id="352eb-103">ภาพรวมปลายทางการส่งออก (พรีวิว)</span><span class="sxs-lookup"><span data-stu-id="352eb-103">Export destinations (preview) overview</span></span>
+# <a name="exports-preview-overview"></a><span data-ttu-id="4c7ea-103">ภาพรวมการส่งออก (พรีวิว)</span><span class="sxs-lookup"><span data-stu-id="4c7ea-103">Exports (preview) overview</span></span>
 
-<span data-ttu-id="352eb-104">หน้า **ปลายทางการส่งออก** แสดงตำแหน่งทั้งหมดที่คุณตั้งค่าเพื่อส่งออกข้อมูลไป</span><span class="sxs-lookup"><span data-stu-id="352eb-104">The **Export destinations** page shows you all locations you've set up to export data to.</span></span> <span data-ttu-id="352eb-105">นอกจากนี้ คุณยังสามารถเพิ่มปลายทางใหม่สำหรับการส่งออก</span><span class="sxs-lookup"><span data-stu-id="352eb-105">You can also add new destinations for export.</span></span> <span data-ttu-id="352eb-106">นอกจากนี้ยังแสดงตัวเลือกการส่งออกที่มีอยู่ในปัจจุบันด้วย</span><span class="sxs-lookup"><span data-stu-id="352eb-106">Additionally, it shows export currently available options.</span></span> <span data-ttu-id="352eb-107">รับภาพรวม Description และค้นหาสิ่งที่คุณสามารถทำได้ด้วยตัวเลือกความสามารถในการเพิ่มแต่ละรายการ</span><span class="sxs-lookup"><span data-stu-id="352eb-107">Get a quick overview, description, and find out what you can do with each extensibility option.</span></span> <span data-ttu-id="352eb-108">ส่งออกโปรไฟล์แบบรวม การวัด และเซ็กเมนต์ ไปยังแอปที่รองรับซึ่งเกี่ยวข้องกับธุรกิจของคุณ</span><span class="sxs-lookup"><span data-stu-id="352eb-108">Export unified profiles, measures, and segments to supported apps relevant for your business.</span></span>
+<span data-ttu-id="4c7ea-104">หน้า **การส่งออก** แสดงการส่งออกที่กำหนดค่าไว้ทั้งหมด</span><span class="sxs-lookup"><span data-stu-id="4c7ea-104">The **Exports** page shows you all configured exports.</span></span> <span data-ttu-id="4c7ea-105">การส่งออกจะแบ่งปันข้อมูลเฉพาะกับโปรแกรมประยุกต์ต่าง ๆ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-105">Exports share specific data with various applications.</span></span> <span data-ttu-id="4c7ea-106">ซึ่งอาจรวมถึงโปรไฟล์ของลูกค้าหรือเอนทิตี สคีมา และรายละเอียดการแมป</span><span class="sxs-lookup"><span data-stu-id="4c7ea-106">They can include customer profiles or entities, schemas, and mapping details.</span></span> <span data-ttu-id="4c7ea-107">การส่งออกแต่ละครั้งต้องใช้ [การเชื่อมต่อ ตั้งค่าโดยผู้ดูแลระบบ เพื่อจัดการการรับรองความถูกต้องและการเข้าถึง](connections.md)</span><span class="sxs-lookup"><span data-stu-id="4c7ea-107">Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).</span></span>
 
-<span data-ttu-id="352eb-109">ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก** เพื่อค้นหาตัวเลือกความสามารถในการเพิ่มต่อไปนี้:</span><span class="sxs-lookup"><span data-stu-id="352eb-109">Go to **Admin** > **Export destinations** to find the following extensibility options:</span></span>
+> [!NOTE]
+> <span data-ttu-id="4c7ea-108">จนถึงเดือนมีนาคม 2021 การส่งออกได้สร้างการเชื่อมต่อกับบริการที่เกี่ยวข้องโดยอัตโนมัติ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-108">Until March 2021, exports created a connection to the corresponding service automatically.</span></span> <span data-ttu-id="4c7ea-109">ตอนนี้การส่งออกต้องใช้ [การเชื่อมต่อ สร้างและแบ่งปันโดยผู้ดูแลระบบ](connections.md) ก่อนที่คุณจะสามารถสร้างได้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-109">Exports now require a [connection, created and shared by an administrator](connections.md) before you can create them.</span></span>
 
-- [<span data-ttu-id="352eb-110">Adobe Campaign Standard</span><span class="sxs-lookup"><span data-stu-id="352eb-110">Adobe Campaign Standard</span></span>](export-adobe-campaign-standard.md)
-- [<span data-ttu-id="352eb-111">Adobe Experience Platform</span><span class="sxs-lookup"><span data-stu-id="352eb-111">Adobe Experience Platform</span></span>](export-adobe-experience-platform.md)
-- [<span data-ttu-id="352eb-112">AdRoll</span><span class="sxs-lookup"><span data-stu-id="352eb-112">AdRoll</span></span>](export-adroll.md)
-- [<span data-ttu-id="352eb-113">Autopilot</span><span class="sxs-lookup"><span data-stu-id="352eb-113">Autopilot</span></span>](export-autopilot.md)
-- [<span data-ttu-id="352eb-114">ที่เก็บข้อมูล Azure Blob</span><span class="sxs-lookup"><span data-stu-id="352eb-114">Azure Blob Storage</span></span>](export-azure-blob-storage.md)
-- [<span data-ttu-id="352eb-115">Azure Data Lake Storage Gen2</span><span class="sxs-lookup"><span data-stu-id="352eb-115">Azure Data Lake Storage Gen2</span></span>](export-azure-data-lake-storage-gen2.md)
-- [<span data-ttu-id="352eb-116">บอทสำหรับ Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="352eb-116">Bot for Microsoft Teams</span></span>](export-teams-bot.md)
-- [<span data-ttu-id="352eb-117">Customer Insights API</span><span class="sxs-lookup"><span data-stu-id="352eb-117">Customer Insights API</span></span>](apis.md)
-- [<span data-ttu-id="352eb-118">DotDigital</span><span class="sxs-lookup"><span data-stu-id="352eb-118">DotDigital</span></span>](export-dotdigital.md)
-- [<span data-ttu-id="352eb-119">Dynamics 365 Customer Service (Add-in การ์ดลูกค้า)</span><span class="sxs-lookup"><span data-stu-id="352eb-119">Dynamics 365 Customer Service (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="352eb-120">Dynamics 365 Marketing</span><span class="sxs-lookup"><span data-stu-id="352eb-120">Dynamics 365 Marketing</span></span>](export-dynamics365-marketing.md)
-- [<span data-ttu-id="352eb-121">Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="352eb-121">Dynamics 365 Sales</span></span>](export-dynamics365-sales.md)
-- [<span data-ttu-id="352eb-122">ฮับการขาย Dynamics 365 (Add-in การ์ดลูกค้า)</span><span class="sxs-lookup"><span data-stu-id="352eb-122">Dynamics 365 Sales Hub (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="352eb-123">Facebook Ads Manager</span><span class="sxs-lookup"><span data-stu-id="352eb-123">Facebook Ads Manager</span></span>](export-facebook.md)
-- [<span data-ttu-id="352eb-124">Google Ads</span><span class="sxs-lookup"><span data-stu-id="352eb-124">Google Ads</span></span>](export-google-ads.md)
-- [<span data-ttu-id="352eb-125">LiveRamp&reg;</span><span class="sxs-lookup"><span data-stu-id="352eb-125">LiveRamp&reg;</span></span>](export-liveramp.md)
-- [<span data-ttu-id="352eb-126">Mailchimp</span><span class="sxs-lookup"><span data-stu-id="352eb-126">Mailchimp</span></span>](export-mailchimp.md)
-- [<span data-ttu-id="352eb-127">Marketo</span><span class="sxs-lookup"><span data-stu-id="352eb-127">Marketo</span></span>](export-marketo.md)
-- [<span data-ttu-id="352eb-128">Power Automate</span><span class="sxs-lookup"><span data-stu-id="352eb-128">Power Automate</span></span>](export-power-automate.md)
-- [<span data-ttu-id="352eb-129">Power Apps</span><span class="sxs-lookup"><span data-stu-id="352eb-129">Power Apps</span></span>](export-power-apps.md)
-- [<span data-ttu-id="352eb-130">Power BI</span><span class="sxs-lookup"><span data-stu-id="352eb-130">Power BI</span></span>](export-power-bi.md)
-- [<span data-ttu-id="352eb-131">SendGrid</span><span class="sxs-lookup"><span data-stu-id="352eb-131">SendGrid</span></span>](export-sendgrid.md)
-- [<span data-ttu-id="352eb-132">SFTP</span><span class="sxs-lookup"><span data-stu-id="352eb-132">SFTP</span></span>](export-sftp.md)
+<span data-ttu-id="4c7ea-110">ไปที่ **ข้อมูล** > **การส่งออก** เพื่อดูหน้าการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-110">Go to **Data** > **Exports** to view the exports page.</span></span> <span data-ttu-id="4c7ea-111">บทบาทของผู้ใช้ทั้งหมดมีสิทธิ์เข้าถึงเพื่อดูการส่งออกที่กำหนดค่าไว้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-111">All user roles have access to view configured exports.</span></span> <span data-ttu-id="4c7ea-112">ใช้ฟิลด์ค้นหาในแถบคำสั่งเพื่อค้นหาการส่งออกตามชื่อ ชื่อการเชื่อมต่อ หรือชนิดการเชื่อมต่อ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-112">Use of the search field in the command bar to find exports by their name, connection name, or connection type.</span></span>
 
-## <a name="add-a-new-export-destination"></a><span data-ttu-id="352eb-133">เพิ่มปลายทางการส่งออกใหม่</span><span class="sxs-lookup"><span data-stu-id="352eb-133">Add a new export destination</span></span>
+## <a name="set-up-a-new-export"></a><span data-ttu-id="4c7ea-113">ตั้งค่าการส่งออกใหม่</span><span class="sxs-lookup"><span data-stu-id="4c7ea-113">Set up a new export</span></span>
 
-<span data-ttu-id="352eb-134">การเพิ่มปลายทางการส่งออก คุณมี [สิทธิ์ระดับผู้ดูแลระบบ](permissions.md)</span><span class="sxs-lookup"><span data-stu-id="352eb-134">To add export destinations, you have [administrator permissions](permissions.md).</span></span> <span data-ttu-id="352eb-135">หากคุณส่งออกไปยังบริการของ Microsoft เราถือว่าบริการทั้งสองอยู่ในองค์กรเดียวกัน</span><span class="sxs-lookup"><span data-stu-id="352eb-135">If you export to Microsoft services, we assume both services are in the same organization.</span></span>
+<span data-ttu-id="4c7ea-114">ในการตั้งค่าหรือแก้ไขการส่งออก คุณต้องมีการเชื่อมต่อที่พร้อมใช้งาน</span><span class="sxs-lookup"><span data-stu-id="4c7ea-114">To set up or edit an export, you need to have connections available to you.</span></span> <span data-ttu-id="4c7ea-115">การเชื่อมต่อขึ้นอยู่กับ [บทบาทของผู้ใช้](permissions.md):</span><span class="sxs-lookup"><span data-stu-id="4c7ea-115">Connections depend on your [user role](permissions.md):</span></span>
+- <span data-ttu-id="4c7ea-116">ผู้ดูแลระบบสามารถเข้าถึงการเชื่อมต่อทั้งหมด</span><span class="sxs-lookup"><span data-stu-id="4c7ea-116">Administrators have access to all connections.</span></span> <span data-ttu-id="4c7ea-117">นอกจากนี้ยังสามารถสร้างการเชื่อมต่อใหม่เมื่อตั้งค่าการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-117">They can also create new connections when setting up an export.</span></span>
+- <span data-ttu-id="4c7ea-118">ผู้สนับสนุนสามารถเข้าถึงการเชื่อมต่อเฉพาะได้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-118">Contributors can have access to specific connections.</span></span> <span data-ttu-id="4c7ea-119">ขึ้นอยู่กับผู้ดูแลระบบในการกำหนดค่าและแบ่งปันการเชื่อมต่อ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-119">They depend on administrators to configure and share connections.</span></span> <span data-ttu-id="4c7ea-120">สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)</span><span class="sxs-lookup"><span data-stu-id="4c7ea-120">For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).</span></span>
+- <span data-ttu-id="4c7ea-121">ผู้ชมสามารถดูเฉพาะการส่งออกที่มีอยู่ แต่ไม่สามารถสร้างได้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-121">Viewers can only view existing exports but not create them.</span></span>
 
-1. <span data-ttu-id="352eb-136">ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**</span><span class="sxs-lookup"><span data-stu-id="352eb-136">Go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="4c7ea-122">ไปที่ **ข้อมูล** > **การส่งออก**</span><span class="sxs-lookup"><span data-stu-id="4c7ea-122">Go to **Data** > **Exports**.</span></span>
 
-1. <span data-ttu-id="352eb-137">สลับไปที่แท็บ **ปลายทางการส่งออกของฉัน**</span><span class="sxs-lookup"><span data-stu-id="352eb-137">Switch to the **My export destinations** tab.</span></span>
+1. <span data-ttu-id="4c7ea-123">เลือก **เพิ่มการส่งออก** เพื่อสร้างปลายทางการส่งออกใหม่</span><span class="sxs-lookup"><span data-stu-id="4c7ea-123">Select **Add export** to create a new export destination.</span></span>
 
-1. <span data-ttu-id="352eb-138">เลือก **เพิ่มปลายทาง** เพื่อสร้างปลายทางการส่งออกใหม่</span><span class="sxs-lookup"><span data-stu-id="352eb-138">Select **Add destination** to create a new export destination.</span></span>
+1. <span data-ttu-id="4c7ea-124">ในบานหน้าต่าง **ตั้งค่าการส่งออก** เลือกการเชื่อมต่อที่จะใช้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-124">In the **Set up export** pane, select which connection to use.</span></span> <span data-ttu-id="4c7ea-125">[การเชื่อมต่อ](connections.md) ได้รับการจัดการโดยผู้ดูแลระบบ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-125">[Connections](connections.md) are managed by administrators.</span></span> 
 
-1. <span data-ttu-id="352eb-139">ในบานหน้าต่าง **เพิ่มปลายทาง** ให้เลือก **ชนิด** ของปลายทางการส่งออกในเมนูแบบหล่นลง</span><span class="sxs-lookup"><span data-stu-id="352eb-139">In the **Add destination** pane, select the **Type** of export destination in the drop-down.</span></span>
+1. <span data-ttu-id="4c7ea-126">ระบุรายละเอียดที่ต้องการและเลือก **บันทึก** เพื่อสร้างการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-126">Provide the required details and select **Save** to create the export.</span></span>
 
-1. <span data-ttu-id="352eb-140">ระบุรายละเอียดที่จำเป็น และเลือก **ต่อไป** เพื่อสร้างปลายทางการส่งออก</span><span class="sxs-lookup"><span data-stu-id="352eb-140">Provide the required details and select **Next** to create the export destination.</span></span>
+### <a name="edit-an-export"></a><span data-ttu-id="4c7ea-127">แก้ไขการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-127">Edit an export</span></span>
 
-<span data-ttu-id="352eb-141">คุณยังสามารถเลือก **ตั้งค่า** บนไทล์บนแท็บ **ค้นพบ**</span><span class="sxs-lookup"><span data-stu-id="352eb-141">You can also select **Set up** on a tile on the **Discover** tab.</span></span>
+1. <span data-ttu-id="4c7ea-128">เลือกจุดไข่ปลาแนวตั้งสำหรับปลายทางส่งออกที่คุณต้องการแก้ไข</span><span class="sxs-lookup"><span data-stu-id="4c7ea-128">Select the vertical ellipsis for the export destination you want to edit.</span></span>
 
-## <a name="view-export-destinations"></a><span data-ttu-id="352eb-142">ดูปลายทางการส่งออก</span><span class="sxs-lookup"><span data-stu-id="352eb-142">View Export destinations</span></span>
+1. <span data-ttu-id="4c7ea-129">เลือก **แก้ไข** จากเมนูแบบหล่นลง</span><span class="sxs-lookup"><span data-stu-id="4c7ea-129">Select **Edit** from the drop-down menu.</span></span>
 
-<span data-ttu-id="352eb-143">หลังจากสร้างปลายทางการส่งออกแล้ว คุณจะพบสถานที่เหล่านั้นในตารางบนแท็บ **ปลายทางการส่งออกของฉัน** ตารางนี้มีสามคอลัมน์:</span><span class="sxs-lookup"><span data-stu-id="352eb-143">After creating export destinations, you'll find them in a table on the **My export destinations** tab. This table has three columns:</span></span>
+1. <span data-ttu-id="4c7ea-130">เปลี่ยนค่าที่คุณต้องการอัปเดตและเลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="4c7ea-130">Change the values you want to update and select **Save**.</span></span>
 
-- <span data-ttu-id="352eb-144">**ชื่อที่แสดง**: ชื่อที่คุณป้อนเมื่อสร้างปลายทาง</span><span class="sxs-lookup"><span data-stu-id="352eb-144">**Display name**: The name you entered when creating the destination.</span></span>
-- <span data-ttu-id="352eb-145">**ชนิด**: ประเภทปลายทางการส่งออกที่คุณตั้งค่าเมื่อสร้างปลายทาง</span><span class="sxs-lookup"><span data-stu-id="352eb-145">**Type**: The export destination type you set when creating the destination.</span></span>
-- <span data-ttu-id="352eb-146">**สร้างเมื่อ**: วันที่ที่คุณสร้างปลายทาง</span><span class="sxs-lookup"><span data-stu-id="352eb-146">**Created**: The date you created the destination.</span></span>
+## <a name="view-exports-and-export-details"></a><span data-ttu-id="4c7ea-131">ดูรายละเอียดการส่งออกและการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-131">View Exports and export details</span></span>
 
-## <a name="edit-an-export-destination"></a><span data-ttu-id="352eb-147">แก้ไขปลายทางการส่งออก</span><span class="sxs-lookup"><span data-stu-id="352eb-147">Edit an export destination</span></span>
+<span data-ttu-id="4c7ea-132">หลังจากสร้างปลายทางการส่งออกแล้ว การส่งออกจะแสดงรายการบน **ข้อมูล** > **การส่งออก**</span><span class="sxs-lookup"><span data-stu-id="4c7ea-132">After creating export destinations, they are listed on **Data** > **Exports**.</span></span> <span data-ttu-id="4c7ea-133">ผู้ใช้ทุกคนสามารถดูได้ว่าข้อมูลใดถูกแบ่งปันและสถานะล่าสุด</span><span class="sxs-lookup"><span data-stu-id="4c7ea-133">All users can see which data is shared and its latest status.</span></span>
 
-1. <span data-ttu-id="352eb-148">เลือกจุดไข่ปลาแนวตั้งสำหรับปลายทางส่งออกที่คุณต้องการแก้ไข</span><span class="sxs-lookup"><span data-stu-id="352eb-148">Select the vertical ellipsis for the Export destination you want to edit.</span></span>
+1. <span data-ttu-id="4c7ea-134">ไปที่ **ข้อมูล** > **การส่งออก**</span><span class="sxs-lookup"><span data-stu-id="4c7ea-134">Go to **Data** > **Exports**.</span></span>
 
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="352eb-149">![จุดไข่ปลาแนวตั้ง](media/export-destinations-page-ellipsis.png "จุดไข่ปลาแนวตั้ง")</span><span class="sxs-lookup"><span data-stu-id="352eb-149">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+1. <span data-ttu-id="4c7ea-135">ผู้ใช้ที่ไม่มีสิทธิ์แก้ไขเลือก **ดู** แทน **แก้ไข** เพื่อดูรายละเอียดการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-135">Users without edit permissions select **View** instead of **Edit** see the export details.</span></span>
 
-1. <span data-ttu-id="352eb-150">ให้เลือก **แก้ไข** จากเมนูแบบหล่นลง</span><span class="sxs-lookup"><span data-stu-id="352eb-150">Select **Edit** from the dropdown menu.</span></span>
+1. <span data-ttu-id="4c7ea-136">บานหน้าต่างด้านข้างนี้แสดงการตั้งค่าของการส่งออกนี้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-136">This side pane shows the set up of this export.</span></span> <span data-ttu-id="4c7ea-137">หากไม่มีสิทธิ์แก้ไข คุณจะเปลี่ยนค่าไม่ได้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-137">Without edit permissions, you can't change values.</span></span> <span data-ttu-id="4c7ea-138">เลือก **ปิด** เพื่อกลับไปที่หน้าการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-138">Select **Close** to return to the exports page.</span></span>
 
-1. <span data-ttu-id="352eb-151">เปลี่ยนค่าที่ต้องมีการอัพเดต และเลือก **บันทึก**</span><span class="sxs-lookup"><span data-stu-id="352eb-151">Change the values that require update and select **Save**.</span></span>
+## <a name="run-exports-on-demand"></a><span data-ttu-id="4c7ea-139">เรียกใช้ส่งออกตามคำขอ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-139">Run exports on demand</span></span>
 
-## <a name="export-data-on-demand"></a><span data-ttu-id="352eb-152">การส่งออกข้อมูลตามความต้องการ</span><span class="sxs-lookup"><span data-stu-id="352eb-152">Export data on demand</span></span>
+<span data-ttu-id="4c7ea-140">หลังจากกำหนดค่าการส่งออกแล้ว ระบบจะทำงานกับทุก [การรีเฟรชตามกำหนด](system.md#schedule-tab) ตราบเท่าที่มีการเชื่อมต่อที่ใช้งานได้</span><span class="sxs-lookup"><span data-stu-id="4c7ea-140">After configuring an export, it will run with every [scheduled refresh](system.md#schedule-tab) as long as it has a working connection.</span></span>
 
-<span data-ttu-id="352eb-153">หลังจากกำหนดค่าตัวเชื่อมต่อสำหรับปลายทางการส่งออก การส่งออกจะทำงานด้วยทุกๆ [รีเฟรชตามกำหนดเวลา](system.md#schedule-tab)</span><span class="sxs-lookup"><span data-stu-id="352eb-153">After configuring a connector for an export destination, exports will run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+<span data-ttu-id="4c7ea-141">หากต้องการส่งออกข้อมูลโดยไม่ต้องรอการรีเฟรชตามกำหนดเวลา ให้ไปที่ **ข้อมูล** > **การส่งออก**</span><span class="sxs-lookup"><span data-stu-id="4c7ea-141">To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.</span></span> <span data-ttu-id="4c7ea-142">คุณมีสองตัวเลือก คือ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-142">You have two options:</span></span>
 
-<span data-ttu-id="352eb-154">ในการส่งออกข้อมูลโดยไม่รอการรีเฟรชตามกำหนดเวลา ไปที่แท็บ **ปลายทางการส่งออกของฉัน** บน **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**</span><span class="sxs-lookup"><span data-stu-id="352eb-154">To export data without waiting for a scheduled refresh, go the **My export destinations** tab on **Admin** > **Export destinations**.</span></span>
+- <span data-ttu-id="4c7ea-143">ในการเรียกใช้การส่งออกทั้งหมด ให้เลือก **เรียกใช้ทั้งหมด** ในแถบคำสั่ง</span><span class="sxs-lookup"><span data-stu-id="4c7ea-143">To run all exports, select **Run all** in the command bar.</span></span> 
+- <span data-ttu-id="4c7ea-144">ในการเรียกใช้การส่งออกครั้งเดียว ให้เลือกจุดไข่ปลา (...) บนรายการ จากนั้นเลือก **เรียกใช้**</span><span class="sxs-lookup"><span data-stu-id="4c7ea-144">To run a single export, select the ellipsis (...) on a list item and then choose **Run**.</span></span>
 
-> [!div class="mx-imgBorder"]
-> <span data-ttu-id="352eb-155">![จุดไข่ปลาแนวตั้ง](media/export-destinations-page-ellipsis.png "จุดไข่ปลาแนวตั้ง")</span><span class="sxs-lookup"><span data-stu-id="352eb-155">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+## <a name="remove-an-export"></a><span data-ttu-id="4c7ea-145">ลบการส่งออก</span><span class="sxs-lookup"><span data-stu-id="4c7ea-145">Remove an Export</span></span>
 
-- <span data-ttu-id="352eb-156">เลือก **ส่งออก** เหนือรายการ เพื่อเรียกใช้การส่งออกไปยังปลายทางการส่งออกทั้งหมดพร้อมกัน</span><span class="sxs-lookup"><span data-stu-id="352eb-156">Select **Export** above the list to run the export to all export destinations simultaneously.</span></span>
-- <span data-ttu-id="352eb-157">เลือกจุดไข่ปลา (...) หลังจากรายการ แล้วเลือกตัวเลือก **ส่งออก** เพื่อเรียกใช้การส่งออกสำหรับปลายทางการส่งออกเดียว</span><span class="sxs-lookup"><span data-stu-id="352eb-157">Select the ellipsis (...) after a list item and then choose the **Export** option to run the export for a single export destination.</span></span>
+1. <span data-ttu-id="4c7ea-146">ไปที่ **ข้อมูล** > **การส่งออก**</span><span class="sxs-lookup"><span data-stu-id="4c7ea-146">Go to **Data** > **Exports**.</span></span>
 
-## <a name="remove-an-export-destination"></a><span data-ttu-id="352eb-158">ลบปลายทางการส่งออก</span><span class="sxs-lookup"><span data-stu-id="352eb-158">Remove an Export destination</span></span>
+1. <span data-ttu-id="4c7ea-147">เลือกจุดไข่ปลาแนวตั้งสำหรับการส่งออกที่คุณต้องการลบ</span><span class="sxs-lookup"><span data-stu-id="4c7ea-147">Select the vertical ellipsis for the Export you want to remove.</span></span>
 
-<span data-ttu-id="352eb-159">หากต้องการลบปลายทางการส่งออกให้เริ่มจากหน้า **ปลายทางการส่งออก** หลัก</span><span class="sxs-lookup"><span data-stu-id="352eb-159">To remove an Export destination, start from the main **Export destinations** page.</span></span>
+1. <span data-ttu-id="4c7ea-148">เลือก **ลบ** จากเมนูแบบหล่นลง</span><span class="sxs-lookup"><span data-stu-id="4c7ea-148">Select **Remove** from the dropdown menu.</span></span>
 
-1. <span data-ttu-id="352eb-160">เลือกจุดไข่ปลาแนวตั้งสำหรับปลายทางส่งออกที่คุณต้องการลบ</span><span class="sxs-lookup"><span data-stu-id="352eb-160">Select the vertical ellipsis for the Export destination you want to remove.</span></span>
-
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="352eb-161">![จุดไข่ปลาแนวตั้ง](media/export-destinations-page-ellipsis.png "จุดไข่ปลาแนวตั้ง")</span><span class="sxs-lookup"><span data-stu-id="352eb-161">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
-
-2. <span data-ttu-id="352eb-162">เลือก **ลบ** จากเมนูแบบหล่นลง</span><span class="sxs-lookup"><span data-stu-id="352eb-162">Select **Remove** from the dropdown menu.</span></span>
-
-3. <span data-ttu-id="352eb-163">ยืนยันการลบโดยเลือก **ลบ** บนหน้าจอการยืนยัน</span><span class="sxs-lookup"><span data-stu-id="352eb-163">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
+1. <span data-ttu-id="4c7ea-149">ยืนยันการลบโดยเลือก **ลบ** บนหน้าจอการยืนยัน</span><span class="sxs-lookup"><span data-stu-id="4c7ea-149">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
