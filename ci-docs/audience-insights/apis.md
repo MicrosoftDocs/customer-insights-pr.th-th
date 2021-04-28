@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
-ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
+ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
+ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "5710483"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "5873685"
 ---
 # <a name="work-with-customer-insights-apis"></a>ทำงานกับ Customer Insights API
 
@@ -78,7 +78,7 @@ Dynamics 365 Customer Insights เตรียม API เพื่อสร้�
 
 :::image type="content" source="media/grant-admin-consent.gif" alt-text="gif แบบเคลื่อนไหวเพื่อให้ความยินยอมของผู้ดูแลระบบ":::
 
-สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ MSAL โปรดดู [ภาพรวมของ Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ MSAL โปรดดู [ภาพรวมของ Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview)
 
 สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการลงทะเบียนแอปใน Azure โปรดดู [ประสบการณ์การลงทะเบียนแอปในพอร์ทัล Azure ใหม่](/azure/active-directory/develop/app-registration-portal-training-guide)
 

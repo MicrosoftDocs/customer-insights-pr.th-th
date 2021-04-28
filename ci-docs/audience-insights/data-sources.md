@@ -1,7 +1,7 @@
 ---
 title: ใช้แหล่งข้อมูลที่จะนำเข้าข้อมูล
 description: เรียนรู้วิธีการนำเข้าข้อมูลจากแหล่งต่างๆ
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595970"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887917"
 ---
 # <a name="data-sources-overview"></a>ภาพรวมของแหล่งข้อมูล
 
@@ -32,8 +32,15 @@ ms.locfileid: "5595970"
 - [จากโฟลเดอร์ Common Data Model](connect-common-data-model.md)
 - [จากที่จัดเก็บข้อมูลดิบ Common Data Service ของคุณเอง](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> คุณไม่สามารถเพิ่มข้อมูลจากแหล่งข้อมูลในสถานที่ได้
+## <a name="add-data-from-on-premises-data-sources"></a>เพิ่มข้อมูลจากแหล่งข้อมูลภายในองค์กร
+
+การนำเข้าข้อมูลจากแหล่งข้อมูลภายในองค์กรในข้อมูลเชิงลึกของผู้ชมได้รับการสนับสนุนตามโฟลว์ข้อมูล Power Platform สามารถเปิดใช้โฟลว์ข้อมูลใน Customer Insights โดย [ให้ URL สภาพแวดล้อม Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) เมื่อตั้งค่าสภาพแวดล้อม
+
+แหล่งข้อมูลที่สร้างขึ้นหลังจากเชื่อมโยงสภาพแวดล้อม Dataverse ที่มี Customer Insights จะใช้ [โฟลว์ข้อมูล Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) โดยค่าเริ่มต้น โฟลว์ข้อมูลสนับสนุนการเชื่อมต่อภายในองค์กรโดยใช้เกตเวย์ข้อมูล ลบและสร้างแหล่งข้อมูลที่มีอยู่ก่อนหน้าสภาพแวดล้อม Dataverse ที่เชื่อมโยงกับการใช้เกตเวย์ข้อมูลภายในองค์กร
+
+เกตเวย์ข้อมูลจากสภาพแวดล้อม Power BI หรือ Power Apps จะมองเห็นและคุณสามารถใช้ซ้ำได้ใน Customer Insights หน้าแหล่งข้อมูลจะแสดงลิงก์เพื่อไปที่สภาพแวดล้อม Power Platform ที่คุณสามารถดูและกำหนดค่าเกตเวย์ข้อมูลภายในองค์กร
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="ภาพหน้าจอของหน้าแหล่งข้อมูลที่แสดงลิงก์ที่ชี้ไปที่สภาพแวดล้อม Power Platform":::
 
 ## <a name="review-ingested-data"></a>ตรวจสอบข้อมูลที่นำเข้า
 
@@ -65,7 +72,7 @@ ms.locfileid: "5595970"
 
 2. เลือกจุดไข่ปลาแนวตั้งถัดจากแหล่งข้อมูลที่คุณต้องการรีเฟรช และเลือก **รีเฟรช** จากรายการแบบเลื่อนลง
 
-3. ตอนนี้แหล่งข้อมูลถูกทริกเกอร์สำหรับการรีเฟรชด้วยตนเอง การรีเฟรชแหล่งข้อมูลจะปรับปรุงสคีมาเอนทิตีทั้งคู่ รวมถึงข้อมูลสำหรับเอนทิตีทั้งหมดที่ระบุในแหล่งข้อมูล
+3. ตอนนี้แหล่งข้อมูลถูกทริกเกอร์สำหรับการรีเฟรชด้วยตนเอง การรีเฟรชแหล่งข้อมูลจะอัปเดตทั้งสคีมาเอนทิตีและข้อมูลสำหรับเอนทิตีทั้งหมดที่ระบุในแหล่งข้อมูล
 
 4. เลือก **หยุดการรีเฟรช** หากคุณต้องการยกเลิกการรีเฟรชที่มีอยู่และแหล่งข้อมูลจะเปลี่ยนกลับเป็นสถานะการรีเฟรชล่าสุด
 

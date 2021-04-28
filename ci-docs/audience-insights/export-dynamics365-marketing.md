@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Dynamics 365 Marketing
-description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับ Dynamics 365 Marketing
-ms.date: 02/01/2021
+description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและส่งออกไปยัง Dynamics 365 Marketing
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,33 +9,35 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 892aff643872f11307a2c43e5670edab657d7848
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a13f6f81f5e2570d3302d88c02755f1d86321a01
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597626"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759660"
 ---
-# <a name="connector-for-dynamics-365-marketing-preview"></a>ตัวเชื่อมต่อสำหรับ Dynamics 365 Marketing (แสดงตัวอย่าง)
+# <a name="use-segments-in-dynamics-365-marketing-preview"></a>ใช้เซ็กเมนต์ใน Dynamics 365 Marketing (ตัวอย่าง)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 ใช้ [เซ็กเมนต์](segments.md) เพื่อสร้างการส่งเสริมการขายและติดต่อกลุ่มเฉพาะของลูกค้าด้วย Dynamics 365 Marketing สำหรับข้อมูลเพิ่มเติม โปรดดู [ใช้เซ็กเมนต์จาก Dynamics 365 Customer Insights ด้วย Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
-## <a name="prerequisite"></a>ข้อกำหนดเบื้องต้น
+## <a name="prerequisite-for-a-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
 
 - ต้องมีเรกคอร์ดผู้ติดต่อใน Dynamics 365 Marketing ก่อนที่คุณจะสามารถส่งออกเซ็กเมนต์จาก Customer Insights ไปยัง Marketing ได้ อ่านเพิ่มเติมเกี่ยวกับวิธีการนำเข้าผู้ติดต่อใน [Dynamics 365 Marketing โดยใช้ Common Data Services](connect-power-query.md)
 
   > [!NOTE]
   > การส่งออกเซ็กเมนต์จากข้อมูลเชิงลึกกลุ่มเป้าหมายไปยัง Marketing จะไม่สร้างเรกคอร์ดผู้ติดต่อใหม่ในอินสแตนซ์ Marketing ต้องนำเข้าเรกคอร์ดผู้ติดต่อจาก Marketing ในข้อมูลเชิงลึกกลุ่มเป้าหมาย และต้องใช้เป็นแหล่งข้อมูล นอกจากนี้ ยังต้องรวมอยู่ในเอนทิตีลูกค้าแบบรวมเพื่อแม็ปรหัสลูกค้ากับรหัสผู้ติดต่อ ก่อนที่จะสามารถส่งออกเซ็กเมนต์ได้
 
-## <a name="configure-the-connector-for-marketing"></a>กำหนดค่าตัวเชื่อมต่อสำหรับ Marketing
+## <a name="set-up-connection-to-marketing"></a>ตั้งค่าการเชื่อมต่อไปยัง Marketing
 
-1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**
+1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. ภายใต้ **Dynamics 365 Marketing** เลือก **ติดตั้ง**
+1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Dynamics 365 Marketing** เพื่อกำหนดค่าการเชื่อมต่อ
 
-1. ตั้งชื่อที่เป็นที่รู้จักให้ปลายทางการส่งออกของคุณในฟิลด์ **ชื่อที่แสดง**
+1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
+
+1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
 1. ป้อน URL Marketing ขององค์กรของคุณในฟิลด์ **ที่อยู่เซิร์ฟเวอร์**
 
@@ -43,15 +45,24 @@ ms.locfileid: "5597626"
 
 1. แมปฟิลด์รหัสลูกค้ากับรหัสผู้ติดต่อ Dynamics 365
 
-1. เลือก **ถัดไป**
+1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น 
+
+## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
+
+คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+
+1. ไปที่ **ข้อมูล** > **การส่งออก**
+
+1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มปลายทาง**
+
+1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน Dynamics 365 Marketing หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
 
 1. เลือกเซ็กเมนต์อย่างน้อยหนึ่งเซ็กเมนต์
 
 1. เลือก **บันทึก**
 
-## <a name="export-the-data"></a>ส่งออกข้อมูล
+การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
 
-คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md) นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง
-
+การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

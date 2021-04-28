@@ -65,7 +65,7 @@
         - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
           href: audience-insights/enrichment-hub.md
         - name: แบรนด์และความเกี่ยวข้องของความสนใจ
-          href: audience-insights/enrichment-microsoft-graph.md
+          href: audience-insights/enrichment-microsoft.md
         - name: เพิ่มข้อมูลด้วย HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: เพิ่มข้อมูลด้วย Leadspace
@@ -104,6 +104,8 @@
           href: audience-insights/predict-product-recommendation.md
         - name: คู่มือตัวอย่างสำหรับการคาดคะเนคำแนะนำผลิตภัณฑ์
           href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: สร้างเซ็กเมนต์ตามการคาดคะเน
+          href: audience-insights/prediction-based-segment.md
         - name: ใช้โมเดลการเรียนรู้เกี่ยวกับเครื่องที่กำหนดเอง
           href: audience-insights/custom-models.md
         - name: การทดลองกับ Azure Machine Learning
@@ -112,58 +114,72 @@
           href: audience-insights/machine-learning-studio-experiments.md
     - name: ตัวเลือกการส่งออก
       items:
-        - name: ภาพรวมปลายทางการส่งออก
-          href: audience-insights/export-destinations.md
-        - name: AdRoll
-          href: audience-insights/export-adroll.md
-        - name: Adobe Campaign Standard
-          href: audience-insights/export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: audience-insights/export-adobe-experience-platform.md
-        - name: Autopilot
-          href: audience-insights/export-autopilot.md
-        - name: Azure Blob Storage
-          href: audience-insights/export-azure-blob-storage.md
-        - name: Azure Data Lake Storage Gen2
-          href: audience-insights/export-azure-data-lake-storage-gen2.md
-        - name: DotDigital
-          href: audience-insights/export-dotdigital.md
-        - name: Dynamics 365 Customer Service (Add-in)
-          href: audience-insights/customer-card-add-in.md
-        - name: Dynamics 365 Marketing
-          href: audience-insights/export-dynamics365-marketing.md
-        - name: Dynamics 365 Sales
-          href: audience-insights/export-dynamics365-sales.md
-        - name: ฮับการขาย Dynamics 365 (Add-in)
-          href: audience-insights/customer-card-add-in.md
-        - name: Facebook Ads Manager
-          href: audience-insights/export-facebook.md
-        - name: Google Ads
-          href: audience-insights/export-google-ads.md
-        - name: LiveRamp
-          href: audience-insights/export-liveramp.md
-        - name: Mailchimp
-          href: audience-insights/export-mailchimp.md
-        - name: Microsoft Teams (บอท)
-          href: audience-insights/export-teams-bot.md
-        - name: Marketo
-          href: audience-insights/export-marketo.md
-        - name: Power BI
-          href: audience-insights/export-power-bi.md
-        - name: Power Apps
-          href: audience-insights/export-power-apps.md
-        - name: Power Automate
-          href: audience-insights/export-power-automate.md
-        - name: SendGrid
-          href: audience-insights/export-sendgrid.md
-        - name: SFTP
-          href: audience-insights/export-sftp.md
+        - name: การส่งออก
+          items:
+            - name: ภาพรวมการส่งออก (พรีวิว)
+              href: audience-insights/export-destinations.md
+            - name: AdRoll
+              href: audience-insights/export-adroll.md
+            - name: Autopilot
+              href: audience-insights/export-autopilot.md
+            - name: Azure Blob Storage
+              href: audience-insights/export-azure-blob-storage.md
+            - name: Azure Data Lake Storage Gen2
+              href: audience-insights/export-azure-data-lake-storage-gen2.md
+            - name: Adobe Campaign Standard
+              href: audience-insights/export-adobe-campaign-standard.md
+            - name: Adobe Experience Platform
+              href: audience-insights/export-adobe-experience-platform.md
+            - name: Campaign Monitor
+              href: audience-insights/export-campaign-monitor.md
+            - name: Constant Contact
+              href: audience-insights/export-constant-contact.md
+            - name: DotDigital
+              href: audience-insights/export-dotdigital.md
+            - name: Dynamics 365 Marketing
+              href: audience-insights/export-dynamics365-marketing.md
+            - name: Dynamics 365 Sales
+              href: audience-insights/export-dynamics365-sales.md
+            - name: Facebook Ads Manager
+              href: audience-insights/export-facebook.md
+            - name: Google Ads
+              href: audience-insights/export-google-ads.md
+            - name: LiveRamp
+              href: audience-insights/export-liveramp.md
+            - name: Mailchimp
+              href: audience-insights/export-mailchimp.md
+            - name: Marketo
+              href: audience-insights/export-marketo.md
+            - name: RollWorks
+              href: audience-insights/export-rollworks.md
+            - name: SendGrid
+              href: audience-insights/export-sendgrid.md
+            - name: Snapchat
+              href: audience-insights/export-snapchat.md
+            - name: SFTP
+              href: audience-insights/export-sftp.md
+        - name: การใช้งานอื่น ๆ
+          items:
+            - name: Dynamics 365 Customer Service (Add-in)
+              href: audience-insights/customer-card-add-in.md
+            - name: ฮับการขาย Dynamics 365 (Add-in)
+              href: audience-insights/customer-card-add-in.md
+            - name: Microsoft Teams (บอท)
+              href: audience-insights/export-teams-bot.md
+            - name: Power Apps
+              href: audience-insights/export-power-apps.md
+            - name: Power Automate
+              href: audience-insights/export-power-automate.md
+            - name: Power BI
+              href: audience-insights/export-power-bi.md
     - name: การดูแลจัดการ
       items:
         - name: ตั้งค่าการกำหนดค่าระบบ
           href: audience-insights/system.md
         - name: มอบสิทธิ์ของผู้ใช้
           href: audience-insights/permissions.md
+        - name: ภาพรวมของการเชื่อมต่อ (ตัวอย่าง)
+          href: audience-insights/connections.md
         - name: จัดการหลายสภาพแวดล้อม?
           href: audience-insights/manage-environments.md
         - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูล ADLS โดยใช้บริการหลัก
@@ -212,11 +228,15 @@
       items:
         - name: ดูรายงาน
           href: engagement-insights/view-reports.md
-        - name: สร้างรายงานแบบกำหนดเอง
+        - name: สร้างรายงานแบบกําหนดเอง
           href: engagement-insights/custom-reports.md
         - name: สร้างรายงานโปรไฟล์แบบรวม
           href: engagement-insights/profile-reports.md
-    - name: ทรัพยากรของนักพัฒนา
+    - name: การวิเคราะห์การเดินทาง
+      items:
+        - name: สร้างและจัดการรายงานช่วงระยะ
+          href: engagement-insights/funnel-reports.md
+    - name: ทรัพยากรนักพัฒนา
       items:
         - name: ภาพรวมของทรัพยากรนักพัฒนา
           href: engagement-insights/developer-resources.md

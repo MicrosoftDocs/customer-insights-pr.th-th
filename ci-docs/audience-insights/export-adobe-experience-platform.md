@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Adobe Experience Platform
 description: เรียนรู้วิธีใช้เซ็กเมนต์ข้อมูลเชิงลึกกลุ่มเป้าหมายใน Adobe Experience Platform
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: d1856861562be55c6d1d051050fe965560fa42f8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596292"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760124"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>ใช้เซ็กเมนต์ Customer Insights ใน Adobe Experience Platform (พรีวิว)
 
@@ -51,21 +51,36 @@ ms.locfileid: "5596292"
 
 ด้วยการระบุกลุ่มเป้าหมายของเรา เราสามารถกำหนดค่าการส่งออกจากข้อมูลเชิงลึกกลุ่มเป้าหมายไปยังบัญชีที่เก็บข้อมูล Azure Blob
 
-1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**
+### <a name="configure-a-connection"></a>กำหนดค่าการเชื่อมต่อ
 
-1. ในไทล์ **ที่เก็บข้อมูล Azure Blob** เลือก **ตั้งค่า**
+1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="ไทล์การกำหนดค่าสำหรับที่เก็บข้อมูล Azure Blob":::
+1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **ที่เก็บข้อมูล Azure Blob** หรือเลือก **ตั้งค่า** ในไทล์ **ที่เก็บข้อมูล Azure Blob**:
 
-1. ระบุ **ชื่อที่แสดง** สำหรับปลายทางการส่งออกใหม่นี้ จากนั้นป้อน **ชื่อบัญชี**, **คีย์บัญชี** และ **คอนเทนเนอร์** ของบัญชีที่เก็บข้อมูล Azure Blob ที่คุณต้องการส่งออกเซ็กเมนต์ไป  
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="ไทล์การกำหนดค่าสำหรับที่เก็บข้อมูล Azure Blob"::: ในการกำหนดค่าการเชื่อมต่อ
+
+1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
+
+1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
+
+1. ป้อน **ชื่อบัญชี** **รหัสบัญชี** และ **คอนเทนเนอร์** สำหรับบัญชีที่เก็บข้อมูล Blob ของคุณที่คุณต้องการส่งออกเซ็กเมนต์ไป  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="ภาพหน้าจอของการกำหนดค่าบัญชีที่เก็บข้อมูล"::: 
+   
+    - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชีที่เก็บข้อมูล Blob และรหัสบัญชี โปรดดู [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)
+    - หากต้องการเรียนรู้วิธีสร้างคอนเทนเนอร์ โปรดดู [สร้างคอนเทนเนอร์](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
 
-   - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชีที่เก็บข้อมูล Azure Blob และคีย์บัญชี ให้ดูที่ [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)
+1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น 
 
-   - หากต้องการเรียนรู้วิธีสร้างคอนเทนเนอร์ โปรดดู [สร้างคอนเทนเนอร์](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
+### <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-1. เลือก **ถัดไป**
+คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+
+1. ไปที่ **ข้อมูล** > **การส่งออก**
+
+1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มการส่งออก**
+
+1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วนที่เก็บข้อมูล Azure Blob หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
 
 1. เลือกเรกคอร์ดที่คุณต้องการส่งออก ในตัวอย่างนี้ คือ **ChurnProneCustomers**
 
@@ -73,11 +88,9 @@ ms.locfileid: "5596292"
 
 1. เลือก **บันทึก**
 
-หลังจากบันทึกปลายทางการส่งออกแล้ว คุณจะดูได้ใน **การดูแล** > **การส่งออก** > **ปลายทางการส่งออกของฉัน**
+หลังจากบันทึกปลายทางการส่งออกแล้ว คุณจะพบบน **ข้อมูล** > **การส่งออก**
 
-:::image type="content" source="media/export-destination-azure-blob-storage.png" alt-text="ภาพหน้าจอที่มีรายการของการส่งออกและเซ็กเมนต์ตัวอย่างที่ไฮไลต์":::
-
-ตอนนี้คุณสามารถ [ส่งออกเซ็กเมนต์ตามความต้องการ](export-destinations.md#export-data-on-demand) ได้แล้ว นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md) ทุกครั้ง
+ตอนนี้คุณสามารถ [ส่งออกเซ็กเมนต์ตามความต้องการ](export-destinations.md#run-exports-on-demand) ได้แล้ว นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md) ทุกครั้ง
 
 > [!NOTE]
 > ตรวจสอบให้แน่ใจว่าจำนวนเรกคอร์ดในเซ็กเมนต์ที่ส่งออกอยู่ภายในขีดจำกัดที่อนุญาตของสิทธิ์การใช้งาน Adobe Campaign Standard ของคุณ
