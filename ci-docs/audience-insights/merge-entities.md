@@ -1,7 +1,7 @@
 ---
 title: ผสานเอนทิตีในการรวมข้อมูล
 description: ผสานเอนทิตีเพื่อสร้างโปรไฟล์ลูกค้าแบบรวม
-ms.date: 04/16/2020
+ms.date: 05/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,85 +9,121 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4ad06a0baf57e612fc0e0214dfd23d28e7d2b6be
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 2cab702509596dd87c0c9b9769d1af8ba8387f9d
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896534"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085599"
 ---
-# <a name="merge-entities"></a><span data-ttu-id="75738-103">ผสานเอนทิตี</span><span class="sxs-lookup"><span data-stu-id="75738-103">Merge entities</span></span>
+# <a name="merge-entities"></a><span data-ttu-id="ab0c0-103">ผสานเอนทิตี</span><span class="sxs-lookup"><span data-stu-id="ab0c0-103">Merge entities</span></span>
 
-<span data-ttu-id="75738-104">เฟสการผสานคือเฟสสุดท้ายในกระบวนการรวมข้อมูล</span><span class="sxs-lookup"><span data-stu-id="75738-104">The merge phase is the last phase in the data unification process.</span></span> <span data-ttu-id="75738-105">โดยมีวัตถุประสงค์คือการกระทบยอดข้อมูลที่ขัดแย้งกัน</span><span class="sxs-lookup"><span data-stu-id="75738-105">Its purpose is reconciling conflicting data.</span></span> <span data-ttu-id="75738-106">ตัวอย่างของข้อมูลที่ขัดแย้งกันอาจรวมถึงชื่อลูกค้าที่พบในชุดข้อมูลสองชุดของคุณ แต่จะแสดงแตกต่างกันเล็กน้อยในแต่ละชุด ("Grant Marshall" เทียบกับ "Grant Marshal") หรือหมายเลขโทรศัพท์ที่แตกต่างกันในรูปแบบ (617-803-091X เทียบกับ 617803091X)</span><span class="sxs-lookup"><span data-stu-id="75738-106">Examples of conflicting data could include a customer name found in two of your datasets but that shows up a little differently in each ("Grant Marshall" versus "Grant Marshal"), or a phone number that differs in format (617-803-091X versus 617803091X).</span></span> <span data-ttu-id="75738-107">การผสานจุดข้อมูลที่ขัดแย้งกันเหล่านั้นทำได้บนพื้นฐานแอตทริบิวต์ต่อแอตทริบิวต์</span><span class="sxs-lookup"><span data-stu-id="75738-107">Merging those conflicting data points is done on an attribute-by-attribute basis.</span></span>
+<span data-ttu-id="ab0c0-104">เฟสการผสานคือเฟสสุดท้ายในกระบวนการรวมข้อมูล</span><span class="sxs-lookup"><span data-stu-id="ab0c0-104">The merge phase is the last phase in the data unification process.</span></span> <span data-ttu-id="ab0c0-105">โดยมีวัตถุประสงค์คือการกระทบยอดข้อมูลที่ขัดแย้งกัน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-105">Its purpose is reconciling conflicting data.</span></span> <span data-ttu-id="ab0c0-106">ตัวอย่างของข้อมูลที่ขัดแย้งกันอาจรวมถึงชื่อลูกค้าที่พบในชุดข้อมูลสองชุดของคุณ แต่จะแสดงแตกต่างกันเล็กน้อยในแต่ละชุด ("Grant Marshall" เทียบกับ "Grant Marshal") หรือหมายเลขโทรศัพท์ที่แตกต่างกันในรูปแบบ (617-803-091X เทียบกับ 617803091X)</span><span class="sxs-lookup"><span data-stu-id="ab0c0-106">Examples of conflicting data could include a customer name found in two of your datasets but that shows up a little differently in each ("Grant Marshall" versus "Grant Marshal"), or a phone number that differs in format (617-803-091X versus 617803091X).</span></span> <span data-ttu-id="ab0c0-107">การผสานจุดข้อมูลที่ขัดแย้งกันเหล่านั้นทำได้บนพื้นฐานแอตทริบิวต์ต่อแอตทริบิวต์</span><span class="sxs-lookup"><span data-stu-id="ab0c0-107">Merging those conflicting data points is done on an attribute-by-attribute basis.</span></span>
 
-<span data-ttu-id="75738-108">หลังจากเสร็จสิ้น [เฟสการจับคู่](match-entities.md) คุณเริ่มขั้นตอนการผสานเฟสได้โดยเลือกไทล์ **ผสาน** บนหน้า **รวม**</span><span class="sxs-lookup"><span data-stu-id="75738-108">After completing the [match phase](match-entities.md), you start the merge phase by selecting the **Merge** tile on the **Unify** page.</span></span>
+:::image type="content" source="media/merge-fields-page.png" alt-text="ผสานหน้าในกระบวนการรวมข้อมูลที่แสดงตารางที่มีฟิลด์ที่ผสาน ซึ่งกำหนดโปรไฟล์ลูกค้าแบบรวม":::
 
-## <a name="review-system-recommendations"></a><span data-ttu-id="75738-109">ตรวจทานคำแนะนำของระบบ        </span><span class="sxs-lookup"><span data-stu-id="75738-109">Review system recommendations</span></span>
+<span data-ttu-id="ab0c0-109">หลังจากเสร็จสิ้น [เฟสการจับคู่](match-entities.md) คุณเริ่มขั้นตอนการผสานเฟสได้โดยเลือกไทล์ **ผสาน** บนหน้า **รวม**</span><span class="sxs-lookup"><span data-stu-id="ab0c0-109">After completing the [match phase](match-entities.md), you start the merge phase by selecting the **Merge** tile on the **Unify** page.</span></span>
 
-<span data-ttu-id="75738-110">บนหน้า **ผสาน** คุณสามารถเลือกและยกเว้นแอตทริบิวต์ที่จะผสานภายในเอนทิตีโปรไฟล์ลูกค้าแบบรวมของคุณ (ผลลัพธ์ของกระบวนการกำหนดค่า)</span><span class="sxs-lookup"><span data-stu-id="75738-110">On the **Merge** page, you choose and exclude attributes to merge within your unified customer profile entity (the result of the configuration process).</span></span> <span data-ttu-id="75738-111">แอตทริบิวต์บางอย่างถูกรวมเข้ากับระบบโดยอัตโนมัติ</span><span class="sxs-lookup"><span data-stu-id="75738-111">Some attributes are automatically merged by the system.</span></span>
+## <a name="review-system-recommendations"></a><span data-ttu-id="ab0c0-110">ตรวจทานคำแนะนำของระบบ        </span><span class="sxs-lookup"><span data-stu-id="ab0c0-110">Review system recommendations</span></span>
 
-### <a name="view-merged-attributes"></a><span data-ttu-id="75738-112">ดูแอตทริบิวต์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="75738-112">View merged attributes</span></span>
+<span data-ttu-id="ab0c0-111">บน **ข้อมูล** > **รวมกัน** > **ผสาน** คุณเลือกและไม่รวมแอตทริบิวต์ที่จะผสานภายในเอนทิตีโปรไฟล์ลูกค้าแบบรวมของคุณ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-111">On **Data** > **Unify** > **Merge**, you choose and exclude attributes to merge within your unified customer profile entity.</span></span> <span data-ttu-id="ab0c0-112">โปรไฟล์ลูกค้าแบบรวมเป็นผลมาจากกระบวนการรวมข้อมูล</span><span class="sxs-lookup"><span data-stu-id="ab0c0-112">The unified customer profile is the result of the data unification process.</span></span> <span data-ttu-id="ab0c0-113">แอตทริบิวต์บางอย่างถูกรวมเข้ากับระบบโดยอัตโนมัติ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-113">Some attributes are automatically merged by the system.</span></span>
 
-<span data-ttu-id="75738-113">หากต้องการดูแอททริบิวต์ที่รวมอยู่ในแอตทริบิวต์ที่ผสานโดยอัตโนมัติของคุณ ให้เลือกแอตทริบิวต์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="75738-113">To view the attributes that are included in one of your automatically merged attributes, select that merged attribute.</span></span> <span data-ttu-id="75738-114">แอตทริบิวต์ทั้งสองที่ประกอบด้วยแอตทริบิวต์ที่ผสานแสดงเป็นสองแถวใหม่ใต้แอตทริบิวต์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="75738-114">The two attributes that compose that merged attribute display in two new rows beneath the merged attribute.</span></span>
+<span data-ttu-id="ab0c0-114">หากต้องการดูแอตทริบิวต์ที่รวมอยู่ในหนึ่งในแอตทริบิวต์ที่ผสานโดยอัตโนมัติของคุณ ให้เลือกแอตทริบิวต์ที่ผสานในแท็บ **ฟิลด์ลูกค้า** ของตาราง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-114">To view the attributes that are included in one of your automatically merged attributes, select that merged attribute in the **Customer fields** tab of the table.</span></span> <span data-ttu-id="ab0c0-115">แอตทริบิวต์ที่ประกอบด้วยแอตทริบิวต์ที่ผสานจะแสดงเป็นแถวใหม่สองแถวใต้แอตทริบิวต์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-115">The attributes that compose that merged attribute display in two new rows beneath the merged attribute.</span></span>
+
+## <a name="separate-rename-exclude-and-edit-merged-fields"></a><span data-ttu-id="ab0c0-116">แยก เปลี่ยนชื่อ ไม่รวม และแก้ไขฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-116">Separate, rename, exclude, and edit merged fields</span></span>
+
+<span data-ttu-id="ab0c0-117">คุณสามารถเปลี่ยนวิธีที่ระบบประมวลผลแอตทริบิวต์ที่ผสานเพื่อสร้างโปรไฟล์ลูกค้าแบบรวม</span><span class="sxs-lookup"><span data-stu-id="ab0c0-117">You can change how the system processes merged attributes to generate the unified customer profile.</span></span> <span data-ttu-id="ab0c0-118">เลือก **แสดงเพิ่มเติม** และเลือกสิ่งที่คุณต้องการเปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-118">Select **Show more** and choose what you want to change.</span></span>
+
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="ตัวเลือกในเมนูแบบหล่นลง แสดงเพิ่มเติม เพื่อจัดการแอตทริบิวต์ที่ผสาน":::
+
+<span data-ttu-id="ab0c0-120">สำหรับข้อมูลเพิ่มเติม ดูส่วนต่อไปนี้</span><span class="sxs-lookup"><span data-stu-id="ab0c0-120">For more information, see the following sections.</span></span>
+
+## <a name="separate-merged-fields"></a><span data-ttu-id="ab0c0-121">แยกฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-121">Separate merged fields</span></span>
+
+<span data-ttu-id="ab0c0-122">หากต้องการแยกฟิลด์ที่ผสาน ให้ค้นหาแอตทริบิวต์ในตาราง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-122">To separate merged fields, find the attribute in the table.</span></span> <span data-ttu-id="ab0c0-123">ฟิลด์ที่แยกกันจะแสดงเป็นจุดข้อมูลแต่ละจุดในโปรไฟล์ลูกค้าแบบรวม</span><span class="sxs-lookup"><span data-stu-id="ab0c0-123">Separated fields show as individual data points on the unified customer profile.</span></span> 
+
+1. <span data-ttu-id="ab0c0-124">เลือกฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-124">Select the merged field.</span></span>
+  
+1. <span data-ttu-id="ab0c0-125">เลือก **แสดงเพิ่มเติม** และเลือก **แยกฟิลด์**</span><span class="sxs-lookup"><span data-stu-id="ab0c0-125">Select **Show more** and choose **Separate fields**.</span></span>
+ 
+1. <span data-ttu-id="ab0c0-126">ยืนยันการแยก</span><span class="sxs-lookup"><span data-stu-id="ab0c0-126">Confirm the separation.</span></span>
+
+1. <span data-ttu-id="ab0c0-127">เลือก **บันทึก** และ **รัน** เพื่อประมวลผลการเปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-127">Select **Save** and **Run** to process the changes.</span></span>
+
+## <a name="rename-merged-fields"></a><span data-ttu-id="ab0c0-128">เปลี่ยนชื่อฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-128">Rename merged fields</span></span>
+
+<span data-ttu-id="ab0c0-129">เปลี่ยนชื่อที่แสดงของแอตทริบิวต์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-129">Change the display name of merged attributes.</span></span> <span data-ttu-id="ab0c0-130">คุณไม่สามารถเปลี่ยนชื่อของเอนทิตีผลลัพธ์ได้</span><span class="sxs-lookup"><span data-stu-id="ab0c0-130">You can't change the name of the output entity.</span></span>
+
+1. <span data-ttu-id="ab0c0-131">เลือกฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-131">Select the merged field.</span></span>
+  
+1. <span data-ttu-id="ab0c0-132">เลือก **แสดงเพิ่มเติม** และเลือก **เปลี่ยนชื่อ**</span><span class="sxs-lookup"><span data-stu-id="ab0c0-132">Select **Show more** and choose **Rename**.</span></span>
+
+1. <span data-ttu-id="ab0c0-133">ยืนยันชื่อที่แสดงที่เปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-133">Confirm the changed display name.</span></span> 
+
+1. <span data-ttu-id="ab0c0-134">เลือก **บันทึก** และ **รัน** เพื่อประมวลผลการเปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-134">Select **Save** and **Run** to process the changes.</span></span>
+
+## <a name="exclude-merged-fields"></a><span data-ttu-id="ab0c0-135">ไม่รวมฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-135">Exclude merged fields</span></span>
+
+<span data-ttu-id="ab0c0-136">ไม่รวมแอตทริบิวต์จากโปรไฟล์ลูกค้าแบบรวม</span><span class="sxs-lookup"><span data-stu-id="ab0c0-136">Exclude an attribute from the unified customer profile.</span></span> <span data-ttu-id="ab0c0-137">หากฟิลด์ถูกใช้ในกระบวนการอื่นๆ ตัวอย่างเช่น ในเซ็กเมนต์ ให้ลบฟิลด์ออกจากกระบวนการเหล่านี้ ก่อนที่จะแยกออกจากโปรไฟล์ลูกค้า</span><span class="sxs-lookup"><span data-stu-id="ab0c0-137">If the field is used in other processes, for example in a segment, remove it from these processes before excluding it from the customer profile.</span></span> 
+
+1. <span data-ttu-id="ab0c0-138">เลือกฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-138">Select the merged field.</span></span>
+  
+1. <span data-ttu-id="ab0c0-139">เลือก **แสดงเพิ่มเติม** และเลือก **ไม่รวม**</span><span class="sxs-lookup"><span data-stu-id="ab0c0-139">Select **Show more** and choose **Exclude**.</span></span>
+
+1. <span data-ttu-id="ab0c0-140">ยืนยันการตัดออก</span><span class="sxs-lookup"><span data-stu-id="ab0c0-140">Confirm the exclusion.</span></span>
+
+1. <span data-ttu-id="ab0c0-141">เลือก **บันทึก** และ **รัน** เพื่อประมวลผลการเปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-141">Select **Save** and **Run** to process the changes.</span></span> 
+
+<span data-ttu-id="ab0c0-142">บนหน้า **ผสาน** ให้เลือก **ฟิลด์ที่ตัดออก** เพื่อดูรายการฟิลด์ที่ตัดออกทั้งหมด</span><span class="sxs-lookup"><span data-stu-id="ab0c0-142">On the **Merge** page, select **Excluded fields** to see the list of all excluded fields.</span></span> <span data-ttu-id="ab0c0-143">บานหน้าต่างนี้ช่วยให้คุณสามารถเพิ่มฟิลด์ที่ตัดออกกลับมาได้</span><span class="sxs-lookup"><span data-stu-id="ab0c0-143">This pane lets you add excluded fields back.</span></span>
+
+## <a name="manually-combine-fields"></a><span data-ttu-id="ab0c0-144">รวมฟิลด์ด้วยตนเอง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-144">Manually combine fields</span></span>
+
+<span data-ttu-id="ab0c0-145">ระบุแอตทริบิวต์ที่ผสานด้วยตนเอง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-145">Specify a merged attribute manually.</span></span> 
+
+1. <span data-ttu-id="ab0c0-146">บนหน้า **ผสาน** ให้เลือก **รวมฟิลด์**</span><span class="sxs-lookup"><span data-stu-id="ab0c0-146">On the **Merge** page, select **Combine fields**.</span></span>
+
+1. <span data-ttu-id="ab0c0-147">ระบุ **ชื่อ** และ **ชื่อฟิลด์เอาต์พุต**</span><span class="sxs-lookup"><span data-stu-id="ab0c0-147">Provide a **Name** and an **Output field name**.</span></span>
+
+1. <span data-ttu-id="ab0c0-148">เลือกฟิลด์ที่จะเพิ่ม</span><span class="sxs-lookup"><span data-stu-id="ab0c0-148">Choose a field to add.</span></span> <span data-ttu-id="ab0c0-149">เลือก **เพิ่มฟิลด์** เพื่อรวมฟิลด์เพิ่มเติม</span><span class="sxs-lookup"><span data-stu-id="ab0c0-149">Select **Add fields** to combine more fields.</span></span>
+
+1. <span data-ttu-id="ab0c0-150">ยืนยันการตัดออก</span><span class="sxs-lookup"><span data-stu-id="ab0c0-150">Confirm the exclusion.</span></span>
+
+1. <span data-ttu-id="ab0c0-151">เลือก **บันทึก** และ **รัน** เพื่อประมวลผลการเปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-151">Select **Save** and **Run** to process the changes.</span></span> 
+
+## <a name="change-the-order-of-fields"></a><span data-ttu-id="ab0c0-152">เปลี่ยนแปลงลำดับของฟิลด์</span><span class="sxs-lookup"><span data-stu-id="ab0c0-152">Change the order of fields</span></span>
+
+<span data-ttu-id="ab0c0-153">เอนทิตีบางรายการมีรายละเอียดมากกว่ารายการอื่น</span><span class="sxs-lookup"><span data-stu-id="ab0c0-153">Some entities contain more details than others.</span></span> <span data-ttu-id="ab0c0-154">หากเอนทิตีมีข้อมูลล่าสุดเกี่ยวกับฟิลด์ คุณสามารถจัดลำดับความสำคัญเหนือเอนทิตีอื่นๆ เมื่อผสานค่า</span><span class="sxs-lookup"><span data-stu-id="ab0c0-154">If an entity includes the latest data about a field, you can prioritize it over other entities when merging values.</span></span>
+
+1. <span data-ttu-id="ab0c0-155">เลือกฟิลด์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-155">Select the merged field.</span></span>
+  
+1. <span data-ttu-id="ab0c0-156">เลือก **แสดงเพิ่มเติม** และเลือก **แก้ไข**</span><span class="sxs-lookup"><span data-stu-id="ab0c0-156">Select **Show more** and choose **Edit**.</span></span>
+
+1. <span data-ttu-id="ab0c0-157">ในบานหน้าต่าง **รวมฟิลด์** เลือก **เลื่อนขึ้น/ลง** เพื่อกำหนดลำดับ หรือลากและวางในตำแหน่งที่ต้องการ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-157">In the **Combine fields** pane, select **Move up/down** to set the order or drag and drop them in the desired position.</span></span>
+
+1. <span data-ttu-id="ab0c0-158">ยืนยันการเปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-158">Confirm the change.</span></span>
+
+1. <span data-ttu-id="ab0c0-159">เลือก **บันทึก** และ **รัน** เพื่อประมวลผลการเปลี่ยนแปลง</span><span class="sxs-lookup"><span data-stu-id="ab0c0-159">Select **Save** and **Run** to process the changes.</span></span>
+
+## <a name="run-your-merge"></a><span data-ttu-id="ab0c0-160">เรียกใช้การผสานของคุณ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-160">Run your merge</span></span>
+
+<span data-ttu-id="ab0c0-161">ไม่ว่าคุณจะรวมแอตทริบิวต์ด้วยตนเองหรือปล่อยให้ระบบทำการผสาน คุณสามารถเรียกใช้การผสานได้เสมอ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-161">Whether you manually merge attributes or let the system merge them, you can always run your merge.</span></span> <span data-ttu-id="ab0c0-162">เลือก **เรียกใช้** บนหน้า **ผสาน** เพื่อเริ่มกระบวนการ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-162">Select **Run** on the **Merge** page to start the process.</span></span>
 
 > [!div class="mx-imgBorder"]
-> <span data-ttu-id="75738-115">![เลือกแอตทริบิวต์ที่ผสาน](media/configure-data-merge-profile-attributes.png "เลือกแอตทริบิวต์ที่ผสาน")</span><span class="sxs-lookup"><span data-stu-id="75738-115">![Select merged attribute](media/configure-data-merge-profile-attributes.png "Select merged attribute")</span></span>
+> <span data-ttu-id="ab0c0-163">![การผสานข้อมูล บันทึก และเรียกใช้](media/configure-data-merge-save-run.png "การผสานข้อมูล บันทึก และเรียกใช้")</span><span class="sxs-lookup"><span data-stu-id="ab0c0-163">![Data merge Save and Run](media/configure-data-merge-save-run.png "Data merge Save and Run")</span></span>
 
-### <a name="separate-merged-attributes"></a><span data-ttu-id="75738-116">แยกแอตทริบิวต์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="75738-116">Separate merged attributes</span></span>
+<span data-ttu-id="ab0c0-164">เลือก **เรียกใช้ ผสาน เท่านั้น** หากคุณต้องการดูผลลัพธ์ที่แสดงในเอนทิตีลูกค้าแบบรวมเท่านั้น</span><span class="sxs-lookup"><span data-stu-id="ab0c0-164">Choose **Run only Merge** if you only want to see the output reflected in the unified customer entity.</span></span> <span data-ttu-id="ab0c0-165">กระบวนการดาวน์สตรีมจะได้รับการรีเฟรชเป็น [กำหนดไว้ในกำหนดการรีเฟรช](system.md#schedule-tab)</span><span class="sxs-lookup"><span data-stu-id="ab0c0-165">Downstream processes will be refreshed as [defined in the refresh schedule](system.md#schedule-tab).</span></span>
 
-<span data-ttu-id="75738-117">หากต้องการแยกหรือยกเลิกการผสานแอตทริบิวต์ที่ผสานโดยอัตโนมัติใด ๆ ให้ค้นหาแอตทริบิวต์ในตาราง **แอตทริบิวต์โปรไฟล์** .</span><span class="sxs-lookup"><span data-stu-id="75738-117">To separate or unmerge any of the automatically merged attributes, find the attribute in the **Profile attributes** table.</span></span>
+<span data-ttu-id="ab0c0-166">เลือก **เรียกใช้ ผสาน และกระบวนการดาวน์สตรีม** เพื่อรีเฟรชระบบด้วยการเปลี่ยนแปลงของคุณ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-166">Choose **Run Merge and downstream processes** to refresh the system with your changes.</span></span> <span data-ttu-id="ab0c0-167">กระบวนการทั้งหมด ซึ่งรวมถึงการเพิ่มความสมบูรณ์ เซ็กเมนต์ และการวัด จะดำเนินการอีกครั้งโดยอัตโนมัติ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-167">All processes, including enrichment, segments, and measures will rerun automatically.</span></span> <span data-ttu-id="ab0c0-168">หลังจากกระบวนการดาวน์สตรีมทั้งหมดเสร็จสิ้นแล้ว โปรไฟล์ของลูกค้าจะแสดงการเปลี่ยนแปลงใดๆ ที่คุณทำ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-168">After all downstream processes have completed, the customer profiles reflect any changes you made.</span></span>
 
-1. <span data-ttu-id="75738-118">เลือกปุ่มไข่ปลา (...)</span><span class="sxs-lookup"><span data-stu-id="75738-118">Select the ellipsis (...) button.</span></span>
-  
-2. <span data-ttu-id="75738-119">ในรายการแบบหล่นลง เลือก **แยกฟิลด์**</span><span class="sxs-lookup"><span data-stu-id="75738-119">In the dropdown list, select **Separate fields**.</span></span>
-
-### <a name="remove-merged-attributes"></a><span data-ttu-id="75738-120">ลบแอตทริบิวต์ที่ผสาน</span><span class="sxs-lookup"><span data-stu-id="75738-120">Remove merged attributes</span></span>
-
-<span data-ttu-id="75738-121">หากต้องการยกเว้นแอตทริบิวต์จากเอนทิตีโปรไฟล์ลูกค้าสุดท้ายให้ค้นหาในตาราง **แอตทริบิวต์โปรไฟล์** .</span><span class="sxs-lookup"><span data-stu-id="75738-121">To exclude an attribute from the final customer profile entity, find it in the **Profile attributes** table.</span></span>
-
-1. <span data-ttu-id="75738-122">เลือกปุ่มไข่ปลา (...)</span><span class="sxs-lookup"><span data-stu-id="75738-122">Select the ellipsis (...) button.</span></span>
-  
-2. <span data-ttu-id="75738-123">ในรายการแบบหล่นลง เลือก **ไม่ผสาน**</span><span class="sxs-lookup"><span data-stu-id="75738-123">In the dropdown list, select **Don't merge**.</span></span>
-
-   <span data-ttu-id="75738-124">แอตทริบิวต์ถูกย้ายไปที่ส่วน **นำออกจากเรกคอร์ดลูกค้า** .</span><span class="sxs-lookup"><span data-stu-id="75738-124">The attribute is moved to the **Removed from customer record** section.</span></span>
-
-## <a name="manually-add-a-merged-attribute"></a><span data-ttu-id="75738-125">เพิ่มแอตทริบิวต์ที่ผสานด้วยตนเอง</span><span class="sxs-lookup"><span data-stu-id="75738-125">Manually add a merged attribute</span></span>
-
-<span data-ttu-id="75738-126">หากต้องการเพิ่มแอตทริบิวต์ที่ผสาน ไปที่หน้า **ผสาน** .</span><span class="sxs-lookup"><span data-stu-id="75738-126">To add a merged attribute, go to the **Merge** page.</span></span>
-
-1. <span data-ttu-id="75738-127">เลือก **เพิ่มแอตทริบิวต์ที่ผสาน**.</span><span class="sxs-lookup"><span data-stu-id="75738-127">Select **Add merged attribute**.</span></span>
-
-2. <span data-ttu-id="75738-128">ให้ **ชื่อ** เพื่อระบุในหน้า **ผสาน** ในภายหลัง</span><span class="sxs-lookup"><span data-stu-id="75738-128">Provide a **Name** to identify it on the **Merge** page later.</span></span>
-
-3. <span data-ttu-id="75738-129">อีกทางเลือกหนึ่ง ให้ **ชื่อที่แสดง** ปรากฏในเอนทิตีโปรไฟล์ลูกค้าแบบรวม</span><span class="sxs-lookup"><span data-stu-id="75738-129">Optionally, provide a **Display name** to appear in the unified Customer Profile entity.</span></span>
-
-4. <span data-ttu-id="75738-130">กำหนดค่า **เลือกแอตทริบิวต์ที่ซ้ำกัน** เพื่อเลือกแอตทริบิวต์ที่คุณต้องการผสานจากเอนทิตีที่ตรงกัน</span><span class="sxs-lookup"><span data-stu-id="75738-130">Configure **Select duplicate attributes** to select the attributes that you want to merge from the matched entities.</span></span> <span data-ttu-id="75738-131">คุณยังสามารถค้นหาแอตทริบิวต์ได้</span><span class="sxs-lookup"><span data-stu-id="75738-131">You can also search for attributes.</span></span>
-
-5. <span data-ttu-id="75738-132">ตั้งค่า **จัดอันดับตามความสำคัญ** เพื่อจัดลำดับความสำคัญของแอตทริบิวต์หนึ่งเหนือส่วนอื่น</span><span class="sxs-lookup"><span data-stu-id="75738-132">Set the **Rank by importance** to prioritize one attribute above the others.</span></span> <span data-ttu-id="75738-133">ตัวอย่างเช่น หากเอนทิตี *WebAccountCSV* รวมถึงข้อมูลที่ถูกต้องที่สุดเกี่ยวกับแอตทริบิวต์ *ชื่อเต็ม* คุณสามารถจัดลำดับความสำคัญของเอนทิตีนี้ได้ก่อน *ContactCSV* โดยการเลือก *WebAccountCSV*</span><span class="sxs-lookup"><span data-stu-id="75738-133">For example, if the *WebAccountCSV* entity includes the most accurate data about the *Full Names* attribute, you could prioritize this entity over *ContactCSV* by selecting *WebAccountCSV*.</span></span> <span data-ttu-id="75738-134">ผลที่ตามมาคือ *WebAccountCSV* จะย้ายไปที่ลำดับความสำคัญอันดับแรก ในขณะที่ *ContactCSV* จะย้ายไปที่ลำดับความสำคัญอันดับที่สองเมื่อดึงค่าสำหรับแอตทริบิวต์ *ชื่อเต็ม*</span><span class="sxs-lookup"><span data-stu-id="75738-134">As a result, *WebAccountCSV* moves to first priority, while *ContactCSV* moves to second priority when pulling values for the *Full Name* attribute.</span></span>
-
-## <a name="run-your-merge"></a><span data-ttu-id="75738-135">เรียกใช้การผสานของคุณ</span><span class="sxs-lookup"><span data-stu-id="75738-135">Run your merge</span></span>
-
-<span data-ttu-id="75738-136">ไม่ว่าคุณจะรวมแอตทริบิวต์ด้วยตนเองหรือปล่อยให้ระบบทำการผสาน คุณสามารถเรียกใช้การผสานได้เสมอ</span><span class="sxs-lookup"><span data-stu-id="75738-136">Whether you manually merge attributes or let the system merge them, you can always run your merge.</span></span> <span data-ttu-id="75738-137">เลือก **เรียกใช้** บนหน้า **ผสาน** เพื่อเริ่มกระบวนการ</span><span class="sxs-lookup"><span data-stu-id="75738-137">Select **Run** on the **Merge** page to start the process.</span></span>
-
-> [!div class="mx-imgBorder"]
-> <span data-ttu-id="75738-138">![การผสานข้อมูล บันทึก และเรียกใช้](media/configure-data-merge-save-run.png "การผสานข้อมูล บันทึก และเรียกใช้")</span><span class="sxs-lookup"><span data-stu-id="75738-138">![Data merge Save and Run](media/configure-data-merge-save-run.png "Data merge Save and Run")</span></span>
-
-<span data-ttu-id="75738-139">หากต้องการเปลี่ยนแปลงเพิ่มเติมและดำเนินการขั้นตอนอีกครั้ง คุณสามารถยกเลิกการผสานที่กำลังดำเนินอยู่</span><span class="sxs-lookup"><span data-stu-id="75738-139">To make additional changes and rerun the step, you can cancel an in-progress merge.</span></span> <span data-ttu-id="75738-140">เลือก **กำลังรีเฟรช ...** และเลือก **ยกเลิกงาน** ในบานหน้าต่างด้านข้างที่ปรากฏขึ้น</span><span class="sxs-lookup"><span data-stu-id="75738-140">Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.</span></span>
-
-<span data-ttu-id="75738-141">หลังจากข้อความ **กำลังรีเฟรช ...** เปลี่ยนเป็น **ที่ประสบความสำเร็จ** การผสานเสร็จสมบูรณ์และแก้ไขข้อขัดแย้งในข้อมูลของคุณตามนโยบายที่คุณกำหนดไว้แล้ว</span><span class="sxs-lookup"><span data-stu-id="75738-141">After the **Refreshing ...** text changes to **Successful**, merge has completed and resolved contradictions in your data according to the policies you defined.</span></span> <span data-ttu-id="75738-142">แอตทริบิวต์ที่ผสานและไม่ผสานจะถูกรวมอยู่ในเอนทิตีโปรไฟล์แบบรวม</span><span class="sxs-lookup"><span data-stu-id="75738-142">Merged and unmerged attributes are included in the unified profile entity.</span></span> <span data-ttu-id="75738-143">แอตทริบิวต์ที่ไม่ผสานจะไม่รวมอยู่ในเอนทิตีโปรไฟล์แบบรวม</span><span class="sxs-lookup"><span data-stu-id="75738-143">Excluded attributes aren't included in the unified profile entity.</span></span>
-
-<span data-ttu-id="75738-144">หากไม่ใช่ครั้งแรกที่คุณดำเนินการผสานสำเร็จ กระบวนการดาวน์สตรีมทั้งหมด รวมถึงการเพิ่มประสิทธิภาพ การแบ่งส่วน และการวัด จะรันใหม่โดยอัตโนมัติ</span><span class="sxs-lookup"><span data-stu-id="75738-144">If it wasn't the first time you ran a merge successfully, all downstream processes, including enrichment, segmentation, and measures will rerun automatically.</span></span> <span data-ttu-id="75738-145">หลังจากกระบวนการดาวน์สตรีมทั้งหมดได้รับการรันอีกครั้ง โปรไฟล์ลูกค้าจะแสดงถึงการเปลี่ยนแปลงที่คุณทำ</span><span class="sxs-lookup"><span data-stu-id="75738-145">After all downstream processes have been rerun, the customer profiles reflect any changes you made.</span></span>
+<span data-ttu-id="ab0c0-169">หากต้องการทำการเปลี่ยนแปลงเพิ่มเติมและเรียกใช้ขั้นตอนนี้อีกครั้ง คุณสามารถยกเลิกการผสานที่กำลังดำเนินการอยู่</span><span class="sxs-lookup"><span data-stu-id="ab0c0-169">To make more changes and rerun the step, you can cancel an in-progress merge.</span></span> <span data-ttu-id="ab0c0-170">เลือก **กำลังรีเฟรช ...** และเลือก **ยกเลิกงาน** ในบานหน้าต่างด้านข้างที่ปรากฏขึ้น</span><span class="sxs-lookup"><span data-stu-id="ab0c0-170">Select **Refreshing ...** and select **Cancel job**  in the side pane that appears.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="75738-146">โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ</span><span class="sxs-lookup"><span data-stu-id="75738-146">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="75738-147">นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies)</span><span class="sxs-lookup"><span data-stu-id="75738-147">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="75738-148">คุณสามารถเลือกสถานะของกระบวนการเพื่อดูรายละเอียดความคืบหน้าของงานที่เกิดขึ้นทั้งหมด</span><span class="sxs-lookup"><span data-stu-id="75738-148">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="75738-149">หลังจากเลือก **ดูรายละเอียด** สำหรับหนึ่งในงานของงาน คุณจะพบข้อมูลเพิ่มเติม ได้แก่ เวลาในการประมวลผล วันที่ประมวลผลล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน</span><span class="sxs-lookup"><span data-stu-id="75738-149">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
+> <span data-ttu-id="ab0c0-171">โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-171">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="ab0c0-172">นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies)</span><span class="sxs-lookup"><span data-stu-id="ab0c0-172">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="ab0c0-173">คุณสามารถเลือกสถานะของกระบวนการเพื่อดูรายละเอียดความคืบหน้าของงานที่เกิดขึ้นทั้งหมด</span><span class="sxs-lookup"><span data-stu-id="ab0c0-173">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="ab0c0-174">หลังจากเลือก **ดูรายละเอียด** สำหรับหนึ่งในงานของงาน คุณจะพบข้อมูลเพิ่มเติม ได้แก่ เวลาในการประมวลผล วันที่ประมวลผลล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน</span><span class="sxs-lookup"><span data-stu-id="ab0c0-174">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="75738-150">ขั้นตอนถัดไป</span><span class="sxs-lookup"><span data-stu-id="75738-150">Next Step</span></span>
+## <a name="next-step"></a><span data-ttu-id="ab0c0-175">ขั้นตอนถัดไป</span><span class="sxs-lookup"><span data-stu-id="ab0c0-175">Next Step</span></span>
 
-<span data-ttu-id="75738-151">กำหนดค่า [กิจกรรม](activities.md) [การเพิ่มข้อมูล](enrichment-hub.md) หรือ [ความสัมพันธ์](relationships.md) เพื่อรับข้อมูลเชิงลึกเพิ่มเติมเกี่ยวกับลูกค้าของคุณ</span><span class="sxs-lookup"><span data-stu-id="75738-151">Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.</span></span>
+<span data-ttu-id="ab0c0-176">กำหนดค่า [กิจกรรม](activities.md) [การเพิ่มข้อมูล](enrichment-hub.md) หรือ [ความสัมพันธ์](relationships.md) เพื่อรับข้อมูลเชิงลึกเพิ่มเติมเกี่ยวกับลูกค้าของคุณ</span><span class="sxs-lookup"><span data-stu-id="ab0c0-176">Configure [activities](activities.md), [enrichment](enrichment-hub.md), or [relationships](relationships.md) to gain more insights about your customers.</span></span>
 
-<span data-ttu-id="75738-152">หากคุณกำหนดค่ากิจกรรม การเพิ่มข้อมูล หรือความสัมพันธ์ หรือหากคุณกำหนดเซ็กเมนต์ จะมีการประมวลผลกิจกรรมโดยอัตโนมัติเพื่อใช้ข้อมูลลูกค้าล่าสุด</span><span class="sxs-lookup"><span data-stu-id="75738-152">If you already configured activities, enrichment, or relationships, or if you defined segments, they'll be processed automatically to use the latest customer data.</span></span>
-
-
-
+<span data-ttu-id="ab0c0-177">หากคุณตั้งค่าคอนฟิกกิจกรรม การเพิ่มความสมบูรณ์ หรือเซ็กเมนต์ไว้แล้ว รายการเหล่านี้จะได้รับการประมวลผลโดยอัตโนมัติเพื่อใช้ข้อมูลล่าสุดของลูกค้า</span><span class="sxs-lookup"><span data-stu-id="ab0c0-177">If you already configured activities, enrichment, or segments, they'll be processed automatically to use the latest customer data.</span></span>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
