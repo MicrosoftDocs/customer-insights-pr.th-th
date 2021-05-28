@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b94a8e8b6bb867ca04a64007d592b22fbd700618
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 35848998e738c7ecc1642f2b75912ff78d85f79e
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759901"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976178"
 ---
 # <a name="export-segment-lists-to-mailchimp-preview"></a>ส่งออกรายการเซ็กเมนต์ไปยัง Mailchimp (ตัวอย่าง)
 

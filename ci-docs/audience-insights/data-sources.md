@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887917"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085553"
 ---
 # <a name="data-sources-overview"></a>ภาพรวมของแหล่งข้อมูล
 
@@ -36,11 +36,9 @@ ms.locfileid: "5887917"
 
 การนำเข้าข้อมูลจากแหล่งข้อมูลภายในองค์กรในข้อมูลเชิงลึกของผู้ชมได้รับการสนับสนุนตามโฟลว์ข้อมูล Power Platform สามารถเปิดใช้โฟลว์ข้อมูลใน Customer Insights โดย [ให้ URL สภาพแวดล้อม Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) เมื่อตั้งค่าสภาพแวดล้อม
 
-แหล่งข้อมูลที่สร้างขึ้นหลังจากเชื่อมโยงสภาพแวดล้อม Dataverse ที่มี Customer Insights จะใช้ [โฟลว์ข้อมูล Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) โดยค่าเริ่มต้น โฟลว์ข้อมูลสนับสนุนการเชื่อมต่อภายในองค์กรโดยใช้เกตเวย์ข้อมูล ลบและสร้างแหล่งข้อมูลที่มีอยู่ก่อนหน้าสภาพแวดล้อม Dataverse ที่เชื่อมโยงกับการใช้เกตเวย์ข้อมูลภายในองค์กร
+แหล่งข้อมูลที่สร้างขึ้นหลังจากเชื่อมโยงสภาพแวดล้อม Dataverse ที่มี Customer Insights จะใช้ [โฟลว์ข้อมูล Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) โดยค่าเริ่มต้น โฟลว์ข้อมูลสนับสนุนการเชื่อมต่อภายในองค์กรโดยใช้เกตเวย์ข้อมูล ลบและสร้างแหล่งข้อมูลใหม่ที่มีอยู่ก่อนหน้าสภาพแวดล้อม Dataverse ที่เชื่อมโยงกับ [ใช้เกตเวย์ข้อมูลภายในองค์กร](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md)
 
 เกตเวย์ข้อมูลจากสภาพแวดล้อม Power BI หรือ Power Apps จะมองเห็นและคุณสามารถใช้ซ้ำได้ใน Customer Insights หน้าแหล่งข้อมูลจะแสดงลิงก์เพื่อไปที่สภาพแวดล้อม Power Platform ที่คุณสามารถดูและกำหนดค่าเกตเวย์ข้อมูลภายในองค์กร
-
-:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="ภาพหน้าจอของหน้าแหล่งข้อมูลที่แสดงลิงก์ที่ชี้ไปที่สภาพแวดล้อม Power Platform":::
 
 ## <a name="review-ingested-data"></a>ตรวจสอบข้อมูลที่นำเข้า
 

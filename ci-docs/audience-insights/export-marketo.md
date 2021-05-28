@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759844"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059339"
 ---
 # <a name="export-segments-to-marketo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Marketo (ตัวอย่าง)
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759844"
 
 1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
-1. ป้อน **[รหัสไคลเอ็นต์ Marketo ข้อมูลลับของไคลเอ็นต์และชื่อโฮสต์จุดสิ้นสุด REST](https://developers.marketo.com/rest-api/authentication/)**
+1. ป้อน **[รหัสไคลเอ็นต์ Marketo ข้อมูลลับของไคลเอ็นต์และชื่อโฮสต์จุดสิ้นสุด REST](https://developers.marketo.com/rest-api/authentication/)** ชื่อโฮสต์จุดสิ้นสุด REST เป็นชื่อโฮสต์เท่านั้น โดยไม่มี `https://` ตัวอย่าง: `xyz-abc-123.mktorest.com` 
 
 1. เลือก **ฉันตกลง** เพื่อยืนยัน **ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล** และเลือก **เชื่อมต่อ** เพื่อเริ่มต้นการเชื่อมต่อกับ Marketo
 
@@ -62,7 +62,7 @@ ms.locfileid: "5759844"
 
 1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน Marketo หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
 
-1. ป้อน **[รหัสรายชื่อ Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. ป้อน **[รหัสรายการ Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** ของคุณ รหัสรายการเป็นค่าตัวเลขเท่านั้น ตัวอย่างเช่น หากรหัสรายการ Marketo ของคุณคือ ST12345A7 ให้ลบอักขระก่อนและหลังตัวเลข และป้อน `12345` 
 
 1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า 
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759844"
 
 การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
 
-การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) ใน Marketo ตอนนี้คุณสามารถค้นหาเซ็กเมนต์ของคุณได้ที่ [รายชื่อ Marketo](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)
+การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) ใน Marketo ตอนนี้คุณสามารถค้นหาเซ็กเมนต์ของคุณได้ที่ [รายชื่อ Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)
 
 
 ## <a name="data-privacy-and-compliance"></a>ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ

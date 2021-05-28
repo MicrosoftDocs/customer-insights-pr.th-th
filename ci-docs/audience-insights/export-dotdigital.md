@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 235bcdfa4a7c4c1a382778bd4f66c1a9f5b7beb1
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: d08504856e1c673ef32433b83bf491d7f4e8cee4
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759982"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976869"
 ---
 # <a name="export-segment-lists-to-dotdigital-preview"></a>ส่งออกรายการเซ็กเมนต์ไปยัง DotDigital (ตัวอย่าง)
 

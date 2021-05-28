@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ca32906a98bc734639fb369d6f5a92e8888fd850
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 37d25aa038ea32b98f2d1850d7b42b701292438d
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906833"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976065"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>ส่งออกรายการเซ็กเมนต์ไปที่ตัวจัดการโฆษณาบน Facebook (ตัวอย่าง)
 

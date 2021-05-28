@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
+ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896028"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954510"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>การเพิ่มข้อมูลสำหรับโปรไฟล์ลูกค้า (การแสดงตัวอย่าง)
 
@@ -29,6 +29,7 @@ ms.locfileid: "5896028"
 
 - [แบรนด์](enrichment-microsoft.md) จัดทำโดย Microsoft
 - [ความสนใจ](enrichment-microsoft.md) จัดทำโดย Microsoft
+- [ที่อยู่ที่ปรับปรุงแล้ว](enrichment-enhanced-addresses.md) ที่ได้รับจาก Microsoft
 - [ข้อมูลบริษัท](enrichment-leadspace.md) ซึ่งมีให้โดย Leadspace
 - [ประชากรศาสตร์](enrichment-experian.md) นำเสนอโดย Experian
 - [ข้อมูลตำแหน่งที่ตั้ง](enrichment-here.md) ให้บริการโดย HERE Technologies

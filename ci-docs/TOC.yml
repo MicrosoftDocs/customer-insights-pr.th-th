@@ -66,6 +66,8 @@
           href: audience-insights/enrichment-hub.md
         - name: แบรนด์และความเกี่ยวข้องของความสนใจ
           href: audience-insights/enrichment-microsoft.md
+        - name: ที่อยู่ขั้นสูง
+          href: audience-insights/enrichment-enhanced-addresses.md
         - name: เพิ่มข้อมูลด้วย HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: เพิ่มข้อมูลด้วย Leadspace
@@ -76,14 +78,20 @@
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: เซ็กเมนต์และการวัด
       items:
-        - name: สร้างเซ็กเมนต์และกลุ่มลูกค้า
+        - name: ภาพรวมของเซ็กเมนต์
           href: audience-insights/segments.md
+        - name: สร้างเซ็กเมนต์และกลุ่มลูกค้า
+          href: audience-insights/segment-builder.md
+        - name: เซ็กเมนต์ที่แนะนำตามการวัด
+          href: audience-insights/suggested-segments.md
+        - name: เซ็กเมนต์ที่แนะนำตามกิจกรรม
+          href: audience-insights/suggested-segments-activity.md
         - name: รับข้อมูลเชิงลึกเกี่ยวกับเซ็กเมนต์
           href: audience-insights/segment-insights.md
-        - name: ดูเซ็กเมนต์แนะนํา
-          href: audience-insights/suggested-segments.md
         - name: ค้นหาลูกค้าที่คล้ายกัน
           href: audience-insights/find-similar-customer-segments.md
+    - name: การวัด
+      items:
         - name: กำหนดมาตรการและ KPI
           href: audience-insights/measures.md
     - name: การคาดคะเน
@@ -116,7 +124,7 @@
       items:
         - name: การส่งออก
           items:
-            - name: ภาพรวมการส่งออก (พรีวิว)
+            - name: ภาพรวมการส่งออก
               href: audience-insights/export-destinations.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
@@ -126,6 +134,8 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
+            - name: การวิเคราะห์ Azure Synapse
+              href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe Experience Platform
@@ -160,9 +170,7 @@
               href: audience-insights/export-sftp.md
         - name: การใช้งานอื่น ๆ
           items:
-            - name: Dynamics 365 Customer Service (Add-in)
-              href: audience-insights/customer-card-add-in.md
-            - name: ฮับการขาย Dynamics 365 (Add-in)
+            - name: Add-in การ์ดลูกค้าสำหรับ Dynamics 365
               href: audience-insights/customer-card-add-in.md
             - name: Microsoft Teams (บอท)
               href: audience-insights/export-teams-bot.md
@@ -178,7 +186,7 @@
           href: audience-insights/system.md
         - name: มอบสิทธิ์ของผู้ใช้
           href: audience-insights/permissions.md
-        - name: ภาพรวมของการเชื่อมต่อ (ตัวอย่าง)
+        - name: ภาพรวมของการเชื่อมต่อ
           href: audience-insights/connections.md
         - name: จัดการหลายสภาพแวดล้อม?
           href: audience-insights/manage-environments.md

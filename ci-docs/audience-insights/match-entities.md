@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2eb84c44aa530346a73ba720106734d705a45f23
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595587"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085645"
 ---
 # <a name="match-entities"></a>จับคู่เอนทิตี
 
@@ -103,6 +103,18 @@ ms.locfileid: "5595587"
 
 > [!NOTE]
 > ลำดับของกฎมีความสำคัญ อัลกอริทึมการจับคู่จะพยายามจับคู่ตามเกณฑ์ของกฎข้อแรกของคุณและดำเนินการต่อกับกฎข้อที่สองเฉพาะเมื่อไม่มีการระบุการจับคู่กับกฎข้อแรก
+
+### <a name="change-the-entity-order-in-match-rules"></a>เปลี่ยนลำดับเอนทิตีในกฎการจับคู่
+
+คุณสามารถจัดลำดับเอนทิตีใหม่สำหรับกฎการจับคู่เพื่อเปลี่ยนลำดับในการประมวลผล กฎที่ขัดแย้งกันเนื่องจากลำดับที่เปลี่ยนแปลง จะถูกลบออก คุณต้องสร้างกฎที่ถูกลบใหม่ด้วยการตั้งค่าคอนฟิกที่อัปเดต
+
+1. ไปที่ **ข้อมูล** > **รวม** > **จับคู่** และเลือก **แก้ไข**
+
+1. ในบานหน้าต่าง **แก้ไขกฎ** เลือกตัวควบคุม **เลื่อนขึ้น/ลง** หรือลากและวางเอนทิตีเพื่อเปลี่ยนลำดับ
+
+   :::image type="content" source="media/reorder-match-rules.png" alt-text="ตัวเลือกในการเปลี่ยนลำดับในการประมวลผลเอนทิตีในระยะการจับคู่":::
+
+1. เลือก **เสร็จสิ้น** เพื่อบันทึกกฎ
 
 ## <a name="define-deduplication-on-a-match-entity"></a>กำหนดการขจัดข้อมูลซ้ำซ้อนในเอนทิตีที่ตรงกัน
 
