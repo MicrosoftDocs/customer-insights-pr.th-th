@@ -96,30 +96,40 @@
           href: audience-insights/measures.md
     - name: การคาดคะเน
       items:
-        - name: เติมข้อมูลโดยใช้การคาดคะเนค่า
-          href: audience-insights/predictions.md
-        - name: ทำนายการเลิกใช้บริการในการสมัครใช้งาน
-          href: audience-insights/predict-subscription-churn.md
-        - name: คู่มือตัวอย่างสำหรับการคาดคะเนการบอกเลิกการสมัครสมาชิก
-          href: audience-insights/sample-guide-predict-subscription-churn.md
-        - name: คาดคะเนการเลิกทำธุรกรรม
-          href: audience-insights/predict-transactional-churn.md
-        - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกทำธุรกรรม
-          href: audience-insights/sample-guide-predict-transactional-churn.md
-        - name: คาดคะเนมูลค่าตลอดอายุการใช้งานของลูกค้า (CLV)
-          href: audience-insights/predict-customer-lifetime-value.md
-        - name: คาดคะเนคำแนะนำผลิตภัณฑ์
-          href: audience-insights/predict-product-recommendation.md
-        - name: คู่มือตัวอย่างสำหรับการคาดคะเนคำแนะนำผลิตภัณฑ์
-          href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: คาดคะเนข้อมูลด้วยความช่วยเหลือของ AI
+          items:
+            - name: ภาพรวมโมเดลการคาดคะเน
+              href: audience-insights/predictions-overview.md
+            - name: คาดคะเนมูลค่าตลอดอายุการใช้งานของลูกค้า (CLV)
+              href: audience-insights/predict-customer-lifetime-value.md
+            - name: คาดคะเนคำแนะนำผลิตภัณฑ์
+              href: audience-insights/predict-product-recommendation.md
+            - name: ทำนายการเลิกใช้บริการในการสมัครใช้งาน
+              href: audience-insights/predict-subscription-churn.md
+            - name: คาดคะเนการเลิกทำธุรกรรม
+              href: audience-insights/predict-transactional-churn.md
+            - name: ใช้โมเดลที่กำหนดเองจาก Azure Machine Learning
+              href: audience-insights/custom-models.md
+            - name: กรอกข้อมูลที่ขาดหายไปบางส่วน
+              href: audience-insights/predictions.md
+        - name: คู่มือตัวอย่าง
+          items:
+            - name: คู่มือตัวอย่างสำหรับการคาดคะเน CLV
+              href: audience-insights/sample-guide-predict-clv.md
+            - name: คู่มือตัวอย่างสำหรับการคาดคะเนการบอกเลิกการสมัครสมาชิก
+              href: audience-insights/sample-guide-predict-subscription-churn.md
+            - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกทำธุรกรรม
+              href: audience-insights/sample-guide-predict-transactional-churn.md
+            - name: คู่มือตัวอย่างสำหรับการคาดคะเนคำแนะนำผลิตภัณฑ์
+              href: audience-insights/sample-guide-predict-product-recommendation.md
+            - name: การทดลองกับ Azure Machine Learning
+              href: audience-insights/azure-machine-learning-experiments.md
+            - name: การทดลองด้วย Azure Machine Learning Studio
+              href: audience-insights/machine-learning-studio-experiments.md
+        - name: จัดการการคาดคะเน
+          href: audience-insights/manage-predictions.md
         - name: สร้างเซ็กเมนต์ตามการคาดคะเน
           href: audience-insights/prediction-based-segment.md
-        - name: ใช้โมเดลการเรียนรู้เกี่ยวกับเครื่องที่กำหนดเอง
-          href: audience-insights/custom-models.md
-        - name: การทดลองกับ Azure Machine Learning
-          href: audience-insights/azure-machine-learning-experiments.md
-        - name: การทดลองด้วย Azure Machine Learning Studio
-          href: audience-insights/machine-learning-studio-experiments.md
     - name: ตัวเลือกการส่งออก
       items:
         - name: การส่งออก
@@ -154,12 +164,18 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: LinkedIn Ads
+              href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: Microsoft Advertising
+              href: audience-insights/export-microsoft-advertising.md
+            - name: Omnisend
+              href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
             - name: SendGrid
@@ -200,6 +216,8 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: ตรวจทาน Schema เอนทิตีใน Common Data Model
           href: audience-insights/entity-schemas.md
+        - name: ข้อมูล Customer Insights ใน Dataverse
+          href: audience-insights/customer-insights-dataverse.md
         - name: ทำงานกับ API
           href: audience-insights/apis.md
         - name: การอ้างอิง API
@@ -240,6 +258,12 @@
           href: engagement-insights/custom-reports.md
         - name: สร้างรายงานโปรไฟล์แบบรวม
           href: engagement-insights/profile-reports.md
+        - name: ดูและสร้างมิติ
+          href: engagement-insights/dimensions.md
+        - name: ดูและสร้างเมตริก
+          href: engagement-insights/metrics.md
+        - name: ดูและสร้างเซ็กเมนต์
+          href: engagement-insights/segments.md
     - name: การวิเคราะห์การเดินทาง
       items:
         - name: สร้างและจัดการรายงานช่วงระยะ
