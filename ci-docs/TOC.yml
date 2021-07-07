@@ -136,15 +136,17 @@
           items:
             - name: ภาพรวมการส่งออก
               href: audience-insights/export-destinations.md
+            - name: การส่งเสริมการขายที่ใช้งานอยู่
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
               href: audience-insights/export-autopilot.md
             - name: Azure Blob Storage
               href: audience-insights/export-azure-blob-storage.md
-            - name: Azure Data Lake Storage Gen2
+            - name: Azure Data Lake Storage รุ่น2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: การวิเคราะห์ Azure Synapse
+            - name: Azure Synapse Analytics
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -240,15 +246,15 @@
           href: engagement-insights/get-started.md
         - name: สร้างพื้นที่ทำงาน
           href: engagement-insights/create-workspace.md
-        - name: สร้างเว็บไซต์ของคุณ
-          href: engagement-insights/instrument-website.md
+        - name: บันทึกเหตุการณ์จากเว็บไซต์และแอปสำหรับอุปกรณ์เคลื่อนที่
+          href: engagement-insights/developer-resources.md
         - name: แนวคิดและศัพท์เฉพาะ
           href: engagement-insights/glossary.md
     - name: กิจกรรม
       items:
         - name: สร้างและแก้ไขเหตุการณ์
           href: engagement-insights/refined-events.md
-        - name: ส่งออกกิจกรรม
+        - name: ส่งออกเหตุการณ์
           href: engagement-insights/export-events.md
     - name: รายงาน
       items:
@@ -272,10 +278,18 @@
       items:
         - name: ภาพรวมของทรัพยากรนักพัฒนา
           href: engagement-insights/developer-resources.md
-        - name: บทช่วยสอน SDK เว็บ
+        - name: บทช่วยสอน SDK บนเว็บ
           href: engagement-insights/advanced-SDK-implementation.md
         - name: ตัวอย่าง SDK เว็บ
           href: engagement-insights/websdk-sample.md
+        - name: บทช่วยสอน Android SDK
+          href: engagement-insights/get-started-android.md
+        - name: ตัวอย่าง Android SDK
+          href: engagement-insights/androidsdk-sample.md
+        - name: บทช่วยสอนเกี่ยวกับ iOS SDK
+          href: engagement-insights/get-started-ios.md
+        - name: ตัวอย่าง iOS SDK
+          href: engagement-insights/iossdk-sample.md
     - name: การดูแลจัดการ
       items:
         - name: บทบาท และสิทธิ์
