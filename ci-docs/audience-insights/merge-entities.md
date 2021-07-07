@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2cab702509596dd87c0c9b9769d1af8ba8387f9d
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085599"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305678"
 ---
 # <a name="merge-entities"></a>ผสานเอนทิตี
 
@@ -34,7 +34,7 @@ ms.locfileid: "6085599"
 
 คุณสามารถเปลี่ยนวิธีที่ระบบประมวลผลแอตทริบิวต์ที่ผสานเพื่อสร้างโปรไฟล์ลูกค้าแบบรวม เลือก **แสดงเพิ่มเติม** และเลือกสิ่งที่คุณต้องการเปลี่ยนแปลง
 
-:::image type="content" source="media/manage-merged-attributes.png" alt-text="ตัวเลือกในเมนูแบบหล่นลง แสดงเพิ่มเติม เพื่อจัดการแอตทริบิวต์ที่ผสาน":::
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="ตัวเลือกในเมนูแบบหล่นลงแสดงเพิ่มเติมเพื่อจัดการแอตทริบิวต์ที่ผสาน":::
 
 สำหรับข้อมูลเพิ่มเติม ดูส่วนต่อไปนี้
 

@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: a85ee598ec747d0594755314e83a127ce0f2af95
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129922"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306189"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>คู่มือตัวอย่างการคาดคะเนคำแนะนำผลิตภัณฑ์ (ตัวอย่าง)
 
@@ -105,9 +105,9 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
 1. ไปที่แท็บ **จับคู่** และเลือก **ตั้งค่าลำดับ**
 
-2. ในรายการแบบหล่นลง **หลัก** ให้เลือก **eCommerceContacts : eCommerce** เป็นแหล่งข้อมูลหลักและรวมเรกคอร์ดทั้งหมด
+2. ในรายการแบบหล่นลง **หลัก** เลือก **eCommerceContacts: eCommerce** เป็นแหล่งที่มาหลักและรวมเรกคอร์ดทั้งหมด
 
-3. ในรายการแบบหล่นลง **เอนทิตี 2** ให้เลือก **loyCustomers : LoyaltyScheme** และรวมเรกคอร์ดทั้งหมด
+3. ในรายการแบบหล่นลง **เอนทิตี 2** เลือก **oyCustomers : LoyaltyScheme** และรวมเรกคอร์ดทั้งหมด
 
    ![รวมอีคอมเมิร์ซและความภักดีที่ตรงกัน](media/unify-match-order.png)
 
@@ -115,16 +115,16 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
 5. เพิ่มเงื่อนไขแรกของคุณโดยใช้ FullName
 
-   - สำหรับ eCommerceContacts ให้เลือก **FullName** ในเมนูแบบหล่นลง
-   - สำหรับ loyCustomers ให้เลือก **FullName** ในเมนูแบบหล่นลง
+   - สำหรับ eCommerceContacts เลือก **FullName** ในรายการแบบหล่นลง
+   - สำหรับ loyCustomers เลือก **FullName** ในรายการแบบหล่นลง
    - เลือกรายการแบบหล่นลง **ทำให้เป็นมาตรฐาน** และเลือก **ชนิด (โทรศัพท์, ชื่อ, ที่อยู่... )**
    - ตั้งค่า **ระดับความแม่นยำ**: **พื้นฐาน** และ **ค่า**: **สูง**
 
 6. ป้อนชื่อ **ชื่อเต็ม, อีเมล** สำหรับกฎใหม่
 
    - เพิ่มเงื่อนไขที่สองสำหรับที่อยู่อีเมลโดยการเลือก **เพิ่มเงื่อนไข**
-   - สำหรับเอนทิตี eCommerceContacts ให้เลือก **อีเมล** ในรายการแบบหล่นลง
-   - สำหรับเอนทิตี loyCustomers ให้เลือก **EMail** ในรายการแบบหล่นลง
+   - สำหรับเอนทิตี eCommerceContacts เลือก **EMail** ในเมนูแบบหล่นลง
+   - สำหรับเอนทิตี loyCustomers เลือก **EMail** ในรายการแบบหล่นลง
    - ปล่อยให้ ทำให้เป็นมาตรฐาน ว่างไว้
    - ตั้งค่า **ระดับความแม่นยำ**: **พื้นฐาน** และ **ค่า**: **สูง**
 
