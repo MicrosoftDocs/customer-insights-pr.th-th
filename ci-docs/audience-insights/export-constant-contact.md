@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: b54659f028a141fe8f351645d96e933d47568a39
+ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124296"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6362441"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Constant Contact (พรีวิว)
 
@@ -47,7 +47,7 @@ ms.locfileid: "6124296"
 
 1. เลือก **เชื่อมต่อ** เพื่อเริ่มการเชื่อมต่อ Constant Contact
 
-1. เลือก **รับรองความถูกต้องกับ AdRoll** และให้ข้อมูลรับรองผู้ดูแลระบบของคุณสำหรับ Constant Contact 
+1. เลือก **รับรองความถูกต้องด้วยการติดต่ออย่างต่อเนื่อง** และให้ข้อมูลประจำตัวผู้ดูแลระบบของคุณสำหรับการติดต่ออย่างต่อเนื่อง 
 
 1. เลือก **เพิ่มตัวเองเป็นผู้ใช้ที่ส่งออก** และให้ข้อมูลประจำตัวของ Customer Insights ของคุณ
 

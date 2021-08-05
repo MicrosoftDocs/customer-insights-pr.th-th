@@ -9,17 +9,17 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 09d449e51a3a47ec916ab3d017419c9d9be1ffcf
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 32bb89b02947350c056c8ce8adbe37500d2099a1
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305733"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556101"
 ---
 # <a name="system-configuration"></a>การกำหนดค่าระบบ
 
 หน้า **ระบบ** ประกอบด้วยแท็บต่อไปนี้:
-- [สถานะ](#status-tab)
+- [สถานภาพ](#status-tab)
 - [กำหนดการ](#schedule-tab)
 - [การใช้งาน API](#api-usage-tab)
 - [เกี่ยวกับ](#about-tab)

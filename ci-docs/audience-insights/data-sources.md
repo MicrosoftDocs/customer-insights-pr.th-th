@@ -9,18 +9,19 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: 0a017a37777adaaf7de079cf481ec10c70c7adba
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304719"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692458"
 ---
 # <a name="data-sources-overview"></a>ภาพรวมของแหล่งข้อมูล
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-ความสามารถข้อมูลเชิงลึกกลุ่มเป้าหมายใน Dynamics 365 Customer Insights เชื่อมต่อกับข้อมูลจากแหล่งที่มามากมาย การเชื่อมต่อกับแหล่งข้อมูลมักเรียกว่ากระบวนการของ *การส่งผ่านข้อมูล* หลังจากนำเข้าข้อมูลแล้ว คุณสามารถ [รวมกัน](data-unification.md) และดำเนินการได้
+ความสามารถข้อมูลเชิงลึกกลุ่มเป้าหมายใน Dynamics 365 Customer Insights เชื่อมต่อกับข้อมูลจากแหล่งที่มามากมาย การเชื่อมต่อกับแหล่งข้อมูลมักเรียกว่ากระบวนการของ *การนำเข้าข้อมูล* หลังจากนำเข้าข้อมูลแล้ว คุณสามารถ [รวมกัน](data-unification.md) และดำเนินการได้
 
 ## <a name="add-a-data-source"></a>เพิ่มแหล่งข้อมูล
 
@@ -30,15 +31,15 @@ ms.locfileid: "6304719"
 
 - [ผ่านตัวเชื่อมต่อ Power Query มากมาย](connect-power-query.md)
 - [จากโฟลเดอร์ Common Data Model](connect-common-data-model.md)
-- [จากที่จัดเก็บข้อมูลดิบ Microsoft Dataverse ของคุณเอง](connect-common-data-service-lake.md)
+- [จากที่จัดเก็บข้อมูลดิบ Microsoft Dataverse ของคุณเอง](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>เพิ่มข้อมูลจากแหล่งข้อมูลภายในองค์กร
 
-การนำเข้าข้อมูลจากแหล่งข้อมูลภายในองค์กรในข้อมูลเชิงลึกของผู้ชมได้รับการสนับสนุนตามโฟลว์ข้อมูล Microsoft Power Platform สามารถเปิดใช้โฟลว์ข้อมูลใน Customer Insights โดย [ให้ URL สภาพแวดล้อม Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) เมื่อตั้งค่าสภาพแวดล้อม
+การนำเข้าข้อมูลจากแหล่งข้อมูลภายในองค์กรในข้อมูลเชิงลึกของผู้ชมได้รับการสนับสนุนตามโฟลว์ข้อมูล Microsoft Power Platform สามารถเปิดใช้โฟลว์ข้อมูลใน Customer Insights โดย [ให้ URL สภาพแวดล้อม Microsoft Dataverse](get-started-paid.md) เมื่อตั้งค่าสภาพแวดล้อม
 
-แหล่งข้อมูลที่สร้างขึ้นหลังจากเชื่อมโยงสภาพแวดล้อม Dataverse ที่มี Customer Insights จะใช้ [โฟลว์ข้อมูล Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) โดยค่าเริ่มต้น โฟลว์ข้อมูลสนับสนุนการเชื่อมต่อภายในองค์กรโดยใช้เกตเวย์ข้อมูล ลบและสร้างแหล่งข้อมูลใหม่ที่มีอยู่ก่อนหน้าสภาพแวดล้อม Dataverse ที่เชื่อมโยงกับ [ใช้เกตเวย์ข้อมูลภายในองค์กร](/data-integration/gateway/service-gateway-app.md)
+แหล่งข้อมูลที่สร้างขึ้นหลังจากเชื่อมโยงสภาพแวดล้อม Dataverse ที่มี Customer Insights จะใช้ [โฟลว์ข้อมูล Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) โดยค่าเริ่มต้น โฟลว์ข้อมูลสนับสนุนการเชื่อมต่อภายในองค์กรโดยใช้เกตเวย์ข้อมูล ลบและสร้างแหล่งข้อมูลใหม่ที่มีอยู่ก่อนหน้าสภาพแวดล้อม Dataverse ที่เชื่อมโยงกับ [ใช้เกตเวย์ข้อมูลภายในองค์กร](/data-integration/gateway/service-gateway-app)
 
-เกตเวย์ข้อมูลจากสภาพแวดล้อม Power BI หรือ Power Apps จะมองเห็นและคุณสามารถใช้ซ้ำได้ใน Customer Insights หน้าแหล่งข้อมูลแสดงลิงก์เพื่อไปที่สภาพแวดล้อม Microsoft Power Platform ที่คุณสามารถดูและตั้งค่าคอนฟิกเกตเวย์ข้อมูลภายในองค์กร
+เกตเวย์ข้อมูลจากสภาพแวดล้อม Power BI หรือ Power Apps จะมองเห็นและคุณสามารถใช้ซ้ำได้ใน Customer Insights หน้าแหล่งข้อมูลแสดงลิงก์เพื่อไปที่สภาพแวดล้อม Microsoft Power Platform ที่คุณสามารถดูและกำหนดค่าเกตเวย์ข้อมูลภายในองค์กร
 
 ## <a name="review-ingested-data"></a>ตรวจสอบข้อมูลที่นำเข้า
 
@@ -47,12 +48,12 @@ ms.locfileid: "6304719"
 > [!div class="mx-imgBorder"]
 > ![เพิ่มแหล่งข้อมูลแล้ว](media/configure-data-datasource-added.png "เพิ่มแหล่งข้อมูลแล้ว")
 
-|สถานะ  |รายละเอียด  |
+|สถานภาพ  |รายละเอียด  |
 |---------|---------|
 |สำเร็จ   |แหล่งข้อมูลนำเข้าสำเร็จแล้วหากมีการระบุเวลาไว้ในคอลัมน์ **รีเฟรชแล้ว**
 |ยังไม่ได้เริ่มต้น   |แหล่งข้อมูลยังไม่มีการนำเข้าข้อมูลหรือยังอยู่ในโหมดร่าง         |
-|กำลังรีเฟรช    |กำลังดำเนินการนำข้อมูลไปใช้ คุณสามารถยกเลิกการดำเนินการนี้ได้ด้วยการเลือก **หยุดการรีเฟรช** ในคอลัมน์ **การดำเนินการ** การหยุดการรีเฟรชของแหล่งข้อมูลจะแปลงกลับเป็นสถานะรีเฟรชล่าสุด       |
-|ไม่สำเร็จ     |การใช้ข้อมูลรันไปในข้อผิดพลาด         |
+|กำลังรีเฟรช    |กำลังดำเนินการนำเข้าข้อมูล คุณสามารถยกเลิกการดำเนินการนี้ได้ด้วยการเลือก **หยุดการรีเฟรช** ในคอลัมน์ **การดำเนินการ** การหยุดการรีเฟรชของแหล่งข้อมูลจะแปลงกลับเป็นสถานะรีเฟรชล่าสุด       |
+|ไม่สำเร็จ     |การนำเข้าข้อมูลเกิดข้อผิดพลาด         |
 
 เลือกค่าในคอลัมน์ **สถานะ** ของแหล่งข้อมูลใดๆ เพื่อรีวิวรายละเอียดเพิ่มเติม ในบานหน้าต่าง **รายละเอียดความคืบหน้า** ขยาย **แหล่งข้อมูล** เลือก **ดูรายละเอียด** สำหรับข้อมูลเพิ่มเติมเกี่ยวกับสถานะการรีเฟรช ซึ่งรวมถึงรายละเอียดข้อผิดพลาดและการปรับปรุงกระบวนการดาวน์สตรีม
 

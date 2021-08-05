@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 336cab8619c0b80b7b8a38035cae99620baf2873
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 6e2080b4ad19f6f57f60da591345e80ce9083e8a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306280"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554090"
 ---
 # <a name="segments-overview"></a>ภาพรวมของเซ็กเมนต์
 
@@ -70,7 +70,7 @@ ms.locfileid: "6306280"
 
 1. เลือก **จัดการการส่งออก** จากรายการแบบหล่นลงของการดำเนินการ
 
-1. หน้า **การส่งออก (พรีวิว) สำหรับเซ็กเมนต์** เปิดขึ้น คุณสามารถดูการส่งออกที่ตั้งค่าคอนฟิกไว้ทั้งหมดซึ่งจัดกลุ่มตามการส่งออกที่มีเซ็กเมนต์ปัจจุบันหรือไม่มี
+1. หน้า **การส่งออก (พรีวิว) สำหรับเซ็กเมนต์** เปิดขึ้น คุณสามารถดูการส่งออกที่กำหนดค่าไว้ทั้งหมดซึ่งจัดกลุ่มตามการส่งออกที่มีเซ็กเมนต์ปัจจุบันหรือไม่มี
 
    1. ในการเพิ่มเซ็กเมนต์ที่เลือกไปยังการส่งออก ให้เลือกการส่งออกในรายการ และเลือก **เพิ่มเซ็กเมนต์**
 

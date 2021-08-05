@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596522"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692136"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>เชื่อมต่อกับบัญชี Azure Data Lake Storage รุ่น2 ที่มีบริการหลัก Azure สำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
 เครื่องมืออัตโนมัติที่ใช้บริการ Azure ควรมีสิทธิ์ที่จำกัดไว้เสมอ แทนที่จะให้แอปพลิเคชันลงชื่อเข้าใช้ในฐานะผู้ใช้ที่มีสิทธิ์การใช้งานแบบเต็ม Azure จะเสนอบริการหลัก อ่านต่อเพื่อเรียนรู้วิธีเชื่อมต่อข้อมูลเชิงลึกกลุ่มเป้าหมายกับบัญชี Azure Data Lake Storage รุ่น2 โดยใช้บริการหลักของ Azure แทนคีย์บัญชีที่เก็บข้อมูล 
 
-คุณสามารถใช้บริการหลักเพื่อ [เพิ่มหรือแก้ไขโฟลเดอร์ Common Data Model เป็นแหล่งข้อมูล](connect-common-data-model.md) ได้อย่างปลอดภัยหรือ [สร้างใหม่หรือปรับปรุงสภาพแวดล้อมที่มีอยู่](manage-environments.md#create-an-environment-in-an-existing-organization)
+คุณสามารถใช้บริการหลักเพื่อ [เพิ่มหรือแก้ไขโฟลเดอร์ Common Data Model เป็นแหล่งข้อมูล](connect-common-data-model.md) ได้อย่างปลอดภัยหรือ [สร้างใหม่หรือปรับปรุงสภาพแวดล้อมที่มีอยู่](get-started-paid.md)
 
 > [!IMPORTANT]
 > - บัญชีที่เก็บข้อมูล Azure Data Lake Gen2 ที่ตั้งใจจะใช้บริการหลักต้อง [เปิดใช้งาน Hierarchical Name Space (HNS)](/azure/storage/blobs/data-lake-storage-namespace)
@@ -81,7 +81,7 @@ ms.locfileid: "5596522"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>ป้อนรหัสทรัพยากร Azure หรือรายละเอียดการสมัครใช้งาน Azure ในสิ่งที่แนบมากับบัญชีที่เก็บข้อมูลกับข้อมูลเชิงลึกกลุ่มเป้าหมาย
 
-แนบบัญชีที่เก็บข้อมูล Azure Data Lake ในข้อมูลเชิงลึกกลุ่มเป้าหมาย เพื่อ [จัดเก็บข้อมูลผลลัพธ์](manage-environments.md) หรือ [ใช้เป็นแหล่งข้อมูล](connect-common-data-service-lake.md) การเลือกตัวเลือก Azure Data Lake ช่วยให้คุณสามารถเลือกได้ระหว่างแนวทางที่อิงตามทรัพยากรหรือตามการสมัครใช้งาน
+แนบบัญชีที่เก็บข้อมูล Azure Data Lake ในข้อมูลเชิงลึกกลุ่มเป้าหมาย เพื่อ [จัดเก็บข้อมูลผลลัพธ์](manage-environments.md) หรือ [ใช้เป็นแหล่งข้อมูล](connect-dataverse-managed-lake.md) การเลือกตัวเลือก Azure Data Lake ช่วยให้คุณสามารถเลือกได้ระหว่างแนวทางที่อิงตามทรัพยากรหรือตามการสมัครใช้งาน
 
 ทำตามขั้นตอนด้านล่างเพื่อให้ข้อมูลที่จำเป็นเกี่ยวกับแนวทางที่เลือก
 

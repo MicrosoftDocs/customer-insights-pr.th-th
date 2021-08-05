@@ -9,19 +9,19 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 03299610fd41a7e142e3c9723fad56ce7f90e083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267975"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554411"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>บอท Teams สำหรับ Dynamics 365 Customer Insights (พรีวิว)
 
 เชื่อมต่อ Microsoft Teams เพื่อให้บอทค้นหาโปรไฟล์ลูกค้าแบบรวมในช่องทาง Teams
 
 > [!div class="mx-imgBorder"]
-> ![บอทของ Teams แสดงเรกคอร์ดลูกค้า](media/teams-bot.png "บอทของ Teams แสดงเรกคอร์ดลูกค้า")
+> ![บอทของ Teams ที่แสดงเรกคอร์ดลูกค้า](media/teams-bot.png "บอทของ Teams แสดงเรกคอร์ดลูกค้า")
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
@@ -32,7 +32,7 @@ ms.locfileid: "5267975"
 - ฟิลด์จะถูกเพิ่มไปยัง [ดัชนีการค้นหาและตัวกรอง](search-filter-index.md)
 - Customer Insights และ Teams อยู่ในองค์กรเดียวกัน
 
-## <a name="configure-the-bot"></a>ตั้งค่าคอนฟิกบอท
+## <a name="configure-the-bot"></a>กำหนดค่าบอท
 
 1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**
 1. บนไทล์ Microsoft Teams เลือก **ตั้งค่า**

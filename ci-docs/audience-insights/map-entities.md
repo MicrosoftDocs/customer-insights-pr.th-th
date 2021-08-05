@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 36b7f7b2fac9497245cf6759506c53753972f173
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 7fc05aca61d1136f620019ee82dc6937ea39d8e5
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596016"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555146"
 ---
 # <a name="map-entities-and-attributes"></a>แม็ปเอนทิตีและแอตทริบิวต์
 
@@ -55,7 +55,7 @@ ms.locfileid: "5596016"
 - **ชนิดความหมายของแอตทริบิวต์**: ประเภทของแอตทริบิวต์ของคุณ เช่น ที่อยู่อีเมล หรือชื่อ ในการใช้โมเดล AI สำหรับการคาดคะเนความหมายที่ชาญฉลาด ช่วยประหยัดเวลาและปรับปรุงความแม่นยำ ให้ตั้งค่า **การแม็ปอัจฉริยะ** เป็น **เปิด** การแม็ปอัจฉริยะเน้นคำแนะนำความหมายที่ใช้ AI ในฟิลด์ **ประเภท** หากคุณตั้งค่าเป็น **ปิด** คุณจะเห็นคำแนะนำการแม็ปปกติของเรา คุณสามารถเลือกประเภทความหมายใดก็ได้จากรายการตัวเลือกที่มีอยู่และแทนที่การเลือกที่แนะนำ
 
 > [!div class="mx-imgBorder"]
-> ![ประเภทแอตทริบิวต์และการคาดคะเนความหมาย](media/data-manager-configure-map-add-attributes-semantic-prediction.png "ประเภทแอตทริบิวต์และการคาดคะเนความหมาย")
+> ![ชนิดแอตทริบิวต์และการคาดคะเนความหมาย](media/data-manager-configure-map-add-attributes-semantic-prediction.png "ประเภทแอตทริบิวต์และการคาดคะเนความหมาย")
 
 นอกจากนี้ ยังสามารถเพิ่มชนิดความหมายแบบกำหนดเองได้ด้วย เลือกฟิลด์ชนิดสำหรับแอตทริบิวต์นั้น และพิมพ์ชื่อชนิดความหมายที่กำหนดเองของคุณ ด้วยวิธีนี้ คุณยังสามารถเปลี่ยนชนิดของแอตทริบิวต์ที่ถูกระบุโดยระบบ
 

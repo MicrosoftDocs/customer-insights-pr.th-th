@@ -9,12 +9,13 @@ ms.topic: conceptual
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 73d8006c670268420f8cd6a2b37cb214ba1bbd6c
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.custom: intro-internal
+ms.openlocfilehash: cb96763d4b5b67b5110db757eb7d160c294d6fc3
+ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597902"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6539092"
 ---
 # <a name="data-unification-overview"></a>ภาพรวมการรวมข้อมูล
 

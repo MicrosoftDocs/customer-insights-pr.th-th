@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598178"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554136"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>ตัวเชื่อมต่อ Microsoft Power Apps (ตัวอย่าง)
 
@@ -61,7 +61,7 @@ Customer Insights เป็นหนึ่งในหลายๆ [แหล่
 1. เลือก **ลูกค้า** เป็นแหล่งข้อมูลสำหรับรายการ
 
     > [!div class="mx-imgBorder"]
-    > ![เลือกแหล่งข้อมูลหนึ่งแหล่ง](media/choose-datasource-powerapps.png "เลือกแหล่งข้อมูลหนึ่งแหล่ง")
+    > ![เลือกแหล่งข้อมูล](media/choose-datasource-powerapps.png "เลือกแหล่งข้อมูลหนึ่งแหล่ง")
 
 1. คุณสามารถเปลี่ยนแผงข้อมูลทางด้านขวาเพื่อเลือกฟิลด์เอนทิตีลูกค้าที่จะแสดงในแกลเลอรี
 

@@ -2,20 +2,20 @@
   href: index.yml
 - name: ภาพรวมของผลิตภัณฑ์
   href: overview.md
+- name: สร้างการทดลองใช้
+  href: audience-insights/get-started-trial.md
 - name: เข้าถึงสภาพแวดล้อมของคุณ
   href: 'https://home.ci.ai.dynamics.com/'
-- name: ข้อมูลเชิงลึกเกี่ยวกับกลุ่มเป้าหมาย
+- name: ข้อมูลเชิงลึกของผู้ชม
   items:
     - name: ศูนย์รวมรายการวิธีใช้
       href: audience-insights/index.yml
     - name: ภาพรวมของความสามารถ
       href: audience-insights/overview.md
-    - name: การทดลองใช้ฟรี
-      href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: คุณลักษณะใหม่และที่ปรับปรุง
       href: audience-insights/whats-new-audience-insights.md
     - name: สร้างสภาพแวดล้อมใหม่
-      href: audience-insights/home.md
+      href: audience-insights/get-started-paid.md
     - name: เรียนรู้โมดูล
       items:
         - name: นำเข้าข้อมูล
@@ -34,11 +34,11 @@
           href: audience-insights/connect-power-query.md
         - name: เพิ่มโฟลเดอร์โมเดลข้อมูลทั่วไปเป็นแหล่งข้อมูล
           href: audience-insights/connect-common-data-model.md
-        - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการ Common Data Service
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Dataverse
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูล
           href: audience-insights/incremental-refresh-data-sources.md
-        - name: การเพิ่มข้อมูลแบบในเวลาจริง
+        - name: การนำเข้าข้อมูลแบบในเวลาจริง
           href: audience-insights/real-time-data-ingestion.md
         - name: ทำความเข้าใจเอนทิตีและชุดข้อมูล
           href: audience-insights/entities.md
@@ -76,11 +76,11 @@
           href: audience-insights/enrichment-experian.md
         - name: เพิ่มข้อมูลด้วยการนําเข้าแบบกําหนดเองของ SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: เซ็กเมนต์และการวัด
+    - name: เซ็กเมนต์
       items:
         - name: ภาพรวมของเซ็กเมนต์
           href: audience-insights/segments.md
-        - name: สร้างเซ็กเมนต์และกลุ่มลูกค้า
+        - name: สร้างเซ็กเมนต์
           href: audience-insights/segment-builder.md
         - name: เซ็กเมนต์ที่แนะนำตามการวัด
           href: audience-insights/suggested-segments.md
@@ -104,7 +104,7 @@
               href: audience-insights/predict-customer-lifetime-value.md
             - name: คาดคะเนคำแนะนำผลิตภัณฑ์
               href: audience-insights/predict-product-recommendation.md
-            - name: ทำนายการเลิกใช้บริการในการสมัครใช้งาน
+            - name: คาดคะเนการเลิกใช้บริการสมัครสมาชิก
               href: audience-insights/predict-subscription-churn.md
             - name: คาดคะเนการเลิกทำธุรกรรม
               href: audience-insights/predict-transactional-churn.md
@@ -116,7 +116,7 @@
           items:
             - name: คู่มือตัวอย่างสำหรับการคาดคะเน CLV
               href: audience-insights/sample-guide-predict-clv.md
-            - name: คู่มือตัวอย่างสำหรับการคาดคะเนการบอกเลิกการสมัครสมาชิก
+            - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกใช้บริการสมัครสมาชิก
               href: audience-insights/sample-guide-predict-subscription-churn.md
             - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกทำธุรกรรม
               href: audience-insights/sample-guide-predict-transactional-churn.md
@@ -254,6 +254,8 @@
       items:
         - name: สร้างและแก้ไขเหตุการณ์
           href: engagement-insights/refined-events.md
+        - name: รับรู้เหตุการณ์บนเว็บจากผู้เยี่ยมชมที่มีการตรวจสอบสิทธิ์ก่อนหน้า
+          href: engagement-insights/unknown-to-known.md
         - name: ส่งออกเหตุการณ์
           href: engagement-insights/export-events.md
     - name: รายงาน
@@ -304,6 +306,8 @@
       items:
         - name: ลบและส่งออกข้อมูลส่วนบุคคล
           href: engagement-insights/delete-export-personal-data.md
+    - name: ความพร้อมใช้งานในภูมิภาค
+      href: engagement-insights/regional-availability.md
     - name: ขีดจำกัดบริการ
       href: engagement-insights/quotas.md
 - name: ติดต่อฝ่ายสนับสนุน

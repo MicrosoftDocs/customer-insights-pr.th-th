@@ -1,7 +1,7 @@
 ---
 title: ตัวเชื่อมต่อ Power BI
 description: เรียนรู้วิธีการใช้ตัวเชื่อมต่อ Dynamics 365 Customer Insights ใน Power BI
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596062"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661125"
 ---
 # <a name="connector-for-power-bi-preview"></a>ตัวเชื่อมต่อสำหรับ Power BI (การแสดงตัวอย่าง)
 
@@ -67,6 +67,12 @@ ms.locfileid: "5596062"
    - ตรวจสอบว่ามีความสัมพันธ์ที่สร้างขึ้นระหว่างเอนทิตีสองรายการที่ถูกรวมอยู่ในกระบวนการรวมหรือไม่ มีความสัมพันธ์โดยนัยที่กำหนดไว้ระหว่างเอนทิตีทั้งหมดที่รวมอยู่ในกระบวนการรวม
 3. ลบความสัมพันธ์ที่ซ้ำกันที่ระบุ
 
-หลังจากการลบความสัมพันธ์ที่ซ้ำกันออก ให้ลองตั้งค่าคอนฟิกตัวเชื่อมต่อ Power BI อีกครั้ง สภาพแวดล้อมควรพร้อมใช้งานในขณะนี้
+หลังจากการลบความสัมพันธ์ที่ซ้ำกันออก ให้ลองกำหนดค่าตัวเชื่อมต่อ Power BI อีกครั้ง สภาพแวดล้อมควรพร้อมใช้งานในขณะนี้
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>ข้อผิดพลาดในฟิลด์วันที่เมื่อโหลดเอนทิตีใน Power BI Desktop
+
+เมื่อโหลดเอนทิตีที่มีฟิลด์ที่มีรูปแบบวันที่ เช่น MM/DD/YYYY คุณอาจพบข้อผิดพลาดเนื่องจากรูปแบบภาษาไม่ตรงกัน ความไม่ตรงกันนี้เกิดขึ้นเมื่อไฟล์ Power BI Desktop ของคุณถูกตั้งค่าเป็นภาษาอื่นที่ไม่ใช่อังกฤษ (สหรัฐอเมริกา) เนื่องจากฟิลด์วันที่ในข้อมูลเชิงลึกของผู้ชมจะถูกบันทึกในรูปแบบสหรัฐอเมริกา
+
+ไฟล์ Power BI Desktop มีการตั้งค่าภาษาเดียว ซึ่งจะใช้เมื่อเรียกดูข้อมูล เพื่อให้ฟิลด์วันที่เหล่านี้ตีความอย่างถูกต้อง ให้ตั้งค่าภาษาของไฟล์ .BPI เป็นภาษาอังกฤษ (สหรัฐอเมริกา) [เรียนรู้วิธีเปลี่ยนภาษาของไฟล์ Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

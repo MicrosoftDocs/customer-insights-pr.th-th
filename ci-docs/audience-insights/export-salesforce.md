@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Salesforce Marketing Cloud
-description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและส่งออกไปยัง Salesforce Marketing Cloud
-ms.date: 06/24/2021
+description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและส่งออกไปยัง Salesforce Marketing Cloud
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 8ce243918c2388e931a98df3bbe576ddf692f707
+ms.sourcegitcommit: 4823684a1399fd66ffecfce21735f2bc90a1733c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314684"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660290"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>ส่งออกเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง Salesforce Marketing Cloud (พรีวิว)
 
@@ -24,16 +24,11 @@ ms.locfileid: "6314684"
 
 - ความพร้อมใช้งานของโฮสต์ SFTP และข้อมูลประจำตัวของผู้ดูแลระบบที่เกี่ยวข้อง [วิธีตั้งค่าตำแหน่ง SFTP สำหรับ Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
 
-## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
-
-- รันไทม์ของการส่งออกขึ้นอยู่กับประสิทธิภาพของระบบของคุณ เราขอแนะนำให้ใช้ CPU core สองรายการและหน่วยความจำ 1 Gb เป็นการตั้งค่าคอนฟิกขั้นต่ำของเซิร์ฟเวอร์ของคุณ 
-- การส่งออกเอนทิตีที่มีโปรไฟล์ลูกค้าสูงถึง 100 ล้านโปรไฟล์อาจใช้เวลา 90 นาที เมื่อใช้การตั้งค่าคอนฟิกขั้นต่ำที่แนะนำ 
-
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>ตั้งค่าการเชื่อมต่อกับ Salesforce Marketing Cloud
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **Salesforce Marketing Cloud** เพื่อตั้งค่าคอนฟิกการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **Salesforce Marketing Cloud** เพื่อกำหนดค่าการเชื่อมต่อ
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 

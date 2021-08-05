@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: ameetj
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2eb44604e72b32292f971754d4f8c4fd1988c697
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598362"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555192"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>ใช้โมเดลที่อิงตาม Azure Machine Learning Studio (คลาสสิก)
 
@@ -41,7 +41,7 @@ ms.locfileid: "5598362"
 
 1. หลังจากสร้างทรัพยากรแล้วแดชบอร์ดพื้นที่ทำงาน Machine Learning Studio จะปรากฏขึ้น เลือก **เปิด Machine Learning Studio**
 
-   ![อินเทอร์เฟซผู้ใช้ Azure Machine Learning Studio](media/azure-machine-learning-studio.png)
+   ![ส่วนติดต่อผู้ใช้ Azure Machine Learning Studio](media/azure-machine-learning-studio.png)
 
 ## <a name="work-with-azure-machine-learning-studio"></a>ใช้งาน Azure Machine Learning Studio
 
@@ -71,7 +71,7 @@ ms.locfileid: "5598362"
 
 ## <a name="sample-models-from-the-gallery"></a>โมเดลตัวอย่างจากแกลเลอรี
 
-เราจะใช้สถานการณ์สมมติของ Contoso Hotel สำหรับโมเดลในบทความนี้ Contoso Hotel รวบรวมข้อมูลต่อไปนี้:
+เราจะใช้สถานการณ์สมมติของโรงแรม Contoso สำหรับโมเดลในบทความนี้ โรงแรม Contoso รวบรวมข้อมูลดังต่อไปนี้:
 
 - ข้อมูล CRM ประกอบด้วยกิจกรรมการเข้าพักในโรงแรม ชุดข้อมูลประกอบด้วยข้อมูลเกี่ยวกับวันที่เข้าพักสำหรับลูกค้าที่ลงทะเบียนแต่ละราย นอกจากนี้ยังมีข้อมูลเกี่ยวกับการจองประเภทห้องพักรายละเอียดการใช้จ่ายและอื่น ๆ ข้อมูลมีระยะเวลาสี่ปี ตั้งแต่มกราคม 2014 ถึงมกราคม 2018
 - โปรไฟล์ลูกค้าของแขกของโรงแรม โปรไฟล์เหล่านี้มีข้อมูลเกี่ยวกับลูกค้าแต่ละราย ได้แก่ ชื่อ วันเกิด ที่อยู่ไปรษณีย์ เพศ และหมายเลขโทรศัพท์
@@ -162,7 +162,7 @@ ms.locfileid: "5598362"
 
 เมื่อพิจารณาเพิ่มเติมเกี่ยวกับการแจกจ่ายคำแนะนำในแคตตาล็อกบริการทั้งหมด เราสังเกตเห็นว่าโทรศัพท์ WiFi และบริการจัดส่งเป็นบริการอันดับต้น ๆ ที่ได้รับการแนะนำ สิ่งนี้สอดคล้องกับสิ่งที่เราพบจากการกระจายข้อมูลการใช้บริการ:
 
-![ผลลัพย์โมเดลคำแนะนำ](media/azure-machine-learning-model-output.png)
+![ผลลัพธ์โมเดลคำแนะนำ](media/azure-machine-learning-model-output.png)
 
 [การทดลองแนะนำผลิตภัณฑ์สามารถเข้าถึงได้ใน Azure AI Gallery](https://gallery.azure.ai/Experiment/Recommendation-4) ทั้งหมด
 
