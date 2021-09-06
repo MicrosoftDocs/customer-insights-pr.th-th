@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554458"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033195"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>ใช้โมเดลของ Azure Machine Learning
 

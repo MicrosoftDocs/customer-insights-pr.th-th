@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6a7137730ab8cc43bc93daf647d9d55d02d96cd8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 0f6c922104df229980b308136a4d764938121b35d6d744f41b1530bdb5515e7f
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692228"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033011"
 ---
 # <a name="customer-card-add-in-preview"></a>Add-in การ์ดลูกค้า (การแสดงตัวอย่าง)
 

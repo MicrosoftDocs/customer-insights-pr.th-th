@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
-  ms.date: 10/16/2020
-  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
-  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 3764ed7c7fc4bd0dfa89e8a574617a1eb6273c2e36f6e5daa5aeca2c919ba7b8
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "4745744"
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7031404"
 landingContent:
 - title: เกี่ยวกับข้อมูลเชิงลึกกลุ่มเป้าหมาย
   linkLists:
@@ -25,8 +25,8 @@ landingContent:
       url: overview.md
     - text: คุณลักษณะใหม่และที่ปรับปรุง
       url: whats-new-audience-insights.md
-    - text: ไซต์ของชุมชน
-      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: ค้นหาข้อมูลเชิงลึกของผู้ชม
+      url: https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/
 - title: รวมข้อมูล
   linkLists:
   - linkListType: how-to-guide

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a953b35b7299500471457d826332563e007a28e3
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 768d708f659363d5b4e283d9fb0393505b035c1d7fe3ee09d74ea17eab87a8f0
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595633"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031634"
 ---
 > [!NOTE]
 > มีผลในเดือนพฤศจิกายน 2020:

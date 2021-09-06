@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 9f11ab189117da5bcc1aee843b73962ec6615e82
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 8a0654ac062e41ef7eb52a34b1ae169e28b389f86875eead774422fef60f2232
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692366"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031570"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>ใช้เซ็กเมนต์ใน Dynamics 365 Sales (ตัวอย่าง)
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 67bfa23d56b26ae592efa4d7197713664bb02623
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: e48f67ec21bb9b883dd30544ccf4dcfbf487acb1abaf0a0557764bc3d955e41a
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304857"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032094"
 ---
 # <a name="export-segments-to-adroll-preview"></a>ส่งออกเซ็กเมนต์ไปยัง AdRoll (พรีวิว)
 

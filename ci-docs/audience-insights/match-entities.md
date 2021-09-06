@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: de53927f7ed1f58176a7ba83f89be7c39064947c
-ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
+ms.openlocfilehash: 7ad08b8b782654939c6bfc2ca330a3d31e71054a2f2c97a921971d1056b7cd38
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6650341"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033700"
 ---
 # <a name="match-entities"></a>จับคู่เอนทิตี
 

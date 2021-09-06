@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 65db6ce05f4d6f7f7b08ada172fec057027dd310
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: fb3fee72b3420c636d549b600c468c574ee33a662bfafd096247dfddf40150bd
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692276"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032689"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>การเพิ่มข้อมูลของโปรไฟล์ลูกค้าด้วยที่อยู่ที่ปรับปรุงแล้ว
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e20c7b7fd3989d7621cb7765f38b85c8ab4adfcb
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 34dc753aa9d2420ef8780d436e14c3c27377e4779eda0f83ca6b5424f2328f22
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305133"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031470"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>ส่งออกรายการเซ็กเมนต์ไปที่ตัวจัดการโฆษณาบน Facebook (ตัวอย่าง)
 

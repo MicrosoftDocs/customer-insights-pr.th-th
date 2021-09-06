@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: fc0af656cd5b436d9efd65b2a2c75dde9c9deb9dbcdd56ffc6a960f5878a631f
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554136"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031818"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>ตัวเชื่อมต่อ Microsoft Power Apps (ตัวอย่าง)
 

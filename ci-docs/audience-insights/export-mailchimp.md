@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ac6642c0ce02f1a92458a16250fd3b4cdef5fd1c
-ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
+ms.openlocfilehash: a6bdf43bb40345b868bf2e7d2c91de169c8ba841ba77f732f455f4c4d496a7f5
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6362532"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033562"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Mailchimp (พรีวิว)
 

@@ -9,12 +9,12 @@ author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 76a53a897e90152707a7c1255ed5ed93a5f3b5a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: c2789a7d1379e0cf56511b272a763c904d8a3d347058ea9e029aaff0f723a028
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305041"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033792"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>รวมข้อมูลเว็บจากข้อมูลเชิงลึกเกี่ยวกับการมีส่วนร่วมกับข้อมูลเชิงลึกเกี่ยวกับผู้ชม
 

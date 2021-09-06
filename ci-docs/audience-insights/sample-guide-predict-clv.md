@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 705e159f348e876f8a2a0ad3481608c6dd380df3dd74d7e5dba9dd3bebe25e52
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306372"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7029514"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>คู่มือตัวอย่างของการคาดคะเนมูลค่าตลอดอายุการใช้งานของลูกค้า (CLV)
 

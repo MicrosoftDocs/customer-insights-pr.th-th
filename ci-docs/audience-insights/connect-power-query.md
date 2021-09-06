@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 3be417845a41c8f25c71bfc0823f42571157759b224e46d5e114037ee3df8329
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554718"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033287"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>เชื่อมต่อกับแหล่งข้อมูล Power Query
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 14d420205a5c60d471ef21a04ab6d02295a65ca8fd5205ba782a300703b06102
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314686"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032232"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ส่งออกเซ็กเมนต์ไปยัง ActiveCampaign (พรีวิว)
 

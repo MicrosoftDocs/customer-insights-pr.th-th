@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 4072c724213486751ae96d38549fbcb6397b32c4
-ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
+ms.openlocfilehash: 46ccdcf28fca8ac239556733d6e107b1959e83b2669dbdf24f143a525e8d28d3
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6650387"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033470"
 ---
 # <a name="explore-the-home-page"></a>สำรวจโฮมเพจ
 

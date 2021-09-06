@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8bd692819fa8451ded5e74191ee717f81f87425d
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 58b54dc24f4656f9dd376415a701539c8796e83e6d4e3c6754f5627ce77c5685
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124562"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031789"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Omnisend (พรีวิว)
 

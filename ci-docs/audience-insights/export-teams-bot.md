@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 9bf401124b0ffb21b046954056141e7703386d4911f89f34ffc0fcb84bf0f4be
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554411"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032505"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>บอท Teams สำหรับ Dynamics 365 Customer Insights (พรีวิว)
 

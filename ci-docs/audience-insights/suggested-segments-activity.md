@@ -9,12 +9,12 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 manager: shellyha
-ms.openlocfilehash: 14d9d4f0df6b5835f21fb63447d05853ee98a757
-ms.sourcegitcommit: 8341fa964365c185b65bc4b71fc0c695ea127dc0
+ms.openlocfilehash: 46e8970f7fd116cb1654c94751923ce2a213ff87dd7bc7ee731a62bbd0093513
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6034121"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7028429"
 ---
 # <a name="suggested-segments-based-on-activity-data-preview"></a>เซ็กเมนต์ที่แนะนำตามข้อมูลกิจกรรม (พรีวิว)
 

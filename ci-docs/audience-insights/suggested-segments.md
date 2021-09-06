@@ -9,12 +9,12 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 manager: shellyha
-ms.openlocfilehash: bbc22adcd7b6e756fa6128abd855795de7480f2d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f743853826cee0427618abccfba27f10016a0f05cc674f5f7da2210366d60305
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597120"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7028383"
 ---
 # <a name="suggested-segments-preview"></a>เซ็กเมนต์แนะนํา (ตัวอย่าง)
 

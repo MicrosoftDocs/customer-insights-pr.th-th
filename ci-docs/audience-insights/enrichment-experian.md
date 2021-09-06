@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: c54f6a00cb28b0ab11716c02aa8761dfa382f07e3360183b5d38b9720e890c21
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555376"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032643"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>เพิ่มโปรไฟล์ลูกค้าด้วยข้อมูลประชากรจาก Experian (พรีวิว)
 

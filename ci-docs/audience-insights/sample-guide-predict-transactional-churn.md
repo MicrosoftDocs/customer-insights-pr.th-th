@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 72f3bd1f32b813fef04dc14618331e3d707b5052
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 19befa17524aba4543f0d8a5f5f7d6f5a88b2322f1264b88fa0b31641610592a
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6556284"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7029468"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>คู่มือตัวอย่างการคาดคะเนการเลิกทำธุรกรรม (พรีวิว)
 
@@ -46,8 +46,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    - **DateOfBirth**: วันที่
    - **CreatedOn**: วันที่/เวลา/โซน
 
-   [!div class="mx-imgBorder"]
-   ![เปลี่ยน DoB เป็น วันที่](media/ecommerce-dob-date.PNG "เปลี่ยนวันเดือนปีเกิดเป็นวันที่")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="เปลี่ยน DoB เป็น วันที่":::
 
 1. ในฟิลด์ **ชื่อ** ในบานหน้าต่างด้านขวา ให้เปลี่ยนชื่อแหล่งข้อมูลจาก **การสอบถาม** เป็น **eCommerceContacts**
 

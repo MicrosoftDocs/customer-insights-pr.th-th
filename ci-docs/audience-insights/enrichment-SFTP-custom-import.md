@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 9331cf8057850e2fbe03622831f388e73056d938
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555422"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032735"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลแบบกำหนดเอง (พรีวิว)
 

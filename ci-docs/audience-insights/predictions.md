@@ -9,12 +9,12 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 31b9b1b709540896c1dbc19f974df4ab056a7b8d
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 6ce72486faa97e6f630a991044ca5e6d4714d0b8b8395a60fad12f3e3a49fa29
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692550"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032459"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>กรอกข้อมูลบางส่วนของคุณให้สมบูรณ์ด้วยการคาดคะเน
 

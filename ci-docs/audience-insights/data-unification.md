@@ -10,12 +10,12 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: cb96763d4b5b67b5110db757eb7d160c294d6fc3
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: bf1bbcd31333c8a557b59b001112042a1783546ab0cd2af394d8af2953a493f4
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539092"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032781"
 ---
 # <a name="data-unification-overview"></a>ภาพรวมการรวมข้อมูล
 

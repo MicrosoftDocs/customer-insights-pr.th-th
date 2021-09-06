@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: ameetj
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2eb44604e72b32292f971754d4f8c4fd1988c697
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: b979dd177b7c6de1971c02a69748006d041e4d2c3e49a3639dba03212bd7acf9
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555192"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033746"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>ใช้โมเดลที่อิงตาม Azure Machine Learning Studio (คลาสสิก)
 

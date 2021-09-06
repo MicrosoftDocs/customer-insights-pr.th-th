@@ -1,6 +1,6 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Adobe Experience Platform
-description: เรียนรู้วิธีใช้เซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมในแพลตฟอร์ม Adobe Experience
+description: เรียนรู้วิธีใช้เซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมใน Adobe Experience Platform
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305547"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032140"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>ใช้เซ็กเมนต์ Customer Insights ใน Adobe Experience Platform (พรีวิว)
 
-ในฐานะผู้ใช้ของข้อมูลเชิงลึกของผู้ชมใน Dynamics 365 Customer Insights คุณอาจสร้างเซ็กเมนต์เพื่อทำให้การส่งเสริมการขายทางการตลาดของคุณมีประสิทธิภาพมากขึ้นโดยการกำหนดเป้าหมายผู้ชมที่เกี่ยวข้อง หากต้องการใช้เซ็กเมนต์จากข้อมูลเชิงลึกกลุ่มเป้าหมายใน Adobe Experience Platform และแอปพลิเคชันเช่น Adobe Campaign Standard คุณต้องทำตามขั้นตอนสองสามขั้นตอนที่ระบุไว้ในบทความนี้
+ในฐานะผู้ใช้ของข้อมูลเชิงลึกของผู้ชมใน Dynamics 365 Customer Insights คุณอาจสร้างเซ็กเมนต์เพื่อทำให้การส่งเสริมการขายทางการตลาดของคุณมีประสิทธิภาพมากขึ้นโดยการกำหนดเป้าหมายผู้ชมที่เกี่ยวข้อง หากต้องการใช้เซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชมใน Adobe Experience Platform และแอปพลิเคชัน เช่น Adobe Campaign Standard คุณต้องทำตามขั้นตอนสองสามขั้นตอนที่ระบุไว้ในบทความนี้
 
 :::image type="content" source="media/AEP-flow.png" alt-text="แผนผังกระบวนการของขั้นตอนที่ระบุไว้ในบทความนี้":::
 
@@ -31,9 +31,9 @@ ms.locfileid: "6305547"
 
 ## <a name="campaign-overview"></a>ภาพรวมการส่งเสริมการขาย
 
-เพื่อให้เข้าใจวิธีใช้เซ็กเมนต์จากข้อมูลเชิงลึกกลุ่มเป้าหมายใน Adobe Experience Platform ได้ดีขึ้น ลองดูตัวอย่างแคมเปญที่สมมติขึ้น
+เพื่อให้เข้าใจถึงวิธีที่คุณสามารถใช้เซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชมใน Adobe Experience Platform มาดูตัวอย่างแคมเปญสมมติกัน
 
-สมมติว่าบริษัทของคุณเสนอบริการแบบสมัครสมาชิกรายเดือนให้กับลูกค้าของคุณในสหรัฐอเมริกา คุณต้องการระบุลูกค้าที่การสมัครสมาชิกถึงกำหนดต่ออายุในแปดวันถัดไป แต่ยังไม่ได้ต่ออายุการสมัครสมาชิก เพื่อรักษาลูกค้าเหล่านี้ไว้ คุณต้องส่งข้อเสนอส่งเสริมการขายทางอีเมลโดยใช้ Adobe Experience Platform
+สมมติว่าบริษัทของคุณเสนอบริการแบบสมัครสมาชิกรายเดือนให้กับลูกค้าของคุณในสหรัฐอเมริกา คุณต้องการระบุลูกค้าที่การสมัครสมาชิกถึงกำหนดต่ออายุในแปดวันถัดไป แต่ยังไม่ได้ต่ออายุการสมัครสมาชิก หากต้องการรักษาลูกค้าเหล่านี้ไว้ คุณต้องส่งข้อเสนอโปรโมชันผ่านอีเมล โดยใช้ Adobe Experience Platform
 
 ในตัวอย่างนี้ เราต้องการเรียกใช้แคมเปญอีเมลส่งเสริมการขายเพียงครั้งเดียว บทความนี้ไม่ได้กล่าวถึงกรณีการใช้งานของการเรียกใช้แคมเปญมากกว่าหนึ่งครั้ง
 
@@ -93,7 +93,7 @@ ms.locfileid: "6305547"
 ตอนนี้คุณสามารถ [ส่งออกเซ็กเมนต์ตามความต้องการ](export-destinations.md#run-exports-on-demand) ได้แล้ว นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md) ทุกครั้ง
 
 > [!NOTE]
-> ตรวจสอบให้แน่ใจว่าจำนวนเรกคอร์ดในเซ็กเมนต์ที่ส่งออกอยู่ภายในขีดจำกัดที่อนุญาตของสิทธิ์การใช้งาน Adobe Campaign Standard ของคุณ
+> ตรวจสอบให้แน่ใจว่าจำนวนของเรกคอร์ดในเซ็กเมนต์ที่ส่งออกนั้นอยู่ภายในขีดจำกัดที่อนุญาตของสิทธิ์การใช้งาน Adobe Campaign Standard ของคุณ
 
 ข้อมูลที่ส่งออกจะถูกเก็บไว้ในคอนเทนเนอร์ Azure Blob Storage ที่คุณตั้งค่าคอนฟิกไว้ด้านบน พาธโฟลเดอร์ต่อไปนี้มีการสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ:
 
@@ -107,27 +107,27 @@ ms.locfileid: "6305547"
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>กำหนด Experience Data Model (XDM) ใน Adobe Experience Platform
 
-ก่อนที่ข้อมูลที่ส่งออกจากข้อมูลเชิงลึกกลุ่มเป้าหมายจะสามารถใช้ภายใน Adobe Experience Platform ได้ เราจำเป็นต้องกำหนดแบบแผน Experience Data Model และ [กำหนดค่าข้อมูลสำหรับโปรไฟล์ลูกค้าแบบเรียลไทม์](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)
+ก่อนที่ข้อมูลที่ส่งออกจากข้อมูลเชิงลึกของผู้ชมจะสามารถใช้ได้ภายใน Adobe Experience Platform เราต้องกำหนด schema ของ Experience Data Model และ [ตั้งค่าคอนฟิกข้อมูลสำหรับโปรไฟล์ลูกค้าแบบเรียลไทม์](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)
 
 เรียนรู้ว่า [XDM คืออะไร](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) และทำความเข้าใจ [พื้นฐานขององค์ประกอบแบบแผน](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema)
 
-## <a name="import-data-into-adobe-experience-platform"></a>นำเข้าข้อมูลไปยัง Adobe Experience Platform
+## <a name="import-data-into-adobe-experience-platform"></a>นำเข้าข้อมูลใน Adobe Experience Platform
 
-เมื่อทุกอย่างเข้าที่แล้ว เราจำเป็นต้องนำเข้าข้อมูลกลุ่มเป้าหมายที่เตรียมไว้จากข้อมูลเชิงลึกกลุ่มเป้าหมายไปยัง Adobe Experience Platform
+เมื่อทุกอย่างพร้อมแล้ว เราจำเป็นต้องนำเข้าข้อมูลของผู้ชมที่เตรียมไว้จากข้อมูลเชิงลึกของผู้ชมลงใน Adobe Experience Platform
 
 ประการแรก [สร้างการเชื่อมต่อแหล่งกับต้นทางที่เก็บข้อมูล Azure Blob](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started)    
 
-หลังจากกำหนดการเชื่อมต่อกับต้นทางแล้ว [กำหนดค่ากระแสข้อมูล](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) สำหรับการเชื่อมต่อชุดงานที่เก็บข้อมูลบนระบบคลาวด์ เพื่อนำเข้าผลลัพธ์ของเซ็กเมนต์จากข้อมูลเชิงลึกกลุ่มเป้าหมายไปยัง Adobe Experience Platform
+หลังจากที่กำหนดการเชื่อมต่อต้นทางแล้ว [ตั้งค่าคอนฟิกกระแสข้อมูล](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) สำหรับการเชื่อมต่อชุดงานของที่เก็บข้อมูลระบบคลาวด์เพื่อนำเข้าเอาต์พุตเซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชมลงใน Adobe Experience Platform
 
-## <a name="create-an-audience-in-adobe-campaign-standard"></a>สร้างกลุ่มเป้าหมายใน Adobe Campaign Standard
+## <a name="create-an-audience-in-adobe-campaign-standard"></a>สร้างผู้ชมใน Adobe Campaign Standard
 
-ในการส่งอีเมลสำหรับการส่งเสริมการขายนี้ เราจะใช้ Adobe Campaign Standard หลังจากนำเข้าข้อมูลไปยัง Adobe Experience Platform เราจำเป็นต้อง [สร้างกลุ่มเป้าหมาย](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ใน Adobe Campaign Standard โดยใช้ข้อมูลใน Adobe Experience Platform
+ในการส่งอีเมลสำหรับการส่งเสริมการขายนี้ เราจะใช้ Adobe Campaign Standard หลังจากที่นำเข้าข้อมูลเข้าสู่ Adobe Experience Platform เราจำเป็นต้อง [สร้างผู้ชม](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ใน Adobe Campaign Standard โดยใช้ข้อมูลใน Adobe Experience Platform
 
 
-เรียนรู้วิธีการ [ใช้ตัวสร้างเซ็กเมนต์](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) ใน Adobe Campaign Standard เพื่อกำหนดกลุ่มเป้าหมายตามข้อมูลใน Adobe Experience Platform
+เรียนรู้วิธี [ใช้ตัวสร้างเซ็กเมนต์](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) ใน Adobe Campaign Standard เพื่อกำหนดผู้ชมตามข้อมูลใน Adobe Experience Platform
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>สร้างและส่งอีเมลโดยใช้ Adobe Campaign Standard
 
 สร้างเนื้อหาอีเมลจากนั้น [ทดสอบและส่ง](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) อีเมลของคุณ
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="ตัวอย่างอีเมลพร้อมข้อเสนอการต่ออายุจาก Adobe Campaign Standard":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="อีเมลตัวอย่างพร้อมข้อเสนอการต่ออายุจาก Adobe Campaign Standard":::

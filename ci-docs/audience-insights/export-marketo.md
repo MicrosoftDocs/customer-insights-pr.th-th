@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
-ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
+ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059339"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033516"
 ---
 # <a name="export-segments-to-marketo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Marketo (ตัวอย่าง)
 
