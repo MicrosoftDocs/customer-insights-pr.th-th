@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: a85ee598ec747d0594755314e83a127ce0f2af95
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b219935dfbd9f7acc1104d83e2ca281801a1a4251ae4c19fc03d4b1ce46f4613
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306189"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035208"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>คู่มือตัวอย่างการคาดคะเนคำแนะนำผลิตภัณฑ์ (ตัวอย่าง)
 

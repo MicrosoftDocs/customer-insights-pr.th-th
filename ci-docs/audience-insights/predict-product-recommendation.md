@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: bcbafa513c2c61b0280c91aa7ed71e211c32c35c
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 60d511181aa85e3e939eff3e5931f0de7807c01c8f38134ebca5c5604cd53871
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6556147"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034979"
 ---
 # <a name="product-recommendation-prediction-preview"></a>การคาดคะเนคำแนะนำผลิตภัณฑ์ (ตัวอย่าง)
 

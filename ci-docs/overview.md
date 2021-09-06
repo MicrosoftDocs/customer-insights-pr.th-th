@@ -3,21 +3,21 @@ title: ภาพรวมของผลิตภัณฑ์
 author: m-hartmann
 description: ดูภาพรวมสำหรับ Dynamics 365 Customer Insights และความสามารถต่างๆ
 ms.author: mhart
-ms.date: 02/16/2021
+ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 1bc75959229fd2ffef9a5fd5617889888eb72e55
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: 651bd151a77b9d7f44d5fcca15da0f131b9fb3f07ffc89bfac9c0aa6f799e9b1
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539412"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036534"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>ภาพรวมของผลิตภัณฑ์สำหรับ Dynamics 365 Customer Insights
 
-Dynamics 365 Customer Insights เป็นส่วนหนึ่งของแพลตฟอร์มข้อมูลลูกค้า (CDP) ของ Microsoft ที่ช่วยมอบประสบการณ์ของลูกค้าในแบบส่วนตัว ความสามารถของแพลตฟอร์มให้ข้อมูลเชิงลึกว่าลูกค้าของคุณคือใครและมีส่วนร่วมกับแพลตฟอร์มของคุณอย่างไร รวมข้อมูลลูกค้าจากหลายแหล่งเพื่อให้ได้มุมมองเดียวของลูกค้า
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) เป็นส่วนหนึ่งของแพลตฟอร์มข้อมูลลูกค้า (CDP) ของ Microsoft ที่ช่วยมอบประสบการณ์ของลูกค้าในแบบส่วนตัว ความสามารถของแพลตฟอร์มให้ข้อมูลเชิงลึกว่าลูกค้าของคุณคือใครและมีส่วนร่วมกับแพลตฟอร์มของคุณอย่างไร รวมข้อมูลลูกค้าจากหลายแหล่งเพื่อให้ได้มุมมองเดียวของลูกค้า
 
 
 - [ข้อมูลเชิงลึกเกี่ยวกับกลุ่มเป้าหมาย](audience-insights/overview.md) ช่วยให้คุณเปลี่ยนแปลงธุรกิจของคุณให้เป็นองค์กรที่มีลูกค้าเป็นศูนย์กลาง ผู้เชี่ยวชาญด้านการตลาด การขาย และการบริการมีข้อมูลเชิงลึกที่จำเป็นเพื่อปรับแต่งประสบการณ์ให้เป็นแบบส่วนตัว เชื่อมต่อข้อมูลจากแหล่งที่มาของธุรกรรม พฤติกรรม และการสังเกตเพื่อสร้างมุมมองลูกค้าแบบ 360 องศา เห็นผลลัพธ์ได้เร็วขึ้นด้วย CDP ที่ออกแบบมาเพื่อให้ข้อมูลเชิงลึกที่สามารถใช้ดำเนินการได้ 

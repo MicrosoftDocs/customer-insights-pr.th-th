@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595495"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035162"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>ภาษาที่รองรับสำหรับความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย
 

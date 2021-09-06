@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: ee4d24ae0ae39c689956f70efe46c4226876484e6da6282dc874cec37bd287e2
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554228"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034566"
 ---
 # <a name="similar-customers-preview"></a>ลูกค้าที่คล้ายกัน (แสดงตัวอย่าง)
 

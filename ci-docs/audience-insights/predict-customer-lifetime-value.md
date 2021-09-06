@@ -9,12 +9,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: e2f92a64d01a443bcf3c1605621abe045b93ee5e
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: 740d6a5a749e156414b0e80193334051b7f2632fe4d1f4291d74b99250f35bc2
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095533"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035392"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>การคาดคะเนมูลค่าตลอดอายุการใช้งานของลูกค้า (CLV) (ตัวอย่าง)
 

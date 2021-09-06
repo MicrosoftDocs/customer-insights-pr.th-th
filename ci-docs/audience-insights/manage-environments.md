@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2f115269b9d07dd118ec18cc48b55de8aea9b5bb
-ms.sourcegitcommit: 98267da3f3eddbdfbc89600a7f54e5e664a8f069
+ms.openlocfilehash: e3f99f8f151aea5f120084382babd5e46e109545a4f63aafc51c3ecb1400cc33
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/28/2021
-ms.locfileid: "6683496"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034200"
 ---
 # <a name="manage-environments"></a>จัดการสภาพแวดล้อม
 

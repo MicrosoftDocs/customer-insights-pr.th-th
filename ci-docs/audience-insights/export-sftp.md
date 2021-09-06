@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 000b44dc8e5cc419132bd17e359fbdd5879caf1b
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124342"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035484"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>ส่งออกเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง SFTP (พรีวิว)
 

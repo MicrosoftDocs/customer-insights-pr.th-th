@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 891794321f20954533ec0374b397eaf6b30445c2b0c95f601009912b3c3950a7
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554382"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034535"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>คำขอสิทธิ์เรื่องข้อมูล (DSR) ภายใต้ GDPR
 

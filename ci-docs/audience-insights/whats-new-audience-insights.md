@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 1c54d74c999eb4776074951a129019843017964e
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 3412213bcf3a4174baf28c6b4d38f5febded18707c355d236d5082698c4c0db7
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692412"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035986"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>มีอะไรใหม่ในความสามารถข้อมูลเชิงลึกกลุ่มเป้าหมายของ Dynamics 365 Customer Insights
 

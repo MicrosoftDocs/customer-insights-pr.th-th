@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Dynamics 365 Marketing
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและส่งออกไปยัง Dynamics 365 Marketing
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692504"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417228"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>ใช้เซ็กเมนต์ใน Dynamics 365 Marketing (ตัวอย่าง)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 ใช้ [เซ็กเมนต์](segments.md) เพื่อสร้างการส่งเสริมการขายและติดต่อกลุ่มเฉพาะของลูกค้าด้วย Dynamics 365 Marketing สำหรับข้อมูลเพิ่มเติม โปรดดู [ใช้เซ็กเมนต์จาก Dynamics 365 Customer Insights ด้วย Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
+
+หากคุณกำลังใช้ความสามารถใหม่ของ Dynamics 365 Marketing สำหรับกระบวนการปฏิบัติการของการเดินทางของลูกค้าแบบเรียลไทม์ในองค์กร Dataverse คุณไม่จำเป็นต้องสร้างการส่งออกมาตรฐานไปยัง Dynamics 365 Marketing ผู้ติดต่อและเซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชม พร้อมใช้งานโดยตรงใน Dynamics 365 Marketing หลังจากการเชื่อมต่อ Marketing และ Customer Insights ก่อนที่คุณจะลบการส่งออกที่มีอยู่ ให้รีวิวคู่มือใน [วิธีการเชื่อมต่อข้อมูลเชิงลึกของผู้ชมและกระบวนการปฏิบัติการของการเดินทางของลูกค้าของ Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)
 
 ## <a name="prerequisite-for-a-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 28c89693239393d93b7a816535b8c3fffe353935
-ms.sourcegitcommit: e57d51ae3cc233f7b6185c074c66efd9800c02c1
+ms.openlocfilehash: f0d56fc6595fcbb226897fcb52148924d00306b6d75b617fc8cafbcc0aab0641
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6559428"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034933"
 ---
 # <a name="transactional-churn-prediction-preview"></a>การคาดคะเนการเลิกทำธุรกรรม (พรีวิว)
 

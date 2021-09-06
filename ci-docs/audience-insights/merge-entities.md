@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 24b523786158ff36c314601846ee25ea64cfabbe
-ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
+ms.openlocfilehash: 6e64154dc58f679d13033fa55a60cd0c306f62f31548b8ce98ea1ed5f423b3e9
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6650249"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035025"
 ---
 # <a name="merge-entities"></a>ผสานเอนทิตี
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: dccb8dcca8f65f64973e46fed9d83034d58282e2
-ms.sourcegitcommit: bcc47d15d4f0eacf008e4dbc09baac7f062b3ca8
+ms.openlocfilehash: eaccf23a81ca4de19763b761cc5a27c14515fe522ee36dc78f294208b681966e
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6315901"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036488"
 ---
 # <a name="manage-predictions"></a>จัดการการคาดคะเน
 

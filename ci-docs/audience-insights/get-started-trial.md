@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: f80654f03252142ce08241ff3ca3606be4595740
-ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
+ms.openlocfilehash: f038dedd369ac9e623146b66528efa87c47a8c23769037d8709fa9b804a0b723
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6650517"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035438"
 ---
 # <a name="set-up-a-trial-environment"></a>ตั้งค่าสภาพแวดล้อมการทดลองใช้ 
 

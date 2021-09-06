@@ -166,6 +166,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -310,5 +312,13 @@
       href: engagement-insights/regional-availability.md
     - name: ขีดจำกัดบริการ
       href: engagement-insights/quotas.md
-- name: ติดต่อฝ่ายสนับสนุน
-  href: 'https://admin.powerplatform.microsoft.com/support'
+- name: รวมข้อมูลเชิงลึกของผู้ชมและการมีส่วนร่วม
+  items:
+    - name: เชื่อมโยงข้อมูลเชิงลึกของการมีส่วนร่วมกับข้อมูลเชิงลึกของผู้ชม
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: ใช้เซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมในรายงานข้อมูลเชิงลึกของการมีส่วนร่วม
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: ใช้มิติข้อมูลประชากรเพื่อแยกข้อมูลพฤติกรรม
+      href: engagement-insights/curate-dimensions.md
+- name: รับการสนับสนุน
+  href: 'https://dynamics.microsoft.com/en-us/support/'

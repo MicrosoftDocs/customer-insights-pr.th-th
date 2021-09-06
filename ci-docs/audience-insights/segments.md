@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6e2080b4ad19f6f57f60da591345e80ce9083e8a
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: f1003b53b17e3ba2c37c0f2d94b89f7e97c2b6f10e28b7bbe93160e4c7f08d54
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554090"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036396"
 ---
 # <a name="segments-overview"></a>ภาพรวมของเซ็กเมนต์
 

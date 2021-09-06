@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 1c7b0c728bc4d4cf6b5aea79396cf0779fbf298d
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124563"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034246"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 

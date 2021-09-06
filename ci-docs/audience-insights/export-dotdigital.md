@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8b0bda638c9bc7bb9cb2fdb01be11489b44f28a5
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: f09be0dfa599c1ef7cf0055b7ce1df8784cf447ada64b56bc7543c214f9a5b99
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124434"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034659"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>ส่งออกเซ็กเมนต์ไปยัง DotDigital (พรีวิว)
 

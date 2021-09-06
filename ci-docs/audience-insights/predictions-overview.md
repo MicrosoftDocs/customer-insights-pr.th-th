@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: b73046844f6009a2b163b5eaadf5f63f75cda1d8
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: 57c61895d636273fc90a0ac5a942fd0c9abf583c687ae20621949554e581cdf8
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539184"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036032"
 ---
 # <a name="predictions-overview"></a>ภาพรวมการคาดคะเน
 

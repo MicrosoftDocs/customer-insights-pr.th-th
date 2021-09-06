@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 897c876306a39cd9d5842487b96cb2f0a8df7e656de0fb7f10fe8c7f53e2db6b
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598592"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035300"
 ---
 # <a name="real-time-data-ingestion-preview"></a>การเพิ่มข้อมูลแบบในเวลาจริง (ดูตัวอย่าง)
 

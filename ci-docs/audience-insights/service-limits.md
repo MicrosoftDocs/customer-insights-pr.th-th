@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 81253332cbea3110c0b3804db3a4d03b514f92d4
-ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
+ms.openlocfilehash: 2966f2ede1ddbe0245471771365cbf5b593be608764aa10ed28d962c52bb8067
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6604392"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034887"
 ---
 # <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>ขีดจำกัดบริการในความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย Dynamics 365 Customer Insights
 

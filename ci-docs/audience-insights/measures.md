@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a83caf2428f3dbd9791b9f746d00d370362a508c
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3593a02ce89233cf1e66c6beee669dd6dd261ba3b0e1d2d0cc966731349d7d0b
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304831"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7037031"
 ---
 # <a name="define-and-manage-measures"></a>กำหนดและจัดการการวัด
 

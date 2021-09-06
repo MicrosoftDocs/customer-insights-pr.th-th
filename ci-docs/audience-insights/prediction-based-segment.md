@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 488db1af865ce600ec012716327d053bee33aff8
-ms.sourcegitcommit: a95c82f46c23f625cb34fceba021ccc70d4b1df6
+ms.openlocfilehash: b89754aea2b0da33f27dea5b26d212920f0c090885f951a37cf42ff11c7b6e93
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "5741452"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036442"
 ---
 # <a name="create-a-segment-based-on-a-prediction-model-preview"></a>สร้างเซ็กเมนต์ตามแบบจำลองการคาดคะเน (ตัวอย่าง)
 

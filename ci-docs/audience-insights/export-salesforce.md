@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8ce243918c2388e931a98df3bbe576ddf692f707
-ms.sourcegitcommit: 4823684a1399fd66ffecfce21735f2bc90a1733c
+ms.openlocfilehash: b50539d6478a8fe196048f0fb421e5856f713a3ddc6577a637e593f90857ae8b
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6660290"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035576"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>ส่งออกเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง Salesforce Marketing Cloud (พรีวิว)
 

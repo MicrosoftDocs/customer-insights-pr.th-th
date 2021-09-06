@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
-ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
+ms.openlocfilehash: a0ca431dbea839fe271cf3a512cd3a5dde6d920d396056e91b33bcf7ed84272a
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6661125"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035530"
 ---
 # <a name="connector-for-power-bi-preview"></a>ตัวเชื่อมต่อสำหรับ Power BI (การแสดงตัวอย่าง)
 

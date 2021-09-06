@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: f8cf1be97ee8af46145a450009fd278b1821f8fe
-ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
+ms.openlocfilehash: b5f76f4c468b88aaf7037dbd2ee3bed449fbeaa5f645d52278eee05b36b4e328
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6650518"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034475"
 ---
 # <a name="get-started-with-a-paid-subscription"></a>เริ่มต้นใช้งานการสมัครใช้งานแบบเสียค่าบริการ
 
