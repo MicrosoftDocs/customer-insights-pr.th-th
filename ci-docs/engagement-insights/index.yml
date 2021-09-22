@@ -1,0 +1,86 @@
+### YamlMime:Landing
+title: ความสามารถของข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว) ใน Dynamics 365 Customer Insights
+summary: รวบรวมข้อมูลสำหรับเว็บไซต์ของคุณ ทำความเข้าใจการโต้ตอบและการใช้งานของลูกค้าในไซต์ของคุณ แบบโต้ตอบ ใช้การผสานรวมเชิงลึกระหว่างข้อมูลเชิงลึกของการมีส่วนร่วมและข้อมูลเชิงลึกของผู้ชม เพื่อเพิ่มประสิทธิภาพการวิเคราะห์พฤติกรรมแบบเรียลไทม์ ด้วยรายงานโปรไฟล์ลูกค้า เพิ่มโปรไฟล์ลูกค้าด้วยกิจกรรมบนเว็บ เพื่อรับข้อมูลพฤติกรรมแบบเรียลไทม์ควบคู่ไปกับข้อมูลลูกค้าที่เกี่ยวข้อง เปลี่ยนโฉมธุรกิจของคุณให้ได้รับมูลค่าทันทีจากข้อมูลลูกค้าของคุณ
+metadata:
+  title: คู่มือข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
+  description: ศูนย์ช่วยเหลือพร้อมลิงก์หลักสำหรับข้อมูลเชิงลึกของการมีส่วนร่วม
+  ms.service: customer-insights
+  ms.subservice: engagement-insights
+  ms.topic: hub-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: mhart
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.translationtype: HT
+  ms.contentlocale: th-TH
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036261"
+landingContent:
+- title: เกี่ยวกับ
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ภาพรวมของความสามารถ
+      url: overview.md
+    - text: ข้อกำหนดและแนวคิด
+      url: glossary.md
+    - text: ค้นหาข้อมูลเชิงลึกของการมีส่วนร่วม
+      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+- title: การเตรียมความพร้อม
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: การเริ่มต้นใช้งาน
+      url: get-started.md
+    - text: สร้างพื้นที่ทำงาน
+      url: create-workspace.md
+    - text: สร้างเว็บไซต์ของคุณ
+      url: instrument-website.md
+- title: รายงาน
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ดูรายงาน
+      url: view-reports.md
+    - text: สร้างรายงานแบบกําหนดเอง
+      url: custom-reports.md
+    - text: ดูรายงานโปรไฟล์แบบรวม
+      url: profile-reports.md
+    - text: สร้างรายงานช่วงระยะ
+      url: funnel-reports.md
+- title: กิจกรรม
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: สร้างเหตุการณ์ที่ปรับปรุงแล้ว
+      url: refined-events.md
+    - text: ส่งออกเหตุการณ์
+      url: export-events.md
+    - text: ลบและส่งออกข้อมูลส่วนบุคคล
+      url: delete-export-personal-data.md
+- title: ทรัพยากรนักพัฒนา
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: ทรัพยากรนักพัฒนา
+      url: developer-resources.md
+    - text: ตัวอย่าง WebSDK
+      url: websdk-sample.md
+    - text: สถานการณ์ web SDK ขั้นสูง
+      url: advanced-SDK-implementation.md
+    - text: ตัวอย่าง Android SDK
+      url: get-started-android.md
+    - text: ตัวอย่าง iOS SDK
+      url: get-started-ios.md
+- title: การดูแลจัดการ
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: จัดการสภาพแวดล้อมและพื้นที่ทำงาน
+      url: manage-environments-workspaces.md
+    - text: เชื่อมต่อกับข้อมูลเชิงลึกของผู้ชม
+      url: configure-connections.md
+    - text: จัดการคุกกี้และความยินยอมของผู้ใช้
+      url: user-consent-storage.md

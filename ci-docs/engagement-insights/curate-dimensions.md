@@ -1,0 +1,53 @@
+---
+title: ใช้มิติข้อมูลประชากรสำหรับการแยกข้อมูลพฤติกรรม (มิติที่เรียบเรียงแล้ว)
+description: ใช้มิติที่เรียบเรียงแล้วของโปรไฟล์แบบรวมเพื่อเปิดใช้งานคุณสมบัติโปรไฟล์ลูกค้าของข้อมูลเชิงลึกของผู้ชม
+ms.date: 07/27/2021
+ms.service: customer-insights
+ms.topic: conceptual
+author: mkisel
+ms.author: mkisel
+ms.reviewer: mhart
+manager: shellyha
+ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
+ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "7461126"
+---
+# <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>ใช้มิติข้อมูลประชากรเพื่อแยกข้อมูลพฤติกรรม
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
+โดยใช้มิติข้อมูลประชากรของโปรไฟล์แบบรวม ผู้ใช้ข้อมูลเชิงลึกของการมีส่วนร่วมสามารถเข้าถึงคุณสมบัติของโปรไฟล์ของข้อมูลเชิงลึกของผู้ชม จากนั้น คุณสามารถใช้คุณสมบัติเหล่านี้ในการวิเคราะห์เชิงโต้ตอบของข้อมูลพฤติกรรม ซึ่งรวมถึงข้อมูลที่บันทึกโดยข้อมูลเชิงลึกของการมีส่วนร่วมบนเว็บไซต์หรือแอปสำหรับอุปกรณ์เคลื่อนที่ของคุณ
+
+>[!NOTE]
+> ข้อมูลเชิงลึกของการมีส่วนร่วมรวมถึงมิติแบบสำเร็จรูปสำหรับคุณสมบัติของเหตุการณ์ ข้อมูลเพิ่มเติม: [ดูและสร้างมิติ](dimensions.md)
+
+## <a name="prerequisite"></a>ข้อกำหนดเบื้องต้น
+
+- สภาพแวดล้อมข้อมูลเชิงลึกของการมีส่วนร่วมที่คุณมีข้อมูลโปรไฟล์ลูกค้าที่เชื่อมโยงกับสภาพแวดล้อมข้อมูลเชิงลึกของผู้ชมที่มีการสร้างโปรไฟล์ลูกค้า ข้อมูลเพิ่มเติม: [สร้างลิงก์ระหว่างข้อมูลเชิงลึกของผู้ชมและข้อมูลเชิงลึกของการมีส่วนร่วม](integrate-audience-insights-engagement-insights.md)
+
+> [!NOTE]
+> หลังจากที่คุณสร้างลิงก์ระหว่างสภาพแวดล้อมข้อมูลเชิงลึกของผู้ชมและสภาพแวดล้อมข้อมูลเชิงลึกของการมีส่วนร่วม คุณอาจต้องการเฉพาะข้อมูลที่เฉพาะเจาะจงสำหรับคุณสมบัติโปรไฟล์ลูกค้า ซึ่งอาจเป็นประโยชน์ในฐานะมิติในข้อมูลเชิงลึกของการมีส่วนร่วม สำหรับข้อมูลเพิ่มเติม ไปที่ [เปิดใช้งานแอตทริบิวต์และเซ็กเมนต์โปรไฟล์แบบรวมของข้อมูลเชิงลึกของผู้ชม](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments)<!--note from editor: Suggested. -->
+
+## <a name="create-a-new-custom-report"></a>สร้างรายงานที่กำหนดเองใหม่
+
+1. ในบานหน้าต่างด้านซ้าย เลือก **กำหนดเอง** > **รายงานใหม่** แล้วจากนั้น เลือกเมตริกที่คุณต้องการ (สำหรับตัวอย่างนี้ เราเลือก **การดูหน้าเว็บตามชั่วโมง**)
+
+    :::image type="content" source="media/curated-dimensions1.png" alt-text="เลือกเมตริก":::
+
+2. ในตัวแก้ไขการจัดรูปแบบการแสดง ให้เลือก **มิติ** แล้วจากนั้น เลือก **ข้อมูลประชากร** ในเมนูดรอปดาวน์ **ชนิดมิติ**
+
+    :::image type="content" source="media/curated-dimensions2.png" alt-text="เลือกข้อมูลประชากร":::
+
+3. เลือกมิติ **Signal.Customer.*xxx*** (ตัวอย่างนี้แสดง Signal.Customer.Country)
+
+    :::image type="content" source="media/curated-dimensions3.png" alt-text="เลือกมิติ":::
+  
+## <a name="limitations"></a>ข้อจำกัด
+
+ในขณะนี้คุณสามารถใช้เฉพาะมิติข้อมูลประชากรสำหรับการแยกข้อมูลพฤติกรรม
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
