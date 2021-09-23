@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 8a3d7f9276330a6daacbe9428d84a371b81bbefe
+ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461126"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466371"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>ใช้มิติข้อมูลประชากรเพื่อแยกข้อมูลพฤติกรรม
 
@@ -29,7 +29,7 @@ ms.locfileid: "7461126"
 - สภาพแวดล้อมข้อมูลเชิงลึกของการมีส่วนร่วมที่คุณมีข้อมูลโปรไฟล์ลูกค้าที่เชื่อมโยงกับสภาพแวดล้อมข้อมูลเชิงลึกของผู้ชมที่มีการสร้างโปรไฟล์ลูกค้า ข้อมูลเพิ่มเติม: [สร้างลิงก์ระหว่างข้อมูลเชิงลึกของผู้ชมและข้อมูลเชิงลึกของการมีส่วนร่วม](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> หลังจากที่คุณสร้างลิงก์ระหว่างสภาพแวดล้อมข้อมูลเชิงลึกของผู้ชมและสภาพแวดล้อมข้อมูลเชิงลึกของการมีส่วนร่วม คุณอาจต้องการเฉพาะข้อมูลที่เฉพาะเจาะจงสำหรับคุณสมบัติโปรไฟล์ลูกค้า ซึ่งอาจเป็นประโยชน์ในฐานะมิติในข้อมูลเชิงลึกของการมีส่วนร่วม สำหรับข้อมูลเพิ่มเติม ไปที่ [เปิดใช้งานแอตทริบิวต์และเซ็กเมนต์โปรไฟล์แบบรวมของข้อมูลเชิงลึกของผู้ชม](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments)<!--note from editor: Suggested. -->
+> หลังจากที่คุณสร้างลิงก์ระหว่างสภาพแวดล้อมข้อมูลเชิงลึกของผู้ชมและสภาพแวดล้อมข้อมูลเชิงลึกของการมีส่วนร่วม คุณอาจต้องการเฉพาะข้อมูลที่เฉพาะเจาะจงสำหรับคุณสมบัติโปรไฟล์ลูกค้า ซึ่งอาจเป็นประโยชน์ในฐานะมิติในข้อมูลเชิงลึกของการมีส่วนร่วม สำหรับข้อมูลเพิ่มเติม ไปที่ [เปิดใช้งานแอตทริบิวต์และเซ็กเมนต์โปรไฟล์แบบรวมของข้อมูลเชิงลึกของผู้ชม](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments)
 
 ## <a name="create-a-new-custom-report"></a>สร้างรายงานที่กำหนดเองใหม่
 

@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: ความสามารถของข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว) ใน Dynamics 365 Customer Insights
+title: ความสามารถข้อมูลเชิงลึกของการมีส่วนร่วมใน Dynamics 365 Customer Insights (พรีวิว)
 summary: รวบรวมข้อมูลสำหรับเว็บไซต์ของคุณ ทำความเข้าใจการโต้ตอบและการใช้งานของลูกค้าในไซต์ของคุณ แบบโต้ตอบ ใช้การผสานรวมเชิงลึกระหว่างข้อมูลเชิงลึกของการมีส่วนร่วมและข้อมูลเชิงลึกของผู้ชม เพื่อเพิ่มประสิทธิภาพการวิเคราะห์พฤติกรรมแบบเรียลไทม์ ด้วยรายงานโปรไฟล์ลูกค้า เพิ่มโปรไฟล์ลูกค้าด้วยกิจกรรมบนเว็บ เพื่อรับข้อมูลพฤติกรรมแบบเรียลไทม์ควบคู่ไปกับข้อมูลลูกค้าที่เกี่ยวข้อง เปลี่ยนโฉมธุรกิจของคุณให้ได้รับมูลค่าทันทีจากข้อมูลลูกค้าของคุณ
 metadata:
   title: คู่มือข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
@@ -10,24 +10,24 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 09/15/2021
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036261"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494207"
 landingContent:
 - title: เกี่ยวกับ
   linkLists:
   - linkListType: overview
     links:
-    - text: ภาพรวมของความสามารถ
+    - text: ประโยชน์ของความสามารถ
       url: overview.md
-    - text: ข้อกำหนดและแนวคิด
+    - text: อภิธานศัพท์
       url: glossary.md
-    - text: ค้นหาข้อมูลเชิงลึกของการมีส่วนร่วม
-      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+    - text: คุณลักษณะใหม่และที่ปรับปรุง
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: การเตรียมความพร้อม
   linkLists:
   - linkListType: how-to-guide
@@ -38,33 +38,35 @@ landingContent:
       url: create-workspace.md
     - text: สร้างเว็บไซต์ของคุณ
       url: instrument-website.md
-- title: รายงาน
+- title: มุมมองและรายงานตัวกรอง
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: ดูรายงาน
       url: view-reports.md
-    - text: สร้างรายงานแบบกําหนดเอง
-      url: custom-reports.md
     - text: ดูรายงานโปรไฟล์แบบรวม
       url: profile-reports.md
-    - text: สร้างรายงานช่วงระยะ
-      url: funnel-reports.md
-- title: กิจกรรม
+    - text: ใช้เซ็กเมนต์ผู้ชมเพื่อกรองรายงาน
+      url: integrate-audience-insights-segments.md
+- title: วิเคราะห์
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: สร้างรายงานช่วงระยะ
+      url: funnel-reports.md
+    - text: วิเคราะห์ข้อมูลพฤติกรรม
+      url: curate-dimensions.md
+    - text: สร้างรายงานแบบกําหนดเอง
+      url: custom-reports.md
     - text: สร้างเหตุการณ์ที่ปรับปรุงแล้ว
       url: refined-events.md
     - text: ส่งออกเหตุการณ์
       url: export-events.md
-    - text: ลบและส่งออกข้อมูลส่วนบุคคล
-      url: delete-export-personal-data.md
-- title: ทรัพยากรนักพัฒนา
+- title: ทรัพยากรสำหรับนักพัฒนา
   linkLists:
   - linkListType: reference
     links:
-    - text: ทรัพยากรนักพัฒนา
+    - text: ทรัพยากรสำหรับนักพัฒนา
       url: developer-resources.md
     - text: ตัวอย่าง WebSDK
       url: websdk-sample.md
@@ -81,6 +83,10 @@ landingContent:
     - text: จัดการสภาพแวดล้อมและพื้นที่ทำงาน
       url: manage-environments-workspaces.md
     - text: เชื่อมต่อกับข้อมูลเชิงลึกของผู้ชม
-      url: configure-connections.md
+      url: integrate-audience-insights-engagement-insights.md
     - text: จัดการคุกกี้และความยินยอมของผู้ใช้
       url: user-consent-storage.md
+    - text: ลบและส่งออกข้อมูลส่วนบุคคล
+      url: delete-export-personal-data.md
+    - text: ขีดจำกัดบริการ
+      url: ../service-limits.md

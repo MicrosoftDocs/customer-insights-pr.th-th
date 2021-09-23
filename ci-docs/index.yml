@@ -7,12 +7,12 @@ metadata:
   ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: 1446a2bcb24739187a37b2024c9a6070ab008989d722ebf84ef5259ec2ee4d5c
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.openlocfilehash: e6a658f43b382934ee9b9b55c54fc1dff3f4df72
+  ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036580"
+  ms.lasthandoff: 09/17/2021
+  ms.locfileid: "7498620"
 title: คู่มือ Dynamics 365 Customer Insights
 summary: ค้นหาแหล่งข้อมูลที่เป็นประโยชน์เพื่อเริ่มต้นใช้งานและเรียนรู้เกี่ยวกับคุณลักษณะและความสามารถของ Customer Insights
 landingContent:
@@ -26,36 +26,36 @@ landingContent:
       url: /dynamics365-release-plan/
     - text: ค้นพบ CDP
       url: https://dynamics.microsoft.com/ai/customer-insights/
-- title: เริ่มต้นใช้งานข้อมูลเชิงลึกกลุ่มเป้าหมาย
+- title: เริ่มต้นใช้งาน Customer Insights
   linkLists:
   - linkListType: get-started
     links:
     - text: ลงทะเบียนเพื่อทดลองใช้
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: มีอะไรใหม่บ้าง
+    - text: มีอะไรใหม่ในข้อมูลเชิงลึกของผู้ชม
       url: audience-insights/whats-new-audience-insights.md
-    - text: คู่มือข้อมูลเชิงลึกกลุ่มเป้าหมาย
-      url: audience-insights/index.yml
+    - text: มีอะไรใหม่ในข้อมูลเชิงลึกของการมีส่วนร่วม
+      url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: ติดต่อ
   linkLists:
   - linkListType: overview
     links:
     - text: เข้าร่วมชุมชน Dynamics 365
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-    - text: แสดงความเห็นของคุณ
+    - text: แสดงไอเดียของคุณ
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: รายงานปัญหา
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: บทช่วยสอนข้อมูลเชิงลึกกลุ่มเป้าหมาย
+- title: แบ่งปันข้อมูลระหว่างความสามารถต่างๆ
   linkLists:
-  - linkListType: tutorial
+  - linkListType: how-to-guide
     links:
-    - text: สร้างสภาพแวดล้อมใหม่
-      url: audience-insights/home.md
-    - text: สร้างโปรไฟล์ลูกค้าแบบรวม
-      url: /learn/modules/unified-customer-profile/
-    - text: ทำงานกับแอป
-      url: /learn/modules/working-with-customer-insights/
+    - text: สร้างการเชื่อมโยงระหว่างความสามารถต่างๆ
+      url: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - text: สร้างเซ็กเมนต์เพื่อใช้ในรายงาน
+      url: engagement-insights/integrate-audience-insights-segments.md
+    - text: ใช้คุณสมบัติโปรไฟล์สำหรับการวิเคราะห์เชิงโต้ตอบ
+      url: engagement-insights/curate-dimensions.md
 - title: ส่งออกข้อมูลเชิงลึกกลุ่มเป้าหมาย
   linkLists:
   - linkListType: how-to-guide
@@ -76,7 +76,7 @@ landingContent:
       url: audience-insights/permissions.md
     - text: จัดการหลายสภาพแวดล้อม?
       url: audience-insights/manage-environments.md
-- title: เกี่ยวกับข้อมูลเชิงลึกการมีส่วนร่วม (พรีวิว)
+- title: เกี่ยวกับข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   linkLists:
   - linkListType: overview
     links:
@@ -86,7 +86,7 @@ landingContent:
       url: engagement-insights/glossary.md
     - text: การเริ่มต้นใช้งาน
       url: engagement-insights/get-started.md
-- title: รายงานสำหรับข้อมูลเชิงลึกการมีส่วนร่วม (พรีวิว)
+- title: รายงานสำหรับข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -96,7 +96,7 @@ landingContent:
       url: engagement-insights/custom-reports.md
     - text: ดูรายงานโปรไฟล์แบบรวม
       url: engagement-insights/profile-reports.md
-- title: เหตุการณ์สำหรับข้อมูลเชิงลึกการมีส่วนร่วม (พรีวิว)
+- title: เหตุการณ์สำหรับข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   linkLists:
   - linkListType: how-to-guide
     links:

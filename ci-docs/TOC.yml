@@ -14,8 +14,14 @@
       href: audience-insights/overview.md
     - name: คุณลักษณะใหม่และที่ปรับปรุง
       href: audience-insights/whats-new-audience-insights.md
-    - name: สร้างสภาพแวดล้อมใหม่
-      href: audience-insights/get-started-paid.md
+    - name: การเริ่มต้นใช้งาน
+      items:
+        - name: คู่มือเริ่มต้นใช้งานด่วน
+          href: audience-insights/get-started.md
+        - name: สร้างสภาพแวดล้อมใหม่
+          href: audience-insights/get-started-paid.md
+        - name: สำรวจข้อมูลเชิงลึกของผู้ชม
+          href: audience-insights/home.md
     - name: เรียนรู้โมดูล
       items:
         - name: นำเข้าข้อมูล
@@ -46,7 +52,7 @@
       items:
         - name: ภาพรวมการรวมข้อมูล
           href: audience-insights/data-unification.md
-        - name: แม็ปเอนทิตีและแอตทริบิวต์
+        - name: แมปเอนทิตีและแอตทริบิวต์
           href: audience-insights/map-entities.md
         - name: จับคู่เอนทิตี
           href: audience-insights/match-entities.md
@@ -68,6 +74,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: ที่อยู่ขั้นสูง
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: เพิ่มด้วยแผนที่ Azure
+          href: audience-insights/enrichment-azure-maps.md
         - name: เพิ่มข้อมูลด้วย HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: เพิ่มข้อมูลด้วย Leadspace
@@ -220,7 +228,7 @@
           href: audience-insights/supported-languages.md
     - name: ความสามารถในการเพิ่ม
       items:
-        - name: รวมข้อมูลเว็บจากข้อมูลเชิงลึกการมีส่วนร่วม
+        - name: รวมข้อมูลเว็บจากข้อมูลเชิงลึกของการมีส่วนร่วม
           href: audience-insights/integrate-engagement-insights.md
         - name: ตรวจทาน Schema เอนทิตีใน Common Data Model
           href: audience-insights/entity-schemas.md
@@ -230,21 +238,15 @@
           href: audience-insights/apis.md
         - name: การอ้างอิง API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-    - name: ขีดจำกัดบริการ
-      href: audience-insights/service-limits.md
-    - name: คำขอ DSR ภายใต้ GDPR
-      href: audience-insights/gdpr.md
-- name: ข้อมูลเชิงลึกการมีส่วนร่วม (พรีวิว)
+- name: ข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   items:
     - name: ศูนย์รวมรายการวิธีใช้
       href: engagement-insights/index.yml
     - name: ภาพรวมของความสามารถ
       href: engagement-insights/overview.md
-    - name: การทดลองใช้ฟรี
-      href: 'https://pi.dynamics.com/'
     - name: การเริ่มต้นใช้งาน
       items:
-        - name: การเริ่มต้นใช้งาน
+        - name: คู่มือเริ่มต้นใช้งานด่วน
           href: engagement-insights/get-started.md
         - name: สร้างพื้นที่ทำงาน
           href: engagement-insights/create-workspace.md
@@ -300,18 +302,10 @@
           href: engagement-insights/user-roles.md
         - name: จัดการสภาพแวดล้อมและพื้นที่ทำงาน
           href: engagement-insights/manage-environments-workspaces.md
-        - name: กำหนดค่าการเชื่อมต่อ
-          href: engagement-insights/configure-connections.md
         - name: จัดการคุกกี้และความยินยอมของผู้ใช้
           href: engagement-insights/user-consent-storage.md
-    - name: GDPR
-      items:
-        - name: ลบและส่งออกข้อมูลส่วนบุคคล
-          href: engagement-insights/delete-export-personal-data.md
     - name: ความพร้อมใช้งานในภูมิภาค
       href: engagement-insights/regional-availability.md
-    - name: ขีดจำกัดบริการ
-      href: engagement-insights/quotas.md
 - name: รวมข้อมูลเชิงลึกของผู้ชมและการมีส่วนร่วม
   items:
     - name: เชื่อมโยงข้อมูลเชิงลึกของการมีส่วนร่วมกับข้อมูลเชิงลึกของผู้ชม
@@ -320,5 +314,9 @@
       href: engagement-insights/integrate-audience-insights-segments.md
     - name: ใช้มิติข้อมูลประชากรเพื่อแยกข้อมูลพฤติกรรม
       href: engagement-insights/curate-dimensions.md
+- name: ขีดจำกัดบริการ
+  href: service-limits.md
+- name: สิทธิ์และคำขอ DSR
+  href: dsr-rights-requests.md
 - name: รับการสนับสนุน
-  href: 'https://dynamics.microsoft.com/en-us/support/'
+  href: 'https://dynamics.microsoft.com/support/'

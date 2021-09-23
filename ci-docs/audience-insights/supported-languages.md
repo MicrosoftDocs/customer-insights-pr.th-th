@@ -1,24 +1,23 @@
 ---
-title: ภาษาที่รองรับสำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
+title: ภาษาที่สนับสนุนสำหรับ Dynamics 365 Customer Insights
 description: ทำความเข้าใจและกำหนดค่าการรองรับภาษา
-ms.date: 02/26/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f80c3019df9b5d82273842ca6f6f18bef0239687
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035162"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483365"
 ---
-# <a name="supported-languages-for-audience-insights-capability"></a>ภาษาที่รองรับสำหรับความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย
+# <a name="supported-languages-for-dynamics-365-customer-insights"></a>ภาษาที่สนับสนุนสำหรับ Dynamics 365 Customer Insights
 
-ข้อมูลเชิงลึกกลุ่มเป้าหมายสำหรับ Dynamics 365 Customer Insights ได้รับการแปลเป็นหลายภาษา รายการต่อไปนี้มีข้อมูลภาษาที่พร้อมใช้งานและข้อมูลเกี่ยวกับสิ่งที่แปล คุณยังสามารถเรียนรู้เพิ่มเติมเกี่ยวกับวิธีเปลี่ยนการตั้งค่าภาษาได้ด้วย 
+Dynamics 365 Customer Insights ได้รับการแปลเป็นหลายภาษา รายการต่อไปนี้มีข้อมูลภาษาที่พร้อมใช้งานและข้อมูลเกี่ยวกับสิ่งที่แปล คุณยังสามารถเรียนรู้เพิ่มเติมเกี่ยวกับวิธีเปลี่ยนการตั้งค่าภาษาได้ด้วย 
 
 ## <a name="languages"></a>ภาษา
 
@@ -69,7 +68,7 @@ ms.locfileid: "7035162"
 
 ## <a name="whats-translated"></a>แปลว่าอะไร
 
-แอปจะใช้การตั้งค่าภาษาของคุณ เพื่อแสดงองค์ประกอบ เช่น เมนู ข้อความป้ายกำกับ และข้อความระบบในภาษาที่คุณต้องการ
+Customer Insights ใช้การตั้งค่าภาษาของคุณ เพื่อแสดงองค์ประกอบ เช่น เมนู ข้อความป้ายกำกับ และข้อความระบบในภาษาที่คุณต้องการ
 
 เนื่องจากคุณลักษณะส่วนใหญ่ขึ้นอยู่กับข้อมูลของคุณ บางรายการจึงยังคงอยู่ในภาษาดั้งเดิม ตัวอย่างเช่น:
 

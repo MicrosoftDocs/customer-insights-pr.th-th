@@ -10,12 +10,12 @@ author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 15cc495359af1faefe32225ae490fd7e7b6b08cc7a411e0a9804da6ec704099c
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 925cb5c2ccb4279ae5db2eb927a356708d310360
+ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034383"
+ms.lasthandoff: 09/06/2021
+ms.locfileid: "7474080"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>ข้อมูลเชิงลึกเกี่ยวกับกลุ่มเป้าหมายสำหรับภาพรวม Dynamics 365 Customer Insights
 
@@ -57,11 +57,5 @@ ms.locfileid: "7034383"
 
   - สร้างโปรไฟล์ที่ปรับแต่งได้ กำหนดมาตการ สร้างเซ็กเมนต์ และประโยชน์จากการวิเคราะห์เชิงทำนายเพื่อรับมุมมอง 360 องศาของลูกค้าของคุณ โดยเฉพาะสำหรับองค์กรของคุณ  
   - ใช้ตัวเชื่อมต่อแบบสำเร็จรูปสำหรับแอปพลิเคชันของ Microsoft และบริษัทอื่นหรือ API หลายรายการ เพื่อประมวลผลข้อมูลเชิงลึก
-
-## <a name="pricing-and-licensing"></a>การกำหนดราคาและสิทธิ์การใช้งาน
-
-Customer Insights ได้รับสิทธิ์การใช้งานต่อผู้เช่า และมีความสามารถหลายอย่าง ความสามารถที่มีสิทธิ์รวมถึงชุดของโปรไฟล์, การรีเฟรชระบบรายวัน, คำขอ Power Platform, และสภาพแวดล้อมสองรายการ คุณสามารถซื้อความจุและสิทธิ์การใช้งานเพิ่มเติมเพื่อเพิ่มโควต้าเริ่มต้นได้ 
-- ความจุและการให้สิทธิ์โดยละเอียด: [คู่มือการให้สิทธิ์การใช้งาน Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
-- ภาพรวมการกำหนดราคา: [การกำหนดราคา Dynamics 365](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
