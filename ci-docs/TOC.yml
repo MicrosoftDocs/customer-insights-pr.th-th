@@ -242,7 +242,7 @@
   items:
     - name: ศูนย์รวมรายการวิธีใช้
       href: engagement-insights/index.yml
-    - name: ภาพรวมของความสามารถ
+    - name: เกี่ยวกับข้อมูลเชิงลึกของการมีส่วนร่วม
       href: engagement-insights/overview.md
     - name: การเริ่มต้นใช้งาน
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: ความพร้อมใช้งานในภูมิภาค
       href: engagement-insights/regional-availability.md
-- name: รวมข้อมูลเชิงลึกของผู้ชมและการมีส่วนร่วม
+- name: แบ่งปันข้อมูลระหว่างความสามารถต่างๆ
   items:
     - name: เชื่อมโยงข้อมูลเชิงลึกของการมีส่วนร่วมกับข้อมูลเชิงลึกของผู้ชม
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: สิทธิ์และคำขอ DSR
   href: dsr-rights-requests.md
-- name: รับการสนับสนุน
-  href: 'https://dynamics.microsoft.com/support/'

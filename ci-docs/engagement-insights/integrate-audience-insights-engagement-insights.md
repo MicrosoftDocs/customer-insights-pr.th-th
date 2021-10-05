@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
-ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
+ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487130"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7559041"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>สร้างลิงก์ระหว่างข้อมูลเชิงลึกของผู้ชมและข้อมูลเชิงลึกของการมีส่วนร่วม
 
@@ -54,6 +54,9 @@ ms.locfileid: "7487130"
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>เปิดใช้งานแอตทริบิวต์และเซ็กเมนต์โปรไฟล์แบบรวมของข้อมูลเชิงลึกของผู้ชม
 
 หลังจากการเชื่อมโยงสภาพแวดล้อม คุณสามารถเลือกคุณลักษณะที่เป็นตัวเลือกสำหรับสภาพแวดล้อมที่เชื่อมโยงได้ คุณลักษณะเหล่านี้เปิดใช้งานแอตทริบิวต์และเซ็กเมนต์โปรไฟล์แบบรวมจากข้อมูลเชิงลึกของผู้ชม สำหรับการวิเคราะห์เชิงโต้ตอบเกี่ยวกับข้อมูลลูกค้า
+
+> [!IMPORTANT]
+> สำหรับเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมที่จะแสดงในข้อมูลเชิงลึกของการมีส่วนร่วม ก่อนอื่นคุณต้อง [เรียกใช้กระบวนการรวมเข้าด้วยกันและดาวน์สตรีม](../audience-insights/merge-entities.md) กระบวนการดาวน์สตรีมมีความสำคัญ เนื่องจากจะสร้างตารางเฉพาะที่จัดเตรียมเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมที่จะมีการแชร์กับข้อมูลเชิงลึกของการมีส่วนร่วม (หากมีการจัดกำหนดการรีเฟรชระบบ ระบบจะรวมกระบวนการดาวน์สตรีมโดยอัตโนมัติ)
 
 **เพื่อวิเคราะห์ข้อมูลเว็บในข้อมูลเชิงลึกของการมีส่วนร่วม**
 
