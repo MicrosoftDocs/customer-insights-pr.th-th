@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Klaviyo
 description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและส่งออกไปยัง Klaviyo
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7c1297fd5381c00c07d6501186c51fe4798773d1
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
+ms.openlocfilehash: 5f7c91afed8eeb1f767f1efc58dceb7782c37bb4
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7385811"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619096"
 ---
 # <a name="export-segment-lists-to-klaviyo-preview"></a>ส่งออกรายการเซ็กเมนต์ไปยัง Klaviyo (พรีวิว)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7385811"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ได้มากถึง 100,000 โปรไฟล์ต่อการส่งออกไปยัง Klaviyo
+- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 100'000 รายต่อการส่งออกไปยัง Klaviyo
 - การส่งออกไปยัง Klaviyo ถูกจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกโปรไฟล์มากถึง 1 ล้านโปรไฟล์ไปยัง Klaviyo อาจใช้เวลาถึง 20 นาทีจึงจะเสร็จสมบูรณ์ 
-- จำนวนโปรไฟล์ที่คุณสามารถส่งออกไปยัง Klaviyo นั้นขึ้นต่อกันและถูกจำกัดในสัญญาของคุณกับ Klaviyo
+- การส่งออกโปรไฟล์ลูกค้าสูงสุด 1 ล้านรายไปยัง Klaviyo อาจใช้เวลานานถึง 20 นาทีจึงจะเสร็จสมบูรณ์ 
+- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Klaviyo จะขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Klaviyo
 
 ## <a name="set-up-connection-to-klaviyo"></a>ตั้งค่าการเชื่อมต่อไปยัง Klaviyo
 
@@ -67,7 +67,7 @@ ms.locfileid: "7385811"
 
 1. ป้อน [**รหัสรายการ Klaviyo**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID) ของคุณ     
 
-3. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Klaviyo
+3. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Klaviyo
 
 1. เลือก **บันทึก**
 

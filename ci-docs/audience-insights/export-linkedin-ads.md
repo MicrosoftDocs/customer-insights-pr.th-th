@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง LinkedIn Ads
 description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและส่งออกไปยัง LinkedIn Ads
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034246"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618314"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7034246"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ได้ถึง 100K โปรไฟล์ต่อการส่งออกหนึ่งรายการไปยัง LinkedIn Ads
+- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 100K รายต่อการส่งออกไปยัง LinkedIn Ads
 - การส่งออกไปยัง LinkedIn Ads นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกมากถึง 100K โปรไฟล์ไปยัง LinkedIn Ads อาจใช้เวลาถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
+- การส่งออกโปรไฟล์ลูกค้าสูงสุด 100K รายไปยัง LinkedIn Ads อาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>ตั้งค่าการเชื่อมต่อกับ LinkedIn Ads
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034246"
 
 1. เลือกว่าคุณต้องการส่งออกข้อมูลเพื่อทำ [การกำหนดเป้าหมายการติดต่อ](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) หรือ [การกำหนดเป้าหมายบริษัท](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) บน LinkedIn 
 
-1. ในส่วน **การจับคู่ข้อมูล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงถึงที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads
+1. ในส่วน **การจับคู่ข้อมูล** สำหรับการกำหนดเป้าหมายผู้ติดต่อ ให้เลือกอย่างน้อยหนึ่งฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า รหัสโฆษณา Apple รหัสโฆษณา Google รหัสผู้ใช้ Google หรือชื่อและนามสกุล หากคุณเลือกการกำหนดเป้าหมายบริษัท ให้เลือกอย่างน้อยหนึ่งฟิลด์ที่แสดงถึงชื่อบริษัท โดเมนอีเมล URL หน้า LinkedIn สัญลักษณ์หุ้น หรือเว็บไซต์ คุณสามารถเลือกฟิลด์เพิ่มเติมเพื่อกำหนดการส่งออกของคุณเพิ่มเติม 
 
 1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก Matched Audiences ใน LinkedIn Campaign Manager จะถูกสร้างขึ้นโดยอัตโนมัติด้วยชื่อของเซ็กเมนต์ที่คุณเลือกที่จะส่งออก แต่ละเซ็กเมนต์จะส่งผลให้มี Matched Audience ที่แยกจากกัน 
 

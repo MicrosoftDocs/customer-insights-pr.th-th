@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Campaign Monitor
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Campaign Monitor
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d2cc3ec944faa1d77ffb44e8abb422d753c5625d0ccef75cbb7efb14cb7c3741
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 063de14c4ffd51b3afd89786606d7b37626695dc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031910"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619004"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Campaign Monitor (พรีวิว)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031910"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ได้ถึง 1 ล้านโปรไฟล์ต่อการส่งออกไปยัง Campaign Monitor
+- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 1 ล้านรายต่อการส่งออกไปยัง Campaign Monitor
 - การส่งออกไปยัง Campaign Monitor นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกมากถึง 1 ล้านโปรไฟล์ไปยัง Campaign Monitor อาจใช้เวลาถึง 20 นาทีจึงจะเสร็จสมบูรณ์ 
-- จำนวนโปรไฟล์ที่คุณสามารถส่งออกไปยัง Campaign Monitor นั้นขึ้นอยู่และจำกัดตามสัญญาของคุณกับ Campaign Monitor
+- การส่งออกโปรไฟล์ลูกค้าสูงสุด 1 ล้านรายไปยัง Campaign Monitor อาจใช้เวลานานถึง 20 นาทีจึงจะเสร็จสมบูรณ์ 
+- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Campaign Monitor จะขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Campaign Monitor
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>ตั้งค่าการเชื่อมต่อกับ Campaign Monitor
 
@@ -66,7 +66,7 @@ ms.locfileid: "7031910"
 1. ป้อน [**รหัสรายการ Campaign Monitor**](https://www.campaignmonitor.com/api/getting-started/#your-list-id) ของคุณ    
    [สร้างคีย์ API](https://www.campaignmonitor.com/api/getting-started/) จาก **การตั้งค่าบัญชี** ใน Campaign Monitor ก่อนเพื่อดูรหัสรายการ API  
 
-3. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า จำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Campaign Monitor
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า จำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Campaign Monitor
 
 1. เลือก **บันทึก**
 

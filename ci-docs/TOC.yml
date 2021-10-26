@@ -2,8 +2,14 @@
   href: index.yml
 - name: ภาพรวมของผลิตภัณฑ์
   href: overview.md
-- name: สร้างการทดลองใช้
-  href: audience-insights/get-started-trial.md
+- name: การทดลองใช้ฟรี
+  items:
+    - name: ลงทะเบียนเพื่อทดลองใช้ฟรี
+      href: trial-signup.md
+    - name: คำถามที่ถามบ่อยของรุ่นทดลองใช้
+      href: trial-FAQ.md
+- name: เริ่มต้นด้วยสิทธิ์การใช้งานที่ชำระเงินแล้ว
+  href: paid-license.md
 - name: เข้าถึงสภาพแวดล้อมของคุณ
   href: 'https://home.ci.ai.dynamics.com/'
 - name: ข้อมูลเชิงลึกของผู้ชม
@@ -19,9 +25,11 @@
         - name: คู่มือเริ่มต้นใช้งานด่วน
           href: audience-insights/get-started.md
         - name: สร้างสภาพแวดล้อมใหม่
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: สำรวจข้อมูลเชิงลึกของผู้ชม
           href: audience-insights/home.md
+    - name: ทำงานกับบัญชีธุรกิจ
+      href: audience-insights/work-with-business-accounts.md
     - name: เรียนรู้โมดูล
       items:
         - name: นำเข้าข้อมูล
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: แสดงรายการกิจกรรมลูกค้า
           href: audience-insights/activities.md
+        - name: กำหนดการแม็ปความหมาย
+          href: audience-insights/semantic-mappings.md
     - name: การเพิ่มข้อมูล
       items:
         - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: จัดการหลายสภาพแวดล้อม?
           href: audience-insights/manage-environments.md
-        - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูล ADLS โดยใช้บริการหลัก
-          href: audience-insights/connect-service-principal.md
         - name: ภาษาที่รองรับ
           href: audience-insights/supported-languages.md
+        - name: การรักษาความปลอดภัย
+          items:
+            - name: นํา Key Vault ของคุณมาเอง
+              href: audience-insights/use-azure-key-vault.md
+            - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูล ADLS โดยใช้บริการหลัก
+              href: audience-insights/connect-service-principal.md
     - name: ความสามารถในการเพิ่ม
       items:
         - name: รวมข้อมูลเว็บจากข้อมูลเชิงลึกของการมีส่วนร่วม
@@ -248,6 +262,8 @@
       items:
         - name: คู่มือเริ่มต้นใช้งานด่วน
           href: engagement-insights/get-started.md
+        - name: สร้างสภาพแวดล้อม
+          href: engagement-insights/create-new-environment.md
         - name: สร้างพื้นที่ทำงาน
           href: engagement-insights/create-workspace.md
         - name: บันทึกเหตุการณ์จากเว็บไซต์และแอปสำหรับอุปกรณ์เคลื่อนที่

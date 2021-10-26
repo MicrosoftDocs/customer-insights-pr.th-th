@@ -8,18 +8,18 @@ ms.date: 09/28/2021
 ms.service: customer-insights
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: d4ae7a085ba68c482372868e75376b6f769325d7
-ms.sourcegitcommit: ce2c011f06999dba2e886b8804d3439fbf67074d
+ms.openlocfilehash: 82591919b44eaac8a251d7fdb148253d5cac23c3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7564617"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645424"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>ความพร้อมใช้งานในภูมิภาคสำหรับ Dynamics 365 Customer Insights
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-ข้อมูลเชิงลึกของการมีส่วนร่วมเป็นความสามารถของ Dynamics 365 Customer Insights ที่จะค่อยๆ นำไปใช้ในภูมิภาคอื่นๆ ที่ลูกค้าสามารถเลือกจัดเก็บข้อมูลได้ ผู้ดูแลระบบสามารถเลือกภูมิภาคได้เมื่อพวกเขา [สร้างสภาพแวดล้อมใหม่](manage-environments-workspaces.md#create-an-environment) 
+ข้อมูลเชิงลึกของการมีส่วนร่วมเป็นความสามารถของ Dynamics 365 Customer Insights ที่จะค่อยๆ นำไปใช้ในภูมิภาคอื่นๆ ที่ลูกค้าสามารถเลือกจัดเก็บข้อมูลได้ ผู้ดูแลระบบสามารถเลือกภูมิภาคได้เมื่อพวกเขา [สร้างสภาพแวดล้อมใหม่](create-new-environment.md) 
 
 เมื่อคุณตั้งค่าข้อมูลเชิงลึกของการมีส่วนร่วมเป็นครั้งแรก คุณสามารถเลือกภูมิภาคในขณะที่ดำเนินการกับ [ประสบการณ์ใช้งานครั้งแรกที่แนะนำ](quickstart.md) หลังจากนั้น ทุกสภาพแวดล้อมใหม่ให้คุณสามารถเลือกภูมิภาคที่จะจัดเก็บข้อมูลได้
 

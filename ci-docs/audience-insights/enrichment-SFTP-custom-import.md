@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032735"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618728"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลแบบกำหนดเอง (พรีวิว)
 
@@ -44,6 +44,8 @@ ms.locfileid: "7032735"
 1.  เลือก **ต่อไป** และป้อน **พาธ** และ **ชื่อไฟล์** ของไฟล์ข้อมูลที่คุณต้องการนำเข้า
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="ภาพหน้าจอเมื่อป้อนตำแหน่งข้อมูล":::
+
+1. เลือก **ถัดไป** และเลือกชุดข้อมูลลูกค้า ซึ่งอาจเป็นโปรไฟล์ลูกค้าทั้งหมดหรือเซ็กเมนต์ก็ได้
 
 1. เลือก **ถัดไป** และระบุชื่อสำหรับการเพิ่มข้อมูลและชื่อสำหรับเอนทิตีผลลัพธ์ 
 
@@ -123,6 +125,6 @@ ms.locfileid: "7032735"
 
 ## <a name="next-steps"></a>ขั้นตอนถัดไป
 
-สร้างบนข้อมูลลูกค้าที่เพิ่มด้านบนของคุณ สร้าง [เซ็กเมนต์](segments.md) และ [การวัด](measures.md) และ [ส่งออกข้อมูล](export-destinations.md) เพื่อมอบประสบการณ์ที่ปรับให้เป็นแบบส่วนตัวให้กับลูกค้าของคุณ
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

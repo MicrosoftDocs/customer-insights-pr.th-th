@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง SendGrid
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง SendGrid
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 03df2ab5fce1da1f4f662e1975533f2b538b47dbdd5cf96aae4f1007163e3729
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036124"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617854"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>ส่งออกเซ็กเมนต์ไปยัง SendGrid (ตัวอย่าง)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036124"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- โปรไฟล์มากถึง 100'000 โปรไฟล์ไปยัง SendGrid
+- โปรไฟล์ลูกค้าทั้งหมดมากถึง 100'000 โปรไฟล์ใน SendGrid
 - การส่งออกไปยัง SendGrid ถูกจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกโปรไฟล์มากถึง 100'000 โปรไฟล์ไปยัง SendGrid อาจใช้เวลาสองสามชั่วโมงจึงจะเสร็จสมบูรณ์ 
-- จำนวนโปรไฟล์ที่คุณสามารถส่งออกไปยัง SendGrid นั้น ขึ้นอยู่และถูกจำกัดตามสัญญาของคุณกับ SendGrid
+- การส่งออกโปรไฟล์ลูกค้าสูงสุด 100'000 รายไปยัง SendGrid อาจใช้เวลานานสองสามชั่วโมงจึงจะเสร็จสมบูรณ์ 
+- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง SendGrid จะขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ SendGrid
 
 ## <a name="set-up-connection-to-sendgrid"></a>ตั้งค่าการเชื่อมต่อไปยัง SendGrid
 
@@ -66,7 +66,7 @@ ms.locfileid: "7036124"
 
 1. ป้อน **[รหัสรายชื่อ SendGrid](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)** ของคุณ
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า ทำซ้ำขั้นตอนเดียวกันสำหรับฟิลด์ที่ไม่บังคับอื่นๆ เช่น **ชื่อ**, **นามสกุล**, **ประเทศ/ภูมิภาค**, **รัฐ**, **เมือง** และ **รหัสไปรษณีย์**
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า ทำซ้ำขั้นตอนเดียวกันสำหรับฟิลด์ที่ไม่บังคับอื่นๆ เช่น **ชื่อ**, **นามสกุล**, **ประเทศ/ภูมิภาค**, **รัฐ**, **เมือง** และ **รหัสไปรษณีย์**
 
 1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก เรา **แนะนำอย่างยิ่งว่า อย่าส่งออกโปรไฟล์ลูกค้าทั้งหมดมากกว่า 100'000 โปรไฟล์** ไปยัง SendGrid 
 

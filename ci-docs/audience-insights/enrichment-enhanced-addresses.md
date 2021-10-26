@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: fb3fee72b3420c636d549b600c468c574ee33a662bfafd096247dfddf40150bd
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f56be1f4ecdac124ed76a0fb0eb1e313099248bf
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032689"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643448"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>การเพิ่มข้อมูลของโปรไฟล์ลูกค้าด้วยที่อยู่ที่ปรับปรุงแล้ว
 
@@ -23,6 +23,8 @@ ms.locfileid: "7032689"
 ## <a name="how-we-enhance-addresses"></a>เราปรับปรุงที่อยู่อย่างไร
 
 โมเดลของเราผ่านกระบวนการสองขั้นตอนเพื่อปรับปรุงที่อยู่ ขั้นแรก จะแยกวิเคราะห์ที่อยู่เพื่อระบุส่วนประกอบและทำให้อยู่ในรูปแบบที่มีโครงสร้าง จากนั้น เราใช้ AI เพื่อแก้ไข ทำให้สมบูรณ์ และทำให้ค่าในที่อยู่เป็นมาตรฐาน
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNewo]
 
 ### <a name="example"></a>ตัว อย่าง เช่น
 
@@ -102,6 +104,6 @@ ms.locfileid: "7032689"
 
 ## <a name="next-steps"></a>ขั้นตอนถัดไป
 
-สร้างบนข้อมูลลูกค้าที่เพิ่มด้านบนของคุณ สร้าง [เซ็กเมนต์](segments.md) และ [การวัด](measures.md) และแม้แต่ [ส่งออกข้อมูล](export-destinations.md) เพื่อมอบประสบการณ์ที่ปรับให้เป็นแบบส่วนตัวให้กับลูกค้าของคุณ
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

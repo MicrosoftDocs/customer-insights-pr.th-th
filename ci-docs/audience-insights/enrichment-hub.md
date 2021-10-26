@@ -1,7 +1,7 @@
 ---
 title: เพิ่มข้อมูลโปรไฟล์ลูกค้าแบบรวม
 description: ใช้ความสามารถเพื่อเพิ่มข้อมูลลูกค้าของคุณ
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470045"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617578"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>การเพิ่มข้อมูลสำหรับโปรไฟล์ลูกค้า (การแสดงตัวอย่าง)
 
@@ -27,16 +27,26 @@ ms.locfileid: "7470045"
 
 คุณต้องมีสิทธิ์ผู้สนับสนุนหรือผู้ดูแลระบบ เพื่อสร้างหรือแก้ไขการเพิ่มข้อมูล สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์](permissions.md)
 
-บนแท็บ **ค้นพบ** คุณจะพบการเพิ่มข้อมูลต่อไปนี้:
+บนแท็บ **ค้นหา** คุณจะพบตัวเลือกการเพิ่มข้อมูลที่ได้รับการสนับสนุนทั้งหมด
 
-- [แผนที่ Azure](enrichment-azure-maps.md) จัดทำโดย Microsoft
+# <a name="individual-customers-b2c"></a>[ลูกค้ารายบุคคล (B2C)](#tab/b2c)
+
 - [แบรนด์](enrichment-microsoft.md) จัดทำโดย Microsoft
 - [ความสนใจ](enrichment-microsoft.md) จัดทำโดย Microsoft
-- [ที่อยู่ที่ปรับปรุงแล้ว](enrichment-enhanced-addresses.md) ที่ได้รับจาก Microsoft
-- [ข้อมูลบริษัท](enrichment-leadspace.md) ซึ่งมีให้โดย Leadspace
+- [ที่อยู่ที่ปรับปรุงแล้ว](enrichment-enhanced-addresses.md) ที่ได้รับจาก Microsoft 
 - [ข้อมูลทางประชากร](enrichment-experian.md) ที่ระบุโดย Experian
-- [ข้อมูลตำแหน่งที่ตั้ง](enrichment-here.md) ให้บริการโดย HERE Technologies
-- [ข้อมูลที่กำหนดเอง](enrichment-SFTP-custom-import.md) ผ่าน Secure File Transfer Protocol (SFTP)
+- [ข้อมูลที่กำหนดเอง](enrichment-SFTP-custom-import.md) ผ่าน Secure File Transfer Protocol (SFTP) 
+- [แผนที่ Azure](enrichment-azure-maps.md) จัดทำโดย Microsoft
+
+# <a name="business-accounts-b2b"></a>[บัญชีธุรกิจ (B2B)](#tab/b2b)
+
+- [ข้อมูลบริษัท](enrichment-leadspace.md) ซึ่งมีให้โดย Leadspace
+- [ที่อยู่ที่ปรับปรุงแล้ว](enrichment-enhanced-addresses.md) ที่ได้รับจาก Microsoft 
+- [ข้อมูลตำแหน่งที่ตั้ง](enrichment-here.md) ให้บริการโดย HERE Technologies 
+- [ข้อมูลที่กำหนดเอง](enrichment-SFTP-custom-import.md) ผ่าน Secure File Transfer Protocol (SFTP) 
+- [แผนที่ Azure](enrichment-azure-maps.md) จัดทำโดย Microsoft
+
+---
 
 บนแท็บ **การเพิ่มข้อมูลของฉัน** คุณสามารถดูการเพิ่มข้อมูลที่คุณได้กำหนดค่าและแก้ไขคุณสมบัติได้
 
@@ -58,7 +68,7 @@ ms.locfileid: "7470045"
 
 ## <a name="enrichments-and-connections"></a>การเพิ่มข้อมูลและการเชื่อมต่อ
 
-การเพิ่มข้อมูลของบุคคลที่สามได้รับการกำหนดค่าโดยใช้ [การเชื่อมต่อ](connections.md) ซึ่งผู้ดูแลระบบตั้งค่าด้วยข้อมูลประจำตัวและให้ความยินยอมในการถ่ายโอนข้อมูล การเชื่อมต่อสามารถใช้เพื่อเพิ่มข้อมูลได้ทั้งโดยผู้ดูแลระบบและผู้สนับสนุนเพื่อกำหนดค่าการเพิ่มข้อมูล  
+การเพิ่มข้อมูลของบุคคลที่สามได้รับการกำหนดค่าโดยใช้ [การเชื่อมต่อ](connections.md) ซึ่งผู้ดูแลระบบตั้งค่าด้วยข้อมูลประจำตัวและให้ความยินยอมในการถ่ายโอนข้อมูล ผู้ดูแลและผู้สนับสนุนสามารถใช้การเชื่อมต่อนี้ได้เพื่อกำหนดค่าการเพิ่มข้อมูล  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>การเพิ่มข้อมูลหลายรายการในชนิดเดียวกัน
 

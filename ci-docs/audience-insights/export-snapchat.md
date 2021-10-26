@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Snapchat
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Snapchat
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 421dcd5ba5421597cf9dea71a9f9f25c7972a4f26fb49d4b042f8667a317ab5d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b7a929d65a730b60e77ae111b458c68d3cce2020
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033424"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618706"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Snapchat (พรีวิว)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7033424"
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
 - การส่งออกไปยัง Snapchat นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกมากถึง 1 ล้านโปรไฟล์ไปยัง Snapchat อาจใช้เวลาถึง 15 นาทีจึงจะเสร็จสมบูรณ์ 
+- การส่งออกโปรไฟล์ลูกค้าสูงสุด 1 ล้านรายไปยัง Snapchat อาจใช้เวลานานถึง 15 นาทีจึงจะเสร็จสมบูรณ์ 
 
 ## <a name="set-up-connection-to-snapchat"></a>ตั้งค่าการเชื่อมต่อไปยัง Snapchat
 
@@ -63,7 +63,7 @@ ms.locfileid: "7033424"
 
 1. ป้อน [**รหัสผู้ชม Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences)
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า จำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Snapchat
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า จำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Snapchat
 
 1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก 
 

@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Sendinblue
 description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและส่งออกไปยัง Sendinblue
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: be52554763b57e1c1ef2f960d52bbae79ac9827913c97ac73b429f66bbf4db37
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b5924b2d4e7f0b11ce6478a31015fcbaaf44ff93
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036078"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617808"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Sendinblue (พรีวิว)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036078"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- มากถึง 1 ล้านโปรไฟล์ต่อการส่งออกไปยัง Sendinblue
+- โปรไฟล์ลูกค้าสูงสุด 1 ล้านรายต่อการส่งออกไปยัง Sendinblue
 - การส่งออกไปยัง Sendinblue ถูกจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลานานถึง 90 นาที 
-- จำนวนโปรไฟล์ที่คุณสามารถส่งออกไปยัง Sendinblue นั้นขึ้นอยู่กับและถูกจำกัดในสัญญาของคุณกับ Sendinblue
+- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ลูกค้าทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลานานถึง 90 นาที 
+- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Sendinblue จะขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Sendinblue
 
 ## <a name="set-up-connection-to-sendinblue"></a>ตั้งค่าการเชื่อมต่อกับ Sendinblue
 
@@ -64,7 +64,7 @@ ms.locfileid: "7036078"
 
 1. ป้อน **รหัสรายการ Sendinblue** ของคุณ 
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า 
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า 
 
 1. หรือคุณสามารถส่งออก **ชื่อ**, **นามสกุล** และ **โทรศัพท์** เพื่อสร้างอีเมลที่ปรับให้เป็นแบบส่วนตัวเพิ่มเติม เลือก **เพิ่มแอตทริบิวต์** เพื่อแมปฟิลด์เหล่านี้
 

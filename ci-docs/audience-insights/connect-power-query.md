@@ -9,16 +9,18 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 3be417845a41c8f25c71bfc0823f42571157759b224e46d5e114037ee3df8329
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033287"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643517"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>เชื่อมต่อกับแหล่งข้อมูล Power Query
 
 Power Query มีชุดตัวเชื่อมต่อที่หลากหลายเพื่อนำเข้าข้อมูล ตัวเชื่อมต่อเหล่านี้ส่วนใหญ่รองรับโดย Dynamics 365 Customer Insights การเพิ่มแหล่งข้อมูลตามตัวเชื่อมต่อ Power Query โดยทั่วไปจะทำตามขั้นตอนที่ระบุไว้ในส่วนถัดไป อย่างไรก็ตาม ขึ้นอยู่กับตัวเชื่อมต่อที่คุณใช้ ข้อมูลที่จำเป็นแตกต่างกัน สำหรับข้อมูลเพิ่มเติม โปรดดูเอกสารเกี่ยวกับตัวเชื่อมต่อแต่ละตัวใน [การอ้างอิงตัวเชื่อมต่อ Power Query](/power-query/connectors/)
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
 ## <a name="create-a-new-data-source"></a>สร้างแหล่งข้อมูลใหม่
 

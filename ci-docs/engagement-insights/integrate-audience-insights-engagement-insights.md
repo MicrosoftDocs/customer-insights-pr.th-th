@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7559041"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645605"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>สร้างลิงก์ระหว่างข้อมูลเชิงลึกของผู้ชมและข้อมูลเชิงลึกของการมีส่วนร่วม
 
@@ -26,7 +26,7 @@ ms.locfileid: "7559041"
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
 - โปรไฟล์ข้อมูลเชิงลึกของผู้ชมต้องถูกเก็บไว้ในบัญชี Azure Data Lake Storage ที่คุณเป็นเจ้าของ หรือในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash; 
-- สภาพแวดล้อมข้อมูลเชิงลึกของผู้ชมของคุณควรมีสภาพแวดล้อม Dataverse ที่สัมพันธ์กัน และถ้าสภาพแวดล้อมนั้นยังใช้ Dataverse สำหรับการจัดเก็บข้อมูล ตรวจสอบให้แน่ใจว่าคุณได้เลือกตัวเลือก **เปิดใช้งานการแชร์ข้อมูล** ในข้อมูลเชิงลึกของผู้ชม สำหรับข้อมูลเพิ่มเติม โปรดดู [สร้างและกำหนดค่าสภาพแวดล้อมแบบเสียค่าบริการในข้อมูลเชิงลึกของผู้ชม](../audience-insights/get-started-paid.md)
+- สภาพแวดล้อมข้อมูลเชิงลึกของผู้ชมของคุณควรมีสภาพแวดล้อม Dataverse ที่สัมพันธ์กัน และถ้าสภาพแวดล้อมนั้นยังใช้ Dataverse สำหรับการจัดเก็บข้อมูล ตรวจสอบให้แน่ใจว่าคุณได้เลือกตัวเลือก **เปิดใช้งานการแชร์ข้อมูล** ในข้อมูลเชิงลึกของผู้ชม สำหรับข้อมูลเพิ่มเติม โปรดดู [สร้างและกำหนดค่าสภาพแวดล้อมในข้อมูลเชิงลึกของผู้ชม](../audience-insights/create-environment.md)
 - คุณต้องมีสิทธิ์ของผู้ดูแลระบบสำหรับทั้งข้อมูลเชิงลึกของการมีส่วนร่วมและสภาพแวดล้อมข้อมูลเชิงลึกของผู้ชม
 - สภาพแวดล้อมที่เชื่อมโยงต้องอยู่ในภูมิภาคทางภูมิศาสตร์เดียวกัน
 

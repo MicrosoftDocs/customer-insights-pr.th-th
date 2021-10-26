@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Azure Data Lake Storage Gen2
 description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อกับ Azure Data Lake Storage Gen2
-ms.date: 03/03/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,24 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: c4408e52550b6648e2a001041dc0acdb5063d6a6ef1b8e4bba3321bf25fefcfc
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 934c396559d4c4be8e640917d2265805753eb62d
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032002"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605926"
 ---
-# <a name="set-up-the-connection-to-azure-data-lake-storage-gen2-preview"></a>ตั้งค่าการเชื่อมต่อกับ Azure Data Lake Storage Gen2 (ตัวอย่าง)
+# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>ส่งออกรายการเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง Azure Data Lake Storage Gen2 (ตัวอย่าง)
+
+จัดเก็บข้อมูล Customer Insights ของคุณในบัญชี Data Lake Storage Gen2 หรือใช้ในการย้ายข้อมูลไปยังแอปพลิเคชันอื่น
+
+## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
+
+1. สำหรับ Azure Data Lake Storage Gen2 คุณสามารถเลือกระหว่าง [ระดับประสิทธิภาพมาตรฐานและประสิทธิภาพพรีเมียม](/azure/storage/blobs/create-data-lake-storage-account) เมื่อคุณสร้างบัญชีจัดเก็บข้อมูลสำหรับที่จัดเก็บข้อมูลดิบของคุณ หากคุณเลือกระดับประสิทธิภาพพรีเมียม ให้เลือก Blob บล็อกพรีเมียมเป็นชนิดบัญชี 
+
+
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>ตั้งค่าการเชื่อมต่อ Azure Data Lake Storage Gen2 
+
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 

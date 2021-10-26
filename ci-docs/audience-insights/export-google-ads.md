@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558995"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617946"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>ส่งออกกลุ่มไปยัง Google Ads (ตัวอย่าง)
 
@@ -35,9 +35,9 @@ ms.locfileid: "7558995"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- โปรไฟล์ต่อการส่งออกไปยัง Google Ads สูงสุด 1 ล้านโปรไฟล์
+- โปรไฟล์ลูกค้าสูงสุด 1 ล้านรายต่อการส่งออกไปยัง Google Ads
 - การส่งออกไปยัง Google Ads จำกัดเฉพาะเซ็กเมนต์
-- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลาถึง 5 นาทีเนื่องจากข้อจำกัดของผู้ให้บริการ 
+- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ลูกค้าทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลานานถึง 5 นาที เนื่องจากข้อจำกัดด้านผู้ให้บริการ 
 - การจับคู่ใน Google Ads อาจใช้เวลาถึง 48 ชั่วโมง
 
 ## <a name="set-up-connection-to-google-ads"></a>ตั้งค่าการเชื่อมต่อไปยัง Google Ads
@@ -74,7 +74,7 @@ ms.locfileid: "7558995"
 
 1. ป้อน **[รหัสผู้ชม Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** และเลือก **เชื่อมต่อ** เพื่อเริ่มการเชื่อมต่อกับ Google Ads
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า
 
 1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก คุณสามารถส่งออกโปรไฟล์ลูกค้าไปยัง Google Ads ได้มากถึง 1 ล้านโปรไฟล์
 

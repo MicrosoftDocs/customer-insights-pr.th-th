@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Mailchimp
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Mailchimp
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a6bdf43bb40345b868bf2e7d2c91de169c8ba841ba77f732f455f4c4d496a7f5
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 94a9fead56ce8c40b35d4eb41ebdc0d672798dce
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033562"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618637"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Mailchimp (พรีวิว)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033562"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- โปรไฟล์ต่อการส่งออกไปยัง Mailchimp สูงสุด 1 ล้านโปรไฟล์
+- โปรไฟล์ลูกค้าสูงสุด 1 ล้านรายต่อการส่งออกไปยัง Mailchimp
 - การส่งออกไปยัง Mailchimp จำกัดเฉพาะเซ็กเมนต์
-- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ 1 ล้านโปรไฟล์อาจใช้เวลาถึงสามชั่วโมง 
-- จำนวนโปรไฟล์ที่คุณสามารถส่งออกไปยัง Mailchimp นั้นขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Mailchimp
+- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ลูกค้า 1 ล้านโปรไฟล์อาจใช้เวลานานถึงสามชั่วโมง 
+- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Mailchimp จะขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Mailchimp
 
 ## <a name="set-up-connection-to-mailchimp"></a>ตั้งค่าการเชื่อมต่อไปยัง Mailchimp
 
@@ -66,7 +66,7 @@ ms.locfileid: "7033562"
 
 1. ป้อน **[รหัสผู้ชม Mailchimp](https://mailchimp.com/help/find-audience-id/)** ของคุณ
 
-3. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า 
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า 
 
 1. คุณสามารถส่งออก **ชื่อ** และ **นามสกุล** เพื่อสร้างอีเมลที่เป็นส่วนตัวมากขึ้น เลือก **เพิ่มแอตทริบิวต์** เพื่อแมปฟิลด์เหล่านี้
 

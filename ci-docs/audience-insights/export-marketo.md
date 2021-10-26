@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Marketo
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Marketo
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033516"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619188"
 ---
 # <a name="export-segments-to-marketo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Marketo (ตัวอย่าง)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033516"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- โปรไฟล์ต่อการส่งออกไปยัง Marketo สูงสุด 1 ล้านโปรไฟล์
+- โปรไฟล์ลูกค้าสูงสุด 1 ล้านรายต่อการส่งออกไปยัง Marketo
 - การส่งออกไปยัง Marketo จำกัดเฉพาะเซ็กเมนต์
-- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลาถึง 3 ชั่วโมง 
-- จำนวนโปรไฟล์ที่คุณสามารถส่งออกไปยัง Marketo นั้นขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Marketo
+- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ลูกค้าทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลานานถึง 3 ชั่วโมง 
+- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Marketo จะขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Marketo
 
 ## <a name="set-up-connection-to-marketo"></a>ตั้งค่าการเชื่อมต่อไปยัง Marketo
 
@@ -64,7 +64,7 @@ ms.locfileid: "7033516"
 
 1. ป้อน **[รหัสรายการ Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** ของคุณ รหัสรายการเป็นค่าตัวเลขเท่านั้น ตัวอย่างเช่น หากรหัสรายการ Marketo ของคุณคือ ST12345A7 ให้ลบอักขระก่อนและหลังตัวเลข และป้อน `12345` 
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า 
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า 
 
 1. คุณสามารถส่งออก **ชื่อ** **นามสกุล** **เมือง** **รัฐ** และ **ประเทศ/ภูมิภาค**  เพื่อสร้างอีเมลที่เป็นส่วนตัวมากขึ้น เลือก **เพิ่มแอตทริบิวต์** เพื่อแมปฟิลด์เหล่านี้
 
