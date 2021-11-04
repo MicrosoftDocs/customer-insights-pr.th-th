@@ -10,14 +10,14 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617578"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673022"
 ---
-# <a name="enrichment-for-customer-profiles-preview"></a>การเพิ่มข้อมูลสำหรับโปรไฟล์ลูกค้า (การแสดงตัวอย่าง)
+# <a name="enrichment-for-customer-profiles-preview"></a>การเพิ่มข้อมูลสำหรับโปรไฟล์ลูกค้า (พรีวิว)
 
 ใช้ข้อมูลจากแหล่งต่างๆ เช่น Microsoft และคู่ค้าอื่นๆ เพื่อเพิ่มข้อมูลลูกค้าของคุณ
 
@@ -29,7 +29,7 @@ ms.locfileid: "7617578"
 
 บนแท็บ **ค้นหา** คุณจะพบตัวเลือกการเพิ่มข้อมูลที่ได้รับการสนับสนุนทั้งหมด
 
-# <a name="individual-customers-b2c"></a>[ลูกค้ารายบุคคล (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[ผู้บริโภครายบุคคล (B-to-C)](#tab/b2c)
 
 - [แบรนด์](enrichment-microsoft.md) จัดทำโดย Microsoft
 - [ความสนใจ](enrichment-microsoft.md) จัดทำโดย Microsoft
@@ -38,7 +38,7 @@ ms.locfileid: "7617578"
 - [ข้อมูลที่กำหนดเอง](enrichment-SFTP-custom-import.md) ผ่าน Secure File Transfer Protocol (SFTP) 
 - [แผนที่ Azure](enrichment-azure-maps.md) จัดทำโดย Microsoft
 
-# <a name="business-accounts-b2b"></a>[บัญชีธุรกิจ (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[บัญชีธุรกิจ (B-to-B)](#tab/b2b)
 
 - [ข้อมูลบริษัท](enrichment-leadspace.md) ซึ่งมีให้โดย Leadspace
 - [ที่อยู่ที่ปรับปรุงแล้ว](enrichment-enhanced-addresses.md) ที่ได้รับจาก Microsoft 

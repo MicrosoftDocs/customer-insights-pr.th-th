@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c250efcd54ec126c0726b22a971cdedd89760d6b
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617992"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673161"
 ---
 # <a name="customer-activities"></a>กิจกรรมลูกค้า
 
@@ -49,7 +49,7 @@ ms.locfileid: "7617992"
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="กำหนดความสัมพันธ์ของเอนทิตี":::
 
    > [!TIP]
-   > ในสภาพแวดล้อม B2B คุณสามารถเลือกระหว่างเอนทิตีลูกค้าองค์กรและเอนทิตีอื่นๆ หากคุณเลือกเอนทิตีลูกค้าองค์กร พาธความสัมพันธ์จะถูกตั้งค่าโดยอัตโนมัติ สำหรับเอนทิตีอื่นๆ คุณต้องกำหนดพาธความสัมพันธ์บนเอนทิตีระดับกลางตั้งแต่หนึ่งรายการขึ้นไป จนกว่าคุณจะไปถึงเอนทิตีลูกค้าองค์กร
+   > ในสภาพแวดล้อม B-to-B คุณสามารถเลือกระหว่างเอนทิตีลูกค้าองค์กรและเอนทิตีอื่นๆ หากคุณเลือกเอนทิตีลูกค้าองค์กร พาธความสัมพันธ์จะถูกตั้งค่าโดยอัตโนมัติ สำหรับเอนทิตีอื่นๆ คุณต้องกำหนดพาธความสัมพันธ์บนเอนทิตีระดับกลางตั้งแต่หนึ่งรายการขึ้นไป จนกว่าคุณจะไปถึงเอนทิตีลูกค้าองค์กร
 
 1. เลือก **ต่อไป** เพื่อไปยังขั้นตอนต่อไป 
 

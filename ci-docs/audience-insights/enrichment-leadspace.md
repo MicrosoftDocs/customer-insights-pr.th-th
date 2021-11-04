@@ -9,16 +9,16 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 685b1683b0c90eab04b130552d2cb23a8ab7a235
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617477"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673281"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>การเพิ่มข้อมูลของโปรไฟล์บริษัทด้วย Leadspace (การแสดงตัวอย่าง)
+# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>การเพิ่มข้อมูลของโปรไฟล์บริษัทด้วย Leadspace (พรีวิว)
 
-Leadspace เป็นบริษัทด้านวิทยาศาสตร์ข้อมูลที่ให้แพลตฟอร์มข้อมูลลูกค้า B2B ซึ่งเปิดใช้งานสภาพแวดล้อมที่มีโปรไฟล์ลูกค้าแบบรวมตามบัญชีเพื่อเพิ่มข้อมูลของพวกเขา เพิ่ม *โปรไฟล์ลูกค้า* ด้วยคุณลักษณะต่างๆ เช่น ขนาดบริษัท ที่ตั้ง หรืออุตสาหกรรม เพิ่ม *โปรไฟล์ผู้ติดต่อ* ด้วยคุณลักษณะ เช่น ตำแหน่ง ลักษณะ หรือการยืนยันอีเมล
+Leadspace เป็นบริษัทวิทยาศาสตร์ข้อมูลที่ให้บริการแพลตฟอร์มข้อมูลลูกค้าแบบ B-to-B ซึ่งเปิดใช้งานสภาพแวดล้อมที่มีโปรไฟล์ลูกค้าแบบรวมตามบัญชีเพื่อเพิ่มข้อมูลของพวกเขา เพิ่ม *โปรไฟล์ลูกค้า* ด้วยคุณลักษณะต่างๆ เช่น ขนาดบริษัท ที่ตั้ง หรืออุตสาหกรรม เพิ่ม *โปรไฟล์ผู้ติดต่อ* ด้วยคุณลักษณะ เช่น ตำแหน่ง ลักษณะ หรือการยืนยันอีเมล
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 

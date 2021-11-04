@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617465"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673871"
 ---
 # <a name="segments-overview"></a>ภาพรวมของเซ็กเมนต์
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617465"
 
 มีหลายวิธีในการสร้างเซ็กเมนต์ใหม่: 
 
-# <a name="individual-customers-b2c"></a>[ลูกค้ารายบุคคล (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[ผู้บริโภครายบุคคล (B-to-C)](#tab/b2c)
 
 - เซ็กเมนต์ที่ซับซ้อนพร้อมตัวสร้างเซ็กเมนต์: [สร้างของเราเอง](segment-builder.md#create-a-new-segment) 
 - เซ็กเมนต์อย่างง่ายพร้อมตัวดำเนินการเดียว: [เซ็กเมนต์ด่วน](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617465"
 - คำแนะนำที่ขับเคลื่อนด้วย AI ตามการวัดหรือแอตทริบิวต์: [เซ็กเมนต์ที่แนะนำเพื่อปรับปรุงการวัด](suggested-segments.md) 
 - ข้อเสนอแนะตามกิจกรรม: [เซ็กเมนต์ที่แนะนำตามกิจกรรมของลูกค้า](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[บัญชีธุรกิจ (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[บัญชีธุรกิจ (B-to-B)](#tab/b2b)
 
 - เซ็กเมนต์ที่ซับซ้อนพร้อมตัวสร้างเซ็กเมนต์: [สร้างของเราเอง](segment-builder.md#create-a-new-segment)
 

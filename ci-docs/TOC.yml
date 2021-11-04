@@ -48,7 +48,7 @@
           href: audience-insights/connect-power-query.md
         - name: เพิ่มโฟลเดอร์โมเดลข้อมูลทั่วไปเป็นแหล่งข้อมูล
           href: audience-insights/connect-common-data-model.md
-        - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Dataverse
+        - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูล
           href: audience-insights/incremental-refresh-data-sources.md
@@ -232,8 +232,6 @@
           href: audience-insights/connections.md
         - name: จัดการหลายสภาพแวดล้อม?
           href: audience-insights/manage-environments.md
-        - name: ภาษาที่รองรับ
-          href: audience-insights/supported-languages.md
         - name: การรักษาความปลอดภัย
           items:
             - name: นํา Key Vault ของคุณมาเอง

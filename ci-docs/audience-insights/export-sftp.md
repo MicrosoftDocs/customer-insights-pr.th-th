@@ -9,16 +9,18 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a54025588945e4db6ab800dca034520b5f08d49b
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035484"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673939"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>ส่งออกเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง SFTP (พรีวิว)
 
-ใช้ข้อมูลลูกค้าของคุณในโปรแกรมประยุกต์ของบุคคลที่สามโดยส่งออกไปยังสถานที่ Secure File Transfer Protocol (SFTP)
+ใช้ข้อมูลลูกค้าของคุณในแอปพลิเคชันของบุคคลที่สามโดยส่งออกไปยังสถานที่ Secure File Transfer Protocol (SFTP)
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
 
