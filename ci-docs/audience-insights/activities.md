@@ -1,7 +1,7 @@
 ---
 title: กิจกรรมลูกค้า
 description: กำหนดกิจกรรมของลูกค้าและดูในไทม์ไลน์บนโปรไฟล์ลูกค้า
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673161"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732483"
 ---
 # <a name="customer-activities"></a>กิจกรรมลูกค้า
 
@@ -82,9 +82,7 @@ ms.locfileid: "7673161"
 
 1. บนหน้า **กิจกรรม** ให้เลือก **เรียกใช้** เพื่อดำเนินการกับกิจกรรม 
 
-> [!TIP]
-> โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies) คุณสามารถเลือกสถานะของกระบวนการเพื่อดูรายละเอียดความคืบหน้าของงานที่เกิดขึ้นทั้งหมด หลังจากเลือก **ดูรายละเอียด** สำหรับหนึ่งในงานของงาน คุณจะพบข้อมูลเพิ่มเติม ได้แก่ เวลาในการประมวลผล วันที่ประมวลผลล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>จัดการกิจกรรมที่มีอยู่
 

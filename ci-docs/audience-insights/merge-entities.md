@@ -1,7 +1,7 @@
 ---
 title: ผสานเอนทิตีในการรวมข้อมูล
 description: ผสานเอนทิตีเพื่อสร้างโปรไฟล์ลูกค้าแบบรวม
-ms.date: 10/10/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-merge
-ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648277"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732795"
 ---
 # <a name="merge-entities"></a>ผสานเอนทิตี
 
@@ -187,10 +187,9 @@ CustomerId ในเอนทิตีลูกค้าขึ้นอยู่
 
 หากต้องการทำการเปลี่ยนแปลงเพิ่มเติมและเรียกใช้ขั้นตอนนี้อีกครั้ง คุณสามารถยกเลิกการผสานที่กำลังดำเนินการอยู่ เลือก **กำลังรีเฟรช ...** และเลือก **ยกเลิกงาน** ในบานหน้าต่างด้านข้างที่ปรากฏขึ้น
 
-> [!TIP]
-> หลังจากดำเนินกระบวนการรวมเข้าด้วยกันแล้ว ให้เลือกสถานะกระบวนการเพื่อเปิดบานหน้าต่าง **รายละเอียดงาน** ซึ่งจะให้ภาพรวมเกี่ยวกับเวลาดำเนินการ วันที่ดำเนินการล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน เลือก **ดูรายละเอียด** เพื่อดูว่าเอนทิตีใดมีอยู่ในกระบวนการจับคู่ การแก้ไขข้อขัดแย้งสำเร็จหรือไม่ และเผยแพร่การอัปเดตสำเร็จหรือไม่  
-> โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies)  
-> :::image type="content" source="media/process-detail-path.png" alt-text="เส้นทางการดูรายละเอียดแนวลึกเพื่อดูรายละเอียดการดำเนินการจากลิงก์สถานะงาน":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="เส้นทางการดูรายละเอียดแนวลึกเพื่อดูรายละเอียดการดำเนินการจากลิงก์สถานะงาน":::
 
 ## <a name="next-step"></a>ขั้นตอนถัดไป
 

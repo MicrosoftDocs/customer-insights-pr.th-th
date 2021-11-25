@@ -1,7 +1,7 @@
 ---
 title: การแม็ปความหมาย (พรีวิว)
 description: ภาพรวมของการแม็ปความหมายและวิธีการใช้งาน
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622958"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731966"
 ---
 # <a name="semantic-mappings"></a>การแม็ปความหมาย
 
@@ -75,8 +75,7 @@ ms.locfileid: "7622958"
 
 1. ในการเรียกใช้การแม็ปความหมายในภายหลัง ให้เลือกการแม็ปความหมาย และเลือก **รีเฟรช**
 
-> [!TIP]
-> โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies) คุณสามารถเลือกสถานะของกระบวนการเพื่อดูรายละเอียดความคืบหน้าของงานที่เกิดขึ้นทั้งหมด หลังจากเลือก **ดูรายละเอียด** สำหรับหนึ่งในงานของงาน คุณจะพบข้อมูลเพิ่มเติม ได้แก่ เวลาในการประมวลผล วันที่ประมวลผลล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>จัดการการแม็ปความหมายที่มีอยู่
 
@@ -91,5 +90,6 @@ ms.locfileid: "7622958"
 - **เปลี่ยนชื่อ**: เปิดกล่องโต้ตอบที่คุณสามารถป้อนชื่ออื่นสำหรับการแม็ปความหมายที่เลือก เลือก **บันทึก** เพื่อนำการเปลี่ยนแปลงของคุณมาใช้
 
 - **ลบ**: เปิดกล่องโต้ตอบเพื่อยืนยันการลบการแม็ปความหมายที่เลือก นอกจากนี้ คุณยังสามารถลบการแม็ปความหมายได้มากกว่าหนึ่งรายการพร้อมกันโดยเลือกการแม็ปความหมายและไอคอนลบ ให้เลือก **ลบ** เพื่อยืนยันการลบ
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

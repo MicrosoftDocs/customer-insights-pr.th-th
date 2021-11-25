@@ -84,6 +84,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: ที่อยู่ขั้นสูง
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: ปรับปรุงข้อมูลบริษัท
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: เพิ่มด้วยแผนที่ Azure
           href: audience-insights/enrichment-azure-maps.md
         - name: เพิ่มข้อมูลด้วย HERE Technologies
@@ -250,6 +252,40 @@
           href: audience-insights/apis.md
         - name: การอ้างอิง API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: การจัดการความยินยอม (พรีวิว)
+  items:
+    - name: ศูนย์รวมรายการวิธีใช้
+      href: consent-management/index.yml
+    - name: ภาพรวมของความสามารถ
+      href: consent-management/overview.md
+    - name: การเริ่มต้นใช้งาน
+      items:
+        - name: การเริ่มต้นใช้งาน
+          href: consent-management/get-started.md
+        - name: แนวคิดและศัพท์เฉพาะ
+          href: consent-management/glossary.md
+    - name: นำเข้าข้อมูลความยินยอม
+      items:
+        - name: นำเข้าข้อมูลความยินยอม
+          href: consent-management/import-consent-data.md
+        - name: ตั้งค่าข้อมูลความยินยอมและใช้การกำหนดลักษณะความยินยอม
+          href: consent-management/set-consent-rules.md
+    - name: จัดการข้อมูลความยินยอม
+      items:
+        - name: เปิดใช้งานกฎการยินยอมในข้อมูลเชิงลึกของผู้ชม
+          href: audience-insights/activate-consent.md
+        - name: จัดการกฎความยินยอมเริ่มต้นในเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชม
+          href: audience-insights/change-default-consent-rules.md
+    - name: จัดการการตั้งค่าและผู้ใช้
+      items:
+        - name: กำหนดค่าการตั้งค่าระบบ
+          href: consent-management/system-settings.md
+        - name: จัดการผู้ใช้และสิทธิ์
+          href: consent-management/manage-users.md
+    - name: ใช้ข้อมูลความยินยอม
+      items:
+        - name: สร้างการคาดคะเนด้วยข้อมูลความยินยอม
+          href: consent-management/predictions-consent-data.md
 - name: ข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   items:
     - name: ศูนย์รวมรายการวิธีใช้

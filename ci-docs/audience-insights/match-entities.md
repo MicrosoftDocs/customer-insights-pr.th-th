@@ -1,7 +1,7 @@
 ---
 title: จับคู่เอนทิตีสำหรับการรวมข้อมูล
 description: จับคู่เอนทิตีเพื่อรวมชุดข้อมูลและสร้างโปรไฟล์ลูกค้าแบบรวม
-ms.date: 02/23/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-match
-ms.openlocfilehash: 67e17495fa6da1cfac7ee4ee165e798364f6cb27
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: cabeddbc9d485108d166e6355175a01721b75a55
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648231"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732657"
 ---
 # <a name="match-entities"></a>จับคู่เอนทิตี
 
@@ -180,10 +180,7 @@ ms.locfileid: "7648231"
 
 คุณจะพบผลลัพธ์ของการดำเนินการกับเอนทิตีโปรไฟล์ลูกค้าแบบรวมที่ประสบความสำเร็จในเพจ **เอนทิตี** เอนทิตีลูกค้าแบบรวมมีชื่อว่า **ลูกค้า** ในส่วน **โปรไฟล์** การดำเนินการจับคู่ครั้งแรกที่ประสบความสำเร็จทำให้เกิดเอนทิตี *ลูกค้า* แบบรวม การดำเนินการจับคู่ที่ตามมาทั้งหมดจะขยายเอนทิตีนั้น
 
-> [!TIP]
-> หลังจากดำเนินกระบวนการจับคู่แล้ว ให้เลือกสถานะกระบวนการเพื่อเปิดบานหน้าต่าง **รายละเอียดงาน** ซึ่งจะให้ภาพรวมเกี่ยวกับเวลาดำเนินการ วันที่ดำเนินการล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน เลือก **ดูรายละเอียด** เพื่อดูว่าเอนทิตีใดมีอยู่ในกระบวนการจับคู่ กฎใดที่ใช้กับเอนทิตีเหล่านั้น และเผยแพร่การอัปเดตสำเร็จหรือไม่  
-> โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies)  
-> :::image type="content" source="media/process-detail-path.png" alt-text="เส้นทางการดูรายละเอียดแนวลึกเพื่อดูรายละเอียดการดำเนินการจากลิงก์สถานะงาน":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="review-and-validate-your-matches"></a>ตรวจทานและตรวจสอบการจับคู่ของคุณ
 

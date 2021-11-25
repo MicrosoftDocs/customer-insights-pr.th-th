@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูลจาก Customer Insights
 description: จัดการการส่งออกเพื่อแบ่งปันข้อมูล
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673346"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732186"
 ---
 # <a name="exports-preview-overview"></a>ภาพรวมการส่งออก (พรีวิว)
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673346"
 
 การส่งออกแต่ละรายการที่คุณตั้งค่าคอนฟิก มีกำหนดการรีเฟรช ในระหว่างการรีเฟรช ระบบจะค้นหาข้อมูลใหม่หรือข้อมูลที่อัปเดตเพื่อรวมไว้ในการส่งออก โดยค่าเริ่มต้น การส่งออกจะดำเนินการเป็นส่วนหนึ่งของทุกๆ [การรีเฟรชระบบตามกำหนดการ](system.md#schedule-tab) คุณสามารถปรับแต่งกำหนดการรีเฟรช หรือปิด เพื่อเรียกใช้การส่งออกด้วยตนเอง
 
-กำหนดการรีส่งออกขึ้นอยู่กับสถานะของสภาพแวดล้อมของคุณ หากมีการอัปเดตที่กำลังดำเนินการใน [การขึ้นต่อกัน](system.md#refresh-policies) เมื่อการส่งออกตามกำหนดเวลาควรเริ่มต้นขึ้น ระบบจะทำการอัปเดตให้เสร็จสิ้นก่อน แล้วจึงเรียกใช้การส่งออก คุณสามารถดูว่าการส่งออกถูกรีเฟรชครั้งล่าสุดเมื่อใดในคอลัมน์ **รีเฟรชแล้ว**
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+กำหนดการรีส่งออกขึ้นอยู่กับสถานะของสภาพแวดล้อมของคุณ หากมีการอัปเดตที่กำลังดำเนินการใน [การขึ้นต่อกัน](system.md#refresh-processes) เมื่อการส่งออกตามกำหนดเวลาควรเริ่มต้นขึ้น ระบบจะทำการอัปเดตให้เสร็จสิ้นก่อน แล้วจึงเรียกใช้การส่งออก คุณสามารถดูว่าการส่งออกถูกรีเฟรชครั้งล่าสุดเมื่อใดในคอลัมน์ **รีเฟรชแล้ว**
 
 ### <a name="schedule-exports"></a>จัดกําหนดการส่งออก
 

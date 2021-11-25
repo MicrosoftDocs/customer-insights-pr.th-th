@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483715"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7792003"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>ข้อจำกัดการบริการในความสามารถ Customer Insights
 
@@ -26,7 +26,7 @@ ms.locfileid: "7483715"
 
 | พื้นที่  | ขีดจำกัด  | บันทึกย่อ |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| เซ็กเมนต์และการวัด | 100 เซ็กเมนต์หรือการวัด | จำนวนทั้งหมดที่ใช้งานอยู่ของ [เซ็กเมนต์](audience-insights/segments.md) และ [การวัด](audience-insights/measures.md) รวมกันไม่เกิน 100  |
+| เซ็กเมนต์ การวัด และการคาดคะเน | 300  | จำนวนทั้งหมดของ [เซ็กเมนต์](audience-insights/segments.md), [การวัด](audience-insights/measures.md) และ [การคาดคะเน](audience-insights/predictions.md) รวมกันได้ต้องไม่เกิน 300  |
 | ความสัมพันธ์ | ความลึก 20 ระดับสำหรับความสัมพันธ์ในเส้นทางเอนทิตี | เมื่อสร้าง [เซ็กเมนต์](audience-insights/segments.md) หรือ [การวัด](audience-insights/measures.md) โดยใช้ส่วนติดต่อของตัวสร้าง เส้นทางของเอนทิตีสามารถมีความสัมพันธ์ระหว่างเอนทิตีเริ่มต้นและเอนทิตีเป้าหมายได้สูงสุด 20 ระดับ  |
 
 

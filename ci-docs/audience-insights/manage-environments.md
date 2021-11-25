@@ -1,7 +1,7 @@
 ---
 title: สร้างและจัดการสภาพแวดล้อม
 description: เรียนรู้วิธีการลงทะเบียนสำหรับบริการและวิธีจัดการสภาพแวดล้อม
-ms.date: 10/14/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673767"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799658"
 ---
 # <a name="manage-environments"></a>จัดการสภาพแวดล้อม
 
@@ -39,6 +39,19 @@ ms.locfileid: "7673767"
 3. ในกล่อง **แก้ไขสภาพแวดล้อม** คุณสามารถอัปเดตการตั้งค่าสภาพแวดล้อม
 
 สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการตั้งค่าสภาพแวดล้อม โปรดดู [สร้างสภาพแวดล้อมใหม่](create-environment.md)
+
+## <a name="connect-to-microsoft-dataverse"></a>เชื่อมต่อกับ Microsoft Dataverse
+   
+ขั้นตอน **Microsoft Dataverse** ช่วยให้คุณเชื่อมต่อ Customer Insights กับสภาพแวดล้อม Dataverse
+
+หากต้องการใช้ [แบบจำลองการคาดคะเนสำเร็จรูป](predictions-overview.md#out-of-box-models) ให้กำหนดค่าการแบ่งปันข้อมูลด้วย Dataverse หรือคุณสามารถเปิดใช้งานการเพิ่มข้อมูลเข้าระบบจากแหล่งข้อมูลในองค์กร โดยให้ URL สภาพแวดล้อม Microsoft Dataverse ที่องค์กรของคุณดูแล เลือก **เปิดใช้งานการแชร์ข้อมูล** เพื่อแชร์ข้อมูลผลลัพธ์ Customer Insights กับที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="ตัวเลือกการกำหนดค่าเพื่อเปิดใช้งานการแบ่งปันข้อมูลกับ Microsoft Dataverse":::
+
+> [!NOTE]
+> Customer Insights ไม่สนับสนุนสถานการณ์การแบ่งปันข้อมูลต่อไปนี้:
+> - หากคุณบันทึกข้อมูลทั้งหมดไปยัง Azure Data Lake Storage ของคุณเอง คุณจะไม่สามารถเปิดใช้งานการแบ่งปันข้อมูลกับที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse ได้
+> - หากคุณเปิดใช้งานการแบ่งปันข้อมูลด้วยที่จัดเก็บข้อมูลดิบที่จัดการ Dataverse คุณจะไม่สามารถ [สร้างค่าที่คาดคะเนหรือขาดหายไปในเอนทิตี](predictions.md)
 
 ## <a name="copy-the-environment-configuration"></a>คัดลอกการกำหนดค่าของสภาพแวดล้อม
 

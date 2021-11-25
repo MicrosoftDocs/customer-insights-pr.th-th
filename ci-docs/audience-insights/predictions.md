@@ -1,7 +1,7 @@
 ---
 title: กรอกข้อมูลบางส่วนโดยใช้การคาดคะเน
 description: ใช้การคาดคะเนเพื่อกรอกข้อมูลลูกค้าที่ไม่สมบูรณ์
-ms.date: 05/05/2020
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,16 +9,17 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645057"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732456"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>กรอกข้อมูลบางส่วนของคุณให้สมบูรณ์ด้วยการคาดคะเน
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>กรอกข้อมูลบางส่วนของคุณด้วยการคาดคะเน (ไม่สนับสนุน)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> คุณลักษณะนี้มีการ **เลิกใช้** ในวันที่ **5 พฤศจิกายน 2021** การใช้งานในปัจจุบันจะยังคงทำงานต่อไปจนกว่าคุณลักษณะจะถูกเอาออก แต่คุณจะไม่สามารถสร้างการรวมใหม่โดยใช้คำแนะนำด้านล่างได้
 
 การคาดคะเนช่วยให้คุณสร้างค่าที่คาดคะเนได้ง่ายซึ่งสามารถเพิ่มความเข้าใจของลูกค้าได้ บนเพจ **ระบบอัจฉริยะ** > **การคาดคะเน** คุณสามารถเลือก **การคาดคะเนของฉัน** เพื่อดูการคาดคะเนที่คุณได้กำหนดค่าไว้ในส่วนอื่น ๆ ของข้อมูลเชิงลึกกลุ่มเป้าหมายและให้คุณสามารถปรับแต่งเพิ่มเติมได้
 
@@ -60,6 +61,8 @@ ms.locfileid: "7645057"
    > ![ตัวอย่างแสดงค่าของฟิลด์ที่แม็ปกับประเภท](media/intelligence-categorymapping.png "ตัวอย่างแสดงค่าของฟิลด์ที่แม็ปกับประเภท")
 
 8. เลือก **เสร็จสิ้น** และการคาดคะเนจะถูกดำเนินการ การประมวลผลจะใช้เวลาสักครู่ขึ้นอยู่กับขนาดและความซับซ้อนของข้อมูล ผลลัพธ์จะพร้อมใช้งานในเอนทิตีใหม่ตาม **ชื่อเอนทิตีผลลัพธ์** ของการคาดคะเนที่คุณสร้าง
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>สร้างการคาดคะเนในขณะที่สร้างเซ็กเมนต์
 

@@ -1,7 +1,7 @@
 ---
 title: สร้างและจัดการการวัด
 description: กำหนดการวัดเพื่อวิเคราะห์และสะท้อนผลการดำเนินงานของธุรกิจของคุณ
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673526"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732749"
 ---
 # <a name="define-and-manage-measures"></a>กำหนดและจัดการการวัด
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673526"
 - **ลบ** การวัด
 - **เปิดใช้งาน** หรือ **ปิดใช้งาน** การวัดที่ไม่ใช้งานจะไม่ได้รับการรีเฟรชในช่วง [การรีเฟรชตามกำหนดการ](system.md#schedule-tab)
 
-> [!TIP]
-> โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies) คุณสามารถเลือกสถานะของกระบวนการเพื่อดูรายละเอียดความคืบหน้าของงานที่เกิดขึ้นทั้งหมด หลังจากเลือก **ดูรายละเอียด** สำหรับงานใดงานหนึ่ง คุณจะพบข้อมูลเพิ่มเติม: เวลาดำเนินการ วันที่ดำเนินการล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>ขั้นตอนถัดไป
 
