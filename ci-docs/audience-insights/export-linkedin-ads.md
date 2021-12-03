@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 867a6541734746f75a35faaa8d3861e0479d6114
+ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618314"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866911"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7618314"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- เซ็กเมนต์ของคุณใน Customer Insights ต้องมีโปรไฟล์ที่ไม่ซ้ำอย่างน้อย 300 โปรไฟล์ 
 - คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 100K รายต่อการส่งออกไปยัง LinkedIn Ads
 - การส่งออกไปยัง LinkedIn Ads นั้นจำกัดเฉพาะเซ็กเมนต์
 - การส่งออกโปรไฟล์ลูกค้าสูงสุด 100K รายไปยัง LinkedIn Ads อาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
