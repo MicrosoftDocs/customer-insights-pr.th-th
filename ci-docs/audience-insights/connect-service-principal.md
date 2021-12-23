@@ -1,7 +1,7 @@
 ---
 title: เชื่อมต่อกับบัญชี Azure Data Lake Storage โดยใช้บริการหลัก
 description: ใช้บริการหลัก Azure เพื่อเชื่อมต่อกับ Data Lake ของคุณเอง
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645195"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900298"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>เชื่อมต่อกับบัญชี Azure Data Lake Storage โดยใช้บริการหลัก Azure
 
-เครื่องมืออัตโนมัติที่ใช้บริการ Azure ควรมีสิทธิ์ที่จำกัดไว้เสมอ แทนที่จะให้แอปพลิเคชันลงชื่อเข้าใช้ในฐานะผู้ใช้ที่มีสิทธิ์การใช้งานแบบเต็ม Azure จะเสนอบริการหลัก อ่านต่อเพื่อเรียนรู้วิธีการเชื่อมต่อ Dynamics 365 Customer Insights กับบัญชี Azure Data Lake Storage โดยใช้บริการหลัก Azure แทนคีย์บัญชีที่เก็บข้อมูล 
+บทความนี้กล่าวถึงวิธีการเชื่อมต่อ Dynamics 365 Customer Insights กับบัญชี Azure Data Lake Storage โดยใช้บริการหลักของ Azure แทนคีย์บัญชีการจัดเก็บ 
 
-คุณสามารถใช้บริการหลักเพื่อ [เพิ่มหรือแก้ไขโฟลเดอร์ Common Data Model เป็นแหล่งข้อมูล](connect-common-data-model.md) หรือ [สร้างหรืออัพเดตสภาพแวดล้อม](create-environment.md) ได้อย่างปลอดภัย
+เครื่องมืออัตโนมัติที่ใช้บริการ Azure ควรมีสิทธิ์ที่จำกัดไว้เสมอ แทนที่จะให้แอปพลิเคชันลงชื่อเข้าใช้ในฐานะผู้ใช้ที่มีสิทธิ์การใช้งานแบบเต็ม Azure จะเสนอบริการหลัก คุณสามารถใช้บริการหลักเพื่อ [เพิ่มหรือแก้ไขโฟลเดอร์ Common Data Model เป็นแหล่งข้อมูล](connect-common-data-model.md) หรือ [สร้างหรือปรับปรุงภาพแวดล้อม](create-environment.md) ได้อย่างปลอดภัย
 
 > [!IMPORTANT]
 > - บัญชี Data Lake Storage ที่จะใช้บริการหลักต้องมี [การเปิดใช้งานเนมสเปซแบบลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace)
-> - คุณต้องมีสิทธิ์ระดับผู้ดูแลระบบสำหรับการสมัครใช้งาน Azure ของคุณเพื่อสร้างบริการหลัก
+> - คุณต้องมีสิทธิ์ของผู้ดูแลระบบสำหรับการสมัครใช้งาน Azure เพื่อสร้างบริการหลัก
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>สร้างบริการหลัก Azure สำหรับ Customer Insights
 
-ก่อนที่จะสร้างบริการหลักใหม่สำหรับข้อมูลเชิงลึกของผู้ชมหรือข้อมูลเชิงลึกของการมีส่วนร่วม ให้ตรวจสอบว่ามีอยู่แล้วในองค์กรของคุณหรือไม่
+ก่อนสร้างบริการหลักใหม่สำหรับ Customer Insights ให้ตรวจสอบว่ามีบริการหลักอยู่แล้วในองค์กรของคุณหรือไม่
 
 ### <a name="look-for-an-existing-service-principal"></a>มองหาบริการหลักที่มีอยู่
 

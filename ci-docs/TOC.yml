@@ -74,7 +74,7 @@
           href: audience-insights/relationships.md
         - name: แสดงรายการกิจกรรมลูกค้า
           href: audience-insights/activities.md
-        - name: กำหนดการแม็ปความหมาย
+        - name: กำหนดการแมปความหมาย
           href: audience-insights/semantic-mappings.md
     - name: การเพิ่มข้อมูล
       items:
@@ -84,7 +84,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: ที่อยู่ขั้นสูง
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: ปรับปรุงข้อมูลบริษัท
+        - name: ข้อมูลบริษัทที่ปรับปรุงแล้ว
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: เพิ่มด้วยแผนที่ Azure
           href: audience-insights/enrichment-azure-maps.md
@@ -94,6 +94,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: เพิ่มด้วย Experian
           href: audience-insights/enrichment-experian.md
+        - name: เพิ่มด้วยข้อมูล Office 365
+          href: audience-insights/enrichment-office.md
         - name: เพิ่มข้อมูลด้วยการนําเข้าแบบกําหนดเองของ SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: เซ็กเมนต์
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: การทดลองกับ Azure Machine Learning
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: การทดลองด้วย Azure Machine Learning Studio
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: จัดการการคาดคะเน
           href: audience-insights/manage-predictions.md
         - name: สร้างเซ็กเมนต์ตามการคาดคะเน
@@ -240,6 +240,8 @@
               href: audience-insights/use-azure-key-vault.md
             - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูล ADLS โดยใช้บริการหลัก
               href: audience-insights/connect-service-principal.md
+            - name: ส่งออกบันทึกการวินิจฉัย
+              href: audience-insights/diagnostics.md
     - name: ความสามารถในการเพิ่ม
       items:
         - name: รวมข้อมูลเว็บจากข้อมูลเชิงลึกของการมีส่วนร่วม

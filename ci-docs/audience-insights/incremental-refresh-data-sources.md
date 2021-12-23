@@ -1,7 +1,7 @@
 ---
 title: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูลที่ใช้ Power Query
-description: รีเฟรชข้อมูลใหม่และข้อมูลที่อัปเดตสำหรับแหล่งข้อมูลขนาดใหญ่ตาม Power Query
-ms.date: 09/28/2020
+description: รีเฟรชข้อมูลใหม่และข้อมูลที่ปรับปรุงสำหรับแหล่งข้อมูลขนาดใหญ่ตาม Power Query
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377857"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900308"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>การรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลที่ใช้ Power Query
+
+บทความนี้อธิบายวิธีกำหนดค่าการรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลตาม Power Query
 
 การรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูล มีข้อดีดังต่อไปนี้:
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377857"
 
 1. [สร้างแหล่งข้อมูลใหม่โดยอิงจาก Power Query](connect-power-query.md)
 
-1. ระบุชื่อสำหรับแหล่งข้อมูล
+1. ระบุ **ชื่อ** สำหรับแหล่งข้อมูล
 
-1. เลือกแหล่งข้อมูลที่รองรับการรีเฟรชส่วนเพิ่ม เช่น ฐานข้อมูล Azure SQL
+1. เลือกแหล่งข้อมูลที่รองรับการรีเฟรชส่วนเพิ่ม เช่น [ฐานข้อมูล Azure SQL](/power-query/connectors/azuresqldatabase)
 
 1. เลือกเอนทิตีหรือตารางที่จะส่งเข้า
 

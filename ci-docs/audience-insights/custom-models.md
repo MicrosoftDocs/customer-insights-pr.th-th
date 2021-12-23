@@ -1,7 +1,7 @@
 ---
 title: โมเดล Machine Learning แบบกำหนดเอง | Microsoft Docs
 description: ทำงานกับโมเดลที่กำหนดเองจาก Azure Machine Learning ใน Dynamics 365 Customer Insights
-ms.date: 03/22/2021
+ms.date: 12/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,20 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 187995cdf4d92a0609f8abb4c792e698ad4342cdb1f578744136add1bfcf3a53
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032965"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881807"
 ---
 # <a name="custom-machine-learning-models"></a>โมเดล Machine Learning แบบกำหนดเอง
+
+> [!NOTE]
+> การสนับสนุน Machine Learning Studio (คลาสสิก) จะสิ้นสุดลงในวันที่ 31 สิงหาคม 2024 เราขอแนะนำให้คุณเปลี่ยนไปใช้ [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) ภายในวันที่นั้น
+>
+> ตั้งแต่วันที่ 1 ธันวาคม 2021 คุณจะไม่สามารถสร้างทรัพยากร Machine Learning Studio (คลาสสิก) ใหม่ได้ คุณสามารถใช้ทรัพยากร Machine Learning Studio (คลาสสิก) ที่มีอยู่ต่อไปได้จนถึงวันที่ 31 สิงหาคม 2024 ดูข้อมูลเพิ่มเติมได้ที่ [ย้ายไปยัง Azure Machine Learning](/azure/machine-learning/migrate-overview)
+
 
 **ระบบอัจฉริยะ** > **โมเดลที่กำหนดเอง** ช่วยให้คุณสามารถจัดการเวิร์กโฟลว์โดยยึดตามโมเดล Azure Machine Learning เวิร์กโฟลว์ช่วยให้คุณสามารถเลือกข้อมูลที่คุณต้องการสร้างข้อมูลเชิงลึกและจับคู่ผลลัพธ์กับข้อมูลลูกค้าแบบรวมของคุณ สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการสร้างโมเดล ML ที่กำหนดเอง โปรดดู [ใช้โมเดล Azure Machine Learning](azure-machine-learning-experiments.md)
 
@@ -26,9 +32,9 @@ ms.locfileid: "7032965"
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
-- ปัจจุบัน คุณลักษณะนี้รองรับบริการเว็บที่เผยแพร่ผ่าน [Machine Learning Studio (คลาสสิก)](https://studio.azureml.net) และ [ไปป์ไลน์แบบชุดงานของ Azure Machine Learning](/azure/machine-learning/concept-ml-pipelines)
+- คุณลักษณะนี้รองรับบริการเว็บที่เผยแพร่ผ่าน [ไปป์ไลน์ชุดงาน Azure Machine Learning](/azure/machine-learning/concept-ml-pipelines)
 
-- คุณต้องมีบัญชีที่เก็บข้อมูล Azure Data Lake รุ่น2 ที่เชื่อมโยงกับอินสแตนซ์ Azure Studio ของคุณเพื่อใช้คุณลักษณะนี้ สำหรับข้อมูลเพิ่มเติม ดูที่ [สร้างบัญชีที่เก็บข้อมูล Gen2 Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- คุณต้องมีบัญชีที่เก็บข้อมูล Azure Data Lake รุ่น2 ที่เชื่อมโยงกับอินสแตนซ์ Azure Studio ของคุณเพื่อใช้คุณลักษณะนี้ ดูข้อมูลเพิ่มเติมที่ [สร้างบัญชีที่เก็บข้อมูล Gen2 Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-quickstart-create-account)
 
 - สำหรับพื้นที่ทำงาน Azure Machine Learning ที่มีไปป์ไลน์ คุณต้องมีสิทธิ์ของผู้ดูแลระบบแบบผู้ใช้หรือการเข้าถึงของผู้ใช้สำหรับพื้นที่ทำงาน Azure Machine Learning
 
@@ -48,23 +54,19 @@ ms.locfileid: "7032965"
 
 1. หากการสมัครใช้งาน Azure Machine Learning ของคุณอยู่ในผู้เช่ารายอื่นที่ไม่ใช่ Customer Insights ให้เลือก **ลงชื่อเข้าใช้** ด้วยข้อมูลประจำตัวของคุณสำหรับองค์กรที่เลือก
 
-1. เลือก **พื้นที่ทำงาน** ที่เชื่อมโยงกับบริการเว็บของคุณ มีสองส่วนในรายการ ส่วนหนึ่งสำหรับ Azure Machine Learning v1 (Machine Learning Studio (คลาสสิก)) และ Azure Machine Learning v2 (Azure Machine Learning) หากคุณไม่แน่ใจว่าพื้นที่ทำงานใดเหมาะกับบริการเว็บ Machine Learning Studio (คลาสสิก) ของคุณให้เลือก **ใดๆ**
+1. เลือก **พื้นที่ทำงาน** ที่เชื่อมโยงกับบริการเว็บของคุณ 
 
-1. เลือกบริการเว็บ Machine Learning Studio (คลาสสิก) หรือไปป์ไลน์ Azure Machine Learning ในรายการแบบหล่นลง **บริการเว็บที่มีโมเดลของคุณ** จากนั้นเลือก **ถัดไป**
-   - เรียนรู้เพิ่มเติมเกี่ยวกับ [การเผยแพร่บริการเว็บใน Machine Learning Studio (คลาสสิก)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - เรียนรู้เพิ่มเติมเกี่ยวกับ [การเผยแพร่ไปป์ไลน์ใน Azure Machine Learning โดยใช้ตัวออกแบบ](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) หรือ [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) ไปป์ไลน์ของคุณต้องเผยแพร่ภายใต้ [จุดสิ้นสุดไปป์ไลน์](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)
+1. เลือกไปป์ไลน์ Azure Machine Learning ในดรอปดาวน์ **บริการเว็บที่มีโมเดลของคุณ** จากนั้นเลือก **ถัดไป**    
+   เรียนรู้เพิ่มเติมเกี่ยวกับ [การเผยแพร่ไปป์ไลน์ใน Azure Machine Learning โดยใช้ตัวออกแบบ](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) หรือ [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) ไปป์ไลน์ของคุณต้องเผยแพร่ภายใต้ [จุดสิ้นสุดไปป์ไลน์](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)
 
 1. สำหรับ **การป้อนข้อมูลบริการเว็บ** แต่ละรายการ ให้เลือก **เอนทิตี** ที่ตรงกันจากข้อมูลเชิงลึกกลุ่มเป้าหมาย และเลือก **ถัดไป**
    > [!NOTE]
-   > เวิร์กโฟลว์ของโมเดลแบบกำหนดเองจะใช้วิทยาการศึกษาสำนึกเพื่อแม็ปฟิลด์ข้อมูลป้อนเข้าของ Web Service กับแอตทริบิวต์เอนทิตีตามชื่อและชนิดข้อมูลของฟิลด์ คุณจะเห็นข้อผิดพลาด หากไม่สามารถแม็ปฟิลด์ Web Service กับเอนทิตีได้
+   > เวิร์กโฟลว์ของโมเดลแบบกำหนดเองจะใช้วิทยาการศึกษาสำนึกเพื่อแมปฟิลด์ข้อมูลป้อนเข้าของ Web Service กับแอตทริบิวต์เอนทิตีตามชื่อและชนิดข้อมูลของฟิลด์ คุณจะเห็นข้อผิดพลาด หากไม่สามารถแมปฟิลด์ Web Service กับเอนทิตีได้
 
    > [!div class="mx-imgBorder"]
    > ![กำหนดค่าเวิร์กโฟลว์](media/intelligence-screen2-updated.png "กำหนดค่าเวิร์กโฟลว์")
 
 1. ในขั้นตอน **พารามิเตอร์ผลลัพธ์ของโมเดล** ให้ตั้งค่าคุณสมบัติต่อไปนี้:
-   - Machine Learning Studio (คลาสสิก)
-      1. ป้อน **ชื่อเอนทิตี** ผลลัพธ์ที่คุณต้องการให้ผลลัพธ์ของบริการเว็บเข้ามา
-   - Azure Machine Learning
       1. ป้อน **ชื่อเอนทิตี** ผลลัพธ์ที่คุณต้องการให้ผลลัพธ์ของไปป์ไลน์เข้ามา
       1. เลือก **ชื่อพารามิเตอร์ที่เก็บข้อมูลผลลัพธ์** ของไปป์ไลน์แบบชุดงานของคุณจากรายการแบบหล่นลง
       1. เลือก **ชื่อพารามิเตอร์พาธผลลัพธ์** ของไปป์ไลน์แบบชุดงานของคุณจากรายการแบบหล่นลง
@@ -78,7 +80,7 @@ ms.locfileid: "7032965"
    > ![บานหน้าต่างเชื่อมโยงผลลัพธ์กับข้อมูลลูกค้า](media/intelligence-screen4-relatetocustomer.png "บานหน้าต่างเชื่อมโยงผลลัพธ์กับข้อมูลลูกค้า")
 
 1. คุณจะเห็นหน้าจอ **เวิร์กโฟลว์ที่บันทึกไว้** พร้อมรายละเอียดเกี่ยวกับเวิร์กโฟลว์    
-   ถ้าคุณกำหนดค่าเวิร์กโฟลว์สำหรับไปป์ไลน์ Azure Machine Learning, ข้อมูลเชิงลึกกลุ่มเป้าหมายจะแนบไปกับพื้นที่ทำงานที่มีไปป์ไลน์ ข้อมูลเชิงลึกกลุ่มเป้าหมายจะได้รับบทบาท **ผู้มีส่วนร่วม** ในพื้นที่ทำงาน Azure
+   ถ้าคุณกำหนดค่าเวิร์กโฟลว์สำหรับไปป์ไลน์ Azure Machine Learning, ข้อมูลเชิงลึกกลุ่มเป้าหมายจะแนบไปกับพื้นที่ทำงานที่มีไปป์ไลน์ ข้อมูลเชิงลึกกลุ่มเป้าหมายจะได้รับบทบาท **ผู้สนับสนุน** ในพื้นที่ทำงาน Azure
 
 1. เลือก **สำเร็จ**
 
@@ -93,9 +95,6 @@ ms.locfileid: "7032965"
 1. สำหรับ **การป้อนข้อมูลบริการเว็บ** แต่ละรายการ คุณสามารถปรับปรุง **เอนทิตี** ที่ตรงกันจากข้อมูลเชิงลึกกลุ่มเป้าหมาย จากนั้นเลือก **ถัดไป**
 
 1. ในขั้นตอน **พารามิเตอร์ผลลัพธ์ของโมเดล** ให้ตั้งค่าคุณสมบัติต่อไปนี้:
-   - Machine Learning Studio (คลาสสิก)
-      1. ป้อน **ชื่อเอนทิตี** ผลลัพธ์ที่คุณต้องการให้ผลลัพธ์ของบริการเว็บเข้ามา
-   - Azure Machine Learning
       1. ป้อน **ชื่อเอนทิตี** ผลลัพธ์ที่คุณต้องการให้ผลลัพธ์ของไปป์ไลน์เข้ามา
       1. เลือก **ชื่อพารามิเตอร์ที่เก็บข้อมูลผลลัพธ์** สำหรับไปป์ไลน์ทดสอบของคุณ
       1. เลือก **ชื่อพารามิเตอร์พาธผลลัพธ์** สำหรับไปป์ไลน์ทดสอบของคุณ

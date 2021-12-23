@@ -1,7 +1,7 @@
 ---
 title: การทดลองของ Azure Machine Learning
 description: ใช้โมเดลของ Azure Machine Learning ใน Dynamics 365 Customer Insights
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033195"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881761"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>ใช้โมเดลของ Azure Machine Learning
 
-ข้อมูลที่รวมเข้าด้วยกันใน Dynamics 365 Customer Insights เป็นแหล่งที่มาสำหรับการสร้างโมเดลการเรียนรู้เกี่ยวกับเครื่องที่สามารถสร้างข้อมูลเชิงลึกทางธุรกิจเพิ่มเติม Customer Insights ผสานรวมกับ Machine Learning Studio (คลาสสิก) และ Azure Machine Learning เพื่อใช้โมเดลที่คุณกำหนดเอง ดูที่ [การทดลองของ Machine Learning Studio (คลาสสิก)](machine-learning-studio-experiments.md) สำหรับตัวอย่างการทดลองที่สร้างใน Machine Learning Studio (คลาสสิก) 
+ข้อมูลที่รวมเข้าด้วยกันใน Dynamics 365 Customer Insights เป็นแหล่งที่มาสำหรับการสร้างโมเดลการเรียนรู้เกี่ยวกับเครื่องที่สามารถสร้างข้อมูลเชิงลึกทางธุรกิจเพิ่มเติม Customer Insights ผสานรวมกับ Azure Machine Learning เพื่อใช้โมเดลที่คุณกำหนดเอง
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
@@ -35,7 +35,7 @@ ms.locfileid: "7033195"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>ทำงานกับตัวออกแบบ Azure Machine Learning
 
-ตัวออกแบบ Azure Machine Learning มีพื้นที่ทำงานของภาพที่คุณสามารถลากและวางชุดข้อมูลและโมดูล ซึ่งคล้ายกับ Machine Learning Studio (คลาสสิก) ไปป์ไลน์ชุดงานที่สร้างจากตัวออกแบบสามารถรวมเข้ากับ Customer Insights ได้หากมีการกำหนดค่าตามนั้น 
+ตัวออกแบบ Azure Machine Learning มีพื้นที่ทำงานการแสดงผลด้วยภาพที่คุณสามารถลากและวางชุดข้อมูลและโมดูลต่างๆ ไปป์ไลน์ชุดงานที่สร้างจากตัวออกแบบสามารถรวมเข้ากับ Customer Insights ได้หากมีการกำหนดค่าตามนั้น 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>การทำงานกับ Azure Machine Learning SDK
 

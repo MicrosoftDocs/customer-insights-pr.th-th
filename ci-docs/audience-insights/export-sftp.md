@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยังโฮสต์ SFTP
+title: ส่งออกข้อมูล Customer Insights ไปยังโฮสต์ SFTP (วิดีโอ)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยังสถานที่ SFTP
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a54025588945e4db6ab800dca034520b5f08d49b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: bb73c49cf87657b71e0c2f5934662b062eeffb21
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673939"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7904152"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>ส่งออกเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง SFTP (พรีวิว)
 
@@ -39,7 +39,7 @@ ms.locfileid: "7673939"
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
-1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
+1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ ดูข้อมูลเพิ่มเติมที่ [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
 1. ระบุ **ชื่อผู้ใช้** **รหัสผ่าน** **ชื่อโฮสต์** และ **โฟลเดอร์การส่งออก** สำหรับบัญชี SFTP ของคุณ
 
@@ -53,7 +53,7 @@ ms.locfileid: "7673939"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ ดูข้อมูลเพิ่มเติมที่ [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 

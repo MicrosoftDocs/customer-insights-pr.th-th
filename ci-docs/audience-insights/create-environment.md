@@ -1,7 +1,7 @@
 ---
 title: สร้างสภาพแวดล้อมใน Customer Insights
 description: ขั้นตอนในการสร้างสภาพแวดล้อมด้วยการสมัครใช้งานที่ได้รับสิทธิ์ใช้งานสำหรับ Dynamics 365 Customer Insights
-ms.date: 10/14/2021
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673414"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892361"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>สร้างสภาพแวดล้อมในข้อมูลเชิงลึกของผู้ชม
 
@@ -77,6 +77,9 @@ ms.locfileid: "7673414"
 ขั้นตอน **Microsoft Dataverse** ช่วยให้คุณเชื่อมต่อ Customer Insights กับสภาพแวดล้อม Dataverse
 
 หากต้องการใช้ [แบบจำลองการคาดคะเนสำเร็จรูป](predictions-overview.md#out-of-box-models) ให้กำหนดค่าการแบ่งปันข้อมูลด้วย Dataverse หรือคุณสามารถเปิดใช้งานการเพิ่มข้อมูลเข้าระบบจากแหล่งข้อมูลในองค์กร โดยให้ URL สภาพแวดล้อม Microsoft Dataverse ที่องค์กรของคุณดูแล เลือก **เปิดใช้งานการแชร์ข้อมูล** เพื่อแชร์ข้อมูลผลลัพธ์ Customer Insights กับที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse
+
+> [!IMPORTANT]
+> Customer Insights และ Dataverse ต้องอยู่ในภูมิภาคเดียวกันจึงจะสามารถแชร์ข้อมูลได้
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="ตัวเลือกการกำหนดค่าเพื่อเปิดใช้งานการแบ่งปันข้อมูลกับ Microsoft Dataverse":::
 

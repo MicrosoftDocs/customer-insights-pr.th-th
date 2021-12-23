@@ -1,7 +1,7 @@
 ---
 title: สร้างและจัดการสภาพแวดล้อม
 description: เรียนรู้วิธีการลงทะเบียนสำหรับบริการและวิธีจัดการสภาพแวดล้อม
-ms.date: 11/12/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
-ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.openlocfilehash: 309b2a900e50727ffa655fc6b5fe728ea55ba5bf
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7799658"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892407"
 ---
 # <a name="manage-environments"></a>จัดการสภาพแวดล้อม
 
@@ -36,7 +36,7 @@ ms.locfileid: "7799658"
 
 2.  เลือกไอคอน **แก้ไข**
 
-3. ในกล่อง **แก้ไขสภาพแวดล้อม** คุณสามารถอัปเดตการตั้งค่าสภาพแวดล้อม
+3. ในกล่อง **แก้ไขสภาพแวดล้อม** คุณสามารถปรับปรุงการตั้งค่าสภาพแวดล้อม
 
 สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการตั้งค่าสภาพแวดล้อม โปรดดู [สร้างสภาพแวดล้อมใหม่](create-environment.md)
 
@@ -45,6 +45,9 @@ ms.locfileid: "7799658"
 ขั้นตอน **Microsoft Dataverse** ช่วยให้คุณเชื่อมต่อ Customer Insights กับสภาพแวดล้อม Dataverse
 
 หากต้องการใช้ [แบบจำลองการคาดคะเนสำเร็จรูป](predictions-overview.md#out-of-box-models) ให้กำหนดค่าการแบ่งปันข้อมูลด้วย Dataverse หรือคุณสามารถเปิดใช้งานการเพิ่มข้อมูลเข้าระบบจากแหล่งข้อมูลในองค์กร โดยให้ URL สภาพแวดล้อม Microsoft Dataverse ที่องค์กรของคุณดูแล เลือก **เปิดใช้งานการแชร์ข้อมูล** เพื่อแชร์ข้อมูลผลลัพธ์ Customer Insights กับที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse
+
+> [!IMPORTANT]
+> Customer Insights และ Dataverse ต้องอยู่ในภูมิภาคเดียวกันจึงจะสามารถแชร์ข้อมูลได้
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="ตัวเลือกการกำหนดค่าเพื่อเปิดใช้งานการแบ่งปันข้อมูลกับ Microsoft Dataverse":::
 
@@ -64,7 +67,7 @@ ms.locfileid: "7799658"
 การตั้งค่าการกำหนดค่าต่อไปนี้จะถูกคัดลอก:
 
 - แหล่งข้อมูลที่ รับเข้า/นำเข้า
-- การกำหนดค่าการรวมข้อมูล (แม็ป จับคู่ ผสาน)
+- การกำหนดค่าการรวมข้อมูล (แมป จับคู่ ผสาน)
 - เซ็กเมนต์
 - การวัด
 - ความสัมพันธ์

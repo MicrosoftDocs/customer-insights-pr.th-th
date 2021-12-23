@@ -1,7 +1,7 @@
 ---
 title: ใช้แหล่งข้อมูลที่จะนำเข้าข้อมูล
 description: เรียนรู้วิธีการนำเข้าข้อมูลจากแหล่งต่างๆ
-ms.date: 11/01/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6846c73cb156aaa049e2656c8e327bcba1f73abc
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732190"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900402"
 ---
 # <a name="data-sources-overview"></a>ภาพรวมของแหล่งข้อมูล
 
@@ -25,19 +25,22 @@ ms.locfileid: "7732190"
 
 ## <a name="add-a-data-source"></a>เพิ่มแหล่งข้อมูล
 
-ดูบทความโดยละเอียดเกี่ยวกับวิธีเพิ่มแหล่งข้อมูล ซึ่งขึ้นอยู่กับตัวเลือกที่คุณเลือก
+โปรดดูบทความโดยละเอียดเกี่ยวกับวิธีเพิ่มแหล่งข้อมูล ทั้งนี้ขึ้นอยู่กับตัวเลือกที่คุณเลือก
 
-คุณสามารถเพิ่มแหล่งข้อมูลได้สามวิธีหลัก:
+คุณสามารถเพิ่มแหล่งข้อมูลต่อไปนี้ได้:
 
-- [ผ่านตัวเชื่อมต่อ Power Query มากมาย](connect-power-query.md)
-- [จากโฟลเดอร์ Common Data Model](connect-common-data-model.md)
-- [จากที่จัดเก็บข้อมูลดิบ Microsoft Dataverse ของคุณเอง](connect-dataverse-managed-lake.md)
+- [ตัวเชื่อมต่อ Power Query](connect-power-query.md)
+- [Common Data Model](connect-common-data-model.md)
+- [ที่จัดเก็บข้อมูลดิบ Microsoft Dataverse](connect-dataverse-managed-lake.md)
+
+> [!NOTE]
+> หากคุณกำลังใช้รุ่นทดลองใช้ ส่วนวิธีการนำเข้าจะมีตัวเลือก **ไลบรารีข้อมูล Customer Insights** เลือกตัวเลือกนี้เพื่อเลือกตัวอย่างชุดข้อมูลสำหรับอุตสาหกรรมต่างๆ ดูข้อมูลเพิ่มเติมที่ [การทดลองใช้ Dynamics 365 Customer Insights](../trial-signup.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>เพิ่มข้อมูลจากแหล่งข้อมูลภายในองค์กร
 
-การนำเข้าข้อมูลจากแหล่งข้อมูลภายในองค์กรในข้อมูลเชิงลึกของผู้ชมได้รับการสนับสนุนตามโฟลว์ข้อมูล Microsoft Power Platform สามารถเปิดใช้โฟลว์ข้อมูลใน Customer Insights โดย [ให้ URL สภาพแวดล้อม Microsoft Dataverse](create-environment.md) เมื่อตั้งค่าสภาพแวดล้อม
+การนำเข้าข้อมูลจากแหล่งข้อมูลภายในองค์กรในข้อมูลเชิงลึกของผู้ชมได้รับการสนับสนุนตามโฟลว์ข้อมูล Microsoft Power Platform คุณสามารถเปิดใช้งานกระแสข้อมูลใน Customer Insights โดย [การระบุ URL สภาพแวดล้อม Microsoft Dataverse](create-environment.md) เมื่อสร้างสภาพแวดล้อม
 
-แหล่งข้อมูลที่สร้างขึ้นหลังจากเชื่อมโยงสภาพแวดล้อม Dataverse ที่มี Customer Insights จะใช้ [โฟลว์ข้อมูล Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) โดยค่าเริ่มต้น โฟลว์ข้อมูลสนับสนุนการเชื่อมต่อภายในองค์กรโดยใช้เกตเวย์ข้อมูล ลบและสร้างแหล่งข้อมูลใหม่ที่มีอยู่ก่อนหน้าสภาพแวดล้อม Dataverse ที่เชื่อมโยงกับ [ใช้เกตเวย์ข้อมูลภายในองค์กร](/data-integration/gateway/service-gateway-app)
+แหล่งข้อมูลที่สร้างขึ้นหลังจากเชื่อมโยงสภาพแวดล้อม Dataverse กับ Customer Insights จะใช้ [กระแสข้อมูล Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) โดยค่าเริ่มต้น โฟลว์ข้อมูลสนับสนุนการเชื่อมต่อภายในองค์กรโดยใช้เกตเวย์ข้อมูล คุณสามารถลบและสร้างแหล่งข้อมูลที่มีอยู่ก่อนการเชื่อมโยงสภาพแวดล้อม Dataverse ขึ้นมาใหม่ได้ [โดยใช้เกตเวย์ข้อมูลภายในองค์กร](/data-integration/gateway/service-gateway-app)
 
 เกตเวย์ข้อมูลจากสภาพแวดล้อม Power BI หรือ Power Apps จะมองเห็นและคุณสามารถใช้ซ้ำได้ใน Customer Insights หน้าแหล่งข้อมูลแสดงลิงก์เพื่อไปที่สภาพแวดล้อม Microsoft Power Platform ที่คุณสามารถดูและกำหนดค่าเกตเวย์ข้อมูลภายในองค์กร
 
@@ -50,7 +53,7 @@ ms.locfileid: "7732190"
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
-การโหลดข้อมูลอาจต้องใช้เวลา หลังจากการรีเฟรชที่สำเร็จ จะสามารถตรวจสอบข้อมูลที่ถูกนำไปใช้ได้จากหน้า **เอนทิตี** สำหรับข้อมูลเพิ่มเติม โปรดดู [เอนทิตี](entities.md)
+การโหลดข้อมูลอาจต้องใช้เวลา หลังจากการรีเฟรชที่สำเร็จ จะสามารถตรวจสอบข้อมูลที่ถูกนำไปใช้ได้จากหน้า **เอนทิตี** ดูข้อมูลเพิ่มเติมที่ [เอนทิตี](entities.md)
 
 ## <a name="refresh-a-data-source"></a>รีเฟรชแหล่งข้อมูล
 
@@ -64,7 +67,7 @@ ms.locfileid: "7732190"
 
 2. เลือกจุดไข่ปลาแนวตั้งถัดจากแหล่งข้อมูลที่คุณต้องการรีเฟรช และเลือก **รีเฟรช** จากรายการแบบหล่นลง
 
-3. ตอนนี้แหล่งข้อมูลถูกทริกเกอร์สำหรับการรีเฟรชด้วยตนเอง การรีเฟรชแหล่งข้อมูลจะอัปเดตทั้งสคีมาเอนทิตีและข้อมูลสำหรับเอนทิตีทั้งหมดที่ระบุในแหล่งข้อมูล
+3. ตอนนี้แหล่งข้อมูลถูกทริกเกอร์สำหรับการรีเฟรชด้วยตนเอง การรีเฟรชแหล่งข้อมูลจะปรับปรุงทั้งสคีมาเอนทิตีและข้อมูลสำหรับเอนทิตีทั้งหมดที่ระบุในแหล่งข้อมูล
 
 4. เลือก **หยุดการรีเฟรช** หากคุณต้องการยกเลิกการรีเฟรชที่มีอยู่และแหล่งข้อมูลจะเปลี่ยนกลับเป็นสถานะการรีเฟรชล่าสุด
 
