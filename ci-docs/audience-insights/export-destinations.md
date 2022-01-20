@@ -5,17 +5,16 @@ ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 05485fc7def3d699d5179bcaa005ceb57024f840
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732186"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977990"
 ---
 # <a name="exports-preview-overview"></a>ภาพรวมการส่งออก (พรีวิว)
 

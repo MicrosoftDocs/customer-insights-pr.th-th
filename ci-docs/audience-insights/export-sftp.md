@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยังโฮสต์ SFTP (วิดีโอ)
+title: ส่งออกข้อมูล Customer Insights ไปยังโฮสต์ SFTP (มีวิดีโอ)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยังสถานที่ SFTP
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bb73c49cf87657b71e0c2f5934662b062eeffb21
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 542bd908010cf0a8ccc12f15d54e0a3d5b72f189
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904152"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7934954"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>ส่งออกเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง SFTP (พรีวิว)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7904152"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ขณะนี้ยังไม่รองรับปลายทาง SFTP ที่อยู่หลังไฟร์วอลล์ 
 - รันไทม์ของการส่งออกขึ้นอยู่กับประสิทธิภาพของระบบของคุณ เราขอแนะนำให้ใช้ CPU core สองรายการและหน่วยความจำ 1 Gb เป็นการตั้งค่าคอนฟิกขั้นต่ำของเซิร์ฟเวอร์ของคุณ 
 - การส่งออกเอนทิตีที่มีโปรไฟล์ลูกค้ามากถึง 100 ล้านโปรไฟล์ อาจใช้เวลา 90 นาทีเมื่อใช้การตั้งค่าคอนฟิกขั้นต่ำที่แนะนำของ CPU core สองรายการและหน่วยความจำ 1 Gb 
 

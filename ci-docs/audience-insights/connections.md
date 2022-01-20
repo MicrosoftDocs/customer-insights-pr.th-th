@@ -5,16 +5,16 @@ ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 3689c7016454ed44e22b4d4ff5a338836a8fe288
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e78e18b75ee9797b5fc76486615992e301e4c650
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605972"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977760"
 ---
 # <a name="connections-preview-overview"></a>ภาพรวมของการเชื่อมต่อ (ตัวอย่าง)
 

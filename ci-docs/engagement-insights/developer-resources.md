@@ -7,14 +7,14 @@ ms.author: britl
 ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
-ms.topic: how-to
+ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 2e2df207802f8de501661d247bd80d6cc792636f
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: 090860071d34c6dc64a745993628c46014455b80
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558769"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977714"
 ---
 # <a name="developer-resources-overview"></a>ภาพรวมของทรัพยากรนักพัฒนา
 

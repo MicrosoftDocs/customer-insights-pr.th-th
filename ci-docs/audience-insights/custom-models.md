@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.openlocfilehash: 8ca30193ae4f4ef3ed9c60f2d694cd11fad46c76
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881807"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967678"
 ---
 # <a name="custom-machine-learning-models"></a>โมเดล Machine Learning แบบกำหนดเอง
 
@@ -40,6 +40,8 @@ ms.locfileid: "7881807"
 
    > [!NOTE]
    > ข้อมูลจะถูกถ่ายโอนระหว่างอินสแตนซ์ Customer Insights ของคุณและบริการเว็บ Azure ที่เลือกหรือไปป์ไลน์ในเวิร์กโฟลว์ เมื่อคุณถ่ายโอนข้อมูลไปยังบริการ Azure โปรดตรวจสอบให้แน่ใจว่าบริการได้รับการกําหนดค่าให้ประมวลผลข้อมูลในลักษณะและตําแหน่งที่ตั้งที่จําเป็นเพื่อให้สอดคล้องกับข้อกําหนดทางกฎหมายหรือข้อบังคับสําหรับข้อมูลนั้นสําหรับองค์กรของคุณ
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>เพิ่มเวิร์กโฟลว์ใหม่
 

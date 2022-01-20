@@ -3,18 +3,19 @@ title: เริ่มต้นใช้งาน Android SDK
 description: เรียนรู้วิธีปรับแต่งให้เป็นแบบส่วนตัว และเรียกใช้ Android SDK
 author: britl
 ms.reviewer: mhart
+ms.custom: intro-internal
 ms.author: britl
 ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
-ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
+ms.openlocfilehash: 71ec4841303bd17d3f605547be8d6032c58a7b21
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7655365"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977598"
 ---
 # <a name="get-started-with-the-android-sdk"></a>เริ่มต้นใช้งาน Android SDK
 

@@ -7,13 +7,12 @@ ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: 0d04de418326152dafbbf020e6bb6d3b350ca806
-ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
+ms.openlocfilehash: b2dc5a1159f8baea1fa3c686de5ac294842b3e26
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/06/2021
-ms.locfileid: "7474126"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977621"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>ภาพรวมของผลิตภัณฑ์สำหรับ Dynamics 365 Customer Insights
 

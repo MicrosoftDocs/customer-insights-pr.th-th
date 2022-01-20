@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Azure Synapse Analytics
 description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อไปยัง Azure Synapse Analytics
-ms.date: 04/12/2021
+ms.date: 01/05/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f206043298bdbf8a84b0ef37b47a43290653beba7d3d0e8b807ec74513614aa8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 6f630b8fb03bf615ada6d40fe27a91975d0c856e
+ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031956"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7951065"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ส่งออกข้อมูลไปยัง Azure Synapse Analytics (พรีวิว)
 
@@ -49,6 +49,8 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 
 ### <a name="configure-a-connection"></a>กำหนดค่าการเชื่อมต่อ
 
+ในการสร้างการเชื่อมต่อ บริการหลักและบัญชีผู้ใช้ใน Customer Insights จำเป็นต้องมีสิทธิ์ **ผู้อ่าน** ใน *กลุ่มทรัพยากร* ที่มี Synapse Analytics workspace ตั้งอยู่ นอกจากนี้ บริการหลักและผู้ใช้บน Synapse Analytics workspace จำเป็นมีสิทธิ์ **ผู้ดูแลระบบ Synapse** ด้วย 
+
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
 1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Azure Synapse Analytics** หรือเลือก **การตั้งค่า** บนไทล์ **Azure Synapse Analytics** เพื่อกำหนดค่าการเชื่อมต่อ
@@ -63,7 +65,7 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 
 ### <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ ในการกำหนดค่าการส่งออกด้วยการเชื่อมต่อที่แชร์ คุณต้องมีสิทธิ์ **ผู้สนับสนุน** ใน Customer Insights เป็นอย่างน้อย สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
@@ -82,6 +84,8 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
 
 การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand)
+
+ในการสอบถามข้อมูลที่ส่งออกไปยัง Synapse Analytics คุณต้องมีสิทธิ์ **ผู้อ่านข้อมูลของ Blob ในพื้นที่จัดเก็บ** เพื่อเข้าถึงที่เก็บข้อมูลปลายทางในพื้นที่ทำงานของการส่งออก 
 
 ### <a name="update-an-export"></a>อัปเดตการส่งออก
 

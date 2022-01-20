@@ -1,7 +1,7 @@
 ---
-title: Add-in การ์ดลูกค้าสำหรับแอป Dynamics 365 (วิดีโอ)
+title: Add-in การ์ดลูกค้าสำหรับแอป Dynamics 365 (มีวิดีโอ)
 description: แสดงข้อมูลจากข้อมูลเชิงลึกของผู้ชมในแอป Dynamics 365 ด้วย Add-in นี้
-ms.date: 12/07/2021
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
+ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904036"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945450"
 ---
 # <a name="customer-card-add-in-preview"></a>Add-in การ์ดลูกค้า (การแสดงตัวอย่าง)
 
@@ -27,12 +27,12 @@ ms.locfileid: "7904036"
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
 - Add-in ใช้งานได้เฉพาะกับแอปแบบจำลองของ Dynamics 365 เช่น Sales หรือ Customer Service เวอร์ชัน 9.0 และใหม่กว่า
-- เพื่อให้ข้อมูล Dynamics 365 ของคุณแมปกับโปรไฟล์ลูกค้าข้อมูลเชิงลึกของผู้ชม พวกเขาจำเป็นต้องถูก [นำเข้าจากแอป Dynamics 365 โดยใช้ตัวเชื่อมต่อ Microsoft Dataverse](connect-power-query.md)
+- เพื่อให้ข้อมูล Dynamics 365 ของคุณแมปกับโปรไฟล์ลูกค้าข้อมูลเชิงลึกของผู้ชม เราขอแนะนำให้ [นำเข้าจากแอป Dynamics 365 โดยใช้ตัวเชื่อมต่อ Microsoft Dataverse](connect-power-query.md) หากคุณใช้วิธีอื่นในการนำเข้าผู้ติดต่อ (หรือบัญชี) ของ Dynamics 365 คุณต้องตรวจสอบให้แน่ใจว่าฟิลด์ `contactid` (หรือ`accountid`) ตั้งค่าเป็น [คีย์หลักสำหรับแหล่งข้อมูลนั้นในขั้นตอนการแมปของกระบวนการรวมข้อมูล](map-entities.md#select-primary-key-and-semantic-type-for-attributes) 
 - ผู้ใช้ Dynamics 365 ทั้งหมดของ Add-in การ์ดลูกค้าต้องถูก [เพิ่มเป็นผู้ใช้](permissions.md) ในข้อมูลเชิงลึกของผู้ชม เพื่อดูข้อมูล
 - [ความสามารถในการค้นหาและตัวกรองที่มีการกำหนดค่า](search-filter-index.md) ในข้อมูลเชิงลึกของผู้ชม เป็นสิ่งจำเป็นสำหรับการค้นหาข้อมูลในการทำงาน
 - การควบคุม Add-in แต่ละรายการอาศัยข้อมูลเฉพาะในข้อมูลเชิงลึกของผู้ชม ข้อมูลและการควบคุมบางอย่างมีให้ใช้งานในสภาพแวดล้อมเฉพาะบางชนิดเท่านั้น การกำหนดค่า Add-in จะแจ้งให้คุณทราบหากไม่มีการควบคุมเนื่องจากชนิดสภาพแวดล้อมที่เลือก เรียนรู้เพิ่มเติมเกี่ยวกับ [กรณีการใช้งานสภาพแวดล้อม](work-with-business-accounts.md)
   - **การควบคุมการวัด**: ต้องใช้ [การวัดที่กำหนด](measures.md) ของชนิดแอตทริบิวต์ของลูกค้า
-  - **การควบคุมอัจฉริยะ**: ต้องการข้อมูลที่สร้างขึ้นโดยใช้ [การคาดคะเน](predictions.md) หรือ [โมเดลที่กำหนดเอง](custom-models.md)
+  - **การควบคุมอัจฉริยะ**: ต้องการข้อมูลที่สร้างขึ้นโดยใช้ [การคาดคะเนหรือโมเดลที่กำหนดเอง](predictions-overview.md)
   - **การควบคุมรายละเอียดลูกค้า**: ฟิลด์ทั้งหมดจากโปรไฟล์มีอยู่ในโปรไฟล์ลูกค้าแบบรวม
   - **การควบคุมการเพิ่มข้อมูล**: ต้องมี [การเพิ่มข้อมูล](enrichment-hub.md) ที่ใช้งานได้นำไปใช้กับโปรไฟล์ลูกค้า Add-in การ์ดรองรับการเพิ่มข้อมูลเหล่านี้: [แบรนด์](enrichment-microsoft.md) ที่ให้บริการโดย Microsoft [ความสนใจ](enrichment-microsoft.md) ที่ให้บริการโดย Microsoft และ [ข้อมูลการมีส่วนร่วมของ Office](enrichment-office.md) ให้บริการโดย Microsoft
   - **การควบคุมผู้ติดต่อ**: ต้องการคำจำกัดความของเอนทิตีเชิงความหมายของชนิดผู้ติดต่อ

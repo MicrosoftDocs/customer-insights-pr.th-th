@@ -6,15 +6,16 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
+ms.custom: intro-internal
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ac5ae950a44f7f32e3cb9fdc0ffad05b78fddef0
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: fb943a91154e913c85c40fbf6077c171e9240ac5
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673710"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977944"
 ---
 # <a name="work-with-business-accounts-in-audience-insights"></a>ทำงานกับบัญชีธุรกิจในข้อมูลเชิงลึกของผู้ชม
 
@@ -26,7 +27,7 @@ ms.locfileid: "7673710"
 
 จากนั้น คุณสามารถ [นำเข้าข้อมูล](data-sources.md) สำหรับบัญชีธุรกิจและผู้ติดต่อที่เกี่ยวข้องเป็นแหล่งข้อมูลจากแหล่งที่รองรับทั้งหมด
 
-หลังจากที่รวมข้อมูล [ระบุลำดับชั้นบัญชี](relationships.md#set-up-account-hierarchies) เป็นส่วนหนึ่งของการตั้งค่าคอนฟิกความสัมพันธ์ นอกจากนี้ คุณยังสามารถ [ตั้งค่าคอนฟิกการแม็ปความหมาย](semantic-mappings.md) เพื่อเชื่อมต่อเอนทิตีผู้ติดต่อและเอนทิตีบัญชี 
+หลังจากที่รวมข้อมูล [ระบุลำดับชั้นบัญชี](relationships.md#set-up-account-hierarchies) เป็นส่วนหนึ่งของการตั้งค่าคอนฟิกความสัมพันธ์ นอกจากนี้ คุณยังสามารถ [ตั้งค่าคอนฟิกการแมปความหมาย](semantic-mappings.md) เพื่อเชื่อมต่อเอนทิตีผู้ติดต่อและเอนทิตีบัญชี 
 
 ## <a name="switch-between-primary-target-audience"></a>สลับไปมาระหว่างผู้ชมเป้าหมายหลัก
 

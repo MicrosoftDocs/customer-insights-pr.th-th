@@ -80,7 +80,7 @@
       items:
         - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
           href: audience-insights/enrichment-hub.md
-        - name: แบรนด์และความเกี่ยวข้องของความสนใจ
+        - name: แบรนด์และความสนใจ
           href: audience-insights/enrichment-microsoft.md
         - name: ที่อยู่ขั้นสูง
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: คาดคะเนการเลิกทำธุรกรรม
               href: audience-insights/predict-transactional-churn.md
+            - name: วิเคราะห์ความคิดเห็นในคำติชมของลูกค้า
+              href: audience-insights/sentiment-analysis.md
             - name: ใช้โมเดลที่กำหนดเองจาก Azure Machine Learning
               href: audience-insights/custom-models.md
             - name: กรอกข้อมูลที่ขาดหายไปบางส่วน
