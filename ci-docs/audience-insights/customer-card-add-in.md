@@ -9,16 +9,11 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
-ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
-ms.translationtype: HT
-ms.contentlocale: th-TH
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "7945450"
 ---
+
 # <a name="customer-card-add-in-preview"></a>Add-in การ์ดลูกค้า (การแสดงตัวอย่าง)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 ดูมุมมอง 360 องศาของลูกค้าของคุณโดยตรงในแอป Dynamics 365 ด้วยการติดตั้ง Add-in การ์ดลูกค้าในแอป Dynamics 365 ที่ได้รับการสนับสนุน คุณสามารถเลือกที่จะแสดงฟิลด์โปรไฟล์ลูกค้า ข้อมูลเชิงลึก และเส้นเวลาของกิจกรรมได้ Add-in จะดึงข้อมูลจาก Customer Insights โดยไม่ส่งผลกระทบต่อข้อมูลในแอป Dynamics 365 ที่เชื่อมต่อ
 

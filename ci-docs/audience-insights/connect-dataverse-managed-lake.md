@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: fecf3e33b5bc1eec17006fc196004be902c03b40
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
-ms.contentlocale: th-TH
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900174"
 ---
+
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>เชื่อมต่อกับข้อมูลใน Data Lake ที่มีการจัดการ Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 บทความนี้ให้ข้อมูลเกี่ยวกับวิธีการที่ผู้ใช้ Dataverse สามารถเชื่อมต่อกับเอนทิตีการวิเคราะห์ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ Microsoft Dataverse 
 
