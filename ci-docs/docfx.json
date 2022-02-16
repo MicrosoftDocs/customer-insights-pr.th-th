@@ -52,9 +52,14 @@
       "extendBreadcrumb": true,
       "feedback_system": "None",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
-      "titleSuffix": "Dynamics 365 Customer Insights"
+      "titleSuffix": "Dynamics 365 Customer Insights",
+      "recommendations": "true"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.service": {
+          "**.*": "customer-insights"
+      }
+     },
     "template": [],
     "dest": "customer-insights",
     "markdownEngineName": "markdig"
