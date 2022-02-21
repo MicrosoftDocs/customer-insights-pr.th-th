@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900298"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088170"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>เชื่อมต่อกับบัญชี Azure Data Lake Storage โดยใช้บริการหลัก Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "7900298"
 เครื่องมืออัตโนมัติที่ใช้บริการ Azure ควรมีสิทธิ์ที่จำกัดไว้เสมอ แทนที่จะให้แอปพลิเคชันลงชื่อเข้าใช้ในฐานะผู้ใช้ที่มีสิทธิ์การใช้งานแบบเต็ม Azure จะเสนอบริการหลัก คุณสามารถใช้บริการหลักเพื่อ [เพิ่มหรือแก้ไขโฟลเดอร์ Common Data Model เป็นแหล่งข้อมูล](connect-common-data-model.md) หรือ [สร้างหรือปรับปรุงภาพแวดล้อม](create-environment.md) ได้อย่างปลอดภัย
 
 > [!IMPORTANT]
-> - บัญชี Data Lake Storage ที่จะใช้บริการหลักต้องมี [การเปิดใช้งานเนมสเปซแบบลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace)
+> - บัญชี Data Lake Storage ที่จะใช้บริการหลักต้องเป็น รุ่น2 และมี [การเปิดใช้งานเนมสเปซแบบแบบลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace) ไม่รองรับบัญชีที่เก็บข้อมูล Azure Data Lake รุ่น1
 > - คุณต้องมีสิทธิ์ของผู้ดูแลระบบสำหรับการสมัครใช้งาน Azure เพื่อสร้างบริการหลัก
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>สร้างบริการหลัก Azure สำหรับ Customer Insights
@@ -75,11 +75,11 @@ ms.locfileid: "7900298"
 
 1. เปิดบัญชีที่เก็บข้อมูลที่คุณต้องการให้บริการหลักสำหรับข้อมูลเชิงลึกกลุ่มเป้าหมายเข้าถึงได้
 
-1. ในบานหน้าต่างด้านซ้าย เลือก **การควบคุมการเข้าถึง (IAM)** แล้วจากนั้น เลือก **เพิ่ม** > **เพิ่มการมอบหมายบทบาท**
+1. ในบานหน้าต่างด้านซ้าย เลือก **การควบคุมการเข้าถึง (IAM)** แล้วจากนั้น เลือก **เพิ่ม** > **เพิ่มการกำหนดบทบาท**
 
-   :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="ภาพหน้าจอที่แสดงพอร์ทัล Azure ขณะที่เพิ่มการมอบหมายบทบาท":::
+   :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="ภาพหน้าจอที่แสดงพอร์ทัล Azure ขณะที่เพิ่มการกำหนดบทบาท":::
 
-1. บนบานหน้าต่าง **เพิ่มการมอบหมายบทบาท** ตั้งค่าคุณสมบัติต่อไปนี้:
+1. บนบานหน้าต่าง **เพิ่มการกำหนดบทบาท** ตั้งค่าคุณสมบัติต่อไปนี้:
    - บทบาท: **ผู้สนับสนุนข้อมูล Blob ของการจัดเก็บ**
    - กำหนดการเข้าถึง: **ผู้ใช้,กลุ่ม หรือบริการหลัก**
    - เลือก: **Dynamics 365 AI for Customer Insights** และ **ข้อมูลเชิงลึกของการมีส่วนร่วมของ Dynamics 365 AI for Customer Insights** ([หลักการบริการ](#create-a-new-service-principal) ทั้งสองรายการที่คุณสร้างไว้ก่อนหน้านี้ในกระบวนงานนี้)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732287"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100163"
 ---
 # <a name="work-with-customer-insights-apis"></a>ทำงานกับ Customer Insights API
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights จัดเตรียม API เพื่อ�
  
    การเปิดใช้งาน API จะสร้างคีย์การสมัครใช้งานหลักและรองสำหรับอินสแตนซ์ของคุณที่จะใช้ในคำขอ API คุณสามารถสร้างคีย์ใหม่ได้โดยการเลือก **สร้างคีย์หลักใหม่** หรือ **สร้างคีย์รองใหม่** ใน **ผู้ดูแลระบบ** > **สิทธิ์** > **API**
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="เปิดใช้งาน Customer Insights API":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. เลือก **สำรวจ API ของเรา** เพื่อ [ทดลองใช้ API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)
 
@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights จัดเตรียม API เพื่อ�
 
 การตอบสนอง HTTP จะปรากฏด้านล่างในไม่ช้า
 
-   :::image type="content" source="media/try-apis.gif" alt-text="วิธีทดสอบ API":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>สร้างการลงทะเบียนแอปใหม่ในพอร์ทัล Azure
 
@@ -65,7 +65,7 @@ Dynamics 365 Customer Insights จัดเตรียม API เพื่อ�
 
 1. ในการลงทะเบียนแอปใหม่ของคุณ ให้ไปที่ **สิทธิ์ API**
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="วิธีตั้งค่าสิทธิ์ API ในการลงทะเบียนแอป":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. เลือก **เพิ่มสิทธิ์** และเลือก **Customer Insights** ในบานหน้าต่างด้านข้าง
 
@@ -77,7 +77,7 @@ Dynamics 365 Customer Insights จัดเตรียม API เพื่อ�
 
 คุณสามารถใช้รหัสแอปพลิเคชัน/ไคลเอ็นต์สำหรับการลงทะเบียนแอปนี้กับ Microsoft Authentication Library (MSAL) เพื่อรับโทเค็นแบบแบเรอร์ที่จะส่งคำขอของคุณไปยัง API
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="วิธีการให้ความยินยอมของผู้ดูแลระบบ":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ MSAL โปรดดู [ภาพรวมของ Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview)
 
@@ -103,7 +103,7 @@ Dynamics 365 Customer Insights จัดเตรียม API เพื่อ�
 
 1. เลือก **ให้ความยินยอมของผู้ดูแลระบบสำหรับ...** เพื่อลงทะเบียนแอปให้เสร็จสมบูรณ์
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="วิธีการให้ความยินยอมของผู้ดูแลระบบ":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. สรุปได้ว่าเราต้องเพิ่มชื่อการลงทะเบียนแอปเป็นผู้ใช้ใน Customer Insights  
    
@@ -129,7 +129,7 @@ Dynamics 365 Customer Insights จัดเตรียม API เพื่อ�
  
    หรือรันคำสั่งนี้ใน **คอนโซลตัวจัดการแพคเกจ NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="เพิ่มแพคเกจ NuGet ในโครงการ Visual Studio":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>ใช้ไลบรารีไคลเอ็นต์ C#
 
@@ -141,7 +141,7 @@ Dynamics 365 Customer Insights จัดเตรียม API เพื่อ�
 
 1. ส่งผ่าน `HttpClient` นี้ในโครงสร้างของไคลเอ็นต์ `CustomerInsights`
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="ตัวอย่างของ httpclient":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. ทำการเรียกด้วยไคลเอ็นต์ไปที่ "วิธีการขยาย"—ตัวอย่างเช่น `GetAllInstancesAsync` หากการเข้าถึง `Microsoft.Rest.HttpOperationResponse` พื้นฐานเป็นวิธีที่ต้องการ ให้ใช้ "วิธีการข้อความ http"—ตัวอย่างเช่น `GetAllInstancesWithHttpMessagesAsync`
 

@@ -4,15 +4,15 @@ metadata:
   author: m-hartmann
   description: ค้นหาบทความที่เกี่ยวข้องเพื่อเริ่มต้นด้วยเนื้อหาความช่วยเหลือ
   ms.author: mhart
-  ms.date: 07/30/2021
+  ms.date: 03/02/2022
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e6a658f43b382934ee9b9b55c54fc1dff3f4df72
-  ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
+  ms.openlocfilehash: e154b37f57bb2765f48a9f6b38f86dffcb05f403
+  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 09/17/2021
-  ms.locfileid: "7498620"
+  ms.lasthandoff: 02/10/2022
+  ms.locfileid: "8107222"
 title: คู่มือ Dynamics 365 Customer Insights
 summary: ค้นหาแหล่งข้อมูลที่เป็นประโยชน์เพื่อเริ่มต้นใช้งานและเรียนรู้เกี่ยวกับคุณลักษณะและความสามารถของ Customer Insights
 landingContent:
@@ -23,9 +23,13 @@ landingContent:
     - text: ภาพรวมของ Customer Insights
       url: overview.md
     - text: แผนการนำเสนอ
-      url: /dynamics365-release-plan/
+      url: /dynamics365/release-plans/
     - text: ค้นพบ CDP
       url: https://dynamics.microsoft.com/ai/customer-insights/
+  - linkListType: learn
+    links:
+    - text: เส้นทางการเรียนรู้ของ Customer Insights
+      url: /learn/paths/build-customer-insights/
 - title: เริ่มต้นใช้งาน Customer Insights
   linkLists:
   - linkListType: get-started
@@ -34,8 +38,26 @@ landingContent:
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
     - text: มีอะไรใหม่ในข้อมูลเชิงลึกของผู้ชม
       url: audience-insights/whats-new-audience-insights.md
-    - text: มีอะไรใหม่ในข้อมูลเชิงลึกของการมีส่วนร่วม
-      url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
+    - text: คู่มือเริ่มต้นใช้งานด่วน
+      url: audience-insights/get-started.md
+  - linkListType: learn
+    links:
+    - text: การเริ่มต้นใช้งาน
+      url: /learn/modules/get-started-customer-data-platform/
+- title: จัดการข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ตั้งค่าคอนฟิกระบบ
+      url: audience-insights/system.md
+    - text: กำหนดสิทธิ์ของผู้ใช้
+      url: audience-insights/permissions.md
+    - text: จัดการหลายสภาพแวดล้อม?
+      url: audience-insights/manage-environments.md
+  - linkListType: learn
+    links:
+    - text: จัดการ Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: ติดต่อ
   linkLists:
   - linkListType: overview
@@ -66,16 +88,6 @@ landingContent:
       url: audience-insights/customer-card-add-in.md
     - text: ตัวเชื่อมต่อ Power BI
       url: audience-insights/export-power-bi.md
-- title: จัดการข้อมูลเชิงลึกกลุ่มเป้าหมาย
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: ตั้งค่าคอนฟิกระบบ
-      url: audience-insights/system.md
-    - text: กำหนดสิทธิ์ของผู้ใช้
-      url: audience-insights/permissions.md
-    - text: จัดการหลายสภาพแวดล้อม?
-      url: audience-insights/manage-environments.md
 - title: เกี่ยวกับข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   linkLists:
   - linkListType: overview

@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892361"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088136"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>สร้างสภาพแวดล้อมในข้อมูลเชิงลึกของผู้ชม
 
@@ -28,7 +28,7 @@ ms.locfileid: "7892361"
 
 ## <a name="create-a-new-environment"></a>สร้างสภาพแวดล้อมใหม่
 
-หลังจากซื้อสิทธิ์การใช้งานสำหรับการสมัครใช้งาน Customer Insights แล้ว ผู้ดูแลระบบส่วนกลางของผู้เช่า Microsoft 365 จะได้รับอีเมลเชิญให้พวกเขาสร้างสภาพแวดล้อม ไปที่ [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) เพื่อเริ่มต้นใช้งาน 
+หลังจากซื้อสิทธิ์ใช้งานของการสมัครใช้งาน Customer Insights แล้ว ผู้ดูแลระบบส่วนกลางของผู้เช่า Microsoft 365 จะได้รับอีเมลที่เชิญให้พวกเขาสร้างสภาพแวดล้อม ไปที่ [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) เพื่อเริ่มต้นใช้งาน 
 
 ประสบการณ์ที่แนะนำจะช่วยให้คุณทำตามขั้นตอนต่างๆ เพื่อรวบรวมข้อมูลที่จำเป็นทั้งหมดสำหรับสภาพแวดล้อมใหม่ คุณต้องมี [สิทธิ์ผู้ดูแลระบบ](permissions.md) ในข้อมูลเชิงลึกของผู้ชมเพื่อสร้างหรือจัดการสภาพแวดล้อม
 
@@ -64,7 +64,7 @@ ms.locfileid: "7892361"
 > ปัจจุบัน Customer Insights รองรับสิ่งต่อไปนี้:
 > - เอนทิตีที่นำเข้าจากโฟลว์ข้อมูล Power BI ที่เก็บไว้ใน Microsoft Dataverse - ที่จัดเก็บข้อมูลดิบที่มีการจัดการ  
 > - บัญชี Azure Data Lake Storage จากภูมิภาค Azure เดียวกันกับที่คุณเลือกเมื่อสร้างสภาพแวดล้อม
-> - บัญชี Azure Data Lake Storage ที่เปิดใช้งาน *เนมสเปซตามลำดับชั้น*
+> - บัญชี Azure Data Lake Storage ที่เป็น รุ่น2 และเปิดใช้งาน *เนมสเปซแบบลำดับชั้น* ไม่รองรับบัญชีที่เก็บข้อมูล Azure Data Lake รุ่น1
 
 สำหรับตัวเลือก Azure Data Lake Storage คุณสามารถเลือกระหว่างตัวเลือกตามทรัพยากรและตัวเลือกตามการสมัครใช้งานสำหรับการรับรองความถูกต้อง ดูข้อมูลเพิ่มเติมได้ที่ [เชื่อมต่อกับบัญชี Azure Data Lake Storage โดยใช้บริการหลัก Azure](connect-service-principal.md) ชื่อ **คอนเทนเนอร์** จะเป็น `customerinsights` และไม่สามารถเปลี่ยนแปลงได้
 

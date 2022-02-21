@@ -2,6 +2,22 @@
   href: index.yml
 - name: ภาพรวมของผลิตภัณฑ์
   href: overview.md
+- name: แค็ตตาล็อกการเรียนรู้
+  items:
+    - name: การเริ่มต้นใช้งาน
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: นำเข้าข้อมูล
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: สร้างโปรไฟล์ลูกค้าแบบรวม
+      href: /learn/modules/unified-customer-profile/
+    - name: ทำงานกับข้อมูลเชิงลึกของผู้ชม
+      href: /learn/modules/working-with-customer-insights/
+    - name: เพิ่มข้อมูลและทำการคาดคะเน
+      href: /learn/modules/enrich-data/
+    - name: จัดการการเชื่อมต่อจากภายนอก
+      href: /learn/modules/configure-third-party-connections/
+    - name: จัดการ Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: การทดลองใช้ฟรี
   items:
     - name: ลงทะเบียนเพื่อทดลองใช้ฟรี
@@ -30,16 +46,6 @@
           href: audience-insights/home.md
     - name: ทำงานกับบัญชีธุรกิจ
       href: audience-insights/work-with-business-accounts.md
-    - name: เรียนรู้โมดูล
-      items:
-        - name: นำเข้าข้อมูล
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: สร้างโปรไฟล์ลูกค้าแบบรวม
-          href: /learn/modules/unified-customer-profile/
-        - name: ทำงานกับแอป
-          href: /learn/modules/working-with-customer-insights/
-        - name: เพิ่มข้อมูลและการคาดคะเน
-          href: /learn/modules/enrich-data/
     - name: แหล่งข้อมูล
       items:
         - name: ภาพรวมของแหล่งข้อมูล
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: สิทธิ์และคำขอ DSR
   href: dsr-rights-requests.md
+- name: รับการสนับสนุน
+  href: /power-platform/admin/get-help-support

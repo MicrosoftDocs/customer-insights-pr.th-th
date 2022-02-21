@@ -9,13 +9,23 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
+ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090946"
 ---
-
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>ใช้เซ็กเมนต์ใน Dynamics 365 Sales (ตัวอย่าง)
 
 
 
 ใช้ข้อมูลลูกค้าของคุณเพื่อสร้างรายชื่อเพื่อทำการตลาด ติดตามลำดับงาน และนำเสนอโปรโมชันด้วย Dynamics 365 Sales
+
+## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
+
+- การส่งออกไปยัง Dynamics 365 Sales จำกัดไว้ที่ 100'000 สมาชิกต่อเซ็กเมนต์
+- การส่งออกเซ็กเมนต์ไปยัง Dynamics 365 Sales อาจใช้เวลานานถึง 3 ชั่วโมงจึงจะเสร็จสมบูรณ์ 
 
 ## <a name="prerequisite-for-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
 

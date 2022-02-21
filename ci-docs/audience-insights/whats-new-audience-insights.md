@@ -1,7 +1,7 @@
 ---
 title: คุณลักษณะใหม่และที่กำลังจะเกิดขึ้น
 description: ข้อมูลเกี่ยวกับคุณลักษณะใหม่ การปรับปรุง และการแก้ไขข้อบกพร่อง
-ms.date: 01/27/2022
+ms.date: 03/02/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,8 +9,13 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
+ms.openlocfilehash: 0e25ed4e4e25b130fda410d4ba1c78caded7f0f9
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088308"
 ---
-
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>มีอะไรใหม่ในความสามารถข้อมูลเชิงลึกกลุ่มเป้าหมายของ Dynamics 365 Customer Insights
 
 
@@ -21,6 +26,17 @@ manager: shellyha
 
 > [!TIP]
 > เมื่อต้องการส่งและโหวตคำขอคุณลักษณะและข้อเสนอแนะผลิตภัณฑ์ ให้ไปที่ [พอร์ทัลไอเดียเกี่ยวกับแอปพลิเคชัน Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)
+
+
+## <a name="january-2022-updates"></a>การปรับปรุงประจำเดือนมกราคม 2022
+
+การปรับปรุงในเดือนมกราคม 2022 ประกอบด้วยคุณลักษณะใหม่ การอัปเกรดประสิทธิภาพ และการแก้ไขข้อบกพร่อง
+
+### <a name="sentiment-analysis-of-your-customers-feedback"></a>การวิเคราะห์ความคิดเห็นจากคำติชมของลูกค้าของคุณ
+
+Customer Insights มาพร้อมคุณลักษณะแบบ AI ใหม่ที่จะสังเคราะห์ความคิดเห็นของลูกค้าและระบุแง่มุมที่เฉพาะเจาะจงทางธุรกิจเป็นโอกาสในการปรับปรุงตามเป้าหมาย ด้วยการวิเคราะห์ความคิดเห็นที่เป็นลายลักษณ์อักษรจากลูกค้าของคุณ คุณจะได้รับข้อมูลเชิงลึกที่ถูกต้องด้วยต้นทุนต่ำ การวิเคราะห์ความคิดเห็นใช้โมเดลการประมวลผลภาษาธรรมชาติ (NLP) ในการสร้างข้อมูลเชิงลึกที่ได้รับมาสองแบบสำหรับรหัสลูกค้าแต่ละราย คะแนนความคิดเห็น (จาก –5 ถึง 5) และรายการของแง่มุมทางธุรกิจที่เกี่ยวข้อง 
+
+ดูข้อมูลเพิ่มเติมได้ที่ [วิเคราะห์ความคิดเห็นจากคำติชมของลูกค้า (พรีวิว)](sentiment-analysis.md)
 
 
 ## <a name="december-2021-updates"></a>การปรับปรุงประจำเดือนธันวาคม 2021
