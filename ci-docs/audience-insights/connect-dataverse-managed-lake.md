@@ -9,8 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
+ms.openlocfilehash: 436345d8932820eb4c517a9e9164b1377c1f62d3
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046448"
 ---
-
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>เชื่อมต่อกับข้อมูลใน Data Lake ที่มีการจัดการ Microsoft Dataverse
 
 

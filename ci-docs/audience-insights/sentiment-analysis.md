@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
+ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
+ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8008788"
 ---
-
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>วิเคราะห์ความคิดเห็นในคำติชมของลูกค้า (พรีวิว)
 
 ปัจจุบันลูกค้าคาดหวังผลิตภัณฑ์ บริการ และประสบการณ์ที่มีคุณภาพสูง โดยเฉพาะอย่างยิ่งลูกค้าที่ร่วมแสดงความคิดเห็น เป็นเรื่องยากมากสำหรับองค์กรในการวิเคราะห์ปริมาณข้อมูลที่เพิ่มขึ้นโดยไม่ลดความแม่นยำและมีต้นทุนแรงงานที่สูงขึ้น Dynamics 365 Customer Insights นำเสนอโมเดลการวิเคราะห์ความคิดเห็นจากคำติชมของลูกค้าซึ่งช่วยให้องค์กรสามารถวิเคราะห์ข้อมูลของพวกเขาได้แม่นยำยิ่งขึ้นด้วยต้นทุนที่ต่ำลง

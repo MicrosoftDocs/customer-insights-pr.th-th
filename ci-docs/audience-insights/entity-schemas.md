@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
+ms.openlocfilehash: 2cdbe11a1c0cc5d65434fb2ae3a3f38c18f31cf4
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046540"
 ---
-
 # <a name="entity-schemas-in-common-data-model"></a>Schema เอนทิตีใน Common Data Model
 
 

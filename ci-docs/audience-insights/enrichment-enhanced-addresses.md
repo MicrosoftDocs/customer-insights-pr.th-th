@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: ba43d24ac5ae8846da87f0d41234d8616c2f8070
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010932"
 ---
-
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>การเพิ่มข้อมูลของโปรไฟล์ลูกค้าด้วยที่อยู่ที่ปรับปรุงแล้ว
 
 ที่อยู่ในข้อมูลของคุณอาจไม่มีโครงสร้าง ไม่สมบูรณ์ หรือไม่ถูกต้อง ใช้โมเดลของ Microsoft เพื่อกำหนดมาตรฐานและเพิ่มที่อยู่ของคุณลงใน [รูปแบบ Common Data Model](/common-data-model/schema/core/applicationcommon/address) เพื่อความแม่นยำและข้อมูลเชิงลึกที่ดีขึ้น

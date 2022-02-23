@@ -9,8 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
+ms.openlocfilehash: 8a871d65bd79d3246984e23fb52210c8dc7259b8
+ms.sourcegitcommit: 7a99f3490e6582c2bc2b38019ed1898348b0eaba
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8027075"
 ---
-
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>เชื่อมต่อกับโฟลเดอร์ Common Data Model โดยใช้บัญชี Azure Data Lake
 
 บทความนี้ให้ข้อมูลเกี่ยวกับวิธีการนำเข้าข้อมูลจากโฟลเดอร์ Common Data Model โดยใช้บัญชี Azure Data Lake Storage รุ่น2

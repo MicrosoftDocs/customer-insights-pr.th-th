@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-merge
+- ci-merge
+ms.openlocfilehash: eb08ab38d23bf22a17896b63c93e6821431b002a
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046646"
 ---
-
 # <a name="merge-entities"></a>ผสานเอนทิตี
 
 เฟสการผสานคือเฟสสุดท้ายในกระบวนการรวมข้อมูล โดยมีวัตถุประสงค์คือการกระทบยอดข้อมูลที่ขัดแย้งกัน ตัวอย่างของข้อมูลที่ขัดแย้งกันอาจรวมถึงชื่อลูกค้าที่พบในชุดข้อมูลสองชุดของคุณ แต่จะแสดงแตกต่างกันเล็กน้อยในแต่ละชุด ("Grant Marshall" เทียบกับ "Grant Marshal") หรือหมายเลขโทรศัพท์ที่แตกต่างกันในรูปแบบ (617-803-091X เทียบกับ 617803091X) การผสานจุดข้อมูลที่ขัดแย้งกันเหล่านั้นทำได้บนพื้นฐานแอตทริบิวต์ต่อแอตทริบิวต์
