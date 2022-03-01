@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 1f8922703af506974c8b5b24086b61f05a83609d
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 816f948331a06794c15000eb779f93cc7fdda202
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673516"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645333"
 ---
 # <a name="create-a-new-workspace-and-add-members"></a>สร้างพื้นที่ทำงานใหม่และเพิ่มสมาชิก
 
@@ -26,11 +26,11 @@ ms.locfileid: "7673516"
 
 ## <a name="create-a-new-workspace"></a>สร้างพื้นที่ทำงานใหม่
 
-กระบวนการในการสร้างพื้นที่ทำงานรวมถึง การตั้งค่า *สภาพแวดล้อม* เพื่อจัดระเบียบพื้นที่ทำงานของคุณ สภาพแวดล้อมคือพื้นที่ที่สามารถมีพื้นที่ทำงานได้ตั้งแต่หนึ่งแห่งขึ้นไป คุณสามารถใช้สภาพแวดล้อมเพื่อจัดการพื้นที่ทำงานและการเชื่อมต่อกับความสามารถข้อมูลเชิงลึกของผู้ชม
+กระบวนการในการสร้างพื้นที่ทำงานรวมถึง การตั้งค่า *สภาพแวดล้อม* เพื่อจัดระเบียบพื้นที่ทำงานของคุณ สภาพแวดล้อมคือพื้นที่ที่สามารถมีพื้นที่ทำงานได้ตั้งแต่หนึ่งแห่งขึ้นไป คุณสามารถใช้สภาพแวดล้อมเพื่อจัดการพื้นที่ทำงาน Customer Insightsและการเชื่อมต่อกับข้อมูลเชิงลึกของผู้ชม Customer Insights
 
-1. เลือก **+ใหม่** จากตัวสลับพื้นที่ทำงาน
+1. เลือก **ใหม่** จากตัวสลับพื้นที่ทำงาน
 
-   :::image type="content" source="media/new-workspace.png" alt-text="หน้า Customer Insights พร้อมคำบรรยายภาพในบานหน้าต่างนำทางและคำแนะนำ":::
+   :::image type="content" source="media/new-workspace.png" alt-text="หน้า Customer insights พร้อมคำบรรยายภาพในบานหน้าต่างนำทางและคำอธิบาย":::
 
 1. ในบานหน้าต่าง **พื้นที่ทำงาน** ป้อน **ชื่อพื้นที่ทำงาน**
 

@@ -11,12 +11,12 @@ metadata:
   ms.author: mhart
   ms.reviewer: mhart
   ms.date: 09/15/2021
-  ms.openlocfilehash: 0ec5a31a968fc97deeeef3ef444bb558a4ff2b65
-  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 02/10/2022
-  ms.locfileid: "8107270"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494207"
 landingContent:
 - title: เกี่ยวกับ
   linkLists:
@@ -26,8 +26,8 @@ landingContent:
       url: overview.md
     - text: อภิธานศัพท์
       url: glossary.md
-    - text: แผนการนำเสนอ
-      url: /dynamics365/release-plans/
+    - text: คุณลักษณะใหม่และที่ปรับปรุง
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: การเตรียมความพร้อม
   linkLists:
   - linkListType: how-to-guide

@@ -1,20 +1,20 @@
 ---
 title: เซ็กเมนต์ในข้อมูลเชิงลึกของผู้ชม
 description: ภาพรวมเกี่ยวกับเซ็กเมนต์และวิธีสร้างและจัดการ
-ms.date: 11/01/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 740d293b21f43b50201f23fcba109318823ef3af
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7978082"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617465"
 ---
 # <a name="segments-overview"></a>ภาพรวมของเซ็กเมนต์
 
@@ -26,7 +26,7 @@ ms.locfileid: "7978082"
 
 มีหลายวิธีในการสร้างเซ็กเมนต์ใหม่: 
 
-# <a name="individual-consumers-b-to-c"></a>[ผู้บริโภครายบุคคล (B-to-C)](#tab/b2c)
+# <a name="individual-customers-b2c"></a>[ลูกค้ารายบุคคล (B2C)](#tab/b2c)
 
 - เซ็กเมนต์ที่ซับซ้อนพร้อมตัวสร้างเซ็กเมนต์: [สร้างของเราเอง](segment-builder.md#create-a-new-segment) 
 - เซ็กเมนต์อย่างง่ายพร้อมตัวดำเนินการเดียว: [เซ็กเมนต์ด่วน](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7978082"
 - คำแนะนำที่ขับเคลื่อนด้วย AI ตามการวัดหรือแอตทริบิวต์: [เซ็กเมนต์ที่แนะนำเพื่อปรับปรุงการวัด](suggested-segments.md) 
 - ข้อเสนอแนะตามกิจกรรม: [เซ็กเมนต์ที่แนะนำตามกิจกรรมของลูกค้า](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b-to-b"></a>[บัญชีธุรกิจ (B-to-B)](#tab/b2b)
+# <a name="business-accounts-b2b"></a>[บัญชีธุรกิจ (B2B)](#tab/b2b)
 
 - เซ็กเมนต์ที่ซับซ้อนพร้อมตัวสร้างเซ็กเมนต์: [สร้างของเราเอง](segment-builder.md#create-a-new-segment)
 
@@ -65,7 +65,8 @@ ms.locfileid: "7978082"
 
 คุณสามารถรีเฟรชเซ็กเมนต์ทั้งหมดในครั้งเดียวโดยเลือก **รีเฟรชทั้งหมด** บนหน้า **เซ็กเมนต์** หรือคุณสามารถรีเฟรชหนึ่งหรือหลายกลุ่มเมื่อคุณเลือกกลุ่มและเลือก **รีเฟรช** จากตัวเลือก หรือคุณสามารถกำหนดค่าการรีเฟรชที่เกิดซ้ำได้บน **ผู้ดูแลระบบ** > **ระบบ** > **ตารางเวลา**
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!TIP]
+> โดยมี [สถานะหกชนิด](system.md#status-types) สำหรับงาน/กระบวนการ นอกจากนี้กระบวนการส่วนใหญ่ [ขึ้นอยู่กับกระบวนการดาวน์สตรีมอื่นๆ](system.md#refresh-policies) คุณสามารถเลือกสถานะของกระบวนการเพื่อดูรายละเอียดความคืบหน้าของงานที่เกิดขึ้นทั้งหมด หลังจากเลือก **ดูรายละเอียด** สำหรับหนึ่งในงานของงาน คุณจะพบข้อมูลเพิ่มเติม ได้แก่ เวลาในการประมวลผล วันที่ประมวลผลล่าสุด และข้อผิดพลาดและคำเตือนทั้งหมดที่เกี่ยวข้องกับงาน
 
 ## <a name="export-segments"></a>ส่งออกเซ็กเมนต์
 
@@ -104,6 +105,5 @@ ms.locfileid: "7978082"
 > ฟิลด์ที่ปรากฏในรายการนี้ขึ้นอยู่กับแอตทริบิวต์ของเอนทิตีของเซ็กเมนต์ของคุณ
 >
 >รายการดังกล่าวเป็นตัวอย่างของสมาชิกเซ็กเมนต์ที่ตรงกันและแสดง 100 เรกคอร์ดแรกของเซ็กเมนต์ของคุณเพื่อให้คุณสามารถประเมินได้อย่างรวดเร็วและตรวจสอบคำจำกัดความของกลุ่มหากจำเป็น หากต้องการดูเรกคอร์ดที่ตรงกันทั้งหมด คุณต้อง [ส่งออกเซ็กเมนต์](export-destinations.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 

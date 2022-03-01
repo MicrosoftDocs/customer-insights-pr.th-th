@@ -1,7 +1,7 @@
 ---
 title: เพิ่มข้อมูลโปรไฟล์ลูกค้าแบบรวม
 description: ใช้ความสามารถเพื่อเพิ่มข้อมูลลูกค้าของคุณ
-ms.date: 02/07/2022
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
-ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "8098812"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673022"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>การเพิ่มข้อมูลสำหรับโปรไฟล์ลูกค้า (พรีวิว)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8098812"
 
 ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ข้อมูล** > **การเพิ่มข้อมูล** เพื่อทำงานกับตัวเลือกการเพิ่มข้อมูล  
 
-คุณต้องมีสิทธิ์ผู้สนับสนุนหรือผู้ดูแลระบบ เพื่อสร้างหรือแก้ไขการเพิ่มข้อมูล ดูข้อมูลเพิ่มเติมที่ [สิทธิ์](permissions.md)
+คุณต้องมีสิทธิ์ผู้สนับสนุนหรือผู้ดูแลระบบ เพื่อสร้างหรือแก้ไขการเพิ่มข้อมูล สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์](permissions.md)
 
 บนแท็บ **ค้นหา** คุณจะพบตัวเลือกการเพิ่มข้อมูลที่ได้รับการสนับสนุนทั้งหมด
 
@@ -37,17 +37,14 @@ ms.locfileid: "8098812"
 - [ข้อมูลทางประชากร](enrichment-experian.md) ที่ระบุโดย Experian
 - [ข้อมูลที่กำหนดเอง](enrichment-SFTP-custom-import.md) ผ่าน Secure File Transfer Protocol (SFTP) 
 - [แผนที่ Azure](enrichment-azure-maps.md) จัดทำโดย Microsoft
-- [ข้อมูลตำแหน่งที่ตั้ง](enrichment-here.md) ให้บริการโดย HERE Technologies 
 
 # <a name="business-accounts-b-to-b"></a>[บัญชีธุรกิจ (B-to-B)](#tab/b2b)
 
 - [ข้อมูลบริษัท](enrichment-leadspace.md) ซึ่งมีให้โดย Leadspace
 - [ที่อยู่ที่ปรับปรุงแล้ว](enrichment-enhanced-addresses.md) ที่ได้รับจาก Microsoft 
-- [ข้อมูลบริษัทที่ได้รับการปรับปรุง](enrichment-enhanced-company-data.md) ที่ให้บริการโดย Microsoft
 - [ข้อมูลตำแหน่งที่ตั้ง](enrichment-here.md) ให้บริการโดย HERE Technologies 
 - [ข้อมูลที่กำหนดเอง](enrichment-SFTP-custom-import.md) ผ่าน Secure File Transfer Protocol (SFTP) 
 - [แผนที่ Azure](enrichment-azure-maps.md) จัดทำโดย Microsoft
-- [ข้อมูลการมีส่วนร่วมของบัญชี](enrichment-office.md) ที่ให้บริการโดย Microsoft
 
 ---
 
@@ -63,7 +60,7 @@ ms.locfileid: "8098812"
 
 - **ดู** รายละเอียดการเพิ่มข้อมูลพร้อมจำนวนโปรไฟล์ลูกค้าที่ปรับปรุงแล้ว
 - **แก้ไข** การกำหนดค่าการเพิ่มข้อมูล
-- **รัน** การเพิ่มข้อมูลเพื่อปรับปรุงโปรไฟล์ลูกค้าด้วยข้อมูลล่าสุด
+- **รัน** การเพิ่มข้อมูลเพื่ออัปเดตโปรไฟล์ลูกค้าด้วยข้อมูลล่าสุด
 - **ปิดใช้งาน** การเพิ่มข้อมูลที่มีอยู่เพื่อหยุดการรีเฟรชโดยอัตโนมัติทุกครั้งที่รีเฟรชตามกำหนดการ ข้อมูลจากการรีเฟรชที่สำเร็จครั้งล่าสุดจะยังคงพร้อมใช้งาน **เปิดใช้งาน** การเพิ่มข้อมูลที่ไม่ใช้งานเพื่อเริ่มการรีเฟรชอัตโนมัติทุกครั้งที่รีเฟรชตามกำหนดการ
 - **ลบ** การเพิ่มข้อมูล
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: c116f7ce208c0288851a4b2230e27784ba3a5337
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732703"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483714"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>คำขอสิทธิ์เรื่องข้อมูล (DSR) ภายใต้ GDPR
 
@@ -79,14 +79,7 @@ ms.locfileid: "7732703"
 2. รับทราบการยืนยันในการส่งออกข้อมูลสำหรับผู้ใช้ที่ร้องขอ
 3. รับข้อมูลที่ส่งออกผ่านที่อยู่อีเมลผู้ดูแลระบบของผู้เช่า
 
-## <a name="consent-management-preview"></a>การจัดการความยินยอม (พรีวิว)
-
-ความสามารถในการจัดการความยินยอมไม่ได้รวบรวมข้อมูลผู้ใช้โดยตรง แต่เป็นเพียงการนำเข้าและประมวลผลข้อมูลความยินยอมที่ผู้ใช้ให้ไว้ในแอปพลิเคชันอื่นเท่านั้น
-
-หากต้องการเอาข้อมูลความยินยอมเกี่ยวกับผู้ใช้บางรายออก ให้เอาข้อมูลดังกล่าวในแหล่งข้อมูลที่นำเข้าไปยังความสามารถในการจัดการคำยินยอมออก หลังจากรีเฟรชแหล่งข้อมูล แล้ว ข้อมูลที่เอาออกจะถูกลบออกจากศูนย์ความยินยอมด้วย แอปพลิเคชันที่ใช้เอนทิตีความยินยอมจะลบข้อมูลที่ถูกลบออกจากแหล่งที่มาหลังจาก [รีเฟรช](audience-insights/system.md#refresh-processes) เราแนะนำให้รีเฟรชแหล่งข้อมูลทันทีหลังจากตอบสนองต่อคำขอของเจ้าของข้อมูลเพื่อลบข้อมูลของผู้ใช้ออกจากกระบวนการและแอปพลิเคชันอื่นๆ ทั้งหมด
-
-
-## <a name="engagement-insights-preview"></a>ข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
+## <a name="engagement-insights"></a>ข้อมูลเชิงลึกของการมีส่วนร่วม
 
 ### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>การลบและการส่งออกข้อมูลเหตุการณ์ที่มีข้อมูลที่สามารถระบุถึงผู้ใช้ปลายทางได้
 

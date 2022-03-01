@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 705e159f348e876f8a2a0ad3481608c6dd380df3dd74d7e5dba9dd3bebe25e52
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 73d294a285b4ad706bec7fe925c1daa0b839ddd6
+ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7029514"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129968"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>คู่มือตัวอย่างของการคาดคะเนมูลค่าตลอดอายุการใช้งานของลูกค้า (CLV)
 
@@ -123,9 +123,9 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
 1. ไปที่แท็บ **จับคู่** และเลือก **ตั้งค่าลำดับ**
 
-1. ในรายการแบบหล่นลง **หลัก** เลือก **eCommerceContacts: eCommerce** เป็นแหล่งที่มาหลักและรวมเรกคอร์ดทั้งหมด
+1. ในรายการแบบหล่นลง **หลัก** ให้เลือก **eCommerceContacts : eCommerce** เป็นแหล่งข้อมูลหลักและรวมเรกคอร์ดทั้งหมด
 
-1. ในรายการแบบหล่นลง **เอนทิตี 2** เลือก **oyCustomers : LoyaltyScheme** และรวมเรกคอร์ดทั้งหมด
+1. ในรายการแบบหล่นลง **เอนทิตี 2** ให้เลือก **loyCustomers : LoyaltyScheme** และรวมเรกคอร์ดทั้งหมด
 
    ![รวมอีคอมเมิร์ซและความภักดีที่ตรงกัน](media/unify-match-order.png)
 
@@ -133,16 +133,16 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
 1. เพิ่มเงื่อนไขแรกของคุณโดยใช้ FullName
 
-   - สำหรับ eCommerceContacts เลือก **FullName** ในรายการแบบหล่นลง
-   - สำหรับ loyCustomers เลือก **FullName** ในรายการแบบหล่นลง
-   - เลือกรายการแบบหล่นลง **ทำให้เป็นมาตรฐาน** และเลือก **ชนิด (โทรศัพท์, ชื่อ, ที่อยู่, ...)**
+   - สำหรับ eCommerceContacts ให้เลือก **FullName** ในเมนูแบบหล่นลง
+   - สำหรับ loyCustomers ให้เลือก **FullName** ในเมนูแบบหล่นลง
+   - เลือกรายการแบบหล่นลง **ทำให้เป็นมาตรฐาน** และเลือก **ชนิด (โทรศัพท์, ชื่อ, ที่อยู่... )**
    - ตั้งค่า **ระดับความแม่นยำ**: **พื้นฐาน** และ **ค่า**: **สูง**
 
 1. ป้อนชื่อ **ชื่อเต็ม, อีเมล** สำหรับกฎใหม่
 
    - เพิ่มเงื่อนไขที่สองสำหรับที่อยู่อีเมลโดยการเลือก **เพิ่มเงื่อนไข**
-   - สำหรับเอนทิตี eCommerceContacts เลือก **EMail** ในเมนูแบบหล่นลง
-   - สำหรับเอนทิตี loyCustomers เลือก **EMail** ในรายการแบบหล่นลง
+   - สำหรับเอนทิตี eCommerceContacts ให้เลือก **อีเมล** ในรายการแบบหล่นลง
+   - สำหรับเอนทิตี loyCustomers ให้เลือก **EMail** ในรายการแบบหล่นลง
    - ปล่อยให้ ทำให้เป็นมาตรฐาน ว่างไว้
    - ตั้งค่า **ระดับความแม่นยำ**: **พื้นฐาน** และ **ค่า**: **สูง**
 

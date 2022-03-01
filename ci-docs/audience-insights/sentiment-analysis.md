@@ -1,5 +1,5 @@
 ---
-title: การวิเคราะห์ความคิดเห็นจากคำติชมของลูกค้า
+title: การวิเคราะห์ความหมายจากคำติชมของลูกค้า
 description: เรียนรู้วิธีใช้โมเดลการวิเคราะห์ความคิดเห็นจากคำติชมของลูกค้าใน Dynamics 365 Customer Insights
 ms.date: 12/23/2021
 ms.service: customer-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
-ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.openlocfilehash: 05e530a1bc96c5fd9c7a3bc0197563d8fe330387
+ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8008788"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7951092"
 ---
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>วิเคราะห์ความคิดเห็นในคำติชมของลูกค้า (พรีวิว)
 
@@ -38,7 +38,7 @@ ms.locfileid: "8008788"
 
 เราใช้ **โมเดลการประมวลผลภาษาธรรมชาติ (NLP)** สองแบบ: แบบแรกจะกำหนดคะแนนความคิดเห็นสำหรับแต่ละข้อคิดเห็นคำติชม แบบที่สองจะเชื่อมโยงคำติชมแต่ละรายการกับแง่มุมทางธุรกิจที่เกี่ยวข้องทั้งหมด โมเดลเหล่านี้ได้รับการฝึกเกี่ยวกับข้อมูลสาธารณะจากแหล่งต่างๆ ในสื่อสังคม ร้านค้าปลีก ร้านอาหาร สินค้าอุปโภคบริโภค และอุตสาหกรรมยานยนต์    
   
-แง่มุมทางธุรกิจที่กำหนดไว้ล่วงหน้าสำหรับให้โมเดลเชื่อมโยงกับข้อมูลคำติชม ได้แก่:
+- แง่มุมทางธุรกิจที่กำหนดไว้ล่วงหน้าสำหรับให้โมเดลเชื่อมโยงกับข้อมูลคำติชม ได้แก่:
 -   การจัดการบัญชี
 -   ตรวจสอบและชำระเงิน
 -   การสนับสนุนลูกค้า

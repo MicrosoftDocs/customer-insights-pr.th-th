@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Microsoft Advertising
 description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและการส่งออกไปยัง Microsoft Advertising
-ms.date: 10/08/2021
+ms.date: 05/12/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 12fd221acb7c0eed443c9b860aca42dcb2b3788c
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618084"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124561"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising (พรีวิว)
 
@@ -29,9 +29,9 @@ ms.locfileid: "7618084"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 500'000 รายต่อการส่งออกไปยัง Microsoft Advertising
+- คุณสามารถส่งออกโปรไฟล์ได้ถึง 500 K โปรไฟล์ต่อการส่งออกหนึ่งรายการไปยัง Microsoft Advertising
 - การส่งออกไปยัง Microsoft Advertising นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกโปรไฟล์ลูกค้าสูงสุด 500'000 รายไปยัง Microsoft Advertising อาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
+- การส่งออกมากถึง 500 K โปรไฟล์ไปยัง Microsoft Advertising อาจใช้เวลาถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>ตั้งค่าการเชื่อมต่อกับ Microsoft Advertising
@@ -68,7 +68,7 @@ ms.locfileid: "7618084"
 
 1. ป้อน **รหัสลูกค้าและรหัสบัญชีของ Microsoft Advertising** ของคุณ คุณสามารถค้นหารหัสลูกค้า (`cid`) และรหัสบัญชี (`aid`) ในพารามิเตอร์ของ URL เมื่อคุณเข้าสู่ระบบ Microsoft Advertising
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่มีที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่มีที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising
 
 1. เลือก **บันทึก**
 

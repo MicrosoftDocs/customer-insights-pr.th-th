@@ -1,20 +1,20 @@
 ---
 title: ตัวเชื่อมต่อ Power BI
 description: เรียนรู้วิธีการใช้ตัวเชื่อมต่อ Dynamics 365 Customer Insights ใน Power BI
-ms.date: 07/23/2021
-ms.reviewer: mhart
+ms.date: 09/21/2020
+ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a0ca431dbea839fe271cf3a512cd3a5dde6d920d396056e91b33bcf7ed84272a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035530"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4407123"
 ---
 # <a name="connector-for-power-bi-preview"></a>ตัวเชื่อมต่อสำหรับ Power BI (การแสดงตัวอย่าง)
 
@@ -23,7 +23,7 @@ ms.locfileid: "7035530"
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
 - คุณมีโปรไฟล์ลูกค้าแบบรวม
-- รุ่นล่าสุดของ [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) ติดตั้งอยู่บนคอมพิวเตอร์ของคุณ [เรียนรู้เพิ่มเติมเกี่ยวกับ Power BI Desktop](/power-bi/desktop-what-is-desktop)
+- เวอร์ชันล่าสุดของ [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) ถูกติดตั้งบนคอมพิวเตอร์ของคุณ [เรียนรู้เพิ่มเติมเกี่ยวกับ Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop)
 
 ## <a name="configure-the-connector-for-power-bi"></a>กำหนดค่าตัวเชื่อมต่อสำหรับ Power BI
 
@@ -31,7 +31,7 @@ ms.locfileid: "7035530"
 
 1. เลือก **ดูเพิ่มเติม** และค้นหาสำหรับ **Dynamics 365 Customer Insights**
 
-1. เลือก **เชื่อมต่อ**
+1. เลือกผลลัพธ์และเลือก **เชื่อมต่อ**
 
 1. **เข้าสู่ระบบ** ด้วยบัญชีองค์กรเดียวกันกับที่คุณใช้สำหรับ Customer Insights และเลือก **เชื่อมต่อ**
    > [!NOTE]
@@ -47,32 +47,8 @@ ms.locfileid: "7035530"
 
 ## <a name="large-data-sets"></a>ชุดข้อมูลขนาดใหญ่
 
-ตัวเชื่อมต่อ Customer Insights สำหรับ Power BI ได้รับการออกแบบมาเพื่อทำงานกับชุดข้อมูลที่มีโปรไฟล์ลูกค้ามากถึง 1 ล้านโปรไฟล์ การนำเข้าชุดข้อมูลขนาดใหญ่อาจได้ผล แต่ต้องใช้เวลานาน นอกจากนี้ กระบวนการอาจหมดเวลา เนื่องจากข้อจำกัดของ Power BI สำหรับข้อมูลเพิ่มเติม โปรดดู [Power BI: คำแนะนำสำหรับชุดข้อมูลขนาดใหญ่](/power-bi/admin/service-premium-what-is#large-datasets) 
+ตัวเชื่อมต่อ Customer Insights สำหรับ Power BI ได้รับการออกแบบมาเพื่อทำงานกับชุดข้อมูลที่มีโปรไฟล์ลูกค้ามากถึง 1 ล้านโปรไฟล์ การนำเข้าชุดข้อมูลขนาดใหญ่อาจได้ผล แต่ต้องใช้เวลานาน นอกจากนี้ กระบวนการอาจหมดเวลา เนื่องจากข้อจำกัดของ Power BI สำหรับข้อมูลเพิ่มเติม โปรดดู [Power BI: คำแนะนำสำหรับชุดข้อมูลขนาดใหญ่](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets) 
 
 ### <a name="work-with-a-subset-of-data"></a>ทำงานกับชุดข้อมูลย่อย
 
 ลองทำงานกับชุดย่อยของข้อมูลของคุณ ตัวอย่างเช่น คุณสามารถสร้าง [เซ็กเมนต์](segments.md) แทนการส่งออกเรกคอร์ดลูกค้าทั้งหมดไปยัง Power BI
-
-## <a name="troubleshooting"></a>การแก้ไขปัญหา
-
-### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>สภาพแวดล้อม Customer Insights ไม่ปรากฏใน Power BI
-
-สภาพแวดล้อมที่มี [ความสัมพันธ์](relationships.md) มากกว่าหนึ่งรายการที่กำหนดระหว่างเอนทิตีที่เหมือนกันสองรายการในข้อมูลเชิงลึกกลุ่มเป้าหมาย จะไม่พร้อมใช้งานในตัวเชื่อมต่อ Power BI
-
-คุณสามารถระบุและลบความสัมพันธ์ที่ซ้ำกันได้
-
-1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ข้อมูล** > **ความสัมพันธ์** เกี่ยวกับสภาพแวดล้อมที่คุณไม่มีใน Power BI
-2. ระบุความสัมพันธ์ที่ซ้ำกัน:
-   - ตรวจสอบว่ามีความสัมพันธ์มากกว่าหนึ่งรายการที่กำหนดระหว่างเอนทิตีสองรายการที่เหมือนกันหรือไม่
-   - ตรวจสอบว่ามีความสัมพันธ์ที่สร้างขึ้นระหว่างเอนทิตีสองรายการที่ถูกรวมอยู่ในกระบวนการรวมหรือไม่ มีความสัมพันธ์โดยนัยที่กำหนดไว้ระหว่างเอนทิตีทั้งหมดที่รวมอยู่ในกระบวนการรวม
-3. ลบความสัมพันธ์ที่ซ้ำกันที่ระบุ
-
-หลังจากการลบความสัมพันธ์ที่ซ้ำกันออก ให้ลองกำหนดค่าตัวเชื่อมต่อ Power BI อีกครั้ง สภาพแวดล้อมควรพร้อมใช้งานในขณะนี้
-
-### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>ข้อผิดพลาดในฟิลด์วันที่เมื่อโหลดเอนทิตีใน Power BI Desktop
-
-เมื่อโหลดเอนทิตีที่มีฟิลด์ที่มีรูปแบบวันที่ เช่น MM/DD/YYYY คุณอาจพบข้อผิดพลาดเนื่องจากรูปแบบภาษาไม่ตรงกัน ความไม่ตรงกันนี้เกิดขึ้นเมื่อไฟล์ Power BI Desktop ของคุณถูกตั้งค่าเป็นภาษาอื่นที่ไม่ใช่อังกฤษ (สหรัฐอเมริกา) เนื่องจากฟิลด์วันที่ในข้อมูลเชิงลึกของผู้ชมจะถูกบันทึกในรูปแบบสหรัฐอเมริกา
-
-ไฟล์ Power BI Desktop มีการตั้งค่าภาษาเดียว ซึ่งจะใช้เมื่อเรียกดูข้อมูล เพื่อให้ฟิลด์วันที่เหล่านี้ตีความอย่างถูกต้อง ให้ตั้งค่าภาษาของไฟล์ .BPI เป็นภาษาอังกฤษ (สหรัฐอเมริกา) [เรียนรู้วิธีเปลี่ยนภาษาของไฟล์ Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

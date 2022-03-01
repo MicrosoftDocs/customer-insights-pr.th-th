@@ -1,65 +1,43 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Azure Data Lake Storage Gen2
 description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อกับ Azure Data Lake Storage Gen2
-ms.date: 10/06/2021
-ms.reviewer: mhart
+ms.date: 02/04/2021
+ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 934c396559d4c4be8e640917d2265805753eb62d
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: b00c3d6178150cbc93fe800779f094809d4dc67b
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605926"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477202"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>ส่งออกรายการเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง Azure Data Lake Storage Gen2 (ตัวอย่าง)
+# <a name="connector-for-azure-data-lake-storage-gen2-preview"></a>ตัวเชื่อมต่อสำหรับ Azure Data Lake Storage Gen2 (พรีวิว)
 
-จัดเก็บข้อมูล Customer Insights ของคุณในบัญชี Data Lake Storage Gen2 หรือใช้ในการย้ายข้อมูลไปยังแอปพลิเคชันอื่น
+จัดเก็บข้อมูล Customer Insights ของคุณใน Azure Data Lake Storage Gen2 หรือใช้ในการย้ายข้อมูลของคุณไปยังแอปพลิเคชันอื่น
 
-## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
+## <a name="configure-the-connector-for-azure-data-lake-storage-gen2"></a>ตั้งค่าคอนฟิกตัวเชื่อมต่อสำหรับ Azure Data Lake Storage Gen2
 
-1. สำหรับ Azure Data Lake Storage Gen2 คุณสามารถเลือกระหว่าง [ระดับประสิทธิภาพมาตรฐานและประสิทธิภาพพรีเมียม](/azure/storage/blobs/create-data-lake-storage-account) เมื่อคุณสร้างบัญชีจัดเก็บข้อมูลสำหรับที่จัดเก็บข้อมูลดิบของคุณ หากคุณเลือกระดับประสิทธิภาพพรีเมียม ให้เลือก Blob บล็อกพรีเมียมเป็นชนิดบัญชี 
+1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**
 
+1. ภายใต้ **Azure Data Lake Storage Gen2** เลือก **ตั้งค่า**
 
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>ตั้งค่าการเชื่อมต่อ Azure Data Lake Storage Gen2 
-
-
-1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
-
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Azure Data Lake Gen 2** เพื่อกำหนดค่าการเชื่อมต่อ
-
-1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
-
-1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
+1. ตั้งชื่อที่เป็นที่รู้จักให้ปลายทางของคุณในฟิลด์ **ชื่อที่แสดง**
 
 1. ป้อน **ชื่อบัญชี** **รหัสบัญชี** และ **คอนเทนเนอร์** สำหรับ Azure Data Lake Storage Gen2 ของคุณ
-    - หากต้องการเรียนรู้วิธีสร้างบัญชีที่เก็บข้อมูลที่จะใช้กับ Azure Data Lake Storage Gen2 ดู [สร้างบัญชีที่เก็บข้อมูล](/azure/storage/blobs/create-data-lake-storage-account) 
-    - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับชื่อบัญชีที่เก็บข้อมูล Azure Data Lake Gen 2 และรหัสบัญชี โปรดดู [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)
+    - หากต้องการเรียนรู้วิธีสร้างบัญชีที่เก็บข้อมูลที่จะใช้กับ Azure Data Lake Storage Gen2 ดู [สร้างบัญชีที่เก็บข้อมูล](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account) 
+    - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชีที่เก็บข้อมูล Azure Data Lake Gen2 และรหัสบัญชี โปรดดู [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage)
 
-1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น 
-
-## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
-
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
-
-1. ไปที่ **ข้อมูล** > **การส่งออก**
-
-1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มการส่งออก**
-
-1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน **Azure Data Lake** หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
+1. เลือก **ถัดไป**
 
 1. เลือกกล่องถัดจากแต่ละเอนทิตีที่คุณต้องการส่งออกไปยังปลายทางนี้
 
 1. เลือก **บันทึก**
 
-การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
+## <a name="export-the-data"></a>ส่งออกข้อมูล
 
-การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) 
-
-ข้อมูลที่ส่งออกจะถูกเก็บไว้ในที่เก็บข้อมูล Azure Data Lake Gen 2 ที่คุณกำหนดค่าไว้ 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+คุณมาสารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#export-data-on-demand) นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) ทุกครั้ง

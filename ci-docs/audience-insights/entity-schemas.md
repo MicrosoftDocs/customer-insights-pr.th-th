@@ -1,7 +1,7 @@
 ---
 title: Schema เอนทิตี Customer Insights ใน Common Data Model
 description: ทำงานกับเอนทิตีใน Common Data Model
-ms.date: 08/13/2021
+ms.date: 04/17/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 2cdbe11a1c0cc5d65434fb2ae3a3f38c18f31cf4
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046540"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692328"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Schema เอนทิตีใน Common Data Model
 
-
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 [Common Data Model](/common-data-model/) เป็นข้อมูลจำเพาะสำหรับประกาศ และคำนิยามของเอนทิตีมาตรฐาน ที่แสดงถึงแนวคิดและกิจกรรมที่ใช้กันทั่วไปในธุรกิจและโปรแกรมประยุกต์ประสิทธิภาพ โมเดลนี้ถูกขยายไปยังข้อมูลเชิงสังเกตการณ์และเชิงวิเคราะห์ด้วย Common Data Model ให้เอนทิตีธุรกิจที่ กำหนดไว้อย่างดี มีส่วนจำเพาะ และสามารถขยายได้ เช่น บัญชี หน่ายทางธุรกิจ กรณี ที่ติดต่อ ลูกค้าเป้าหมาย โอกาส และผลิตภัณฑ์ รวมถึงการปฏิสัมพันธ์ผู้ขาย พนักงาน และลูกค้า เช่น กิจกรรมและข้อตกลงระดับบริการ ทุกคนสามารถสร้างและขยายคำจำกัดความ Common Data Model เพื่อบันทึกแนวคิดเฉพาะทางธุรกิจเพิ่มเติม
 
@@ -42,7 +42,7 @@ ms.locfileid: "8046540"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>ดูเอนทิตีโดยใช้ Common Data Model Entity Navigator
 
-คุณสามารถดูเอนทิตีใน [ตัวนำทางเอนทิตี Common Data Model](https://microsoft.github.io/CDM/) เลือกเอนทิตีจากส่วนแอปพลิเคชันข้อมูลเชิงลึกเพื่อรับรายการของเอนทิตี Customer Insights และคำจำกัดความ
+คุณสามารถดูเอนทิตีใน [ตัวนำทางเอนทิตี Common Data Model](https://microsoft.github.io/CDM/) เลือก **โหลดจาก GitHub!** ปุ่มและนำทางไปที่ **foundationCommon** > **crmCommon** > **โซลูชัน** > **customerInsights** ที่คุณจะพบรายการเอนทิตีของ Customer Insights และคำจำกัดความของรายการ
 > [!div class="mx-imgBorder"]
 > ![CDM Entity Navigator แสดงเอนทิตี CustomerActivity](media/CDM-entity-navigator.png "CDM Entity Navigator แสดงเอนทิตี CustomerActivity")
 

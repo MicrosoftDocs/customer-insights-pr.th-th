@@ -1,24 +1,22 @@
 ---
-title: แมปเอนทิตีและแอตทริบิวต์สำหรับการรวมข้อมูล
-description: เลือกเอนทิตี แอตทริบิวต์ คีย์หลัก และชนิดความหมายเพื่อจับคู่ข้อมูลกับโปรไฟล์ลูกค้าแบบรวม
-ms.date: 10/18/2020
+title: แมปเอนทิตีสำหรับการรวมข้อมูล
+description: แมปข้อมูลเพื่อสร้างโปรไฟล์ลูกค้าแบบรวม
+ms.date: 09/25/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: tutorial
-author: adkuppa
-ms.author: adkuppa
-ms.reviewer: mhart
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
+ms.reviewer: adkuppa
 manager: shellyha
-searchScope:
-- ci-map
-ms.openlocfilehash: 8b84ed1a860e383e4eb3f7499be6d397ba3f1db1
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: e98c7717f7707d43a9fd1fc6f6b0e9c49e4e7ee0
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673298"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4407155"
 ---
-# <a name="map-entities-and-attributes"></a>แมปเอนทิตีและแอตทริบิวต์
+# <a name="map-entities-and-attributes"></a>แม็ปเอนทิตีและแอตทริบิวต์
 
 **แมป** เป็นขั้นตอนแรกในกระบวนการรวมข้อมูลของข้อมูลเชิงลึกกลุ่มเป้าหมาย การแม็ปประกอบด้วยสามระยะ:
 
@@ -57,7 +55,7 @@ ms.locfileid: "7673298"
 - **ชนิดความหมายของแอตทริบิวต์**: ประเภทของแอตทริบิวต์ของคุณ เช่น ที่อยู่อีเมล หรือชื่อ ในการใช้โมเดล AI สำหรับการคาดคะเนความหมายที่ชาญฉลาด ช่วยประหยัดเวลาและปรับปรุงความแม่นยำ ให้ตั้งค่า **การแม็ปอัจฉริยะ** เป็น **เปิด** การแม็ปอัจฉริยะเน้นคำแนะนำความหมายที่ใช้ AI ในฟิลด์ **ประเภท** หากคุณตั้งค่าเป็น **ปิด** คุณจะเห็นคำแนะนำการแม็ปปกติของเรา คุณสามารถเลือกประเภทความหมายใดก็ได้จากรายการตัวเลือกที่มีอยู่และแทนที่การเลือกที่แนะนำ
 
 > [!div class="mx-imgBorder"]
-> ![ชนิดแอตทริบิวต์และการคาดคะเนความหมาย](media/data-manager-configure-map-add-attributes-semantic-prediction.png "ประเภทแอตทริบิวต์และการคาดคะเนความหมาย")
+> ![ประเภทแอตทริบิวต์และการคาดคะเนความหมาย](media/data-manager-configure-map-add-attributes-semantic-prediction.png "ประเภทแอตทริบิวต์และการคาดคะเนความหมาย")
 
 นอกจากนี้ ยังสามารถเพิ่มชนิดความหมายแบบกำหนดเองได้ด้วย เลือกฟิลด์ชนิดสำหรับแอตทริบิวต์นั้น และพิมพ์ชื่อชนิดความหมายที่กำหนดเองของคุณ ด้วยวิธีนี้ คุณยังสามารถเปลี่ยนชนิดของแอตทริบิวต์ที่ถูกระบุโดยระบบ
 
@@ -94,9 +92,9 @@ ms.locfileid: "7673298"
 
 ## <a name="set-attributes-for-organizations"></a>ตั้งค่าแอตทริบิวต์สำหรับองค์กร
 
-สำหรับองค์กร (พรีวิว) ควรแม็ปชนิดแอตทริบิวต์ไปยัง "Organization.Name"
+สำหรับองค์กร (แสดงตัวอย่าง) ควรแม็ปชนิดแอตทริบิวต์ไปยัง "Organization.Name"
 > [!div class="mx-imgBorder"]
-> ![คีย์หลักและแอตทริบิวต์ประเภท B-to-B](media/configure-data-map-edit-b2b.png "คีย์หลักและแอตทริบิวต์ประเภท B-to-B")
+> ![คีย์หลักและชนิดของแอททริบิวต์ B2B](media/configure-data-map-edit-b2b.png "คีย์หลักและชนิดของแอททริบิวต์ B2B")
 
 ## <a name="next-step"></a>ขั้นตอนถัดไป
 
@@ -104,6 +102,3 @@ ms.locfileid: "7673298"
 
 > [!TIP]
 > ตรวจสอบวิดีโอต่อไปนี้: [การเริ่มต้นใช้งาน: สร้างโปรไฟล์ลูกค้าแบบรวม](https://youtu.be/oBfGEhucAxs)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

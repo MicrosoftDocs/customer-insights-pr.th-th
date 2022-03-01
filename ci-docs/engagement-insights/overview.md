@@ -9,12 +9,13 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 03f7bbd62e0e421af53ead413db98f1f9eccfd3e
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.custom: intro-internal
+ms.openlocfilehash: d6d40d41fc79a34c04f86146fe902a766b71e74d
+ms.sourcegitcommit: cf139b37ea1ab62c48a1713bcf6b3a6e01f578bf
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977898"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7507750"
 ---
 # <a name="about-dynamics-365-customer-insights-engagement-insights-capability"></a>เกี่ยวกับความสามารถของข้อมูลเชิงลึกของการมีส่วนร่วม Dynamics 365 Customer Insights 
 

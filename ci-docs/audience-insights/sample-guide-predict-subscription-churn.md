@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: e2360c707bcbdfa64482f06f0a0cd0783a377b4fd79620ffd3cc1c9c6cad9ed3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa460fa5c79bc8a356ec5e90050ec85e05c55be8
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7029606"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306326"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>คู่มือตัวอย่างการคาดคะเนการบอกเลิกการสมัครสมาชิก (พรีวิว)
 
@@ -168,7 +168,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>งานที่ 3 - กำหนดค่าการคาดคะเนการบอกเลิกการสมัครสมาชิก
 
-ด้วยโปรไฟล์ลูกค้ารวมเข้าด้วยกัน ตอนนี้เราสามารถเรียกใช้การคาดคะเนการเลิกทำธุรรกรรม สำหรับขั้นตอนโดยละเอียด โปรดดูบทความ [การคาดคะเนการเลิกใช้บริการสมัครสมาชิก (พรีวิว)](predict-subscription-churn.md) 
+ด้วยโปรไฟล์ลูกค้ารวมเข้าด้วยกัน ตอนนี้เราสามารถเรียกใช้การคาดคะเนการเลิกทำธุรรกรรม สำหรับขั้นตอนโดยละเอียด โปรดดูบทความ [การคาดคะเนการเลิกทำธุรรกรรม (พรีวิว)](predict-subscription-churn.md) 
 
 1. ไปที่ **ระบบอัจฉริยะ** > **ค้นพบ** และเลือกใช้ **โมเดลการเลิกใช้บริการของลูกค้า**
 
@@ -207,7 +207,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
 ## <a name="task-4---review-model-results-and-explanations"></a>งานที่ 4 - ตรวจสอบผลลัพธ์และคำอธิบายของโมเดล
 
-ให้โมเดลทำการฝึกและให้คะแนนข้อมูล ตอนนี้คุณสามารถตรวจสอบคำอธิบายโมเดลการเลิกใช้บริการสมัครสมาชิกได้แล้ว สำหรับข้อมูลเพิ่มเติม โปรดดู [ตรวจสอบสถานะการคาดคะเนและผลลัพธ์](predict-subscription-churn.md#review-a-prediction-status-and-results)
+ให้โมเดลทำการฝึกและให้คะแนนข้อมูล ตอนนี้คุณสามารถตรวจสอบคำอธิบายโมเดลการบอกเลิกการสมัครสมาชิกได้แล้ว สำหรับข้อมูลเพิ่มเติม โปรดดู [ตรวจสอบสถานะการคาดคะเนและผลลัพธ์](predict-subscription-churn.md#review-a-prediction-status-and-results)
 
 ## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a>งานที่ 5 - สร้างเซ็กเมนต์ของลูกค้าที่มีความเสี่ยงในการเลิกใช้บริการสูง
 
@@ -224,7 +224,7 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
    - ตัวดำเนินการ: มากกว่า
    - ค่า: 0.6
    
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="ตั้งค่าเซ็กเมนต์การเลิกใช้บริการสมัครสมาชิก":::
+   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="ตั้งค่าเซ็กเมนต์การบอกเลิกการสมัครสมาชิก":::
 
 ตอนนี้คุณมีเซ็กเมนต์ที่ปรับปรุงแบบไดนามิกซึ่งระบุลูกค้าที่มีความเสี่ยงสูงที่จะเลิกใช้บริการสำหรับธุรกิจที่มีการสมัครสมาชิกนี้
 

@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 8ff04a6b2ffbd513a77f7f8a33358f3d8f559c7e
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 5e301b4ff0a7586fb143b154b773791b3bd645b7
+ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673665"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7648140"
 ---
 # <a name="create-a-new-environment"></a>สร้างสภาพแวดล้อมใหม่ 
 

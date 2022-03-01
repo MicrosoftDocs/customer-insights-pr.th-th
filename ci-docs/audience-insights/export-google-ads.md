@@ -1,7 +1,7 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Google Ads
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Google Ads
-ms.date: 09/27/2021
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,19 +9,16 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
+ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617946"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6604300"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>ส่งออกกลุ่มไปยัง Google Ads (ตัวอย่าง)
 
 ส่งออกเซ็กเมนต์ของโปรไฟล์ลูกค้าแบบรวมไปยังรายการผู้ชม Google Ads และใช้เพื่อโฆษณาบน Google Search, Gmail, YouTube และ Google Display Network 
-
-> [!IMPORTANT]
-> ปัจจุบัน คุณสามารถสร้างการเชื่อมต่อใหม่และส่งออกข้อมูลไปยัง Google Ads ได้เฉพาะเมื่อคุณมีโทเค็นของนักพัฒนา Google Ads ที่ได้รับอนุมัติแล้ว เนื่องจากการเปลี่ยนแปลงนโยบาย เราจะปรับปรุงข้อมูลการส่งออกของ Google Ads ในไม่ช้า และเสนอตัวเลือกการส่งออกที่ไม่ต้องใช้โทเค็นของนักพัฒนา เพื่อให้มั่นใจว่าการใช้งานของคุณจะดำเนินไปอย่างต่อเนื่อง และทำให้การส่งออกไปยัง Google Ads ง่ายขึ้น เราขอแนะนำว่าอย่าตั้งค่าการเชื่อมต่อกับ Google Ads เพิ่มเติมเพื่อให้เปลี่ยนตัวเลือกการส่งออกใหม่ได้ง่ายขึ้น
 
 ## <a name="prerequisites-for-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
 
@@ -35,9 +32,9 @@ ms.locfileid: "7617946"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- โปรไฟล์ลูกค้าสูงสุด 1 ล้านรายต่อการส่งออกไปยัง Google Ads
+- โปรไฟล์ต่อการส่งออกไปยัง Google Ads สูงสุด 1 ล้านโปรไฟล์
 - การส่งออกไปยัง Google Ads จำกัดเฉพาะเซ็กเมนต์
-- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ลูกค้าทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลานานถึง 5 นาที เนื่องจากข้อจำกัดด้านผู้ให้บริการ 
+- การส่งออกเซ็กเมนต์ที่มีโปรไฟล์ทั้งหมด 1 ล้านโปรไฟล์อาจใช้เวลาถึง 5 นาทีเนื่องจากข้อจำกัดของผู้ให้บริการ 
 - การจับคู่ใน Google Ads อาจใช้เวลาถึง 48 ชั่วโมง
 
 ## <a name="set-up-connection-to-google-ads"></a>ตั้งค่าการเชื่อมต่อไปยัง Google Ads
@@ -74,7 +71,7 @@ ms.locfileid: "7617946"
 
 1. ป้อน **[รหัสผู้ชม Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** และเลือก **เชื่อมต่อ** เพื่อเริ่มการเชื่อมต่อกับ Google Ads
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า
 
 1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก คุณสามารถส่งออกโปรไฟล์ลูกค้าไปยัง Google Ads ได้มากถึง 1 ล้านโปรไฟล์
 

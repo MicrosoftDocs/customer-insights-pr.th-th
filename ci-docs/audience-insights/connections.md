@@ -5,16 +5,16 @@ ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: e78e18b75ee9797b5fc76486615992e301e4c650
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977760"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304995"
 ---
 # <a name="connections-preview-overview"></a>ภาพรวมของการเชื่อมต่อ (ตัวอย่าง)
 
@@ -47,7 +47,6 @@ ms.locfileid: "7977760"
 1. ในบานหน้าต่าง **ตั้งค่าการเชื่อมต่อ** ให้รายละเอียดที่จำเป็น 
    1. **ชื่อที่แสดง** และชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อนี้
    1. ฟิลด์ที่แน่นอนขึ้นอยู่กับบริการที่คุณกำลังเชื่อมต่อ คุณสามารถเรียนรู้เกี่ยวกับรายละเอียดของชนิดการเชื่อมต่อที่เฉพาะเจาะจงได้จากบทความเกี่ยวกับบริการเป้าหมาย
-   1. ถ้าคุณ [ใช้ Key Vault ของคุณเอง](use-azure-key-vault.md) เพื่อเก็บข้อมูลลับ เริ่มการใช้งาน **ใช้ Key Vault** และเลือกข้อมูลลับจากรายการ
 
 1. หากต้องการสร้างการเชื่อมต่อ ให้เลือก **บันทึก**
 
@@ -94,6 +93,3 @@ ms.locfileid: "7977760"
 
 1. เพื่อยืนยันการลบ ให้เลือก **ลบ**
 
-## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>ตั้งค่าการเชื่อมต่อกับข้อมูลลับที่จัดการโดย Key Vault ของคุณเอง
-
-การเชื่อมต่อบางอย่างต้องการข้อมูลลับ เช่น คีย์ API หรือรหัสผ่าน การเชื่อมต่อบางอย่างรองรับข้อมูลลับที่จัดเก็บไว้ใน Key Vault ของคุณเอง เรียนรู้เพิ่มเติมเกี่ยวกับการเชื่อมต่อที่รองรับและวิธีการตั้งค่า [Key Vault ของคุณเองสำหรับข้อมูลเชิงลึกของผู้ชม](use-azure-key-vault.md)
