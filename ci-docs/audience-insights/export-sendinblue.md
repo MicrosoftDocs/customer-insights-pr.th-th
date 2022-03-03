@@ -1,20 +1,19 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Sendinblue
-description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและส่งออกไปยัง Sendinblue
+description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและส่งออกไปยัง Sendinblue
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b5924b2d4e7f0b11ce6478a31015fcbaaf44ff93
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 8d870ff31ce2d441e619ac18899c4d1b6c69ca41
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617808"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231442"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Sendinblue (พรีวิว)
 
@@ -38,7 +37,7 @@ ms.locfileid: "7617808"
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **Sendinblue** เพื่อตั้งค่าคอนฟิกการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **Sendinblue** เพื่อกำหนดค่าการเชื่อมต่อ
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
@@ -54,7 +53,7 @@ ms.locfileid: "7617808"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ ดูข้อมูลเพิ่มเติมที่ [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 

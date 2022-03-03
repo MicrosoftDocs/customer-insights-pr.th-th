@@ -5,16 +5,15 @@ author: britl
 ms.reviewer: mhart
 ms.author: britl
 ms.date: 10/01/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 545f4a7e9660e339dee1070ad727d5d398eb6254
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: a50a10db784ec7c1943c94e74000713309787e5c
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606282"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8225354"
 ---
 # <a name="run-the-web-sdk-sample-for-dynamics-365-customer-insights-engagement-insights-capability"></a>เรียกใช้ตัวอย่าง SDK ของเว็บสำหรับความสามารถของข้อมูลเชิงลึกของการมีส่วนร่วม Dynamics 365 Customer Insights
 

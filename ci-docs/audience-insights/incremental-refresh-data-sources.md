@@ -1,24 +1,26 @@
 ---
-title: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูลที่ใช้ Power Query
-description: รีเฟรชข้อมูลใหม่และข้อมูลที่ปรับปรุงสำหรับแหล่งข้อมูลขนาดใหญ่ตาม Power Query
+title: การรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลบน Power Query
+description: รีเฟรชข้อมูลใหม่และที่ปรับปรุงสำหรับแหล่งข้อมูลขนาดใหญ่บน Power Query
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-system-schedule
+- customerInsights
+ms.openlocfilehash: 62632efda3c0c7e53fcdd8864b053ba93e2918bc
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900308"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353728"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>การรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลที่ใช้ Power Query
+# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>การรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลที่อยู่บน Power Query
 
-บทความนี้อธิบายวิธีกำหนดค่าการรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลตาม Power Query
+บทความนี้อธิบายวิธีกำหนดค่าการรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลที่อยู่บน Power Query
 
 การรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูล มีข้อดีดังต่อไปนี้:
 
@@ -28,9 +30,9 @@ ms.locfileid: "7900308"
 
 ## <a name="configure-incremental-refresh"></a>กําหนดค่าการรีเฟรชแบบเพิ่มหน่วย
 
-ข้อมูลเชิงลึกกลุ่มเป้าหมาย ช่วยให้สามารถรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูลที่นำเข้าผ่าน Power Query ที่รองรับการนำเข้าข้อมูลส่วนเพิ่ม ตัวอย่างเช่น ฐานข้อมูล Azure SQL ที่มีฟิลด์วันที่และเวลา ซึ่งระบุว่าเมื่อใดที่มีการปรับปรุงเรกคอร์ดข้อมูลล่าสุด
+ข้อมูลเชิงลึกของผู้ชมช่วยให้มีการรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูลที่นำเข้าผ่าน Power Query ที่รองรับการนำเข้าแบบเพิ่มหน่วย ตัวอย่างเช่น ฐานข้อมูล Azure SQL ที่มีฟิลด์วันที่และเวลา ซึ่งระบุว่าเมื่อใดที่มีการปรับปรุงเรกคอร์ดข้อมูลล่าสุด
 
-1. [สร้างแหล่งข้อมูลใหม่โดยอิงจาก Power Query](connect-power-query.md)
+1. [สร้างแหล่งข้อมูลใหม่บน Power Query](connect-power-query.md)
 
 1. ระบุ **ชื่อ** สำหรับแหล่งข้อมูล
 

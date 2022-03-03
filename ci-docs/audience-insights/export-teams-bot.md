@@ -1,27 +1,26 @@
 ---
 title: บอทสำหรับ Microsoft Teams
 description: ค้นหาโปรไฟล์ลูกค้าแบบรวมใน Microsoft Teams ด้วยความช่วยเหลือของบอท
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 45ea23fbefe5f1d44c3961183b76d2cc5c45355e
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407151"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232125"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>บอท Teams สำหรับ Dynamics 365 Customer Insights (พรีวิว)
 
 เชื่อมต่อ Microsoft Teams เพื่อให้บอทค้นหาโปรไฟล์ลูกค้าแบบรวมในช่องทาง Teams
 
 > [!div class="mx-imgBorder"]
-> ![บอทของ Teams แสดงเรกคอร์ดลูกค้า](media/teams-bot.png "บอทของ Teams แสดงเรกคอร์ดลูกค้า")
+> ![บอทของ Teams ที่แสดงเรกคอร์ดลูกค้า](media/teams-bot.png "บอทของ Teams แสดงเรกคอร์ดลูกค้า")
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
@@ -31,8 +30,11 @@ ms.locfileid: "4407151"
 - [กระบวนการรวมข้อมูล](data-unification.md) เสร็จสมบูรณ์
 - ฟิลด์จะถูกเพิ่มไปยัง [ดัชนีการค้นหาและตัวกรอง](search-filter-index.md)
 - Customer Insights และ Teams อยู่ในองค์กรเดียวกัน
+- สภาพแวดล้อมของคุณมีผู้ชมเป้าหมายหลักที่ตั้งไว้สำหรับลูกค้ารายบุคคล บัญชีธุรกิจไม่ได้รับการสนับสนุน
 
-## <a name="configure-the-bot"></a>ตั้งค่าคอนฟิกบอท
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
+## <a name="configure-the-bot"></a>กำหนดค่าบอท
 
 1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ปลายทางการส่งออก**
 1. บนไทล์ Microsoft Teams เลือก **ตั้งค่า**
@@ -52,3 +54,6 @@ ms.locfileid: "4407151"
 - หากองค์กรของคุณดูแลสภาพแวดล้อม Customer Insights หลายแห่งในองค์กรเดียวกัน คุณสามารถป้อน **switchinstance** เพื่อเลือกว่าสภาพแวดล้อมใดที่คุณต้องการเชื่อมต่อกับบอท
 
 - ป้อน **วิธีใช้** เพื่อดูรายการคำสั่งที่มีสำหรับบอท  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

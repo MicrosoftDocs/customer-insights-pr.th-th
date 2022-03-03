@@ -3,18 +3,17 @@ title: คำขอสิทธิ์เรื่องข้อมูล (DSR) 
 description: ตอบสนองต่อคำขอของเจ้าของข้อมูลสำหรับความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย Dynamics 365 Customer Insights
 ms.date: 08/11/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: e095eb4f8e194f314d7d6baf6fa6a7a319319d2a
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483714"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350292"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>คำขอสิทธิ์เรื่องข้อมูล (DSR) ภายใต้ GDPR
 
@@ -79,71 +78,78 @@ ms.locfileid: "7483714"
 2. รับทราบการยืนยันในการส่งออกข้อมูลสำหรับผู้ใช้ที่ร้องขอ
 3. รับข้อมูลที่ส่งออกผ่านที่อยู่อีเมลผู้ดูแลระบบของผู้เช่า
 
-## <a name="engagement-insights"></a>ข้อมูลเชิงลึกของการมีส่วนร่วม
+## <a name="consent-management-preview"></a>การจัดการความยินยอม (พรีวิว)
 
-### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>การลบและการส่งออกข้อมูลเหตุการณ์ที่มีข้อมูลที่สามารถระบุถึงผู้ใช้ปลายทางได้
+ความสามารถในการจัดการความยินยอมไม่ได้รวบรวมข้อมูลผู้ใช้โดยตรง แต่เป็นเพียงการนำเข้าและประมวลผลข้อมูลความยินยอมที่ผู้ใช้ให้ไว้ในแอปพลิเคชันอื่นเท่านั้น
 
-ส่วนต่อไปนี้อธิบายวิธีการลบและส่งออกข้อมูลเหตุการณ์ที่อาจมีข้อมูลส่วนบุคคล
+หากต้องการเอาข้อมูลความยินยอมเกี่ยวกับผู้ใช้บางรายออก ให้เอาข้อมูลดังกล่าวในแหล่งข้อมูลที่นำเข้าไปยังความสามารถในการจัดการคำยินยอมออก หลังจากรีเฟรชแหล่งข้อมูล แล้ว ข้อมูลที่เอาออกจะถูกลบออกจากศูนย์ความยินยอมด้วย แอปพลิเคชันที่ใช้เอนทิตีความยินยอมจะลบข้อมูลที่ถูกลบออกจากแหล่งที่มาหลังจาก [รีเฟรช](audience-insights/system.md#refresh-processes) เราแนะนำให้รีเฟรชแหล่งข้อมูลทันทีหลังจากตอบสนองต่อคำขอของเจ้าของข้อมูลเพื่อลบข้อมูลของผู้ใช้ออกจากกระบวนการและแอปพลิเคชันอื่นๆ ทั้งหมด
 
-เพื่อลบหรือส่งออกข้อมูล:
 
-1. แท็กคุณสมบัติเหตุการณ์ที่มีข้อมูลที่มีข้อมูลส่วนบุคคล
-2. ลบหรือส่งออกข้อมูลที่เกี่ยวข้องกับค่าเฉพาะ (ตัวอย่างเช่น: ID ผู้ใช้ที่ระบุ)
+<!-- ## Engagement insights (preview)
 
-#### <a name="tag-and-update-event-properties"></a>แท็กและอัพเดตคุณสมบัติเหตุการณ์
+### Deleting and exporting event data containing end user identifiable information
 
-ข้อมูลส่วนบุคคลถูกแท็กในระดับคุณสมบัติของเหตุการณ์ ขั้นแรก ให้แท็กคุณสมบัติที่กำลังพิจารณาสำหรับการลบหรือการส่งออก
+The following sections describe how to delete and export event data that might contain personal data.
 
-หากต้องการแท็กคุณสมบัติเหตุการณ์ว่ามีข้อมูลส่วนบุคคล ให้ทำตามขั้นตอนเหล่านี้:
+To delete or export data:
 
-1. เปิดพื้นที่ทำงานที่มีเหตุการณ์
+1. Tag event properties that contain data with personal information.
+2. Delete or export data associated with specific values (for example: a specified user ID).
 
-1. ไปที่ **ข้อมูล** > **เหตุการณ์** เพื่อดูรายการของเหตุการณ์ในพื้นที่ทำงานที่เลือก
+#### Tag and update event properties
+
+Personal data is tagged on an event property level. First, tag the properties being considered for deletion or export.
+
+To tag an event property as containing personal information, follow these steps:
+
+1. Open the workspace containing the event.
+
+1. Go to **Data** > **Events** to see the list of events in the selected workspace.
   
-1. เลือกเหตุการณ์ที่คุณต้องการแท็ก
+1. Select the event you want to tag.
 
-1. เลือก **แก้ไขคุณสมบัติ** เพื่อเปิดบานหน้าต่างที่แสดงรายการคุณสมบัติทั้งหมดของเหตุการณ์ที่เลือก
+1. Select **Edit properties** to open the pane listing all properties of the selected event.
      
-1. เลือก **...** แล้วจากนั้น เลือก **แก้ไข** เพื่อไปยังกล่องโต้ตอบ **ปรับปรุงคุณสมบัติ**
+1. Select **...** and then choose **Edit** to reach the **Update property** dialog.
 
-   ![แก้ไขเหตุการณ์](engagement-insights/media/edit-event.png "แก้ไขเหตุการณ์")
+   ![Edit event.](engagement-insights/media/edit-event.png "Edit event")
 
-1. ในหน้าต่าง **ปรับปรุงคุณสมบัติ** ให้เลือก **...** ที่มุมขวาบน และจากนั้น เลือกกล่อง **ประกอบด้วย EUII** เลือก **ปรับปรุง** เพื่อบันทึกการเปลี่ยนแปลงของคุณ
+1. In the **Update Property** window, choose **...** in the upper right corner, and then choose the **Contains EUII** box. Choose **Update** to save your changes.
 
-   ![บันทึกการเปลี่ยนแปลงของคุณ](engagement-insights/media/update-property.png "บันทึกการเปลี่ยนแปลงของคุณ")
+   ![Save your changes.](engagement-insights/media/update-property.png "Save your changes")
 
    > [!NOTE]
-   > ทุกครั้งที่ Schema ของเหตุการณ์เปลี่ยนแปลง หรือคุณสร้างเหตุการณ์ใหม่ ขอแนะนำให้คุณประเมินคุณสมบัติของเหตุการณ์ที่เกี่ยวข้อง และแท็กหรือยกเลิกการแท็กเป็นข้อมูลส่วนบุคคล หากจำเป็น
+   > Every time the event schema changes or you create a new event, it's recommended that you evaluate the associated event properties and tag or untag them as containing personal data, if necessary.
 
-#### <a name="delete-or-export-tagged-event-data"></a>ลบหรือส่งออกข้อมูลเหตุการณ์ที่แท็ก
+#### Delete or export tagged event data
 
-หากคุณสมบัติเหตุการณ์ทั้งหมดถูกแท็กอย่างเหมาะสมตามที่อธิบายไว้ในขั้นตอนก่อนหน้านี้ ผู้ดูแลระบบสภาพแวดล้อมสามารถส่งคำขอลบเทียบกับข้อมูลเหตุการณ์ที่แท็กได้
+If all event properties have been tagged appropriately as described in the previous step, an environment admin can issue a deletion request against the tagged event data.
 
-เพื่อจัดการคำขอลบหรือส่งออกของ EUII
+To manage EUII deletion or export requests
 
-1. ไปที่ **ผู้ดูแลระบบ** > **สภาพแวดล้อม** > **การตั้งค่า**
+1. Go to **Admin** > **Environment** > **Settings**.
 
-1. ในส่วน **จัดการข้อมูลที่สามารถระบุตัวตนผู้ใช้ปลายทาง (EUII)** เลือก **จัดการ EUII**
+1. In the **Manage end user identifiable information (EUII)** section, select **Manage EUII**.
 
-##### <a name="deletion"></a>การลบ
+##### Deletion
 
-สำหรับการลบ คุณสามารถป้อนรายการของ ID ผู้ใช้ที่คั่นด้วยเครื่องหมายจุลภาคในส่วน **ลบข้อมูลที่สามารถระบุตัวตนผู้ใช้ปลายทาง (EUII)** จากนั้น ID เหล่านี้จะถูกเปรียบเทียบกับคุณสมบัติเหตุการณ์ที่แท็กทั้งหมดของโครงการทั้งหมดในสภาพแวดล้อมปัจจุบัน ผ่านการจับคู่สตริงที่ตรงกันทุกประการ 
+For deletion, you can enter a list of comma-separated user IDs in the **Delete end user identifiable information (EUII)** section. These IDs will then be compared with all tagged event properties of all projects in the current environment via exact string matching. 
 
-หากค่าคุณสมบัติตรงกับหนึ่งใน ID ที่ระบุไว้ เหตุการณ์ที่เกี่ยวข้องจะถูกลบอย่างถาวร เนื่องจากการดำเนินการนี้ไม่สามารถย้อนกลับได้ คุณต้องยืนยันการลบ หลังจากการเลือก **ลบ**
+If a property value matches one of the provided IDs, the associated event will be permanently deleted. Due to the irreversibility of this action, you must confirm the deletion after selecting **Delete**.
 
-##### <a name="export"></a>Export
+##### Export
 
-กระบวนการส่งออกจะเหมือนกับกระบวนการลบ เมื่อต้องกำหนดค่าคุณสมบัติเหตุการณ์ในส่วน **ส่งออกข้อมูลที่สามารถระบุตัวตนผู้ใช้ปลายทาง (EUII)** นอกจากนี้ คุณจะต้องระบุ **URL ของที่เก็บข้อมูล Azure blob** เพื่อระบุปลายทางการส่งออก Azure Blob URL ต้องมี [ลายเซ็นการเข้าถึงที่ใช้ร่วมกัน (SAS)](/azure/storage/common/storage-sas-overview)
+The export process is identical to the deletion process when it comes to defining event property values in the **Export end user identifiable information (EUII)** section. Additionally, you'll need to provide an **Azure blob storage URL** to specify the export destination. The Azure Blob URL must include a [Shared Access Signature (SAS)](/azure/storage/common/storage-sas-overview).
 
-หลังจากการเลือก **ส่งออก** เหตุการณ์ทั้งหมดของกลุ่มคนปัจจุบันที่มีคุณสมบัติที่ติดแท็กที่ตรงกันจะถูกส่งออกในรูปแบบ CSV ไปยังปลายทางการส่งออก
+After selecting **Export**, all events of the current team that contain matching tagged properties will be exported in CSV format to the export destination.
 
-### <a name="good-practices"></a>แนวทางปฏิบัติ
+### Good practices
 
-* พยายามหลีกเลี่ยงการส่งเหตุการณ์ใดๆ ที่มีข้อมูลส่วนบุคคล
-* หากคุณต้องการส่งเหตุการณ์ที่มีข้อมูล EUII ให้จำกัดจำนวนของเหตุการณ์และคุณสมบัติของเหตุการณ์ที่มีข้อมูล EUII ตามหลักการแล้ว ให้จำกัดตัวเองให้อยู่ในเหตุการณ์ดังกล่าว
-* ตรวจสอบให้แน่ใจว่ามีคนน้อยที่สุดที่เป็นไปได้ที่สามารถเข้าถึงข้อมูลส่วนบุคคลที่ส่งไปได้
-* สำหรับเหตุการณ์ที่มีข้อมูลส่วนบุคคล ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าคุณสมบัติหนึ่งรายการเพื่อปล่อยรหัสเฉพาะซึ่งสามารถเชื่อมโยงกับผู้ใช้เฉพาะได้อย่างง่ายดาย (ตัวอย่างเช่น ID ผู้ใช้) นี่ทำให้ง่ายขึ้นต่อการแยกข้อมูลและการส่งออกหรือลบข้อมูลที่ถูกต้อง
-* ติดแท็กคุณสมบัติเพียงรายการเดียวต่อเหตุการณ์ที่มีข้อมูลส่วนบุคคล ตามหลักการแล้ว รายการที่มีรหัสเฉพาะเท่านั้น
-* อย่าแท็กคุณสมบัติที่มีค่า verbose (ตัวอย่างเช่น เนื้อหาคำขอทั้งหมด) ความสามารถข้อมูลเชิงลึกของการมีส่วนร่วมใช้การจับคู่สตริงที่ตรงกันทุกประการ เมื่อตัดสินใจว่าจะลบหรือส่งออกเหตุการณ์ใด
+* Try to avoid sending any events that contain personal data.
+* If you need to send events containing EUII data, limit the number of events and event properties that contain EUII data. Ideally, limit yourself to one such event.
+* Make sure that as few people as possible have access to the sent personal data.
+* For events containing personal data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
+* Only tag one property per event as containing personal data. Ideally one that only contains a unique identifier.
+* Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export. -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

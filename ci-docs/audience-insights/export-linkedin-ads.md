@@ -1,20 +1,19 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง LinkedIn Ads
-description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและส่งออกไปยัง LinkedIn Ads
+description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและส่งออกไปยัง LinkedIn Ads
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 867a6541734746f75a35faaa8d3861e0479d6114
-ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
+ms.openlocfilehash: 7a6bb466652b8703a4784329a5e675965f557e82
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866911"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231126"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 
@@ -37,7 +36,7 @@ ms.locfileid: "7866911"
 
 1. ในข้อมูลเชิงลึกของผู้ชม ให้ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **LinkedIn Ads** เพื่อตั้งค่าคอนฟิกการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **LinkedIn Ads** เพื่อกำหนดค่าการเชื่อมต่อ
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
@@ -57,7 +56,7 @@ ms.locfileid: "7866911"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถตั้งค่าคอนฟิกการส่งออกได้ หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+คุณสามารถกำหนดค่าการส่งออกได้ หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 

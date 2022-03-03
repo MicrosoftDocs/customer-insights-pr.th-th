@@ -5,16 +5,15 @@ author: britl
 ms.reviewer: mhart
 ms.author: britl
 ms.date: 09/27/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 090860071d34c6dc64a745993628c46014455b80
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: da848e6b155248bd308386d7e23a36131a2e78de
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977714"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231381"
 ---
 # <a name="developer-resources-overview"></a>ภาพรวมของทรัพยากรนักพัฒนา
 

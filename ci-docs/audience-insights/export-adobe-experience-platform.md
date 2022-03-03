@@ -3,18 +3,17 @@ title: ส่งออกข้อมูล Customer Insights ไปยัง Ad
 description: เรียนรู้วิธีใช้เซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมใน Adobe Experience Platform
 ms.date: 03/29/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 9010af3c42823ce0dd8685bf71c109aef8d3f635
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032140"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227747"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>ใช้เซ็กเมนต์ Customer Insights ใน Adobe Experience Platform (พรีวิว)
 
@@ -55,7 +54,7 @@ ms.locfileid: "7032140"
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Azure Blob Storage** หรือเลือก **ตั้งค่า** ในไทล์ **Azure Blob Storage** เพื่อตั้งค่าคอนฟิกการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Azure Blob Storage** หรือเลือก **ตั้งค่า** ในไทล์ **Azure Blob Storage** เพื่อกำหนดค่าการเชื่อมต่อ
 
    :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="ไทล์การกำหนดค่าสำหรับที่เก็บข้อมูล Azure Blob"::: 
 
@@ -95,7 +94,7 @@ ms.locfileid: "7032140"
 > [!NOTE]
 > ตรวจสอบให้แน่ใจว่าจำนวนของเรกคอร์ดในเซ็กเมนต์ที่ส่งออกนั้นอยู่ภายในขีดจำกัดที่อนุญาตของสิทธิ์การใช้งาน Adobe Campaign Standard ของคุณ
 
-ข้อมูลที่ส่งออกจะถูกเก็บไว้ในคอนเทนเนอร์ Azure Blob Storage ที่คุณตั้งค่าคอนฟิกไว้ด้านบน พาธโฟลเดอร์ต่อไปนี้มีการสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ:
+ข้อมูลที่ส่งออกจะถูกเก็บไว้ในคอนเทนเนอร์ Azure Blob Storage ที่คุณกำหนดค่าไว้ด้านบน พาธโฟลเดอร์ต่อไปนี้มีการสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -107,7 +106,7 @@ ms.locfileid: "7032140"
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>กำหนด Experience Data Model (XDM) ใน Adobe Experience Platform
 
-ก่อนที่ข้อมูลที่ส่งออกจากข้อมูลเชิงลึกของผู้ชมจะสามารถใช้ได้ภายใน Adobe Experience Platform เราต้องกำหนด schema ของ Experience Data Model และ [ตั้งค่าคอนฟิกข้อมูลสำหรับโปรไฟล์ลูกค้าแบบเรียลไทม์](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)
+ก่อนที่ข้อมูลที่ส่งออกจากข้อมูลเชิงลึกของผู้ชมจะสามารถใช้ได้ภายใน Adobe Experience Platform เราต้องกำหนด schema ของ Experience Data Model และ [กำหนดค่าข้อมูลสำหรับโปรไฟล์ลูกค้าแบบเรียลไทม์](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)
 
 เรียนรู้ว่า [XDM คืออะไร](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) และทำความเข้าใจ [พื้นฐานขององค์ประกอบแบบแผน](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema)
 
@@ -117,7 +116,7 @@ ms.locfileid: "7032140"
 
 ประการแรก [สร้างการเชื่อมต่อแหล่งกับต้นทางที่เก็บข้อมูล Azure Blob](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started)    
 
-หลังจากที่กำหนดการเชื่อมต่อต้นทางแล้ว [ตั้งค่าคอนฟิกกระแสข้อมูล](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) สำหรับการเชื่อมต่อชุดงานของที่เก็บข้อมูลระบบคลาวด์เพื่อนำเข้าเอาต์พุตเซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชมลงใน Adobe Experience Platform
+หลังจากที่กำหนดการเชื่อมต่อต้นทางแล้ว [กำหนดค่ากระแสข้อมูล](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) สำหรับการเชื่อมต่อชุดงานของที่เก็บข้อมูลระบบคลาวด์เพื่อนำเข้าเอาต์พุตเซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชมลงใน Adobe Experience Platform
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>สร้างผู้ชมใน Adobe Campaign Standard
 

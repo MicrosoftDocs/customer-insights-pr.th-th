@@ -1,27 +1,30 @@
 ---
 title: ค้นหาและกรองโปรไฟล์ลูกค้า
 description: ค้นหาข้อมูลเกี่ยวกับโปรไฟล์ลูกค้าแบบรวมและตัวกรองสำหรับแอตทริบิวต์ที่ระบุได้อย่างรวดเร็ว
-ms.date: 01/19/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+searchScope:
+- ci-search-filter
+- customerInsights
+ms.openlocfilehash: 4445f44b87a5947c3dfcf43ddb49dca9f25b69aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470046"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354532"
 ---
 # <a name="customer-profiles-search--filter-index"></a>โปรไฟล์ลูกค้า: ดัชนีการค้นหาและตัวกรอง
 
 ผลลัพธ์ของการรวมข้อมูลลูกค้าของคุณคือ เอนทิตีโปรไฟล์ลูกค้าที่ให้มุมมองแบบรวมลงในฐานลูกค้ารวมของคุณ เมื่อต้องการ [ค้นหาข้อมูลเกี่ยวกับลูกค้าหรือกลุ่มของลูกค้าเฉพาะ](customer-profiles.md) อย่างรวดเร็ว คุณสามารถกำหนดค่าความสามารถ **ค้นหา** และ **กรอง** ในหน้า **ลูกค้า** อ่านต่อไปเพื่อเรียนรู้วิธีที่ผู้ดูแลระบบสามารถแก้ไขแอตทริบิวต์บนหน้า **ดัชนีการค้นหาและตัวกรอง** ซึ่งพร้อมใช้งานสำหรับผู้ใช้สำหรับการค้นหาและการกรอง
 
-> [!div class="mx-imgBorder"]
-> ![ตัวกรองการค้นหา](media/search-filter.png "ตัวกรองการค้นหา")
+   :::image type="content" source="media/search-filter.png" alt-text="ตัวกรองการค้นหา":::
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="add-fields-and-specify-attributes"></a>เพิ่มฟิลด์และระบุแอตทริบิวต์
 

@@ -5,16 +5,15 @@ author: britl
 ms.reviewer: m-hartmann
 ms.author: britl
 ms.date: 06/23/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: ba51961bc7f9555d7dba5b6a21c8636011438d75cba87bc132b896841c467a33
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 2ee29a98192bb53bd92241d71c1a76ec2b7bf846
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035849"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229941"
 ---
 # <a name="run-the-android-sdk-sample"></a>เรียกใช้ตัวอย่าง Android SDK
 

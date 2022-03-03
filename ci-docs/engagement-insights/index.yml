@@ -1,92 +1,29 @@
 ### YamlMime:Landing
-title: ความสามารถข้อมูลเชิงลึกของการมีส่วนร่วมใน Dynamics 365 Customer Insights (พรีวิว)
-summary: รวบรวมข้อมูลสำหรับเว็บไซต์ของคุณ ทำความเข้าใจการโต้ตอบและการใช้งานของลูกค้าในไซต์ของคุณ แบบโต้ตอบ ใช้การผสานรวมเชิงลึกระหว่างข้อมูลเชิงลึกของการมีส่วนร่วมและข้อมูลเชิงลึกของผู้ชม เพื่อเพิ่มประสิทธิภาพการวิเคราะห์พฤติกรรมแบบเรียลไทม์ ด้วยรายงานโปรไฟล์ลูกค้า เพิ่มโปรไฟล์ลูกค้าด้วยกิจกรรมบนเว็บ เพื่อรับข้อมูลพฤติกรรมแบบเรียลไทม์ควบคู่ไปกับข้อมูลลูกค้าที่เกี่ยวข้อง เปลี่ยนโฉมธุรกิจของคุณให้ได้รับมูลค่าทันทีจากข้อมูลลูกค้าของคุณ
+title: การยุติรุ่นพรีวิวของข้อมูลเชิงลึกของการมีส่วนร่วม
+summary: 'ความสามารถข้อมูลเชิงลึกของการมีส่วนร่วมของ Dynamics 365 Customer Insights รุ่นพรีวิวได้ยุติลงวันที่ 15 กุมภาพันธ์ 2022 การเปลี่ยนแปลงนี้หมายความว่าประสบการณ์การทดลองใช้ Customer Insights จะไม่มีความสามารถในการสร้างช่วงระยะหรือฟังก์ชันการรายงานอื่นๆ อีกต่อไป เราขอเชิญคุณมาร่วมสำรวจและประเมินคุณลักษณะอื่นๆ ที่มีมากมายของ Customer Insights นั่นคือ Microsoft Customer Data Platform (CDP) โปรดติดต่อทีมบัญชี Microsoft ของคุณโดยตรง หากคุณมีคำถามเกี่ยวกับการยุติความสามารถรุ่นพรีวิว ทีมบัญชีของคุณจะแจ้งให้คุณทราบเกี่ยวกับการเปิดตัวที่กำลังจะเกิดขึ้น ขอบคุณ! '
 metadata:
   title: คู่มือข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   description: ศูนย์ช่วยเหลือพร้อมลิงก์หลักสำหรับข้อมูลเชิงลึกของการมีส่วนร่วม
-  ms.service: customer-insights
   ms.subservice: engagement-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
   ms.date: 09/15/2021
-  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
-  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+  ms.openlocfilehash: 99933c69c791da12815ebee3edb6413276b19b09
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 09/15/2021
-  ms.locfileid: "7494207"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350522"
 landingContent:
-- title: เกี่ยวกับ
+- title: ติดต่อ
   linkLists:
   - linkListType: overview
     links:
-    - text: ประโยชน์ของความสามารถ
-      url: overview.md
-    - text: อภิธานศัพท์
-      url: glossary.md
-    - text: คุณลักษณะใหม่และที่ปรับปรุง
-      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
-- title: การเตรียมความพร้อม
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: การเริ่มต้นใช้งาน
-      url: get-started.md
-    - text: สร้างพื้นที่ทำงาน
-      url: create-workspace.md
-    - text: สร้างเว็บไซต์ของคุณ
-      url: instrument-website.md
-- title: มุมมองและรายงานตัวกรอง
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: ดูรายงาน
-      url: view-reports.md
-    - text: ดูรายงานโปรไฟล์แบบรวม
-      url: profile-reports.md
-    - text: ใช้เซ็กเมนต์ผู้ชมเพื่อกรองรายงาน
-      url: integrate-audience-insights-segments.md
-- title: วิเคราะห์
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: สร้างรายงานช่วงระยะ
-      url: funnel-reports.md
-    - text: วิเคราะห์ข้อมูลพฤติกรรม
-      url: curate-dimensions.md
-    - text: สร้างรายงานแบบกําหนดเอง
-      url: custom-reports.md
-    - text: สร้างเหตุการณ์ที่ปรับปรุงแล้ว
-      url: refined-events.md
-    - text: ส่งออกเหตุการณ์
-      url: export-events.md
-- title: ทรัพยากรสำหรับนักพัฒนา
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: ทรัพยากรสำหรับนักพัฒนา
-      url: developer-resources.md
-    - text: ตัวอย่าง WebSDK
-      url: websdk-sample.md
-    - text: สถานการณ์ web SDK ขั้นสูง
-      url: advanced-SDK-implementation.md
-    - text: ตัวอย่าง Android SDK
-      url: get-started-android.md
-    - text: ตัวอย่าง iOS SDK
-      url: get-started-ios.md
-- title: การดูแลจัดการ
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: จัดการสภาพแวดล้อมและพื้นที่ทำงาน
-      url: manage-environments-workspaces.md
-    - text: เชื่อมต่อกับข้อมูลเชิงลึกของผู้ชม
-      url: integrate-audience-insights-engagement-insights.md
-    - text: จัดการคุกกี้และความยินยอมของผู้ใช้
-      url: user-consent-storage.md
-    - text: ลบและส่งออกข้อมูลส่วนบุคคล
-      url: delete-export-personal-data.md
-    - text: ขีดจำกัดบริการ
-      url: ../service-limits.md
+    - text: เข้าร่วมชุมชน Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: แสดงไอเดียของคุณ
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: รายงานปัญหา
+      url: https://go.microsoft.com/fwlink/?linkid=2079641

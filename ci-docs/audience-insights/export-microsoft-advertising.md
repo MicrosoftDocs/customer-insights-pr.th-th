@@ -1,20 +1,19 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Microsoft Advertising
-description: เรียนรู้วิธีการตั้งค่าคอนฟิกการเชื่อมต่อและการส่งออกไปยัง Microsoft Advertising
-ms.date: 05/12/2021
+description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Microsoft Advertising
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 8f009ed0258ded424340061e5320dd7df68c199f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124561"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226914"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising (พรีวิว)
 
@@ -24,21 +23,21 @@ ms.locfileid: "6124561"
 
 -   [บัญชี Microsoft Advertising](https://ads.microsoft.com/) และข้อมูลประจำตัวของผู้ดูแลระบบที่สอดคล้องกัน
 -   คุณได้ยอมรับข้อกำหนดในการให้บริการของ Customer Match 
--   [เซ็กเมนต์ที่ตั้งค่าคอนฟิก](segments.md) ในข้อมูลเชิงลึกของผู้ชม
+-   [เซ็กเมนต์ที่กำหนดค่า](segments.md) ในข้อมูลเชิงลึกของผู้ชม
 -   โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออก มีฟิลด์ที่มีที่อยู่อีเมล
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ได้ถึง 500 K โปรไฟล์ต่อการส่งออกหนึ่งรายการไปยัง Microsoft Advertising
+- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 500'000 รายต่อการส่งออกไปยัง Microsoft Advertising
 - การส่งออกไปยัง Microsoft Advertising นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกมากถึง 500 K โปรไฟล์ไปยัง Microsoft Advertising อาจใช้เวลาถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
+- การส่งออกโปรไฟล์ลูกค้าสูงสุด 500'000 รายไปยัง Microsoft Advertising อาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>ตั้งค่าการเชื่อมต่อกับ Microsoft Advertising
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Microsoft Advertising** เพื่อตั้งค่าคอนฟิกการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Microsoft Advertising** เพื่อกำหนดค่าการเชื่อมต่อ
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
@@ -56,7 +55,7 @@ ms.locfileid: "6124561"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ ดูข้อมูลเพิ่มเติมที่ [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
@@ -68,7 +67,7 @@ ms.locfileid: "6124561"
 
 1. ป้อน **รหัสลูกค้าและรหัสบัญชีของ Microsoft Advertising** ของคุณ คุณสามารถค้นหารหัสลูกค้า (`cid`) และรหัสบัญชี (`aid`) ในพารามิเตอร์ของ URL เมื่อคุณเข้าสู่ระบบ Microsoft Advertising
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่มีที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่มีที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising
 
 1. เลือก **บันทึก**
 

@@ -3,18 +3,22 @@ title: Add-in การ์ดลูกค้าสำหรับแอป Dynam
 description: แสดงข้อมูลจากข้อมูลเชิงลึกของผู้ชมในแอป Dynamics 365 ด้วย Add-in นี้
 ms.date: 02/02/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ce6c8fab84fd4c5dfc9f78b91dde3483a1d358c1
-ms.sourcegitcommit: 11308ed275b4b25a35576eccfcae9dda9e2c2784
+searchScope:
+- ci-customers-page
+- ci-search-filter
+- ci-customer-card
+- customerInsights
+ms.openlocfilehash: d67d8e2cb30cf20de204bfb293bb8ce81c7bb2f4
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8085271"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353888"
 ---
 # <a name="customer-card-add-in-preview"></a>Add-in การ์ดลูกค้า (การแสดงตัวอย่าง)
 

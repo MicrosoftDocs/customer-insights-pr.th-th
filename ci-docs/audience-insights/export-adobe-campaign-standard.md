@@ -3,18 +3,17 @@ title: ส่งออกข้อมูล Customer Insights ไปยัง Ad
 description: เรียนรู้วิธีใช้เซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมใน Adobe Campaign Standard
 ms.date: 03/29/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: d301b4f0cb875303fb3d373b77177acd1c1f5219cd6f23c2a1d29ce67a222eab
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 6b90ee53236fdd601ecdfd8e6117a15269a08084
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032186"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227781"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>ใช้เซ็กเมนต์ Customer Insights ใน Adobe Campaign Standard (พรีวิว)
 
@@ -34,7 +33,7 @@ ms.locfileid: "7032186"
 
 สมมติว่าบริษัทของคุณเสนอบริการแบบสมัครสมาชิกรายเดือนให้กับลูกค้าของคุณในสหรัฐอเมริกา คุณต้องการระบุลูกค้าที่การสมัครสมาชิกถึงกำหนดต่ออายุในแปดวันถัดไป แต่ยังไม่ได้ต่ออายุการสมัครสมาชิก หากต้องการรักษาลูกค้าเหล่านี้ไว้ คุณต้องส่งข้อเสนอโปรโมชันผ่านอีเมลโดยใช้ Adobe Campaign Standard
 
-ในตัวอย่างนี้ เราต้องการเรียกใช้แคมเปญอีเมลส่งเสริมการขายเพียงครั้งเดียว บทความนี้ไม่ได้กล่าวถึงกรณีการใช้งานของการเรียกใช้แคมเปญมากกว่าหนึ่งครั้ง อย่างไรก็ตาม สามารถตั้งค่าคอนฟิกข้อมูลเชิงลึกของผู้ชมและ Adobe Campaign Standard ให้ใช้งานได้สำหรับสถานการณ์แคมเปญที่เกิดซ้ำเช่นกัน
+ในตัวอย่างนี้ เราต้องการเรียกใช้แคมเปญอีเมลส่งเสริมการขายเพียงครั้งเดียว บทความนี้ไม่ได้กล่าวถึงกรณีการใช้งานของการเรียกใช้แคมเปญมากกว่าหนึ่งครั้ง อย่างไรก็ตาม สามารถกำหนดค่าข้อมูลเชิงลึกของผู้ชมและ Adobe Campaign Standard ให้ใช้งานได้สำหรับสถานการณ์แคมเปญที่เกิดซ้ำเช่นกัน
 
 ## <a name="identify-your-target-audience"></a>ระบุกลุ่มเป้าหมายของคุณ
 
@@ -54,9 +53,9 @@ ms.locfileid: "7032186"
 
 1. ในข้อมูลเชิงลึกของผู้ชม ให้ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Adobe Campaign** เพื่อตั้งค่าคอนฟิกการเชื่อมต่อ หรือเลือก **ตั้งค่า** ในไทล์ **Adobe Campaign**
+1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Adobe Campaign** เพื่อกำหนดค่าการเชื่อมต่อ หรือเลือก **ตั้งค่า** ในไทล์ **Adobe Campaign**
 
-   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="ไทล์การตั้งค่าคอนฟิกสำหรับ Adobe Campaign Standard":::
+   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="ไทล์การกำหนดค่าสำหรับ Adobe Campaign Standard":::
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
@@ -88,14 +87,14 @@ ms.locfileid: "7032186"
 
 1. เลือก **ถัดไป**
 
-1. ตอนนี้เราแม็ปฟิลด์ **แหล่งที่มา** จากเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมกับชื่อฟิลด์ **เป้าหมาย** ใน Schema ของโปรไฟล์ของ Adobe Campaign Standard
+1. ตอนนี้เราแมปฟิลด์ **แหล่งที่มา** จากเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมกับชื่อฟิลด์ **เป้าหมาย** ใน Schema ของโปรไฟล์ของ Adobe Campaign Standard
 
-   :::image type="content" source="media/ACS-field-mapping.png" alt-text="การแม็ปฟิลด์สำหรับตัวเชื่อมต่อ Adobe Campaign Standard":::
+   :::image type="content" source="media/ACS-field-mapping.png" alt-text="การแมปฟิลด์สำหรับตัวเชื่อมต่อ Adobe Campaign Standard":::
 
-   หากคุณต้องการเพิ่มแอตทริบิวต์เพิ่มเติม ให้เลือก **เพิ่มแอตทริบิวต์** ชื่อเป้าหมายอาจแตกต่างจากชื่อฟิลด์ต้นทางได้ ดังนั้น คุณจึงยังสามารถแม็ปเอาต์พุตเซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชมกับ Adobe Campaign Standard ได้ หากฟิลด์ไม่มีชื่อที่เหมือนกันในทั้งสองระบบ
+   หากคุณต้องการเพิ่มแอตทริบิวต์เพิ่มเติม ให้เลือก **เพิ่มแอตทริบิวต์** ชื่อเป้าหมายอาจแตกต่างจากชื่อฟิลด์ต้นทางได้ ดังนั้น คุณจึงยังสามารถแมปเอาต์พุตเซ็กเมนต์จากข้อมูลเชิงลึกของผู้ชมกับ Adobe Campaign Standard ได้ หากฟิลด์ไม่มีชื่อที่เหมือนกันในทั้งสองระบบ
 
    > [!NOTE]
-   > ที่อยู่อีเมลถูกใช้เป็นฟิลด์ข้อมูลประจำตัว แต่คุณสามารถใช้ตัวระบุอื่นๆ จากโปรไฟล์ลูกค้าของข้อมูลเชิงลึกของผู้ชมเพื่อแม็ปข้อมูลกับ Adobe Campaign Standard
+   > ที่อยู่อีเมลถูกใช้เป็นฟิลด์ข้อมูลประจำตัว แต่คุณสามารถใช้ตัวระบุอื่นๆ จากโปรไฟล์ลูกค้าของข้อมูลเชิงลึกของผู้ชมเพื่อแมปข้อมูลกับ Adobe Campaign Standard
 
 1. เลือก **บันทึก**
 
@@ -106,13 +105,13 @@ ms.locfileid: "7032186"
 > [!NOTE]
 > ตรวจสอบให้แน่ใจว่าจำนวนของเรกคอร์ดในเซ็กเมนต์ที่ส่งออกนั้นอยู่ภายในขีดจำกัดที่อนุญาตของสิทธิ์การใช้งาน Adobe Campaign Standard ของคุณ
 
-ข้อมูลที่ส่งออกจะถูกเก็บไว้ในคอนเทนเนอร์ Azure Blob Storage ที่คุณตั้งค่าคอนฟิกไว้ด้านบน พาธโฟลเดอร์ต่อไปนี้มีการสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ:
+ข้อมูลที่ส่งออกจะถูกเก็บไว้ในคอนเทนเนอร์ Azure Blob Storage ที่คุณกำหนดค่าไว้ด้านบน พาธโฟลเดอร์ต่อไปนี้มีการสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ:
 
 *%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
 
 ตัวอย่าง: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo_ChurnProneCustomers_1613059542.csv
 
-## <a name="configure-adobe-campaign-standard"></a>ตั้งค่าคอนฟิก Adobe Campaign Standard
+## <a name="configure-adobe-campaign-standard"></a>กำหนดค่า Adobe Campaign Standard
 
 เมื่อมีการส่งออกเซ็กเมนต์จากข้อมูลเชิงลึกกลุ่มเป้าหมาย จะมีคอลัมน์ที่คุณเลือกขณะที่กำหนดปลายทางการส่งออกในขั้นตอนก่อนหน้า ข้อมูลนี้สามารถใช้เพื่อ [สร้างโปรไฟล์ใน Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles)
 
@@ -128,7 +127,7 @@ ms.locfileid: "7032186"
 
 เมื่อทุกอย่างพร้อมแล้ว เราจำเป็นต้องนำเข้าข้อมูลของผู้ชมที่เตรียมไว้จากข้อมูลเชิงลึกของผู้ชมลงใน Adobe Campaign Standard เพื่อสร้างโปรไฟล์ เรียนรู้ [วิธีการนำเข้าโปรไฟล์ใน Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) โดยใช้เวิร์กโฟลว์
 
-เวิร์กโฟลว์การนำเข้าในรูปภาพด้านล่างได้รับการตั้งค่าคอนฟิกให้ทำงานทุกๆ แปดชั่วโมง และค้นหาเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมที่ส่งออก (ไฟล์ .csv ใน Azure Blob Storage) เวิร์กโฟลว์จะแยกเนื้อหาของไฟล์ .csv ตามลำดับคอลัมน์ที่ระบุ เวิร์กโฟลว์นี้ได้ถูกสร้างขึ้นเพื่อดำเนินการจัดการข้อผิดพลาดพื้นฐาน และทำให้แน่ใจว่าแต่ละเรกคอร์ดมีที่อยู่อีเมล ก่อนที่จะเติมข้อมูลใน Adobe Campaign Standard นอกจากนี้ เวิร์กโฟลว์ยังแยกชื่อเซ็กเมนต์ออกจากชื่อไฟล์ ก่อนที่จะเพิ่มลงในข้อมูลโปรไฟล์ Adobe Campaign Standard
+เวิร์กโฟลว์การนำเข้าในรูปภาพด้านล่างได้รับการกำหนดค่าให้ทำงานทุกๆ แปดชั่วโมง และค้นหาเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมที่ส่งออก (ไฟล์ .csv ใน Azure Blob Storage) เวิร์กโฟลว์จะแยกเนื้อหาของไฟล์ .csv ตามลำดับคอลัมน์ที่ระบุ เวิร์กโฟลว์นี้ได้ถูกสร้างขึ้นเพื่อดำเนินการจัดการข้อผิดพลาดพื้นฐาน และทำให้แน่ใจว่าแต่ละเรกคอร์ดมีที่อยู่อีเมล ก่อนที่จะเติมข้อมูลใน Adobe Campaign Standard นอกจากนี้ เวิร์กโฟลว์ยังแยกชื่อเซ็กเมนต์ออกจากชื่อไฟล์ ก่อนที่จะเพิ่มลงในข้อมูลโปรไฟล์ Adobe Campaign Standard
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="ภาพหน้าจอของเวิร์กโฟลว์การนำเข้าในอินเทอร์เฟซผู้ใช้ของ Adobe Campaign Standard":::
 

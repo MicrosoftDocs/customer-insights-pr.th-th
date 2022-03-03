@@ -5,16 +5,15 @@ ms.reviewer: mhart
 ms.author: mkisel
 author: mkisel11
 ms.date: 7/15/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: d1bbc3315b55e2ee233dc672456e0c27e4ad0fbd5937af09cc790c96ee274000
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 75ce776fd5be1c426508ae6f5c239c86bdd3ec39
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036806"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230703"
 ---
 # <a name="recognize-web-events-from-previously-authenticated-visitors"></a>รับรู้เหตุการณ์บนเว็บจากผู้เยี่ยมชมที่มีการตรวจสอบสิทธิ์ก่อนหน้า
 

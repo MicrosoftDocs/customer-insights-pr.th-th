@@ -2,19 +2,25 @@
 title: การกำหนดค่าระบบในข้อมูลเชิงลึกกลุ่มเป้าหมาย
 description: เรียนรู้เกี่ยวกับการตั้งค่าระบบในความสามารถของข้อมูลเชิงลึกกลุ่มเป้าหมาย Dynamics 365 Customer Insights
 ms.date: 11/01/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 1b790106f8b9617d0c1f244e1d15a74c7ef9a82b
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+searchScope:
+- ci-system-status
+- ci-system-schedule
+- ci-system-about
+- ci-system-general
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: 2c52f7b8a7d41ae4a985745c7b79bbc62f59bb5a
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732393"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354256"
 ---
 # <a name="system-configuration"></a>การกำหนดค่าระบบ
 
@@ -85,6 +91,10 @@ ms.locfileid: "7732393"
 ## <a name="schedule-tab"></a>แท็บกำหนดการ
 
 ใช้แท็บ **กำหนดการ** เพื่อจัดกำหนดการรีเฟรชอัตโนมัติ [แหล่งข้อมูลที่นำเข้า](data-sources.md) ทั้งหมด การรีเฟรชอัตโนมัติช่วยให้มั่นใจได้ว่าการอัปเดตจากแหล่งข้อมูลของคุณจะปรากฏในโปรไฟล์ลูกค้าแบบรวม
+
+> [!NOTE]
+> แหล่งข้อมูลที่คุณจัดการคุณจะรีเฟรชตามกำหนดการของตนเอง หากต้องการกำหนดเวลารีเฟรชแหล่งข้อมูลที่คุณจัดการ ให้กำหนดการตั้งค่าการรีเฟรชของแหล่งข้อมูลเฉพาะจากเพจ **แหล่งข้อมูล**
+> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="การตั้งค่าการรีเฟรชกระแสข้อมูล Power Platform":::
 
 1. ในข้อมูลเชิงลึกกลุ่มเป้าหมาย ให้ไปที่ **ผู้ดูแลระบบ** > **ระบบ** และเลือกแท็บ **กำหนดการ**
 

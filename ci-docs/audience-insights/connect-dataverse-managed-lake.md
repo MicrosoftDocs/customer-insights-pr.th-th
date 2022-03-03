@@ -1,30 +1,35 @@
 ---
 title: เชื่อมต่อกับตารางใน Microsoft Dataverse
 description: นำเข้าข้อมูลจากที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse
-ms.date: 07/23/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+searchScope:
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692597"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354165"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>เชื่อมต่อกับข้อมูลใน Data Lake ที่มีการจัดการ Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-บทความนี้ให้ข้อมูลเกี่ยวกับวิธีการที่ผู้ใช้ Dataverse สามารถเชื่อมต่อกับเอนทิตีการวิเคราะห์ได้อย่างรวดเร็วในที่จัดเก็บที่มีการจัดการของ Dataverse คุณต้องเป็นผู้ดูแลระบบในองค์กร Dataverse เพื่อดำเนินการต่อ และดูรายการของเอนทิตีที่มีอยู่ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ
+
+บทความนี้ให้ข้อมูลเกี่ยวกับวิธีการที่ผู้ใช้ Dataverse สามารถเชื่อมต่อกับเอนทิตีการวิเคราะห์ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ Microsoft Dataverse 
+
+> [!NOTE]
+> คุณต้องเป็นผู้ดูแลระบบในองค์กร Dataverse เพื่อดำเนินการและดูรายชื่อของเอนทิตีที่มีอยู่ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ
 
 ## <a name="important-considerations"></a>ข้อควรพิจารณาที่สำคัญ
 
-ข้อมูลที่เก็บไว้ในบริการออนไลน์ เช่น Azure Data Lake Storage อาจถูกเก็บไว้ในตำแหน่งที่แตกต่างจากที่ที่มีการประมวลผลหรือจัดเก็บข้อมูลใน Dynamics 365 Customer Insightsโดยการนำเข้าหรือการเชื่อมต่อไปยังข้อมูลที่จัดเก็บในบริการออนไลน์ คุณยอมรับว่าสามารถถ่ายโอนข้อมูลและจัดเก็บด้วย Dynamics 365 Customer Insights  [เรียนรู้เพิ่มเติมที่ Microsoft Trust Center](https://www.microsoft.com/trust-center)
+ข้อมูลที่เก็บไว้ในบริการออนไลน์ เช่น Azure Data Lake Storage อาจถูกเก็บไว้ในตำแหน่งที่แตกต่างจากที่ที่มีการประมวลผลหรือจัดเก็บข้อมูลใน Dynamics 365 Customer Insights การนำเข้าหรือการเชื่อมต่อไปยังข้อมูลที่จัดเก็บในบริการออนไลน์ หมายถึงคุณยอมรับว่าสามารถถ่ายโอนข้อมูลและจัดเก็บด้วย Dynamics 365 Customer Insights [เรียนรู้เพิ่มเติมที่ Microsoft Trust Center](https://www.microsoft.com/trust-center)
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>เชื่อมต่อกับที่จัดเก็บที่มีการจัดการของ Dataverse
 
@@ -32,12 +37,9 @@ ms.locfileid: "6692597"
 
 2. เลือก **เพิ่มแหล่งข้อมูล**
 
-3. เลือก **เชื่อมต่อกับที่จัดเก็บที่มีการจัดการของ Microsoft Dataverse** และเลือก **ถัดไป**
+3. เลือก **Microsoft Dataverse** และเลือก **ถัดไป**
 
-4. ป้อน **ชื่อ** สำหรับแหล่งข้อมูล แล้วเลือก **ถัดไป** ตั้งชื่อแนวทาง: 
-   - ขึ้นต้นด้วยตัวอักษร
-   - ใช้ตัวอักษรและตัวเลขเท่านั้น ไม่อนุญาตให้ใช้อักขระพิเศษและช่องว่าง
-   - ใช้ระหว่าง 3 ถึง 64 อักขระ
+4. ป้อน **ชื่อ** สำหรับแหล่งข้อมูล แล้วเลือก **ถัดไป** 
 
 5. ระบุ **ที่อยู่เซิฟเวอร์** สำหรับองค์กร Dataverse และเลือก **ลงชื่อเข้าใช้**
 

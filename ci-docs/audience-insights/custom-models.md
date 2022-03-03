@@ -3,18 +3,20 @@ title: โมเดล Machine Learning แบบกำหนดเอง | Micr
 description: ทำงานกับโมเดลที่กำหนดเองจาก Azure Machine Learning ใน Dynamics 365 Customer Insights
 ms.date: 12/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+searchScope:
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 460b68e1e65b3033af0a03d1bcc27e718c79d7aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881807"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355109"
 ---
 # <a name="custom-machine-learning-models"></a>โมเดล Machine Learning แบบกำหนดเอง
 
@@ -40,6 +42,8 @@ ms.locfileid: "7881807"
 
    > [!NOTE]
    > ข้อมูลจะถูกถ่ายโอนระหว่างอินสแตนซ์ Customer Insights ของคุณและบริการเว็บ Azure ที่เลือกหรือไปป์ไลน์ในเวิร์กโฟลว์ เมื่อคุณถ่ายโอนข้อมูลไปยังบริการ Azure โปรดตรวจสอบให้แน่ใจว่าบริการได้รับการกําหนดค่าให้ประมวลผลข้อมูลในลักษณะและตําแหน่งที่ตั้งที่จําเป็นเพื่อให้สอดคล้องกับข้อกําหนดทางกฎหมายหรือข้อบังคับสําหรับข้อมูลนั้นสําหรับองค์กรของคุณ
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>เพิ่มเวิร์กโฟลว์ใหม่
 

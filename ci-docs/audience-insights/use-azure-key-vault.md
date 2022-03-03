@@ -1,20 +1,22 @@
 ---
 title: นำ Azure Key Vault ของคุณมาเองเพื่อจัดการข้อมูลลับ
-description: เรียนรู้วิธีการตั้งค่าคอนฟิก Customer Insights เพื่อใช้ Azure key vault ของคุณเอง
+description: เรียนรู้วิธีการกำหนดค่า Customer Insights เพื่อใช้ Azure key vault ของคุณเอง
 ms.date: 10/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: brndkfr
 ms.author: bkief
 manager: shellyha
-ms.openlocfilehash: 6f521dfce3e0922238d16beee3be8e1bbcfc63a5
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+searchScope:
+- ci-system-security
+- customerInsights
+ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606144"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355914"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>นำ Azure Key Vault ของคุณมาเอง (พรีวิว)
 
@@ -25,7 +27,7 @@ ms.locfileid: "7606144"
 
 ### <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
-ในการตั้งค่าคอนฟิก key vault ในข้อมูลเชิงลึกของผู้ชม ต้องเป็นไปตามข้อกำหนดเบื้องต้นต่อไปนี้:
+ในการกำหนดค่า key vault ในข้อมูลเชิงลึกของผู้ชม ต้องเป็นไปตามข้อกำหนดเบื้องต้นต่อไปนี้:
 
 - คุณต้องมีการสมัครใช้งาน Azure ที่ใช้งานอยู่
 
@@ -53,7 +55,7 @@ ms.locfileid: "7606144"
 
 ## <a name="use-the-key-vault-in-the-connection-setup"></a>ใช้ key vault ในการตั้งค่าการเชื่อมต่อ
 
-เมื่อ [ตั้งค่าการเชื่อมต่อ](connections.md) กับระบบของบุคคลที่สาม คุณสามารถใช้ข้อมูลลับจาก Key Vault ที่เชื่อมโยงเพื่อตั้งค่าคอนฟิกการเชื่อมต่อได้
+เมื่อ [ตั้งค่าการเชื่อมต่อ](connections.md) กับระบบของบุคคลที่สาม คุณสามารถใช้ข้อมูลลับจาก Key Vault ที่เชื่อมโยงเพื่อกำหนดค่าการเชื่อมต่อได้
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 1. เลือก **เพิ่มการเชื่อมต่อ**
@@ -111,7 +113,7 @@ ms.locfileid: "7606144"
 
 ### <a name="can-i-change-a-connection-from-using-key-vault-secrets-to-default-authentication"></a>ฉันสามารถเปลี่ยนการเชื่อมต่อจากการใช้ข้อมูลลับของ Key Vault เป็นการรับรองความถูกต้องเริ่มต้นได้หรือไม่
 
-ไม่ คุณไม่สามารถเปลี่ยนกลับเป็นการเชื่อมต่อเริ่มต้นได้ หลังจากที่คุณตั้งค่าคอนฟิกโดยใช้ข้อมูลลับจาก Key Vault ที่มีการเชื่อมโยง สร้างการเชื่อมต่อที่แยกต่างหาก และลบการเชื่อมต่อเก่า หากคุณไม่ต้องการอีกต่อไป
+ไม่ คุณไม่สามารถเปลี่ยนกลับเป็นการเชื่อมต่อเริ่มต้นได้ หลังจากที่คุณกำหนดค่าโดยใช้ข้อมูลลับจาก Key Vault ที่มีการเชื่อมโยง สร้างการเชื่อมต่อที่แยกต่างหาก และลบการเชื่อมต่อเก่า หากคุณไม่ต้องการอีกต่อไป
 
 ### <a name="how-can-i-revoke-access-to-a-key-vault-for-audience-insights"></a>ฉันจะเพิกถอนการเข้าถึง key vault สำหรับข้อมูลเชิงลึกของผู้ชมได้อย่างไร
 
@@ -119,7 +121,7 @@ ms.locfileid: "7606144"
 
 ### <a name="a-secret-thats-used-in-a-connection-got-removed-from-the-key-vault-what-can-i-do"></a>ข้อมูลลับที่ใช้ในการเชื่อมต่อถูกลบออกจาก key vault ฉันควรทำอย่างไร
 
-การแจ้งเตือนจะปรากฏในข้อมูลเชิงลึกของผู้ชม เมื่อไม่สามารถเข้าถึงข้อมูลลับที่ตั้งค่าคอนฟิกจาก key vault ได้อีกต่อไป เปิดใช้งาน [ลบออกชั่วคราว](/azure/key-vault/general/soft-delete-overview) บน key vault เพื่อกู้คืนข้อมูลลับ หากถูกลบออกโดยไม่ได้ตั้งใจ
+การแจ้งเตือนจะปรากฏในข้อมูลเชิงลึกของผู้ชม เมื่อไม่สามารถเข้าถึงข้อมูลลับที่กำหนดค่าจาก key vault ได้อีกต่อไป เปิดใช้งาน [ลบออกชั่วคราว](/azure/key-vault/general/soft-delete-overview) บน key vault เพื่อกู้คืนข้อมูลลับ หากถูกลบออกโดยไม่ได้ตั้งใจ
 
 ### <a name="a-connection-doesnt-work-but-my-secret-is-in-the-key-vault-what-might-be-the-cause"></a>การเชื่อมต่อใช้งานไม่ได้ แต่ข้อมูลลับของฉันอยู่ใน Key Vault อะไรอาจเป็นสาเหตุ
 

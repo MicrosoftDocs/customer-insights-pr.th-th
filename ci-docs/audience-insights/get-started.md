@@ -5,17 +5,19 @@ ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
 ms.date: 08/31/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: 2776b2292560f9ea61a06d2b1b7bc7811d35c860
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645287"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353750"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>เริ่มต้นใช้งานข้อมูลเชิงลึกของผู้ชมใน Dynamics 365 Customer Insights
 
@@ -37,7 +39,7 @@ ms.locfileid: "7645287"
 
 โปรไฟล์แบบรวมเป็นพื้นฐานในการรับข้อมูลเชิงลึกและดำเนินการกับข้อมูล นำเข้าข้อมูลจากแหล่งต่างๆ และเรียกใช้กระบวนการรวมข้อมูลเพื่อรวมโปรไฟล์แบบรวม ระบุความสัมพันธ์ระหว่างเอนทิตีที่นำเข้ามา ใช้คุณลักษณะการเพิ่มข้อมูลเพื่อเพิ่มข้อมูลในโปรไฟล์ 
 
-1. นำเข้าข้อมูลโดยการสร้างแหล่งข้อมูลจากหลายตัวเลือก เลือกระหว่าง [ตัวเชื่อมต่อ Power Query](connect-power-query.md), [โฟลเดอร์ Common Data Model](connect-common-data-model.md) หรือ [Microsoft Dataverse](connect-common-data-service-lake.md) 
+1. นำเข้าข้อมูลโดยการสร้างแหล่งข้อมูลจากหลายตัวเลือก เลือกระหว่าง [ตัวเชื่อมต่อ Power Query](connect-power-query.md), [โฟลเดอร์ Common Data Model](connect-common-data-model.md) หรือ [Microsoft Dataverse](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake) 
 
 1. เรียกใช้ [กระบวนการรวมข้อมูล](data-unification.md) โดยการไปที่ระยะ [แมป](map-entities.md), [จับคู่](match-entities.md) และ [รวมเข้าด้วยกัน](merge-entities.md)
 

@@ -1,21 +1,23 @@
 ---
 title: สร้างสภาพแวดล้อมใน Customer Insights
 description: ขั้นตอนในการสร้างสภาพแวดล้อมด้วยการสมัครใช้งานที่ได้รับสิทธิ์ใช้งานสำหรับ Dynamics 365 Customer Insights
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
-ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088136"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354118"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>สร้างสภาพแวดล้อมในข้อมูลเชิงลึกของผู้ชม
 
@@ -76,12 +78,14 @@ ms.locfileid: "8088136"
    
 ขั้นตอน **Microsoft Dataverse** ช่วยให้คุณเชื่อมต่อ Customer Insights กับสภาพแวดล้อม Dataverse
 
-หากต้องการใช้ [แบบจำลองการคาดคะเนสำเร็จรูป](predictions-overview.md#out-of-box-models) ให้กำหนดค่าการแบ่งปันข้อมูลด้วย Dataverse หรือคุณสามารถเปิดใช้งานการเพิ่มข้อมูลเข้าระบบจากแหล่งข้อมูลในองค์กร โดยให้ URL สภาพแวดล้อม Microsoft Dataverse ที่องค์กรของคุณดูแล เลือก **เปิดใช้งานการแชร์ข้อมูล** เพื่อแชร์ข้อมูลผลลัพธ์ Customer Insights กับที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse
+เตรียมสภาพแวดล้อม Microsoft Dataverse ของคุณเองเพื่อแชร์ข้อมูล (โปรไฟล์และข้อมูลเชิงลึก) กับแอปพลิเคชันทางธุรกิจที่อยู่บน Dataverse เช่น Dynamics 365 Marketing หรือแอปพลิเคชันแบบจำลองใน Power Apps เว้นฟิลด์นี้งไว้หากคุณไม่มีสภาพแวดล้อม Dataverse ของตนเองและเราจะจัดเตรียมไว้ให้คุณ
+
+การเชื่อมต่อกับสภาพแวดล้อม Dataverse ของคุณยังช่วยให้คุณสามารถ [นำเข้าข้อมูลจากแหล่งข้อมูลในสถานที่โดยใช้กระแสข้อมูล Power Platform และเกตเวย์](data-sources.md#add-data-from-on-premises-data-sources) นอกจากนี้คุณยังสามารถใช้ [โมเดลการคาดคะเนแบบสำเร็จรูป](predictions-overview.md?tabs=b2c#out-of-box-models) โดยการเชื่อมต่อกับสภาพแวดล้อม Dataverse ได้ด้วย
 
 > [!IMPORTANT]
 > Customer Insights และ Dataverse ต้องอยู่ในภูมิภาคเดียวกันจึงจะสามารถแชร์ข้อมูลได้
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="ตัวเลือกการกำหนดค่าเพื่อเปิดใช้งานการแบ่งปันข้อมูลกับ Microsoft Dataverse":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="การแชร์ข้อมูลกับ Microsoft Dataverse อัตโนมัติเปิดใช้งานสำหรับอินสแตนซ์ใหม่ทั้งหมด":::
 
 > [!NOTE]
 > Customer Insights ไม่สนับสนุนสถานการณ์การแบ่งปันข้อมูลต่อไปนี้:

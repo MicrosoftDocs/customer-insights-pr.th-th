@@ -5,16 +5,15 @@ ms.reviewer: mhart
 ms.author: jefhar
 author: mochimochi016
 ms.date: 10/01/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 935dc4cd41218842e8406b747daef47de04e337a
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: dbafa2231daa82c34ee2ec8292111575e95af675
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606280"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228226"
 ---
 # <a name="create-and-modify-events"></a>สร้างและแก้ไขเหตุการณ์
 
