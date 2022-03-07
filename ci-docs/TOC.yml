@@ -2,22 +2,6 @@
   href: index.yml
 - name: ภาพรวมของผลิตภัณฑ์
   href: overview.md
-- name: แค็ตตาล็อกการเรียนรู้
-  items:
-    - name: การเริ่มต้นใช้งาน
-      href: /learn/modules/get-started-customer-data-platform/
-    - name: นำเข้าข้อมูล
-      href: /learn/modules/ingest-data-customer-insights/
-    - name: สร้างโปรไฟล์ลูกค้าแบบรวม
-      href: /learn/modules/unified-customer-profile/
-    - name: ทำงานกับข้อมูลเชิงลึกของผู้ชม
-      href: /learn/modules/working-with-customer-insights/
-    - name: เพิ่มข้อมูลและทำการคาดคะเน
-      href: /learn/modules/enrich-data/
-    - name: จัดการการเชื่อมต่อจากภายนอก
-      href: /learn/modules/configure-third-party-connections/
-    - name: จัดการ Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
 - name: การทดลองใช้ฟรี
   items:
     - name: ลงทะเบียนเพื่อทดลองใช้ฟรี
@@ -46,6 +30,16 @@
           href: audience-insights/home.md
     - name: ทำงานกับบัญชีธุรกิจ
       href: audience-insights/work-with-business-accounts.md
+    - name: เรียนรู้โมดูล
+      items:
+        - name: นำเข้าข้อมูล
+          href: /learn/modules/ingest-data-customer-insights/
+        - name: สร้างโปรไฟล์ลูกค้าแบบรวม
+          href: /learn/modules/unified-customer-profile/
+        - name: ทำงานกับแอป
+          href: /learn/modules/working-with-customer-insights/
+        - name: เพิ่มข้อมูลและการคาดคะเน
+          href: /learn/modules/enrich-data/
     - name: แหล่งข้อมูล
       items:
         - name: ภาพรวมของแหล่งข้อมูล
@@ -54,10 +48,8 @@
           href: audience-insights/connect-power-query.md
         - name: เพิ่มโฟลเดอร์โมเดลข้อมูลทั่วไปเป็นแหล่งข้อมูล
           href: audience-insights/connect-common-data-model.md
-        - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse
+        - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Dataverse
           href: audience-insights/connect-dataverse-managed-lake.md
-        - name: เพิ่ม Azure Synapse Analytics
-          href: audience-insights/connect-synapse.md
         - name: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูล
           href: audience-insights/incremental-refresh-data-sources.md
         - name: การนำเข้าข้อมูลแบบในเวลาจริง
@@ -82,18 +74,16 @@
           href: audience-insights/relationships.md
         - name: แสดงรายการกิจกรรมลูกค้า
           href: audience-insights/activities.md
-        - name: กำหนดการแมปความหมาย
+        - name: กำหนดการแม็ปความหมาย
           href: audience-insights/semantic-mappings.md
     - name: การเพิ่มข้อมูล
       items:
         - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
           href: audience-insights/enrichment-hub.md
-        - name: แบรนด์และความสนใจ
+        - name: แบรนด์และความเกี่ยวข้องของความสนใจ
           href: audience-insights/enrichment-microsoft.md
         - name: ที่อยู่ขั้นสูง
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: ข้อมูลบริษัทที่ปรับปรุงแล้ว
-          href: audience-insights/enrichment-enhanced-company-data.md
         - name: เพิ่มด้วยแผนที่ Azure
           href: audience-insights/enrichment-azure-maps.md
         - name: เพิ่มข้อมูลด้วย HERE Technologies
@@ -102,8 +92,6 @@
           href: audience-insights/enrichment-leadspace.md
         - name: เพิ่มด้วย Experian
           href: audience-insights/enrichment-experian.md
-        - name: เพิ่มด้วยข้อมูล Office 365
-          href: audience-insights/enrichment-office.md
         - name: เพิ่มข้อมูลด้วยการนําเข้าแบบกําหนดเองของ SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: เซ็กเมนต์
@@ -122,12 +110,8 @@
           href: audience-insights/find-similar-customer-segments.md
     - name: การวัด
       items:
-        - name: ภาพรวมของการวัด
+        - name: กำหนดมาตรการและ KPI
           href: audience-insights/measures.md
-        - name: สร้างการวัดใหม่
-          href: audience-insights/measure-builder.md
-        - name: ใช้เทมเพลตการวัด
-          href: audience-insights/measure-templates.md
     - name: การคาดคะเน
       items:
         - name: คาดคะเนข้อมูลด้วยความช่วยเหลือของ AI
@@ -142,8 +126,6 @@
               href: audience-insights/predict-subscription-churn.md
             - name: คาดคะเนการเลิกทำธุรกรรม
               href: audience-insights/predict-transactional-churn.md
-            - name: วิเคราะห์ความคิดเห็นในคำติชมของลูกค้า
-              href: audience-insights/sentiment-analysis.md
             - name: ใช้โมเดลที่กำหนดเองจาก Azure Machine Learning
               href: audience-insights/custom-models.md
             - name: กรอกข้อมูลที่ขาดหายไปบางส่วน
@@ -160,6 +142,8 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: การทดลองกับ Azure Machine Learning
               href: audience-insights/azure-machine-learning-experiments.md
+            - name: การทดลองด้วย Azure Machine Learning Studio
+              href: audience-insights/machine-learning-studio-experiments.md
         - name: จัดการการคาดคะเน
           href: audience-insights/manage-predictions.md
         - name: สร้างเซ็กเมนต์ตามการคาดคะเน
@@ -248,16 +232,18 @@
           href: audience-insights/connections.md
         - name: จัดการหลายสภาพแวดล้อม?
           href: audience-insights/manage-environments.md
+        - name: ภาษาที่รองรับ
+          href: audience-insights/supported-languages.md
         - name: การรักษาความปลอดภัย
           items:
             - name: นํา Key Vault ของคุณมาเอง
               href: audience-insights/use-azure-key-vault.md
             - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูล ADLS โดยใช้บริการหลัก
               href: audience-insights/connect-service-principal.md
-            - name: ส่งออกบันทึกการวินิจฉัย
-              href: audience-insights/diagnostics.md
     - name: ความสามารถในการเพิ่ม
       items:
+        - name: รวมข้อมูลเว็บจากข้อมูลเชิงลึกของการมีส่วนร่วม
+          href: audience-insights/integrate-engagement-insights.md
         - name: ตรวจทาน Schema เอนทิตีใน Common Data Model
           href: audience-insights/entity-schemas.md
         - name: ข้อมูล Customer Insights ใน Dataverse
@@ -266,45 +252,85 @@
           href: audience-insights/apis.md
         - name: การอ้างอิง API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: การจัดการความยินยอม (พรีวิว)
+- name: ข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
   items:
     - name: ศูนย์รวมรายการวิธีใช้
-      href: consent-management/index.yml
-    - name: ภาพรวมของความสามารถ
-      href: consent-management/overview.md
+      href: engagement-insights/index.yml
+    - name: เกี่ยวกับข้อมูลเชิงลึกของการมีส่วนร่วม
+      href: engagement-insights/overview.md
     - name: การเริ่มต้นใช้งาน
       items:
-        - name: การเริ่มต้นใช้งาน
-          href: consent-management/get-started.md
+        - name: คู่มือเริ่มต้นใช้งานด่วน
+          href: engagement-insights/get-started.md
+        - name: สร้างสภาพแวดล้อม
+          href: engagement-insights/create-new-environment.md
+        - name: สร้างพื้นที่ทำงาน
+          href: engagement-insights/create-workspace.md
+        - name: บันทึกเหตุการณ์จากเว็บไซต์และแอปสำหรับอุปกรณ์เคลื่อนที่
+          href: engagement-insights/developer-resources.md
         - name: แนวคิดและศัพท์เฉพาะ
-          href: consent-management/glossary.md
-    - name: นำเข้าข้อมูลความยินยอม
+          href: engagement-insights/glossary.md
+    - name: กิจกรรม
       items:
-        - name: นำเข้าข้อมูลความยินยอม
-          href: consent-management/import-consent-data.md
-        - name: ตั้งค่าข้อมูลความยินยอมและใช้การกำหนดลักษณะความยินยอม
-          href: consent-management/set-consent-rules.md
-    - name: จัดการข้อมูลความยินยอม
+        - name: สร้างและแก้ไขเหตุการณ์
+          href: engagement-insights/refined-events.md
+        - name: รับรู้เหตุการณ์บนเว็บจากผู้เยี่ยมชมที่มีการตรวจสอบสิทธิ์ก่อนหน้า
+          href: engagement-insights/unknown-to-known.md
+        - name: ส่งออกเหตุการณ์
+          href: engagement-insights/export-events.md
+    - name: รายงาน
       items:
-        - name: เปิดใช้งานกฎการยินยอมในข้อมูลเชิงลึกของผู้ชม
-          href: audience-insights/activate-consent.md
-        - name: จัดการกฎความยินยอมเริ่มต้นในเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชม
-          href: audience-insights/change-default-consent-rules.md
-    - name: จัดการการตั้งค่าและผู้ใช้
+        - name: ดูรายงาน
+          href: engagement-insights/view-reports.md
+        - name: สร้างรายงานแบบกําหนดเอง
+          href: engagement-insights/custom-reports.md
+        - name: สร้างรายงานโปรไฟล์แบบรวม
+          href: engagement-insights/profile-reports.md
+        - name: ดูและสร้างมิติ
+          href: engagement-insights/dimensions.md
+        - name: ดูและสร้างเมตริก
+          href: engagement-insights/metrics.md
+        - name: ดูและสร้างเซ็กเมนต์
+          href: engagement-insights/segments.md
+    - name: การวิเคราะห์การเดินทาง
       items:
-        - name: กำหนดค่าการตั้งค่าระบบ
-          href: consent-management/system-settings.md
-        - name: จัดการผู้ใช้และสิทธิ์
-          href: consent-management/manage-users.md
-    - name: ใช้ข้อมูลความยินยอม
+        - name: สร้างและจัดการรายงานช่วงระยะ
+          href: engagement-insights/funnel-reports.md
+    - name: ทรัพยากรนักพัฒนา
       items:
-        - name: สร้างการคาดคะเนด้วยข้อมูลความยินยอม
-          href: consent-management/predictions-consent-data.md
-- name: ข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
-  href: engagement-insights/overview.md
+        - name: ภาพรวมของทรัพยากรนักพัฒนา
+          href: engagement-insights/developer-resources.md
+        - name: บทช่วยสอน SDK บนเว็บ
+          href: engagement-insights/advanced-SDK-implementation.md
+        - name: ตัวอย่าง SDK เว็บ
+          href: engagement-insights/websdk-sample.md
+        - name: บทช่วยสอน Android SDK
+          href: engagement-insights/get-started-android.md
+        - name: ตัวอย่าง Android SDK
+          href: engagement-insights/androidsdk-sample.md
+        - name: บทช่วยสอนเกี่ยวกับ iOS SDK
+          href: engagement-insights/get-started-ios.md
+        - name: ตัวอย่าง iOS SDK
+          href: engagement-insights/iossdk-sample.md
+    - name: การดูแลจัดการ
+      items:
+        - name: บทบาท และสิทธิ์
+          href: engagement-insights/user-roles.md
+        - name: จัดการสภาพแวดล้อมและพื้นที่ทำงาน
+          href: engagement-insights/manage-environments-workspaces.md
+        - name: จัดการคุกกี้และความยินยอมของผู้ใช้
+          href: engagement-insights/user-consent-storage.md
+    - name: ความพร้อมใช้งานในภูมิภาค
+      href: engagement-insights/regional-availability.md
+- name: แบ่งปันข้อมูลระหว่างความสามารถต่างๆ
+  items:
+    - name: เชื่อมโยงข้อมูลเชิงลึกของการมีส่วนร่วมกับข้อมูลเชิงลึกของผู้ชม
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: ใช้เซ็กเมนต์ข้อมูลเชิงลึกของผู้ชมในรายงานข้อมูลเชิงลึกของการมีส่วนร่วม
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: ใช้มิติข้อมูลประชากรเพื่อแยกข้อมูลพฤติกรรม
+      href: engagement-insights/curate-dimensions.md
 - name: ขีดจำกัดบริการ
   href: service-limits.md
 - name: สิทธิ์และคำขอ DSR
   href: dsr-rights-requests.md
-- name: รับการสนับสนุน
-  href: /power-platform/admin/get-help-support

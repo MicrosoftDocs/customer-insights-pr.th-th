@@ -3,18 +3,18 @@ title: เริ่มต้นใช้งาน Android SDK
 description: เรียนรู้วิธีปรับแต่งให้เป็นแบบส่วนตัว และเรียกใช้ Android SDK
 author: britl
 ms.reviewer: mhart
-ms.custom: intro-internal
 ms.author: britl
-ms.date: 10/19/2021
+ms.date: 09/15/2021
+ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: b06822b2c2d6a859bdf808f7800baef43c4ab874
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226192"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494298"
 ---
 # <a name="get-started-with-the-android-sdk"></a>เริ่มต้นใช้งาน Android SDK
 
@@ -42,12 +42,12 @@ ms.locfileid: "8226192"
 
 - หากคุณไม่มีพื้นที่ทำงานอยู่ ให้เลือก **พื้นที่ทำงานใหม่** และทำตามขั้นตอนเพื่อสร้าง [พื้นที่ทำงานใหม่](create-workspace.md)
 
-- หลังจากที่คุณสร้างพื้นที่ทำงานแล้ว ให้ไปที่ **ผู้ดูแลระบบ** > **พื้นที่ทำงาน** แล้วจากนั้น เลือก **คู่มือการติดตั้ง**
+- หลังจากที่คุณสร้างพื้นที่ทำงานแล้ว ให้ไปที่ **ผู้ดูแลระบบ** > **พื้นที่ทำงาน** แล้วจากนั้น เลือก **คู่มือการติดตั้ง** 
 
 ## <a name="configure-the-sdk"></a>กำหนดค่า SDK
 
 เมื่อคุณดาวน์โหลด SDK แล้ว คุณสามารถใช้งานใน Android Studio เพื่อเปิดใช้งานและกำหนดเหตุการณ์ได้ มีสองวิธีในการดำเนินการ:
-### <a name="option-1-use-jitpack-recommended"></a>ตัวเลือกที่ 1: ใช้ JitPack (แนะนำ)
+### <a name="option-1-using-jitpack-recommended"></a>ตัวเลือกที่ 1: การใช้ JitPack (แนะนำ)
 1. เพิ่มที่เก็บ JitPack ไปยังรูท `build.gradle` ของคุณ:
     ```gradle
     allprojects {
@@ -61,12 +61,12 @@ ms.locfileid: "8226192"
 1. เพิ่มการขึ้นต่อกัน:
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### <a name="option-2-use-download-link"></a>ตัวเลือกที่ 2: ใช้ลิงก์ดาวน์โหลด
+### <a name="option-2-using-download-link"></a>ตัวเลือกที่ 2: การใช้ลิงก์ดาวน์โหลด
 1. ดาวน์โหลด [Android SDK ของข้อมูลเชิงลึกของการมีส่วนร่วม](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) และวางไฟล์ `eiandroidsdk-debug.aar` ในโฟลเดอร์ `libs`
 
 1. เปิดไฟล์ `build.gradle` ระดับโครงการของคุณ และเพิ่มส่วนย่อยต่อไปนี้:
@@ -83,23 +83,22 @@ ms.locfileid: "8226192"
     }
     ```
 
-## <a name="enable-auto-instrumentation"></a>เปิดใช้งานการใช้เครื่องมืออัตโนมัติ
-
-1. เพิ่มสิทธิ์สำหรับเครือข่ายและอินเทอร์เน็ตในไฟล์ `AndroidManifest.xml` ของคุณที่อยู่ใต้โฟลเดอร์ `manifests`
+1. เพิ่มสิทธิ์สำหรับเครือข่ายและอินเทอร์เน็ตในไฟล์ `AndroidManifest.xml` ของคุณที่อยู่ใต้โฟลเดอร์ `manifests` 
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
+    
+1. ตั้งค่าการกำหนดค่า SDK ของข้อมูลเชิงลึกของการมีส่วนร่วมผ่านไฟล์ `AndroidManifest.xml` ของคุณ 
 
-1. ตั้งค่าการกำหนดค่า SDK ของข้อมูลเชิงลึกของการมีส่วนร่วมผ่านไฟล์ `AndroidManifest.xml` ของคุณ
-
+## <a name="enable-auto-instrumentation"></a>เปิดใช้งานการใช้เครื่องมืออัตโนมัติ
 1. คัดลอกส่วนย่อย XML จาก **คู่มือการติดตั้ง** `Your-Ingestion-Key` ควรถูกเติมข้อมูลโดยอัตโนมัติ
 
    > [!NOTE]
    > คุณไม่จำเป็นต้องแทนที่ส่วน `${applicationId}` จะถูกเติมข้อมูลโดยอัตโนมัติ
-
+   
 
    ```xml
    <application>
@@ -117,24 +116,20 @@ ms.locfileid: "8226192"
    </application>
    ```
 
-1. เปิดใช้งานหรือปิดใช้งานการบันทึกอัตโนมัติของเหตุการณ์ `View` โดยการตั้งค่าฟิลด์ `autoCapture` ด้านบนเป็น `true` หรือ `false` 
+1. เปิดใช้งานหรือปิดใช้งานการบันทึกอัตโนมัติของเหตุการณ์ `View` โดยการตั้งค่าฟิลด์ `autoCapture` ด้านบนเป็น `true` หรือ `false` ปัจจุบัน เหตุการณ์ `Action` ต้องมีการเพิ่มเหตุการณ์ด้วยตนเอง
 
-   >[!NOTE]
-   >ต้องเพิ่มเหตุการณ์ `Action` ด้วยตนเอง
-
-1. (ทางเลือก) การกำหนดค่าอื่นๆ รวมถึงการตั้งค่า URL ตัวรวบรวมจุดสิ้นสุด สามารถเพิ่มได้ภายใต้ข้อมูลเมตาของคีย์การส่งผ่านข้อมูลใน `AndroidManifest.xml`
-
-   ```xml
+1. (ทางเลือก) การกำหนดค่าอื่นๆ รวมถึงการตั้งค่า URL ตัวรวบรวมจุดสิ้นสุด สามารถเพิ่มได้ภายใต้ข้อมูลเมตาของคีย์การส่งผ่านข้อมูลใน `AndroidManifest.xml`:
+    ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-   ```
+    ```
 
 ## <a name="implement-custom-events"></a>ใช้เหตุการณ์ที่กำหนดเอง
 
 หลังจากที่คุณเริ่มต้น SDK คุณสามารถทำงานกับเหตุการณ์และคุณสมบัติของเหตุการณ์ในสภาพแวดล้อม `MainActivity`
 
-
+    
 Java:
 ```java
 Analytics analytics = new Analytics();
@@ -146,7 +141,7 @@ var analytics = Analytics()
 ```
 
 ### <a name="set-property-for-all-events-optional"></a>ตั้งค่าคุณสมบัติสำหรับเหตุการณ์ทั้งหมด (ไม่บังคับ)
-
+    
 Java:
 ```java
 analytics.setProperty("year", 2021);

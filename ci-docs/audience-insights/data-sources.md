@@ -2,22 +2,19 @@
 title: ใช้แหล่งข้อมูลที่จะนำเข้าข้อมูล
 description: เรียนรู้วิธีการนำเข้าข้อมูลจากแหล่งต่างๆ
 ms.date: 12/06/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-data-sources
-- ci-create-data-source
-- customerInsights
-ms.openlocfilehash: e7bcf82c4fe3625ef791ec2b0a7651be0356a006
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: ca979527c9cb8418e12af4a74513033047e4901c
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354072"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046621"
 ---
 # <a name="data-sources-overview"></a>ภาพรวมของแหล่งข้อมูล
 
@@ -31,10 +28,9 @@ ms.locfileid: "8354072"
 
 คุณสามารถเพิ่มแหล่งข้อมูลต่อไปนี้ได้:
 
-- [ด้วยการใช้ตัวเชื่อมต่อ Power Query ที่มีอยู่มากมาย](connect-power-query.md)
-- [จากโฟลเดอร์ Common Data Model](connect-common-data-model.md)
-- [จากที่จัดเก็บข้อมูลดิบ Microsoft Dataverse ของคุณเอง](connect-dataverse-managed-lake.md)
-- [จากฐานข้อมูล Azure Synapse Analytics](connect-synapse.md)
+- [ตัวเชื่อมต่อ Power Query](connect-power-query.md)
+- [Common Data Model](connect-common-data-model.md)
+- [ที่จัดเก็บข้อมูลดิบ Microsoft Dataverse](connect-dataverse-managed-lake.md)
 
 > [!NOTE]
 > หากคุณกำลังใช้รุ่นทดลองใช้ ส่วนวิธีการนำเข้าจะมีตัวเลือก **ไลบรารีข้อมูล Customer Insights** เลือกตัวเลือกนี้เพื่อเลือกตัวอย่างชุดข้อมูลสำหรับอุตสาหกรรมต่างๆ ดูข้อมูลเพิ่มเติมที่ [การทดลองใช้ Dynamics 365 Customer Insights](../trial-signup.md)

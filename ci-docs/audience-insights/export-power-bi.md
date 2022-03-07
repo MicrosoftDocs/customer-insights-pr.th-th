@@ -1,19 +1,20 @@
 ---
 title: ตัวเชื่อมต่อ Power BI
 description: เรียนรู้วิธีการใช้ตัวเชื่อมต่อ Dynamics 365 Customer Insights ใน Power BI
-ms.date: 07/23/2021
-ms.reviewer: mhart
+ms.date: 09/21/2020
+ms.reviewer: sthe
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225579"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477111"
 ---
 # <a name="connector-for-power-bi-preview"></a>ตัวเชื่อมต่อสำหรับ Power BI (การแสดงตัวอย่าง)
 
@@ -22,7 +23,7 @@ ms.locfileid: "8225579"
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
 - คุณมีโปรไฟล์ลูกค้าแบบรวม
-- รุ่นล่าสุดของ [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) ติดตั้งอยู่บนคอมพิวเตอร์ของคุณ [เรียนรู้เพิ่มเติมเกี่ยวกับ Power BI Desktop](/power-bi/desktop-what-is-desktop)
+- เวอร์ชันล่าสุดของ [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) ถูกติดตั้งบนคอมพิวเตอร์ของคุณ [เรียนรู้เพิ่มเติมเกี่ยวกับ Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop)
 
 ## <a name="configure-the-connector-for-power-bi"></a>กำหนดค่าตัวเชื่อมต่อสำหรับ Power BI
 
@@ -46,7 +47,7 @@ ms.locfileid: "8225579"
 
 ## <a name="large-data-sets"></a>ชุดข้อมูลขนาดใหญ่
 
-ตัวเชื่อมต่อ Customer Insights สำหรับ Power BI ได้รับการออกแบบมาเพื่อทำงานกับชุดข้อมูลที่มีโปรไฟล์ลูกค้ามากถึง 1 ล้านโปรไฟล์ การนำเข้าชุดข้อมูลขนาดใหญ่อาจได้ผล แต่ต้องใช้เวลานาน นอกจากนี้ กระบวนการอาจหมดเวลา เนื่องจากข้อจำกัดของ Power BI สำหรับข้อมูลเพิ่มเติม โปรดดู [Power BI: คำแนะนำสำหรับชุดข้อมูลขนาดใหญ่](/power-bi/admin/service-premium-what-is#large-datasets) 
+ตัวเชื่อมต่อ Customer Insights สำหรับ Power BI ได้รับการออกแบบมาเพื่อทำงานกับชุดข้อมูลที่มีโปรไฟล์ลูกค้ามากถึง 1 ล้านโปรไฟล์ การนำเข้าชุดข้อมูลขนาดใหญ่อาจได้ผล แต่ต้องใช้เวลานาน นอกจากนี้ กระบวนการอาจหมดเวลา เนื่องจากข้อจำกัดของ Power BI สำหรับข้อมูลเพิ่มเติม โปรดดู [Power BI: คำแนะนำสำหรับชุดข้อมูลขนาดใหญ่](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets) 
 
 ### <a name="work-with-a-subset-of-data"></a>ทำงานกับชุดข้อมูลย่อย
 
@@ -66,12 +67,7 @@ ms.locfileid: "8225579"
    - ตรวจสอบว่ามีความสัมพันธ์ที่สร้างขึ้นระหว่างเอนทิตีสองรายการที่ถูกรวมอยู่ในกระบวนการรวมหรือไม่ มีความสัมพันธ์โดยนัยที่กำหนดไว้ระหว่างเอนทิตีทั้งหมดที่รวมอยู่ในกระบวนการรวม
 3. ลบความสัมพันธ์ที่ซ้ำกันที่ระบุ
 
-หลังจากการลบความสัมพันธ์ที่ซ้ำกันออก ให้ลองกำหนดค่าตัวเชื่อมต่อ Power BI อีกครั้ง สภาพแวดล้อมควรพร้อมใช้งานในขณะนี้
-
-### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>ข้อผิดพลาดในฟิลด์วันที่เมื่อโหลดเอนทิตีใน Power BI Desktop
-
-เมื่อโหลดเอนทิตีที่มีฟิลด์ที่มีรูปแบบวันที่ เช่น MM/DD/YYYY คุณอาจพบข้อผิดพลาดเนื่องจากรูปแบบภาษาไม่ตรงกัน ความไม่ตรงกันนี้เกิดขึ้นเมื่อไฟล์ Power BI Desktop ของคุณถูกตั้งค่าเป็นภาษาอื่นที่ไม่ใช่อังกฤษ (สหรัฐอเมริกา) เนื่องจากฟิลด์วันที่ในข้อมูลเชิงลึกของผู้ชมจะถูกบันทึกในรูปแบบสหรัฐอเมริกา
-
-ไฟล์ Power BI Desktop มีการตั้งค่าภาษาเดียว ซึ่งจะใช้เมื่อเรียกดูข้อมูล เพื่อให้ฟิลด์วันที่เหล่านี้ตีความอย่างถูกต้อง ให้ตั้งค่าภาษาของไฟล์ .BPI เป็นภาษาอังกฤษ (สหรัฐอเมริกา) [เรียนรู้วิธีเปลี่ยนภาษาของไฟล์ Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop)
+หลังจากการลบความสัมพันธ์ที่ซ้ำกันออก ให้ลองตั้งค่าคอนฟิกตัวเชื่อมต่อ Power BI อีกครั้ง สภาพแวดล้อมควรพร้อมใช้งานในขณะนี้
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

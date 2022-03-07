@@ -4,17 +4,18 @@ summary: นำเข้า รวมเข้าด้วยกัน และ
 metadata:
   title: คู่มือข้อมูลเชิงลึกกลุ่มเป้าหมาย
   description: ศูนย์ความช่วยเหลือพร้อมลิงก์หลักสำหรับข้อมูลเชิงลึกกลุ่มเป้าหมาย
+  ms.service: customer-insights
   ms.subservice: audience-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
-  ms.date: 03/02/2022
-  ms.openlocfilehash: 44fac5d82313c491cf838404d9641e2d14261366
-  ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+  ms.date: 10/16/2020
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 02/16/2022
-  ms.locfileid: "8231860"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745744"
 landingContent:
 - title: เกี่ยวกับข้อมูลเชิงลึกกลุ่มเป้าหมาย
   linkLists:
@@ -24,12 +25,8 @@ landingContent:
       url: overview.md
     - text: คุณลักษณะใหม่และที่ปรับปรุง
       url: whats-new-audience-insights.md
-    - text: ค้นหาข้อมูลเชิงลึกของผู้ชม
-      url: https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/
-  - linkListType: learn
-    links:
-    - text: เส้นทางการเรียนรู้ของ Customer Insights
-      url: /learn/paths/build-customer-insights/
+    - text: ไซต์ของชุมชน
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
 - title: รวมข้อมูล
   linkLists:
   - linkListType: how-to-guide
@@ -40,11 +37,7 @@ landingContent:
       url: data-unification.md
     - text: การทำความเข้าใจเอนทิตี
       url: entities.md
-  - linkListType: learn
-    links:
-    - text: สร้างโปรไฟล์แบบรวม
-      url: /learn/modules/unified-customer-profile/
-- title: รับข้อมูลเชิงลึก
+- title: เพิ่มและปรับปรุงข้อมูล
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -52,13 +45,9 @@ landingContent:
       url: enrichment-hub.md
     - text: กำหนดค่าความสัมพันธ์
       url: relationships.md
-    - text: กรอกข้อมูลด้วยการคาดคะเน
-      url: predictions.md
-  - linkListType: learn
-    links:
-    - text: เพิ่มข้อมูลและคาดคะเน
-      url: /learn/modules/enrich-data/
-- title: ต่อยอดข้อมูลของคุณ
+    - text: แสดงรายการกิจกรรมลูกค้า
+      url: activities.md
+- title: รับข้อมูลเชิงลึก
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -66,12 +55,8 @@ landingContent:
       url: segments.md
     - text: สร้างการวัด
       url: measures.md
-    - text: แสดงรายการกิจกรรมลูกค้า
-      url: activities.md
-  - linkListType: learn
-    links:
-    - text: ทำงานกับแอป
-      url: /learn/modules/working-with-customer-insights/
+    - text: กรอกข้อมูลด้วยการคาดคะเน
+      url: predictions.md
 - title: ส่งออกข้อมูลลูกค้า
   linkLists:
   - linkListType: how-to-guide
@@ -82,21 +67,13 @@ landingContent:
       url: customer-card-add-in.md
     - text: ตัวเชื่อมต่อ Power BI
       url: export-power-bi.md
-  - linkListType: learn
-    links:
-    - text: จัดการการเชื่อมต่อจากภายนอก
-      url: /learn/modules/configure-third-party-connections/
 - title: จัดการแอป
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: กำหนดค่าระบบ
+    - text: ตั้งค่าคอนฟิกระบบ
       url: system.md
     - text: กำหนดสิทธิ์ของผู้ใช้
       url: permissions.md
     - text: จัดการหลายสภาพแวดล้อม?
       url: manage-environments.md
-  - linkListType: learn
-    links:
-    - text: จัดการ Customer Insights
-      url: /learn/modules/administer-customer-data-platform/

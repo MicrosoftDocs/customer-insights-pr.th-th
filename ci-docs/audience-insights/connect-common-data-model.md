@@ -1,24 +1,20 @@
 ---
 title: เชื่อมต่อข้อมูล Common Data Model กับบัญชี Azure Data Lake
 description: ทำงานกับข้อมูล Common Data Model โดยใช้ Azure Data Lake Storage
-ms.date: 01/25/2022
+ms.date: 12/06/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-data-sources
-- ci-create-data-source
-- ci-attach-cdm
-- customerInsights
-ms.openlocfilehash: 1e3b28316c06d6a15dd5690837c365b0677a882e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354992"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900220"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>เชื่อมต่อกับโฟลเดอร์ Common Data Model โดยใช้บัญชี Azure Data Lake
 
@@ -29,8 +25,6 @@ ms.locfileid: "8354992"
 - ข้อมูลใน Azure Data Lake ของคุณต้องเป็นไปตามมาตรฐาน Common Data Model รูปแบบอื่น ๆ ไม่ได้รับการรองรับในขณะนี้
 
 - การนำเข้าข้อมูลรองรับบัญชีที่เก็บข้อมูล Azure Data Lake *รุ่น2* เท่านั้น คุณไม่สามารถใช้บัญชีที่เก็บข้อมูล Azure Data Lake รุ่น1 เพื่อนำเข้าข้อมูล
-
-- บัญชีที่เก็บข้อมูล Azure Data Lake ต้อง [เปิดใช้งาน Namespace ตามลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace)
 
 - การตรวจสอบสิทธิ์กับบริการหลักของ Azure ตรวจสอบให้แน่ใจว่าได้กำหนดค่าไว้ในผู้เช่าของคุณ ดูข้อมูลเพิ่มเติมที่ [เชื่อมต่อข้อมูลเชิงลึกกลุ่มเป้าหมายกับบัญชี Azure Data Lake Storage รุ่น2 ที่มีบริการหลักของ Azure](connect-service-principal.md)
 

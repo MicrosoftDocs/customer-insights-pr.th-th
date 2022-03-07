@@ -2,21 +2,19 @@
 title: ข้อมูลเชิงลึกเซ็กเมนต์สำหรับเซ็กเมนต์ที่มีอยู่
 description: รับข้อมูลเชิงลึกเกี่ยวกับเซ็กเมนต์ที่มีอยู่เพื่อดูความแตกต่างและความเหมือนกัน
 ms.date: 06/10/2020
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-segment-insights
-- customerInsights
-ms.openlocfilehash: 8ae832c69c89bee08b8ef36ed99233b6e8e5a0f4
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 90ebcaab896c628b04e751ad9857e924749895e7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355590"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595357"
 ---
 # <a name="segment-insights-preview"></a>ข้อมูลเชิงลึกของเซ็กเมนต์ (ตัวอย่าง)
 
@@ -52,7 +50,7 @@ ms.locfileid: "8355590"
 
 - จำนวนสมาชิกที่ทับซ็อนเซ็กเมนต์ที่เลือกสำหรับการวิเคราะห์
 - จำนวนสมาชิกที่รวมอยู่ในเซ็กเมนต์ใดเซ็กเมนต์หนึ่ง แต่ไม่ได้อยู่ในเซ็กเมนต์ที่เหลือ
-- หากคุณเลือกฟิลด์ในขณะกำหนดค่าการวิเคราะห์การซ้อนทับกัน คุณจะพบฟิลด์เหล่านั้นในแท็บที่เกี่ยวข้อง คุณสามารถใช้รายการแบบหล่นลงของตัวกรองเพื่อเลือกระดับแอตทริบิวต์ที่สนใจ และตารางด้านล่างจะแสดงข้อมูลที่เกี่ยวข้อง
+- หากคุณเลือกฟิลด์ในขณะกำหนดค่าการวิเคราะห์การซ้อนทับกัน คุณจะพบฟิลด์เหล่านั้นในแท็บที่เกี่ยวข้อง คุณสามารถใช้ตัวกรองแบบหล่นลง เพื่อเลือกระดับแอตทริบิวต์ที่น่าสนใจ และตารางที่ด้านล่างจะแสดงข้อมูลที่เกี่ยวข้อง
 
 ## <a name="segment-differentiators"></a>ตัวจำแนกเซ็กเมนต์
 
