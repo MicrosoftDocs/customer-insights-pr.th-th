@@ -5,16 +5,15 @@ author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
 ms.date: 10/01/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 5ccdcb47db597154cf79b9f2e8fc238ab75dfde9
-ms.sourcegitcommit: d9965f4bfc09391698a34042f6b44367e53819e3
+ms.openlocfilehash: 03b0b4bab0d5d9c2ae641c85aac8174ec1668d45
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7582945"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229763"
 ---
 # <a name="view-reports"></a>ดูรายงาน
 

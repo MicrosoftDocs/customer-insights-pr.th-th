@@ -1,20 +1,19 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Constant Contact
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Constant Contact
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 8841945814397ffa70c56638a8bed25499c1a06f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124296"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226426"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Constant Contact (พรีวิว)
 
@@ -28,10 +27,10 @@ ms.locfileid: "6124296"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ได้ถึง 1 ล้านโปรไฟล์ต่อการส่งออกไปยัง Constant Contact
+- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 1 ล้านรายต่อการส่งออกไปยัง Constant Contact
 - การส่งออกไปยัง Constant Contact นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกมากถึง 1 ล้านโปรไฟล์ไปยัง Constant Contact อาจใช้เวลาถึง 1 ชั่วโมงจึงจะเสร็จสมบูรณ์ 
-- จำนวนโปรไฟล์ที่คุณสามารถส่งออกไปยัง Constant Contact นั้นขึ้นอยู่และจำกัดตามสัญญาของคุณกับ Constant Contact
+- การส่งออกโปรไฟล์ลูกค้าสูงสุด 1 ล้านรายไปยัง Constant Contact อาจใช้เวลานานถึง 1 ชั่วโมงจึงจะเสร็จสมบูรณ์ 
+- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Constant Contact จะขึ้นอยู่กับและจำกัดตามสัญญาของคุณกับ Constant Contact
 
 ## <a name="set-up-connection-to-constant-contact"></a>ตั้งค่าการเชื่อมต่อกับ Constant Contact
 
@@ -47,7 +46,7 @@ ms.locfileid: "6124296"
 
 1. เลือก **เชื่อมต่อ** เพื่อเริ่มการเชื่อมต่อ Constant Contact
 
-1. เลือก **รับรองความถูกต้องกับ AdRoll** และให้ข้อมูลรับรองผู้ดูแลระบบของคุณสำหรับ Constant Contact 
+1. เลือก **รับรองความถูกต้องด้วยการติดต่ออย่างต่อเนื่อง** และให้ข้อมูลประจำตัวผู้ดูแลระบบของคุณสำหรับการติดต่ออย่างต่อเนื่อง 
 
 1. เลือก **เพิ่มตัวเองเป็นผู้ใช้ที่ส่งออก** และให้ข้อมูลประจำตัวของ Customer Insights ของคุณ
 
@@ -55,7 +54,7 @@ ms.locfileid: "6124296"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ ดูข้อมูลเพิ่มเติมที่ [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
@@ -65,7 +64,7 @@ ms.locfileid: "6124296"
 
 1. ป้อน [**รหัสรายการ Constant Contact**](https://app.constantcontact.com/pages/contacts/ui#lists) ของคุณ เปิดรายการใน Constant Contact เพื่อค้นหารหัสรายการใน URL
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ในโปรไฟล์ลูกค้าแบบรวมของคุณที่แสดงที่อยู่อีเมลของลูกค้า จำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Constant Contact
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า จำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Constant Contact
 
 1. หรือคุณสามารถส่งออก ชื่อ และ นามสกุล เป็นฟิลด์เพิ่มเติมเพื่อสร้างอีเมลที่เป็นส่วนตัวมากขึ้น เลือก **เพิ่มแอตทริบิวต์** เพื่อแมปฟิลด์เหล่านี้
 

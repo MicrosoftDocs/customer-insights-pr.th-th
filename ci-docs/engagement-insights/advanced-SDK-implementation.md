@@ -5,16 +5,15 @@ author: britl
 ms.reviewer: mhart
 ms.author: britl
 ms.date: 09/27/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 4c6646ecadbb604000d6c95b685cf6e420969a6d
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: a083d8215f295af0884257a016b62b8c7e4ab2c7
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558725"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227221"
 ---
 # <a name="advanced-web-sdk-instrumentation"></a>เครื่องมือวัด SDK บนเว็บขั้นสูง
 
