@@ -1,7 +1,7 @@
 ---
 title: เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลจาก Microsoft
 description: ใช้ข้อมูลที่เป็นกรรมสิทธิ์จาก Microsoft เพื่อเพิ่มข้อมูลลูกค้าของคุณด้วยความสัมพันธ์และส่วนแบ่งของเสียง
-ms.date: 11/11/2021
+ms.date: 03/02/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -12,12 +12,12 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 77972475c9a448186cee3b1b62eeda7b1996edfc
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 12704ec46832e9463e6115db6c4df64e72bf4f97
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355352"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372712"
 ---
 # <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยความสัมพันธ์และส่วนแบ่งของเสียง (พรีวิว)
 
@@ -129,9 +129,9 @@ ms.locfileid: "8355352"
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>ผลการเพิ่มข้อมูล
+## <a name="enrichment-results"></a>ผลลัพธ์การเพิ่มความสมบูรณ์
 
-หลังจากการรันกระบวนการเพิ่มข้อมูล ไปที่ **การเพิ่มข้อมูลของฉัน** เพื่อตรวจสอบจำนวนลูกค้าที่เพิ่มข้อมูลทั้งหมด และการแยกแบรนด์หรือความสนใจในโปรไฟล์ลูกค้าที่ได้รับการเพิ่มข้อมูล
+หลังจากการรันกระบวนการเพิ่มข้อมูล ไปที่ **การเพิ่มความสมบูรณ์ของฉัน** เพื่อตรวจสอบจำนวนลูกค้าที่เพิ่มข้อมูลทั้งหมด และการแยกแบรนด์หรือความสนใจในโปรไฟล์ลูกค้าที่ได้รับการเพิ่มข้อมูล
 
 :::image type="content" source="media/my-enrichments.png" alt-text="การแสดงตัวอย่างของผลลัพธ์หลังจากเรียกใช้กระบวนการเพิ่มข้อมูล":::
 

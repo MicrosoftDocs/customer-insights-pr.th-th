@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355914"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376531"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>นำ Azure Key Vault ของคุณมาเอง (พรีวิว)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355914"
 
 - คุณต้องมีการสมัครใช้งาน Azure ที่ใช้งานอยู่
 
-- คุณมีบทบาท [ผู้ดูแลระบบ](permissions.md#administrator) ในข้อมูลเชิงลึกของผู้ชม เรียนรู้เพิ่มเติมเกี่ยวกับ [สิทธิ์ของผู้ใช้ในข้อมูลเชิงลึกของผู้ชม](permissions.md#assign-roles-and-permissions).
+- คุณมีบทบาท [ผู้ดูแลระบบ](permissions.md#admin) ในข้อมูลเชิงลึกของผู้ชม เรียนรู้เพิ่มเติมเกี่ยวกับ [สิทธิ์ของผู้ใช้ในข้อมูลเชิงลึกของผู้ชม](permissions.md#assign-roles-and-permissions).
 
 - คุณมีบทบาท [ผู้มีส่วนร่วม](/azure/role-based-access-control/built-in-roles#contributor) และ [ผู้ดูแลระบบการเข้าถึงของผู้ใช้](/azure/role-based-access-control/built-in-roles#user-access-administrator) บน key vault หรือกลุ่มทรัพยากรที่ key vault อยู่ สำหรับข้อมูลเพิ่มเติม ไปที่ [เพิ่มหรือลบการกำหนดบทบาท Azure โดยใช้พอร์ทัล Azure](/azure/role-based-access-control/role-assignments-portal) หากคุณไม่มีบทบาทผู้ดูแลระบบการเข้าถึงของผู้ใช้ใน key vault คุณต้องตั้งค่าสิทธิ์ในการควบคุมการเข้าถึงตามบทบาทสำหรับหลักบริการของ Azure สำหรับ Dynamics 365 Customer Insights โดยแยกจากกัน ทำตามขั้นตอนเพื่อ [ใช้หลักบริการของ Azure](connect-service-principal.md) สำหรับ key vault ที่ควรถูกเชื่อมโยง
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ae2a3b7c05e9ed860da31853c47af2aec8634e7a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 18cc32a169e79794d2d3203d462620ab41efaafe
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229055"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455975"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>ตัวเชื่อมต่อ Microsoft Power Apps (ตัวอย่าง)
 
@@ -38,6 +38,8 @@ Customer Insights เป็นหนึ่งในหลายๆ [แหล่
 ### <a name="retrievable-entities"></a>เอนทิตีที่ดึงข้อมูลได้
 
 คุณสามารถดึงข้อมูลเอนทิตี **ลูกค้า** **UnifiedActivity** **เซ็กเมนต์** และ **ContactProfile** ผ่านตัวเชื่อมต่อ Power Apps เท่านั้น ContactProfile พร้อมใช้งานเฉพาะในอินสแตนซ์ข้อมูลเชิงลึกของผู้ชมสำหรับบัญชีธุรกิจ เอนทิตีอื่นๆ จะแสดงขึ้น เนื่องจากตัวเชื่อมต่อที่สำคัญรองรับผ่านทริกเกอร์ใน Power Automate
+
+คุณสามารถโทรได้สูงสุด 100 สายต่อ 60 วินาที คุณสามารถเรียกตำแหน่งข้อมูล API ได้หลายครั้งโดยใช้พารามิเตอร์ $skip [เรียนรู้เพิ่มเติมเกี่ยวกับพารามิเตอร์ $skip](/connectors/customerinsights/#get-items-from-an-entity)
 
 ### <a name="delegation"></a>การมอบสิทธิ์
 

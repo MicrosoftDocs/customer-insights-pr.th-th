@@ -1,7 +1,7 @@
 ---
 title: จัดการสิทธิ์ผู้ใช้
 description: เรียนรู้เกี่ยวกับสิทธิ์และบทบาทผู้ใช้
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355960"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376761"
 ---
 # <a name="user-permissions"></a>สิทธิ์ผู้ใช้
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355960"
 - จัดการการกำหนดค่าและเพิ่มประสิทธิภาพโปรไฟล์ลูกค้าจากหน้า **การเพิ่มข้อมูล** (สำหรับการเพิ่มข้อมูลของบุคคลที่หนึ่งเท่านั้น)
 - จัดการและสร้างการส่งออกตามการเชื่อมต่อที่แบ่งปันกับผู้สนับสนุน [เรียนรู้เพิ่มเติมเกี่ยวกับวิธีที่ผู้ดูแลระบบอนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
-## <a name="administrator"></a>ผู้ดูแลระบบ
+## <a name="admin"></a>เขตปกครอง
 
 - สิทธิ์ทั้งหมดที่พร้อมให้ผู้มีส่วนร่วมใช้งาน
 - เปลี่ยนการตั้งค่าในเพจ **ระบบ** รวมถึงภาษาที่ใช้งานและการรีเฟรชกำหนดการสำหรับกระบวนการระบบของคุณ
@@ -60,6 +60,12 @@ ms.locfileid: "8355960"
 - ติดตั้งและใช้งาน **Add-in การ์ดลูกค้า**.
 - เพิ่มและใช้ **ตัวเชื่อมต่อ Power Apps**
 - เปิดใช้งานการใช้ [Customer Insights API](apis.md)
+- [กำหนดความเป็นเจ้าของสภาพแวดล้อม](manage-environments.md#change-the-owner-of-an-environment) ให้ผู้ดูแลระบบรายอื่น
+
+## <a name="admin-owner"></a>ผู้ดูแลระบบ (เจ้าของ)
+
+- สิทธิ์ทั้งหมดที่มีให้ผู้ดูแลระบบ
+- [รีเซ็ตและลบ](manage-environments.md#reset-an-existing-environment) สภาพแวดล้อม
 
 ## <a name="assign-roles-and-permissions"></a>มอบหมายบทบาทและสิทธิ์
 

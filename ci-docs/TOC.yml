@@ -58,6 +58,8 @@
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: เพิ่ม Azure Synapse Analytics
           href: audience-insights/connect-synapse.md
+        - name: การเพิ่มแหล่งข้อมูล
+          href: audience-insights/data-sources-enrichment.md
         - name: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูล
           href: audience-insights/incremental-refresh-data-sources.md
         - name: การนำเข้าข้อมูลแบบในเวลาจริง
@@ -100,7 +102,9 @@
           href: audience-insights/enrichment-here.md
         - name: เพิ่มข้อมูลด้วย Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: เพิ่มด้วย Experian
+        - name: เพิ่มข้อมูลด้วย LiveRamp
+          href: audience-insights/enrichment-liveramp.md
+        - name: เพิ่มข้อมูลด้วย Experian
           href: audience-insights/enrichment-experian.md
         - name: เพิ่มด้วยข้อมูล Office 365
           href: audience-insights/enrichment-office.md

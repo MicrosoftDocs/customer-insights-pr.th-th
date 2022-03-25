@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 47239bd7f0c89742cf9c673bb2ebe4c41d853233
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228497"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376853"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>เพิ่มโปรไฟล์ลูกค้าด้วยข้อมูลการมีส่วนร่วม (พรีวิว)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8228497"
 - คุณต้องมีสิทธิ์การใช้งาน Office 365 บนระบบคลาวด์ที่ใช้งานอยู่
 - คุณมี [โปรไฟล์ลูกค้าแบบรวม](customer-profiles.md) ตาม [บัญชีธุรกิจ](work-with-business-accounts.md)
 - สภาพแวดล้อม Customer Insights ของคุณต้องมี [องค์กร Microsoft Dataverse เชื่อมต่ออยู่](create-environment.md#step-3-connect-to-microsoft-dataverse)
-- คุณมีสิทธิ์ของ [ผู้ดูแลระบบ](permissions.md#administrator)
+- คุณมีสิทธิ์ของ [ผู้ดูแลระบบ](permissions.md#admin)
 - คุณได้รับหรือสามารถได้รับความยินยอมจากผู้ดูแลระบบผู้เช่า Office 365 ของคุณในการใช้ข้อมูล Office 365 ที่จะให้ **ข้อมูลเชิงลึกสำหรับองค์กร** ภายในแอปพลิเคชัน Dynamics 365
 
 ## <a name="configure-the-enrichment"></a>กำหนดค่าการเพิ่มข้อมูล
@@ -67,9 +67,9 @@ ms.locfileid: "8228497"
 
 [!INCLUDE [progress-details-pane](../includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>ผลการเพิ่มข้อมูล
+## <a name="enrichment-results"></a>ผลลัพธ์การเพิ่มความสมบูรณ์
 
-หลังจากเรียกใช้กระบวนการการเพิ่มความสมบูรณ์แล้ว ไปที่ **การเพิ่มความสมบูรณ์ของฉัน** เพื่อทบทวนผลการเพิ่มความสมบูรณ์ คุณจะพบจำนวนลูกค้าที่ได้รับการเพิ่มทั้งหมดและภาพรวมของผลลัพธ์การเพิ่มความสมบูรณ์ ซึ่งรวมถึงจำนวนอีเมลและการประชุมที่ประมวลผล จำนวนวันที่รวบรวมข้อมูล และอื่นๆ
+หลังจากเรียกใช้กระบวนการการเพิ่มความสมบูรณ์แล้ว ไปที่ **การเพิ่มความสมบูรณ์ของฉัน** เพื่อทบทวนผลลัพธ์การเพิ่มความสมบูรณ์ คุณจะพบจำนวนลูกค้าที่ได้รับการเพิ่มทั้งหมดและภาพรวมของผลลัพธ์การเพิ่มความสมบูรณ์ ซึ่งรวมถึงจำนวนอีเมลและการประชุมที่ประมวลผล จำนวนวันที่รวบรวมข้อมูล และอื่นๆ
 
 นอกจากนี้คุณยังพบตารางที่มีจำนวนลูกค้าที่เพิ่มข้อมูลในช่วงเวลาหนึ่งและการแสดงตัวอย่างของข้อมูลในการเพิ่มความสมบูรณ์  
 
