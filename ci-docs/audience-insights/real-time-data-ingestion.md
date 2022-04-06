@@ -1,5 +1,5 @@
 ---
-title: การนำเข้าข้อมูลแบบเรียลไทม์และข้อจำกัด
+title: การเพิ่มข้อมูลแบบในเวลาจริง (พรีวิว)
 description: ข้อมูลทั่วไปเกี่ยวกับความสามารถแบบเรียลไทม์ในข้อมูลเชิงลึกกลุ่มเป้าหมาย
 ms.date: 10/27/2020
 ms.reviewer: mhart
@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 138704445d52df3336af6af60420f0bd0ee0c639
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355498"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464136"
 ---
-# <a name="real-time-data-ingestion-preview"></a>การเพิ่มข้อมูลแบบในเวลาจริง (ดูตัวอย่าง)
+# <a name="real-time-data-ingestion-preview"></a>การเพิ่มข้อมูลแบบในเวลาจริง (พรีวิว)
 
 ฟังก์ชันการทำงานแบบในเวลาจริงช่วยให้คุณเห็นการโต้ตอบล่าสุดที่ลูกค้าทำกับผลิตภัณฑ์หรือบริการของคุณภายในไม่กี่วินาที
 

@@ -1,23 +1,23 @@
 ---
 title: สร้างสภาพแวดล้อมใน Customer Insights
 description: ขั้นตอนในการสร้างสภาพแวดล้อมด้วยการสมัครใช้งานที่ได้รับสิทธิ์ใช้งานสำหรับ Dynamics 365 Customer Insights
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: a538237322615f69f0a5cb43d394275bf79af00b
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354118"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491941"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>สร้างสภาพแวดล้อมในข้อมูลเชิงลึกของผู้ชม
 
@@ -83,14 +83,16 @@ ms.locfileid: "8354118"
 การเชื่อมต่อกับสภาพแวดล้อม Dataverse ของคุณยังช่วยให้คุณสามารถ [นำเข้าข้อมูลจากแหล่งข้อมูลในสถานที่โดยใช้กระแสข้อมูล Power Platform และเกตเวย์](data-sources.md#add-data-from-on-premises-data-sources) นอกจากนี้คุณยังสามารถใช้ [โมเดลการคาดคะเนแบบสำเร็จรูป](predictions-overview.md?tabs=b2c#out-of-box-models) โดยการเชื่อมต่อกับสภาพแวดล้อม Dataverse ได้ด้วย
 
 > [!IMPORTANT]
-> Customer Insights และ Dataverse ต้องอยู่ในภูมิภาคเดียวกันจึงจะสามารถแชร์ข้อมูลได้
+> 1. Customer Insights และ Dataverse ต้องอยู่ในภูมิภาคเดียวกันจึงจะสามารถแชร์ข้อมูลได้
+> 1. คุณต้องมีบทบาทผู้ดูแลระบบส่วนกลางในสภาพแวดล้อม Dataverse ตรวจสอบว่า [สภาพแวดล้อม Dataverse นี้เชื่อมโยง](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) กับกลุ่มความปลอดภัยที่กำหนดหรือไม่และตรวจสอบว่าคุณได้เพิ่มสภาพแวดล้อมลงในกลุ่มความปลอดภัยเหล่านั้นแล้ว
+> 1. ไม่มีสภาพแวดล้อม Customer Insights ที่มีอยู่เชื่อมโยงกับสภาพแวดล้อม Dataverse นั้น เรียนรู้วิธีการ [ลบการเชื่อมต่อกับสภาพแวดล้อม Dataverse ที่มีอยู่](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment)
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="การแชร์ข้อมูลกับ Microsoft Dataverse อัตโนมัติเปิดใช้งานสำหรับอินสแตนซ์ใหม่ทั้งหมด":::
 
-> [!NOTE]
-> Customer Insights ไม่สนับสนุนสถานการณ์การแบ่งปันข้อมูลต่อไปนี้:
-> - หากคุณบันทึกข้อมูลทั้งหมดไปยัง Azure Data Lake Storage ของคุณเอง คุณจะไม่สามารถเปิดใช้งานการแบ่งปันข้อมูลกับที่จัดเก็บข้อมูลดิบที่มีการจัดการ Dataverse ได้
-> - หากคุณเปิดใช้งานการแบ่งปันข้อมูลด้วยที่จัดเก็บข้อมูลดิบที่จัดการ Dataverse คุณจะไม่สามารถ [สร้างค่าที่คาดคะเนหรือขาดหายไปในเอนทิตี](predictions.md)
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการเปิดใช้งานการแชร์ข้อมูลกับ Microsoft Dataverse จาก Azure Data Lake Storage ของคุณเอง ดูที่ [เชื่อมต่อกับ Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse)
+
+Customer Insights ไม่สนับสนุนสถานการณ์การแบ่งปันข้อมูลต่อไปนี้:
+- หากคุณเปิดใช้งานการแบ่งปันข้อมูลด้วยที่จัดเก็บข้อมูลดิบที่จัดการ Dataverse คุณจะไม่สามารถ [สร้างค่าที่คาดคะเนหรือขาดหายไปในเอนทิตี](predictions.md)
 
 ### <a name="step-4-finalize-the-settings"></a>ขั้นตอนที่ 4: ดำเนินการตั้งค่าให้เสร็จสมบูรณ์
 

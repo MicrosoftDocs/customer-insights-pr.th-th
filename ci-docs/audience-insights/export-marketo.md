@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec286bb6a90fb4d18e89caf9166aa659b29d668e
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232014"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487538"
 ---
 # <a name="export-segments-to-marketo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Marketo (ตัวอย่าง)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8232014"
 
 1. ป้อน **[รหัสรายการ Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** ของคุณ รหัสรายการเป็นค่าตัวเลขเท่านั้น ตัวอย่างเช่น หากรหัสรายการ Marketo ของคุณคือ ST12345A7 ให้ลบอักขระก่อนและหลังตัวเลข และป้อน `12345` 
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า 
+1. ในส่วน **การจับคู่ข้อมูล** ให้เลือกอย่างน้อยหนึ่งฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้าหรือรหัส Marketo ของลูกค้า 
 
 1. คุณสามารถส่งออก **ชื่อ** **นามสกุล** **เมือง** **รัฐ** และ **ประเทศ/ภูมิภาค**  เพื่อสร้างอีเมลที่เป็นส่วนตัวมากขึ้น เลือก **เพิ่มแอตทริบิวต์** เพื่อแมปฟิลด์เหล่านี้
 

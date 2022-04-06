@@ -1,7 +1,7 @@
 ---
 title: เชื่อมต่อกับตารางใน Microsoft Dataverse
 description: นำเข้าข้อมูลจากที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,25 +11,24 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354165"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464127"
 ---
-# <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>เชื่อมต่อกับข้อมูลใน Data Lake ที่มีการจัดการ Microsoft Dataverse
+# <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>เชื่อมต่อกับข้อมูลในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse
 
-
-
-บทความนี้ให้ข้อมูลเกี่ยวกับวิธีการที่ผู้ใช้ Dataverse สามารถเชื่อมต่อกับเอนทิตีการวิเคราะห์ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ Microsoft Dataverse 
+บทความนี้ให้ข้อมูลเกี่ยวกับวิธีการที่ผู้ใช้ Dataverse สามารถเชื่อมต่อกับเอนทิตีการวิเคราะห์ในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse 
 
 > [!NOTE]
 > คุณต้องเป็นผู้ดูแลระบบในองค์กร Dataverse เพื่อดำเนินการและดูรายชื่อของเอนทิตีที่มีอยู่ในที่จัดเก็บข้อมูลดิบที่มีการจัดการ
 
 ## <a name="important-considerations"></a>ข้อควรพิจารณาที่สำคัญ
 
-ข้อมูลที่เก็บไว้ในบริการออนไลน์ เช่น Azure Data Lake Storage อาจถูกเก็บไว้ในตำแหน่งที่แตกต่างจากที่ที่มีการประมวลผลหรือจัดเก็บข้อมูลใน Dynamics 365 Customer Insights การนำเข้าหรือการเชื่อมต่อไปยังข้อมูลที่จัดเก็บในบริการออนไลน์ หมายถึงคุณยอมรับว่าสามารถถ่ายโอนข้อมูลและจัดเก็บด้วย Dynamics 365 Customer Insights [เรียนรู้เพิ่มเติมที่ Microsoft Trust Center](https://www.microsoft.com/trust-center)
+1. ข้อมูลที่เก็บไว้ในบริการออนไลน์ เช่น Azure Data Lake Storage อาจถูกเก็บไว้ในตำแหน่งที่แตกต่างจากที่ที่มีการประมวลผลหรือจัดเก็บข้อมูลใน Dynamics 365 Customer Insights การนำเข้าหรือการเชื่อมต่อไปยังข้อมูลที่จัดเก็บในบริการออนไลน์ หมายถึงคุณยอมรับว่าสามารถถ่ายโอนข้อมูลและจัดเก็บด้วย Dynamics 365 Customer Insights [เรียนรู้เพิ่มเติมที่ Microsoft Trust Center](https://www.microsoft.com/trust-center)
+2. มองเห็นได้เฉพาะเอนทิตี Dataverse ที่เปิดใช้งาน [การติดตามการเปลี่ยนแปลง](/power-platform/admin/enable-change-tracking-control-data-synchronization) เท่านั้น เอนทิตีเหล่านี้สามารถส่งออกไปยังที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Dataverse และใช้ใน Customer Insights ตาราง Dataverse แบบสำเร็จูปมีการเปิดใช้งานการติดตามการเปลี่ยนแปลงตามค่าเริ่มต้น คุณต้องเปิดการติดตามการเปลี่ยนแปลงสำหรับตารางที่กำหนดเอง การตรวจสอบว่าตาราง Dataverse เปิดใช้งานการติดตามการเปลี่ยนแปลงหรือไม่ ไปที่ [Power Apps](https://make.powerapps.com) > **ข้อมูล** > **ตาราง** ค้นหาตารางที่คุณสนใจและเลือก ไปที่ **การตั้งค่า** > **ตัวเลือกขั้นสูง** และตรวจสอบการตั้งค่า **ติดตามการเปลี่ยนแปลง**
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>เชื่อมต่อกับที่จัดเก็บที่มีการจัดการของ Dataverse
 

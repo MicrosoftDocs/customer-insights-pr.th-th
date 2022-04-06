@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376439"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523692"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>การส่งต่อบันทึกใน Dynamics 365 Customer Insights ด้วย Azure Monitor (พรีวิว)
 
@@ -230,7 +230,7 @@ Customer Insights มีสองประเภท:
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | ตกลง      | ตกลง  | `WorkflowEvent` เสมอเมื่อทำเครื่องหมายเหตุการณ์บันทึกเป็นเหตุการณ์เวิร์กโฟลว์                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | ตกลง      | ตกลง  | ตัวระบุของการเรียกใช้เวิร์กโฟลว์ เหตุการณ์เวิร์กโฟลว์และงานทั้งหมดภายในการดำเนินการเวิร์กโฟลว์มี `workflowJobId` เหมือนกัน                                                                                                                                   |
-| `properties.operationType`                   | ตกลง      | ตกลง  | ตัวระบุของการดำเนินงาน ดูที่ [ชนิดการดำเนินงาน].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | ตกลง      | ตกลง  | ตัวระบุของการดำเนินงาน ดูที่ [ชนิดการดำเนินงาน](#operation-types)                                                                                                                                                                               |
 | `properties.tasksCount`                      | ตกลง      | ไม่   | เวิร์กโฟลว์เท่านั้น จํานวนของงานที่เวิร์กโฟลว์ทริกเกอร์                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | ตกลง      | ไม่   | เลือกได้ เหตุการณ์เวิร์กโฟลว์เท่านั้น Azure Active Directory [objectId ของผู้ใช้](/azure/marketplace/find-tenant-object-id#find-user-object-id) ที่ทริกเกอร์เวิร์กโฟลว์ ดูเพิ่มเติมที่ `properties.workflowSubmissionKind`                                   |
 | `properties.workflowType`                    | ตกลง      | ไม่   | การรีเฟรชแบบ `full` หรือ `incremental`                                                                                                                                                                                                                            |
