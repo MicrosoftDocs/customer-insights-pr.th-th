@@ -44,6 +44,8 @@
           href: audience-insights/create-environment.md
         - name: สำรวจข้อมูลเชิงลึกของผู้ชม
           href: audience-insights/home.md
+        - name: ทำงานกับแท็กและคอลัมน์
+          href: audience-insights/work-with-tags-columns.md
         - name: ทำงานกับบัญชีธุรกิจ
           href: audience-insights/work-with-business-accounts.md
     - name: แหล่งข้อมูล

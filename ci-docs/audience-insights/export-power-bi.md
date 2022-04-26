@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225579"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552079"
 ---
 # <a name="connector-for-power-bi-preview"></a>ตัวเชื่อมต่อสำหรับ Power BI (การแสดงตัวอย่าง)
 
@@ -72,6 +72,6 @@ ms.locfileid: "8225579"
 
 เมื่อโหลดเอนทิตีที่มีฟิลด์ที่มีรูปแบบวันที่ เช่น MM/DD/YYYY คุณอาจพบข้อผิดพลาดเนื่องจากรูปแบบภาษาไม่ตรงกัน ความไม่ตรงกันนี้เกิดขึ้นเมื่อไฟล์ Power BI Desktop ของคุณถูกตั้งค่าเป็นภาษาอื่นที่ไม่ใช่อังกฤษ (สหรัฐอเมริกา) เนื่องจากฟิลด์วันที่ในข้อมูลเชิงลึกของผู้ชมจะถูกบันทึกในรูปแบบสหรัฐอเมริกา
 
-ไฟล์ Power BI Desktop มีการตั้งค่าภาษาเดียว ซึ่งจะใช้เมื่อเรียกดูข้อมูล เพื่อให้ฟิลด์วันที่เหล่านี้ตีความอย่างถูกต้อง ให้ตั้งค่าภาษาของไฟล์ .BPI เป็นภาษาอังกฤษ (สหรัฐอเมริกา) [เรียนรู้วิธีเปลี่ยนภาษาของไฟล์ Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop)
+ไฟล์ Power BI Desktop มีการตั้งค่าภาษาเดียว ซึ่งจะใช้เมื่อเรียกดูข้อมูล เพื่อให้ฟิลด์วันที่เหล่านี้ตีความอย่างถูกต้อง ให้ตั้งค่าภาษาของไฟล์ .BPI เป็นภาษาอังกฤษ (สหรัฐอเมริกา) [เรียนรู้วิธีเปลี่ยนภาษาของไฟล์ Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

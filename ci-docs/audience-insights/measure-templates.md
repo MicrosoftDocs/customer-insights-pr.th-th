@@ -1,22 +1,22 @@
 ---
 title: สร้างการวัดจากเทมเพลต
 description: กำหนดการวัดโดยใช้เทมเพลตสำหรับกรณีการใช้งานทั่วไป
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: 0fe846691825b93732cbbe6d1c942a79e4a3934f
-ms.sourcegitcommit: cf6a0ed44915908a44c70889a2dd199a9d0d4798
+ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/28/2022
-ms.locfileid: "8359929"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529424"
 ---
 # <a name="use-a-template-to-build-a-measure"></a>ใช้เทมเพลตเพื่อสร้างการวัด
 
@@ -51,7 +51,9 @@ ms.locfileid: "8359929"
 
 1. ตรวจสอบข้อมูลที่จำเป็นและเลือก **เริ่มต้นใช้งาน** หากคุณมีข้อมูลทั้งหมด
 
-1. ในบานหน้าต่าง **แก้ไขชื่อ** ตั้งชื่อสำหรับการวัดของคุณและเอนทิตีผลลัพธ์ 
+1. เลือก **แก้ไขรายละเอียด** ถัดจากชื่อการวัด ระบุชื่อสำหรับการวัด หรือเพิ่ม [แท็ก](work-with-tags-columns.md#manage-tags) ไปยังการวัด
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="กล่องโต้ตอบแก้ไขรายละเอียด":::
 
 1. เลือก **สำเร็จ**
 

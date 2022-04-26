@@ -1,19 +1,19 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Azure Synapse Analytics
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับ Azure Synapse Analytics
-ms.date: 01/05/2022
+ms.date: 04/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 8ace9fbee4fbd8822629a39d5902e176f8511cb5
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231335"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560410"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ส่งออกข้อมูลไปยัง Azure Synapse Analytics (พรีวิว)
 
@@ -28,21 +28,21 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 
 ## <a name="prerequisites-in-customer-insights"></a>ข้อกำหนดเบื้องต้นใน Customer Insights
 
-* คุณมีบทบาท **ผู้ดูแลระบบ** ในข้อมูลเชิงลึกของผู้ชม เรียนรู้เพิ่มเติมเกี่ยวกับ [การตั้งค่าสิทธิ์ผู้ใช้ในข้อมูลเชิงลึกของผู้ชม](permissions.md#assign-roles-and-permissions)
+* บัญชีผู้ใช้ Azure Active Directory (AD) ของคุณมีบทบาท **ผู้ดูแลระบบ** ใน Customer Insights เรียนรู้เพิ่มเติมเกี่ยวกับ [การตั้งค่าสิทธิ์ผู้ใช้ในข้อมูลเชิงลึกของผู้ชม](permissions.md#assign-roles-and-permissions)
 
 ใน Azure: 
 
 - การสมัครใช้งาน Azure ที่ใช้งานอยู่
 
-- หากใช้บัญชี Azure Data Lake Storage Gen2 ใหม่ *หลักบริการสำหรับข้อมูลเชิงลึกของผู้ชม* ต้องการสิทธิ์ **ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ** เรียนรู้เพิ่มเติมเกี่ยวกับ [การเชื่อมต่อกับบัญชี Azure Data Lake Storage Gen2 ที่มีหลักบริการของ Azure สำหรับข้อมูลเชิงลึกของผู้ชม](connect-service-principal.md) Data Lake Storage Gen2 **จำเป็นต้อง** เปิดใช้งาน [เนมสเปซตามลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace)
+- หากใช้บัญชี Azure Data Lake Storage รุ่น2 ใหม่ *บริการหลักสำหรับ Customer Insights* จะต้องการสิทธิ์ **ผู้สนับสนุนข้อมูลในที่เก็บข้อมูล Blob** เรียนรู้เพิ่มเติมเกี่ยวกับ [การเชื่อมต่อกับบัญชี Azure Data Lake Storage Gen2 ที่มีหลักบริการของ Azure สำหรับข้อมูลเชิงลึกของผู้ชม](connect-service-principal.md) Data Lake Storage Gen2 **จำเป็นต้อง** เปิดใช้งาน [เนมสเปซตามลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace)
 
-- ในกลุ่มทรัพยากรที่พื้นที่ทำงาน Azure Synapse ตั้งอยู่ *หลักบริการ* และ *ผู้ใช้สำหรับข้อมูลเชิงลึกของผู้ชม* ต้องได้รับมอบหมายสิทธิ์ **ผู้อ่าน** เป็นอย่างน้อย สำหรับข้อมูลเพิ่มเติม โปรดดู [มอบหมายบทบาท Azure โดยใช้พอร์ทัล Azure](/azure/role-based-access-control/role-assignments-portal)
+- ในกลุ่มทรัพยากรที่มี Azure Synapse workspace อยู่ *บริการหลัก* และผู้ใช้ *Azure AD ที่มีสิทธิ์ผู้ดูแลระบบใน Customer Insights* ต้องได้รับการกำหนดสิทธิ์ **ผู้อ่าน** เป็นอย่างน้อย สำหรับข้อมูลเพิ่มเติม โปรดดู [มอบหมายบทบาท Azure โดยใช้พอร์ทัล Azure](/azure/role-based-access-control/role-assignments-portal)
 
-- *ผู้ใช้* ต้องการสิทธิ์ **ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ** ในบัญชี Azure Data Lake Storage Gen2 ที่ซึ่งมีข้อมูลอยู่และเชื่อมโยงกับพื้นที่ทำงาน Azure Synapse เรียนรู้เพิ่มเติมเกี่ยวกับ [การใช้พอร์ทัล Azure เพื่อมอบหมายบทบาท Azure สำหรับการเข้าถึงข้อมูล blob และคิว](/azure/storage/common/storage-auth-aad-rbac-portal) และ [สิทธิ์ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)
+- ผู้ใช้ *Azure AD ที่มีสิทธิ์ของผู้ดูแลระบบใน Customer Insights* จะต้องการสิทธิ์ **ผู้สนับสนุนข้อมูลในที่เก็บข้อมูล Blob** ในบัญชี Azure Data Lake Storage รุ่น2 ที่มีข้อมูลอยู่และเชื่อมโยงกับพื้นที่ทำงาน Azure Synapse workspace เรียนรู้เพิ่มเติมเกี่ยวกับ [การใช้พอร์ทัล Azure เพื่อมอบหมายบทบาท Azure สำหรับการเข้าถึงข้อมูล blob และคิว](/azure/storage/common/storage-auth-aad-rbac-portal) และ [สิทธิ์ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)
 
 - *[ข้อมูลประจำตัวที่มีการจัดการของพื้นที่ทำงาน Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* ต้องการสิทธิ์ **ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ** ในบัญชี Azure Data Lake Storage Gen2 ที่ซึ่งมีข้อมูลอยู่และเชื่อมโยงกับพื้นที่ทำงาน Azure Synapse เรียนรู้เพิ่มเติมเกี่ยวกับ [การใช้พอร์ทัล Azure เพื่อมอบหมายบทบาท Azure สำหรับการเข้าถึงข้อมูล blob และคิว](/azure/storage/common/storage-auth-aad-rbac-portal) และ [สิทธิ์ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)
 
-- บนพื้นที่ทำงาน Azure Synapse *หลักบริการสำหรับข้อมูลเชิงลึกของผู้ชม* ต้องการบทบาท **ผู้ดูแลระบบ Synapse** ที่ได้รับมอบหมาย สำหรับข้อมูลเพิ่มเติม โปรดดู [วิธีตั้งค่าการควบคุมการเข้าถึงสำหรับพื้นที่ทำงาน Synapse ของคุณ](/azure/synapse-analytics/security/how-to-set-up-access-control)
+- บน Azure Synapse workspace *บริการหลักสำหรับ Customer Insights* จะต้องได้รับการกำหนดบทบาท **ผู้ดูแลระบบ Synapse** สำหรับข้อมูลเพิ่มเติม โปรดดู [วิธีตั้งค่าการควบคุมการเข้าถึงสำหรับพื้นที่ทำงาน Synapse ของคุณ](/azure/synapse-analytics/security/how-to-set-up-access-control)
 
 ## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>ตั้งค่าการเชื่อมต่อและส่งออกไปยัง Azure Synapse
 
