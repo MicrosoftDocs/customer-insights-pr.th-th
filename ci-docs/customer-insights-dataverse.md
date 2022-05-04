@@ -1,0 +1,141 @@
+---
+title: ข้อมูล Customer Insights ใน Microsoft Dataverse
+description: ใช้เอนทิตี Customer Insights เป็นตารางใน Microsoft Dataverse
+ms.date: 04/05/2022
+ms.reviewer: mhart
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: m-hartmann
+ms.author: wimohabb
+manager: shellyha
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 85995cbd7f797810bfb6ecdc8a24d56542f0b5a9
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.translationtype: HT
+ms.contentlocale: th-TH
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8647551"
+---
+# <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>ทำงานกับข้อมูล Customer Insights ใน Microsoft Dataverse
+
+Customer Insights มีตัวเลือกในการทำให้เอนทิตีเอาต์พุตพร้อมใช้งานใน [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro) การผสานรวมนี้ช่วยให้การแบ่งปันข้อมูลและการพัฒนาแบบกำหนดเองทำได้ง่ายโดยใช้แนวทางแบบเขียนโค้ดเล็กน้อย/แบบไม่ต้องใช้โค้ด [เอนทิตีเอาต์พุต](#output-entities) มีเป็นตารางในสภาพแวดล้อม Dataverse คุณสามารถใช้ข้อมูลนี้สำหรับแอปพลิเคชันอื่นตามตาราง Dataverse ตารางเหล่านี้เปิดใช้งานสถานการณ์ เช่น เวิร์กโฟลว์อัตโนมัติผ่าน Power Automate หรือการสร้างแอปด้วย Power Apps การใช้งานปัจจุบันส่วนใหญ่สนับสนุนการค้นหาที่สามารถดึงข้อมูลจากเอนทิตี Customer Insights ที่มีอยู่สำหรับรหัสลูกค้าที่กำหนด
+
+## <a name="attach-a-dataverse-environment-to-customer-insights"></a>แนบสภาพแวดล้อม Dataverse กับ Customer Insights
+
+**องค์กรที่มีอยู่**
+
+ผู้ดูแลระบบสามารถกำหนดค่า Customer Insights เพื่อ [ใช้สภาพแวดล้อม Dataverse ที่มีอยู่](create-environment.md) เมื่อพวกเขาสร้างสภาพแวดล้อม Customer Insights การระบุ URL ไปยังสภาพแวดล้อม Dataverse โดยแนบกับสภาพแวดล้อม Customer Insights ใหม่ของพวกเขา สภาพแวดล้อม Customer Insights และ Dataverse ต้องโฮสต์อยู่ในภูมิภาคเดียวกัน 
+
+หากคุณไม่ต้องการใช้สภาพแวดล้อม Dataverse ที่มีอยู่ ระบบจะสร้างสภาพแวดล้อมใหม่สำหรับข้อมูล Customer Insights ในผู้เช่าของคุณ 
+
+> [!NOTE]
+> หากองค์กรของคุณใช้ Dataverse ในผู้เช่าอยู่แล้ว สิ่งสำคัญที่ต้องระลึกไว้คือ [การสร้างสภาพแวดล้อม Dataverse มีการควบคุมโดยผู้ดูแลระบบ](/power-platform/admin/control-environment-creation) ตัวอย่างเช่น หากคุณกำลังตั้งค่าสภาพแวดล้อม Customer Insights ใหม่ด้วยบัญชีองค์กรของคุณ และผู้ดูแลระบบได้ปิดใช้งานการสร้างสภาพแวดล้อมการทดลองใช้ Dataverse สำหรับทุกคนยกเว้นผู้ดูแลระบบ คุณจะไม่สามารถสร้างสภาพแวดล้อมการทดลองใช้ใหม่ได้
+> 
+> สภาพแวดล้อมการทดลองใช้ Dataverse ที่สร้างขึ้นใน Customer Insights มีพื้นที่เก็บข้อมูล 3 GB ซึ่งจะไม่นับรวมในความจุโดยรวมที่ให้สิทธิ์สำหรับผู้เช่า การสมัครใช้งานแบบเสียค่าบริการจะได้รับการให้สิทธิ์ Dataverse 15 GB สำหรับฐานข้อมูล และ 20 GB สำหรับที่เก็บไฟล์
+
+**องค์กรใหม่**
+
+หากคุณสร้างองค์กรใหม่เมื่อตั้งค่า Customer Insights ระบบจะสร้างสภาพแวดล้อม Dataverse ใหม่ในองค์กรให้คุณโดยอัตโนมัติ
+
+## <a name="output-entities"></a>เอนทิตีเอาต์พุต
+
+เอนทิตีเอาต์พุตบางรายการจาก Customer Insights สามารถใช้งานเป็นตารางใน Dataverse ส่วนด้านล่างอธิบาย Schema ที่คาดไว้ของตารางเหล่านี้
+
+- [โปรไฟล์ลูกค้า](#customerprofile)
+- [AlternateKey](#alternatekey)
+- [UnifiedActivity](#unifiedactivity)
+- [CustomerMeasure](#customermeasure)
+- [การเพิ่มข้อมูลแล้ว](#enrichment)
+- [การคาดคะเน](#prediction)
+- [การเป็นสมาชิกเซ็กเมนต์](#segment-membership)
+
+
+### <a name="customerprofile"></a>โปรไฟล์ลูกค้า
+
+ตารางนี้มีโปรไฟล์ลูกค้าแบบรวมจาก Customer Insights schema สำหรับโปรไฟล์ลูกค้าแบบรวม ขึ้นอยู่กับเอนทิตีและแอตทริบิวต์ที่ใช้ในกระบวนการรวมเข้าด้วยกัน schema โปรไฟล์ลูกค้ามักจะมีชุดย่อยของแอตทริบิวต์จาก [คำนิยาม Common Data Model ของ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)
+
+### <a name="alternatekey"></a>AlternateKey
+
+ตาราง AlternateKey ประกอบด้วยคีย์ของเอนทิตี ซึ่งเข้าร่วมในกระบวนการ Unify
+
+|Column  |พิมพ์ข้อความ  |รายละเอียด  |
+|---------|---------|---------|
+|DataSourceName    |String         | ชื่อของแหล่งข้อมูล ตัวอย่าง: `datasource5`        |
+|EntityName        | สตริง        | ชื่อของเอนทิตีใน Customer Insights ตัวอย่าง: `contact1`        |
+|AlternateValue    |สตริง         |รหัสแทนที่แมปกับรหัสลูกค้า ตัวอย่าง: `cntid_1078`         |
+|KeyRing           | ข้อความแบบหลายบรรทัด        | ค่า JSON  </br> ตัวอย่าง: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|รหัสลูกค้า         | String        | ID ของโปรไฟล์ลูกค้าแบบรวม         |
+|AlternateKeyId     | GUID         |  GUID เชิงกำหนดของ AlternateKey ตาม msdynci_identifier       |
+|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> ตัวอย่าง: `testdatasource|contact1|cntid_1078`    |
+
+### <a name="unifiedactivity"></a>UnifiedActivity
+
+ตารางนี้มีกิจกรรมโดยผู้ใช้ที่มีอยู่ใน Customer Insights
+
+| Column            | พิมพ์ข้อความ        | รายละเอียด                                                                              |
+|-------------------|-------------|------------------------------------------------------------------------------------------|
+| รหัสลูกค้า        | String      | รหัสโปรไฟล์ลูกค้า                                                                      |
+| ActivityId        | String      | ID ภายในของกิจกรรมของลูกค้า (คีย์หลัก)                                       |
+| SourceEntityName  | String      | ชื่อเอนทิตีต้นทาง                                                                |
+| SourceActivityId  | String      | คีย์หลักจากเอนทิตีต้นทาง                                                       |
+| ActivityType      | String      | ชนิดกิจกรรมเชิงความหมาย หรือชื่อของกิจกรรมที่กำหนดเอง                                        |
+| ActivityTimeStamp | DATETIME    | การประทับเวลาของกิจกรรม                                                                      |
+| คำนำหน้าชื่อ             | String      | ชื่อเรื่องหรือชื่อกิจกรรม                                                               |
+| รายละเอียด       | String      | Description ของกิจกรรม                                                                     |
+| URL                | String      | ลิงก์ไปยัง URL ภายนอกที่เฉพาะเจาะจงสำหรับกิจกรรม                                         |
+| SemanticData      | สตริง JSON | รวมรายการของคู่ค่าคีย์สำหรับฟิลด์การแมปเชิงความหมายที่เฉพาะเจาะจงสำหรับชนิดของกิจกรรม |
+| RangeIndex        | String      | การประทับเวลา Unix ที่ใช้สำหรับเรียงลำดับไทม์ไลน์กิจกรรมและการสืบค้นช่วงที่มีประสิทธิภาพ |
+| mydynci_unifiedactivityid   | GUID | รหัสภายในของกิจกรรมของลูกค้า (ActivityId) |
+
+### <a name="customermeasure"></a>CustomerMeasure
+
+ตารางนี้ประกอบด้วยข้อมูลผลลัพธ์ของการวัดตามแอตทริบิวต์ของลูกค้า
+
+| Column             | พิมพ์ข้อความ             | รายละเอียด                 |
+|--------------------|------------------|-----------------------------|
+| รหัสลูกค้า         | String           | รหัสโปรไฟล์ลูกค้า        |
+| การวัด           | สตริง JSON      | รวมรายการของคู่ค่าคีย์สำหรับชื่อการวัดและค่าสำหรับลูกค้าที่กำหนด | 
+| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
+| msdynci_customermeasureid | GUID      | รหัสโปรไฟล์ลูกค้า |
+
+
+### <a name="enrichment"></a>การเพิ่มข้อมูลแล้ว
+
+ตารางนี้มีผลลัพธ์ของกระบวนการเพิ่มข้อมูล
+
+| Column               | พิมพ์ข้อความ             |  รายละเอียด                                          |
+|----------------------|------------------|------------------------------------------------------|
+| รหัสลูกค้า           | String           | รหัสโปรไฟล์ลูกค้า                                 |
+| EnrichmentProvider   | String           | ชื่อของผู้ให้บริการสำหรับการเพิ่มข้อมูล                                  |
+| EnrichmentType       | String           | ชนิดของการเพิ่มข้อมูล                                      |
+| ค่า               | สตริง JSON      | รายการของแอตทริบิวต์ที่สร้างโดยกระบวนการเพิ่มข้อมูล |
+| msdynci_enrichmentid | GUID             | GUID เชิงกำหนดที่สร้างจาก msdynci_identifier |
+| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+
+### <a name="prediction"></a>การคาดคะเน
+
+ตารางนี้มีผลลัพธ์ของการคาดคะเนแบบจำลอง
+
+| Column               | พิมพ์ข้อความ        | รายละเอียด                                          |
+|----------------------|-------------|------------------------------------------------------|
+| รหัสลูกค้า           | String      | รหัสโปรไฟล์ลูกค้า                                  |
+| ModelProvider        | String      | ชื่อของผู้ให้บริการของแบบจำลอง                                      |
+| แบบจำลอง                | String      | ชื่อรูปแบบ                                                |
+| ค่า               | สตริง JSON | รายการของแอตทริบิวต์ที่สร้างโดยแบบจำลอง |
+| msdynci_predictionid | GUID        | GUID เชิงกำหนดที่สร้างจาก msdynci_identifier | 
+| msdynci_identifier   | สตริง      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>การเป็นสมาชิกเซ็กเมนต์
+
+ตารางนี้มีข้อมูลการเป็นสมาชิกเซ็กเมนต์ของโปรไฟล์ลูกค้า
+
+| Column        | Type | Description                        |
+|--------------------|--------------|-----------------------------|
+| รหัสลูกค้า        | สตริง       | รหัสโปรไฟล์ลูกค้า        |
+| SegmentProvider      | สตริง       | แอปที่เผยแพร่เซ็กเมนต์      |
+| SegmentMembershipType | สตริง       | ชนิดของลูกค้าสำหรับเรกคอร์ดการเป็นสมาชิกเซ็กเมนต์นี้ รองรับหลายชนิด เช่น ลูกค้า ผู้ติดต่อ หรือลูกค้าองค์กร ค่าเริ่มต้น: ลูกค้า  |
+| เซ็กเมนต์       | สตริง JSON  | รายการเซ็กเมนต์เฉพาะที่โปรไฟล์ลูกค้าเป็นสมาชิก      |
+| msdynci_identifier  | สตริง   | รหัสเฉพาะของเรกคอร์ดการเป็นสมาชิกเซ็กเมนต์ `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | GUID เชิงกำหนดที่สร้างจาก `msdynci_identifier`          |

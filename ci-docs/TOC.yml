@@ -2,6 +2,8 @@
   href: index.yml
 - name: ภาพรวมของผลิตภัณฑ์
   href: overview.md
+- name: คุณลักษณะใหม่และที่ปรับปรุง
+  href: whats-new-customer-insights.md
 - name: แค็ตตาล็อกการเรียนรู้
   items:
     - name: การเริ่มต้นใช้งาน
@@ -10,7 +12,7 @@
       href: /learn/modules/ingest-data-customer-insights/
     - name: สร้างโปรไฟล์ลูกค้าแบบรวม
       href: /learn/modules/unified-customer-profile/
-    - name: ทำงานกับข้อมูลเชิงลึกของผู้ชม
+    - name: ทำงานกับ Customer Insights
       href: /learn/modules/working-with-customer-insights/
     - name: เพิ่มข้อมูลและทำการคาดคะเน
       href: /learn/modules/enrich-data/
@@ -26,266 +28,260 @@
       href: trial-FAQ.md
 - name: เข้าถึงสภาพแวดล้อมของคุณ
   href: 'https://home.ci.ai.dynamics.com/'
-- name: ข้อมูลเชิงลึกของผู้ชม
+- name: การเริ่มต้นใช้งาน
   items:
-    - name: ศูนย์รวมรายการวิธีใช้
-      href: audience-insights/index.yml
-    - name: ภาพรวมของความสามารถ
-      href: audience-insights/overview.md
-    - name: คุณลักษณะใหม่และที่ปรับปรุง
-      href: audience-insights/whats-new-audience-insights.md
-    - name: การเริ่มต้นใช้งาน
+    - name: คู่มือเริ่มต้นใช้งานด่วน
+      href: get-started.md
+    - name: เริ่มต้นด้วยสิทธิ์การใช้งานที่ชำระเงินแล้ว
+      href: paid-license.md
+    - name: สร้างสภาพแวดล้อมใหม่
+      href: create-environment.md
+    - name: สำรวจ Customer Insights
+      href: home.md
+    - name: ทำงานกับแท็กและคอลัมน์
+      href: work-with-tags-columns.md
+    - name: ทำงานกับบัญชีธุรกิจ
+      href: work-with-business-accounts.md
+    - name: รวมกับ Dynamics 365 Marketing
+      href: marketing-get-started.md
+- name: แหล่งข้อมูล
+  items:
+    - name: ภาพรวมของแหล่งข้อมูล
+      href: data-sources.md
+    - name: เพิ่มแหล่งข้อมูลผ่านตัวเชื่อมต่อ Power Query
+      href: connect-power-query.md
+    - name: เพิ่มโฟลเดอร์โมเดลข้อมูลทั่วไปเป็นแหล่งข้อมูล
+      href: connect-common-data-model.md
+    - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Dataverse
+      href: connect-dataverse-managed-lake.md
+    - name: เพิ่ม Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: การเพิ่มแหล่งข้อมูล
+      href: data-sources-enrichment.md
+    - name: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูล
+      href: incremental-refresh-data-sources.md
+    - name: การนำเข้าข้อมูลแบบในเวลาจริง
+      href: real-time-data-ingestion.md
+- name: การรวมข้อมูล
+  items:
+    - name: ภาพรวมการรวมข้อมูล
+      href: data-unification.md
+    - name: แมปเอนทิตีและแอตทริบิวต์
+      href: map-entities.md
+    - name: จับคู่เอนทิตี
+      href: match-entities.md
+    - name: ผสานเอนทิตี
+      href: merge-entities.md
+- name: การเพิ่มข้อมูล
+  items:
+    - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
+      href: enrichment-hub.md
+    - name: แบรนด์และความสนใจ
+      href: enrichment-microsoft.md
+    - name: ที่อยู่ขั้นสูง
+      href: enrichment-enhanced-addresses.md
+    - name: ข้อมูลบริษัทที่ปรับปรุงแล้ว
+      href: enrichment-enhanced-company-data.md
+    - name: เพิ่มด้วยแผนที่ Azure
+      href: enrichment-azure-maps.md
+    - name: เพิ่มข้อมูลด้วย Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: เพิ่มข้อมูลด้วย HERE Technologies
+      href: enrichment-here.md
+    - name: เพิ่มข้อมูลด้วย Leadspace
+      href: enrichment-leadspace.md
+    - name: เพิ่มข้อมูลด้วย LiveRamp
+      href: enrichment-liveramp.md
+    - name: เพิ่มข้อมูลด้วย Experian
+      href: enrichment-experian.md
+    - name: เพิ่มด้วยข้อมูล Office 365
+      href: enrichment-office.md
+    - name: เพิ่มข้อมูลด้วยการนําเข้าแบบกําหนดเองของ SFTP
+      href: enrichment-SFTP-custom-import.md
+- name: โปรไฟล์แบบรวม
+  items:
+    - name: ตรวจทานโปรไฟล์ลูกค้าแบบรวม
+      href: customer-profiles.md
+    - name: กรองโปรไฟล์ลูกค้าแบบรวม
+      href: search-filter-index.md
+    - name: กำหนดกิจกรรมลูกค้า
+      href: activities.md
+- name: Segments
+  items:
+    - name: ภาพรวมของเซ็กเมนต์
+      href: segments.md
+    - name: สร้างเซ็กเมนต์
+      href: segment-builder.md
+    - name: เซ็กเมนต์ที่แนะนำตามการวัด
+      href: suggested-segments.md
+    - name: เซ็กเมนต์ที่แนะนำตามกิจกรรม
+      href: suggested-segments-activity.md
+    - name: รับข้อมูลเชิงลึกเกี่ยวกับเซ็กเมนต์
+      href: segment-insights.md
+    - name: ค้นหาลูกค้าที่คล้ายกัน
+      href: find-similar-customer-segments.md
+- name: การวัด
+  items:
+    - name: ภาพรวมของการวัด
+      href: measures.md
+    - name: สร้างการวัดใหม่
+      href: measure-builder.md
+    - name: ใช้เทมเพลตการวัด
+      href: measure-templates.md
+- name: การคาดคะเน
+  items:
+    - name: คาดคะเนข้อมูลด้วยความช่วยเหลือของ AI
       items:
-        - name: คู่มือเริ่มต้นใช้งานด่วน
-          href: audience-insights/get-started.md
-        - name: เริ่มต้นด้วยสิทธิ์การใช้งานที่ชำระเงินแล้ว
-          href: paid-license.md
-        - name: สร้างสภาพแวดล้อมใหม่
-          href: audience-insights/create-environment.md
-        - name: สำรวจข้อมูลเชิงลึกของผู้ชม
-          href: audience-insights/home.md
-        - name: ทำงานกับแท็กและคอลัมน์
-          href: audience-insights/work-with-tags-columns.md
-        - name: ทำงานกับบัญชีธุรกิจ
-          href: audience-insights/work-with-business-accounts.md
-    - name: แหล่งข้อมูล
+        - name: ภาพรวมโมเดลการคาดคะเน
+          href: predictions-overview.md
+        - name: คาดคะเนมูลค่าตลอดอายุการใช้งานของลูกค้า (CLV)
+          href: predict-customer-lifetime-value.md
+        - name: คาดคะเนคำแนะนำผลิตภัณฑ์
+          href: predict-product-recommendation.md
+        - name: คาดคะเนการเลิกใช้บริการสมัครสมาชิก
+          href: predict-subscription-churn.md
+        - name: คาดคะเนการเลิกทำธุรกรรม
+          href: predict-transactional-churn.md
+        - name: วิเคราะห์ความคิดเห็นในคำติชมของลูกค้า
+          href: sentiment-analysis.md
+        - name: ใช้โมเดลที่กำหนดเองจาก Azure Machine Learning
+          href: custom-models.md
+        - name: กรอกข้อมูลที่ขาดหายไปบางส่วน
+          href: predictions.md
+    - name: คู่มือตัวอย่าง
       items:
-        - name: ภาพรวมของแหล่งข้อมูล
-          href: audience-insights/data-sources.md
-        - name: เพิ่มแหล่งข้อมูลผ่านตัวเชื่อมต่อ Power Query
-          href: audience-insights/connect-power-query.md
-        - name: เพิ่มโฟลเดอร์โมเดลข้อมูลทั่วไปเป็นแหล่งข้อมูล
-          href: audience-insights/connect-common-data-model.md
-        - name: เพิ่มที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Dataverse
-          href: audience-insights/connect-dataverse-managed-lake.md
-        - name: เพิ่ม Azure Synapse Analytics
-          href: audience-insights/connect-synapse.md
-        - name: การเพิ่มแหล่งข้อมูล
-          href: audience-insights/data-sources-enrichment.md
-        - name: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูล
-          href: audience-insights/incremental-refresh-data-sources.md
-        - name: การนำเข้าข้อมูลแบบในเวลาจริง
-          href: audience-insights/real-time-data-ingestion.md
-    - name: การรวมข้อมูล
+        - name: คู่มือตัวอย่างสำหรับการคาดคะเน CLV
+          href: sample-guide-predict-clv.md
+        - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกใช้บริการสมัครสมาชิก
+          href: sample-guide-predict-subscription-churn.md
+        - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกทำธุรกรรม
+          href: sample-guide-predict-transactional-churn.md
+        - name: คู่มือตัวอย่างสำหรับการคาดคะเนคำแนะนำผลิตภัณฑ์
+          href: sample-guide-predict-product-recommendation.md
+        - name: การทดลองกับ Azure Machine Learning
+          href: azure-machine-learning-experiments.md
+    - name: จัดการการคาดคะเน
+      href: manage-predictions.md
+    - name: สร้างเซ็กเมนต์ตามการคาดคะเน
+      href: prediction-based-segment.md
+- name: ตัวเลือกการส่งออก
+  items:
+    - name: การส่งออก
       items:
-        - name: ภาพรวมการรวมข้อมูล
-          href: audience-insights/data-unification.md
-        - name: แมปเอนทิตีและแอตทริบิวต์
-          href: audience-insights/map-entities.md
-        - name: จับคู่เอนทิตี
-          href: audience-insights/match-entities.md
-        - name: ผสานเอนทิตี
-          href: audience-insights/merge-entities.md
-    - name: การเพิ่มข้อมูล
+        - name: ภาพรวมการส่งออก
+          href: export-destinations.md
+        - name: การส่งเสริมการขายที่ใช้งานอยู่
+          href: export-active-campaign.md
+        - name: AdRoll
+          href: export-adroll.md
+        - name: Autopilot
+          href: export-autopilot.md
+        - name: Azure Blob Storage
+          href: export-azure-blob-storage.md
+        - name: Azure Data Lake Storage รุ่น2
+          href: export-azure-data-lake-storage-gen2.md
+        - name: Azure Synapse Analytics
+          href: export-azure-synapse-analytics.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
+        - name: Braze
+          href: export-braze.md
+        - name: Campaign Monitor
+          href: export-campaign-monitor.md
+        - name: Constant Contact
+          href: export-constant-contact.md
+        - name: DotDigital
+          href: export-dotdigital.md
+        - name: Dynamics 365 Marketing
+          href: export-dynamics365-marketing.md
+        - name: Dynamics 365 Sales
+          href: export-dynamics365-sales.md
+        - name: Facebook Ads Manager
+          href: export-facebook.md
+        - name: Google Ads
+          href: export-google-ads.md
+        - name: Iterable
+          href: export-iterable.md
+        - name: Klaviyo
+          href: export-klaviyo.md
+        - name: LinkedIn Ads
+          href: export-linkedin-ads.md
+        - name: LiveRamp
+          href: export-liveramp.md
+        - name: Mailchimp
+          href: export-mailchimp.md
+        - name: Marketo
+          href: export-marketo.md
+        - name: Microsoft Advertising
+          href: export-microsoft-advertising.md
+        - name: Omnisend
+          href: export-omnisend.md
+        - name: RollWorks
+          href: export-rollworks.md
+        - name: Salesforce Marketing Cloud
+          href: export-salesforce.md
+        - name: SendGrid
+          href: export-sendgrid.md
+        - name: SendInBlue
+          href: export-sendinblue.md
+        - name: Snapchat
+          href: export-snapchat.md
+        - name: SFTP
+          href: export-sftp.md
+    - name: การใช้งานอื่น ๆ
       items:
-        - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
-          href: audience-insights/enrichment-hub.md
-        - name: แบรนด์และความสนใจ
-          href: audience-insights/enrichment-microsoft.md
-        - name: ที่อยู่ขั้นสูง
-          href: audience-insights/enrichment-enhanced-addresses.md
-        - name: ข้อมูลบริษัทที่ปรับปรุงแล้ว
-          href: audience-insights/enrichment-enhanced-company-data.md
-        - name: เพิ่มด้วยแผนที่ Azure
-          href: audience-insights/enrichment-azure-maps.md
-        - name: เพิ่มข้อมูลด้วย HERE Technologies
-          href: audience-insights/enrichment-here.md
-        - name: เพิ่มข้อมูลด้วย Leadspace
-          href: audience-insights/enrichment-leadspace.md
-        - name: เพิ่มข้อมูลด้วย LiveRamp
-          href: audience-insights/enrichment-liveramp.md
-        - name: เพิ่มข้อมูลด้วย Experian
-          href: audience-insights/enrichment-experian.md
-        - name: เพิ่มด้วยข้อมูล Office 365
-          href: audience-insights/enrichment-office.md
-        - name: เพิ่มข้อมูลด้วยการนําเข้าแบบกําหนดเองของ SFTP
-          href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: โปรไฟล์แบบรวม
-      items:
-        - name: ตรวจทานโปรไฟล์ลูกค้าแบบรวม
-          href: audience-insights/customer-profiles.md
-        - name: กรองโปรไฟล์ลูกค้าแบบรวม
-          href: audience-insights/search-filter-index.md
-        - name: กำหนดกิจกรรมลูกค้า
-          href: audience-insights/activities.md
-    - name: Segments
-      items:
-        - name: ภาพรวมของเซ็กเมนต์
-          href: audience-insights/segments.md
-        - name: สร้างเซ็กเมนต์
-          href: audience-insights/segment-builder.md
-        - name: เซ็กเมนต์ที่แนะนำตามการวัด
-          href: audience-insights/suggested-segments.md
-        - name: เซ็กเมนต์ที่แนะนำตามกิจกรรม
-          href: audience-insights/suggested-segments-activity.md
-        - name: รับข้อมูลเชิงลึกเกี่ยวกับเซ็กเมนต์
-          href: audience-insights/segment-insights.md
-        - name: ค้นหาลูกค้าที่คล้ายกัน
-          href: audience-insights/find-similar-customer-segments.md
-    - name: การวัด
-      items:
-        - name: ภาพรวมของการวัด
-          href: audience-insights/measures.md
-        - name: สร้างการวัดใหม่
-          href: audience-insights/measure-builder.md
-        - name: ใช้เทมเพลตการวัด
-          href: audience-insights/measure-templates.md
-    - name: การคาดคะเน
-      items:
-        - name: คาดคะเนข้อมูลด้วยความช่วยเหลือของ AI
-          items:
-            - name: ภาพรวมโมเดลการคาดคะเน
-              href: audience-insights/predictions-overview.md
-            - name: คาดคะเนมูลค่าตลอดอายุการใช้งานของลูกค้า (CLV)
-              href: audience-insights/predict-customer-lifetime-value.md
-            - name: คาดคะเนคำแนะนำผลิตภัณฑ์
-              href: audience-insights/predict-product-recommendation.md
-            - name: คาดคะเนการเลิกใช้บริการสมัครสมาชิก
-              href: audience-insights/predict-subscription-churn.md
-            - name: คาดคะเนการเลิกทำธุรกรรม
-              href: audience-insights/predict-transactional-churn.md
-            - name: วิเคราะห์ความคิดเห็นในคำติชมของลูกค้า
-              href: audience-insights/sentiment-analysis.md
-            - name: ใช้โมเดลที่กำหนดเองจาก Azure Machine Learning
-              href: audience-insights/custom-models.md
-            - name: กรอกข้อมูลที่ขาดหายไปบางส่วน
-              href: audience-insights/predictions.md
-        - name: คู่มือตัวอย่าง
-          items:
-            - name: คู่มือตัวอย่างสำหรับการคาดคะเน CLV
-              href: audience-insights/sample-guide-predict-clv.md
-            - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกใช้บริการสมัครสมาชิก
-              href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: คู่มือตัวอย่างสำหรับการคาดคะเนการเลิกทำธุรกรรม
-              href: audience-insights/sample-guide-predict-transactional-churn.md
-            - name: คู่มือตัวอย่างสำหรับการคาดคะเนคำแนะนำผลิตภัณฑ์
-              href: audience-insights/sample-guide-predict-product-recommendation.md
-            - name: การทดลองกับ Azure Machine Learning
-              href: audience-insights/azure-machine-learning-experiments.md
-        - name: จัดการการคาดคะเน
-          href: audience-insights/manage-predictions.md
-        - name: สร้างเซ็กเมนต์ตามการคาดคะเน
-          href: audience-insights/prediction-based-segment.md
-    - name: ตัวเลือกการส่งออก
-      items:
-        - name: การส่งออก
-          items:
-            - name: ภาพรวมการส่งออก
-              href: audience-insights/export-destinations.md
-            - name: การส่งเสริมการขายที่ใช้งานอยู่
-              href: audience-insights/export-active-campaign.md
-            - name: AdRoll
-              href: audience-insights/export-adroll.md
-            - name: Autopilot
-              href: audience-insights/export-autopilot.md
-            - name: Azure Blob Storage
-              href: audience-insights/export-azure-blob-storage.md
-            - name: Azure Data Lake Storage รุ่น2
-              href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
-              href: audience-insights/export-azure-synapse-analytics.md
-            - name: Adobe Campaign Standard
-              href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe Experience Platform
-              href: audience-insights/export-adobe-experience-platform.md
-            - name: Braze
-              href: audience-insights/export-braze.md
-            - name: Campaign Monitor
-              href: audience-insights/export-campaign-monitor.md
-            - name: Constant Contact
-              href: audience-insights/export-constant-contact.md
-            - name: DotDigital
-              href: audience-insights/export-dotdigital.md
-            - name: Dynamics 365 Marketing
-              href: audience-insights/export-dynamics365-marketing.md
-            - name: Dynamics 365 Sales
-              href: audience-insights/export-dynamics365-sales.md
-            - name: Facebook Ads Manager
-              href: audience-insights/export-facebook.md
-            - name: Google Ads
-              href: audience-insights/export-google-ads.md
-            - name: Iterable
-              href: audience-insights/export-iterable.md
-            - name: Klaviyo
-              href: audience-insights/export-klaviyo.md
-            - name: LinkedIn Ads
-              href: audience-insights/export-linkedin-ads.md
-            - name: LiveRamp
-              href: audience-insights/export-liveramp.md
-            - name: Mailchimp
-              href: audience-insights/export-mailchimp.md
-            - name: Marketo
-              href: audience-insights/export-marketo.md
-            - name: Microsoft Advertising
-              href: audience-insights/export-microsoft-advertising.md
-            - name: Omnisend
-              href: audience-insights/export-omnisend.md
-            - name: RollWorks
-              href: audience-insights/export-rollworks.md
-            - name: Salesforce Marketing Cloud
-              href: audience-insights/export-salesforce.md
-            - name: SendGrid
-              href: audience-insights/export-sendgrid.md
-            - name: SendInBlue
-              href: audience-insights/export-sendinblue.md
-            - name: Snapchat
-              href: audience-insights/export-snapchat.md
-            - name: SFTP
-              href: audience-insights/export-sftp.md
-        - name: การใช้งานอื่น ๆ
-          items:
-            - name: Add-in การ์ดลูกค้าสำหรับ Dynamics 365
-              href: audience-insights/customer-card-add-in.md
-            - name: Microsoft Teams (บอท)
-              href: audience-insights/export-teams-bot.md
-            - name: Power Apps
-              href: audience-insights/export-power-apps.md
-            - name: Power Automate
-              href: audience-insights/export-power-automate.md
-            - name: Power BI
-              href: audience-insights/export-power-bi.md
-    - name: เอนทิตี
-      items:
-        - name: การทำความเข้าใจเอนทิตี
-          href: audience-insights/entities.md
-        - name: ตรวจทาน Schema เอนทิตีใน Common Data Model
-          href: audience-insights/entity-schemas.md
-        - name: ข้อมูล Customer Insights ใน Dataverse
-          href: audience-insights/customer-insights-dataverse.md
-        - name: สร้างความสัมพันธ์และเอนทิตีที่เชื่อมต่อ
-          href: audience-insights/relationships.md
-        - name: กำหนดการแมปความหมาย
-          href: audience-insights/semantic-mappings.md
-    - name: การดูแลจัดการ
-      items:
-        - name: ตั้งค่าการกำหนดค่าระบบ
-          href: audience-insights/system.md
-        - name: มอบสิทธิ์ของผู้ใช้
-          href: audience-insights/permissions.md
-        - name: ภาพรวมของการเชื่อมต่อ
-          href: audience-insights/connections.md
-        - name: จัดการหลายสภาพแวดล้อม?
-          href: audience-insights/manage-environments.md
-        - name: นํา Key Vault ของคุณมาเอง
-          href: audience-insights/use-azure-key-vault.md
-        - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูลโดยใช้บริการหลัก
-          href: audience-insights/connect-service-principal.md
-        - name: ส่งออกบันทึกการวินิจฉัย
-          href: audience-insights/diagnostics.md
-        - name: ขีดจำกัดบริการ
-          href: service-limits.md
-        - name: สิทธิ์และคำขอ DSR
-          href: dsr-rights-requests.md
-    - name: APIs
-      items:
-        - name: ตรวจทาน Schema เอนทิตีใน Common Data Model
-          href: audience-insights/entity-schemas.md
-        - name: ข้อมูล Customer Insights ใน Dataverse
-          href: audience-insights/customer-insights-dataverse.md
-        - name: ทำงานกับ API
-          href: audience-insights/apis.md
-        - name: การอ้างอิง API
-          href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+        - name: Add-in การ์ดลูกค้าสำหรับ Dynamics 365
+          href: customer-card-add-in.md
+        - name: Microsoft Teams (บอท)
+          href: export-teams-bot.md
+        - name: Power Apps
+          href: export-power-apps.md
+        - name: Power Automate
+          href: export-power-automate.md
+        - name: Power BI
+          href: export-power-bi.md
+- name: เอนทิตี
+  items:
+    - name: การทำความเข้าใจเอนทิตี
+      href: entities.md
+    - name: ตรวจทาน Schema เอนทิตีใน Common Data Model
+      href: entity-schemas.md
+    - name: ข้อมูล Customer Insights ใน Dataverse
+      href: customer-insights-dataverse.md
+    - name: สร้างความสัมพันธ์และเอนทิตีที่เชื่อมต่อ
+      href: relationships.md
+    - name: กำหนดการแมปความหมาย
+      href: semantic-mappings.md
+- name: การดูแลจัดการ
+  items:
+    - name: ตั้งค่าการกำหนดค่าระบบ
+      href: system.md
+    - name: กำหนดการตั้งค่าความปลอดภัย
+      href: security-overview.md
+    - name: มอบสิทธิ์ของผู้ใช้
+      href: permissions.md
+    - name: ภาพรวมของการเชื่อมต่อ
+      href: connections.md
+    - name: จัดการหลายสภาพแวดล้อม?
+      href: manage-environments.md
+    - name: นํา Key Vault ของคุณมาเอง
+      href: use-azure-key-vault.md
+    - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูลโดยใช้บริการหลัก
+      href: connect-service-principal.md
+    - name: ส่งออกบันทึกการวินิจฉัย
+      href: diagnostics.md
+    - name: ขีดจำกัดบริการ
+      href: service-limits.md
+    - name: สิทธิ์และคำขอ DSR
+      href: dsr-rights-requests.md
+- name: APIs
+  items:
+    - name: ทำงานกับ API
+      href: apis.md
+    - name: การอ้างอิง API
+      href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
 - name: การจัดการความยินยอม (พรีวิว)
   items:
     - name: ศูนย์รวมรายการวิธีใช้
@@ -306,10 +302,10 @@
           href: consent-management/set-consent-rules.md
     - name: จัดการข้อมูลความยินยอม
       items:
-        - name: เปิดใช้งานกฎการยินยอมในข้อมูลเชิงลึกของผู้ชม
-          href: audience-insights/activate-consent.md
-        - name: จัดการกฎความยินยอมเริ่มต้นในเซ็กเมนต์ข้อมูลเชิงลึกของผู้ชม
-          href: audience-insights/change-default-consent-rules.md
+        - name: เปิดใช้งานกฎความยินยอมใน Customer Insights
+          href: activate-consent.md
+        - name: จัดการกฎความยินยอมเริ่มต้นในเซ็กเมนต์ Customer Insights
+          href: change-default-consent-rules.md
     - name: จัดการการตั้งค่าและผู้ใช้
       items:
         - name: กำหนดค่าการตั้งค่าระบบ
@@ -320,7 +316,5 @@
       items:
         - name: สร้างการคาดคะเนด้วยข้อมูลความยินยอม
           href: consent-management/predictions-consent-data.md
-- name: ข้อมูลเชิงลึกของการมีส่วนร่วม (พรีวิว)
-  href: engagement-insights/overview.md
 - name: รับการสนับสนุน
   href: /power-platform/admin/get-help-support

@@ -6,12 +6,12 @@ metadata:
   ms.author: mhart
   ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
-  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+  ms.openlocfilehash: e3a9f6d5f4d23ca3e85fa3f69272a0162ca7bd2d
+  ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
   ms.translationtype: HT
   ms.contentlocale: th-TH
-  ms.lasthandoff: 02/25/2022
-  ms.locfileid: "8350492"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "8641679"
 title: คู่มือ Dynamics 365 Customer Insights
 summary: ค้นหาแหล่งข้อมูลที่เป็นประโยชน์เพื่อเริ่มต้นใช้งานและเรียนรู้เกี่ยวกับคุณลักษณะและความสามารถของ Customer Insights
 landingContent:
@@ -23,8 +23,8 @@ landingContent:
       url: overview.md
     - text: แผนการนำเสนอ
       url: /dynamics365/release-plans/
-    - text: ค้นพบ CDP
-      url: https://dynamics.microsoft.com/ai/customer-insights/
+    - text: คุณลักษณะใหม่และที่ปรับปรุง
+      url: whats-new-customer-insights.md
   - linkListType: learn
     links:
     - text: เส้นทางการเรียนรู้ของ Customer Insights
@@ -35,24 +35,94 @@ landingContent:
     links:
     - text: ลงทะเบียนเพื่อทดลองใช้
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: มีอะไรใหม่ในข้อมูลเชิงลึกของผู้ชม
-      url: audience-insights/whats-new-audience-insights.md
-    - text: คู่มือเริ่มต้นใช้งานด่วน
-      url: audience-insights/get-started.md
+    - text: เริ่มต้นด้วยการทดลองใช้
+      url: trial-signup.md
+    - text: เริ่มต้นใช้งาน Customer Insights
+      url: get-started.md
   - linkListType: learn
     links:
     - text: การเริ่มต้นใช้งาน
       url: /learn/modules/get-started-customer-data-platform/
+- title: รวมข้อมูล
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ภาพรวมของแหล่งข้อมูล
+      url: data-sources.md
+    - text: ภาพรวมการรวม
+      url: data-unification.md
+    - text: การทำความเข้าใจเอนทิตี
+      url: entities.md
+  - linkListType: learn
+    links:
+    - text: สร้างโปรไฟล์แบบรวม
+      url: /learn/modules/unified-customer-profile/
+- title: รับข้อมูลเชิงลึก
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
+      url: enrichment-hub.md
+    - text: กำหนดค่าความสัมพันธ์
+      url: relationships.md
+    - text: กรอกข้อมูลด้วยการคาดคะเน
+      url: predictions.md
+  - linkListType: learn
+    links:
+    - text: เพิ่มข้อมูลและคาดคะเน
+      url: /learn/modules/enrich-data/
+- title: ต่อยอดข้อมูลของคุณ
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: สร้างเซ็กเมนต์
+      url: segments.md
+    - text: สร้างการวัด
+      url: measures.md
+    - text: กำหนดกิจกรรมลูกค้า
+      url: activities.md
+  - linkListType: learn
+    links:
+    - text: ทำงานกับแอป
+      url: /learn/modules/working-with-customer-insights/
+- title: ส่งออกช้อมูล
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ตั้งค่าปลายทางการส่งออก
+      url: export-destinations.md
+    - text: บัตรลูกค้าในแอป Dynamics 365
+      url: customer-card-add-in.md
+    - text: ตัวเชื่อมต่อ Power BI
+      url: export-power-bi.md
+  - linkListType: learn
+    links:
+    - text: จัดการการเชื่อมต่อจากภายนอก
+      url: /learn/modules/configure-third-party-connections/
+- title: จัดการแอป
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: กำหนดค่าระบบ
+      url: system.md
+    - text: กำหนดสิทธิ์ของผู้ใช้
+      url: permissions.md
+    - text: จัดการหลายสภาพแวดล้อม?
+      url: manage-environments.md
+  - linkListType: learn
+    links:
+    - text: จัดการ Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: จัดการ Customer Insights
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: กำหนดค่าระบบ
-      url: audience-insights/system.md
+      url: system.md
     - text: กำหนดสิทธิ์ของผู้ใช้
-      url: audience-insights/permissions.md
+      url: permissions.md
     - text: จัดการหลายสภาพแวดล้อม?
-      url: audience-insights/manage-environments.md
+      url: manage-environments.md
   - linkListType: learn
     links:
     - text: จัดการ Customer Insights
