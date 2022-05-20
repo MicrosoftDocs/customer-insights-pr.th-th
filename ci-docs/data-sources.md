@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: bcc50c6fa8f8e2a66ef6164bfa9022e068c0e374
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1fe8d6e8098831ecc8ff28e571340c56a654de6d
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647543"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739231"
 ---
 # <a name="data-sources-overview"></a>ภาพรวมของแหล่งข้อมูล
 
@@ -35,9 +35,6 @@ Dynamics 365 Customer Insights เชื่อมต่อกับข้อม�
 - [จากโฟลเดอร์ Common Data Model](connect-common-data-model.md)
 - [จากที่จัดเก็บข้อมูลดิบ Microsoft Dataverse ของคุณเอง](connect-dataverse-managed-lake.md)
 - [จากฐานข้อมูล Azure Synapse Analytics](connect-synapse.md)
-
-> [!NOTE]
-> หากคุณกำลังใช้รุ่นทดลองใช้ ส่วนวิธีการนำเข้าจะมีตัวเลือก **ไลบรารีข้อมูล Customer Insights** เลือกตัวเลือกนี้เพื่อเลือกตัวอย่างชุดข้อมูลสำหรับอุตสาหกรรมต่างๆ ดูข้อมูลเพิ่มเติมที่ [การทดลองใช้ Dynamics 365 Customer Insights](trial-signup.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>เพิ่มข้อมูลจากแหล่งข้อมูลภายในองค์กร
 

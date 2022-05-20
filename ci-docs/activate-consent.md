@@ -1,23 +1,22 @@
 ---
 title: เริ่มการใช้งานกฎความยินยอมสำหรับเซ็กเมนต์
 description: ปฏิบัติตามขั้นตอนเหล่านี้เพื่อเชื่อมโยงข้อมูลความยินยอมและเริ่มการใช้งานการตรวจสอบความยินยอมใน Dynamics 365 Customer Insights ผู้ดูแลระบบยังสามารถปิดใช้งานการตรวจสอบความยินยอมได้เช่นกัน
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647571"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755193"
 ---
 # <a name="activate-consent-rules"></a>เริ่มการใช้งานกฎความยินยอม
 
-[ศูนย์ความยินยอม (พรีวิว)](consent-management/overview.md) ช่วยให้คุณประสานข้อมูลความยินยอมจากแหล่งต่างๆ ใช้เอนทิตี *ความยินยอม* แบบรวมที่จะใช้การตรวจสอบความยินยอมเริ่มต้น หลังจากนำเข้าข้อมูลความยินยอมไปยังศูนย์ความยินยอมและกำหนดค่ากฎสำหรับข้อมูลแล้ว เอนทิตี *ความยินยอม* จะซิงค์กับ Dynamics 365 Customer Insights โดยอัตโนมัติ
+[ศูนย์ความยินยอม (พรีวิว)](consent-management/overview.md) ช่วยให้คุณประสานข้อมูลความยินยอมจากแหล่งต่างๆ ใช้เอนทิตี *ความยินยอม* แบบรวมที่จะใช้การตรวจสอบความยินยอมเริ่มต้น หลังจากนำเข้าข้อมูลความยินยอมและกำหนดค่ากฎการแมปแล้ว เอนทิตี *ความยินยอม* จะซิงค์กับ Dynamics 365 Customer Insights โดยอัตโนมัติ
 
 ## <a name="enable-consent-checks"></a>เปิดใช้งานการตรวจสอบความยินยอม
 

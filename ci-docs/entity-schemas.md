@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647711"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757455"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Schema เอนทิตีใน Common Data Model
 
@@ -23,7 +23,7 @@ ms.locfileid: "8647711"
 
 โมเดลข้อมูลที่ใช้ร่วมกันนี้อนุญาตให้แอปพลิเคชันและผู้รวบรวมข้อมูลสามารถทำงานร่วมกันได้ง่ายขึ้น โดยการให้คำจำกัดความของข้อมูลแบบรวม Common Data Model มีระบบข้อมูลเมตาที่อุดมไปด้วยเอนทิตีมาตรฐาน ความสัมพันธ์ ลำดับชั้น ลักษณะ และอื่น ๆ มีที่มาจากแอป Dynamics 365 และเป็นแหล่งที่มาแบบเปิดบน GitHub ที่มีเอนทิตีมาตรฐานมากกว่า 260 รายการ ระบบขนาดใหญ่ของคู่ค้าภายในและภายนอกสนับสนุนแนวคิดเฉพาะอุตสาหกรรมให้กับ Common Data Model
 
-หลายระบบและแพลตฟอร์มต่างๆ ใช้ Common Data Model ในวันนี้ รวมถึงโฟลว์ข้อมูล Power BI และ Azure Data Services ซึ่งได้รับการสนับสนุนอยู่แล้วใน Microsoft Dataverse, Dynamics 365, Power Apps, Power BI และบริการข้อมูล Azure ที่กำลังจะเกิดขึ้น ซึ่งสร้างมูลค่าโดยตรงต่อ [Open Data Initiative](https://www.microsoft.com/open-data-initiative)
+หลายระบบและแพลตฟอร์มต่างๆ ใช้ Common Data Model ในวันนี้ รวมถึงโฟลว์ข้อมูล Power BI และ Azure Data Services ซึ่งได้รับการสนับสนุนอยู่แล้วใน Microsoft Dataverse, Dynamics 365, Power Apps, Power BI และบริการข้อมูล Azure ที่กำลังจะเกิดขึ้น ซึ่งสร้างมูลค่าโดยตรงต่อ [Open Data Initiative](https://dynamics.microsoft.com/en-us/open-data-initiative/)
 
 ## <a name="customer-insights-entity-schemas"></a>Schema เอนทิตีของ Customer Insights
 

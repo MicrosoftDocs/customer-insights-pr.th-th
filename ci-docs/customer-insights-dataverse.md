@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 85995cbd7f797810bfb6ecdc8a24d56542f0b5a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1e629cd218b104b115f74f59a53a14e9d60fcc8a
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647551"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741388"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>ทำงานกับข้อมูล Customer Insights ใน Microsoft Dataverse
 
@@ -54,7 +54,7 @@ Customer Insights มีตัวเลือกในการทำให้�
 
 ### <a name="customerprofile"></a>โปรไฟล์ลูกค้า
 
-ตารางนี้มีโปรไฟล์ลูกค้าแบบรวมจาก Customer Insights schema สำหรับโปรไฟล์ลูกค้าแบบรวม ขึ้นอยู่กับเอนทิตีและแอตทริบิวต์ที่ใช้ในกระบวนการรวมเข้าด้วยกัน schema โปรไฟล์ลูกค้ามักจะมีชุดย่อยของแอตทริบิวต์จาก [คำนิยาม Common Data Model ของ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)
+ตารางนี้มีโปรไฟล์ลูกค้าแบบรวมจาก Customer Insights Schema สำหรับโปรไฟล์ลูกค้าแบบรวมขึ้นอยู่กับเอนทิตีและแอตทริบิวต์ที่ใช้ในกระบวนการรวมข้อมูล schema โปรไฟล์ลูกค้ามักจะมีชุดย่อยของแอตทริบิวต์จาก [คำนิยาม Common Data Model ของ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)
 
 ### <a name="alternatekey"></a>AlternateKey
 

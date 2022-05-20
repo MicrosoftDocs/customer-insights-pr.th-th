@@ -1,8 +1,8 @@
 ---
 title: คู่มือตัวอย่างสำหรับการคาดคะเนการบอกเลิกการสมัครสมาชิก
 description: ใช้คู่มือตัวอย่างนี้เพื่อทดลองใช้โมเดลการคาดคะเนการบอกเลิกการสมัครสมาชิกแบบสำเร็จรูป
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647821"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741434"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>คู่มือตัวอย่างสำหรับการคาดคะเนการบอกเลิกการสมัครสมาชิก
 
@@ -112,65 +112,11 @@ Contoso เป็นบริษัทที่ผลิตกาแฟและ
 
 ## <a name="task-2---data-unification"></a>งานที่ 2 - การรวมข้อมูล
 
-หลังจากนำเข้าข้อมูลตอนนี้เราเริ่มต้นกระบวนการ **แมป, จับคู่, ผสาน** เพื่อสร้างโปรไฟล์ลูกค้าแบบรวม สำหรับข้อมูลเพิ่มเติม ให้ดูที่ [การรวมข้อมูล](data-unification.md)
-
-### <a name="map"></a>แมป
-
-1. หลังจากนำเข้าข้อมูลแล้ว ให้จับคู่ผู้ติดต่อจากข้อมูลอีคอมเมิร์ซและความภักดีกับชนิดข้อมูลทั่วไป ไปที่ **ข้อมูล** > **รวม** > **แมป**
-
-1. เลือกเอนทิตีที่แสดงถึงโปรไฟล์ลูกค้า - **eCommerceContacts** และ **loyCustomers** 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="รวมแหล่งข้อมูลอีคอมเมิร์ซและความภักดี":::
-
-1. เลือก **ContactId** เป็นคีย์หลักสำหรับ **eCommerceContacts** และ **LoyaltyID** เป็นคีย์หลักสำหรับ **loyCustomers**
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="รวม LoyaltyId เป็นคีย์หลัก":::
-
-### <a name="match"></a>การจับคู่
-
-1. ไปที่แท็บ **จับคู่** และเลือก **ตั้งค่าลำดับ**
-
-1. ในรายการแบบหล่นลง **หลัก** เลือก **eCommerceContacts: eCommerce** เป็นแหล่งที่มาหลักและรวมเรกคอร์ดทั้งหมด
-
-1. ในรายการแบบหล่นลง **เอนทิตี 2** เลือก **oyCustomers : LoyaltyScheme** และรวมเรกคอร์ดทั้งหมด
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="รวมอีคอมเมิร์ซและความภักดีที่ตรงกัน":::
-
-1. เลือก **สร้างกฎใหม่**
-
-1. เพิ่มเงื่อนไขแรกของคุณโดยใช้ FullName
-
-   * สำหรับ eCommerceContacts เลือก **FullName** ในรายการแบบหล่นลง
-   * สำหรับ loyCustomers เลือก **FullName** ในรายการแบบหล่นลง
-   * เลือกรายการแบบหล่นลง **ทำให้เป็นมาตรฐาน** และเลือก **ชนิด (โทรศัพท์, ชื่อ, ที่อยู่... )**
-   * ตั้งค่า **ระดับความแม่นยำ**: **พื้นฐาน** และ **ค่า**: **สูง**
-
-1. ป้อนชื่อ **ชื่อเต็ม, อีเมล** สำหรับกฎใหม่
-
-   * เพิ่มเงื่อนไขที่สองสำหรับที่อยู่อีเมลโดยการเลือก **เพิ่มเงื่อนไข**
-   * สำหรับเอนทิตี eCommerceContacts เลือก **EMail** ในเมนูแบบหล่นลง
-   * สำหรับเอนทิตี loyCustomers เลือก **EMail** ในรายการแบบหล่นลง 
-   * ปล่อยให้ ทำให้เป็นมาตรฐาน ว่างไว้ 
-   * ตั้งค่า **ระดับความแม่นยำ**: **พื้นฐาน** และ **ค่า**: **สูง**
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="รวมกฎการจับคู่สำหรับชื่อและอีเมล":::
-
-7. เลือก **บันทึก** และ **เรียกใช้**
-
-### <a name="merge"></a>ผสาน
-
-1. ไปที่แท็บ **ผสาน**
-
-1. ในเอนทิตี **ContactId** สำหรับ **loyCustomers** เปลี่ยนชื่อที่แสดงเป็น **ContactIdLOYALTY** เพื่อทำให้แตกต่างจากรหัสอื่นๆ ที่ส่งเข้ามา
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="เปลี่ยนชื่อ contactid จากรหัสความภักดี":::
-
-1. เลือก **บันทึก** และ **เรียกใช้** เพื่อเริ่มกระบวนการผสาน
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>งานที่ 3 - กำหนดค่าการคาดคะเนการบอกเลิกการสมัครสมาชิก
 
-ด้วยโปรไฟล์ลูกค้ารวมเข้าด้วยกัน ตอนนี้เราสามารถเรียกใช้การคาดคะเนการเลิกทำธุรรกรรม สำหรับขั้นตอนโดยละเอียด โปรดดูที่บทความ [การคาดคะเนการเลิกใช้บริการสมัครสมาชิก](predict-subscription-churn.md) 
+ด้วยโปรไฟล์ลูกค้ารวมเข้าด้วยกัน ตอนนี้เราสามารถเรียกใช้การคาดคะเนการเลิกใช้บริการสมัครสมาชิก สำหรับขั้นตอนโดยละเอียด โปรดดูที่บทความ [การคาดคะเนการเลิกใช้บริการสมัครสมาชิก](predict-subscription-churn.md) 
 
 1. ไปที่ **ระบบอัจฉริยะ** > **ค้นพบ** และเลือกใช้ **โมเดลการเลิกใช้บริการของลูกค้า**
 

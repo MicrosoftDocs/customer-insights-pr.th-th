@@ -66,12 +66,18 @@
   items:
     - name: ภาพรวมการรวมข้อมูล
       href: data-unification.md
-    - name: แมปเอนทิตีและแอตทริบิวต์
+    - name: เลือกฟิลด์ต้นทาง
       href: map-entities.md
-    - name: จับคู่เอนทิตี
+    - name: ลบเรกคอร์ดซ้ำ
+      href: remove-duplicates.md
+    - name: เงื่อนไขการจับคู่
       href: match-entities.md
-    - name: ผสานเอนทิตี
+    - name: รวมฟิลด์ลูกค้า
       href: merge-entities.md
+    - name: ตรวจสอบการรวมข้อมูล
+      href: review-unification.md
+    - name: ปรับปรุงการตั้งค่าการรวม
+      href: data-unification-update.md
 - name: การเพิ่มข้อมูล
   items:
     - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
@@ -282,6 +288,8 @@
       href: apis.md
     - name: การอ้างอิง API
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: การสอบถามตัวอย่าง OData
+      href: odata-examples.md
 - name: การจัดการความยินยอม (พรีวิว)
   items:
     - name: ศูนย์รวมรายการวิธีใช้

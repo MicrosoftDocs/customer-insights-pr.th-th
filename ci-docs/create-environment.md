@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647561"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712925"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>สร้างสภาพแวดล้อมใน Customer Insights
 
@@ -63,8 +63,7 @@ ms.locfileid: "8647561"
 โดยการบันทึกข้อมูลไปที่ Azure Data Lake Storage คุณตกลงว่าข้อมูลจะถูกโอนไปและเก็บไว้ในที่ตั้งทางภูมิศาสตร์ที่เหมาะสมสำหรับบัญชีที่เก็บข้อมูล Azure นั้น ตำแหน่งนี้อาจแตกต่างจากที่เก็บข้อมูลใน Dynamics 365 Customer Insights เรียนรู้เพิ่มเติมที่ [Microsoft Trust Center](https://www.microsoft.com/trust-center)
 
 > [!NOTE]
-> ปัจจุบัน Customer Insights รองรับสิ่งต่อไปนี้:
-> - เอนทิตีที่นำเข้าจากโฟลว์ข้อมูล Power BI ที่เก็บไว้ใน Microsoft Dataverse - ที่จัดเก็บข้อมูลดิบที่มีการจัดการ  
+> ปัจจุบัน Customer Insights รองรับสิ่งต่อไปนี้:  
 > - บัญชี Azure Data Lake Storage จากภูมิภาค Azure เดียวกันกับที่คุณเลือกเมื่อสร้างสภาพแวดล้อม
 > - บัญชี Azure Data Lake Storage ที่เป็น รุ่น2 และเปิดใช้งาน *เนมสเปซแบบลำดับชั้น* ไม่รองรับบัญชีที่เก็บข้อมูล Azure Data Lake รุ่น1
 
@@ -80,7 +79,7 @@ ms.locfileid: "8647561"
 
 เตรียมสภาพแวดล้อม Microsoft Dataverse ของคุณเองเพื่อแชร์ข้อมูล (โปรไฟล์และข้อมูลเชิงลึก) กับแอปพลิเคชันทางธุรกิจที่อยู่บน Dataverse เช่น Dynamics 365 Marketing หรือแอปพลิเคชันแบบจำลองใน Power Apps เว้นฟิลด์นี้งไว้หากคุณไม่มีสภาพแวดล้อม Dataverse ของตนเองและเราจะจัดเตรียมไว้ให้คุณ
 
-การเชื่อมต่อกับสภาพแวดล้อม Dataverse ของคุณยังช่วยให้คุณสามารถ [นำเข้าข้อมูลจากแหล่งข้อมูลในสถานที่โดยใช้กระแสข้อมูล Power Platform และเกตเวย์](data-sources.md#add-data-from-on-premises-data-sources) นอกจากนี้คุณยังสามารถใช้ [โมเดลการคาดคะเนแบบสำเร็จรูป](predictions-overview.md?tabs=b2c#out-of-box-models) โดยการเชื่อมต่อกับสภาพแวดล้อม Dataverse ได้ด้วย
+การเชื่อมต่อกับสภาพแวดล้อม Dataverse ของคุณยังช่วยให้คุณสามารถ [นำเข้าข้อมูลจากแหล่งข้อมูลในสถานที่โดยใช้กระแสข้อมูล Power Platform และเกตเวย์](data-sources.md#add-data-from-on-premises-data-sources)
 
 > [!IMPORTANT]
 > 1. Customer Insights และ Dataverse ต้องอยู่ในภูมิภาคเดียวกันจึงจะสามารถแชร์ข้อมูลได้

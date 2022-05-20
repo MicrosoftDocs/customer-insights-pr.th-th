@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647540"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755709"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>การเพิ่มแหล่งข้อมูล (พรีวิว)
 
@@ -26,7 +26,7 @@ ms.locfileid: "8647540"
 1. ไปที่ **ข้อมูล** > **รวม** เลือกเอนทิตีที่คุณต้องการเพิ่มและเลือกหนึ่งแอตทริบิวต์เป็นคีย์หลักสำหรับเอนทิตี สำหรับข้อมูลเพิ่มเติม โปรดดู [เลือกคีย์หลัก](map-entities.md#select-primary-key-and-semantic-type-for-attributes)
 
 1. ไปที่ **ข้อมูล** > **แหล่งข้อมูล**
- 
+
 1. เลือกจุดไข่ปลาแนวตั้งถัดจากแหล่งข้อมูลที่คุณต้องการเพิ่มและเลือก **เพิ่ม**
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="เพจการเพิ่มแหล่งข้อมูล":::

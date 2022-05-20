@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 409792bc3f12fca451ef038e3300758bdf9ecf3b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d22c4c785695b23a257a89f1ffa519fdc18b443e
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647881"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741202"
 ---
 # <a name="power-automate-connector-preview"></a>ตัวเชื่อมต่อ Power Automate (ตัวอย่าง)
 
@@ -25,14 +25,14 @@ ms.locfileid: "8647881"
 
 ## <a name="power-automate-triggers"></a>ทริกเกอร์ Power Automate
 
-ใช้ทริกเกอร์เพื่อสร้างโฟลว์ระบบคลาวด์ และทำให้งานซ้ำๆ เป็นแบบอัตโนมัติ เช่น การแจ้งเตือน หรือการดำเนินการขั้นสูงเพิ่มเติม 
+ใช้ทริกเกอร์เพื่อสร้างโฟลว์ระบบคลาวด์ และทำให้งานซ้ำๆ เป็นแบบอัตโนมัติ เช่น การแจ้งเตือน หรือการดำเนินการขั้นสูงเพิ่มเติม
 
-- ทริกเกอร์เมื่อการรีเฟรชแหล่งข้อมูลล้มเหลว 
+- ทริกเกอร์เมื่อการรีเฟรชแหล่งข้อมูลล้มเหลว
 - ทริกเกอร์เมื่อการรีเฟรชแหล่งข้อมูลสำเร็จ
 - ทริกเกอร์เมื่อข้ามขีดจำกัดในเซ็กเมนต์ ทริกเกอร์จะถูกจำกัดการข้ามผ่านขีดจำกัด
 - ทริกเกอร์เมื่อข้ามขีดจำกัดในการวัดของธุรกิจ เฉพาะการวัดของธุรกิจที่ไม่มีมิติจะได้รับการสนับสนุน ทริกเกอร์จะถูกจำกัดการข้ามผ่านขีดจำกัด
 - ทริกเกอร์เมื่อการรีเฟรชทั้งหมด (แหล่งข้อมูล, เซ็กเมนต์, การวัด, ...) เสร็จสมบูรณ์
-- ทริกเกอร์เมื่อการรีเฟรชของกระบวนการรวม (แผนที่ จับคู่ ผสาน) เสร็จสมบูรณ์
+- ทริกเกอร์เมื่อการรีเฟรชกระบวนการรวมเสร็จสิ้น
 
 [กำหนดค่าทริกเกอร์ของคุณใน Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: fcdb7f073ff73322ff69d0a8684391819a809d00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 599cbaf4e19c3a7331e92bfc54c701fefe6c69b3
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647841"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741064"
 ---
 # <a name="manage-environments"></a>จัดการสภาพแวดล้อม
 
@@ -127,8 +127,8 @@ OR
 การตั้งค่าการกำหนดค่าต่อไปนี้จะถูกคัดลอก:
 
 - แหล่งข้อมูลที่ รับเข้า/นำเข้า
-- การกำหนดค่าการรวมข้อมูล (แมป จับคู่ ผสาน)
-- เซ็กเมนต์
+- การกำหนดค่าการรวมข้อมูล
+- Segments
 - การวัด
 - ความสัมพันธ์
 - กิจกรรม

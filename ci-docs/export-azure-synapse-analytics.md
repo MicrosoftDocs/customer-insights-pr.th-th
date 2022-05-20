@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e77227e1e353c02cfb13e26a8ecbe0768ba6c0fa
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647596"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741526"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ส่งออกข้อมูลไปยัง Azure Synapse Analytics (พรีวิว)
 
@@ -34,7 +34,7 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 
 - การสมัครใช้งาน Azure ที่ใช้งานอยู่
 
-- หากใช้บัญชี Azure Data Lake Storage รุ่น2 ใหม่ *บริการหลักสำหรับ Customer Insights* จะต้องการสิทธิ์ **ผู้สนับสนุนข้อมูลในที่เก็บข้อมูล Blob** เรียนรู้เพิ่มเติมเกี่ยวกับ [การเชื่อมต่อกับบัญชี Azure Data Lake Storage Gen2 ที่มีหลักบริการของ Azure สำหรับข้อมูลเชิงลึกของผู้ชม](connect-service-principal.md) Data Lake Storage Gen2 **จำเป็นต้อง** เปิดใช้งาน [เนมสเปซตามลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace)
+- หากใช้บัญชี Azure Data Lake Storage รุ่น2 ใหม่ *บริการหลักสำหรับ Customer Insights* จะต้องการสิทธิ์ **ผู้สนับสนุนข้อมูลในที่เก็บข้อมูล Blob** เรียนรู้เพิ่มเติมเกี่ยวกับ [การเชื่อมต่อกับบัญชี Azure Data Lake Storage Gen2 ด้วยบริการหลัก Azure สำหรับ Customer Insights](connect-service-principal.md) Data Lake Storage Gen2 **จำเป็นต้อง** เปิดใช้งาน [เนมสเปซตามลำดับชั้น](/azure/storage/blobs/data-lake-storage-namespace)
 
 - ในกลุ่มทรัพยากรที่มี Azure Synapse workspace อยู่ *บริการหลัก* และผู้ใช้ *Azure AD ที่มีสิทธิ์ผู้ดูแลระบบใน Customer Insights* ต้องได้รับการกำหนดสิทธิ์ **ผู้อ่าน** เป็นอย่างน้อย สำหรับข้อมูลเพิ่มเติม โปรดดู [มอบหมายบทบาท Azure โดยใช้พอร์ทัล Azure](/azure/role-based-access-control/role-assignments-portal)
 

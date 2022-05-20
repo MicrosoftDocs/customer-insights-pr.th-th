@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647746"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757409"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>ส่งออกรายการเซ็กเมนต์และข้อมูลอื่น ๆ ไปยังที่เก็บข้อมูล Azure Blob (ตัวอย่าง)
 
@@ -44,7 +44,7 @@ ms.locfileid: "8647746"
 คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
 
 > [!IMPORTANT]
-> หากคุณเปิดการตั้งค่าการลบแบบชั่วคราวสำหรับบัญชีที่เก็บข้อมูล Azure Blob การส่งออกจะล้มเหลว ปิดการลบแบบชั่วคราวเพื่อส่งออกข้อมูลไปยัง Blob ดูข้อมูลเพิ่มเติมได้ที่ [เปิดใช้งานการลบแบบชั่วคราวของ Blob](/azure/storage/blobs/soft-delete-blob-enable.md)
+> หากคุณเปิดการตั้งค่าการลบแบบชั่วคราวสำหรับบัญชีที่เก็บข้อมูล Azure Blob การส่งออกจะล้มเหลว ปิดการลบแบบชั่วคราวเพื่อส่งออกข้อมูลไปยัง Blob ดูข้อมูลเพิ่มเติมได้ที่ [เปิดใช้งานการลบแบบชั่วคราวของ Blob](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
