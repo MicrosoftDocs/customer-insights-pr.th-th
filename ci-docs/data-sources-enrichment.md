@@ -1,19 +1,19 @@
 ---
 title: การเพิ่มแหล่งข้อมูล
 description: เพิ่มแหล่งข้อมูลก่อนเข้าสู่กระบวนการรวมข้อมูล
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755709"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800304"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>การเพิ่มแหล่งข้อมูล (พรีวิว)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8755709"
 
 1. ไปที่ **ข้อมูล** > **แหล่งข้อมูล**
 
-1. เลือกจุดไข่ปลาแนวตั้งถัดจากแหล่งข้อมูลที่คุณต้องการเพิ่มและเลือก **เพิ่ม**
+1. เลือกจุดไข่ปลาแนวตั้ง (&vellip;) ถัดจากแหล่งข้อมูลที่คุณต้องการเพิ่มและเลือก **เพิ่มข้อมูล**
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="เพจการเพิ่มแหล่งข้อมูล":::
 
@@ -41,11 +41,12 @@ ms.locfileid: "8755709"
 
 - [ที่อยู่ขั้นสูง](enrichment-enhanced-addresses.md)
 - [ข้อมูลบริษัทที่ปรับปรุงแล้ว](enrichment-enhanced-company-data.md)
+- [ข้อมูลประจำตัวจาก LiveRamp](enrichment-liveramp.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>จัดการการเพิ่มแหล่งข้อมูลที่มีอยู่
 
 ไปที่แท็บ **การเพิ่มความสมบูรณ์ของฉัน** เพื่อดูการเพิ่มความสมบูรณ์ที่กำหนดค่าไว้ทั้งหมด
 
-เลือกการเพิ่มความสมบูรณ์เพื่อดูตัวเลือกที่มี คุณยังสามารถเลือกจุดไข่ปลา (...) บนรายการเพื่อดูตัวเลือก หากคุณกำหนดค่าการเพิ่มข้อมูลหลายรายการ คุณสามารถใช้กล่องค้นหาเพื่อให้ค้นหาได้อย่างรวดเร็ว
+เลือกการเพิ่มความสมบูรณ์เพื่อดูตัวเลือกที่มี คุณยังสามารถเลือกจุดไข่ปลาแนวตั้ง (&vellip;) จากข้อมูลในรายการเพื่อดูตัวเลือก หากคุณกำหนดค่าการเพิ่มข้อมูลหลายรายการ คุณสามารถใช้กล่องค้นหาเพื่อให้ค้นหาได้อย่างรวดเร็ว
 
 คุณสามารถดู แก้ไข เรียกใช้ หรือลบการเพิ่มแหล่งข้อมูล สำหรับข้อมูลเพิ่มเติม โปรดดู [จัดการการเพิ่มความสมบูรณ์ที่มีอยู่](enrichment-hub.md)

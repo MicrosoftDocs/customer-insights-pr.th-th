@@ -11,12 +11,12 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: e8a294a4bad1581539b5905160cddcd625699d90
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647566"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800201"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>เชื่อมต่อกับข้อมูลในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse
 
@@ -62,7 +62,7 @@ ms.locfileid: "8647566"
 
 1. ไปที่ **ข้อมูล** > **แหล่งข้อมูล**
 
-2. ถัดจากแหล่งข้อมูลที่คุณต้องการอปรับปรุง เลือกจุดไข่ปลา
+2. ข้างแหล่งข้อมูลที่คุณต้องการปรับปรุง ให้เลือกจุดไข่ปลาแนวตั้ง (&vellip;)
 
 3. เลือกตัวเลือก **แก้ไข** จากรายการ
 

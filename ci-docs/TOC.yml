@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: แค็ตตาล็อกการเรียนรู้
   items:
-    - name: การเริ่มต้นใช้งาน
+    - name: รับรองว่าเป็นผู้เชี่ยวชาญด้านแพลตฟอร์มข้อมูลลูกค้าของ Microsoft
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: เริ่มต้นใช้งาน Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
     - name: นำเข้าข้อมูล
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: เริ่มต้นด้วยสิทธิ์การใช้งานที่ชำระเงินแล้ว
       href: paid-license.md
-    - name: สร้างสภาพแวดล้อมใหม่
-      href: create-environment.md
     - name: สำรวจ Customer Insights
       href: home.md
     - name: ทำงานกับแท็กและคอลัมน์
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Criteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: ตรวจทาน Schema เอนทิตีใน Common Data Model
       href: entity-schemas.md
-    - name: ข้อมูล Customer Insights ใน Dataverse
-      href: customer-insights-dataverse.md
     - name: สร้างความสัมพันธ์และเอนทิตีที่เชื่อมต่อ
       href: relationships.md
     - name: กำหนดการแมปความหมาย
       href: semantic-mappings.md
+- name: สภาพแวดล้อม
+  items:
+    - name: สร้างสภาพแวดล้อมใหม่
+      href: create-environment.md
+    - name: เชื่อมต่อกับ Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: ใช้ Azure Data Lake Storage ของคุณเอง
+      href: own-data-lake-storage.md
+    - name: จัดการการตั้งค่าสภาพแวดล้อม
+      href: manage-environments.md
+    - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูลโดยใช้บริการหลัก
+      href: connect-service-principal.md
 - name: การดูแลจัดการ
   items:
     - name: ตั้งค่าการกำหนดค่าระบบ
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: มอบสิทธิ์ของผู้ใช้
       href: permissions.md
-    - name: ภาพรวมของการเชื่อมต่อ
-      href: connections.md
-    - name: จัดการหลายสภาพแวดล้อม?
-      href: manage-environments.md
     - name: นํา Key Vault ของคุณมาเอง
       href: use-azure-key-vault.md
-    - name: เชื่อมต่อกับบัญชีที่เก็บข้อมูลโดยใช้บริการหลัก
-      href: connect-service-principal.md
     - name: ส่งออกบันทึกการวินิจฉัย
       href: diagnostics.md
-    - name: ขีดจำกัดบริการ
-      href: service-limits.md
-    - name: สิทธิ์และคำขอ DSR
-      href: dsr-rights-requests.md
+    - name: ภาพรวมของการเชื่อมต่อ
+      href: connections.md
 - name: APIs
   items:
     - name: ทำงานกับ API
@@ -324,5 +328,9 @@
       items:
         - name: สร้างการคาดคะเนด้วยข้อมูลความยินยอม
           href: consent-management/predictions-consent-data.md
+- name: ขีดจำกัดบริการ
+  href: service-limits.md
+- name: สิทธิ์และคำขอ DSR
+  href: dsr-rights-requests.md
 - name: รับการสนับสนุน
   href: /power-platform/admin/get-help-support

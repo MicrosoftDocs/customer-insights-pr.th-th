@@ -1,19 +1,19 @@
 ---
 title: ตัวอย่าง OData สำหรับ API ของ Dynamics 365 Customer Insights
 description: ตัวอย่างที่ใช้กันทั่วไปของ Open Data Protocol (OData) เพื่อสอบถาม API ของ Customer Insights เพื่อตรวจสอบข้อมูล
-ms.date: 05/10/2022
+ms.date: 05/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 007278e1330e1a8e64d524ded8496acaf83b874c
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740049"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808484"
 ---
 # <a name="odata-query-examples"></a>ตัวอย่างการสอบถาม OData
 
@@ -33,16 +33,15 @@ Open Data Protocol (OData) เป็นโปรโตคอลการเข�
 
 ตารางต่อไปนี้ประกอบด้วยชุดของการสอบถามตัวอย่างสำหรับเอนทิตี *ลูกค้า*
 
-
 |ชนิดการสอบถาม |ตัวอย่างเช่น  | หมายเหตุ  |
 |---------|---------|---------|
 |รหัสลูกค้ารายเดียว     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|คีย์สำรอง    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}' `         |  คีย์สำรองยังคงอยู่ในเอนทิตีลูกค้าแบบรวม       |
+|คีย์สำรอง    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  คีย์สำรองยังคงอยู่ในเอนทิตีลูกค้าแบบรวม       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |ใน    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
 |คีย์สำรอง + ใน   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |การค้นหา  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   ส่งกลับผลลัพธ์ 10 อันดับแรกสำหรับสตริงการค้นหา      |
-|การเป็นสมาชิกเซ็กเมนต์  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10  `     | ส่งกลับจำนวนแถวที่กำหนดไว้ล่วงหน้าจากเอนทิตีการแบ่งส่วน      |
+|การเป็นสมาชิกเซ็กเมนต์  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | ส่งกลับจำนวนแถวที่กำหนดไว้ล่วงหน้าจากเอนทิตีการแบ่งส่วน      |
 
 ## <a name="unified-activity"></a>กิจกรรมแบบรวม
 
@@ -53,7 +52,7 @@ Open Data Protocol (OData) เป็นโปรโตคอลการเข�
 |กิจกรรมของ CID     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | แสดงรายการกิจกรรมของโปรไฟล์ลูกค้าเฉพาะ |
 |กรอบเวลาของกิจกรรม    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  กิจกรรมของโปรไฟล์ลูกค้าในกรอบเวลา       |
 |ประเภทกิจกรรม    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
-|กิจกรรมโดยชื่อที่แสดง     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’ `        | |
+|กิจกรรมโดยชื่อที่แสดง     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |การเรียงลำดับกิจกรรม    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  เรียงกิจกรรมจากน้อยไปหามาก หรือมากไปหาน้อย       |
 |กิจกรรมขยายจากการเป็นสมาชิกเซ็กเมนต์  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
@@ -67,3 +66,13 @@ Open Data Protocol (OData) เป็นโปรโตคอลการเข�
 |แบรนด์ของ CID ที่เพิ่มความสมบูรณ์แล้ว    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
 |ความสนใจ CID ที่เพิ่มความสมบูรณ์แล้ว    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |ในส่วนคำสั่ง + ขยาย     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
+
+## <a name="not-supported-odata-queries"></a>ไม่รองรับการสอบถามของ OData
+
+Customer Insights ไม่รองรับการสอบถามต่อไปนี้:
+
+- `$filter` กับเอนทิตีต้นทางที่นำเข้า คุณสามารถเรียกใช้การสอบถาม $filter กับเอนทิตีของระบบที่ Customer Insights สร้างขึ้นเท่านั้น
+- `$expand` จากการสอบถาม `$search` ตัวอย่าง: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+- `$expand` จาก `$select` หากเลือกเฉพาะชุดย่อยของแอตทริบิวต์ ตัวอย่าง: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+- `$expand` แบรนด์ที่เพิ่มข้อมูลหรือความเกี่ยวข้องด้านความสนใจสำหรับลูกค้าที่กำหนด ตัวอย่าง: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+- สอบถามเอนทิตีผลลัพธ์ของโมเดลการคาดคะเนผ่านคีย์สำรอง ตัวอย่าง: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`

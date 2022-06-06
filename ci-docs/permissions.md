@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 74c7ff7cda8431c04dd34713becefa7e346331b4
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 8022563f8994400b88389c20d7d661d9ea82bab1
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740926"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833745"
 ---
 # <a name="user-permissions"></a>สิทธิ์ผู้ใช้
 
@@ -41,7 +41,7 @@ ms.locfileid: "8740926"
 
 - สิทธิ์ทั้งหมดที่มีให้กับตัวแสดง
 - โหลดและแปลงข้อมูลโดยใช้เพจ **แหล่งข้อมูล**
-- ทำให้ ***การรวมข้อมูล** เสร็จสมบูรณ์ ซึ่งส่งผลให้เกิดเป็นโปรไฟล์ลูกค้าแบบรวม
+- ทำให้ **การรวมข้อมูล** เสร็จสมบูรณ์ ซึ่งส่งผลให้เกิดเป็นโปรไฟล์ลูกค้าแบบรวม
 - กำหนด **ความสัมพันธ์** และ **กิจกรรม**.
 - สร้างเซ็กเมนต์โดยใช้เพจ **เซ็กเมนต์**
 - สร้างการวัดโดยใช้เพจ **การวัด** .
@@ -65,11 +65,11 @@ ms.locfileid: "8740926"
 ## <a name="admin-owner"></a>ผู้ดูแลระบบ (เจ้าของ)
 
 - สิทธิ์ทั้งหมดที่มีให้ผู้ดูแลระบบ
-- [รีเซ็ตและลบ](manage-environments.md#reset-an-existing-environment) สภาพแวดล้อม
+- [รีเซ็ตและลบ](manage-environments.md#reset-an-existing-environment-preview) สภาพแวดล้อม
 
 ## <a name="assign-roles-and-permissions"></a>มอบหมายบทบาทและสิทธิ์
 
-1. ไปที่ **ผู้ดูแลระบบ** > **ความปลอดภัย** > **ผู้ใช้***
+1. ไปที่ **ผู้ดูแลระบบ** > **ความปลอดภัย** > **ผู้ใช้**
 
 1. เลือก **เพิ่มผู้ใช้** เพื่อเปิดบานหน้าต่าง **เพิ่ม/แก้ไขสิทธิ์**
 

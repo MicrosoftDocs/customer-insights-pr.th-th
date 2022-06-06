@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: d85de28a12565e1a2e36278d0e8b74f6de286b20
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755332"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800395"
 ---
 # <a name="connections-preview-overview"></a>ภาพรวมของการเชื่อมต่อ (ตัวอย่าง)
 
@@ -69,7 +69,7 @@ ms.locfileid: "8755332"
 
 1. ไปที่แท็บ **การเชื่อมต่อ**
 
-1. เลือกจุดไข่ปลาแนวตั้งสำหรับการเชื่อมต่อที่คุณต้องการแก้ไข
+1. เลือกจุดไข่ปลาแนวตั้ง (&vellip;) สำหรับการเชื่อมต่อที่คุณต้องการแก้ไข
 
 1. เลือก **แก้ไข**
 
@@ -85,7 +85,7 @@ ms.locfileid: "8755332"
 
 1. ไปที่แท็บ **การเชื่อมต่อ**
 
-1. เลือกจุดไข่ปลาแนวตั้งสำหรับการเชื่อมต่อที่คุณต้องการลบ
+1. เลือกจุดไข่ปลาแนวตั้ง (&vellip;) สำหรับการเชื่อมต่อที่คุณต้องการลบ
 
 1. เลือก **ลบ** จากเมนูแบบหล่นลง กล่องโต้ตอบการยืนยันปรากฏขึ้น
 

@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 5c14e6c96d2f907ba161331b6f92277191cbdbef
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: abc1b6af80e8854ee3bc930453634ef67376c4af
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653546"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800628"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>การเพิ่มข้อมูลสำหรับโปรไฟล์ลูกค้า (พรีวิว)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8653546"
 
 ไปที่แท็บ **การเพิ่มความสมบูรณ์ของฉัน** เพื่อดูการเพิ่มข้อมูลที่กำหนดค่าไว้ทั้งหมด การเพิ่มข้อมูลแต่ละรายการจะแสดงเป็นแถวที่มีข้อมูลเพิ่มเติมเกี่ยวกับการเพิ่มข้อมูล
 
-เลือกการเพิ่มข้อมูลเพื่อดูตัวเลือกที่มี คุณยังสามารถเลือกจุดไข่ปลา (...) บนรายการเพื่อดูตัวเลือก หากคุณกำหนดค่าการเพิ่มข้อมูลหลายรายการ คุณสามารถใช้กล่องค้นหาเพื่อให้ค้นหาได้อย่างรวดเร็ว
+เลือกการเพิ่มความสมบูรณ์เพื่อดูตัวเลือกที่มี คุณยังสามารถเลือกจุดไข่ปลาแนวตั้ง (&vellip;) จากข้อมูลในรายการเพื่อดูตัวเลือก หากคุณกำหนดค่าการเพิ่มข้อมูลหลายรายการ คุณสามารถใช้กล่องค้นหาเพื่อให้ค้นหาได้อย่างรวดเร็ว
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="ตัวเลือกในการจัดการการเพิ่มข้อมูลในรายการการเพิ่มข้อมูล":::
 
