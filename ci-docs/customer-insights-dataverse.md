@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833699"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011578"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>ทำงานกับข้อมูล Customer Insights ใน Microsoft Dataverse
 
 Customer Insights มีตัวเลือกในการทำให้เอนทิตีผลลัพธ์สามารถใช้งานเป็น [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro) การผสานรวมนี้ช่วยให้การแบ่งปันข้อมูลและการพัฒนาแบบกำหนดเองทำได้ง่ายโดยใช้แนวทางแบบเขียนโค้ดเล็กน้อย/แบบไม่ต้องใช้โค้ด [เอนทิตีผลลัพธ์](#output-entities) มีเป็นตารางในสภาพแวดล้อม Dataverse คุณสามารถใช้ข้อมูลนี้สำหรับแอปพลิเคชันอื่นตามตาราง Dataverse ตารางเหล่านี้เปิดใช้งานสถานการณ์ เช่น เวิร์กโฟลว์อัตโนมัติผ่าน Power Automate หรือการสร้างแอปด้วย Power Apps
 
-การเชื่อมต่อกับสภาพแวดล้อม Dataverse ของคุณยังช่วยให้คุณสามารถ [นำเข้าข้อมูลจากแหล่งข้อมูลในสถานที่โดยใช้กระแสข้อมูล Power Platform และเกตเวย์](data-sources.md#add-data-from-on-premises-data-sources)
+การเชื่อมต่อกับสภาพแวดล้อม Dataverse ของคุณยังช่วยให้คุณสามารถ [นำเข้าข้อมูลจากแหล่งข้อมูลในสถานที่โดยใช้กระแสข้อมูล Power Platform และเกตเวย์](connect-power-query.md#add-data-from-on-premises-data-sources)
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 

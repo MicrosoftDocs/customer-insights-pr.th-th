@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800304"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011496"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>การเพิ่มแหล่งข้อมูล (พรีวิว)
 
@@ -29,9 +29,11 @@ ms.locfileid: "8800304"
 
 1. เลือกจุดไข่ปลาแนวตั้ง (&vellip;) ถัดจากแหล่งข้อมูลที่คุณต้องการเพิ่มและเลือก **เพิ่มข้อมูล**
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="เพจการเพิ่มแหล่งข้อมูล":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="หน้าแหล่งข้อมูลที่เน้นการเพิ่มข้อมูล":::
 
    แท็บ **ค้นหา** แสดง [ตัวเลือกการเพิ่มแหล่งข้อมูลที่รองรับ](#supported-data-source-enrichments)
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="เพจการเพิ่มแหล่งข้อมูล":::
 
 1. เลือก **เพิ่มข้อมูลของฉัน** เพื่อกำหนดค่าการเพิ่มแหล่งข้อมูล ชื่อเอนทิตีผลลัพธ์จะถูกเติมโดยอัตโนมัติ
 

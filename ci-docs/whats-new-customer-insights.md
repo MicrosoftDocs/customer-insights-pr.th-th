@@ -1,19 +1,19 @@
 ---
-title: คุณลักษณะใหม่และที่กำลังจะเกิดขึ้น
+title: คุณลักษณะใหม่และที่ปรับปรุง
 description: ข้อมูลเกี่ยวกับคุณลักษณะใหม่ การปรับปรุง และการแก้ไขข้อบกพร่อง
-ms.date: 05/03/2022
+ms.date: 06/02/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: d06f8be114f558d7adadf2913107c5fd69686875
+ms.sourcegitcommit: 9dd767051014e06d8d9f2f616e248573f24df4cb
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833653"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8843370"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>มีอะไรใหม่ใน Dynamics 365 Customer Insights
 
@@ -24,6 +24,37 @@ ms.locfileid: "8833653"
 > [!TIP]
 > เมื่อต้องการส่งและโหวตคำขอคุณลักษณะและข้อเสนอแนะผลิตภัณฑ์ ให้ไปที่ [พอร์ทัลไอเดียเกี่ยวกับแอปพลิเคชัน Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)
 
+## <a name="may-2022-updates"></a>การปรับปรุงเดือนพฤษภาคม 2022
+
+การปรับปรุงในเดือนพฤษภาคม 2022 ประกอบด้วยคุณลักษณะใหม่ การอัปเกรดประสิทธิภาพ และการแก้ไขข้อบกพร่อง
+
+### <a name="updated-data-unification-experience"></a>ปรับปรุงประสบการณ์การรวมข้อมูล
+
+ การรวมข้อมูลทำให้คุณสามารถรวมแหล่งข้อมูลที่ครั้งหนึ่งเคยกระจัดกระจายเป็นชุดข้อมูลหลักชุดเดียวที่ให้ภาพรวมของข้อมูลนั้น ข้อมูลสามารถรวมเป็นเอนทิตีเดียวหรือหลายเอนทิตี อันดับแรก คุณ [เลือกเอนทิตีและฟิลด์แหล่งที่มา](map-entities.md), [ลบเรกคอร์ดที่ซ้ำกัน](remove-duplicates.md) ระบุกฎสำหรับ [เงื่อนไขการจับคู่](match-entities.md) และกำหนด [ฟิลด์ที่จะรวมไว้ใน unified customer profile](merge-entities.md)
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [ภาพรวมการรวมข้อมูล](data-unification.md)
+
+### <a name="refreshed-home-page-in-customer-insights"></a>หน้าแรกแบบใหม่ใน Customer Insights
+
+**หน้าแรก** จะแนะนำคุณเกี่ยวกับกระบวนการกำหนดค่าสำหรับคุณลักษณะหลัก และให้ภาพรวมของเซ็กเมนต์ การวัด และข้อมูลในการเพิ่มความสมบูรณ์ เราได้ปรับปรุงประสบการณ์เพื่อให้ข้อมูลที่เกี่ยวข้องมากขึ้นได้อย่างรวดเร็ว
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [สำรวจ Customer Insights](home.md)
+
+### <a name="track-usage-of-a-segment"></a>ติดตามการใช้งานของเซ็กเมนต์
+
+ตอนนี้คุณสามารถ [ติดตามการใช้งานเซ็กเมนต์](segments.md#track-usage-of-a-segment) ในแอป ซึ่งอิงตามองค์กร Dataverse ที่เชื่อมต่อกับ Customer Insights ได้แล้ว สำหรับ [เซ็กเมนต์ Customer Insights ที่ใช้ในการเดินทางของลูกค้าของ Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile) ระบบจะแจ้งให้คุณทราบเกี่ยวกับการใช้งานของเซ็กเมนต์นั้น
+
+### <a name="export-to-criteo"></a>ส่งออกไปยัง Criteo
+
+Criteo เป็นแพลตฟอร์มออนไลน์ที่ช่วยให้ผู้ใช้จัดการโฆษณาดิจิทัล ตอนนี้คุณสามารถส่งออกเซ็กเมนต์ของ unified customer profile เพื่อสร้างการส่งเสริมการขาย จัดทำการตลาดทางอีเมล และใช้กลุ่มลูกค้าเฉพาะกับ Criteo ได้แล้ว
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [ส่งออกเซ็กเมนต์ไปยัง Criteo (พรีวิว)](export-criteo.md)
+
+### <a name="refined-documentation-structure-for-environment-creation"></a>โครงสร้างคู่มือที่ปรับปรุงสำหรับการสร้างสภาพแวดล้อม
+
+เราได้ปรับปรุงเอกสารวิธีใช้ที่เกี่ยวข้องกับการสร้างและการจัดการสภาพแวดล้อมใน Customer Insights บทความนี้มีการจัดกลุ่มภายใต้โหนดสภาพแวดล้อมในสารบัญ บทความที่ปรับเปลี่ยนโครงสร้างใหม่นี้จะให้คำแนะนำเพิ่มเติมเกี่ยวกับวิธีต่างๆ ในการตั้งค่าสภาพแวดล้อมและมีโครงสร้างที่ชัดเจนยิ่งขึ้น หากคุณมีข้อเสนอแนะที่จะแบ่งปัน โปรดแจ้งให้เราทราบผ่านตัวควบคุมที่ส่วนท้ายของบทความวิธีใช้
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [วิธีการ: สร้างสภาพแวดล้อมใหม่](create-environment.md)
 
 ## <a name="april-2022-updates"></a>อัปเดต เมษายน 2022
 

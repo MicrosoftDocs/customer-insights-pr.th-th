@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833791"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011910"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>คำถามที่ถามบ่อยของรุ่นทดลองใช้สำหรับ Dynamics 365 Customer Insights
 
@@ -68,7 +68,7 @@ ms.locfileid: "8833791"
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>ขีดจํากัดและโควต้ารุ่นทดลองใช้คืออะไร
 
-- คุณไม่สามารถใช้บัญชีที่เก็บข้อมูล Azure Data Lake ของคุณเอง เพื่อจัดเก็บข้อมูลผลลัพธ์ในระหว่างการทดลองใช้ Customer Insights แต่คุณสามารถนำเข้าข้อมูลจากบัญชีที่เก็บข้อมูล Data Lake ได้
+- คุณไม่สามารถใช้บัญชี Azure Data Lake Storage ของคุณเอง เพื่อจัดเก็บข้อมูลผลลัพธ์ในระหว่างการทดลองใช้ Customer Insights แต่คุณสามารถนำเข้าข้อมูลจากบัญชี Data Lake Storage ได้
 - คุณสามารถจัดเก็บข้อมูลได้ถึง 3 GB ในสภาพแวดล้อม Dataverse ที่ได้รับการจัดเตรียมโดยอัตโนมัติ เมื่อคุณเริ่มการทดลองใช้ Customer Insights
 
 ## <a name="customer-insights-specific-questions"></a>คําถามเฉพาะ Customer Insights

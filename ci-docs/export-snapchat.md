@@ -1,19 +1,19 @@
 ---
 title: ส่งออกข้อมูล Customer Insights ไปยัง Snapchat
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Snapchat
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647846"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947299"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Snapchat (พรีวิว)
 
@@ -21,7 +21,8 @@ ms.locfileid: "8647846"
 
 ## <a name="prerequisites-for-a-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
 
--   คุณมี [บัญชี Snapchat Business](https://business.snapchat.com/) [บัญชี Snapchat Ads](https://ads.snapchat.com/) และข้อมูลประจำตัวผู้ดูแลระบบที่สอดคล้องกัน
+-   คุณมี [บัญชี Snapchat Business](https://business.snapchat.com/) [บัญชี Snapchat Ads](https://ads.snapchat.com/) และข้อมูลประจำตัวผู้ดูแลระบบที่สอดคล้องกัน คุณต้องเป็นสมาชิกของบัญชีองค์กรและผู้จัดการข้อมูลของบัญชีโฆษณาเฉพาะเป็นอย่างน้อย 
+-   คุณมีผู้ชมอย่างน้อยหนึ่งรายในผู้จัดการผู้ชม Snapchat เป็นชนิด SAM (การจับคู่ผู้ชม Snap) 
 -   คุณ [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
 -   โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออกประกอบด้วยฟิลด์ที่แสดงที่อยู่อีเมล
 
@@ -60,7 +61,7 @@ ms.locfileid: "8647846"
 
 1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน Snapchat หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
 
-1. ป้อน [**รหัสผู้ชม Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences)
+1. ป้อน [**รหัสเซ็กเมนต์/ผู้ชม Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences) รหัสของผู้ชมสามารถพบได้ใน URL หลังจากเลือกผู้ชมในผู้จัดการผู้ชม Snapchat 
 
 1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า จำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Snapchat
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647646"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947253"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>ส่งออกรายการเซ็กเมนต์และข้อมูลอื่นๆ ไปยัง Azure Data Lake Storage Gen2 (ตัวอย่าง)
 
@@ -21,11 +21,9 @@ ms.locfileid: "8647646"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-1. สำหรับ Azure Data Lake Storage Gen2 คุณสามารถเลือกระหว่าง [ระดับประสิทธิภาพมาตรฐานและประสิทธิภาพพรีเมียม](/azure/storage/blobs/create-data-lake-storage-account) เมื่อคุณสร้างบัญชีจัดเก็บข้อมูลสำหรับที่จัดเก็บข้อมูลดิบของคุณ หากคุณเลือกระดับประสิทธิภาพพรีเมียม ให้เลือก Blob บล็อกพรีเมียมเป็นชนิดบัญชี 
+1. สำหรับ Azure Data Lake Storage Gen2 คุณสามารถเลือกระหว่าง [ระดับประสิทธิภาพมาตรฐานและประสิทธิภาพพรีเมียม](/azure/storage/blobs/create-data-lake-storage-account) เมื่อคุณสร้างบัญชีจัดเก็บข้อมูลสำหรับที่จัดเก็บข้อมูลดิบของคุณ หากคุณเลือกระดับประสิทธิภาพพรีเมียม ให้เลือก Blob บล็อกพรีเมียมเป็นชนิดบัญชี
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>ตั้งค่าการเชื่อมต่อ Azure Data Lake Storage Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>ตั้งค่าการเชื่อมต่อ Azure Data Lake Storage Gen2
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
@@ -39,7 +37,7 @@ ms.locfileid: "8647646"
     - หากต้องการเรียนรู้วิธีสร้างบัญชีที่เก็บข้อมูลที่จะใช้กับ Azure Data Lake Storage Gen2 ดู [สร้างบัญชีที่เก็บข้อมูล](/azure/storage/blobs/create-data-lake-storage-account) 
     - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับชื่อบัญชีที่เก็บข้อมูล Azure Data Lake Gen 2 และรหัสบัญชี โปรดดู [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)
 
-1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น 
+1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
@@ -57,8 +55,12 @@ ms.locfileid: "8647646"
 
 การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
 
-การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) 
+การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab)
+นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand)
 
-ข้อมูลที่ส่งออกจะถูกเก็บไว้ในที่เก็บข้อมูล Azure Data Lake Gen 2 ที่คุณกำหนดค่าไว้ 
+ข้อมูลที่ส่งออกจะถูกเก็บไว้ในที่เก็บข้อมูล Azure Data Lake Gen 2 ที่คุณกำหนดค่าไว้
+
+> [!TIP]
+> การส่งออกเอนทิตีที่มีข้อมูลจำนวนมากสามารถนำไปยังไฟล์ CSV หลายไฟล์ในโฟลเดอร์เดียวกันสำหรับการส่งออกแต่ละครั้ง การส่งออกแบบแยกส่วนเกิดขึ้นเนื่องจากเหตุผลด้านประสิทธิภาพ เพื่อลดเวลาที่ใช้ในการส่งออกให้เสร็จสมบูรณ์
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
