@@ -1,5 +1,5 @@
 ---
-title: การเรียนรู้เกี่ยวกับเครื่องที่ดำเนินการโดยเซ็กเมนต์ที่แนะนํา
+title: เซ็กเมนต์แนะนํา (พรีวิว)
 description: ให้การเรียนรู้เกี่ยวกับเครื่องช่วยคุณค้นหาเซ็กเมนต์ใหม่ ๆ ที่น่าสนใจตามแอตทริบิวต์ของลูกค้า
 ms.date: 10/15/2021
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-segment-suggestions
 - customerInsights
-ms.openlocfilehash: 5c7c6cc8231f758713b989bbe782aa03a4b78fa9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9229bef1c5df06de973aa671ca70c6c8462d51cf
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647786"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081897"
 ---
 # <a name="suggested-segments-preview"></a>เซ็กเมนต์แนะนํา (พรีวิว)
 

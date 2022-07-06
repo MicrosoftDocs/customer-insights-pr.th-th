@@ -1,5 +1,5 @@
 ---
-title: งานที่ใช้ร่วมกันสำหรับสถานการณ์การคาดคะเน
+title: จัดการการคาดคะเน
 description: เรียนรู้วิธีจัดการ แก้ไขปัญหา และปรับแต่งการคาดคะเน
 ms.date: 11/01/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c4d269e1b542e84ade8c6e63c1dadace51ddde32
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647966"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081922"
 ---
 # <a name="manage-predictions"></a>จัดการการคาดคะเน
 

@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยังที่เก็บข้อมูล Azure Blob
+title: ส่งออกข้อมูลไปยังที่เก็บข้อมูล Azure Blob (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยังที่เก็บข้อมูล Blob
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 059c8364ca0f3740bc0e4ffeeeba94246c9e5696
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947161"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055513"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>ส่งออกรายการเซ็กเมนต์และข้อมูลอื่น ๆ ไปยังที่เก็บข้อมูล Azure Blob (ตัวอย่าง)
+# <a name="export-data-to-an-azure-blob-storage-preview"></a>ส่งออกข้อมูลไปยังที่เก็บข้อมูล Azure Blob (พรีวิว)
 
 จัดเก็บข้อมูล Customer Insights ของคุณในที่เก็บข้อมูล Blob หรือใช้ในการย้ายข้อมูลไปยังแอปพลิเคชันอื่น
 

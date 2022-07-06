@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยัง Google Ads
+title: ส่งออกกลุ่มไปยัง Google Ads (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Google Ads
 ms.date: 03/31/2022
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3e0eb91be97d69a999e90708d29c572f0055527e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b7f08936d7d90322cb4e62396a2961fe06273b76
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647726"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081957"
 ---
-# <a name="export-segments-to-google-ads-preview"></a>ส่งออกกลุ่มไปยัง Google Ads (ตัวอย่าง)
+# <a name="export-segments-to-google-ads-preview"></a>ส่งออกกลุ่มไปยัง Google Ads (พรีวิว)
 
 ส่งออกเซ็กเมนต์ของโปรไฟล์ลูกค้าแบบรวมไปยังรายการผู้ชม Google Ads และใช้เพื่อโฆษณาบน Google Search, Gmail, YouTube และ Google Display Network 
 

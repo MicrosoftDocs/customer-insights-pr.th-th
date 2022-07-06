@@ -1,19 +1,19 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยัง Azure Synapse Analytics
+title: ส่งออกข้อมูลไปยัง Azure Synapse Analytics (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อกับ Azure Synapse Analytics
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741526"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081927"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ส่งออกข้อมูลไปยัง Azure Synapse Analytics (พรีวิว)
 
@@ -72,13 +72,13 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 
 1. ในฟิลด์ **การเชื่อมต่อที่จะส่งออก** ให้เลือกการเชื่อมต่อจากส่วน **Azure Synapse Analytics** หากคุณไม่เห็นชื่อส่วนนี้ ไม่มี [การเชื่อมต่อ](connections.md) ชนิดนี้ที่พร้อมใช้งานสำหรับคุณ
 
-1. ระบุ **ชื่อที่แสดง** ที่เป็นที่รู้จักสำหรับการส่งออกของคุณ และ **ชื่อฐานข้อมูล**
+1. ระบุ **ชื่อที่แสดง** ที่เป็นที่รู้จักสำหรับการส่งออกของคุณ และ **ชื่อฐานข้อมูล** การส่งออกจะสร้าง [ฐานข้อมูลที่จัดเก็บข้อมูลดิบ Azure Synapse](/azure/synapse-analytics/database-designer/concepts-lake-database) ในพื้นที่ทำงานที่กำหนดไว้ในการเชื่อมต่อ
 
 1. เลือกเอนทิตีที่คุณต้องการส่งออกไปยัง Azure Synapse Analytics
    > [!NOTE]
    > ไม่รองรับแหล่งข้อมูลที่อิงตาม [โฟลเดอร์ Common Data Model](connect-common-data-model.md)
 
-2. เลือก **บันทึก**
+1. เลือก **บันทึก**
 
 การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
 

@@ -1,5 +1,5 @@
 ---
-title: Schema เอนทิตี Customer Insights ใน Common Data Model
+title: Schema เอนทิตีใน Common Data Model
 description: ทำงานกับเอนทิตีใน Common Data Model
 ms.date: 08/13/2021
 ms.reviewer: mhart
@@ -8,16 +8,14 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757455"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054777"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Schema เอนทิตีใน Common Data Model
-
-
 
 [Common Data Model](/common-data-model/) เป็นข้อมูลจำเพาะสำหรับประกาศ และคำนิยามของเอนทิตีมาตรฐาน ที่แสดงถึงแนวคิดและกิจกรรมที่ใช้กันทั่วไปในธุรกิจและโปรแกรมประยุกต์ประสิทธิภาพ โมเดลนี้ถูกขยายไปยังข้อมูลเชิงสังเกตการณ์และเชิงวิเคราะห์ด้วย Common Data Model ให้เอนทิตีธุรกิจที่ กำหนดไว้อย่างดี มีส่วนจำเพาะ และสามารถขยายได้ เช่น บัญชี หน่ายทางธุรกิจ กรณี ที่ติดต่อ ลูกค้าเป้าหมาย โอกาส และผลิตภัณฑ์ รวมถึงการปฏิสัมพันธ์ผู้ขาย พนักงาน และลูกค้า เช่น กิจกรรมและข้อตกลงระดับบริการ ทุกคนสามารถสร้างและขยายคำจำกัดความ Common Data Model เพื่อบันทึกแนวคิดเฉพาะทางธุรกิจเพิ่มเติม
 

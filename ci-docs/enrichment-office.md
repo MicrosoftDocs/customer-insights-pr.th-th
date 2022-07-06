@@ -1,5 +1,5 @@
 ---
-title: เพิ่มโปรไฟล์ลูกค้าด้วยข้อมูลจาก Microsoft Office 365
+title: เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลจาก Microsoft Office 365 (พรีวิว)
 description: ใช้ข้อมูลที่เป็นกรรมสิทธิ์จาก Microsoft Office เพื่อเพิ่มโปรไฟล์ลูกค้าของคุณด้วยข้อมูลการมีส่วนร่วม
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954156"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055697"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>เพิ่มโปรไฟล์ลูกค้าด้วยข้อมูลการมีส่วนร่วม (พรีวิว)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลจาก Microsoft Office 365 (พรีวิว)
 
 ใช้ข้อมูลจาก Microsoft Office 365 เพื่อเพิ่มโปรไฟล์บัญชีลูกค้าของคุณด้วยข้อมูลเชิงลึกเกี่ยวกับการมีส่วนร่วมผ่านแอป Office 365 ข้อมูลการมีส่วนร่วมประกอบด้วยอีเมลและกิจกรรมการประชุมซึ่งรวบรวมไว้ที่ระดับบัญชี ตัวอย่างเช่น จำนวนอีเมลจากบัญชีธุรกิจหรือจำนวนการประชุมกับบัญชีนั้น ไม่มีข้อมูลเกี่ยวกับผู้ใช้แต่ละราย
 
@@ -31,9 +31,9 @@ ms.locfileid: "8954156"
 - สิทธิ์ของ [ผู้ดูแลระบบ](permissions.md#admin)
 - ความยินยอมจากผู้ดูแลระบบผู้เช่า Office 365 ของคุณในการใช้ข้อมูล Office 365 ที่จะให้ **ข้อมูลเชิงลึกสำหรับองค์กร** ภายในแอปพลิเคชัน Dynamics 365
 
-## <a name="configure-the-enrichment"></a>กำหนดค่าการเพิ่มข้อมูล
+## <a name="configure-the-enrichment"></a>กำหนดค่าการเพิ่มความสมบูรณ์
 
-1. ไปที่ **ข้อมูล** > **การเพิ่มข้อมูล** และเลือกแท็บ **ค้นหา**
+1. ไปที่ **ข้อมูล** > **การเพิ่มความสมบูรณ์** และเลือกแท็บ **ค้นหา**
 
 1. เลือก **เพิ่มข้อมูลของฉัน** บนไทล์ **การมีส่วนร่วมของบัญชี**
 
@@ -55,7 +55,7 @@ ms.locfileid: "8954156"
 
 1. ระบุ **ชื่อ** สำหรับการเพิ่มความสมบูรณ์ และ **เอนทิตีผลลัพธ์**
 
-1. เลือก **บันทึกการเพิ่มข้อมูล** หลังจากตรวจสอบตัวเลือกของคุณแล้ว
+1. เลือก **บันทึกการเพิ่มความสมบูรณ์** หลังจากตรวจสอบตัวเลือกของคุณแล้ว
 
 1. เลือก **ปิด** เพื่อกลับไปยังหน้า **การเพิ่มความสมบูรณ์**
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954156"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>ผลลัพธ์การเพิ่มข้อมูล
+## <a name="view-enrichment-results"></a>ดูผลลัพธ์การเพิ่มความสมบูรณ์
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] นี่คือเอนทิตี *Office* *Office_UserEntity* มีรหัส Active Directory สำหรับที่อยู่อีเมลที่เลือกระหว่างการกำหนดค่าการเพิ่มความสมบูรณ์
 
@@ -102,7 +102,7 @@ ms.locfileid: "8954156"
 | วันที่เริ่มต้นการรวม                                                            |  AggregationStartDate                    |
 | ระดับการรวม (ปี เดือน หรือสัปดาห์)                                          |  AggregationLevel                        |
 
-## <a name="see-enrichment-data-on-the-customer-card"></a>ดูข้อมูลในการเพิ่มข้อมูลบนการ์ดลูกค้า
+## <a name="see-enrichment-data-on-the-customer-card"></a>ดูข้อมูลในการเพิ่มความสมบูรณ์บนการ์ดลูกค้า
 
 การมีส่วนร่วมของบัญชีสามารถดูได้บนการ์ดลูกค้าแต่ละราย ไปที่ **ลูกค้า** และเลือกโปรไฟล์ลูกค้า ในการ์ดลูกค้า คุณจะพบคะแนนการมีส่วนร่วมของบัญชี จำนวนอีเมลทั้งหมด และจำนวนการประชุมทั้งหมดที่รวมอยู่ในปีที่ผ่านมา คุณยังพบตารางที่แสดงอีเมลและประวัติการประชุมอีกด้วย
 

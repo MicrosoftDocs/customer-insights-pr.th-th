@@ -7,14 +7,14 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 9c83dc6716abd5f81eb7851d462d7d61791f542b
-ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
+ms.openlocfilehash: d92c327a58f4597c9620920d029d47254f52c92a
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8768445"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051844"
 ---
-# <a name="purchase-customer-insights"></a>ซื้อ Customer Insights
+# <a name="purchase-a-license-of-dynamics-365-customer-insights"></a>ซื้อสิทธิ์การใช้งานของ Dynamics 365 Customer Insights
 
 หากต้องการซื้อ Dynamics 365 Customer Insights ดูตัวเลือกการติดต่อของเราบน [เว็บไซต์ Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/)
 

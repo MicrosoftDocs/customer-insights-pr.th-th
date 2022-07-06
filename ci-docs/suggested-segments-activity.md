@@ -1,5 +1,5 @@
 ---
-title: เซ็กเมนต์ที่แนะนำตามกิจกรรม
+title: เซ็กเมนต์ที่แนะนำตามกิจกรรม (พรีวิว)
 description: อนุญาตให้การเรียนรู้เกี่ยวกับเครื่องช่วยคุณค้นหาเซ็กเมนต์ที่ใหม่และน่าสนใจตามกิจกรรมของลูกค้า
 ms.date: 05/11/2021
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-segment-suggestions
 - customerInsights
-ms.openlocfilehash: 85c3cef3a8d531b31b64a7e5decbdc122c4383fc
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e98aea3b3f3a2c4788346deab1b7ad7d1167110d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647791"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054363"
 ---
 # <a name="suggested-segments-based-on-activity-data-preview"></a>เซ็กเมนต์ที่แนะนำตามข้อมูลกิจกรรม (พรีวิว)
 
@@ -55,7 +55,7 @@ ms.locfileid: "8647791"
 
 1. ไปที่ **เซ็กเมนต์**
 
-1. เลือกแท็บ **ข้อเสนอแนะ (ตัวอย่าง)**
+1. เลือกแท็บ **ข้อเสนอแนะ (พรีวิว)**
 
 1. เลือก **ค้นหาคำแนะนำใหม่ๆ** และเลือก **ดูหรือคาดการณ์พฤติกรรมของลูกค้า** เลือก **เริ่ม** เพื่อเรียกใช้ประสบการณ์ที่แนะนำ
 
@@ -83,7 +83,7 @@ ms.locfileid: "8647791"
 
 ## <a name="save-a-suggestion-as-a-segment"></a>บันทึกข้อเสนอแนะเป็นเซ็กเมนต์
 
-1. ไปที่ **เซ็กเมนต์** > **ข้อเสนอแนะ (ตัวอย่าง)**
+1. ไปที่ **เซ็กเมนต์** > **ข้อเสนอแนะ (พรีวิว)**
 
 1. เลือกเซ็กเมนต์ที่คุณต้องการบันทึก 
 

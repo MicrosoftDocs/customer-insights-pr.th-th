@@ -6,14 +6,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 99ec463299a24ea81cfe26bb785e36bdefdcd080
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833331"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054455"
 ---
-# <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>ทำงานกับ Unified customer profile ใน Dynamics 365 Marketing
+# <a name="use-unified-customer-profiles-in-dynamics-365-marketing"></a>ใช้ unified customer profile ใน Dynamics 365 Marketing
 
 [Dynamics 365 Marketing](/dynamics365/marketing/overview) ยกระดับประสบการณ์ของลูกค้า ช่วยให้คุณสามารถประสานการเดินทางส่วนบุคคลในทุกจุดติดต่อเพื่อเสริมสร้างความสัมพันธ์และได้รับความภักดี แอป Dynamics 365 Marketing ทํางานได้อย่างราบรื่นกับ Dynamics 365 Sales, Dynamics 365 Customer Insights, Microsoft Teams, และผลิตภัณฑ์อื่น ๆ และช่วยให้คุณตัดสินใจได้เร็วขึ้นและดีขึ้นโดยใช้พลังของข้อมูลและ AI
 
@@ -22,7 +22,7 @@ ms.locfileid: "8833331"
 - กําหนดเป้าหมาย Unified customer profile และเซ็กเมนต์ ซึ่งช่วยให้คุณสามารถดึงดูดลูกค้าทุกคนได้ โดยไม่คํานึงถึงตำแหน่งข้อมูลของลูกค้า
 - เนื้อหาแบบไดนามิกพื้นฐาน (เช่น โทเค็นส่วนบุคคล) ในอีเมล, SMS และการแจ้งเตือนแบบพุชเกี่ยวกับการวัดต่างๆ เช่น สถานะสมาชิก วันที่ต่ออายุการสมัครใช้งาน บัญชีหลัก หรือการวัดอื่นๆ ที่คุณบันทึกไว้ในโปรไฟล์ Customer Insights แบบรวม
 - โหลดข้อมูลจาก Marketing ลงใน Customer Insights และรวมเข้ากับข้อมูลลูกค้าจากแหล่งข้อมูลอื่นๆ
-- ใช้การล้างข้อมูล Customer Insights การเพิ่มประสิทธิภาพ และเครื่องมือการจับคู่แบบคลุมเครือ
+- ใช้การล้างข้อมูล Customer Insights การเพิ่มความสมบูรณ์ และเครื่องมือการจับคู่แบบคลุมเครือ
 
 ## <a name="use-rich-customer-profiles-in-real-time-marketing"></a>ใช้โปรไฟล์ลูกค้าที่หลากหลายในการตลาดแบบเรียลไทม์
 

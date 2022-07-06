@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยัง Adobe Campaign Standard
+title: ส่งออกเซ็กเมนต์ Customer Insights ไปยัง Adobe Campaign Standard (พรีวิว)
 description: เรียนรู้วิธีใช้เซ็กเมนต์ Customer Insights ใน Adobe Campaign Standard
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647756"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081802"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>ใช้เซ็กเมนต์ Customer Insights ใน Adobe Campaign Standard (พรีวิว)
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>ส่งออกเซ็กเมนต์ Customer Insights ไปยัง Adobe Campaign Standard (พรีวิว)
 
 ในฐานะผู้ใช้ Dynamics 365 Customer Insights คุณอาจสร้างเซ็กเมนต์เพื่อให้การส่งเสริมการขายทางการตลาดของคุณมีประสิทธิภาพมากขึ้นโดยการกำหนดเป้าหมายผู้ชมที่เกี่ยวข้อง การใช้เซ็กเมนต์จาก Customer Insights ใน Adobe Experience Platform และแอปพลิเคชันต่างๆ เช่น Adobe Campaign Standard คุณต้องทำตามขั้นตอนสองสามขั้นตอนที่ระบุไว้ในบทความนี้
 
@@ -23,9 +23,9 @@ ms.locfileid: "8647756"
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
--   สิทธิ์การใช้งาน Dynamics 365 Customer Insights
--   สิทธิ์การใช้งาน Adobe Campaign Standard
--   บัญชีที่เก็บข้อมูล Azure Blob
+- สิทธิ์การใช้งาน Dynamics 365 Customer Insights
+- สิทธิ์การใช้งาน Adobe Campaign Standard
+- บัญชีที่เก็บข้อมูล Azure Blob
 
 ## <a name="campaign-overview"></a>ภาพรวมการส่งเสริมการขาย
 

@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยัง DotDigital
+title: ส่งออกเซ็กเมนต์ไปยัง DotDigital (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง DotDigital
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f63a0f5f5f93e96681a88fd758381c012a404f43
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af0cce4edb9d47247c79ae08491366349da98b1c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647508"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081942"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>ส่งออกเซ็กเมนต์ไปยัง DotDigital (พรีวิว)
 

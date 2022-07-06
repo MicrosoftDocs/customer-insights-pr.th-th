@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยัง AdRoll
+title: ส่งออกเซ็กเมนต์ไปยัง AdRoll (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง AdRoll
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647606"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081917"
 ---
 # <a name="export-segments-to-adroll-preview"></a>ส่งออกเซ็กเมนต์ไปยัง AdRoll (พรีวิว)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8647606"
 
 ## <a name="prerequisites-for-a-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
 
--   คุณมี [บัญชี AdRoll](https://www.adroll.com/) และข้อมูลประจำตัวผู้ดูแลระบบที่เกี่ยวข้อง
--   คุณ [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
--   โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออกประกอบด้วยฟิลด์ที่แสดงที่อยู่อีเมล
+- คุณมี [บัญชี AdRoll](https://www.adroll.com/) และข้อมูลประจำตัวผู้ดูแลระบบที่เกี่ยวข้อง
+- คุณ [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
+- โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออกประกอบด้วยฟิลด์ที่แสดงที่อยู่อีเมล
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 

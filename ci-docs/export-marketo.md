@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยัง Marketo
+title: ส่งออกเซ็กเมนต์ไปยัง Marketo (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Marketo
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7354b0aeafbe95e60d172b16c26d83c5dc25fb96
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 8cd24cf436bd5fdfd4ec3834d35baa1495e37ca4
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648011"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053228"
 ---
-# <a name="export-segments-to-marketo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Marketo (ตัวอย่าง)
+# <a name="export-segments-to-marketo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Marketo (พรีวิว)
 
 ส่งออกเซ็กเมนต์ของโปรไฟล์ลูกค้าแบบรวมเพื่อสร้างการส่งเสริมการขาย จัดทำการตลาดทางอีเมล และใช้กลุ่มลูกค้าเฉพาะกับ Marketo
 

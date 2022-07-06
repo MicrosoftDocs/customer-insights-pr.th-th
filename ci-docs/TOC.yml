@@ -56,7 +56,7 @@
       href: connect-dataverse-managed-lake.md
     - name: เพิ่มแหล่งข้อมูลผ่านตัวเชื่อมต่อ Power Query
       href: connect-power-query.md
-    - name: การเพิ่มแหล่งข้อมูล
+    - name: การเพิ่มความสมบูรณ์จากแหล่งข้อมูล
       href: data-sources-enrichment.md
     - name: การรีเฟรชส่วนเพิ่มสำหรับแหล่งข้อมูล
       href: incremental-refresh-data-sources.md
@@ -80,7 +80,7 @@
       href: data-unification-update.md
 - name: การเพิ่มข้อมูล
   items:
-    - name: ทำให้ข้อมูลโปรไฟล์ลูกค้าสมบูรณ์ขึ้น
+    - name: ภาพรวมการเพิ่มข้อมูล
       href: enrichment-hub.md
     - name: บัญชีจากข้อมูล Office 365
       href: enrichment-office.md
@@ -112,7 +112,7 @@
       href: search-filter-index.md
     - name: กำหนดกิจกรรมลูกค้า
       href: activities.md
-    - name: การจัดการความยินยอมสำหรับ Customer Insights
+    - name: ใช้การจัดการความยินยอม
       href: consent-management.md
 - name: Segments
   items:
@@ -212,6 +212,8 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
+        - name: InMobi
+          href: export-inmobi.md
         - name: Iterable
           href: export-iterable.md
         - name: Klaviyo

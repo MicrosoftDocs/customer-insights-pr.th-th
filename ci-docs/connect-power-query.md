@@ -1,7 +1,7 @@
 ---
-title: นำเข้าข้อมูลผ่านตัวเชื่อมต่อ Power Query (มีวิดีโอ)
-description: ตัวเชื่อมต่อสำหรับแหล่งข้อมูลตาม Power Query
-ms.date: 05/09/2022
+title: เชื่อมต่อกับแหล่งข้อมูล Power Query (มีวิดีโอ)
+description: นำเข้าข้อมูลผ่านตัวเชื่อมต่อ Power Query (มีวิดีโอ)
+ms.date: 06/13/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: b99c3b446e580f455f9678d54d9db414aea9b331
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 6736b253e3a7e652f92f61bc44bfb31ca69be31a
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011680"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081762"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>เชื่อมต่อกับแหล่งข้อมูล Power Query
 

@@ -1,5 +1,5 @@
 ---
-title: โฮมเพจใน Customer Insights
+title: สำรวจ Customer Insights
 description: เริ่มต้นการค้นหาแอปในโฮมเพจ
 ms.date: 05/11/2022
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 621977068dc49b55f50f00e9762a4a5952d7b453
-ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
+ms.openlocfilehash: 13b4bfa2f0b0cd69454c025e2f59de3dd6bb75a3
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8768373"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053320"
 ---
 # <a name="explore-customer-insights"></a>สำรวจ Customer Insights
 

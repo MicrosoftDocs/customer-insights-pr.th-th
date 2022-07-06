@@ -21,14 +21,14 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: a7b10d985d5cba64b25595a3d7c101d6cb5c62a5
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647936"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081857"
 ---
-# <a name="relationships-between-entities"></a>ความสัมพันธ์ระหว่างเอนทิตี
+# <a name="relationships-between-entities-and-entity-paths"></a>ความสัมพันธ์ระหว่างเอนทิตีและพาธของเอนทิตี
 
 ความสัมพันธ์เชื่อมต่อเอนทิตี และกำหนดกราฟของข้อมูลของคุณ เมื่อเอนทิตีแชร์ตัวระบุร่วมซึ่งเป็นคีย์นอก คีย์นอกนี้สามารถอ้างอิงจากเอนทิตีหนึ่งไปยังอีกเอนทิตีหนึ่งได้ เอนทิตีที่เชื่อมต่อเปิดใช้งานข้อกำหนดของเซ็กเมนต์และการวัดตามแหล่งข้อมูลหลายแหล่ง
 

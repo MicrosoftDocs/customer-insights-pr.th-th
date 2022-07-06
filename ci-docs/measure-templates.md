@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f6bcdfc45a49c36f22d6ebc6e919f43b27f899d8
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647581"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051707"
 ---
-# <a name="use-a-template-to-build-a-measure"></a>ใช้เทมเพลตเพื่อสร้างการวัด
+# <a name="create-measures-from-templates"></a>สร้างการวัดจากเทมเพลต
 
 คุณสามารถใช้เทมเพลตที่กำหนดไว้ล่วงหน้าของ [การวัด](measures.md) ที่ใช้ทั่วไปเพื่อสร้างการวัดได้ คำอธิบายโดยละเอียดของเทมเพลตและประสบการณ์ที่แนะนำช่วยให้คุณสร้างการวัดได้อย่างมีประสิทธิภาพ เทมเพลตสร้างจากข้อมูลที่แมปจากเอนทิตี *กิจกรรมแบบรวม* ดังนั้นตรวจสอบให้แน่ใจว่าคุณได้กำหนดค่า [กิจกรรมของลูกค้า](activities.md) ก่อนที่คุณจะสร้างการวัดจากเทมเพลต
 

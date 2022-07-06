@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูลจาก Customer Insights
+title: ภาพรวมการส่งออก (พรีวิว)
 description: จัดการการส่งออกเพื่อแบ่งปันข้อมูล
 ms.date: 11/01/2021
 ms.reviewer: mhart
@@ -12,12 +12,12 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: 9c3b35f1514adcc697672f09cabf593f936e4a82
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d983e84e713003610eb27dc9b3f911b62b01d522
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647731"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081937"
 ---
 # <a name="exports-preview-overview"></a>ภาพรวมการส่งออก (พรีวิว)
 
@@ -97,7 +97,7 @@ ms.locfileid: "8647731"
 
 ## <a name="schedule-and-run-exports"></a>จัดกำหนดการและรันการส่งออก
 
-การส่งออกแต่ละรายการที่คุณกำหนดค่า มีกำหนดการรีเฟรช ในระหว่างการรีเฟรช ระบบจะค้นหาข้อมูลใหม่หรือข้อมูลที่อัปเดตเพื่อรวมไว้ในการส่งออก โดยค่าเริ่มต้น การส่งออกจะดำเนินการเป็นส่วนหนึ่งของทุกๆ [การรีเฟรชระบบตามกำหนดการ](system.md#schedule-tab) คุณสามารถปรับแต่งกำหนดการรีเฟรช หรือปิด เพื่อเรียกใช้การส่งออกด้วยตนเอง
+การส่งออกแต่ละรายการที่คุณตั้งค่าคอนฟิก มีกำหนดการรีเฟรช ในระหว่างการรีเฟรช ระบบจะค้นหาข้อมูลใหม่หรือข้อมูลที่อัปเดตเพื่อรวมไว้ในการส่งออก โดยค่าเริ่มต้น การส่งออกจะดำเนินการเป็นส่วนหนึ่งของทุกๆ [การรีเฟรชระบบตามกำหนดการ](system.md#schedule-tab) คุณสามารถปรับแต่งกำหนดการรีเฟรช หรือปิด เพื่อเรียกใช้การส่งออกด้วยตนเอง
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

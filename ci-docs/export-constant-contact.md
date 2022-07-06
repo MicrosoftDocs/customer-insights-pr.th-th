@@ -1,5 +1,5 @@
 ---
-title: ส่งออกข้อมูล Customer Insights ไปยัง Constant Contact
+title: ส่งออกเซ็กเมนต์ไปยัง Constant Contact (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Constant Contact
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 310de0355f71829346f0e35508487e5962d6e912
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: fe9706a7cd0755412ee18c4b974684bb9aa3f8d3
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647931"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081792"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Constant Contact (พรีวิว)
 

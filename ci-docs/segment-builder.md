@@ -1,6 +1,6 @@
 ---
-title: สร้างเซ็กเมนต์ด้วยเครื่องมือสร้างเซ็กเมนต์
-description: สร้างเซ็กเมนต์ของลูกค้าเพื่อจัดกลุ่มตามแอตทริบิวต์ต่างๆ
+title: สร้างเซ็กเมนต์
+description: สร้างเซ็กเมนต์ลูกค้าเพื่อจัดกลุ่มตามคุณลักษณะต่างๆ โดยใช้ตัวสร้างเซ็กเมนต์หรือเซ็กเมนต์ด่วน
 ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -13,12 +13,12 @@ searchScope:
 - ci-segment-builder
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: e1a9cd0e3c0347285026d937ca7d951a602e7160
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b99d9575d3b6af91758d80eb04170773b08cc9ab
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800119"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053995"
 ---
 # <a name="create-segments"></a>สร้างเซ็กเมนต์
 
