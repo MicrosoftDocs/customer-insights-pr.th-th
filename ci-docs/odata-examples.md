@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
+ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081999"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121585"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>ตัวอย่างการสอบถาม OData สำหรับ Customer Insights API
 
@@ -23,7 +23,7 @@ Open Data Protocol (OData) เป็นโปรโตคอลการเข�
 
 คุณต้องแก้ไขตัวอย่างการสอบถามเพื่อให้สามารถทำงานในสภาพแวดล้อมเป้าหมาย: 
 
-- {serviceRoot}:`https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` ที่ {instanceId} คือ GUID ของสภาพแวดล้อม Customer Insights ที่คุณต้องการสอบถาม The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) ให้คุณค้นหา {InstanceId} ที่คุณสามารถเข้าถึงได้
+- {serviceRoot}:`https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` ที่ {instanceId} คือ GUID ของสภาพแวดล้อม Customer Insights ที่คุณต้องการสอบถาม The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) ให้คุณค้นหา {InstanceId} ที่คุณสามารถเข้าถึงได้
 - {CID}: GUID ของบันทึกลูกค้าแบบรวม ตัวอย่าง: `ce759201f786d590bf2134bff576c369`
 - {AlternateKey}: ตัวระบุคีย์หลักของบันทึกลูกค้าในแหล่งข้อมูล ตัวอย่าง: `CNTID_1002`
 - {DSname}: สตริงที่มีชื่อเอนทิตีของแหล่งข้อมูลที่นำมาใช้กับ Customer Insights ตัวอย่าง: `Website_contacts`
@@ -39,9 +39,10 @@ Open Data Protocol (OData) เป็นโปรโตคอลการเข�
 |คีย์สำรอง    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  คีย์สำรองยังคงอยู่ในเอนทิตีลูกค้าแบบรวม       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |ใน    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|คีย์สำรอง + ใน   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|คีย์สำรอง + ใน   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |การค้นหา  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   ส่งกลับผลลัพธ์ 10 อันดับแรกสำหรับสตริงการค้นหา      |
 |การเป็นสมาชิกเซ็กเมนต์  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | ส่งกลับจำนวนแถวที่กำหนดไว้ล่วงหน้าจากเอนทิตีการแบ่งส่วน      |
+|การเป็นสมาชิกเซ็กเมนต์สำหรับลูกค้า | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | ส่งคืนโปรไฟล์ลูกค้าหากพวกเขาเป็นสมาชิกของเซ็กเมนต์ที่กำหนด     |
 
 ## <a name="unified-activity"></a>กิจกรรมแบบรวม
 

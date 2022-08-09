@@ -1,19 +1,19 @@
 ---
 title: ตัวเชื่อมต่อ Power Apps (พรีวิว)
 description: เชื่อมต่อ Power Apps และ Power Automate
-ms.date: 10/01/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 0b71f723d1e491d422d24b1be6616d2f33c95d40
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 8807e82e65ea20d1a7f7dc07552229f377927eed
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9055283"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196923"
 ---
 # <a name="power-apps-connector-preview"></a>ตัวเชื่อมต่อ Power Apps (พรีวิว)
 
@@ -27,7 +27,7 @@ Customer Insights เป็นหนึ่งในหลายๆ [แหล่
 
 ## <a name="available-entities"></a>เอนทิตีที่มี
 
-หลังจากเพิ่ม Customer Insights เป็นการเชื่อมต่อข้อมูล คุณสามารถเลือกเอนทิตีต่อไปนี้ใน Power Apps:
+หลังจากเพิ่ม Customer Insights เป็นการเชื่อมต่อข้อมูล ให้เลือกเอนทิตีต่อไปนี้ใน Power Apps:
 
 - **ลูกค้า**: เพื่อใช้ข้อมูลจาก [โปรไฟล์ลูกค้าแบบรวม](customer-profiles.md)
 - **UnifiedActivity**: เพื่อแสดง [เส้นเวลากิจกรรม](activities.md) ในแอป
@@ -37,41 +37,38 @@ Customer Insights เป็นหนึ่งในหลายๆ [แหล่
 
 ### <a name="retrievable-entities"></a>เอนทิตีที่ดึงข้อมูลได้
 
-คุณสามารถดึงข้อมูลเอนทิตี **ลูกค้า** **UnifiedActivity** **เซ็กเมนต์** และ **ContactProfile** ผ่านตัวเชื่อมต่อ Power Apps เท่านั้น ContactProfile สามารถใช้งานเฉพาะในอินสแตนซ์ Customer Insights สำหรับบัญชีธุรกิจเท่านั้น เอนทิตีอื่นๆ จะแสดงขึ้น เนื่องจากตัวเชื่อมต่อที่สำคัญรองรับผ่านทริกเกอร์ใน Power Automate
+คุณสามารถดึงข้อมูลเอนทิตี **ลูกค้า** **UnifiedActivity** **เซ็กเมนต์** และ **ContactProfile** ผ่านตัวเชื่อมต่อ Power Apps เท่านั้น ContactProfile สามารถใช้งานเฉพาะในสภาพแวดล้อม Customer Insights สำหรับบัญชีธุรกิจเท่านั้น เอนทิตีอื่นๆ จะแสดงขึ้น เนื่องจากตัวเชื่อมต่อที่สำคัญรองรับผ่านทริกเกอร์ใน Power Automate
 
 คุณสามารถโทรได้สูงสุด 100 สายต่อ 60 วินาที คุณสามารถเรียกตำแหน่งข้อมูล API ได้หลายครั้งโดยใช้พารามิเตอร์ $skip [เรียนรู้เพิ่มเติมเกี่ยวกับพารามิเตอร์ $skip](/connectors/customerinsights/#get-items-from-an-entity)
 
 ### <a name="delegation"></a>การมอบสิทธิ์
 
-การมอบสิทธิ์ใช้ได้กับเอนทิตี **ลูกค้า** และเอนทิตี **UnifiedActivity** 
+การมอบสิทธิ์ใช้ได้กับเอนทิตี **ลูกค้า** และเอนทิตี **UnifiedActivity**
 
-- การมอบหมายสำหรับเอนทิตี **ลูกค้า**: การใช้การมอบหมายสำหรับเอนทิตีนี้ จำเป็นต้องมีการจัดทำดัชนีฟิลด์ใน [ค้นหาและกรองดัชนี](search-filter-index.md)  
+- การมอบหมายสำหรับเอนทิตี **ลูกค้า**: การใช้การมอบหมายสำหรับเอนทิตีนี้ จำเป็นต้องมีการจัดทำดัชนีฟิลด์ใน [ดัชนีการค้นหาและตัวกรอง](search-filter-index.md)  
 - การมอบสิทธิ์สำหรับ **UnifiedActivity**: การมอบสิทธิ์สำหรับเอนทิตีนี้ใช้ได้กับฟิลด์ **ActivityId** และ **CustomerId** เท่านั้น  
 - การมอบสิทธิ์สำหรับ **ContactProfile**: การมอบสิทธิ์สำหรับเอนทิตีนี้ใช้ได้กับฟิลด์ **ContactId** และ **CustomerId** เท่านั้น ContactProfile สามารถใช้งานเฉพาะในสภาพแวดล้อม Customer Insights สำหรับบัญชีธุรกิจเท่านั้น
 
-สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการมอบสิทธิ์ ไปที่ [ฟังก์ชันและการดำเนินงานที่สามารถมอบสิทธิ์ของ Power Apps](/powerapps/maker/canvas-apps/delegation-overview) 
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการมอบสิทธิ์ ไปที่ [ฟังก์ชันและการดำเนินงานที่สามารถมอบสิทธิ์ของ Power Apps](/powerapps/maker/canvas-apps/delegation-overview)
 
 ## <a name="example-gallery-control"></a>ตัวอย่างการควบคุมแกลเลอรี่
 
-คุณสามารถเพิ่มโปรไฟล์ลูกค้าใน [การควบคุมแกลเลอรี](/powerapps/maker/canvas-apps/add-gallery)
+หรือเพิ่มโปรไฟล์ลูกค้าใน [ตัวควบคุมแกลเลอรี](/powerapps/maker/canvas-apps/add-gallery)
 
 1. เพิ่มการควบคุม **แกลอรี** ไปยังแอปที่คุณกำลังสร้าง
+  
+   :::image type="content" source="media/connector-powerapps9.png" alt-text="เพิ่มองค์ประกอบของแกลเลอรี":::
 
-    > [!div class="mx-imgBorder"]
-    > ![เพิ่มองค์ประกอบของแกลเลอรี](media/connector-powerapps9.png "เพิ่มองค์ประกอบของแกลเลอรี")
+1. เลือก **ลูกค้า** เป็นแหล่งข้อมูลสำหรับรายการ
 
-2. เลือก **ลูกค้า** เป็นแหล่งข้อมูลสำหรับรายการ
+   :::image type="content" source="media/choose-datasource-powerapps.png" alt-text="เลือกแหล่งข้อมูล":::
 
-    > [!div class="mx-imgBorder"]
-    > ![เลือกแหล่งข้อมูล](media/choose-datasource-powerapps.png "เลือกแหล่งข้อมูล")
+1. เปลี่ยนแผงข้อมูลทางด้านขวาเพื่อเลือกฟิลด์เอนทิตีลูกค้าที่จะแสดงในแกลเลอรี
 
-3. คุณสามารถเปลี่ยนแผงข้อมูลทางด้านขวาเพื่อเลือกฟิลด์เอนทิตีลูกค้าที่จะแสดงในแกลเลอรี
-
-4. หากคุณต้องการแสดงฟิลด์ใด ๆ จากลูกค้าที่เลือกในแกลเลอรี่ ให้กรอกคุณสมบัติ **ข้อความ** ของป้ายชื่อโดยใช้ **{Name_of_the_gallery}.Selected.{property_name}**  
+1. หากคุณต้องการแสดงฟิลด์ใด ๆ จากลูกค้าที่เลือกในแกลเลอรี่ ให้กรอกคุณสมบัติ **ข้อความ** ของป้ายชื่อโดยใช้ **{Name_of_the_gallery}.Selected.{property_name}**  
     - ตัวอย่าง: _Gallery1.Selected.address1_city_
 
-5. ในการแสดงเส้นเวลาแบบรวมสำหรับลูกค้า เพิ่มองค์ประกอบของแกลเลอรี และเพิ่มคุณสมบัติ **รายการ** โดยใช้ **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
+1. ในการแสดงเส้นเวลาแบบรวมสำหรับลูกค้า เพิ่มองค์ประกอบของแกลเลอรี และเพิ่มคุณสมบัติ **รายการ** โดยใช้ **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
     - ตัวอย่าง: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

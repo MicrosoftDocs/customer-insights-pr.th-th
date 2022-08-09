@@ -1,19 +1,19 @@
 ---
 title: ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและส่งออกไปยัง LinkedIn Ads
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e6ad3901f7b8dc1ae8edc54c0b09a99b01be34cd
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9050879"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196831"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 
@@ -21,32 +21,33 @@ ms.locfileid: "9050879"
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
--   คุณมี [บัญชี LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) และข้อมูลประจำตัวผู้ดูแลระบบที่สอดคล้องกัน
--   คุณ [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
--   โปรไฟล์ลูกค้าในเซ็กเมนต์ที่ส่งออก มีฟิลด์ที่มีที่อยู่อีเมล
+- [บัญชี LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) และข้อมูลประจำตัวของผู้ดูแลระบบที่เกี่ยวข้อง
+- [รหัสบัญชี LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270)
+- [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
+- โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออกประกอบด้วยฟิลด์ที่แสดงที่อยู่อีเมล
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- เซ็กเมนต์ของคุณใน Customer Insights ต้องมีโปรไฟล์ที่ไม่ซ้ำอย่างน้อย 300 โปรไฟล์ 
-- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 100K รายต่อการส่งออกไปยัง LinkedIn Ads
-- การส่งออกไปยัง LinkedIn Ads นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกโปรไฟล์ลูกค้าสูงสุด 100K รายไปยัง LinkedIn Ads อาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
+- ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 100,000 ล้านรายการไปยัง LinkedIn Ads ซึ่งอาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์
+- เซ็กเมนต์เท่านั้น เซ็กเมนต์ต้องมีโปรไฟล์อย่างน้อย 300 รายการ
 
-## <a name="set-up-the-connection-to-linkedin-ads"></a>ตั้งค่าการเชื่อมต่อกับ LinkedIn Ads
+## <a name="set-up-connection-to-linkedin-ads"></a>ตั้งค่าการเชื่อมต่อกับ LinkedIn Ads
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **LinkedIn Ads** เพื่อกำหนดค่าการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **LinkedIn Ads**
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
-1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใดๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
+1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ โดยค่าเริ่มต้น จะเป็นผู้ดูแลระบบเท่านั้น ดูข้อมูลเพิ่มเติมที่ [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
-1. ให้ [รหัสบัญชี LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270) ของคุณ
+1. ระบุรหัสบัญชี LinkedIn Campaign Manager ของคุณ
 
-1. เลือก **ฉันเห็นด้วย** เพื่อยืนยัน **ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ**
+1. ตรวจสอบ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](connections.md#data-privacy-and-compliance) และเลือก **ฉันเห็นด้วย**
 
-1. เลือก **เชื่อมต่อ** เพื่อเริ่มการเชื่อมต่อ Campaign Monitor
+1. เลือก **เชื่อมต่อ** เพื่อเริ่มต้นการเชื่อมต่อ
 
 1. เลือก **รับรองความถูกต้องกับ LinkedIn** และให้ข้อมูลประจำตัวของผู้ดูแลระบบของคุณสำหรับ LinkedIn Campaign Manager
 
@@ -56,29 +57,26 @@ ms.locfileid: "9050879"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกได้ หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
-1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มปลายทาง**
+1. เลือก **เพิ่มส่งออก**
 
-1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน LinkedIn Ads หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
+1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน LinkedIn Ads ติดต่อผู้ดูแลระบบหากไม่มีการเชื่อมต่อ
 
-1. เลือกว่าคุณต้องการส่งออกข้อมูลเพื่อทำ [การกำหนดเป้าหมายการติดต่อ](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) หรือ [การกำหนดเป้าหมายบริษัท](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) บน LinkedIn 
+1. ป้อนชื่อสำหรับการส่งออก
 
-1. ในส่วน **การจับคู่ข้อมูล** สำหรับการกำหนดเป้าหมายผู้ติดต่อ ให้เลือกอย่างน้อยหนึ่งฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า รหัสโฆษณา Apple รหัสโฆษณา Google รหัสผู้ใช้ Google หรือชื่อและนามสกุล หากคุณเลือกการกำหนดเป้าหมายบริษัท ให้เลือกอย่างน้อยหนึ่งฟิลด์ที่แสดงถึงชื่อบริษัท โดเมนอีเมล URL หน้า LinkedIn สัญลักษณ์หุ้น หรือเว็บไซต์ คุณสามารถเลือกฟิลด์เพิ่มเติมเพื่อกำหนดการส่งออกของคุณเพิ่มเติม 
+1. เลือกว่าคุณต้องการส่งออกข้อมูลเพื่อทำ [การกำหนดเป้าหมายการติดต่อ](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) หรือ [การกำหนดเป้าหมายบริษัท](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) บน LinkedIn
 
-1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก Matched Audiences ใน LinkedIn Campaign Manager จะถูกสร้างขึ้นโดยอัตโนมัติด้วยชื่อของเซ็กเมนต์ที่คุณเลือกที่จะส่งออก แต่ละเซ็กเมนต์จะส่งผลให้มี Matched Audience ที่แยกจากกัน 
+1. ในส่วน **การจับคู่ข้อมูล** สำหรับการกำหนดเป้าหมายผู้ติดต่อ ให้เลือกอย่างน้อยหนึ่งฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า รหัสโฆษณา Apple รหัสโฆษณา Google รหัสผู้ใช้ Google หรือชื่อและนามสกุล หากคุณเลือกการกำหนดเป้าหมายบริษัท ให้เลือกอย่างน้อยหนึ่งฟิลด์ที่แสดงถึงชื่อบริษัท โดเมนอีเมล URL หน้า LinkedIn สัญลักษณ์หุ้น หรือเว็บไซต์
+
+1. หรือเพิ่มฟิลด์เพิ่มเติมเพื่อกำหนดการส่งออกของคุณเพิ่มเติม เลือก **เพิ่มแอตทริบิวต์** เพื่อแมปฟิลด์เหล่านี้
+
+1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก Matched Audiences ใน LinkedIn Campaign Manager จะถูกสร้างขึ้นโดยอัตโนมัติด้วยชื่อของเซ็กเมนต์ที่คุณเลือกที่จะส่งออก แต่ละเซ็กเมนต์จะส่งผลให้มี Matched Audience ที่แยกจากกัน
 
 1. เลือก **บันทึก**
 
-การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) 
-
-
-## <a name="data-privacy-and-compliance"></a>ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ
-
-เมื่อคุณเปิดใช้งาน Dynamics 365 Customer Insights ในการส่งข้อมูลไปยัง LinkedIn Ads คุณอนุญาตให้ถ่ายโอนข้อมูลนอกขอบเขตการปฏิบัติตามข้อกำหนดสำหรับ Dynamics 365 Customer Insights ซึ่งรวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น ข้อมูลส่วนบุคคล Microsoft จะถ่ายโอนข้อมูลดังกล่าวตามคำแนะนำของคุณ แต่คุณมีหน้าที่รับผิดชอบในการตรวจสอบว่า LinkedIn Ads เป็นไปตามภาระหน้าที่ด้านความเป็นส่วนตัวหรือความปลอดภัยที่คุณอาจมี สำหรับข้อมูลเพิ่มเติม ดู [คำชี้แจงสิทธิส่วนบุคคลของ Microsoft](https://go.microsoft.com/fwlink/?linkid=396732)
-
-ผู้ดูแลระบบ Dynamics 365 Customer Insights ของคุณสามารถลบปลายทางการส่งออกเมื่อใดก็ได้ เพื่อหยุดการใช้ฟังก์ชันนี้
+[!INCLUDE [footer-include](includes/footer-banner.md)]

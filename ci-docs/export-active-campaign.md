@@ -1,19 +1,19 @@
 ---
 title: ส่งออกเซ็กเมนต์ไปยัง ActiveCampaign
 description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและส่งออกไปยัง ActiveCampaign
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 178d2df8edf1abcec72664e19d73a88f2b97f12d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054731"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195591"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ส่งออกเซ็กเมนต์ไปยัง ActiveCampaign (พรีวิว)
 
@@ -21,31 +21,34 @@ ms.locfileid: "9054731"
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
-- คุณมี [บัญชี ActiveCampaign](https://www.activecampaign.com/) และข้อมูลประจำตัวของผู้ดูแลระบบที่เกี่ยวข้อง
-- คุณ [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
-- โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออก มีฟิลด์ที่มีที่อยู่อีเมล
+- [บัญชี ActiveCampaign](https://www.activecampaign.com/) และข้อมูลประจำตัวของผู้ดูแลระบบที่เกี่ยวข้อง
+- [รหัสรายการ ActiveCampaign](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign)
+- [คีย์ API ของ ActiveCampaign](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) และชื่อโฮสต์จุดสิ้นสุด REST
+- [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
+- โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออกประกอบด้วยฟิลด์ที่แสดงที่อยู่อีเมล
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้สูงสุด 1 ล้านโปรไฟล์ต่อการส่งออกไปยัง ActiveCampaign และอาจใช้เวลานานถึง 90 นาทีจึงจะเสร็จสมบูรณ์
-- การส่งออกไปยัง ActiveCampaign ถูกจำกัดเฉพาะเซ็กเมนต์
-- จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง ActiveCampaign ขึ้นอยู่กับสัญญาของคุณกับ ActiveCampaign
+- ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านรายการไปยัง ActiveCampaign ซึ่งอาจใช้เวลานานถึง 90 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง ActiveCampaign ขึ้นอยู่กับสัญญาของคุณกับ ActiveCampaign
+- เซ็กเมนต์เท่านั้น
 
 ## <a name="set-up-connection-to-activecampaign"></a>ตั้งค่าการเชื่อมต่อกับ ActiveCampaign
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **ActiveCampaign** เพื่อกำหนดค่าการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **ActiveCampaign**
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
 1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ โดยค่าเริ่มต้น จะเป็นผู้ดูแลระบบเท่านั้น สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
-1. ป้อน [คีย์ ActiveCampaign API และชื่อโฮสต์จุดสิ้นสุด REST](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) ของคุณ ชื่อโฮสต์จุดสิ้นสุด REST เป็นชื่อโฮสต์เท่านั้น โดยไม่มี https:// 
+1. ป้อน คีย์ ActiveCampaign API และชื่อโฮสต์จุดสิ้นสุด REST ของคุณ ชื่อโฮสต์จุดสิ้นสุด REST เป็นชื่อโฮสต์เท่านั้น โดยไม่มี https://
 
-1. เลือก **ฉันเห็นด้วย** เพื่อยืนยัน **ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ**
+1. ตรวจสอบ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](connections.md#data-privacy-and-compliance) และเลือก **ฉันเห็นด้วย**
 
-1. เลือก **เชื่อมต่อ** เพื่อเริ่มการเชื่อมต่อไปยัง ActiveCampaign
+1. เลือก **เชื่อมต่อ** เพื่อเริ่มต้นการเชื่อมต่อ
 
 1. เลือก **เพิ่มตัวเองเป็นผู้ใช้ที่ส่งออก** และให้ข้อมูลประจำตัวของ Customer Insights ของคุณ
 
@@ -53,27 +56,26 @@ ms.locfileid: "9054731"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกได้ หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
-1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มปลายทาง**
+1. เลือก **เพิ่มส่งออก**
 
-1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน ActiveCampaign หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
+1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน ActiveCampaign ติดต่อผู้ดูแลระบบหากไม่มีการเชื่อมต่อ
 
-1. ป้อน [**รหัสรายการ ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign) ของคุณ    
+1. ป้อนชื่อสำหรับการส่งออก
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง ActiveCampaign หรือคุณสามารถส่งออกชื่อ นามสกุล และโทรศัพท์ เพื่อสร้างอีเมลที่ปรับให้เป็นแบบส่วนตัวเพิ่มเติม เลือก เพิ่มแอตทริบิวต์ เพื่อแมปฟิลด์เหล่านี้
+1. ป้อน **รหัสรายการ ActiveCampaign** ของคุณ
+
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า
+
+1. หรือส่งออก **ชื่อ**, **นามสกุล** และ **โทรศัพท์** เพื่อสร้างอีเมลที่ปรับให้เป็นแบบส่วนตัวเพิ่มเติม เลือก **เพิ่มแอตทริบิวต์** เพื่อแมปฟิลด์เหล่านี้
+
+1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก
 
 1. เลือก **บันทึก**
 
-การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) 
-
-
-## <a name="data-privacy-and-compliance"></a>ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ
-
-เมื่อคุณเปิดใช้งาน Dynamics 365 Customer Insights เพื่อส่งข้อมูลไปยัง ActiveCampaign คุณอนุญาตให้ถ่ายโอนข้อมูลนอกขอบเขตการปฏิบัติตามสำหรับ Dynamics 365 Customer Insights ซึ่งรวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น ข้อมูลส่วนบุคคล Microsoft จะถ่ายโอนข้อมูลดังกล่าวตามคำสั่งของคุณ แต่คุณมีหน้าที่รับผิดชอบในการตรวจสอบให้แน่ใจว่า ActiveCampaign เป็นไปตามข้อผูกพันด้านความเป็นส่วนตัวหรือความปลอดภัยที่คุณอาจมี สำหรับข้อมูลเพิ่มเติม ดู [คำชี้แจงสิทธิส่วนบุคคลของ Microsoft](https://go.microsoft.com/fwlink/?linkid=396732)
-
-ผู้ดูแลระบบ Dynamics 365 Customer Insights ของคุณ สามารถลบปลายทางการส่งออกนี้เมื่อใดก็ได้เพื่อยกเลิกการใช้ฟังก์ชันนี้
+[!INCLUDE [footer-include](includes/footer-banner.md)]

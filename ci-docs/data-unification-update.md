@@ -13,16 +13,14 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 590a2996cf8b2b1c6def59b78583169ec1910b59
-ms.sourcegitcommit: 760fbac397c738407c7dea59297d54cae19b6f57
+ms.openlocfilehash: 1af7f018abd412c833ff22b3880f0e4508ff4953
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844063"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139634"
 ---
 # <a name="update-the-unification-settings"></a>ปรับปรุงการตั้งค่าการรวม
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 หากต้องการตรวจสอบหรือเปลี่ยนแปลงการตั้งค่าการรวมเมื่อสร้างโปรไฟล์แบบรวมแล้ว ให้ทำตามขั้นตอนดังต่อไปนี้
 

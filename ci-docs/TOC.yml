@@ -104,22 +104,26 @@
       href: enrichment-here.md
     - name: การนําเข้าที่กําหนดเองของ SFTP
       href: enrichment-SFTP-custom-import.md
-- name: โปรไฟล์แบบรวม
+- name: โปรไฟล์ลูกค้าและกิจกรรม
   items:
-    - name: ตรวจทานโปรไฟล์ลูกค้าแบบรวม
+    - name: ดูโปรไฟล์ลูกค้า
       href: customer-profiles.md
-    - name: กรองโปรไฟล์ลูกค้าแบบรวม
+    - name: จัดการดัชนีการค้นหาและตัวกรอง
       href: search-filter-index.md
     - name: กำหนดกิจกรรมลูกค้า
       href: activities.md
     - name: ใช้การจัดการความยินยอม
       href: consent-management.md
+    - name: ใช้ข้อมูลบนเว็บเพื่อการตั้งค่าส่วนบุคคล
+      href: unknown-to-known.md
 - name: Segments
   items:
     - name: ภาพรวมของเซ็กเมนต์
       href: segments.md
-    - name: สร้างเซ็กเมนต์
+    - name: สร้างด้วยเครื่องมือสร้างเซ็กเมนต์
       href: segment-builder.md
+    - name: สร้างด้วยเซ็กเมนต์ด่วน
+      href: segment-quick.md
     - name: เซ็กเมนต์ที่แนะนำตามการวัด
       href: suggested-segments.md
     - name: เซ็กเมนต์ที่แนะนำตามกิจกรรม
@@ -132,9 +136,9 @@
   items:
     - name: ภาพรวมของการวัด
       href: measures.md
-    - name: สร้างการวัดใหม่
+    - name: สร้างด้วยเครื่องมือสร้างการวัด
       href: measure-builder.md
-    - name: ใช้เทมเพลตการวัด
+    - name: สร้างด้วยเทมเพลต
       href: measure-templates.md
 - name: การคาดคะเน
   items:
@@ -180,6 +184,10 @@
           href: export-destinations.md
         - name: การส่งเสริมการขายที่ใช้งานอยู่
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: Autopilot
@@ -190,10 +198,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
         - name: Campaign Monitor
@@ -228,6 +232,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: MoEngage
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks

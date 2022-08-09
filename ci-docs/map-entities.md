@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: a962f1353b6e25b40c60b39a81ac936873f34d92
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a75218c996b277e00924f2b7b38ea686a1f4dc38
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741018"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139805"
 ---
 # <a name="select-source-fields-for-data-unification"></a>เลือกฟิลด์ต้นทางสำหรับการรวมข้อมูล
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 ขั้นตอนแรกในการรวมคือ การเลือกเอนทิตีและฟิลด์ภายในชุดข้อมูลของคุณที่คุณต้องการรวม เลือกเอนทิตีที่มีรายละเอียดเกี่ยวกับลูกค้า เช่น ชื่อ ที่อยู่ หมายเลขโทรศัพท์ และอีเมล คุณสามารถเลือกเอนทิตีหนึ่งรายการหรือมากกว่า
 

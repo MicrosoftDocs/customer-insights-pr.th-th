@@ -1,7 +1,7 @@
 ---
 title: ส่งออกเซ็กเมนต์ไปยัง Dynamics 365 Sales (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและส่งออกไปยัง Dynamics 365 Sales
-ms.date: 03/03/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -11,38 +11,39 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: b8e756313ca037dca41cb25587229808f0c584c9
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: c3497f4625cada49ae33c6987e58994a15536f9b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081812"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196004"
 ---
 # <a name="export-segments-to-dynamics-365-sales-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Dynamics 365 Sales (พรีวิว)
 
 ใช้ข้อมูลลูกค้าของคุณเพื่อสร้างรายชื่อเพื่อทำการตลาด ติดตามลำดับงาน และนำเสนอโปรโมชันด้วย Dynamics 365 Sales
 
-## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
+## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
-- การส่งออกไปยัง Dynamics 365 Sales จำกัดไว้ที่ 100'000 สมาชิกต่อเซ็กเมนต์
-- การส่งออกเซ็กเมนต์ไปยัง Dynamics 365 Sales อาจใช้เวลานานถึง 3 ชั่วโมงจึงจะเสร็จสมบูรณ์ 
-
-## <a name="prerequisite-for-connection"></a>ข้อกำหนดเบื้องต้นสำหรับการเชื่อมต่อ
-
-1. ต้องมีเรกคอร์ดผู้ติดต่อใน Dynamics 365 Sales ก่อนที่คุณจะสามารถส่งออกเซ็กเมนต์จาก Customer Insights ไปยัง Sales ได้ อ่านเพิ่มเติมเกี่ยวกับวิธีการนำเข้าผู้ติดต่อจาก [Dynamics 365 Sales โดยใช้ Microsoft Dataverse](connect-dataverse-managed-lake.md)
+ต้องมีเรกคอร์ดผู้ติดต่อใน Dynamics 365 Sales ก่อนที่คุณจะสามารถส่งออกเซ็กเมนต์จาก Customer Insights ไปยัง Sales ได้ อ่านเพิ่มเติมเกี่ยวกับวิธีการนำเข้าผู้ติดต่อจาก [Dynamics 365 Sales โดยใช้ Microsoft Dataverse](connect-dataverse-managed-lake.md)
 
    > [!NOTE]
    > การส่งออกเซ็กเมนต์จาก Customer Insights ไปยัง Sales จะไม่สร้างเรกคอร์ดผู้ติดต่อใหม่ในอินสแตนซ์ Sales เรกคอร์ดผู้ติดต่อจาก Sales ต้องรับเข้ามาใน Customer Insights และใช้เป็นแหล่งข้อมูล นอกจากนี้ ยังต้องรวมอยู่ในเอนทิตีลูกค้าแบบรวมเพื่อแมปรหัสลูกค้ากับรหัสผู้ติดต่อ ก่อนที่จะสามารถส่งออกเซ็กเมนต์ได้
 
-## <a name="set-up-the-connection-to-sales"></a>ตั้งค่าการเชื่อมต่อไปยัง Sales
+## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
+
+การส่งออกไปยัง Dynamics 365 Sales จำกัดสมาชิกไว้ที่ 100,000 ต่อเซ็กเมนต์ ซึ่งอาจใช้เวลานานถึง 3 ชั่วโมงจึงจะเสร็จสมบูรณ์
+
+## <a name="set-up-connection-to-sales"></a>ตั้งค่าการเชื่อมต่อไปยัง Sales
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Dynamics 365 Sales** เพื่อกำหนดค่าการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **Dynamics 365 Sales**
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
-1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
+1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ โดยค่าเริ่มต้น จะเป็นผู้ดูแลระบบเท่านั้น ดูข้อมูลเพิ่มเติมที่ [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
 1. ป้อน URL Sales ขององค์กรของคุณในฟิลด์ **ที่อยู่เซิร์ฟเวอร์**
 
@@ -50,24 +51,28 @@ ms.locfileid: "9081812"
 
 1. แมปฟิลด์รหัสลูกค้ากับรหัสผู้ติดต่อ Dynamics 365
 
-1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น 
+1. ตรวจสอบ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](connections.md#data-privacy-and-compliance) และเลือก **ฉันเห็นด้วย**
+
+1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ ดูข้อมูลเพิ่มเติมที่ [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
-1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มปลายทาง**
+1. เลือก **เพิ่มส่งออก**
 
-1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน Dynamics 365 Sales หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
+1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน Dynamics 365 Sales ติดต่อผู้ดูแลระบบหากไม่มีการเชื่อมต่อ
 
-1. เลือกเซ็กเมนต์อย่างน้อยหนึ่งเซ็กเมนต์
+1. ป้อนชื่อสำหรับการส่งออก
+
+1. เลือกฟิลด์รหัสผู้ติดต่อในเอนทิตีลูกค้าที่ตรงกับรหัสผู้ติดต่อของ Dynamics 365
+
+1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก
 
 1. เลือก **บันทึก**
 
-การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
-
-การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) 
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

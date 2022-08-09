@@ -14,16 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081947"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139692"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>รวมฟิลด์ลูกค้าสำหรับการรวมข้อมูล
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 ในขั้นตอนนี้ของกระบวนการรวม ให้เลือกและยกเว้นแอตทริบิวต์ที่จะรวมเข้าด้วยกันภายในเอนทิตีโปรไฟล์แบบรวมของคุณ ตัวอย่างเช่น ถ้าเอนทิตีสามรายการมีข้อมูลอีเมล คุณอาจต้องการเก็บฟิลด์อีเมลทั้งสามแยกกัน หรือรวมเป็นฟิลด์อีเมลเดียวสำหรับโปรไฟล์แบบรวม ระบบจะรวมแอตทริบิวต์บางอย่างโดยอัตโนมัติ คุณสามารถสร้างรหัสลูกค้าที่เสถียรและไม่ซ้ำกัน และจัดกลุ่มโปรไฟล์ที่เกี่ยวข้องลงในคลัสเตอร์
 

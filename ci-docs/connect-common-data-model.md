@@ -1,7 +1,7 @@
 ---
 title: เชื่อมต่อกับโฟลเดอร์ Common Data Model โดยใช้บัญชี Azure Data Lake
 description: ทำงานกับข้อมูล Common Data Model โดยใช้ Azure Data Lake Storage
-ms.date: 05/30/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081782"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207022"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>เชื่อมต่อกับข้อมูลใน Azure Data Lake Storage
 
@@ -82,7 +82,7 @@ ms.locfileid: "9081782"
    :::image type="content" source="media/ADLS_required.png" alt-text="กล่องโต้ตอบที่แสดง ต้องการสำหรับคีย์หลัก":::
 
    > [!TIP]
-   > หากต้องการแก้ไขเอนทิตีในส่วนติดต่อการแก้ไข JSON ให้เลือก **แสดงเพิ่มเติม** > **แก้ไขไฟล์ Schema** ทำการเปลี่ยนแปลงและเลือก **บันทึก**
+   > หากต้องการแก้ไขเอนทิตีในส่วนติดต่อการแก้ไข JSON ให้เลือกเอนทิตี แล้วเลือก **แก้ไขไฟล์ Schema** ทำการเปลี่ยนแปลงและเลือก **บันทึก**
 
 1. สำหรับเอนทิตีที่เลือกซึ่งต้องมีการนำเข้าแบบเพิ่มหน่วย **จำเป็น** จะแสดงภายใต้ **การรีเฟรชแบบเพิ่มหน่วย** สำหรับแต่ละเอนทิตีเหล่านี้ ดูที่ [กำหนดค่าการรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูล Azure Data Lake](incremental-refresh-data-sources.md)
 
@@ -101,6 +101,10 @@ ms.locfileid: "9081782"
    1. เลือก **เสร็จ**
 
 1. เลือก **บันทึก** หน้า **แหล่งข้อมูล** จะเปิดขึ้นเพื่อแสดงแหล่งข้อมูลใหม่ในสถานะ **กำลังรีเฟรช**
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+การโหลดข้อมูลอาจต้องใช้เวลา หลังจากการรีเฟรชที่สำเร็จ จะสามารถตรวจสอบข้อมูลที่ถูกนำไปใช้ได้จากหน้า [**เอนทิตี**](entities.md)
 
 ### <a name="create-a-new-schema-file"></a>สร้างไฟล์ Schema ใหม่
 
@@ -148,6 +152,9 @@ ms.locfileid: "9081782"
 
 1. เลือก **บันทึก** หน้า **แหล่งข้อมูล** จะเปิดขึ้นเพื่อแสดงแหล่งข้อมูลใหม่ในสถานะ **กำลังรีเฟรช**
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+การโหลดข้อมูลอาจต้องใช้เวลา หลังจากการรีเฟรชที่สำเร็จ จะสามารถตรวจสอบข้อมูลที่ถูกนำไปใช้ได้จากหน้า [**เอนทิตี**](entities.md)
 
 ## <a name="edit-an-azure-data-lake-storage-data-source"></a>แก้ไขแหล่งข้อมูล Azure Data Lake Storage
 
@@ -180,7 +187,15 @@ ms.locfileid: "9081782"
       > หากมีการอ้างอิงในไฟล์ model.json หรือ manifest.json ที่มีอยู่และชุดของเอนทิตี คุณจะเห็นข้อความแสดงข้อผิดพลาดและไม่สามารถเลือกไฟล์ model.json หรือ manifest.json อื่นได้ ลบการอ้างอิงเหล่านั้นก่อนเปลี่ยนแปลงไฟล์ model.json หรือ manifest.json หรือสร้างแหล่งข้อมูลใหม่ด้วยไฟล์ model.json หรือ manifest.json ที่คุณต้องการใช้ เพื่อหลีกเลี่ยงการลบการอ้างอิง
    - หากต้องการเปลี่ยนตำแหน่งไฟล์ข้อมูลหรือคีย์หลัก ให้เลือก **แก้ไข**
    - หากต้องการเปลี่ยนข้อมูลการนำเข้าแบบเพิ่มหน่วย โปรดดูที่ [กำหนดค่าการรีเฟรชแบบเพิ่มหน่วยสำหรับแหล่งข้อมูล Azure Data Lake](incremental-refresh-data-sources.md)
+   - เปลี่ยนชื่อเอนทิตีให้ตรงกับชื่อเอนทิตีในไฟล์ .json เท่านั้น
+
+     > [!NOTE]
+     > คงชื่อเอนทิตีใน Customer Insights ให้เหมือนกับชื่อเอนทิตีภายในไฟล์ model.json หรือ manifest.json เสมอหลังการนำเข้า Customer Insights จะตรวจสอบชื่อเอนทิตีทั้งหมดกับ model.json หรือ manifest.json ในระหว่างการรีเฟรชระบบทุกครั้ง หากเปลี่ยนชื่อเอนทิตีภายใน Customer Insights หรือภายนอก จะเกิดข้อผิดพลาดขึ้นเนื่องจาก Customer Insights ไม่พบชื่อเอนทิตีใหม่ในไฟล์ .json หากมีการเปลี่ยนชื่อเอนทิตีที่นำเข้าโดยไม่ได้ตั้งใจ ให้แก้ไขชื่อเอนทิตีใน Customer Insights เพื่อให้ตรงกับชื่อในไฟล์ .json
 
 1. เลือก **แอตทริบิวต์** เพื่อเพิ่มหรือเปลี่ยนแอตทริบิวต์ หรือเพื่อเปิดใช้งานการทำโปรไฟล์ข้อมูล จากนั้นเลือก **เสร็จสิ้น**
 
 1. คลิก **บันทึก** เพื่อใช้การเปลี่ยนแปลงของคุณและกลับไปที่หน้า **แหล่งข้อมูล**
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

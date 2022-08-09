@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081752"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9194946"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Add-in การ์ดลูกค้าสำหรับแอป Dynamics 365 (พรีวิว)
 
@@ -28,21 +28,25 @@ ms.locfileid: "9081752"
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
-- Add-in ใช้งานได้เฉพาะกับแอปแบบจำลองของ Dynamics 365 เช่น Sales หรือ Customer Service เวอร์ชัน 9.0 และใหม่กว่า
-- เพื่อให้ข้อมูล Dynamics 365 ของคุณแมปกับโปรไฟล์ลูกค้า Customer Insights เราขอแนะนำให้ [นำเข้าจากแอป Dynamics 365 โดยใช้ตัวเชื่อมต่อ Microsoft Dataverse](connect-power-query.md) หากคุณใช้วิธีอื่นในการนำเข้าผู้ติดต่อ (หรือบัญชี) ของ Dynamics 365 คุณต้องตรวจสอบให้แน่ใจว่าฟิลด์ `contactid` (หรือ`accountid`) ตั้งค่าเป็น [คีย์หลักสำหรับแหล่งข้อมูลนั้นในขั้นตอนการแมปของกระบวนการรวมข้อมูล](map-entities.md#select-primary-key-and-semantic-type-for-attributes)
+- แอปแบบจำลองของ Dynamics 365 เช่น Sales หรือ Customer Service เวอร์ชัน 9.0 และใหม่กว่า
+- เพื่อให้ข้อมูล Dynamics 365 ของคุณแมปกับโปรไฟล์ลูกค้า Customer Insights เราขอแนะนำให้ [นำเข้าจากแอป Dynamics 365 โดยใช้ตัวเชื่อมต่อ Microsoft Dataverse](connect-power-query.md) หากคุณใช้วิธีอื่นในการนำเข้าผู้ติดต่อ (หรือบัญชี) ของ Dynamics 365 ตรวจสอบให้แน่ใจว่าฟิลด์ `contactid` (หรือ`accountid`) ตั้งค่าเป็น [คีย์หลักสำหรับแหล่งข้อมูลนั้นในกระบวนการรวมข้อมูล](map-entities.md#select-primary-key-and-semantic-type-for-attributes)
 - ผู้ใช้ Dynamics 365 ทั้งหมดของ Add-in การ์ดลูกค้าต้องมีการ [เพิ่มเป็นผู้ใช้](permissions.md) ใน Customer Insights เพื่อดูข้อมูล
-- [ความสามารถในการค้นหาและกรองที่กำหนดค่า](search-filter-index.md) ใน Customer Insights มีความจำเป็นเพื่อให้การค้นหาข้อมูลสามารถใช้งานได้
+- [กำหนดค่าความสามารถในการค้นหาและกรองข้อมูล](search-filter-index.md) ใน Customer Insights
 - ตัวควบคุม Add-in แต่ละรายการอาศัยข้อมูลเฉพาะใน Customer Insights ข้อมูลและตัวควบคุมบางอย่างมีให้ใช้งานในสภาพแวดล้อมเฉพาะบางชนิดเท่านั้น การกำหนดค่า Add-in จะแจ้งให้คุณทราบหากไม่มีตัวควบคุมเนื่องจากชนิดของสภาพแวดล้อมที่เลือก เรียนรู้เพิ่มเติมเกี่ยวกับ [กรณีการใช้งานสภาพแวดล้อม](work-with-business-accounts.md)
-  - **ตัวควบคุมการวัด**: ต้องใช้ [การวัดที่กำหนด](measures.md) ของชนิดแอตทริบิวต์ของลูกค้า
-  - **ตัวควบคุมอัจฉริยะ**: ต้องการข้อมูลที่สร้างขึ้นโดยใช้ [การคาดคะเนหรือโมเดลที่กำหนดเอง](predictions-overview.md)
-  - **ตัวควบคุมรายละเอียดลูกค้า**: ฟิลด์ทั้งหมดจากโปรไฟล์มีอยู่ในโปรไฟล์ลูกค้าแบบรวม
-  - **ตัวควบคุมการเพิ่มความสมบูรณ์**: ต้องมี [การเพิ่มความสมบูรณ์](enrichment-hub.md) ที่ใช้งานได้นำไปใช้กับโปรไฟล์ลูกค้า Add-in การ์ดรองรับการเพิ่มความสมบูรณ์เหล่านี้: [แบรนด์](enrichment-microsoft.md) ที่ให้บริการโดย Microsoft [ความสนใจ](enrichment-microsoft.md) ที่ให้บริการโดย Microsoft และ [ข้อมูลการมีส่วนร่วมของ Office](enrichment-office.md) ให้บริการโดย Microsoft
-  - **ตัวควบคุมผู้ติดต่อ**: ต้องการคำจำกัดความของเอนทิตีเชิงความหมายของชนิดผู้ติดต่อ
-  - **ตัวควบคุมเส้นเวลา**: ต้องการ [กิจกรรมที่กำหนดค่าไว้](activities.md)
+  - **ตัวควบคุมการวัด** ต้องใช้ [การวัดแอตทริบิวต์ของลูกค้าที่กำหนดค่า](measures.md)
+  - **ตัวควบคุมอัจฉริยะ** ต้องการข้อมูลที่สร้างขึ้นโดยใช้ [การคาดคะเนหรือโมเดลที่กำหนดเอง](predictions-overview.md)
+  - **ตัวควบคุมรายละเอียดลูกค้า** แสดงฟิลด์ทั้งหมดจากโปรไฟล์มีอยู่ในโปรไฟล์ลูกค้าแบบรวม
+  - **ตัวควบคุมการเพิ่มความสมบูรณ์** ต้องมี [การเพิ่มความสมบูรณ์](enrichment-hub.md) ที่ใช้งานได้นำไปใช้กับโปรไฟล์ลูกค้า Add-in การ์ดรองรับการเพิ่มความสมบูรณ์เหล่านี้: [แบรนด์](enrichment-microsoft.md) ที่ให้บริการโดย Microsoft [ความสนใจ](enrichment-microsoft.md) ที่ให้บริการโดย Microsoft และ [ข้อมูลการมีส่วนร่วมของ Office](enrichment-office.md) ให้บริการโดย Microsoft
+  - **ตัวควบคุมผู้ติดต่อ** ต้องการชนิดเอนทิตีเชิงความหมายของผู้ติดต่อ
+  - **ตัวควบคุมไทม์ไลน์** ต้องการ [กิจกรรมที่กำหนดค่าไว้](activities.md)
 
 ## <a name="install-the-customer-card-add-in"></a>ติดตั้ง Add-in การ์ดลูกค้า
 
-Add-in การ์ดลูกค้าเป็นโซลูชันสำหรับแอป Customer Engagement ใน Dynamics 365 ในการติดตั้งโซลูชัน ให้ไปที่ AppSource และค้นหา **การ์ดลูกค้า Dynamics** เลือก [Add-in การ์ดลูกค้าบน AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) และเลือก **รับทันที**
+Add-in การ์ดลูกค้าเป็นโซลูชันสำหรับแอป Customer Engagement ใน Dynamics 365 ในการติดตั้งโซลูชัน
+
+1. ไปที่ AppSource และค้นหา **การ์ดลูกค้า Dynamics**
+
+1. เลือก [Add-in การ์ดลูกค้าบน AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) และเลือก **รับทันที**
 
 คุณอาจต้องลงชื่อเข้าใช้ด้วยข้อมูลประจำตัวของผู้ดูแลระบบของคุณสำหรับแอป Dynamics 365 เพื่อติดตั้งโซลูชัน ซึ่งอาจใช้เวลาสักครู่สำหรับการติดตั้งโซลูชันไปยังสภาพแวดล้อมของคุณ
 

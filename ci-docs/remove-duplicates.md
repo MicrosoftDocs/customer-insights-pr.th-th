@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 27dff3551ab411a12c273536d7431d651c48573e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741725"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139452"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>ลบรายการที่ซ้ำกันก่อนที่จะรวมข้อมูล
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 ขั้นตอนนี้ในการรวมตัวเลือกช่วยให้คุณสามารถตั้งค่ากฎสำหรับการจัดการเรกคอร์ดที่ซ้ำกันภายในเอนทิตี *การขจัดข้อมูลซ้ำซ้อน* ระบุเรกคอร์ดที่ซ้ำกันและรวมเป็นเรกคอร์ดเดียว เรกคอร์ดต้นทางได้รับการเชื่อมโยงกับเรกคอร์ดที่ผนวกกับรหัสสำรอง หากไม่มีการกำหนดค่ากฎ ระบบจะใช้กฎที่ระบบกำหนด
 

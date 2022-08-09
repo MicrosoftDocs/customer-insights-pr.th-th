@@ -1,32 +1,32 @@
 ---
 title: ส่งออกเซ็กเมนต์ไปยัง Adobe Experience Platform (พรีวิว)
 description: เรียนรู้วิธีการใช้เซ็กเมนต์ Customer Insights ใน Adobe Experience Platform
-ms.date: 03/29/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: fcb43e0956c6d1f0ef36b222dd2b718906364244
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052534"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195313"
 ---
 # <a name="export-segments-to-adobe-experience-platform-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Adobe Experience Platform (พรีวิว)
 
-ในฐานะผู้ใช้ Dynamics 365 Customer Insights คุณอาจสร้างเซ็กเมนต์เพื่อให้การส่งเสริมการขายทางการตลาดของคุณมีประสิทธิภาพมากขึ้นโดยการกำหนดเป้าหมายผู้ชมที่เกี่ยวข้อง การใช้เซ็กเมนต์จาก Customer Insights ใน Adobe Experience Platform และแอปพลิเคชันต่างๆ เช่น Adobe Campaign Standard คุณต้องทำตามขั้นตอนสองสามขั้นตอนที่ระบุไว้ในบทความนี้
+ส่งออกเซ็กเมนต์ที่กำหนดเป้าหมายผู้ชมที่เกี่ยวข้องไปยัง Adobe Experience Platform
 
 :::image type="content" source="media/AEP-flow.png" alt-text="แผนผังกระบวนการของขั้นตอนที่ระบุไว้ในบทความนี้":::
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
--   สิทธิ์การใช้งาน Dynamics 365 Customer Insights
--   สิทธิ์การใช้งาน Adobe Experience Platform
--   สิทธิ์การใช้งาน Adobe Campaign Standard
--   บัญชีที่เก็บข้อมูล Azure Blob
+- สิทธิ์การใช้งาน Adobe Experience Platform
+- สิทธิ์การใช้งาน Adobe Campaign Standard
+- ชื่อ [บัญชีที่เก็บข้อมูล Azure Blob](/azure/storage/blobs/create-data-lake-storage-account) และรหัสบัญชี หากต้องการค้นหาชื่อและรหัส โปรดดู [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)
+- [คอนเทนเนอร์ที่เก็บข้อมูล Azure Blob](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
 
 ## <a name="campaign-overview"></a>ภาพรวมการส่งเสริมการขาย
 
@@ -48,38 +48,39 @@ ms.locfileid: "9052534"
 
 ## <a name="export-your-target-audience"></a>ส่งออกกลุ่มเป้าหมายของคุณ
 
-เมื่อมีการระบุผู้ชมเป้าหมาย เราสามารถกำหนดค่าการส่งออกจาก Customer Insights ไปยังบัญชีที่เก็บข้อมูล Azure Blob ได้
+เราจะกำหนดค่าการส่งออกจาก Customer Insights ไปยังบัญชีที่เก็บข้อมูล Azure Blob
 
-### <a name="configure-a-connection"></a>กำหนดค่าการเชื่อมต่อ
+### <a name="set-up-connection-to-azure-blob-storage"></a>ตั้งค่าการเชื่อมต่อกับที่เก็บข้อมูล Azure Blob
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Azure Blob Storage** หรือเลือก **ตั้งค่า** ในไทล์ **Azure Blob Storage** เพื่อกำหนดค่าการเชื่อมต่อ
-
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="ไทล์การกำหนดค่าสำหรับที่เก็บข้อมูล Azure Blob"::: 
+1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **ที่เก็บข้อมูล Azure Blob**
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
-1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ หากคุณไม่ดำเนินการใด ๆ ค่าเริ่มต้นจะเป็นผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
+1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ โดยค่าเริ่มต้น จะเป็นผู้ดูแลระบบเท่านั้น ดูข้อมูลเพิ่มเติมที่ [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
 1. ป้อน **ชื่อบัญชี** **รหัสบัญชี** และ **คอนเทนเนอร์** สำหรับบัญชี Blob Storage ของคุณที่คุณต้องการส่งออกเซ็กเมนต์ไป  
-      
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="ภาพหน้าจอของการกำหนดค่าบัญชีที่เก็บข้อมูล"::: 
-   
-    - หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีค้นหาชื่อบัญชี Blob Storage และคีย์บัญชี โปรดดู [จัดการการตั้งค่าบัญชีที่เก็บข้อมูลในพอร์ทัล Azure](/azure/storage/common/storage-account-manage)
-    - หากต้องการเรียนรู้วิธีสร้างคอนเทนเนอร์ โปรดดู [สร้างคอนเทนเนอร์](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
 
-1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น 
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="ภาพหน้าจอของการกำหนดค่าบัญชีที่เก็บข้อมูล":::
+
+1. ตรวจสอบ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](connections.md#data-privacy-and-compliance) และเลือก **ฉันเห็นด้วย**
+
+1. ให้เลือก **บันทึก** เพื่อทำการเชื่อมต่อให้เสร็จสิ้น
 
 ### <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ สำหรับข้อมูลเพิ่มเติม โปรดดู [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
-1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มการส่งออก**
+1. เลือก **เพิ่มส่งออก**
 
-1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วนที่เก็บข้อมูล Azure Blob หากคุณไม่เห็นชื่อส่วนนี้ การเชื่อมต่อชนิดนี้ไม่พร้อมใช้งานสำหรับคุณ
+1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วนที่เก็บข้อมูล Azure Blob ติดต่อผู้ดูแลระบบหากไม่มีการเชื่อมต่อ
+
+1. ป้อนชื่อสำหรับการส่งออก
 
 1. เลือกเรกคอร์ดที่คุณต้องการส่งออก ในตัวอย่างนี้ คือ **ChurnProneCustomers**
 
@@ -87,46 +88,49 @@ ms.locfileid: "9052534"
 
 1. เลือก **บันทึก**
 
-หลังจากบันทึกปลายทางการส่งออกแล้ว คุณจะพบบน **ข้อมูล** > **การส่งออก**
-
-ตอนนี้คุณสามารถ [ส่งออกเซ็กเมนต์ตามความต้องการ](export-destinations.md#run-exports-on-demand) ได้แล้ว นอกจากนี้ การส่งออกยังจะทำงานพร้อมกับ [การรีเฟรชตามกำหนดการ](system.md) ทุกครั้ง
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!NOTE]
 > ตรวจสอบให้แน่ใจว่าจำนวนของเรกคอร์ดในเซ็กเมนต์ที่ส่งออกนั้นอยู่ภายในขีดจำกัดที่อนุญาตของสิทธิ์การใช้งาน Adobe Campaign Standard ของคุณ
 
-ข้อมูลที่ส่งออกจะถูกเก็บไว้ในคอนเทนเนอร์ Azure Blob Storage ที่คุณกำหนดค่าไว้ด้านบน พาธโฟลเดอร์ต่อไปนี้มีการสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ:
+ข้อมูลที่ส่งออกจะถูกเก็บไว้ในคอนเทนเนอร์ที่เก็บข้อมูล Azure Blob ที่คุณกำหนดค่า เส้นทางโฟลเดอร์ต่อไปนี้จะถูกสร้างขึ้นโดยอัตโนมัติในคอนเทนเนอร์ของคุณ
 
-*%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
+- สำหรับเอนทิตีต้นทางและเอนทิตีที่สร้างโดยระบบ:  
 
-ตัวอย่าง: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
+  *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
-*model.json* สำหรับเอนทิตีที่ส่งออกจะอยู่ที่ระดับ *%ExportDestinationName%*
+  ตัวอย่าง: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
 
-ตัวอย่าง: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
+- *model.json* สำหรับเอนทิตีที่ส่งออกจะอยู่ที่ระดับ *%ExportDestinationName%*
+
+  ตัวอย่าง: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>กำหนด Experience Data Model (XDM) ใน Adobe Experience Platform
 
-ก่อนที่ข้อมูลที่ส่งออกจาก Customer Insights จะสามารถใช้ได้ภายใน Adobe Experience Platform เราต้องกำหนดแบบแผนแบบจำลองข้อมูลประสบการณ์และ [กำหนดค่าข้อมูลสำหรับโปรไฟล์ลูกค้าแบบเรียลไทม์](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)
+ก่อนที่ข้อมูลที่ส่งออกจาก Customer Insights จะสามารถใช้ได้ภายใน Adobe Experience Platform ให้กำหนดแบบแผนแบบจำลองข้อมูลประสบการณ์และ [กำหนดค่าข้อมูลสำหรับโปรไฟล์ลูกค้าแบบเรียลไทม์](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)
 
 เรียนรู้ว่า [XDM คืออะไร](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) และทำความเข้าใจ [พื้นฐานขององค์ประกอบแบบแผน](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema)
 
 ## <a name="import-data-into-adobe-experience-platform"></a>นำเข้าข้อมูลใน Adobe Experience Platform
 
-เมื่อทุกอย่างพร้อมแล้ว เราจำเป็นต้องนำเข้าข้อมูลผู้ชมที่เตรียมไว้จาก Customer Insights ไปยัง Adobe Experience Platform
+นำเข้าข้อมูลผู้ชมที่เตรียมไว้จาก Customer Insights ลงใน Adobe Experience Platform
 
-ประการแรก [สร้างการเชื่อมต่อแหล่งกับต้นทางที่เก็บข้อมูล Azure Blob](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started)    
+1. [สร้างการเชื่อมต่อแหล่งกับต้นทางที่เก็บข้อมูล Azure Blob](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started)
 
-หลังจากกำหนดการเชื่อมต่อต้นทางแล้ว ให้ [กำหนดค่ากระแสข้อมูล](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) สำหรับการเชื่อมต่อชุดงานของที่เก็บข้อมูลบนระบบคลาวด์ เพื่อนำเข้าเอาต์พุตเซ็กเมนต์จาก Customer Insights ไปยัง Adobe Experience Platform
+1. [กำหนดค่ากระแสข้อมูล](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) สำหรับการเชื่อมต่อชุดงานของที่เก็บข้อมูลบนระบบคลาวด์ เพื่อนำเข้าผลลัพธ์เซ็กเมนต์จาก Customer Insights ไปยัง Adobe Experience Platform
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>สร้างผู้ชมใน Adobe Campaign Standard
 
-ในการส่งอีเมลสำหรับการส่งเสริมการขายนี้ เราจะใช้ Adobe Campaign Standard หลังจากที่นำเข้าข้อมูลเข้าสู่ Adobe Experience Platform เราจำเป็นต้อง [สร้างผู้ชม](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ใน Adobe Campaign Standard โดยใช้ข้อมูลใน Adobe Experience Platform
+ในการส่งอีเมลสำหรับการส่งเสริมการขายนี้ เราจะใช้ Adobe Campaign Standard
 
+1. [สร้างผู้ชม](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ใน Adobe Campaign Standard โดยใช้ข้อมูลใน Adobe Experience Platform
 
-เรียนรู้วิธี [ใช้ตัวสร้างเซ็กเมนต์](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) ใน Adobe Campaign Standard เพื่อกำหนดผู้ชมตามข้อมูลใน Adobe Experience Platform
+1. [ใช้เครื่องมือสร้างเซ็กเมนต์](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) ใน Adobe Campaign Standard เพื่อกำหนดผู้ชมตามข้อมูลใน Adobe Experience Platform
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>สร้างและส่งอีเมลโดยใช้ Adobe Campaign Standard
 
 สร้างเนื้อหาอีเมลจากนั้น [ทดสอบและส่ง](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) อีเมลของคุณ
 
 :::image type="content" source="media/contoso-sample-email.jpg" alt-text="อีเมลตัวอย่างพร้อมข้อเสนอการต่ออายุจาก Adobe Campaign Standard":::
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

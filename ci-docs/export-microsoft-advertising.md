@@ -1,19 +1,19 @@
 ---
 title: ส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising (พรีวิว)
 description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและการส่งออกไปยัง Microsoft Advertising
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ca37159ec6473ad5c331a0ce1aa8424d277529ff
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 44217e7823ffbe14d232b3e33de1b4ea6ed69dcf
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081912"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196555"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising (พรีวิว)
 
@@ -21,31 +21,34 @@ ms.locfileid: "9081912"
 
 ## <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
--   [บัญชี Microsoft Advertising](https://ads.microsoft.com/) และข้อมูลประจำตัวของผู้ดูแลระบบที่สอดคล้องกัน
--   คุณได้ยอมรับข้อกำหนดในการให้บริการของ Customer Match 
--   [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
--   โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออก มีฟิลด์ที่มีที่อยู่อีเมล
+- [บัญชี Microsoft Advertising](https://ads.microsoft.com/) และข้อมูลประจำตัวของผู้ดูแลระบบที่สอดคล้องกัน
+- รหัสลูกค้าและรหัสบัญชีของ Microsoft Advertising ค้นหารหัสลูกค้า (`cid`) และรหัสบัญชี (`aid`) ในพารามิเตอร์ของ URL เมื่อคุณลงชื่อเข้าใช้ Microsoft Advertising
+- ยอมรับข้อกำหนดในการให้บริการของ Customer Match
+- [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
+- โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออกประกอบด้วยฟิลด์ที่แสดงที่อยู่อีเมล
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
-- คุณสามารถส่งออกโปรไฟล์ลูกค้าได้มากถึง 500'000 รายต่อการส่งออกไปยัง Microsoft Advertising
-- การส่งออกไปยัง Microsoft Advertising นั้นจำกัดเฉพาะเซ็กเมนต์
-- การส่งออกโปรไฟล์ลูกค้าสูงสุด 500'000 รายไปยัง Microsoft Advertising อาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ 
+- ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 500,000 รายการไปยัง Microsoft Advertising ซึ่งอาจใช้เวลานาน 10 นาที
+- เซ็กเมนต์เท่านั้น
 
+## <a name="set-up-connection-to-microsoft-advertising"></a>ตั้งค่าการเชื่อมต่อกับ Microsoft Advertising
 
-## <a name="set-up-the-connection-to-microsoft-advertising"></a>ตั้งค่าการเชื่อมต่อกับ Microsoft Advertising
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. ไปที่ **การจัดการ** > **การเชื่อมต่อ**
 
-1. เลือก **เพิ่มการเชื่อมต่อ** และเลือก **Microsoft Advertising** เพื่อกำหนดค่าการเชื่อมต่อ
+1. เลือก **เพิ่มการเชื่อมต่อ** แล้วเลือก **Microsoft Advertising**
 
 1. ตั้งชื่อที่เป็นที่รู้จักให้การเชื่อมต่อของคุณในฟิลด์ **ชื่อที่แสดง** ชื่อและชนิดของการเชื่อมต่ออธิบายการเชื่อมต่อนี้ เราขอแนะนำให้เลือกชื่อที่อธิบายวัตถุประสงค์และเป้าหมายของการเชื่อมต่อ
 
-1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ ค่าเริ่มต้นคือ ผู้ดูแลระบบ สำหรับข้อมูลเพิ่มเติม โปรดดู [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
+1. เลือกผู้ที่สามารถใช้การเชื่อมต่อนี้ ค่าเริ่มต้นคือ ผู้ดูแลระบบ ดูข้อมูลเพิ่มเติมที่ [อนุญาตให้ผู้สนับสนุนใช้การเชื่อมต่อสำหรับการส่งออก](connections.md#allow-contributors-to-use-a-connection-for-exports)
 
-1. เลือก **ฉันเห็นด้วย** เพื่อยืนยัน **ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ**
+1. ป้อน **รหัสลูกค้าของ Microsoft Advertising**
 
-1. เลือก **เชื่อมต่อ** เพื่อเริ่มการเชื่อมต่อไปยัง Microsoft Advertising
+1. ตรวจสอบ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](connections.md#data-privacy-and-compliance) และเลือก **ฉันเห็นด้วย**
+
+1. เลือก **เชื่อมต่อ** เพื่อเริ่มต้นการเชื่อมต่อ
 
 1. เลือก **รับรองความถูกต้องด้วย Microsoft Advertising** และให้ข้อมูลประจำตัวของผู้ดูแลระบบของคุณสำหรับ Microsoft Advertising
 
@@ -55,29 +58,24 @@ ms.locfileid: "9081912"
 
 ## <a name="configure-an-export"></a>กำหนดค่าการส่งออก
 
-คุณสามารถกำหนดค่าการส่งออกนี้ได้หากคุณสามารถเข้าถึงการเชื่อมต่อชนิดนี้ได้ ดูข้อมูลเพิ่มเติมที่ [สิทธิ์ที่จำเป็นในการกำหนดค่าการส่งออก](export-destinations.md#set-up-a-new-export)
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. ไปที่ **ข้อมูล** > **การส่งออก**
 
-1. หากต้องการสร้างการส่งออกใหม่ เลือก **เพิ่มปลายทาง**
+1. เลือก **เพิ่มส่งออก**
 
-1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน Microsoft Advertising หากคุณไม่เห็นชื่อส่วนนี้ แสดงว่าคุณไม่สามารถใช้การเชื่อมต่อชนิดนี้ได้
+1. ในฟิลด์ **การเชื่อมต่อสำหรับการส่งออก** เลือกการเชื่อมต่อจากส่วน Microsoft Advertising ติดต่อผู้ดูแลระบบหากไม่มีการเชื่อมต่อ
 
-1. เลือกเซ็กเมนต์ที่จะส่งออก ผู้ชมของ Customer Match ใน Microsoft Advertising จะถูกสร้างขึ้นโดยอัตโนมัติด้วยชื่อของเซ็กเมนต์ที่เลือกสำหรับการส่งออก แต่ละเซ็กเมนต์จะส่งผลให้มีผู้ชมของ Customer Match ที่แยกจากกัน 
+1. ป้อนชื่อสำหรับการส่งออก
 
-1. ป้อน **รหัสลูกค้าและรหัสบัญชีของ Microsoft Advertising** ของคุณ คุณสามารถค้นหารหัสลูกค้า (`cid`) และรหัสบัญชี (`aid`) ในพารามิเตอร์ของ URL เมื่อคุณเข้าสู่ระบบ Microsoft Advertising
+1. เลือกเซ็กเมนต์ที่จะส่งออก ผู้ชมของ Customer Match ใน Microsoft Advertising จะถูกสร้างขึ้นโดยอัตโนมัติด้วยชื่อของเซ็กเมนต์ที่เลือกสำหรับการส่งออก แต่ละเซ็กเมนต์จะส่งผลให้มีผู้ชมของ Customer Match ที่แยกจากกัน
 
-1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่มีที่อยู่อีเมลของลูกค้า ซึ่งจำเป็นต้องส่งออกเซ็กเมนต์ไปยัง Microsoft Advertising
+1. ป้อน **รหัสลูกค้าและรหัสบัญชีของ Microsoft Advertising** ของคุณ
+
+1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่มีที่อยู่อีเมลของลูกค้า
 
 1. เลือก **บันทึก**
 
-การบันทึกการส่งออกไม่ได้เรียกใช้การส่งออกในทันที
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-การส่งออกทำงานกับทุก ๆ [การรีเฟรชตามกำหนดการ](system.md#schedule-tab) นอกจากนี้คุณยังสามารถ [ส่งออกข้อมูลตามความต้องการ](export-destinations.md#run-exports-on-demand) 
-
-
-## <a name="data-privacy-and-compliance"></a>ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ
-
-เมื่อคุณเปิดใช้งาน Dynamics 365 Customer Insights ในการส่งข้อมูลไปยัง Microsoft Advertising คุณอนุญาตให้ถ่ายโอนข้อมูลนอกขอบเขตการปฏิบัติตามข้อกำหนดสำหรับ Dynamics 365 Customer Insights ซึ่งรวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น ข้อมูลส่วนบุคคล Microsoft จะถ่ายโอนข้อมูลดังกล่าวตามคำแนะนำของคุณ แต่คุณมีหน้าที่รับผิดชอบในการตรวจสอบว่า Microsoft Advertising เป็นไปตามภาระหน้าที่ด้านความเป็นส่วนตัวหรือความปลอดภัยที่คุณอาจมี สำหรับข้อมูลเพิ่มเติม ดู [คำชี้แจงสิทธิส่วนบุคคลของ Microsoft](https://go.microsoft.com/fwlink/?linkid=396732)
-
-ผู้ดูแลระบบ Dynamics 365 Customer Insights ของคุณ สามารถลบปลายทางการส่งออกเมื่อใดก็ได้ เพื่อหยุดการใช้ฟังก์ชันนี้
+[!INCLUDE [footer-include](includes/footer-banner.md)]
