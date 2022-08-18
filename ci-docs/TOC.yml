@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: การดูแลจัดการ
   items:
-    - name: ตั้งค่าการกำหนดค่าระบบ
-      href: system.md
-    - name: กำหนดการตั้งค่าความปลอดภัย
-      href: security-overview.md
     - name: มอบสิทธิ์ของผู้ใช้
       href: permissions.md
     - name: นํา Key Vault ของคุณมาเอง
       href: use-azure-key-vault.md
+    - name: กำหนดการตั้งค่าความปลอดภัย
+      href: security-overview.md
     - name: ส่งออกบันทึกการวินิจฉัย
       href: diagnostics.md
-    - name: ภาพรวมของการเชื่อมต่อ
+    - name: จัดการการเชื่อมต่อ
       href: connections.md
+    - name: จัดกําหนดการรีเฟรชระบบ
+      href: schedule-refresh.md
+    - name: ดูการกำหนดค่าระบบ
+      href: system.md
 - name: APIs
   items:
     - name: ทำงานกับ API

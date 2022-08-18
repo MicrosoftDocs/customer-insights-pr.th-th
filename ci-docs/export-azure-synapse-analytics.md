@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196417"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259867"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ส่งออกข้อมูลไปยัง Azure Synapse Analytics (พรีวิว)
 
@@ -24,7 +24,7 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 > [!NOTE]
 > อย่าลืมตั้งค่า **การกำหนดบทบาท** ทั้งหมดตามที่อธิบายไว้
 
-- ใน Customer Insights บัญชีผู้ใช้ Azure Active Directory (AD) ของคุณต้องมี [บทบาทผู้ดูแลระบบ](permissions.md#assign-roles-and-permissions)
+- ใน Customer Insights บัญชีผู้ใช้ Azure Active Directory (AD) ของคุณต้องมี [บทบาทผู้ดูแลระบบ](permissions.md#add-users)
 
 ใน Azure:
 
@@ -39,6 +39,8 @@ Azure Synapse เป็นบริการวิเคราะห์ที่
 - *[ข้อมูลประจำตัวที่มีการจัดการของ Azure Synapse workspace](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* มีสิทธิ์ **ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ** ในบัญชี Azure Data Lake Storage รุ่น2 ที่ซึ่งมีข้อมูลอยู่และเชื่อมโยงกับ Azure Synapse workspace เรียนรู้เพิ่มเติมเกี่ยวกับ [การใช้พอร์ทัล Azure เพื่อมอบหมายบทบาท Azure สำหรับการเข้าถึงข้อมูล blob และคิว](/azure/storage/common/storage-auth-aad-rbac-portal) และ [สิทธิ์ผู้สนับสนุนข้อมูลของ Blob ในพื้นที่จัดเก็บ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)
 
 - บน Azure Synapse workspace *บริการหลักสำหรับ Customer Insights* มี [บทบาทที่กำหนด](/azure/synapse-analytics/security/how-to-set-up-access-control) เป็น **ผู้ดูแลระบบ Synapse**
+
+- หากสภาพแวดล้อม Customer Insights ของคุณเก็บข้อมูลใน [Azure Data Lake Storage ของตนเอง](own-data-lake-storage.md) ผู้ใช้ที่ตั้งค่าการเชื่อมต่อกับ Azure Synapse Analytics ต้องมีบทบาท **ผู้อ่าน** ในตัวเป็นอย่างน้อยในบัญชี Data Lake Storage สำหรับข้อมูลเพิ่มเติม โปรดดู [มอบหมายบทบาท Azure โดยใช้พอร์ทัล Azure](/azure/role-based-access-control/role-assignments-portal)
 
 ## <a name="set-up-connection-to-azure-synapse"></a>ตั้งค่าการเชื่อมต่อไปยัง Azure Synapse
 

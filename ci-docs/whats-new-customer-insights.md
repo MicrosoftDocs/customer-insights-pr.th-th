@@ -1,19 +1,19 @@
 ---
 title: มีอะไรใหม่ใน Dynamics 365 Customer Insights
 description: ข้อมูลเกี่ยวกับคุณลักษณะใหม่ การปรับปรุง และการแก้ไขข้อบกพร่อง
-ms.date: 06/30/2022
+ms.date: 08/03/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
-ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
+ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114269"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246034"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>มีอะไรใหม่ใน Dynamics 365 Customer Insights
 
@@ -23,6 +23,28 @@ ms.locfileid: "9114269"
 
 > [!TIP]
 > เมื่อต้องการส่งและโหวตคำขอคุณลักษณะและข้อเสนอแนะผลิตภัณฑ์ ให้ไปที่ [พอร์ทัลไอเดียเกี่ยวกับแอปพลิเคชัน Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)
+
+## <a name="july-2022-updates"></a>การปรับปรุงเดือนกรกฎาคม 2022
+
+การปรับปรุงในเดือนกรกฎาคม 2022 ประกอบด้วยคุณลักษณะใหม่ การอัปเกรดประสิทธิภาพ และการแก้ไขข้อบกพร่อง
+
+### <a name="export-to-moengage"></a>ส่งออกไปยัง MoEngage
+
+ส่งออกเซ็กเมนต์ของโปรไฟล์ลูกค้าแบบรวมไปยัง MoEngage และใช้สำหรับการตลาดทางอีเมลใน MoEngage
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [ส่งออกเซ็กเมนต์ไปยัง MoEngage](export-moengage.md)
+
+### <a name="ssh-support-for-sftp-based-exports"></a>การรองรับ SSH สำหรับการส่งออกแบบ SFTP
+
+เลือกว่าคุณต้องการรับรองความถูกต้องผ่าน SSH หรือชื่อผู้ใช้/รหัสผ่านสำหรับการเชื่อมต่อกับปลายทางการส่งออก SFTP
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [ส่งออกข้อมูลไปยังโฮสต์ SFTP](export-sftp.md)
+
+### <a name="personalize-experiences-with-data-about-known-and-unknown-users"></a>ปรับแต่งประสบการณ์ด้วยข้อมูลเกี่ยวกับผู้ใช้ที่รู้จักและไม่รู้จัก
+
+การจัดการข้อมูลลูกค้าไม่ใช่ความท้าทายใหม่ แต่เป็นเรื่องยากขึ้นเรื่อยๆ เมื่อผู้ใช้สำรวจช่องทางดิจิทัลต่างๆ ที่แบรนด์นำเสนอ ผู้ใช้ที่มีการรู้จัก (ได้รับการรับรองความถูกต้อง) ในช่องทางหนึ่งจะไม่เป็นที่รู้จัก (ไม่ได้รับรองความถูกต้อง) ในอีกช่องทางหนึ่งหากไม่ได้ลงชื่อเข้าใช้ ปัญหาที่มักเกิดคือผู้ใช้ที่ไม่ได้รับการรับรองความถูกต้อง (ที่ไม่รู้จัก) ไม่มีรหัสที่ใช้ร่วมกัน รหัสดังกล่าวสามารถใช้เชื่อมโยงแอตทริบิวต์โปรไฟล์ที่มีความหมายและสร้างโปรไฟล์ลูกค้าที่เป็นหนึ่งเดียว Customer Insights ช่วยแก้ปัญหานี้โดยการนำเข้าข้อมูลจากวิธีการติดตามบนระบบต้นทางของคุณ
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [ปรับแต่งประสบการณ์ด้วยข้อมูลเกี่ยวกับผู้ใช้ที่รู้จักและไม่รู้จัก](unknown-to-known.md)
 
 ## <a name="june-2022-updates"></a>การปรับปรุงเดือนมิถุนายน 2022
 
@@ -48,9 +70,9 @@ Customer Lockbox มีส่วนติดต่อเพื่อตรวจ
 
 ### <a name="connect-to-your-data-using-azure-private-link"></a>เชื่อมต่อกับข้อมูลของคุณโดยใช้ Azure Private Link
 
-Azure Private Link ให้ Customer Insights สามารถเชื่อมต่อกับบัญชี Azure Data Lake Storage ของคุณผ่านปลายทางส่วนตัวในเครือข่ายเสมือนของคุณ สำหรับข้อมูลในบัญชีที่เก็บข้อมูลซึ่งไม่ได้เปิดเผยต่ออินเทอร์เน็ตสาธารณะ ลิงก์ส่วนตัวจะเปิดใช้งานการเชื่อมต่อไปยังเครือข่ายที่ถูกจำกัดนั้น
+Azure Private Link ให้ Customer Insights สามารถเชื่อมต่อกับบัญชี Azure Data Lake Storage ของคุณผ่านปลายทางส่วนตัวในเครือข่ายเสมือนของคุณ สำหรับข้อมูลในบัญชีที่เก็บข้อมูลซึ่งไม่ได้เปิดเผยต่ออินเทอร์เน็ตสาธารณะ Private Link จะเปิดใช้งานการเชื่อมต่อไปยังเครือข่ายที่ถูกจำกัดนั้น
 
-สำหรับข้อมูลเพิ่มเติม โปรดดู [ใช้ Private Link ใน Customer Insights](security-overview.md#private-links-tab)
+สำหรับข้อมูลเพิ่มเติม โปรดดู [ใช้ Private Link ใน Customer Insights](security-overview.md#set-up-an-azure-private-link)
 
 ## <a name="may-2022-updates"></a>การปรับปรุงเดือนพฤษภาคม 2022
 

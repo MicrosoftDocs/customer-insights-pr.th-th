@@ -1,7 +1,7 @@
 ---
-title: การส่งต่อบันทึกใน Dynamics 365 Customer Insights ด้วย Azure Monitor (พรีวิว)
+title: ส่งออกบันทึกการวินิจฉัย (พรีวิว)
 description: เรียนรู้วิธีส่งบันทึกไปยัง Microsoft Azure Monitor
-ms.date: 12/14/2021
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: article
@@ -11,71 +11,92 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052676"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245948"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>การส่งต่อบันทึกใน Dynamics 365 Customer Insights ด้วย Azure Monitor (พรีวิว)
+# <a name="export-diagnostic-logs-preview"></a>ส่งออกบันทึกการวินิจฉัย (พรีวิว)
 
-Dynamics 365 Customer Insights มีการรวมโดยตรงกับ Azure Monitor บันทึกทรัพยากร Azure Monitor ให้คุณสามารถตรวจสอบและส่งบันทึกไปที่ [ที่เก็บข้อมูล Azure](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) หรือสตรีมไปที่ [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
+ส่งต่อบันทึกจาก Customer Insights โดยใช้ Azure Monitor บันทึกทรัพยากร Azure Monitor ให้คุณสามารถตรวจสอบและส่งบันทึกไปที่ [ที่เก็บข้อมูล Azure](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) หรือสตรีมไปที่ [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/)
 
 Customer Insights จะส่งบันทึกเหตุการณ์ต่อไปนี้:
 
 - **เหตุการณ์ตรวจสอบ**
-  - **APIEvent** - เปิดใช้งานการติดตามการเปลี่ยนแปลงที่ทำผ่าน Dynamics 365 Customer Insights UI
+  - **APIEvent** - เปิดใช้งานการติดตามการเปลี่ยนแปลงผ่าน Dynamics 365 Customer Insights UI
 - **เหตุการณ์การดำเนินงาน**
-  - **WorkflowEvent** - เวิร์กโฟลว์อนุญาตให้คุณตั้งค่า [แหล่งข้อมูล](data-sources.md), [รวม](data-unification.md), [เพิ่ม](enrichment-hub.md) และสุดท้าย [ส่งออก](export-destinations.md) ข้อมูลไปยังระบบอื่นๆ ขั้นตอนทั้งหมดเหล่านี้สามารถทำได้ทีละรายการ (เช่น ทริกเกอร์การส่งออกรายการเดียว) นอกจากนี้ยังสามารถใช้งานการประสานงาน (เช่น การรีเฟรชข้อมูลจากแหล่งข้อมูลที่ทริกเกอร์กระบวนการรวม ซึ่งจะดึงการเพิ่มความสมบูรณ์และเมื่อส่งออกข้อมูลไปยังระบบอื่นเสร็จแล้ว) สำหรับข้อมูลเพิ่มเติม โปรดดูที่ [WorkflowEvent Schema](#workflow-event-schema)
-  - **APIEvent** - การเรียก API ทั้งหมดสำหรับอินสแตนซ์ของลูกค้าไปยัง Dynamics 365 Customer Insights สำหรับข้อมูลเพิ่มเติม โปรดดูที่ [APIEvent Schema](#api-event-schema)
+  - **WorkflowEvent** - อนุญาตให้ตั้งค่า [แหล่งข้อมูล](data-sources.md), [รวม](data-unification.md), [เพิ่ม](enrichment-hub.md) และ [ส่งออก](export-destinations.md) ข้อมูลไปยังระบบอื่นๆ ขั้นตอนเหล่านี้สามารถทำได้ทีละรายการ (เช่น ทริกเกอร์การส่งออกรายการเดียว) นอกจากนี้ยังสามารถใช้งานการประสานรวม (เช่น การรีเฟรชข้อมูลจากแหล่งข้อมูลที่ทริกเกอร์กระบวนการรวม ซึ่งจะดึงการเพิ่มความสมบูรณ์และส่งออกข้อมูลไปยังระบบอื่น) สำหรับข้อมูลเพิ่มเติม โปรดดูที่ [WorkflowEvent Schema](#workflow-event-schema)
+  - **APIEvent** - ส่งการเรียก API ทั้งหมดของอินสแตนซ์ของลูกค้าไปยัง Dynamics 365 Customer Insights สำหรับข้อมูลเพิ่มเติม โปรดดูที่ [APIEvent Schema](#api-event-schema)
 
 ## <a name="set-up-the-diagnostic-settings"></a>ตั้งค่าการตั้งค่าการวินิจฉัย
 
 ### <a name="prerequisites"></a>ข้อกำหนดเบื้องต้น
 
-ในการกำหนดค่าการวินิจฉัยใน Customer Insights ต้องเป็นไปตามข้อกำหนดเบื้องต้นต่อไปนี้:
-
-- คุณต้องมี [การสมัครใช้งาน Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) ที่ใช้งานอยู่
-- คุณมีสิทธิ์ของ [ผู้ดูแลระบบ](permissions.md#admin) ใน Customer Insights
-- คุณมีบทบาท **ผู้สนับสนุน** และ **ผู้ดูแลระบบการเข้าถึงของผู้ใช้** ในทรัพยากรปลายทางบน Azure ทรัพยากรอาจเป็นบัญชี Azure Data Lake Storage, ฮับเหตุการณ์ Azure หรือพื้นที่ทำงาน Azure Log Analytics ดูข้อมูลเพิ่มเติมที่ [เพิ่มหรือลบการกำหนดบทบาท Azure โดยใช้พอร์ทัล Azure](/azure/role-based-access-control/role-assignments-portal) สิทธิ์นี้จำเป็นขณะกำหนดการตั้งค่าการวินิจฉัยใน Customer Insights ซึ่งสามารถเปลี่ยนแปลงได้หลังจากตั้งค่าสำเร็จ
-- [ข้อกำหนดปลายทาง](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) สำหรับที่เก็บข้อมูล Azure, ฮับเหตุการณ์ Azure หรือ Azure Log Analytics
-- อย่างน้อยคุณก็มีบทบาท **ผู้อ่าน** ในกลุ่มทรัพยากรที่มีทรัพยากรอยู่
+- [การสมัครใช้งาน Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) ที่ใช้งานอยู่
+- สิทธิ์ของ [ผู้ดูแลระบบ](permissions.md#admin) ใน Customer Insights
+- [บทบาทผู้สนับสนุนและ ผู้ดูแลระบบการเข้าถึงของผู้ใช้](/azure/role-based-access-control/role-assignments-portal) ในทรัพยากรปลายทางบน Azure ทรัพยากรอาจเป็นบัญชี Azure Data Lake Storage, ฮับเหตุการณ์ Azure หรือพื้นที่ทำงาน Azure Log Analytics สิทธิ์นี้จำเป็นขณะกำหนดการตั้งค่าการวินิจฉัยใน Customer Insights แต่สามารถเปลี่ยนแปลงได้หลังจากตั้งค่าสำเร็จ
+- เป็นไปตาม [ข้อกำหนดปลายทาง](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) สำหรับที่เก็บข้อมูล Azure, ฮับเหตุการณ์ Azure หรือ Azure Log Analytics
+- มีบทบาท **ผู้อ่าน** เป็นอย่างน้อยในกลุ่มทรัพยากรที่มีทรัพยากรอยู่
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>ตั้งค่าการวินิจฉัยด้วย Azure Monitor
 
-1. ใน Customer Insights ให้เลือก **ระบบ** > **การวินิจฉัย** เพื่อดูปลายทางการวินิจฉัยที่กำหนดค่าอินสแตนซ์นี้
+1. ใน Customer Insights ให้ไปที่ **ผู้ดูแลระบบ** > **ระบบ** และเลือกแท็บ **การวินิจฉัย**
 
 1. เลือก **เพิ่มปลายทาง**
 
-   > [!div class="mx-imgBorder"]
-   > ![การเชื่อมต่อการวินิจฉัย](media/diagnostics-pane.png "การเชื่อมต่อการวินิจฉัย")
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="การเชื่อมต่อการวินิจฉัย":::
 
 1. ระบุชื่อในฟิลด์ **ชื่อสำหรับปลายทางการวินิจฉัย**
 
-1. เลือก **ผู้เช่า** ของการสมัครใช้งาน Azure ด้วยทรัพยากรปลายทางและเลือก **ลงชื่อเข้าใช้**
+1. เลือก **ชนิดทรัพยากร** (บัญชีที่เก็บข้อมูล, ฮับเหตุการณ์ หรือ Log Analytics)
 
-1. เลือก **ชนิดทรัพยากร** (บัญชีที่เก็บข้อมูล, ฮับเหตุการณ์ หรือการวิเคราะห์บันทึก)
+1. เลือก **การสมัครใช้งาน**, **กลุ่มทรัพยากร** และ **ทรัพยากร** สำหรับทรัพยากรปลายทาง ดู [การกำหนดค่าของทรัพยากรปลายทาง](#configuration-on-the-destination-resource) สำหรับข้อมูลสิทธิ์และบันทึก
 
-1. เลือก **การสมัครใช้งาน** สำหรับทรัพยากรปลายทาง
-
-1. เลือก **กลุ่มทรัพยากร** สำหรับทรัพยากรปลายทาง
-
-1. เลือก **ทรัพยากร**
-
-1. ยืนยันคำชี้แจง **ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ**
+1. ตรวจสอบ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](connections.md#data-privacy-and-compliance) และเลือก **ฉันเห็นด้วย**
 
 1. เลือก **เชื่อมต่อกับระบบ** เพื่อเชื่อมต่อกับทรัพยากรปลายทาง บันทึกจะเริ่มปรากฏในปลายทางหลังจากผ่านไป 15 นาที หากมีการใช้งาน API และสร้างเหตุการณ์
 
-### <a name="remove-a-destination"></a>เอาปลายทางออก
+## <a name="configuration-on-the-destination-resource"></a>การกำหนดค่าทรัพยากรปลายทาง
 
-1. ไปที่ **ระบบ** > **การวินิจฉัย**
+การเปลี่ยนแปลงที่เกิดขึ้นโดยอัตโนมัติตามชนิดทรัพยากรที่คุณเลือกมีดังต่อไปนี้:
+
+### <a name="storage-account"></a>Storage account
+
+บริการหลักของ Customer Insights ขอสิทธิ์ **ผู้สนับสนุนบัญชีการจัดเก็บ** สำหรับทรัพยากรที่เลือกและสร้างสองคอนเทนเนอร์ภายใต้เนมสเปซที่เลือก:
+
+- `insight-logs-audit` ที่มี **เหตุการณ์การตรวจสอบ**
+- `insight-logs-operational` ที่มี **เหตุการณ์การดำเนินงาน**
+
+### <a name="event-hub"></a>ฮับเหตุการณ์
+
+บริการหลักของ Customer Insights ขอสิทธิ์ **เจ้าของข้อมูล Azure Event Hubs** สำหรับทรัพยากรและสร้าง Event Hubs ภายใต้เนมสเปซที่เลือก:
+
+- `insight-logs-audit` ที่มี **เหตุการณ์การตรวจสอบ**
+- `insight-logs-operational` ที่มี **เหตุการณ์การดำเนินงาน**
+
+### <a name="log-analytics"></a>Log Analytics
+
+บริการหลัก Customer Insights ขอสิทธิ์ **ผู้สนับสนุน Log Analytics** สำหรับทรัพยากร บันทึกสามารถใช้ได้ภายใต้ **บันทึก** > **ตาราง** > **การจัดการบันทึก** บนพื้นที่ทำงาน Log Analytics ที่เลือก ขยายโซลูชัน **การจัดการบันทึก** และค้นหาตาราง `CIEventsAudit` และ `CIEventsOperational`
+
+- `CIEventsAudit` ที่มี **เหตุการณ์การตรวจสอบ**
+- `CIEventsOperational` ที่มี **เหตุการณ์การดำเนินงาน**
+
+ภายใต้หน้าต่าง **การสอบถาม** ให้ขยายโซลูชัน **การตรวจสอบ** และค้นหาตัวอย่างการสอบถามที่กำหนดโดยการค้นหา `CIEvents`
+
+## <a name="remove-a-diagnostics-destination"></a>ลบปลายทางการวินิจฉัย
+
+1. ไปที่ **ผู้ดูแลระบบ** > **ระบบ** และเลือกแท็บ **การวินิจฉัย**
 
 1. เลือกปลายทางการวินิจฉัยในรายการ
 
+   > [!TIP]
+   > การลบปลายทางออกจะหยุดการส่งต่อบันทึก แต่จะไม่ลบทรัพยากรในการสมัครใช้งาน Azure หากต้องการลบทรัพยากรใน Azure เลือกลิงก์ในคอลัมน์ **การดำเนินการ** เพื่อเปิดพอร์ทัล Azure สำหรับทรัพยากรที่เลือกและลบออกที่นั่น จากนั้นให้ลบปลายทางการวินิจฉัย
+
 1. ในคอลัมน์ **การดำเนินการ** ให้เลือกไอคอน **ลบ**
 
-1. ยืนยันการลบเพื่อหยุดการส่งต่อบันทึก ทรัพยากรในการสมัครใช้งาน Azure จะไม่ถูกลบ คุณสามารถเลือกลิงก์ในคอลัมน์ **การดำเนินการ** เพื่อเปิดพอร์ทัล Azure สำหรับทรัพยากรที่เลือกและลบออกที่นั่น
+1. ยืนยันการลบเพื่อลบปลายทางและหยุดการส่งต่อบันทึก
 
 ## <a name="log-categories-and-event-schemas"></a>ประเภทบันทึกและแบบแผนเหตุการณ์
 
@@ -89,36 +110,9 @@ Customer Insights มีสองประเภท:
 - **เหตุการณ์การตรวจสอบ**: [เหตุการณ์ API](#api-event-schema) เพื่อติดตามการเปลี่ยนแปลงการกำหนดค่าในบริการ การดำเนินการ `POST|PUT|DELETE|PATCH` จะอยู่ในประเภทนี้
 - **เหตุการณ์การดำเนินงาน**: [เหตุการณ์ API](#api-event-schema) หรือ [เหตุการณ์เวิร์กโฟลว์](#workflow-event-schema) ที่เกิดขึ้นขณะใช้บริการ  ตัวอย่างเช่น คำขอ `GET` หรือเหตุการณ์การดำเนินการของเวิร์กโฟลว์
 
-## <a name="configuration-on-the-destination-resource"></a>การกำหนดค่าทรัพยากรปลายทาง
-
-ขั้นตอนต่อไปนี้จะมีการใช้โดยอัตโนมัติตามประเภททรัพยากรที่คุณเลือก:
-
-### <a name="storage-account"></a>Storage account
-
-บริการหลักของ Customer Insights ขอสิทธิ์ **ผู้สนับสนุนบัญชีการจัดเก็บ** สำหรับทรัพยากรที่เลือกและสร้างสองคอนเทนเนอร์ภายใต้เนมสเปซที่เลือก:
-
-- `insight-logs-audit` ที่มี **เหตุการณ์การตรวจสอบ**
-- `insight-logs-operational` ที่มี **เหตุการณ์การดำเนินงาน**
-
-### <a name="event-hub"></a>ศูนย์กิจกรรม
-
-บริการหลักของ Customer Insights ขอสิทธิ์ **เจ้าของข้อมูล Azure Event Hubs** สำหรับทรัพยากรและจะสร้าง Event Hubs ภายใต้เนมสเปซที่เลือก:
-
-- `insight-logs-audit` ที่มี **เหตุการณ์การตรวจสอบ**
-- `insight-logs-operational` ที่มี **เหตุการณ์การดำเนินงาน**
-
-### <a name="log-analytics"></a>การวิเคราะห์บันทึก
-
-บริการหลัก Customer Insights ขอสิทธิ์ **ผู้สนับสนุน Log Analytics** สำหรับทรัพยากร บันทึกจะสามารถใช้ได้ภายใต้ **บันทึก** > **ตาราง** > **การจัดการบันทึก** บนพื้นที่ทำงาน Log Analytics ที่เลือก ขยายโซลูชัน **การจัดการบันทึก** และค้นหาตาราง `CIEventsAudit` และ `CIEventsOperational`
-
-- `CIEventsAudit` ที่มี **เหตุการณ์การตรวจสอบ**
-- `CIEventsOperational` ที่มี **เหตุการณ์การดำเนินงาน**
-
-ภายใต้หน้าต่าง **การสอบถาม** ให้ขยายโซลูชัน **การตรวจสอบ** และค้นหาตัวอย่างการสอบถามที่กำหนดโดยการค้นหา `CIEvents`
-
 ## <a name="event-schemas"></a>แบบแผนเหตุการณ์
 
-เหตุการณ์ API และเหตุการณ์เวิร์กโฟลว์มีโครงสร้างและรายละเอียดที่เหมือนกัน ดูที่ [แบบแผนเหตุการณ์ API](#api-event-schema) หรือ [แบบแผนเหตุการณ์เวิร์กโฟลว์](#workflow-event-schema)
+เหตุการณ์ API และเหตุการณ์เวิร์กโฟลว์มีโครงสร้างร่วมกัน แต่มีความแตกต่างเล็กน้อย สำหรับข้อมูลเพิ่มเติม โปรดดู [แบบแผนเหตุการณ์ API](#api-event-schema) หรือ [แบบแผนเหตุการณ์เวิร์กโฟลว์](#workflow-event-schema)
 
 ### <a name="api-event-schema"></a>แบบแผนเหตุการณ์ API
 
@@ -182,7 +176,7 @@ Customer Insights มีสองประเภท:
 
 ### <a name="workflow-event-schema"></a>แบบแผนเหตุการณ์เวิร์กโฟลว์
 
-เวิร์กโฟลว์ประกอบด้วยหลายขั้นตอน [นำเข้าแหล่งข้อมูล](data-sources.md), [รวม](data-unification.md), [เพิ่ม](enrichment-hub.md) และ [ส่งออก](export-destinations.md) ข้อมูล ขั้นตอนทั้งหมดเหล่านี้สามารถเรียกใช้ทีละรายการหรือประสานงานกับกระบวนการต่อไปนี้
+เวิร์กโฟลว์ประกอบด้วยหลายขั้นตอน [นำเข้าแหล่งข้อมูล](data-sources.md), [รวม](data-unification.md), [เพิ่ม](enrichment-hub.md) และ [ส่งออก](export-destinations.md) ข้อมูล ขั้นตอนทั้งหมดเหล่านี้สามารถเรียกใช้ทีละรายการหรือประสานรวมกับกระบวนการต่อไปนี้
 
 #### <a name="operation-types"></a>ชนิดการดำเนินงาน
 
@@ -220,7 +214,6 @@ Customer Insights มีสองประเภท:
 | `durationMs`    | Long      | ระบุหรือไม่ก็ได้          | ระยะเวลาของกฎของการดำเนินงานเป็นมิลลินาที                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | สตริง    | ระบุหรือไม่ก็ได้          | ออบเจ็กต์ JSON ที่มีคุณสมบัติเพิ่มเติมสำหรับประเภทเหตุการณ์เฉพาะ                                                                                        | ดูส่วนย่อย [คุณสมบัติเวิร์กโฟลว์](#workflow-properties-schema)                                                                                                       |
 | `level`         | สตริง    | ต้องมี          | ระดับความรุนแรงของเหตุการณ์                                                                                                                                  | `Informational`, `Warning` หรือ `Error`                                                                                                                                   |
-|                 |
 
 #### <a name="workflow-properties-schema"></a>แบบแผนคุณสมบัติเวิร์กโฟลว์
 
@@ -247,3 +240,5 @@ Customer Insights มีสองประเภท:
 | `properties.additionalInfo.AffectedEntities` | ไม่       | ตกลง  | เลือกได้ สำหรับ OperationType `Export` เท่านั้น ประกอบด้วยรายการของเอนทิตีที่กำหนดค่าไว้ในการส่งออก                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | ไม่       | ตกลง  | เลือกได้ สำหรับ OperationType `Export` เท่านั้น ข้อความโดยละเอียดสำหรับการส่งออก                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | ไม่       | ตกลง  | เลือกได้ สำหรับ OperationType `Segmentation` เท่านั้น ระบุจำนวนสมาชิกทั้งหมดที่เซ็กเมนต์มี                                                                                                                                                    |
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

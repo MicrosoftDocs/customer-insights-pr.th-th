@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207022"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245856"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>เชื่อมต่อกับข้อมูลใน Azure Data Lake Storage
 
@@ -56,8 +56,8 @@ ms.locfileid: "9207022"
 
 1. เลือกหนึ่งในตัวเลือกต่อไปนี้สำหรับ **เชื่อมต่อที่เก็บข้อมูลของคุณโดยใช้** สำหรับข้อมูลเพิ่มเติม โปรดดู [เชื่อมต่อ Customer Insights กับบัญชี Azure Data Lake Storage รุ่น2 ด้วยบริการหลักของ Azure](connect-service-principal.md)
 
-   - **ทรัพยากร Azure**: ป้อน **รหัสทรัพยากร** หรือถ้าคุณต้องการนำเข้าข้อมูลจากบัญชีที่เก็บข้อมูลผ่าน Azure Private Link ให้เลือก **เปิดใช้งานลิงก์ส่วนตัว** สำหรับข้อมูลเพิ่มเติม โปรด [ลิงก์ส่วนตัว](security-overview.md#private-links-tab)
-   - **การสมัครใช้งาน Azure**: เลือก **การสมัครใช้งาน** แล้วเลือก **กลุ่มทรัพยากร** และ **บัญชีที่เก็บข้อมูล** หรือถ้าคุณต้องการนำเข้าข้อมูลจากบัญชีที่เก็บข้อมูลผ่าน Azure Private Link ให้เลือก **เปิดใช้งานลิงก์ส่วนตัว** สำหรับข้อมูลเพิ่มเติม โปรด [ลิงก์ส่วนตัว](security-overview.md#private-links-tab)
+   - **ทรัพยากร Azure**: ป้อน **รหัสทรัพยากร** หรือถ้าคุณต้องการนำเข้าข้อมูลจากบัญชีที่เก็บข้อมูลผ่าน Azure Private Link ให้เลือก **เปิดใช้งานลิงก์ส่วนตัว** สำหรับข้อมูลเพิ่มเติม โปรดดู [Private Link](security-overview.md#set-up-an-azure-private-link)
+   - **การสมัครใช้งาน Azure**: เลือก **การสมัครใช้งาน** แล้วเลือก **กลุ่มทรัพยากร** และ **บัญชีที่เก็บข้อมูล** หรือถ้าคุณต้องการนำเข้าข้อมูลจากบัญชีที่เก็บข้อมูลผ่าน Azure Private Link ให้เลือก **เปิดใช้งาน Private Link** สำหรับข้อมูลเพิ่มเติม โปรดดู [Private Link](security-overview.md#set-up-an-azure-private-link)
   
    > [!NOTE]
    > คุณต้องมีบทบาทใดบทบาทหนึ่งต่อไปนี้กับคอนเทนเนอร์หรือบัญชีที่เก็บข้อมูลเพื่อสร้างแหล่งข้อมูล:
@@ -176,7 +176,7 @@ ms.locfileid: "9207022"
         > - เจ้าของ Storage Blob Data
         > - ผู้สนับสนุน Storage Blob Data
 
-   - **เปิดใช้งานลิงก์ส่วนตัว** หรือถ้าคุณต้องการนำเข้าข้อมูลจากบัญชีที่เก็บข้อมูลผ่าน Azure Private Link สำหรับข้อมูลเพิ่มเติม โปรด [ลิงก์ส่วนตัว](security-overview.md#private-links-tab)
+   - **เปิดใช้งาน Private Link** หรือถ้าคุณต้องการนำเข้าข้อมูลจากบัญชีที่เก็บข้อมูลผ่าน Azure Private Link สำหรับข้อมูลเพิ่มเติม โปรดดู [Private Link](security-overview.md#set-up-an-azure-private-link)
 
 1. เลือก **ถัดไป**
 1. เปลี่ยนแปลงรายการต่อไปนี้:

@@ -1,19 +1,19 @@
 ---
 title: เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลตำแหน่งที่ตั้งจากแผนที่ Azure (พรีวิว)
 description: ข้อมูลทั่วไปเกี่ยวกับการเพิ่มข้อมูลของบุคคลที่สามสำหรับแผนที่ Azure
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052630"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238065"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>เพิ่มข้อมูลโปรไฟล์ลูกค้าด้วยข้อมูลตำแหน่งที่ตั้งจากแผนที่ Azure (พรีวิว)
 
@@ -35,14 +35,9 @@ ms.locfileid: "9052630"
 
 1. ป้อนชื่อสำหรับการเชื่อมต่อและคีย์ API ของแผนที่ Azure ที่ถูกต้อง
 
-1. รีวิวและให้ความยินยอมของคุณสำหรับ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](#data-privacy-and-compliance) โดยการเลือก **ฉันเห็นด้วย**
+1. ตรวจสอบ [ความเป็นส่วนตัวและการปฏิบัติตามข้อกำหนดของข้อมูล](connections.md#data-privacy-and-compliance) และเลือก **ฉันเห็นด้วย**
 
 1. เลือก **ตรวจสอบ** เพื่อตรวจสอบการกำหนดค่าแล้วเลือก **บันทึก**
-
-### <a name="data-privacy-and-compliance"></a>ความเป็นส่วนตัวของข้อมูลและการปฏิบัติตามกฎระเบียบ
-
-เมื่อคุณเปิดใช้งาน Dynamics 365 Customer Insights เพื่อส่งข้อมูลไปยังแผนที่ Azure คุณอนุญาตให้ถ่ายโอนข้อมูลนอกขอบเขตการปฏิบัติตามสำหรับ Dynamics 365 Customer Insights ซึ่งรวมถึงข้อมูลที่อาจมีความละเอียดอ่อน เช่น ข้อมูลส่วนบุคคล Microsoft จะถ่ายโอนข้อมูลดังกล่าวตามคำสั่งของคุณ แต่คุณมีหน้าที่ในการทำให้แน่ใจว่า Azure Maps ปฏิบัติตามภาระผูกพันด้านความเป็นส่วนตัวหรือความปลอดภัยที่คุณอาจมี สำหรับข้อมูลเพิ่มเติม โปรดดู [คำชี้แจงสิทธิ์ส่วนบุคคลของ Microsoft](https://go.microsoft.com/fwlink/?linkid=396732)
-ผู้ดูแลระบบ Dynamics 365 Customer Insights ของคุณสามารถเอาการเพิ่มความสมบูรณ์นี้ออกได้ตลอดเวลาเพื่อยกเลิกการใช้ฟังก์ชันนี้ต่อ
 
 ## <a name="configure-the-enrichment"></a>กำหนดค่าการเพิ่มความสมบูรณ์
 
