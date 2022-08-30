@@ -1,19 +1,19 @@
 ---
 title: ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 description: เรียนรู้วิธีการกำหนดค่าการเชื่อมต่อและส่งออกไปยัง LinkedIn Ads
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196831"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304726"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ส่งออกเซ็กเมนต์ไปยัง LinkedIn Ads (พรีวิว)
 
@@ -24,7 +24,7 @@ ms.locfileid: "9196831"
 - [บัญชี LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) และข้อมูลประจำตัวของผู้ดูแลระบบที่เกี่ยวข้อง
 - [รหัสบัญชี LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270)
 - [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
-- โปรไฟล์ลูกค้าแบบรวมในเซ็กเมนต์ที่ส่งออกประกอบด้วยฟิลด์ที่แสดงที่อยู่อีเมล
+- เซ็กเมนต์ที่ส่งออกต้องมีฟิลด์เฉพาะอย่างน้อยหนึ่งฟิลด์ ขึ้นอยู่กับว่าคุณเลือก [กำหนดเป้าหมายผู้ติดต่อ](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) หรือ [กำหนดเป้าหมายบริษัท](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) บน LinkedIn ฟิลด์ที่เป็นไปได้มีการระบุไว้ในขั้นตอน **การจับคู่ข้อมูล** เมื่อ [กำหนดค่าการส่งออก](#configure-an-export)
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 

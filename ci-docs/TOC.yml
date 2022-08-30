@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: ตรวจสอบการรวมข้อมูล
       href: review-unification.md
+    - name: สร้างโปรไฟล์ผู้ติดต่อแบบรวม
+      href: data-unification-contacts.md
     - name: ปรับปรุงการตั้งค่าการรวม
       href: data-unification-update.md
 - name: การเพิ่มข้อมูล
