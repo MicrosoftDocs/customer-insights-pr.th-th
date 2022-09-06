@@ -1,19 +1,19 @@
 ---
 title: มีอะไรใหม่ใน Dynamics 365 Customer Insights
 description: ข้อมูลเกี่ยวกับคุณลักษณะใหม่ การปรับปรุง และการแก้ไขข้อบกพร่อง
-ms.date: 08/03/2022
+ms.date: 08/31/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246034"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387317"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>มีอะไรใหม่ใน Dynamics 365 Customer Insights
 
@@ -23,6 +23,24 @@ ms.locfileid: "9246034"
 
 > [!TIP]
 > เมื่อต้องการส่งและโหวตคำขอคุณลักษณะและข้อเสนอแนะผลิตภัณฑ์ ให้ไปที่ [พอร์ทัลไอเดียเกี่ยวกับแอปพลิเคชัน Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)
+
+## <a name="august-2022-updates"></a>การปรับปรุงเดือนสิงหาคม 2022
+
+การปรับปรุงในเดือนสิงหาคม 2022 ประกอบด้วยคุณลักษณะใหม่ การอัปเกรดประสิทธิภาพ และการแก้ไขข้อบกพร่อง
+
+### <a name="contact-unification-in-b-to-b-environments"></a>การรวมผู้ติดต่อในสภาพแวดล้อมแบบ B-to-B
+
+สภาพแวดล้อมแบบ B-to-B ใน Customer Insights พร้อมรองรับประสบการณ์การรวมข้อมูลที่ได้รับการปรับปรุง
+
+ขณะนี้คุณสามารถรวมรายชื่อติดต่อเพิ่มเติมจากบัญชีเพื่อดูรายชื่อติดต่อทางธุรกิจทั้งหมดของคุณได้ ผู้ติดต่อที่รวมจะเชื่อมโยงกับบัญชีแบบรวมและขณะนี้แสดงอยู่ในบัตรลูกค้า 
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [สร้างโปรไฟล์ผู้ติดต่อแบบรวม](data-unification-contacts.md)
+
+### <a name="create-and-export-of-segments-based-on-unified-contacts"></a>สร้างและส่งออกเซ็กเมนต์ตามผู้ติดต่อแบบรวม
+
+ด้วยการรวมผู้ติดต่อแบบใหม่ คุณสามารถสร้างกลุ่มผู้ติดต่อโดยใช้เกณฑ์จากผู้ติดต่อ บัญชี หรือทั้งสองอย่าง เซ็กเมนต์เหล่านี้สามารถส่งออกเพื่อการเปิดใช้งานในบริการอื่นได้
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [ภาพรวมของการส่งออก](export-destinations.md)
 
 ## <a name="july-2022-updates"></a>การปรับปรุงเดือนกรกฎาคม 2022
 
