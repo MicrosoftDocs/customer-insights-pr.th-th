@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
+ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387317"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409380"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>มีอะไรใหม่ใน Dynamics 365 Customer Insights
 
@@ -41,6 +41,14 @@ ms.locfileid: "9387317"
 ด้วยการรวมผู้ติดต่อแบบใหม่ คุณสามารถสร้างกลุ่มผู้ติดต่อโดยใช้เกณฑ์จากผู้ติดต่อ บัญชี หรือทั้งสองอย่าง เซ็กเมนต์เหล่านี้สามารถส่งออกเพื่อการเปิดใช้งานในบริการอื่นได้
 
 สำหรับข้อมูลเพิ่มเติม โปรดดู [ภาพรวมของการส่งออก](export-destinations.md)
+
+### <a name="deployment-regions-aligned-with-microsoft-dataverse"></a>ภูมิภาคที่มีการปรับใช้งานตรงกับ Microsoft Dataverse
+
+เมื่อสร้างสภาพแวดล้อม Customer Insights ใหม่ คุณสามารถเลือกภูมิภาคที่คุณต้องการปรับใช้และโฮสต์การบริการ เราได้อัปเดตการเลือกภูมิภาคเพื่อให้สอดคล้องกับ Microsoft Dataverse และ Power Platform
+
+ตอนนี้คุณสามารถเลือกภูมิภาคเดียวกับสภาพแวดล้อม Microsoft Dataverse ที่มีอยู่ของคุณได้อย่างง่ายดาย หรือบัญชี Azure Data Lake Storage ของคุณ (หากคุณเลือกตัวเลือกนั้น) ขึ้นอยู่กับความพร้อมใช้งานของ Customer Insights ในภูมิภาคนั้น
+
+สำหรับข้อมูลเพิ่มเติม ดูได้ที่ [สร้างสิ่งแวดล้อมใหม่](create-environment.md) และ [ความพร้อมใช้งานของผลิตภัณฑ์ตามภูมิศาสตร์](https://dynamics.microsoft.com/availability-reports/)
 
 ## <a name="july-2022-updates"></a>การปรับปรุงเดือนกรกฎาคม 2022
 

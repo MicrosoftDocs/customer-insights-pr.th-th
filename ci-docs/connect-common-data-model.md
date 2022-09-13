@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245856"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396114"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>เชื่อมต่อกับข้อมูลใน Azure Data Lake Storage
 
@@ -39,6 +39,8 @@ ms.locfileid: "9245856"
   - ตัวอ่าน Storage Blob Data
   - เจ้าของ Storage Blob Data
   - ผู้สนับสนุน Storage Blob Data
+
+- ผู้ใช้ที่ตั้งค่าการเชื่อมต่อแหล่งข้อมูล ต้องการสิทธิ์อย่างน้อย Storage Blob Data Contributor ในบัญชีที่เก็บข้อมูล
 
 - ข้อมูลใน Data Lake Storage ของคุณควรเป็นไปตามมาตรฐาน Common Data Model สำหรับการจัดเก็บข้อมูลของคุณ และมีไฟล์กำกับ Common Data Model เพื่อแสดง Schema ของไฟล์ข้อมูล (*.csv หรือ *.parquet) ไฟล์กำกับต้องให้รายละเอียดของเอนทิตี เช่น คอลัมน์เอนทิตีและชนิดข้อมูล และตำแหน่งไฟล์ข้อมูลและชนิดไฟล์ สำหรับข้อมูลเพิ่มเติม โปรดดู [ไฟล์กำกับ Common Data Model](/common-data-model/sdk/manifest) หากไม่มีไฟล์กำกับ ผู้ใช้ที่เป็นผู้ดูแลระบบที่มีสิทธิ์เข้าถึงในฐานะเจ้าของข้อมูลในที่เก็บข้อมูล Blob หรือผู้สนับสนุนข้อมูลในที่เก็บข้อมูล Blob สามารถกำหนด Schema เมื่อนำเข้าข้อมูลได้
 
@@ -62,7 +64,7 @@ ms.locfileid: "9245856"
    > [!NOTE]
    > คุณต้องมีบทบาทใดบทบาทหนึ่งต่อไปนี้กับคอนเทนเนอร์หรือบัญชีที่เก็บข้อมูลเพื่อสร้างแหล่งข้อมูล:
    >
-   >  - ผู้อ่านข้อมูลของ Blob ในที่เก็บข้อมูลเพียงพอที่จะอ่านจากบัญชีที่เก็บข้อมูลและนำเข้าข้อมูลไปยัง Customer Insights 
+   >  - ผู้อ่านข้อมูลของ Blob ในที่เก็บข้อมูลเพียงพอที่จะอ่านจากบัญชีที่เก็บข้อมูลและนำเข้าข้อมูลไปยัง Customer Insights
    >  - ผู้สนับสนุนข้อมูลของ Blob ในที่เก็บข้อมูลหรือเจ้าของเป็นสิ่งจำเป็น หากคุณต้องการแก้ไขไฟล์กำกับโดยตรงใน Customer Insights  
   
 1. เลือกชื่อของ **คอนเทนเนอร์** ที่มีข้อมูลและ Schema (ไฟล์ model.json หรือ manifest.json) ที่จะใช้นำเข้าข้อมูล และเลือก **ถัดไป**

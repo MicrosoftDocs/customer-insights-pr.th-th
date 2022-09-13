@@ -1,7 +1,7 @@
 ---
 title: ทำงานกับข้อมูล Customer Insights ใน Microsoft Dataverse
 description: เรียนรู้วิธีการเชื่อมต่อ Customer Insights กับ Microsoft Dataverse และทำความเข้าใจเอนทิตีผลลัพธ์ที่ส่งออกไปยัง Dataverse
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
+ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9303852"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424332"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>ทำงานกับข้อมูล Customer Insights ใน Microsoft Dataverse
 
@@ -136,6 +136,7 @@ OR
 เอนทิตีเอาต์พุตบางรายการจาก Customer Insights สามารถใช้งานเป็นตารางใน Dataverse ส่วนด้านล่างอธิบาย Schema ที่คาดไว้ของตารางเหล่านี้
 
 - [โปรไฟล์ลูกค้า](#customerprofile)
+- [ติดต่อโปรไฟล์](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -145,21 +146,46 @@ OR
 
 ### <a name="customerprofile"></a>โปรไฟล์ลูกค้า
 
-ตารางนี้มีโปรไฟล์ลูกค้าแบบรวมจาก Customer Insights Schema สำหรับโปรไฟล์ลูกค้าแบบรวมขึ้นอยู่กับเอนทิตีและแอตทริบิวต์ที่ใช้ในกระบวนการรวมข้อมูล schema โปรไฟล์ลูกค้ามักจะมีชุดย่อยของแอตทริบิวต์จาก [คำนิยาม Common Data Model ของ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)
+ตารางนี้มีโปรไฟล์ลูกค้าแบบรวมจาก Customer Insights Schema สำหรับโปรไฟล์ลูกค้าแบบรวมขึ้นอยู่กับเอนทิตีและแอตทริบิวต์ที่ใช้ในกระบวนการรวมข้อมูล schema โปรไฟล์ลูกค้ามักจะมีชุดย่อยของแอตทริบิวต์จาก [คำนิยาม Common Data Model ของ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) สำหรับสถานการณ์ B-to-B โปรไฟล์ลูกค้าประกอบด้วยบัญชีแบบรวม และสคีมามักจะประกอบด้วยชุดย่อยของแอตทริบิวต์จาก [คำนิยาม Common Data Model ของบัญชี](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account)
+
+### <a name="contactprofile"></a>ติดต่อโปรไฟล์
+
+ContactProfile มีข้อมูลแบบรวมเกี่ยวกับผู้ติดต่อ ผู้ติดต่อคือ [บุคคลที่เชื่อมโยงกับบัญชี](data-unification-contacts.md) ในสถานการณ์ B-to-B
+
+| Column                       | ขนิด                | Description     |
+| ---------------------------- | ------------------- | --------------- |
+|  วันเกิด            | DateTime       |  วันเกิดของผู้ติดต่อ               |
+|  City                 | ข้อความ |  เมืองของที่อยู่ผู้ติดต่อ               |
+|  ผู้ติดต่อ            | ข้อความ |  ID ของโปรไฟล์ผู้ติดต่อ               |
+|  ContactProfileId     | รหัสเฉพาะ   |  GUID สำหรับผู้ติดต่อ               |
+|  CountryOrRegion      | ข้อความ |  ประเทศ/ภูมิภาคของที่อยู่ผู้ติดต่อ               |
+|  รหัสลูกค้า           | ข้อความ |  ID ของบัญชีที่ผู้ติดต่อถูกแมป               |
+|  EntityName           | ข้อความ |  เอนทิตีที่ข้อมูลมาจาก                |
+|  FirstName            | ข้อความ |  ชื่อของผู้ติดต่อ               |
+|  เพศ               | ข้อความ |  เพศของผู้ติดต่อ               |
+|  รหัส                   | ข้อความ |  GUID เชิงกำหนดตาม `Identifier`               |
+|  ตัวระบุ           | ข้อความ |  ID ภายในของโปรไฟล์ผู้ติดต่อ: `ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | ข้อความ |  ตำแหน่งงานของผู้ติดต่อ               |
+|  LastName             | ข้อความ |  นามสกุลของผู้ติดต่อ               |
+|  PostalCode           | ข้อความ |  รหัสไปรษณีย์ของที่อยู่ผู้ติดต่อ               |
+|  PrimaryEmail         | ข้อความ |  ที่อยู่อีเมลของผู้ติดต่อ               |
+|  PrimaryPhone         | ข้อความ |  หมายเลขโทรศัพท์ของผู้ติดต่อ               |
+|  รัฐหรือจังหวัด      | ข้อความ |  รัฐหรือจังหวัดของที่อยู่ผู้ติดต่อ               |
+|  StreetAddress        | ข้อความ |  ถนนของที่อยู่ผู้ติดต่อ               |
 
 ### <a name="alternatekey"></a>AlternateKey
 
 ตาราง AlternateKey ประกอบด้วยคีย์ของเอนทิตี ซึ่งเข้าร่วมในกระบวนการ Unify
 
-|Column  |พิมพ์ข้อความ  |รายละเอียด  |
+|Column  |ขนิด  |Description  |
 |---------|---------|---------|
-|DataSourceName    |String         | ชื่อของแหล่งข้อมูล ตัวอย่าง: `datasource5`        |
-|EntityName        | สตริง        | ชื่อของเอนทิตีใน Customer Insights ตัวอย่าง: `contact1`        |
-|AlternateValue    |สตริง         |รหัสแทนที่แมปกับรหัสลูกค้า ตัวอย่าง: `cntid_1078`         |
-|KeyRing           | ข้อความแบบหลายบรรทัด        | ค่า JSON  </br> ตัวอย่าง: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
-|รหัสลูกค้า         | String        | ID ของโปรไฟล์ลูกค้าแบบรวม         |
-|AlternateKeyId     | GUID         |  GUID เชิงกำหนดของ AlternateKey ตาม msdynci_identifier       |
-|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> ตัวอย่าง: `testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |ข้อความ         | ชื่อของแหล่งข้อมูล ตัวอย่าง: `datasource5`        |
+|EntityName        | ข้อความ        | ชื่อของเอนทิตีใน Customer Insights ตัวอย่าง: `contact1`        |
+|AlternateValue    |ข้อความ         |รหัสแทนที่แมปกับรหัสลูกค้า ตัวอย่าง: `cntid_1078`         |
+|KeyRing           | ข้อความ        | ค่า JSON  </br> ตัวอย่าง: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|รหัสลูกค้า         | ข้อความ        | ID ของโปรไฟล์ลูกค้าแบบรวม         |
+|AlternateKeyId     | รหัสเฉพาะ        |  GUID เชิงกำหนดของ AlternateKey ตาม `Identifier`      |
+|ตัวระบุ |   ข้อความ      |   `DataSourceName|EntityName|AlternateValue`  </br> ตัวอย่าง: `testdatasource|contact1|cntid_1078`    |
 
 ### <a name="unifiedactivity"></a>UnifiedActivity
 
@@ -167,69 +193,67 @@ OR
 
 | Column            | ขนิด        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| รหัสลูกค้า        | สตริง      | รหัสโปรไฟล์ลูกค้า                                                                      |
-| ActivityId        | สตริง      | ID ภายในของกิจกรรมของลูกค้า (คีย์หลัก)                                       |
-| SourceEntityName  | String      | ชื่อเอนทิตีต้นทาง                                                                |
-| SourceActivityId  | String      | คีย์หลักจากเอนทิตีต้นทาง                                                       |
-| ActivityType      | String      | ชนิดกิจกรรมเชิงความหมาย หรือชื่อของกิจกรรมที่กำหนดเอง                                        |
-| ActivityTimeStamp | DATETIME    | ประทับเวลาของกิจกรรม                                                                      |
-| Title             | สตริง      | ชื่อเรื่องหรือชื่อกิจกรรม                                                               |
-| Description       | String      | Description ของกิจกรรม                                                                     |
-| URL                | String      | ลิงก์ไปยัง URL ภายนอกที่เฉพาะเจาะจงสำหรับกิจกรรม                                         |
-| SemanticData      | สตริง JSON | รวมรายการของคู่ค่าคีย์สำหรับฟิลด์การแมปเชิงความหมายที่เฉพาะเจาะจงสำหรับชนิดของกิจกรรม |
-| RangeIndex        | String      | การประทับเวลา Unix ที่ใช้สำหรับเรียงลำดับไทม์ไลน์กิจกรรมและการสืบค้นช่วงที่มีประสิทธิภาพ |
-| mydynci_unifiedactivityid   | GUID | รหัสภายในของกิจกรรมของลูกค้า (ActivityId) |
+| รหัสลูกค้า        | ข้อความ      | รหัสโปรไฟล์ลูกค้า                                                                      |
+| ActivityId        | ข้อความ      | ID ภายในของกิจกรรมของลูกค้า (คีย์หลัก)                                       |
+| SourceEntityName  | ข้อความ      | ชื่อเอนทิตีต้นทาง                                                                |
+| SourceActivityId  | ข้อความ      | คีย์หลักจากเอนทิตีต้นทาง                                                       |
+| ActivityType      | ข้อความ      | ชนิดกิจกรรมเชิงความหมาย หรือชื่อของกิจกรรมที่กำหนดเอง                                        |
+| ActivityTimeStamp | DateTime    | ประทับเวลาของกิจกรรม                                                                      |
+| Title             | ข้อความ      | ชื่อเรื่องหรือชื่อกิจกรรม                                                               |
+| Description       | ข้อความ      | Description ของกิจกรรม                                                                     |
+| URL                | ข้อความ      | ลิงก์ไปยัง URL ภายนอกที่เฉพาะเจาะจงสำหรับกิจกรรม                                         |
+| SemanticData      | ข้อความ | รวมรายการของคู่ค่าคีย์สำหรับฟิลด์การแมปเชิงความหมายที่เฉพาะเจาะจงสำหรับชนิดของกิจกรรม |
+| RangeIndex        | ข้อความ      | การประทับเวลา Unix ที่ใช้สำหรับเรียงลำดับไทม์ไลน์กิจกรรมและการสืบค้นช่วงที่มีประสิทธิภาพ |
+| UnifiedActivityId   | รหัสเฉพาะ | รหัสภายในของกิจกรรมของลูกค้า (ActivityId) |
 
 ### <a name="customermeasure"></a>CustomerMeasure
 
 ตารางนี้ประกอบด้วยข้อมูลผลลัพธ์ของการวัดตามแอตทริบิวต์ของลูกค้า
 
-| Column             | พิมพ์ข้อความ             | รายละเอียด                 |
+| Column             | ขนิด             | Description                 |
 |--------------------|------------------|-----------------------------|
-| รหัสลูกค้า         | String           | รหัสโปรไฟล์ลูกค้า        |
-| การวัด           | สตริง JSON      | รวมรายการของคู่ค่าคีย์สำหรับชื่อการวัดและค่าสำหรับลูกค้าที่กำหนด | 
-| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | รหัสโปรไฟล์ลูกค้า |
+| รหัสลูกค้า         | ข้อความ           | รหัสโปรไฟล์ลูกค้า        |
+| การวัด           | ข้อความ      | รวมรายการของคู่ค่าคีย์สำหรับชื่อการวัดและค่าสำหรับลูกค้าที่กำหนด |
+| ตัวระบุ | ข้อความ           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | รหัสเฉพาะ     | รหัสโปรไฟล์ลูกค้า |
 
-
-### <a name="enrichment"></a>การเพิ่มข้อมูลแล้ว
+### <a name="enrichment"></a>การเพิ่มความสมบูรณ์
 
 ตารางนี้มีผลลัพธ์ของกระบวนการเพิ่มข้อมูล
 
-| Column               | พิมพ์ข้อความ             |  รายละเอียด                                          |
+| Column               | ขนิด             |  Description                                          |
 |----------------------|------------------|------------------------------------------------------|
-| รหัสลูกค้า           | String           | รหัสโปรไฟล์ลูกค้า                                 |
-| EnrichmentProvider   | String           | ชื่อของผู้ให้บริการสำหรับการเพิ่มข้อมูล                                  |
-| EnrichmentType       | String           | ชนิดของการเพิ่มข้อมูล                                      |
-| ค่า               | สตริง JSON      | รายการของแอตทริบิวต์ที่สร้างโดยกระบวนการเพิ่มข้อมูล |
-| msdynci_enrichmentid | GUID             | GUID เชิงกำหนดที่สร้างจาก msdynci_identifier |
-| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| รหัสลูกค้า           | ข้อความ           | รหัสโปรไฟล์ลูกค้า                                 |
+| EnrichmentProvider   | ข้อความ           | ชื่อของผู้ให้บริการสำหรับการเพิ่มข้อมูล                                  |
+| EnrichmentType       | ข้อความ           | ชนิดของการเพิ่มข้อมูล                                      |
+| มูลค่า               | ข้อความ      | รายการของแอตทริบิวต์ที่สร้างโดยกระบวนการเพิ่มข้อมูล |
+| EnrichmentId | รหัสเฉพาะ            | GUID เชิงกำหนดที่สร้างจาก `Identifier` |
+| ตัวระบุ   | ข้อความ           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
-### <a name="prediction"></a>การคาดคะเน
+### <a name="prediction"></a>การคาดการณ์
 
 ตารางนี้มีผลลัพธ์ของการคาดคะเนแบบจำลอง
 
 | Column               | ขนิด        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
-| รหัสลูกค้า           | สตริง      | รหัสโปรไฟล์ลูกค้า                                  |
-| ModelProvider        | สตริง      | ชื่อของผู้ให้บริการของแบบจำลอง                                      |
-| แบบจำลอง                | String      | ชื่อรูปแบบ                                                |
-| ค่า               | สตริง JSON | รายการของแอตทริบิวต์ที่สร้างโดยแบบจำลอง |
-| msdynci_predictionid | GUID        | GUID เชิงกำหนดที่สร้างจาก msdynci_identifier | 
-| msdynci_identifier   | สตริง      |  `Model|ModelProvider|CustomerId`                      |
+| รหัสลูกค้า           | ข้อความ      | รหัสโปรไฟล์ลูกค้า                                  |
+| ModelProvider        | ข้อความ      | ชื่อของผู้ให้บริการของแบบจำลอง                                      |
+| แบบจำลอง                | ข้อความ      | ชื่อรูปแบบ                                                |
+| มูลค่า               | ข้อความ | รายการของแอตทริบิวต์ที่สร้างโดยแบบจำลอง |
+| PredictionId | รหัสเฉพาะ       | GUID เชิงกำหนดที่สร้างจาก `Identifier` |
+| ตัวระบุ   | ข้อความ      |  `Model|ModelProvider|CustomerId`                      |
 
 ### <a name="segment-membership"></a>การเป็นสมาชิกเซ็กเมนต์
 
 ตารางนี้มีข้อมูลการเป็นสมาชิกเซ็กเมนต์ของโปรไฟล์ลูกค้า
 
-| Column        | Type | Description                        |
+| Column        | ขนิด | Description                        |
 |--------------------|--------------|-----------------------------|
-| รหัสลูกค้า        | สตริง       | รหัสโปรไฟล์ลูกค้า        |
-| SegmentProvider      | สตริง       | แอปที่เผยแพร่เซ็กเมนต์      |
-| SegmentMembershipType | สตริง       | ชนิดของลูกค้าสำหรับเรกคอร์ดการเป็นสมาชิกเซ็กเมนต์นี้ รองรับหลายชนิด เช่น ลูกค้า ผู้ติดต่อ หรือลูกค้าองค์กร ค่าเริ่มต้น: ลูกค้า  |
-| เซ็กเมนต์       | สตริง JSON  | รายการเซ็กเมนต์เฉพาะที่โปรไฟล์ลูกค้าเป็นสมาชิก      |
-| msdynci_identifier  | สตริง   | รหัสเฉพาะของเรกคอร์ดการเป็นสมาชิกเซ็กเมนต์ `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | GUID      | GUID เชิงกำหนดที่สร้างจาก `msdynci_identifier`          |
-
+| รหัสลูกค้า        | ข้อความ       | รหัสโปรไฟล์ลูกค้า        |
+| SegmentProvider      | ข้อความ       | แอปที่เผยแพร่เซ็กเมนต์      |
+| SegmentMembershipType | ข้อความ       | ชนิดของลูกค้าสำหรับเรกคอร์ดการเป็นสมาชิกเซ็กเมนต์นี้ รองรับหลายชนิด เช่น ลูกค้า ผู้ติดต่อ หรือลูกค้าองค์กร ค่าเริ่มต้น: ลูกค้า  |
+| Segments       | ข้อความ  | รายการเซ็กเมนต์เฉพาะที่โปรไฟล์ลูกค้าเป็นสมาชิก      |
+| ตัวระบุ  | ข้อความ   | รหัสเฉพาะของเรกคอร์ดการเป็นสมาชิกเซ็กเมนต์ `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | รหัสเฉพาะ      | GUID เชิงกำหนดที่สร้างจาก `Identifier`          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

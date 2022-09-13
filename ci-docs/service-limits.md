@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 421e1aa41a54a4b8c34ac27fc7c02e510d2bb588
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
+ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387179"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9411808"
 ---
 # <a name="service-limits-in-customer-insights"></a>ข้อจำกัดการบริการใน Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "9387179"
 
 | พื้นที่  | ขีดจำกัด  | บันทึกย่อ |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| เซ็กเมนต์ การวัด และการคาดคะเน | 300  | จำนวนทั้งหมดของ [เซ็กเมนต์](segments.md), [การวัด](measures.md) และ [การคาดคะเน](predictions.md) รวมกันได้ต้องไม่เกิน 300  |
+| เซ็กเมนต์ การวัด และการคาดคะเน | 300  | จำนวนทั้งหมดของ [เซ็กเมนต์](segments.md), [การวัด](measures.md) และ [การคาดคะเน](predictions-overview.md) รวมกันได้ต้องไม่เกิน 300  |
 | ความสัมพันธ์ | ความลึก 20 ระดับสำหรับความสัมพันธ์ในเส้นทางเอนทิตี | เมื่อสร้าง [เซ็กเมนต์](segments.md) หรือ [การวัด](measures.md) โดยใช้ส่วนติดต่อของตัวสร้าง เส้นทางของเอนทิตีสามารถมีความสัมพันธ์ระหว่างเอนทิตีเริ่มต้นและเอนทิตีเป้าหมายได้สูงสุด 20 ระดับ  |
 
 ## <a name="fair-scheduling-of-jobs"></a>การจัดกำหนดการงานอย่างยุติธรรม
