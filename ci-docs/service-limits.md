@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411808"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463242"
 ---
 # <a name="service-limits-in-customer-insights"></a>ข้อจำกัดการบริการใน Customer Insights
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411808"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | เซ็กเมนต์ การวัด และการคาดคะเน | 300  | จำนวนทั้งหมดของ [เซ็กเมนต์](segments.md), [การวัด](measures.md) และ [การคาดคะเน](predictions-overview.md) รวมกันได้ต้องไม่เกิน 300  |
 | ความสัมพันธ์ | ความลึก 20 ระดับสำหรับความสัมพันธ์ในเส้นทางเอนทิตี | เมื่อสร้าง [เซ็กเมนต์](segments.md) หรือ [การวัด](measures.md) โดยใช้ส่วนติดต่อของตัวสร้าง เส้นทางของเอนทิตีสามารถมีความสัมพันธ์ระหว่างเอนทิตีเริ่มต้นและเอนทิตีเป้าหมายได้สูงสุด 20 ระดับ  |
+|การนำเข้าข้อมูล| การประเมินพร้อมกันสำหรับแหล่งข้อมูล Power Query ได้รับการจำกัด | Customer Insights มี [ขีดจำกัดการรีเฟรช เช่น กระแสข้อมูล ใน PowerBI.com](/power-query/power-query-online-limits#refresh-limits) เหมือนกัน |
 
 ## <a name="fair-scheduling-of-jobs"></a>การจัดกำหนดการงานอย่างยุติธรรม
 

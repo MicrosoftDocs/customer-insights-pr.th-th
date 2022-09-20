@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 65fd80cc563b8b3b8c8874b66f179f8b0c7a19f0
+ms.sourcegitcommit: fe33cc76d015232ff8737f77193f44f2b884bb6b
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194946"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473665"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Add-in การ์ดลูกค้าสำหรับแอป Dynamics 365 (พรีวิว)
 
@@ -32,7 +32,8 @@ ms.locfileid: "9194946"
 - เพื่อให้ข้อมูล Dynamics 365 ของคุณแมปกับโปรไฟล์ลูกค้า Customer Insights เราขอแนะนำให้ [นำเข้าจากแอป Dynamics 365 โดยใช้ตัวเชื่อมต่อ Microsoft Dataverse](connect-power-query.md) หากคุณใช้วิธีอื่นในการนำเข้าผู้ติดต่อ (หรือบัญชี) ของ Dynamics 365 ตรวจสอบให้แน่ใจว่าฟิลด์ `contactid` (หรือ`accountid`) ตั้งค่าเป็น [คีย์หลักสำหรับแหล่งข้อมูลนั้นในกระบวนการรวมข้อมูล](map-entities.md#select-primary-key-and-semantic-type-for-attributes)
 - ผู้ใช้ Dynamics 365 ทั้งหมดของ Add-in การ์ดลูกค้าต้องมีการ [เพิ่มเป็นผู้ใช้](permissions.md) ใน Customer Insights เพื่อดูข้อมูล
 - [กำหนดค่าความสามารถในการค้นหาและกรองข้อมูล](search-filter-index.md) ใน Customer Insights
-- ตัวควบคุม Add-in แต่ละรายการอาศัยข้อมูลเฉพาะใน Customer Insights ข้อมูลและตัวควบคุมบางอย่างมีให้ใช้งานในสภาพแวดล้อมเฉพาะบางชนิดเท่านั้น การกำหนดค่า Add-in จะแจ้งให้คุณทราบหากไม่มีตัวควบคุมเนื่องจากชนิดของสภาพแวดล้อมที่เลือก เรียนรู้เพิ่มเติมเกี่ยวกับ [กรณีการใช้งานสภาพแวดล้อม](work-with-business-accounts.md)
+- ข้อมูลและตัวควบคุมบางอย่างมีให้ใช้งานในสภาพแวดล้อมเฉพาะบางชนิดเท่านั้น การกำหนดค่า Add-in จะแจ้งให้คุณทราบหากไม่มีตัวควบคุมเนื่องจากชนิดของสภาพแวดล้อมที่เลือก ข้อผิดพลาดนี้จะแสดงภายในตัวควบคุมเมื่อมีการแสดงภาพ เรียนรู้เพิ่มเติมเกี่ยวกับ [กรณีการใช้งานสภาพแวดล้อม](work-with-business-accounts.md)
+- ตัวควบคุม Add-in แต่ละรายการอาศัยข้อมูลเฉพาะใน Customer Insights
   - **ตัวควบคุมการวัด** ต้องใช้ [การวัดแอตทริบิวต์ของลูกค้าที่กำหนดค่า](measures.md)
   - **ตัวควบคุมอัจฉริยะ** ต้องการข้อมูลที่สร้างขึ้นโดยใช้ [การคาดคะเนหรือโมเดลที่กำหนดเอง](predictions-overview.md)
   - **ตัวควบคุมรายละเอียดลูกค้า** แสดงฟิลด์ทั้งหมดจากโปรไฟล์มีอยู่ในโปรไฟล์ลูกค้าแบบรวม
