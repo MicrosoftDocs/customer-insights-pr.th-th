@@ -7,21 +7,21 @@
 - name: แค็ตตาล็อกการเรียนรู้
   items:
     - name: รับรองว่าเป็นผู้เชี่ยวชาญด้านแพลตฟอร์มข้อมูลลูกค้าของ Microsoft
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: เริ่มต้นใช้งาน Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: นำเข้าข้อมูล
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: สร้างโปรไฟล์ลูกค้าแบบรวม
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: ทำงานกับ Customer Insights
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: เพิ่มข้อมูลและทำการคาดคะเน
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: จัดการการเชื่อมต่อจากภายนอก
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: จัดการ Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: การทดลองใช้ฟรี
   items:
     - name: ลงทะเบียนเพื่อทดลองใช้ฟรี
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: ใช้ข้อมูลบนเว็บเพื่อการตั้งค่าส่วนบุคคล
       href: unknown-to-known.md
+    - name: จัดการโปรไฟล์ลูกค้าที่ไม่รู้จัก
+      href: manage-unknown-profiles.md
 - name: Segments
   items:
     - name: ภาพรวมของเซ็กเมนต์
