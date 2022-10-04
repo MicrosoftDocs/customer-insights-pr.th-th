@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: 8b4a88bdb75c6e638a76c39d18647681ad4556d7
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: 6d48f7088d722b27ca69cd591178651bdb6e2c23
+ms.sourcegitcommit: f959c85871777e5f4eab289e91b2fd114cd72153
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304312"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9588835"
 ---
 # <a name="manage-environments"></a>จัดการสภาพแวดล้อม
 
