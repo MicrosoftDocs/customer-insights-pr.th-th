@@ -1,7 +1,7 @@
 ---
 title: เชื่อมต่อกับข้อมูลในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse
 description: นำเข้าข้อมูลจากที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse
-ms.date: 07/26/2022
+ms.date: 08/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 0d9612525344c8ac99b6e3edfe33a426dc0a474b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206976"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609874"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>เชื่อมต่อกับข้อมูลในที่จัดเก็บข้อมูลดิบที่มีการจัดการของ Microsoft Dataverse
 
@@ -70,5 +70,93 @@ ms.locfileid: "9206976"
 1. คลิก **บันทึก** เพื่อใช้การเปลี่ยนแปลงของคุณและกลับไปที่หน้า **แหล่งข้อมูล**
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupted-data"></a>สาเหตุทั่วไปของข้อผิดพลาดในการนำเข้าหรือข้อมูลที่เสียหาย
+
+การตรวจสอบต่อไปนี้จะทำงานกับข้อมูลที่นำเข้าเพื่อแสดงเรกคอร์ดที่เสียหาย:
+
+- ค่าของฟิลด์ไม่ตรงกับชนิดข้อมูลของคอลัมน์
+- ฟิลด์มีอักขระที่ทำให้คอลัมน์ไม่ตรงกับ Schema ที่คาดไว้ ตัวอย่างเช่น: เครื่องหมายคำพูดที่มีรูปแบบไม่ถูกต้อง เครื่องหมายคำพูดที่ไม่ใช้ Escape หรืออักขระขึ้นบรรทัดใหม่
+- หากมีคอลัมน์ datetime/date/datetimeoffset จะต้องระบุรูปแบบในโมเดลหากไม่เป็นไปตามรูปแบบ ISO มาตรฐาน
+
+### <a name="schema-or-data-type-mismatch"></a>สคีมาหรือชนิดข้อมูลไม่ตรงกัน
+
+หากข้อมูลไม่เป็นไปตามสคีมา เรกคอร์ดจะถูกจัดประเภทว่าเสียหาย แก้ไขแหล่งข้อมูลหรือสคีมาและนำเข้าข้อมูลอีกครั้ง
+
+### <a name="datetime-fields-in-the-wrong-format"></a>ฟิลด์วันที่เวลาอยู่ในรูปแบบที่ไม่ถูกต้อง
+
+ฟิลด์วันที่และเวลาในเอนทิตีไม่อยู่ในรูปแบบ ISO หรือ en-US รูปแบบวันที่และเวลาเริ่มต้นใน Customer Insights คือรูปแบบ en-US ฟิลด์วันที่และเวลาทั้งหมดในเอนทิตีควรอยู่ในรูปแบบเดียวกัน Customer Insights รองรับรูปแบบอื่นๆ ที่ให้คำอธิบายประกอบหรือคุณลักษณะที่ระดับแหล่งที่มาหรือเอนทิตีในโมเดลหรือ manifest.json ตัวอย่างเช่น
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  ใน manifest.json สามารถระบุรูปแบบวันที่และเวลาได้ที่ระดับเอนทิตีหรือที่ระดับแอตทริบิวต์ ที่ระดับเอนทิตี ใช้ "exhibitsTraits" ในเอนทิตีใน *.manifest.cdm.json เพื่อกำหนดรูปแบบวันที่และเวลา ที่ระดับแอตทริบิวต์ ใช้ "appliedTraits" ในแอตทริบิวต์ใน entityname.cdm.json
+
+**Manifest.json ที่ระดับเอนทิตี**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json ที่ระดับแอตทริบิวต์**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

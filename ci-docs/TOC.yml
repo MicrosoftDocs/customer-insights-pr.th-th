@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: ใช้โมเดลที่กำหนดเองจาก Azure Machine Learning
           href: custom-models.md
+        - name: สร้างเซ็กเมนต์ตามการคาดคะเน
+          href: prediction-based-segment.md
     - name: คู่มือตัวอย่าง
       items:
         - name: คู่มือตัวอย่างสำหรับการคาดคะเน CLV
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: การทดลองกับ Azure Machine Learning
           href: azure-machine-learning-experiments.md
-    - name: จัดการการคาดคะเน
-      href: manage-predictions.md
-    - name: สร้างเซ็กเมนต์ตามการคาดคะเน
-      href: prediction-based-segment.md
 - name: ตัวเลือกการส่งออก
   items:
     - name: การส่งออก

@@ -1,7 +1,7 @@
 ---
 title: เชื่อมต่อกับโฟลเดอร์ Common Data Model โดยใช้บัญชี Azure Data Lake
 description: ทำงานกับข้อมูล Common Data Model โดยใช้ Azure Data Lake Storage
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396114"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609971"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>เชื่อมต่อกับข้อมูลใน Azure Data Lake Storage
 
@@ -43,6 +43,10 @@ ms.locfileid: "9396114"
 - ผู้ใช้ที่ตั้งค่าการเชื่อมต่อแหล่งข้อมูล ต้องการสิทธิ์อย่างน้อย Storage Blob Data Contributor ในบัญชีที่เก็บข้อมูล
 
 - ข้อมูลใน Data Lake Storage ของคุณควรเป็นไปตามมาตรฐาน Common Data Model สำหรับการจัดเก็บข้อมูลของคุณ และมีไฟล์กำกับ Common Data Model เพื่อแสดง Schema ของไฟล์ข้อมูล (*.csv หรือ *.parquet) ไฟล์กำกับต้องให้รายละเอียดของเอนทิตี เช่น คอลัมน์เอนทิตีและชนิดข้อมูล และตำแหน่งไฟล์ข้อมูลและชนิดไฟล์ สำหรับข้อมูลเพิ่มเติม โปรดดู [ไฟล์กำกับ Common Data Model](/common-data-model/sdk/manifest) หากไม่มีไฟล์กำกับ ผู้ใช้ที่เป็นผู้ดูแลระบบที่มีสิทธิ์เข้าถึงในฐานะเจ้าของข้อมูลในที่เก็บข้อมูล Blob หรือผู้สนับสนุนข้อมูลในที่เก็บข้อมูล Blob สามารถกำหนด Schema เมื่อนำเข้าข้อมูลได้
+
+## <a name="recommendations"></a>การแนะนำ
+
+เพื่อประสิทธิภาพสูงสุด Customer Insights แนะนำให้ขนาดของพาร์ติชั่นไม่เกิน 1 GB และจำนวนไฟล์พาร์ติชั่นในโฟลเดอร์ต้องไม่เกิน 1,000
 
 ## <a name="connect-to-azure-data-lake-storage"></a>เชื่อมต่อกับ Azure Data Lake Storage
 
@@ -199,5 +203,101 @@ ms.locfileid: "9396114"
 1. คลิก **บันทึก** เพื่อใช้การเปลี่ยนแปลงของคุณและกลับไปที่หน้า **แหล่งข้อมูล**
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>สาเหตุทั่วไปของข้อผิดพลาดในการนำเข้าหรือข้อมูลที่เสียหาย
+
+ระหว่างการนำเข้าข้อมูล สาเหตุทั่วไปบางประการที่เรกคอร์ดอาจถูกพิจารณาว่าเสียหาย ได้แก่:
+
+- ชนิดข้อมูลและค่าของฟิลด์ไม่ตรงกันระหว่างไฟล์ต้นฉบับและสคีมา
+- จำนวนคอลัมน์ในไฟล์ต้นฉบับไม่ตรงกับสคีมา
+- ฟิลด์มีอักขระที่ทำให้คอลัมน์ผิดพลาดเมื่อเทียบกับสคีมาที่คาดไว้ ตัวอย่างเช่น: เครื่องหมายคำพูดที่มีรูปแบบไม่ถูกต้อง เครื่องหมายคำพูดที่ไม่ใช้ Escape อักขระขึ้นบรรทัดใหม่ หรืออักขระแท็บ
+- ไฟล์พาร์ติชั่นหายไป
+- หากมีคอลัมน์ datetime/date/datetimeoffset จะต้องระบุรูปแบบในสคีมาหากไม่เป็นไปตามรูปแบบมาตรฐาน
+
+### <a name="schema-or-data-type-mismatch"></a>สคีมาหรือชนิดข้อมูลไม่ตรงกัน
+
+หากข้อมูลไม่เป็นไปตามสคีมา กระบวนการนำเข้าจะเสร็จสมบูรณ์โดยมีข้อผิดพลาด แก้ไขแหล่งข้อมูลหรือสคีมาและนำเข้าข้อมูลอีกครั้ง
+
+### <a name="partition-files-are-missing"></a>ไฟล์พาร์ติชั่นหายไป
+
+- หากการนำเข้าสำเร็จโดยไม่มีเรกคอร์ดที่เสียหาย แต่คุณไม่เห็นข้อมูลใดๆ ให้แก้ไขไฟล์ model.json หรือ manifest.json เพื่อให้แน่ใจว่ามีการระบุพาร์ติชัน จากนั้น [รีเฟรชแหล่งข้อมูล](data-sources.md#refresh-data-sources)
+
+- หากการนำเข้าข้อมูลเกิดขึ้นพร้อมกับการรีเฟรชแหล่งข้อมูลในระหว่างการรีเฟรชกำหนดการอัตโนมัติ ไฟล์พาร์ติชันอาจว่างเปล่าหรือไม่พร้อมใช้งานสำหรับ Customer Insights ในการประมวลผล เพื่อให้สอดคล้องกับกำหนดการรีเฟรชขั้นต้น ให้เปลี่ยน [กำหนดการรีเฟรชระบบ](schedule-refresh.md) หรือกำหนดการรีเฟรชสำหรับแหล่งข้อมูล ปรับเวลาให้ตรงกันเพื่อไม่ให้การรีเฟรชทั้งหมดเกิดขึ้นพร้อมกัน และให้ข้อมูลล่าสุดที่จะประมวลผลใน Customer Insights
+
+### <a name="datetime-fields-in-the-wrong-format"></a>ฟิลด์วันที่เวลาอยู่ในรูปแบบที่ไม่ถูกต้อง
+
+ฟิลด์วันที่และเวลาในเอนทิตีไม่อยู่ในรูปแบบ ISO 8601 หรือ en-US รูปแบบวันที่และเวลาเริ่มต้นใน Customer Insights คือรูปแบบ en-US ฟิลด์วันที่และเวลาทั้งหมดในเอนทิตีควรอยู่ในรูปแบบเดียวกัน Customer Insights รองรับรูปแบบอื่นๆ ที่ให้คำอธิบายประกอบหรือคุณลักษณะที่ระดับแหล่งที่มาหรือเอนทิตีในโมเดลหรือ manifest.json ตัวอย่างเช่น
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  ใน manifest.json สามารถระบุรูปแบบวันที่และเวลาได้ที่ระดับเอนทิตีหรือที่ระดับแอตทริบิวต์ ที่ระดับเอนทิตี ใช้ "exhibitsTraits" ในเอนทิตีใน *.manifest.cdm.json เพื่อกำหนดรูปแบบวันที่และเวลา ที่ระดับแอตทริบิวต์ ใช้ "appliedTraits" ในแอตทริบิวต์ใน entityname.cdm.json
+
+**Manifest.json ที่ระดับเอนทิตี**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json ที่ระดับแอตทริบิวต์**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
