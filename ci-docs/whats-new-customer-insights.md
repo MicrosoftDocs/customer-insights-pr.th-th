@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
-ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
+ms.openlocfilehash: dcee60a73e0c32278553253040478c31e45237ae
+ms.sourcegitcommit: 618ef15b434de0a68213383b6521ce2a60753afb
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9609615"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "9638374"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>มีอะไรใหม่ใน Dynamics 365 Customer Insights
 
@@ -23,6 +23,28 @@ ms.locfileid: "9609615"
 
 > [!TIP]
 > เมื่อต้องการส่งและโหวตคำขอคุณลักษณะและข้อเสนอแนะผลิตภัณฑ์ ให้ไปที่ [พอร์ทัลไอเดียเกี่ยวกับแอปพลิเคชัน Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)
+
+## <a name="september-2022-updates"></a>การปรับปรุงเดือนกันยายน 2022
+
+การปรับปรุงในเดือนกันยายน 2022 ประกอบด้วยคุณลักษณะใหม่ การอัปเกรดประสิทธิภาพ และการแก้ไขข้อบกพร่อง
+
+### <a name="export-data-to-hubspot"></a>ส่งออกข้อมูลไปยัง HubSpot
+
+ส่งออกเซ็กเมนต์ของโปรไฟล์ลูกค้าแบบรวมไปยัง HubSpot และใช้สำหรับการตลาดทางอีเมล
+
+สำหรับข้อมูลเพิ่มเติม ดูที่ [ส่งออกเซ็กเมนต์ไปยัง HubSpot](export-hubspot.md)
+
+### <a name="remove-a-unified-field-or-entity-from-data-unification"></a>ลบฟิลด์หรือเอนทิตีแบบรวมออกจากการรวมข้อมูล
+
+คุณสามารถลบฟิลด์และเอนทิตีออกจากกระบวนการรวมข้อมูลได้
+
+สำหรับข้อมูลเพิ่มเติม ดู [ลบฟิลด์แบบรวม](data-unification-update.md#remove-a-unified-field)
+
+### <a name="manage-unknown-customer-profiles"></a>จัดการโปรไฟล์ลูกค้าที่ไม่รู้จัก
+
+การปรับเป็นแบบส่วนบุคคลที่น่าจดจำขึ้นอยู่กับความหลากหลายและความสมบูรณ์ของข้อมูลลูกค้าของคุณ และ Customer Insights จะช่วยให้คุณบรรลุเป้าหมายเหล่านี้ คุณสามารถจัดการโปรไฟล์ลูกค้าสำหรับผู้ใช้ที่คุณไม่มีข้อมูลอื่นใดนอกจาก ID
+
+สำหรับข้อมูลเพิ่มเติม โปรดดู [จัดการโปรไฟล์ที่ไม่รู้จักด้วย Customer Insights](manage-unknown-profiles.md)
 
 ## <a name="august-2022-updates"></a>การปรับปรุงเดือนสิงหาคม 2022
 

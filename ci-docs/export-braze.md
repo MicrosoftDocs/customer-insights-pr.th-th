@@ -1,19 +1,19 @@
 ---
 title: ส่งออกเซ็กเมนต์ไปยัง Braze (พรีวิว)
 description: เรียนรู้วิธีกำหนดค่าการเชื่อมต่อและส่งออกไปยัง Braze
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
+ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195130"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9655285"
 ---
 # <a name="export-segments-to-braze-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Braze (พรีวิว)
 
@@ -23,6 +23,7 @@ ms.locfileid: "9195130"
 
 - [บัญชี Braze](https://www.braze.com/) และข้อมูลประจำตัวของผู้ดูแลระบบที่เกี่ยวข้อง
 - [คีย์ API ของ Braze](https://www.braze.com/docs/api/basics/)
+- [จุดสิ้นสุด REST ของ Braze](https://www.braze.com/docs/api/basics/#api-definitions) ของคุณ 
 - [กำหนดค่าเซ็กเมนต์](segments.md) ใน Customer Insights
 - Unified customer profile ในเซ็กเมนต์ที่ส่งออกมีฟิลด์ที่แสดงที่อยู่อีเมลและรหัสลูกค้า Braze
 
@@ -30,6 +31,7 @@ ms.locfileid: "9195130"
 
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุด 1 ล้านรายไปยัง Braze ซึ่งอาจใช้เวลานานถึง 40 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Braze ขึ้นอยู่กับสัญญาของคุณกับ Braze
 - เซ็กเมนต์เท่านั้น
+- Azure Private Link ไม่รองรับการส่งออก Braze
 
 ## <a name="set-up-connection-to-braze"></a>ตั้งค่าการเชื่อมต่อไปยัง Braze
 
@@ -62,6 +64,8 @@ ms.locfileid: "9195130"
 1. เลือก **เพิ่มส่งออก**
 
 1. ในฟิลด์ **การเชื่อมต่อสำหรับส่งออก** ให้เลือกการเชื่อมต่อจากส่วน Braze ติดต่อผู้ดูแลระบบหากไม่มีการเชื่อมต่อ
+
+1. ป้อนจุดสิ้นสุด REST ลงในฟิลด์ **ชื่อโฮสต์** ในรูปแบบต่อไปนี้: `rest.iad-03.braze.com`
 
 1. ป้อนชื่อสำหรับการส่งออก
 
