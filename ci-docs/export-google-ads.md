@@ -8,12 +8,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: fd7498ecf17ef8a3a8f22dcc49ae204bef88b47f
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: a46623e609665f8031f223593a6644147e5209d8
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196601"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725101"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>ส่งออกกลุ่มไปยัง Google Ads (พรีวิว)
 
@@ -30,6 +30,7 @@ ms.locfileid: "9196601"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านโปรไฟล์ไปยัง Google Ads ซึ่งอาจใช้เวลานานถึง 30 นาทีจึงจะเสร็จสมบูรณ์ เนื่องจากข้อจำกัดด้านผู้ให้บริการ
 - เซ็กเมนต์เท่านั้น
 - จับคู่ใน Google Ads อาจใช้เวลาถึง 48 ชั่วโมง

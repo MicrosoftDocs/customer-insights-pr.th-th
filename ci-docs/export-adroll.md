@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8110eab199920ab8fc2ea15678139faf264a242a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 81adad4caf2d4c6f792bf920b29fc7c67eef42b0
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195773"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724735"
 ---
 # <a name="export-segments-to-adroll-preview"></a>ส่งออกเซ็กเมนต์ไปยัง AdRoll (พรีวิว)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195773"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 250,000 รายการไปยัง AdRoll ซึ่งอาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง AdRoll ขึ้นอยู่กับสัญญาของคุณกับ AdRoll
 - เซ็กเมนต์เท่านั้น เซ็กเมนต์ต้องมีโปรไฟล์ลูกค้าอย่างน้อย 100 รายการ
 

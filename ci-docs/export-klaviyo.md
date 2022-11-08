@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6e45ca5827afa29d97a746bd1a474c2346cc32d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 075e6758f2c6992a1185756f9beecf852fdd0a96
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196785"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724656"
 ---
 # <a name="export-segments-to-klaviyo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Klaviyo (พรีวิว)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196785"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านรายการไปยัง Klaviyo ซึ่งอาจใช้เวลานานถึง 20 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Klaviyo ขึ้นอยู่กับสัญญาของคุณกับ Klaviyo
 - เซ็กเมนต์เท่านั้น
 

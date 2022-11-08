@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e13aeca4ee5309f85e7de2986cd1a2ba5d2992fb
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: d857bf5d11de86521c4a9d4fc665c020496d89d2
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195635"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725148"
 ---
 # <a name="export-segments-to-rollworks-preview"></a>ส่งออกเซ็กเมนต์ไปยัง RollWorks (พรีวิว)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195635"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 250,000 รายการไปยัง RollWorks ซึ่งอาจใช้เวลานานถึง 10 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง RollWorks ขึ้นอยู่กับสัญญาของคุณกับ RollWorks
 - เซ็กเมนต์เท่านั้น
 

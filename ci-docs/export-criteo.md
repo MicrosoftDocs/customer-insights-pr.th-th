@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d7c8d6f0121fe18a6c886ba3776109a1a592ef33
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 61435030254638965fbeb7980312e73695416aa2
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195359"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724812"
 ---
 # <a name="export-segments-to-criteo-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Criteo (พรีวิว)
 
@@ -27,6 +27,7 @@ ms.locfileid: "9195359"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านรายการไปยัง Criteo ซึ่งอาจใช้เวลานานถึง 30 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Criteo ขึ้นอยู่กับสัญญาของคุณกับ Criteo
 - เซ็กเมนต์เท่านั้น
 
@@ -65,8 +66,6 @@ ms.locfileid: "9195359"
 1. ป้อนชื่อสำหรับการส่งออก
 
 1. ในส่วน **การจับคู่ข้อมูล** ในฟิลด์ **อีเมล** เลือกฟิลด์ที่แสดงถึงที่อยู่อีเมลของลูกค้า
-
-1. หรือส่งออก **รหัสบริษัทโฆษณา** และ **ชื่อ**
 
 1. เลือกเซ็กเมนต์ที่คุณต้องการส่งออก
 

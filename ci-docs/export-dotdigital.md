@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: cabaea84e31f8fe97bc558a8dca8d93bc40f43b7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 8f3e3378dce9177c6645b91140884ae135540243
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196095"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725009"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>ส่งออกเซ็กเมนต์ไปยัง DotDigital (พรีวิว)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196095"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านโปรไฟล์ไปยัง DotDigital ซึ่งอาจใช้เวลานานถึงสามชั่วโมงจึงจะเสร็จสมบูรณ์ เนื่องจากข้อจำกัดด้านผู้ให้บริการ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง DotDigital ขึ้นอยู่กับสัญญาของคุณกับ DotDigital
 - เซ็กเมนต์เท่านั้น
 

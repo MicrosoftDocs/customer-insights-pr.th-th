@@ -8,12 +8,12 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 816a3b242fadaa5a75db878adf0a76baf638e41c
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fc4ac34c1de096e25ba6c374fe17b1da6b2f745f
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196969"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724917"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Sendinblue (พรีวิว)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196969"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านรายการไปยัง Sendinblue ซึ่งอาจใช้เวลานานถึง 90 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Sendinblue ขึ้นอยู่กับสัญญาของคุณกับ Sendinblue
 - เซ็กเมนต์เท่านั้น
 

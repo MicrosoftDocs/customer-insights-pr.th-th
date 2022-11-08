@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c04fc26dc690cf32b45913257e82b9a0f617185
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 82303c7bcb269ee68419c9639ee743e13451f273
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196325"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724707"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Campaign Monitor (พรีวิว)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196325"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านรายการไปยัง Campaign Monitor ซึ่งอาจใช้เวลานานถึง 20 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Campaign Monitor จะขึ้นอยู่กับสัญญาของคุณกับ Campaign Monitor
 - เซ็กเมนต์เท่านั้น
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4d2ec29c194dc481ee40048b8ecbed813291b4d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c0affd3ed45f462696850813bd50331061dde780
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196509"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724524"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Constant Contact (พรีวิว)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196509"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดสูงสุด 1 ล้านรายการไปยัง Constant Contact ซึ่งอาจใช้เวลานานถึง หนึ่งชั่วโมงจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Constant Contact จะขึ้นอยู่กับสัญญาของคุณกับ Constant Contact
 - เซ็กเมนต์เท่านั้น
 

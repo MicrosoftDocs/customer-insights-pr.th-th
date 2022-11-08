@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01be1a075db0da05dc5536aea8a33093f9a2ea13
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c7a4b1be1c959d70fad929b56452169b40e5b592
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195037"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724639"
 ---
 # <a name="export-segments-to-facebook-ads-manager-preview"></a>ส่งออกเซกเมนต์ไปยัง Facebook Ads Manager (พรีวิว)
 
@@ -25,11 +25,13 @@ ms.locfileid: "9195037"
 
 - [บัญชี Facebook Ads](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) ที่มี [บัญชี Facebook Business](https://business.facebook.com/)
 - สิทธิ์การใช้งานของผู้ดูแลระบบใน [บัญชี Facebook Ads](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)
+- ผู้ใช้ต้องยอมรับข้อกำหนดผู้ชมที่กำหนดเองซึ่งตั้งค่าการเชื่อมต่อใน Customer Insights
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 10 ล้านรายการไปยัง Facebook Ads Manager ซึ่งอาจใช้เวลานานถึง 90 นาที
 - เซ็กเมนต์เท่านั้น
+- การรวมโฆษณา Facebook ไม่รองรับผู้ใช้ที่มีบัญชีโฆษณามากกว่า 25 บัญชี
 - ชนิด *รายชื่อลูกค้า* Facebook ใน [ผู้ชมที่กำหนดเอง](https://www.facebook.com/business/help/744354708981227?id=2469097953376494) เท่านั้น
   > [!NOTE]
   > ในบางกรณี คุณอาจเห็นผู้ชมแบบกำหนดเองชนิดต่างๆ ในรายการแบบหล่นลง หากคุณเลือกชนิดที่แตกต่างจาก *รายชื่อลูกค้า* การส่งออกจะล้มเหลว

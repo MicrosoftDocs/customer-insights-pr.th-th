@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 54aec10e24b6356e2e4317cf33e740a1a086a2dd
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: d74672768afec94e899ff0aec8c118c2afcde368
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196877"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725055"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Mailchimp (พรีวิว)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196877"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุดครั้งละ 1 ล้านรายการไปยัง Mailchimp ซึ่งอาจใช้เวลานานถึงสามชั่วโมง จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Mailchimp ขึ้นอยู่กับสัญญาของคุณกับ Mailchimp
 - เซ็กเมนต์เท่านั้น
 

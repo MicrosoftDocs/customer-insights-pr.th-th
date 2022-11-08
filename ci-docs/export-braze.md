@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
-ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
+ms.openlocfilehash: a3967008ec166cb6f099659b0791f1318126c0da
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: th-TH
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9655285"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725239"
 ---
 # <a name="export-segments-to-braze-preview"></a>ส่งออกเซ็กเมนต์ไปยัง Braze (พรีวิว)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9655285"
 
 ## <a name="known-limitations"></a>ข้อจำกัดที่ทราบ
 
+- ไม่รองรับลิงก์ส่วนตัวร่วมกับการใช้ที่เก็บข้อมูลของคุณเอง (BYOS)
 - ส่งออกโปรไฟล์ลูกค้าได้สูงสุด 1 ล้านรายไปยัง Braze ซึ่งอาจใช้เวลานานถึง 40 นาทีจึงจะเสร็จสมบูรณ์ จำนวนโปรไฟล์ลูกค้าที่คุณสามารถส่งออกไปยัง Braze ขึ้นอยู่กับสัญญาของคุณกับ Braze
 - เซ็กเมนต์เท่านั้น
 - Azure Private Link ไม่รองรับการส่งออก Braze
